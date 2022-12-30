@@ -6,23 +6,18 @@
             of are C++, PHP, and Java.</p>
   <p>As you might infer from the name high-level language, there are also
             <term>low-level languages</term>, sometimes referred to as machine languages or assembly
-            languages. Machine language is the encoding of instructions in binary so that they can be directly executed by the computer.  Assembly language uses a slightly easier format to refer to the low level instructions.
-            Loosely speaking, computers can only execute programs written in
-            low-level languages.  To be exact, computers can actually only execute programs written in machine language. Thus, programs written in a high-level language (and even those in assembly language) have to be
-            processed before they can run. This extra processing takes some time, which is
-            a small disadvantage of high-level languages.
-            However, the advantages to high-level languages are enormous.</p>
-  <p>First, it is much easier to program in a
-            high-level language. Programs written in a high-level language take less time
+            languages. Low-level languages can be <q>understood</q> directly by the computer<rsq/>s <init>CPU</init> (Central Processing Unit). They aren<rsq/>t, however, suitable for learning as your first programming language.</p>
+  <p>Programs written in a high-level language take less time
             to write, they are shorter and easier to read, and they are more likely to be
-            correct. Second, high-level languages are <term>portable</term>, meaning that they can
+            correct. In order for a computer to run programs written in a high-level language, a special program called a <term>compiler</term> (for some languages) or an <term>interpreter</term> (for other languages, including Python) translates the high-level language into a low-level language that the computer can execute.</p>
+          <!--<p>Second, high-level languages are <term>portable</term>, meaning that they can
             run on different kinds of computers with few or no modifications. Low-level
             programs can run on only one kind of computer and have to be rewritten to run
-            on another.</p>
-  <p>Due to these advantages, almost all programs are written in high-level
+          on another.--></p>
+  <!--<p>Due to these advantages, almost all programs are written in high-level
             languages. Low-level languages are used only for a few specialized
-            applications.</p>
-  <p>Two kinds of programs process high-level languages into low-level languages:
+          applications.</p>-->
+  <!--<p>Two kinds of programs process high-level languages into low-level languages:
             <term>interpreters</term> and <term>compilers</term>. An interpreter reads a high-level program
             and executes it, meaning that it does what the program says. It processes the
             program a little at a time, alternately reading lines and performing
@@ -37,10 +32,11 @@
   <p>Many modern languages use both processes. They are first compiled into a lower
             level language, called <term>byte code</term>, and then interpreted by a program called
             a <term>virtual machine</term>. Python uses both processes, but because of the way
-            programmers interact with it, it is usually considered an interpreted language.</p>
-  <p>There are two ways to use the Python interpreter: <em>shell mode</em> and <em>program
+          programmers interact with it, it is usually considered an interpreted language.</p>
+-->
+  <p>There are two ways to use Python: <em>shell mode</em> and <em>program
                 mode</em>. In shell mode, you type Python expressions into the <term>Python shell</term>,
-            and the interpreter immediately shows the result.  The example below shows the Python shell at work.</p>
+            and the interpreter immediately shows the result. The example below shows the Python shell at work.</p>
   <pre>$ python3
 Python 3.2 (r32:88445, Mar 25 2011, 19:28:28)
 [GCC 4.5.2] on linux2
@@ -75,7 +71,8 @@ My first program adds two numbers, 2 and 3:
   <p>These examples show Python being run from a Unix command line. In other
             development environments, the details of executing programs may differ. Also,
             most programs are more interesting than this one.</p>
-  <note>
+  <!--
+          <note>
     <title>Want to learn more about Python?</title>
     <p>If you would like to learn more about installing and using Python, here are some video links.
                 <url href="http://youtu.be/9EfGpN1Pnsg" visual="http://youtu.be/9EfGpN1Pnsg">Installing Python for Windows</url> shows you how to install the Python environment under
@@ -85,6 +82,7 @@ My first program adds two numbers, 2 and 3:
                 command line.
                 <url href="http://youtu.be/kXbpB5_ywDw" visual="http://youtu.be/kXbpB5_ywDw">Using Python</url> shows you some details about the Python shell and source code.</p>
   </note>
+          -->
   <p>
     <term>Check your understanding</term>
   </p>
@@ -127,6 +125,39 @@ My first program adds two numbers, 2 and 3:
       </choice>
     </choices>
   </exercise>
+  
+  <exercise label="question1_2_2a">
+    <statement>
+        <p>Python source code files have names that end with:</p>
+      </statement>
+      <choices>
+        <choice>
+          <statement>
+            <c>.program</c>
+          </statement>
+          <feedback>
+            While it <em>is</em> a program, you use only two letters after the dot.
+          </feedback>
+        </choice>
+        <choice correct="yes">
+          <statement>
+            <c>.py</c>
+          </statement>
+          <feedback>
+            Yes, that is the correct file suffix.
+          </feedback>
+        </choice>
+        <choice>
+          <statement>
+            <c>.python</c>
+          </statement>
+          <feedback>
+            Programmers usually don<rsq/>t like typing long words. Hint: use just the first two letters of <q>python</q>.
+          </feedback>
+        </choice>
+      </choices>
+    </exercise>
+  <!--
   <exercise label="question1_2_2">
     <statement>
       <blockquote>
@@ -207,4 +238,5 @@ My first program adds two numbers, 2 and 3:
       </choice>
     </choices>
   </exercise>
+  -->
 </section>

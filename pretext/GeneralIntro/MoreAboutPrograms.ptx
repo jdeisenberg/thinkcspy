@@ -32,7 +32,7 @@
       <p>Perform some action repeatedly, usually with some variation.</p>
     </li>
   </dl>
-  <p>Believe it or not, that's pretty much all there is to it. Every program you've
+  <p>Believe it or not, that<rsq/>s pretty much all there is to it. Every program yous<rsq/>ve
             ever used, no matter how complicated, is made up of instructions that look more
             or less like these. Thus, we can describe programming as the process of
             breaking a large, complex task into smaller and smaller subtasks until the

@@ -1,3 +1,4 @@
+<?xml version="1.0"?>
 <preface xml:id="front-back-matter_preface-to-the-first-and-second-editions">
   <title>Preface to the First and Second Editions</title>
   <paragraphs>
@@ -61,9 +62,9 @@
     <p><em>How to Think Like a Computer Scientist</em> was not just an excellent book, but it
       had been released under the GNU public license, which meant it could be used
       freely and modified to meet the needs of its user. Once I decided to use
-      Python, it occurred to me that I could translate Allen's original Java version
+      Python, it occurred to me that I could translate Allen<rsq/>s original Java version
       of the book into the new language. While I would not have been able to write a
-      textbook on my own, having Allen's book to work from made it possible for me to
+      textbook on my own, having Allen<rsq/>s book to work from made it possible for me to
       do so, at the same time demonstrating that the cooperative development model
       used so well in software could also work for educational materials.</p>
     <p>Working on this book for the last two years has been rewarding for both my
@@ -91,7 +92,7 @@
   <paragraphs xml:id="front-back-matter_introducing-programming-with-python">
     <title>Introducing programming with Python</title>
     <p>The process of translating and using <em>How to Think Like a Computer Scientist</em>
-      for the past two years has confirmed Python's suitability for teaching
+      for the past two years has confirmed Python<rsq/>s suitability for teaching
       beginning students. Python greatly simplifies programming examples and makes
       important programming ideas easier to teach.</p>
     <p>The first example from the text illustrates this point. It is the traditional
@@ -113,14 +114,14 @@
       </input>
     </program>
     <p>Even though this is a trivial example, the advantages of Python stand out.
-      Yorktown's Computer Science I course has no prerequisites, so many of the
+      Yorktown<rsq/>s Computer Science I course has no prerequisites, so many of the
       students seeing this example are looking at their first program. Some of them
       are undoubtedly a little nervous, having heard that computer programming is
       difficult to learn. The Java version has always forced me to choose between two
       unsatisfying options: either to explain the <title_reference>class Hello</title_reference>,
       <title_reference>public static void main</title_reference>, <title_reference>String[] args</title_reference>, <title_reference>{</title_reference>, and <title_reference>}</title_reference>, statements and risk
       confusing or intimidating some of the students right at the start, or to tell
-      them, Just don't worry about all of that stuff now; we will talk about it
+      them, Just don<rsq/>t worry about all of that stuff now; we will talk about it
       later, and risk the same thing. The educational objectives at this point in the
       course are to introduce students to the idea of a programming statement and to
       get them to write their first program, thereby introducing them to the

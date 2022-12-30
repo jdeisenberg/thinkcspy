@@ -111,7 +111,7 @@ print(2 + 3)
     <choices>
       <choice>
         <statement>
-          <p>measure the speed of a program's execution.</p>
+          <p>measure the speed of a programs<rsq/>s execution.</p>
         </statement>
         <feedback>
                     In fact, codelens steps through each line one by one as you click, which is MUCH slower than the Python interpreter.

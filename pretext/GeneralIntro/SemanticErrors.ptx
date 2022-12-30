@@ -9,9 +9,9 @@
             write. The meaning of the program (its semantics) is wrong.  Identifying
             semantic errors can be tricky because it requires you to work backward by
             looking at the output of the program and trying to figure out what it is doing.</p>
-  <p>
-    <term>Check your understanding</term>
-  </p>
+          <p>Unlike syntax and runtime errors, Python can<rsq/>t help you find semantic errors because it has no way of knowing what you intended. An example of semantic errors might be adding a discount to a total instead of subtracting it.
+          </p>
+  
   <exercise label="question1_8_1">
     <statement>
       <p>Which of the following is a semantic error?</p>

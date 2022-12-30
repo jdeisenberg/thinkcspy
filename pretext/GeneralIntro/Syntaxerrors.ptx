@@ -57,7 +57,7 @@
           <p>The programmer.</p>
         </statement>
         <feedback>
-                    Programmers rarely find all the syntax errors, there is a computer program that will do it for us.
+                    Programmers rarely find all the syntax errors; there is a computer program that will do it for us.
                 </feedback>
       </choice>
       <choice correct="yes">

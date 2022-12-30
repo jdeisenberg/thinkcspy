@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="general-intro_exercises">
   <title>Exercises</title>
-  <exercise label="intro_exercise_about_you">
+  <exercise>
       <statement>
         <p>
             This exercise will let you practice displaying information.  Write a program that prints following:
@@ -11,7 +11,7 @@
             <li>Your favorite color.</li>
             <li>Your favorite word, in double quotes.</li>
             <li>Your favorite poem, at least three lines long (If your favorite poem is longer than ten lines, give only the first three to ten lines.)</li>
-            <li>The author of the poem. The name should be indented four spaces and preceded by a hyphen and a space. If you don't know who wrote the poem, use <q>Anonymous</q> as the author.</li>
+            <li>The author of the poem. The name should be indented four spaces and preceded by a hyphen and a space. If you don't know who wrote the poem, use “Anonymous” as the author.</li>
         </ul>
 
         <p>Use complete sentences and blank lines for readability.  To print a blank line, use:</p>
@@ -38,7 +38,6 @@ Rejoice in the sunset
 When day is done.
     - Anonymous
     </output></console>
-
 </statement>
     <program interactive="activecode" language="python" xml:id="ch01_ex1_editor">
       <input>

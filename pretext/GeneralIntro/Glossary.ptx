@@ -14,12 +14,12 @@
       <title>bug</title>
       <p>An error in a program.</p>
     </gi>
-    <gi>
+    <!--<gi>
       <title>byte code</title>
       <p>An intermediate language between source code and object code. Many
                             modern languages first compile source code into byte code and then
                             interpret the byte code with a program called a <em>virtual machine</em>.</p>
-    </gi>
+    </gi>-->
     <gi>
       <title>codelens</title>
       <p>An interactive environment that allows the user to control the step by step execution of a Python program</p>
@@ -44,10 +44,10 @@
       <title>exception</title>
       <p>Another name for a runtime error.</p>
     </gi>
-    <gi>
+    <!--<gi>
       <title>executable</title>
       <p>Another name for object code that is ready to be executed.</p>
-    </gi>
+    </gi>-->
     <gi>
       <title>formal language</title>
       <p>Any one of the languages that people have designed for specific
@@ -73,18 +73,18 @@
       <title>natural language</title>
       <p>Any one of the languages that people speak that evolved naturally.</p>
     </gi>
-    <gi>
+    <!--<gi>
       <title>object code</title>
       <p>The output of the compiler after it translates the program.</p>
-    </gi>
-    <gi>
+    </gi>-->
+    <!--<gi>
       <title>parse</title>
-      <p>To examine a program and analyze the syntactic structure.</p>
-    </gi>
-    <gi>
+      <p>To examine a program and analyze its syntactic structure.</p>
+    </gi>-->
+    <!--<gi>
       <title>portability</title>
       <p>A property of a program that can run on more than one kind of computer.</p>
-    </gi>
+    </gi>-->
     <gi>
       <title>print function</title>
       <p>A function used in a program or script that causes the Python

@@ -9,7 +9,7 @@
 print("Hello, World!")
 </input>
   </program>
-  <p>This is an example of using the <term>print function</term>, which doesn't actually
+  <p>This is an example of using the <term>print function</term>, which doesn<rsq/>t actually
             print anything on paper. It displays a value on the screen. In this case, the result is the phrase:</p>
   <pre>Hello, World!</pre>
   <p>Here is the example in activecode.  Give it a try!</p>
@@ -19,7 +19,7 @@ print("Hello, World!")
         </input>
   </program>
   <p>The quotation marks in the program mark the beginning and end of the value.
-            They don't appear in the result.</p>
+            They don<rsq/>t appear in the result.</p>
   <p>Some people judge the quality of a programming language by the simplicity of
             the Hello, World! program. By this standard, Python does about as well as
             possible.</p>
@@ -28,7 +28,7 @@ print("Hello, World!")
   </p>
   <exercise label="question1_11_1">
     <statement>
-      <p>The print function:</p>
+      <p>The <c>print</c> function:</p>
     </statement>
     <choices>
       <choice>
@@ -36,7 +36,7 @@ print("Hello, World!")
           <p>sends information to the printer to be printed on paper.</p>
         </statement>
         <feedback>
-                    Within the Python programming language, the print function has nothing to do with the printer.
+                    Within the Python programming language, the <c>print</c> function has nothing to do with the printer.
                 </feedback>
       </choice>
       <choice correct="yes">
@@ -44,7 +44,7 @@ print("Hello, World!")
           <p>displays a value on the screen.</p>
         </statement>
         <feedback>
-                    Yes, the print function is used to display the value of the thing being printed.
+                    Yes, the <c>print</c> function is used to display the value of the thing being printed.
                 </feedback>
       </choice>
       <choice>
@@ -52,7 +52,7 @@ print("Hello, World!")
           <p>tells the computer to put the information in print, rather than cursive, format.</p>
         </statement>
         <feedback>
-                    The format of the information is called its font and has nothing to do with the print function.
+                    The format of the information is called its font and has nothing to do with the <c>print</c> function.
                 </feedback>
       </choice>
       <choice>
@@ -65,4 +65,16 @@ print("Hello, World!")
       </choice>
     </choices>
   </exercise>
+  
+  <p>
+    Time to do some experimenting. In the activecode window below, write a program that will display the words <c>My program works!</c>.
+  </p>
+
+  <program xml:id="ch01_experiment" interactive="activecode" language="python">
+    <input></input>
+  </program>
+
+  <p>Once you get that working, see if you can do more than one <c>print</c> in a Python program. Try changing the program so that it will display two lines of output:</p>
+  <pre>My program works!
+I wrote it in Python.</pre>
 </section>
