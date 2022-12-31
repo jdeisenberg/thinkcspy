@@ -8,13 +8,14 @@
   <targets>
     <target name="web">
       <format>html</format>
-      <source>pretext/thinkcspy.ptx</source>
+      <source>pretext/cs20-thinkcspy.ptx</source>
       <publication>pretext/publication-rs-for-all.xml</publication>
       <output-dir>output/html</output-dir>
+      <!--<stringparam key="debug.react.global" value="yes"/>-->
     </target>
     <target name="runestone">
       <format>html</format>
-      <source>pretext/thinkcspy.ptx</source>
+      <source>pretext/cs20-thinkcspy.ptx</source>
       <publication>pretext/publication-rs-academy.xml</publication>
       <output-dir>published/httlacs</output-dir>
     </target>
