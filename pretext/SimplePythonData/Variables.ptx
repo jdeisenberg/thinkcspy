@@ -9,47 +9,55 @@
   <program language="python">
     <input>
 message = "What's up, Doc?"
-n = 17
-pi = 3.14159
+age = 27
+price = 11.95
     </input>
   </program>
   <p>This example makes three assignments. The first assigns the string value
     <c>"What's up, Doc?"</c> to a new variable named <c>message</c>. The second gives the
-            integer <c>17</c> to <c>n</c>, and the third assigns the floating-point number
-    <c>3.14159</c> to a variable called <c>pi</c>.
+            integer <c>27</c> to <c>age</c>, and the third assigns the floating-point number
+    <c>11.95</c> to a variable called <c>price</c>.
   </p>
-  <p>The <term>assignment token</term>,    <c>=</c>, should not be confused with <em>equality</em> (we will see later that equality uses the
-    <c>==</c> token).  The assignment statement links a <em>name</em>, on the left hand
+  <p>The <c>=</c> in each of the assignments is called the <term>assignment operator</term>.</p>
+  <p>An assignment statement links a <em>name</em>, on the left hand
             side of the operator, with a <em>value</em>, on the right hand side.  This is why you
             will get an error if you enter:</p>
   <program language="python">
     <input>
-17 = n
+27 = age
     </input>
   </program>
   <note>
-    <p>When reading or writing code, say to yourself <q>n is assigned 17</q> or <q>n gets
-                the value 17</q> or <q>n is a reference to the object 17</q> or <q>n refers to the object 17</q>.  Don't say <q>n equals 17</q>.
+    <p>The assignment operator does <em>not</em> work the same way as the equal sign in algebra. 
+      When you see <c>age = 27</c>, read it as one of these:
     </p>
+    <p>
+    <ul>
+      <li><q>age is assigned 27</q></li>
+      <li><q>age gets the value 27</q></li>
+      <li><q>age becomes 27</q></li>
+      </ul>
+    </p>
+    <p>If you really wanted to be formal, you could even say <q>age is a reference to the object 27</q> or <q>age refers to the object 27</q>. But whatever you do, <em>don<rsq/>t</em> say <q>age equals 27</q>.</p>
   </note>
   <p>A common way to represent variables on paper is to write the name with an arrow
             pointing to the variable's value. This kind of figure, known as a <term>reference diagram</term>, is often called a <term>state
                 snapshot</term> because it shows what state each of the variables is in at a
-            particular instant in time.  (Think of it as the variable's state of mind).
+              particular instant in time.  (Think of it as the variable<rsq/>s state of mind).
             This diagram shows the result of executing the assignment statements shown above.</p>
-  <image source="SimplePythonData/Figures/refdiagram1.png" width="50%" alt="Reference Diagram"/>
+  <image source="SimplePythonData/Figures/refdiagram1a.png" width="50%" alt="Reference Diagram"/>
   <p>If you ask Python to evaluate a variable, it will produce the value
             that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to
             by the variable.</p>
   <program xml:id="ch02_9" interactive="activecode" language="python">
     <input>
 message = "What's up, Doc?"
-n = 17
-pi = 3.14159
+age = 27
+price = 11.95
 
 print(message)
-print(n)
-print(pi)
+print(age)
+print(price)
     </input>
   </program>
   <p>In each case the result is the value of the variable.
@@ -57,12 +65,12 @@ print(pi)
   <program xml:id="ch02_9_cl" interactive="codelens" language="python">
     <input>
           message = "What's up, Doc?"
-          n = 17
-          pi = 3.14159
+          age = 27
+          price = 11.95
           
           print(message)
-          print(n)
-          print(pi)
+          print(age)
+          print(price)
     </input>
   </program>
   <p>Now, as you step through the statements, you can see
@@ -73,12 +81,12 @@ print(pi)
   <program xml:id="ch02_10" interactive="activecode" language="python">
     <input>
 message = "What's up, Doc?"
-n = 17
-pi = 3.14159
+age = 27
+price = 11.95
 
 print(type(message))
-print(type(n))
-print(type(pi))
+print(type(age))
+print(type(price))
     </input>
   </program>
   <p>The type of a variable is the type of the object it currently refers to.</p>
@@ -87,12 +95,12 @@ print(type(pi))
             over time, just like the scoreboard at a football game.  You can assign a value
             to a variable, and later assign a different value to the same variable.</p>
   <note>
-    <p>This is different from math. In math, if you give <title_reference>x</title_reference> the value 3, it
+    <p>This is different from math. In math, if you give <em>x</em> the value 3, it
                 cannot change to refer to a different value half-way through your
                 calculations!</p>
   </note>
   <p>To see this, read and then run the following program.
-            You'll notice we change the value of <title_reference>day</title_reference> three times, and on the third
+    You<rsq/>ll notice we change the value of <c>day</c> three times, and on the third
             assignment we even give it a value that is of a different type.</p>
   <program xml:id="ch02_11" interactive="codelens" language="python">
     <input>
@@ -105,20 +113,17 @@ print(type(pi))
     </input>
   </program>
   <p>A great deal of programming is about having the computer remember things.  For example, we might want to keep
-            track of the number of missed calls on your phone.  Each time another call is missed, we will arrange to update
-            or change the variable so that it will always reflect the correct value.</p>
-  <p>
-    <term>Check your understanding</term>
-  </p>
+            track of the number of missed calls on your phone.  Each time another call is missed, we will arrange to update or change the variable so that it will always reflect the correct value.</p>
+  
   <exercise label="test_question2_3_2">
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
         <input>
-day = "Thursday"
-day = 32.5
-day = 19
-print(day)
+weight = "heavy"
+weight = 32.5
+weight = 19
+print(weight)
         </input>
       </program>
     </statement>
@@ -128,7 +133,7 @@ print(day)
           <p>Nothing is printed. A runtime error occurs.</p>
         </statement>
         <feedback>
-                    It is legal to change the type of data that a variable holds in Python.
+          <p>It is legal to change the type of data that a variable holds in Python.</p>
         </feedback>
       </choice>
       <choice>
@@ -136,7 +141,7 @@ print(day)
           <p>Thursday</p>
         </statement>
         <feedback>
-                    This is the first value assigned to the variable day, but the next statements reassign that variable to new values.
+          <p>This is the first value assigned to the variable <c>weight</c>, but the next statements reassign that variable to new values.</p>
         </feedback>
       </choice>
       <choice>
@@ -144,7 +149,7 @@ print(day)
           <p>32.5</p>
         </statement>
         <feedback>
-                    This is the second value assigned to the variable day, but the next statement reassigns that variable to a new value.
+          <p>This is the second value assigned to the variable <c>weight</c>, but the next statement reassigns that variable to a new value.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -152,7 +157,7 @@ print(day)
           <p>19</p>
         </statement>
         <feedback>
-                    The variable day will contain the last value assigned to it when it is printed.
+          <p>The variable <c>weight</c> will contain the last value assigned to it when it is printed.</p>
         </feedback>
       </choice>
     </choices>
