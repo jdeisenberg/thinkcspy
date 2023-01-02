@@ -7,9 +7,11 @@
             
     <p>For example, a variable named <c>age</c> gives you a good idea of what the variable<rsq/>s purpose is. A name like <c>a</c>, on the other hand isn<rsq/>t very meaningful. Does it mean age, average, account, or what?</p>
     
-    <p>When you are writing programs in this course, you should <em>always</em> choose a meaningful name. (But don<rsq/>t go overboard: <c>age_in_years_as_of_last_birthday</c> is, well, ridiculous.)</p>
+    <p>When you are writing programs in this course, you should choose meaningful names for your variables. (But don<rsq/>t go overboard: <c>age_in_years_as_of_last_birthday</c> is, well, a bit too much.)</p>
     
-    <p>There are exceptions to this guideline: if you are writing a program that implements a well known mathematical formula, then variable names like <c>x</c> and <c>y</c> might be fine.  If there are abbreviations that are commonly used, then a short name like <c>qty</c> is as meaningful as <c>quantity</c>. Sometimes, if a variable doesn<rsq/>t have an inherent meaning, as in an example, you<rsq/>ll see variables like <c>a</c> or <c>b</c>.</p>
+    <p>There are exceptions to this guideline: if you are writing a program that implements a well known mathematical formula, then variable names like <c>x</c> and <c>y</c> might be fine.  If there are abbreviations that are commonly used, then a short name like <c>qty</c> is as meaningful as <c>quantity</c>.</p>
+    
+    <p>Sometimes, if a variable is used in an example and doesn<rsq/>t have an inherent meaning, you<rsq/>ll see variables like <c>a</c> or <c>b</c>.</p>
     
   <warning>
     <p>Beginners sometimes confuse <q>meaningful to the human readers</q> with

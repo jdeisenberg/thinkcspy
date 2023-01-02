@@ -8,33 +8,32 @@
             (and stop referring to the old value).</p>
   <program xml:id="ch07_reassign1" interactive="activecode" language="python">
     <input>
-bruce = 5
-print(bruce)
-bruce = 7
-print(bruce)
+price = 11.95
+print(price)
+price = 10.88
+print(price)
     </input>
   </program>
-  <p>The first time <c>bruce</c> is
-            printed, its value is 5, and the second time, its value is 7.  The assignment statement changes
-            the value (the object) that <c>bruce</c> refers to.</p>
+  <p>The first time <c>price</c> is printed, its value is 11.95, and the second time, its value is 10.88.  The assignment statement changes the value (the object) that <c>price</c> refers to.</p>
+  
   <p>Here is what <term>reassignment</term> looks like in a reference diagram:</p>
-  <image source="SimplePythonData/Figures/reassign1.png" width="50%" alt="reassignment"/>
-  <p>It is important to note that in mathematics, a statement of equality is always true.  If <c>a is equal to b</c>
-            now, then <c>a will always equal to b</c>. In Python, an assignment statement can make
-            two variables refer to the same object and therefore have the same value.  They appear to be equal.  However, because of the possibility of reassignment,
-            they don't have to stay that way:</p>
+  <image source="SimplePythonData/Figures/reassign1a.png" width="50%" alt="reassignment"/>
+  
+  <p>It is important to note that in mathematics, a statement of equality is always true.  If <c>a is equal to b</c> now, then <c>a will always equal to b</c>. In Python, an assignment statement can make two variables refer to the same object and therefore have the same value. They appear to be equal. However, because of the possibility of reassignment, they don<rsq/>t have to stay that way:</p>
+  
   <program xml:id="ch07_reassign2" interactive="activecode" language="python">
     <input>
 a = 5
-b = a    # after executing this line, a and b are now equal
+b = a    # after executing this line, a and b refer to the same value
 print(a, b)
-a = 3    # after executing this line, a and b are no longer equal
+a = 3    # after executing this line, a and b no longer refer to the same value
 print(a, b)
     </input>
   </program>
   <p>Line 4 changes the value of <c>a</c> but does not change the value of
     <c>b</c>, so they are no longer equal. We will have much more to say about equality in a later chapter.</p>
         </introduction>
+        
     <subsection xml:id="simple-python-data_developing-your-mental-model-of-how-python-evaluates">
     <title>Developing your mental model of How Python Evaluates</title>
     <p>Its important to start to develop a good mental model of the steps Python takes when evaluating an assignment statement.  In an assignment statement Python first evaluates the code on the right hand side of the assignment operator.  It then gives a name to whatever that is.  The (very short) visualization below shows what is happening.</p>
@@ -42,11 +41,7 @@ print(a, b)
     <p>In the first statement <title_reference>a = 5</title_reference> the literal number 5 evaluates to 5, and is given the name <title_reference>a</title_reference>.  In the second statement, the variable <title_reference>a</title_reference> evaluates to 5 and so 5 now ends up with a second name <title_reference>b</title_reference>.
     </p>
     <note>
-      <p>In some programming languages, a different
-                    symbol is used for assignment, such as <c>&lt;-</c> or <c>:=</c>.  The intent is
-                    that this will help to avoid confusion.  Python
-                    chose to use the tokens <c>=</c> for assignment, and <c>==</c> for equality.  This is a popular
-                    choice also found in languages like C, C++, Java, and C#.</p>
+      <p>In some programming languages, a different symbol is used for assignment, such as <c>&lt;-</c> or <c>:=</c>.  The intent is that this will help to avoid confusion.  Python chose to use the tokens <c>=</c> for assignment, and <c>==</c> for testing to see if two values are equal.  This is a popular choice also found in languages like C, C++, Java, and C#.</p>
     </note>
     <p>
       <term>Check your understanding</term>
@@ -65,34 +60,34 @@ x = 22
       <choices>
         <choice>
           <statement>
-            <p>x is 15 and y is 15</p>
+            <p><c>x</c> is 15 and <c>y</c> is 15</p>
           </statement>
           <feedback>
-                    Look at the last assignment statement which gives x a different value.
+            Look at the last assignment statement, which gives <c>x</c> a different value.
           </feedback>
         </choice>
         <choice>
           <statement>
-            <p>x is 22 and y is 22</p>
+            <p><c>x</c> is 22 and <c>y</c> is 22</p>
           </statement>
           <feedback>
-                    No, x and y are two separate variables.  Just because x changes in the last assignment statement, it does not change the value that was copied into y in the second statement.
+            No, x and <c>y</c> are two separate variables.  Just because <c>x</c> changes in the last assignment statement, it does not change the value that was copied into <c>y</c> in the second statement.
           </feedback>
         </choice>
         <choice>
           <statement>
-            <p>x is 15 and y is 22</p>
+            <p><c>x</c> is 15 and <c>y</c> is 22</p>
           </statement>
           <feedback>
-                    Look at the last assignment statement, which reassigns x, and not y.
+                    Look at the last assignment statement, which reassigns <c>x</c>, and not <c>y</c>.
           </feedback>
         </choice>
         <choice correct="yes">
           <statement>
-            <p>x is 22 and y is 15</p>
+            <p><c>x</c> is 22 and <c>y</c> is 15</p>
           </statement>
           <feedback>
-                    Yes, x has the value 22 and y the value 15.
+            Yes, <c>x</c> has the value 22 and <c>y</c> the value 15.
           </feedback>
         </choice>
       </choices>

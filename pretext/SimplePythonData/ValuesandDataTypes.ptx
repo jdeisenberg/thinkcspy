@@ -36,7 +36,7 @@ print(type(22))
 &gt;&gt;&gt; type(22)</pre>
 </note>
   
-  <p>Continuing with our discussion of data types, numbers with a decimal point belong to a class called <term>float</term>, because these numbers are represented in a format called <em>floating-point</em>.  At this stage, you can treat the words <em>class</em> and <em>type</em> interchangeably.  We<rsq/>ll come back to a deeper understanding of what a class is in later chapters.</p>
+<p>Continuing with our discussion of data types, numbers with a decimal point belong to a class called <term>float</term>, because these numbers are represented in a format called <em>floating-point</em>. (<url href="https://www.youtube.com/watch?v=R7Qb3LoSo84">See this video</url> for where <em>floating-point</em> means.) At this stage, you can treat the words <em>class</em> and <em>type</em> interchangeably.  We<rsq/>ll come back to a deeper understanding of what a class is in later chapters.</p>
   <program xml:id="ch02_2" interactive="activecode" language="python">
     <input>
 print(type(17))
