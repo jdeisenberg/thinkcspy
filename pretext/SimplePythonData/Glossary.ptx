@@ -21,7 +21,7 @@ n = n + 1
                             on the left.</p>
     </gi>
     <gi>
-      <title>assignment token</title>
+      <title>assignment token (assignment operator)</title>
       <p><c>=</c> is Python's assignment token, which should not be confused
                             with the mathematical comparison operator using the same symbol.</p>
     </gi>

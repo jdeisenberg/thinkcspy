@@ -9,12 +9,9 @@
 x = x + 1
 </input>
   </program>
-  <p>This means get the current value of x, add one, and then update x with the new
-            value.  The new value of x is the old value of x plus 1.  Although this assignment statement may
-            look a bit strange, remember that executing assignment is a two-step process.  First, evaluate the
-            right-hand side expression.  Second, let the variable name on the left-hand side refer to this new
-            resulting object.  The fact that <c>x</c> appears on both sides does not matter.  The semantics of the assignment
-            statement makes sure that there is no confusion as to the result.  The visualizer makes this very clear.</p>
+  <p>In algebra, this is an impossible statement; a variable can<rsq/>t be equal to itself plus one.</p>
+  <p>But remember, in Python, <c>=</c> is the <em>assignment operator</em>. In Python, this statement says: get the current value of <c>x</c>, add one, and then update <c>x</c> with the new value.  The new value of <c>x</c> becomes the old value of <c>x</c> plus 1.</p>
+  <p>Remember that executing assignment is a two-step process.  First, Python <em>aways</em> evaluates the expression on the right side of the <c>=</c>. Second, the variable name on the left-hand side will be assigned the resulting object. The fact that <c>x</c> appears on both sides does not matter.  The semantics of the assignment statement makes sure that there is no confusion as to the result.  The visualizer makes this very clear.</p>
   <exercise runestone="se_updatevar1"/>
   <program xml:id="ch07_update1" interactive="activecode" language="python">
     <input>
@@ -24,14 +21,8 @@ x = x + 1    # update x
 print(x)
         </input>
   </program>
-  <p>If you try to update a variable that doesn't exist, you get an error because
-            Python evaluates the expression on the right side of the assignment operator
-            before it assigns the resulting value to the name on the left.
-            Before you can update a variable, you have to <term>initialize</term> it, usually with a
-            simple assignment.  In the above example, <c>x</c> was initialized to 6.</p>
-  <p>Updating a variable by adding 1 is called an <term>increment</term>; subtracting 1 is
-            called a <term>decrement</term>.  Sometimes programmers also talk about <term>bumping</term>
-            a variable, which means the same as incrementing it by 1.</p>
+  <p>If you try to update a variable that doesn't exist, you get an error because Python evaluates the expression on the right side of the assignment operator before it assigns the resulting value to the variable on the left. Before you can update a variable, you have to <term>initialize</term> it, usually with a simple assignment.  In the above example, <c>x</c> was initialized to 6.</p>
+  <p>Updating a variable by adding 1 is called an <term>increment</term>; subtracting 1 is called a <term>decrement</term>.  Sometimes programmers also talk about <term>bumping</term> a variable, which means the same as incrementing it by 1.</p>
   <note>
     <title>Advanced Topics</title>
     <p>
@@ -72,7 +63,7 @@ print(x)
           <p>12</p>
         </statement>
         <feedback>
-                    The value of x changes in the second statement.
+          The value of <c>x</c> changes in the second statement.
                 </feedback>
       </choice>
       <choice>
@@ -80,7 +71,7 @@ print(x)
           <p>-1</p>
         </statement>
         <feedback>
-                    In the second statement, substitute the current value of x before subtracting 1.
+          In the second statement, substitute the current value of <c>x</c> before subtracting 1.
                 </feedback>
       </choice>
       <choice correct="yes">
@@ -88,15 +79,15 @@ print(x)
           <p>11</p>
         </statement>
         <feedback>
-                    Yes, this statement sets the value of x equal to the current value minus 1.
+          Yes, this statement sets the value of <c>x</c> equal to the current value minus 1.
                 </feedback>
       </choice>
       <choice>
         <statement>
-          <p>Nothing.  An error occurs because x can never be equal to x - 1.</p>
+          <p>Nothing.  An error occurs because <c>x</c> can never be equal to <c>x</c> - 1.</p>
         </statement>
         <feedback>
-                    Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.
+            Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.
                 </feedback>
       </choice>
     </choices>
@@ -120,7 +111,7 @@ print(x)
           <p>12</p>
         </statement>
         <feedback>
-                    The value of x changes in the second statement.
+          The value of <c>x</c> changes in the second statement.
                 </feedback>
       </choice>
       <choice>
@@ -128,7 +119,7 @@ print(x)
           <p>9</p>
         </statement>
         <feedback>
-                    Each statement changes the value of x, so 9 is not the final result.
+          Each statement changes the value of <c>x</c>, so 9 is not the final result.
                 </feedback>
       </choice>
       <choice correct="yes">
@@ -136,19 +127,20 @@ print(x)
           <p>15</p>
         </statement>
         <feedback>
-                    Yes, starting with 12, subtract 3, than add 5, and finally add 1.
+                    Yes, starting with 12, subtract 3, then add 5, and finally add 1.
                 </feedback>
       </choice>
       <choice>
         <statement>
-          <p>Nothing.  An error occurs because x cannot be used that many times in assignment statements.</p>
+          <p>Nothing.  An error occurs because <c>x</c> cannot be used that many times in assignment statements.</p>
         </statement>
         <feedback>
-                    Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.
+            Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.
                 </feedback>
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="question2_10_3" indent="show" language="python">
     <statement>
       <p>Construct the code that will result in the value 134 being printed.</p>
