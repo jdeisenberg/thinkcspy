@@ -8,10 +8,12 @@
     <xi:include href="./VariableNameStyle.ptx"/>
     <xi:include href="./StatementsandExpressions.ptx"/>
     <xi:include href="./OperatorsandOperands.ptx"/>
-    <xi:include href="./MoreAboutStrings.ptx"/>
+    <xi:include href="./PlanningAProgram.ptx"/>
     <xi:include href="./Input.ptx"/>
-    <!--<xi:include href="./Typeconversionfunctions.ptx"/>-->
-    <xi:include href="./OrderofOperations.ptx"/>
+    <xi:include href="./TypeConversionFunctions.ptx"/>
+    <xi:include href="./FinishingInputProgram.ptx"/>
+    <xi:include href="./OrderOfOperations.ptx"/>
+    <xi:include href="./MoreAboutStrings.ptx"/>
     <xi:include href="./Reassignment.ptx"/>
     <xi:include href="./UpdatingVariables.ptx"/>
     <xi:include href="./Glossary.ptx"/>

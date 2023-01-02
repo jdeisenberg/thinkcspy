@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<section xml:id="simple-python-data_finishing-input-program">
+  <title>Using Input in a Program</title>
+  <p>Now that we have the final puzzle piece in place, we can write the code that lets users choose any number of seconds they like, and we will tell them how many hours, minutes, and seconds that works out to.</p>
+  
+  <p>Here is an activecode area with the pseudo-code in comments. Put in the Python code and test your program to see that it gives the correct results.</p>
+  
+  <program xml:id="finish_input_program" interactive="activecode" language="python">
+    <input>
+# Use the input function to read number of seconds into str_total_seconds
+# Use the int function to convert str_total_seconds to total_seconds
+
+# Calculate hours as the quotient of dividing total_seconds and 3600
+
+# Calculate seconds_remaining as the remainder of dividing total_seconds and 3600.
+
+# Calculate minutes as the quotient of dividing seconds_remaining by 60.
+
+# Calculate seconds_finally_remaining as the remainder of dividing
+# seconds_remaining by 60.
+
+# Print hours, minutes, and seconds_finally_remaining,
+# properly labeled.
+    </input>
+  </program>
+  
+</section>
