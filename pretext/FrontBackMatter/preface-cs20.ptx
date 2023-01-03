@@ -4,6 +4,6 @@
   <p>by J. David Eisenberg</p>
   <p>This edition is designed for students in Computer Science 020 (Introduction to Programming) at <url href="https://www.evc.edu">Evergreen Valley College</url> in San José, California. Many of our students are taking the course to find out if Computer Science is something they<rsq/>d like to pursue.</p>
   <p>We want to provide them with a zero-cost textbook, and <pubtitle>How to Think Like a Computer Scientist</pubtitle> is a great choice. While considering the book, we found that it goes in greater depth than we would like for the introductory course, and the topics are not exactly in the order that we think best for that course.</p>
-  <p>Luckily, the book is open source, so we were free to make the changes that we wanted.</p>
+  <p>Luckily, the book is open source, so we were free to make the changes that we wanted. Some of this involved copying exercises from another open-source version of the original material: <pubtitle>Python for Everybody</pubtitle>, adapted to an interactive version by Dr. Barabara Ericson.</p>
   <p>[More verbiage to come here, or at least some editing to make it seem sensible.]</p>
 </preface>
