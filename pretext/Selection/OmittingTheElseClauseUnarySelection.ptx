@@ -19,6 +19,10 @@ print("This is always printed")
         </input>
   </program>
   <p>What would be printed if the value of <c>x</c> is negative?  Try it.</p>
+  
+  <note>
+    <p>This form of <c>if</c> statement is much less common than the <c>if</c>-<c>else</c> statement you learned about in <xref ref="selection_conditional-execution-binary-selection"/>.</p>
+  </note>
   <p>
     <term>Check your understanding</term>
   </p>
@@ -49,7 +53,7 @@ The negative number -10 is not valid here</pre>
           <p>Output a</p>
         </statement>
         <feedback>
-                    Because -10 is less than 0, Python will execute the body of the if-statement here.
+          Because -10 is less than 0, Python will execute the body of the <c>if</c> statement here.
                 </feedback>
       </choice>
       <choice correct="yes">
@@ -57,7 +61,7 @@ The negative number -10 is not valid here</pre>
           <p>Output b</p>
         </statement>
         <feedback>
-                    Python executes the body of the if-block as well as the statement that follows the if-block.
+                    Python executes the body of the <c>if</c> block as well as the statement that follows the <c>if</c> block.
                 </feedback>
       </choice>
       <choice>
@@ -65,19 +69,20 @@ The negative number -10 is not valid here</pre>
           <p>Output c</p>
         </statement>
         <feedback>
-                    Python will also execute the statement that follows the if-block (because it is not enclosed in an else-block, but rather just a normal statement).
+          Python will also execute the statement that follows the <c>if</c> block because it is not enclosed in an <c>else</c> block, but rather just a normal statement.
                 </feedback>
       </choice>
       <choice>
         <statement>
-          <p>It will cause an error because every if must have an else clause.</p>
+          <p>It will cause an error because every <c>if</c> must have an <c>else</c> clause.</p>
         </statement>
         <feedback>
-                    It is valid to have an if-block without a corresponding else-block (though you cannot have an else-block without a corresponding if-block).
+          It is valid to have an <c>if</c> block without a corresponding <c>else</c> block (though you cannot have an <c>else</c> block without a corresponding <c>if</c> block).
                 </feedback>
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="test_question6_5_2">
     <statement>
       <p>Will the following code cause an error?</p>
@@ -99,7 +104,7 @@ else:
           <p>No</p>
         </statement>
         <feedback>
-                    Every else-block must have exactly one corresponding if-block.  If you want to chain if-else statements together, you must use the else if construct, described in the chained conditionals section.
+          Every <c>if</c> block must have exactly one corresponding  <c>else</c> block.  You will see how to make a chain of conditions in a later section.
                 </feedback>
       </choice>
       <choice correct="yes">
@@ -107,9 +112,48 @@ else:
           <p>Yes</p>
         </statement>
         <feedback>
-                    This will cause an error because the second else-block is not attached to a corresponding if-block.
+          This will cause an error because the second <c>else</c> block is not attached to a corresponding <c>if</c> block.
                 </feedback>
       </choice>
     </choices>
   </exercise>
+  
+  <p>If you are not comfortable with the unary <c>if</c> and are of the opinion that every <c>if</c> should <em>always</em> have an <c>else</c>, Python has you covered. The Python language inludes a special statement called <c>pass</c>, which means <q>do nothing</q>.</p>
+  
+  <p>Here is a program with a unary selection:</p>
+  
+  <program language="python" xml:id="unary_program">
+    <input>
+number = int(input("Enter a non-negative number: "))
+
+if number &lt; 0:
+    print("Sorry, negative numbers are not allowed.")
+    
+print("Your number was", number)
+</input>
+</program>
+
+<p>And here is the same program using <c>pass</c> so that we can have an <c>else</c> clause to go with the <c>if</c>:</p>
+
+  <program language="python" xml:id="binary_with_pass_program">
+    <input>
+number = int(input("Enter a non-negative number: "))
+
+if number &lt; 0:
+    print("Sorry, negative numbers are not allowed.")
+else:
+    pass
+
+print("Your number was", number)
+</input>
+</program>
+
+<p>You can copy and paste these programs into this activecode area to try them out and see that they do the same thing.</p>
+
+<program interactive="activecode" language="python">
+  <input>
+  </input>
+</program>
+
+  
 </section>

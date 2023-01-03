@@ -2,13 +2,11 @@
 <section xml:id="selection_conditional-execution-binary-selection">
   <title>Conditional Execution: Binary Selection</title>
   <video xml:id="HriDtn-0Dcw" youtube="HriDtn-0Dcw" width="auto"/>
-  <p>In order to write useful programs, we almost always need the ability to check
-            conditions and change the behavior of the program accordingly. <term>Selection statements</term>, sometimes
-            also referred to as <term>conditional statements</term>, give us this ability. The simplest form of selection is the <term>if statement</term>.
-            This is sometimes referred to as <term>binary selection</term> since there are two possible paths of execution.</p>
-  <program xml:id="ch05_4" interactive="activecode" language="python">
+  <p>Now that we know how to express <q>true or false</q> questions in Python, it<rsq/>s time to put them to use. In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. <term>Selection statements</term>, sometimes also referred to as <term>conditional statements</term>, give us this ability. The simplest form of selection is the <term>if statement</term>. This is sometimes referred to as <term>binary selection</term> since there are two possible paths of execution.</p>
+  <program xml:id="odd_even_prog1" interactive="activecode" language="python">
     <input>
-x = 15
+x_str = input("Enter a number:")
+x = int(x_str)
 
 if x % 2 == 0:
     print(x, "is even")
@@ -16,7 +14,9 @@ else:
     print(x, "is odd")
         </input>
   </program>
+  
   <p>The syntax for an <c>if</c> statement looks like this:</p>
+  
   <program language="python">
     <input>
 if BOOLEAN EXPRESSION:
@@ -32,21 +32,21 @@ else:
     <title>Flowchart of a <term>if</term> statement with an <term>else</term></title>
     <image source="Selection/Figures/flowchart_if_else.png" width="50%"/>
   </sidebar>
-  <p>As with the function definition from the last chapter and other compound
-            statements like <c>for</c>, the <c>if</c> statement consists of a header line and a body. The header
+  <p>The <c>if</c> statement consists of a header line and a body. The header
             line begins with the keyword <c>if</c> followed by a <em>boolean expression</em> and ends with
             a colon (:).</p>
-  <p>The more indented statements that follow are called a <term>block</term>.</p>
-  <p>Each of the statements inside the first block of statements is executed in order if the boolean
+  <p>The indented statements that follow are called a <term>block</term>.</p>
+  <p>Each of the statements inside the first block of statements is executed in order when the boolean
             expression evaluates to <c>True</c>. The entire first block of statements
             is skipped if the boolean expression evaluates to <c>False</c>, and instead
             all the statements under the <c>else</c> clause are executed.</p>
   <p>There is no limit on the number of statements that can appear under the two clauses of an
             <c>if</c> statement, but there has to be at least one statement in each block.</p>
-  <p>Each compound statement includes a heading and all the following further-indented statements in
-            the block after the heading.  The <c>if</c> - <c>else</c> statement is an unusual compound statement because it
+  <p>We will see more compound statements later in this course. In general, all compound statements include a heading and all the following further-indented statements in the block after the heading. <!-- The <c>if</c> - <c>else</c> statement is an unusual compound statement because it
             has more than one part at the same level of indentation as the <c>if</c> heading,
-            (the <c>else</c> clause, with its own indented block).</p>
+  (the <c>else</c> clause, with its own indented block).--></p>
+  
+  <!--
   <note>
     <title>Lab</title>
     <p>
@@ -58,12 +58,13 @@ else:
       </ul>
     </p>
   </note>
+  -->
   <p>
-    <term>Check your understanding</term>
+    Check your understanding
   </p>
   <exercise label="test_question6_4_1">
     <statement>
-      <p>How many statements can appear in each block (the if and the else) in a conditional statement?</p>
+      <p>How many statements can appear in each block (the <c>if</c> and the <c>else</c>) in a conditional statement?</p>
     </statement>
     <choices>
       <choice>
@@ -92,7 +93,7 @@ else:
       </choice>
       <choice>
         <statement>
-          <p>One or more, and each must contain the same number.</p>
+          <p>One or more, and each must contain the same number of statements.</p>
         </statement>
         <feedback>
                     The blocks may contain different numbers of statements.
@@ -100,41 +101,42 @@ else:
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="test_question6_4_2">
     <statement>
       <p>What does the following code print (choose from output a, b, c or nothing)?</p>
       <program language="python">
         <input>
 if 4 + 5 == 10:
-    print("TRUE")
+    print("Math is broken")
 else:
-    print("FALSE")
+    print("Math is correct")
 </input>
       </program>
     </statement>
     <choices>
       <choice>
         <statement>
-          <p>TRUE</p>
+          <p>Math is broken</p>
         </statement>
         <feedback>
-                    TRUE is printed by the if-block, which only executes if the conditional (in this case, 4+5 == 10) is true.  In this case 5+4 is not equal to 10.
+          <q>Math is broken</q> is printed by the <c>if</c> block, which only executes if the conditional (in this case, 4 + 5 == 10) is true.  However, 4 + 5 is not equal to 10.
                 </feedback>
       </choice>
       <choice correct="yes">
         <statement>
-          <p>FALSE</p>
+          <p>Math is correct</p>
         </statement>
         <feedback>
-                    Since 4+5==10 evaluates to False, Python will skip over the if block and execute the statement in the else block.
+          Since 4 + 5 == 10 evaluates to <c>False</c>, Python will skip over the <c>if</c> block and execute the statement in the <c>else</c> block.
                 </feedback>
       </choice>
       <choice>
         <statement>
-          <p>TRUE on one line and FALSE on the next</p>
+          <p><q>Math is broken</q> on one line and <q>Math is correct</q> on the next</p>
         </statement>
         <feedback>
-                    Python would never print both TRUE and FALSE because it will only execute one of the if-block or the else-block, but not both.
+          Python would never print both sentences because it will only execute either the <c>if</c> block or the <c>else</c> block, but not both.
                 </feedback>
       </choice>
       <choice>
@@ -142,36 +144,33 @@ else:
           <p>Nothing will be printed</p>
         </statement>
         <feedback>
-                    Python will always execute either the if-block (if the condition is true) or the else-block (if the condition is false).  It would never skip over both blocks.
+                    Python will always execute either the <c>if</c> block (when the condition is true) or the <c>else</c> block (when the condition is false).  It would never skip over both blocks.
                 </feedback>
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="test_question6_4_3">
     <statement>
       <p>What does the following code print?</p>
       <program language="python">
         <input>
-if 4 + 5 == 10:
-    print("TRUE")
+if 5 % 2 == 1:
+    print("odd")
 else:
-    print("FALSE")
-print("TRUE")
+    print("even")
+print("finished")
 </input>
       </program>
-      <pre>a. TRUE
-
+      <pre>a. 
+   finished
 b.
-   TRUE
-   FALSE
-
+   odd
+   finished
 c.
-   FALSE
-   TRUE
-d.
-   TRUE
-   FALSE
-   TRUE</pre>
+   odd
+   even
+   finished</pre>
     </statement>
     <choices>
       <choice>
@@ -179,31 +178,23 @@ d.
           <p>Output a</p>
         </statement>
         <feedback>
-                    Although TRUE is printed after the if-else statement completes, both blocks within the if-else statement print something too.  In this case, Python would have had to have skipped both blocks in the if-else statement, which it never would do.
-                </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>Output b</p>
-        </statement>
-        <feedback>
-                    Because there is a TRUE printed after the if-else statement ends, Python will always print TRUE as the last statement.
+          Although <c>finished</c> is printed after the <c>if</c>-<c>else</c> statement completes, both blocks within the <c>if</c>-<c>else</c> statement print something too.  For this choice to be correct, Python would have to skip both blocks in the <c>if</c>-<c>else</c> statement, which it never would do.
                 </feedback>
       </choice>
       <choice correct="yes">
         <statement>
-          <p>Output c</p>
+          <p>Output b</p>
         </statement>
         <feedback>
-                    Python will print FALSE from within the else-block (because 5+4 does not equal 10), and then print TRUE after the if-else statement completes.
+          Python will print <c>odd</c> from within the <c>else</c> block (because 5 % 2 does equal 1), and then print <c>finished</c> after the <c>if</c>-<c>else</c> statement completes.
                 </feedback>
       </choice>
       <choice>
         <statement>
-          <p>Output d</p>
+          <p>Output c</p>
         </statement>
         <feedback>
-                    To print these three lines, Python would have to execute both blocks in the if-else statement, which it can never do.
+                    To print these three lines, Python would have to execute both blocks in the <c>if</c>-<c>else</c> statement, which it can never do.
                 </feedback>
       </choice>
     </choices>

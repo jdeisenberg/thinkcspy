@@ -1,98 +1,57 @@
 <?xml version="1.0"?>
 <section xml:id="selection_precedence-of-operators">
   <title>Precedence of Operators</title>
-  <p>We have now added a number of additional operators to those we learned in the previous chapters.  It is important to understand how these operators relate to the others with respect to operator precedence.  Python will always evaluate the arithmetic operators first (** is highest, then multiplication/division, then addition/subtraction).  Next comes the relational operators.  Finally, the logical operators are done last.  This means that the expression <c>x*5 &gt;= 10 and y-6 &lt;= 20</c> will be evaluated so as to first perform the arithmetic and then check the relationships.  The <c>and</c> will be done last.  Although many programmers might place parenthesis around the two relational expressions, it is not necessary.</p>
-  <p>The following table summarizes the precedence discussed so far from highest to lowest.
+  <p>We have now added a number of additional operators to those we learned in the previous chapters.  It is important to understand how these operators relate to the others with respect to operator precedence.  Python will always evaluate the arithmetic operators first (** is highest, then multiplication/division, then addition/subtraction).  Next comes the relational operators.  Finally, the logical operators are done last.  This means that the expression <c>x*5 &gt;= 10 and y - 6 &lt;= 20</c> will be evaluated so as to first perform the arithmetic and then check the relationships.  The <c>and</c> will be done last.  Although many programmers might place parenthesis around the two relational expressions, it is not necessary.</p>
+  
+  <p>That having been said, <em>when in doubt, use parentheses</em>. In fact, even when you <em>aren<rsq/>t</em> in doubt, use parentheses!!! Quick<mdash/>without looking at the following table of priorities<mdash/>which logical operations happen in which order:</p>
+  
+  <p><c>age &lt; 21 or day == 6 and hour &gt; 15 and not month &lt; 6 or month &gt; 9</c></p>
+  
+  <p>Without parentheses, this is totally confusing, even to people who have memorized the precedence table.</p>
+  
+  <p>If you ever encounter code like the preceding monstrosity, you<rsq/>ll need the following table to help you untangle the mess. The table summarizes the precedence discussed so far from highest to lowest.
             See <xref ref="appendices_operator-precedence-table"/> for <em>all</em> the operators introduced in this book.</p>
   <table>
     <tabular>
       <row header="yes">
-        <cell>
-                            Level
-                        </cell>
-        <cell>
-                            Category
-                        </cell>
-        <cell>
-                            Operators
-                        </cell>
+        <cell>Level</cell>
+        <cell>Category</cell>
+        <cell>Operators</cell>
       </row>
       <row>
-        <cell>
-                            7(high)
-                        </cell>
-        <cell>
-                            exponent
-                        </cell>
-        <cell>
-                            **
-                        </cell>
+        <cell>7(high)</cell>
+        <cell>exponent</cell>
+        <cell>**</cell>
       </row>
       <row>
-        <cell>
-                            6
-                        </cell>
-        <cell>
-                            multiplication
-                        </cell>
-        <cell>
-                            *,/,//,%
-                        </cell>
+        <cell>6</cell>
+        <cell>multiplicative</cell>
+        <cell>*,/,//,%</cell>
       </row>
       <row>
-        <cell>
-                            5
-                        </cell>
-        <cell>
-                            addition
-                        </cell>
-        <cell>
-                            +,-
-                        </cell>
+        <cell>5</cell>
+        <cell>additive</cell>
+        <cell>+,-</cell>
       </row>
       <row>
-        <cell>
-                            4
-                        </cell>
-        <cell>
-                            relational
-                        </cell>
-        <cell>
-                            ==,!=,&lt;=,&gt;=,&gt;,&lt;
-                        </cell>
+        <cell>4</cell>
+        <cell>relational</cell>
+        <cell>==,!=,&lt;=,&gt;=,&gt;,&lt;</cell>
       </row>
       <row>
-        <cell>
-                            3
-                        </cell>
-        <cell>
-                            logical
-                        </cell>
-        <cell>
-                            not
-                        </cell>
+        <cell>3</cell>
+        <cell>logical</cell>
+        <cell>not</cell>
       </row>
       <row>
-        <cell>
-                            2
-                        </cell>
-        <cell>
-                            logical
-                        </cell>
-        <cell>
-                            and
-                        </cell>
+        <cell>2</cell>
+        <cell>logical</cell>
+        <cell>and</cell>
       </row>
       <row>
-        <cell>
-                            1(low)
-                        </cell>
-        <cell>
-                            logical
-                        </cell>
-        <cell>
-                            or
-                        </cell>
+        <cell>1(low)</cell>
+        <cell>logical</cell>
+        <cell>or</cell>
       </row>
     </tabular>
   </table>
@@ -110,12 +69,13 @@
   </p>
   <exercise label="test_question6_3_1">
     <statement>
-      <p>Which of the following properly expresses the precedence of operators (using parentheses) in the following expression: 5*3 &gt; 10 and 4+6==11</p>
+      <p>Which of the following properly expresses the precedence of operators (using parentheses) in the following expression:
+        <c>5 * 3 &gt; 10 and 4 + 6 == 11</c></p>
     </statement>
     <choices>
       <choice correct="yes">
         <statement>
-          <p>((5*3) &gt; 10) and ((4+6) == 11)</p>
+          <p><c>((5 * 3) &gt; 10) and ((4 + 6) == 11)</c></p>
         </statement>
         <feedback>
                     Yes, * and + have higher precedence, followed by &gt; and ==, and then the keyword "and"
@@ -123,7 +83,7 @@
       </choice>
       <choice>
         <statement>
-          <p>(5*(3 &gt; 10)) and (4 + (6 == 11))</p>
+          <p><c>(5 * (3 &gt; 10)) and (4 + (6 == 11))</c></p>
         </statement>
         <feedback>
                     Arithmetic operators (*, +) have higher precedence than comparison operators (&gt;, ==)
@@ -131,7 +91,7 @@
       </choice>
       <choice>
         <statement>
-          <p>((((5*3) &gt; 10) and 4)+6) == 11</p>
+          <p><c>((((5 * 3) &gt; 10) and 4) + 6) == 11</c></p>
         </statement>
         <feedback>
                     This grouping assumes Python simply evaluates from left to right, which is incorrect.  It follows the precedence listed in the table in this section.
@@ -139,7 +99,7 @@
       </choice>
       <choice>
         <statement>
-          <p>((5*3) &gt; (10 and (4+6))) == 11</p>
+          <p><c>((5 * 3) &gt; (10 and (4 + 6))) == 11</c></p>
         </statement>
         <feedback>
                     This grouping assumes that "and" has a higher precedence than ==, which is not true.
