@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<section xml:id="conditional_short-circuit-evaluation-of-logical-expressions">
+  <title><q>Short-circuit</q> Evaluation of Logical Expressions</title>
+      <idx>Short Circuit</idx>
+    <idx>Guardian Pattern</idx>
+    <idx>Guard</idx>
+    <p>
+      Take a look at this program that determines a rebate, based on the average amount of orders:
+    </p>
+    
+    <program interactive="activecode" language="python">
+      <input>
+n_orders = int(input("Enter number of orders: "))
+total = float(input("Enter total amount sold: "))
+if n_orders &gt; 0 and total / n_orders &gt;= 30.0:
+    print("You get a 5% rebate.")
+else:
+    print("Sorry, you do not get a rebate.")
+    </input>
+  </program>
+  
+  <p>
+    Try runing the program with 10 orders totaling $500. You will get a rebate. No problem.
+  </p>
+  
+  <p>
+    Now, try running the program with zero orders totaling $500. Why did that work? Why didn<rsq/>t the program crash when it tried to divide by zero (the number of orders)?
+  </p>
+
+  <p>
+    The answer is that when Python processes a logical expression such as:
+  </p>
+  <pre>n_orders&#160;&gt;&#160;0&#160;and&#160;total&#160;/&#160;n_orders&#160;&gt;=&#160;30.0</pre>
+  <p>Python evaluates the expression from left to right. Because of the definition of <c>and</c>, when <c>n_orders</c> is zero, the expression <c>n_orders&#160;&gt;&#160;0</c> is <c>False</c>, and so the whole expression is <c>False</c> regardless of whether <c>total&#160;/&#160;n_orders&#160;&gt;=&#160;30.0</c> evaluates to <c>True</c> or <c>False</c>.
+    </p>
+          
+  <p>
+    When Python detects that there is nothing to be gained by evaluating the rest of a logical expression, it stops its evaluation and does not do the computations in the rest of the logical expression. When the evaluation of a logical expression stops because the overall value is already known, it is called <term>short-circuiting</term> the evaluation.
+  </p>
+  
+  <p>
+    While this may seem like a fine point, the short-circuit behavior leads to a clever technique called the <term>guardian pattern</term>. Consider the following code sequence in Python:</p>
+  <program xml:id="cndtnlShortCircuit" interactive="activecode" language="python">
+    <input>
+x = 6
+y = 2
+print(x &gt;= 2 and (x / y) &gt; 2)
+
+x = 1
+y = 0
+print(x &gt;= 2 and (x / y) &gt; 2)
+
+x = 6
+y = 0
+print(x &gt;= 2 and (x / y) &gt; 2)
+        </input>
+  </program>
+  
+  <p>
+    The third calculation failed because Python was evaluating <c>(x / y)</c> and <c>y</c> was zero, which causes a runtime error. But the second example did <em>not</em> fail because the first part of the expression <c>x&#160;&gt;=&#160;2</c> evaluated to <c>False</c>. Because of the short-circuit rule, the <c>(x&#160;/&#160;y)</c> was not executed, and there was no error.
+  </p>
+  
+  <p>
+    We can construct the logical expression to strategically place a <em>guard</em> evaluation just before the evaluation that might cause an error as follows:
+  </p>
+  <program xml:id="cndtnlGuardian" interactive="activecode" language="python">
+    <input>
+x = 1
+y = 0
+print(x &gt;= 2 and y != 0 and (x/y) &gt; 2)
+
+x = 1
+y = 0
+print(x &gt;= 2 and y != 0 and (x/y) &gt; 2)
+
+x = 6
+y = 0
+print(x &gt;= 2 and (x/y) &gt; 2 and y != 0)
+        </input>
+  </program>
+  <p>In the first logical expression, <c>x&#160;&gt;=&#160;2</c> is <c>False</c> so the evaluation stops right away. Neither <c>y&#160;!=&#160;0</c> or <c>(x&#160;/&#160;y)&#160;&gt;&#160;2</c> is evaluated.</p>
+  <p>In the second logical expression, <c>x&#160;&gt;=&#160;2</c> is <c>True</c>
+            but <c>y&#160;!=&#160;0</c> is <c>False</c>, so we never reach
+            <c>(x&#160;/&#160;y)</c>.</p>
+  <p>In the third logical expression, the <c>y&#160;!=&#160;0</c> is <em>after</em> the
+            <c>(x&#160;/&#160;y)</c> calculation ,so the expression fails with an error.</p>
+  <p>In the second expression, we say that <c>y&#160;!=&#160;0</c> acts as a
+            <em>guard</em> to insure that we only execute <c>(x&#160;/&#160;y)</c>
+            if <c>y</c> is non-zero.</p>
+          
+  <exercise label="cndtnl-sc-mc-guard">
+    <statement>
+      <p>Q-3: Which of the following is a <em>guard</em> for the code below?</p>
+      <pre>x&#160;&gt;=&#160;2&#160;and&#160;y&#160;!=&#160;0&#160;and&#160;(x&#160;/&#160;y)&#160;&gt;&#160;2</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p><c>x &gt;= 2</c></p>
+        </statement>
+        <feedback>
+          <p>Try again. This element is making sure x matches a condition.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p><c>y != 0</c></p>
+        </statement>
+        <feedback>
+          <p>This element is a guard, making sure the code does not try to divide by 0.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p><c>(x / y) &gt; 2</c></p>
+        </statement>
+        <feedback>
+          <p>Try again. This element is making sure <c>x / y</c> matches a condition.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p><c>and</c></p>
+        </statement>
+        <feedback>
+          <p>Try again. This is a logical operator for the boolean expression.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  
+  <exercise label="cndtnl-sc-dnd-terms">
+    <statement>
+      <p>Match each term with its meaning.</p>
+    </statement>
+    <feedback>
+      <p>What is the purpose of each term?</p>
+    </feedback>
+    <matches>
+      <match order="1">
+        <premise>guardian pattern</premise>
+        <response>A logical expression with additional comparisons to take advantage
+of the short circuit behavior.</response>
+      </match>
+      <match order="2">
+        <premise>short circuit</premise>
+        <response>When Python is part-way through evaluating a logical expression and stops
+the evaluation because Python knows the final value for the expression without needing to
+evaluate the rest of the expression.</response>
+      </match>
+      <match order="3">
+        <premise>guard</premise>
+        <response> A comparison put in place to cause short circuit behavior and avoid a runtime error.</response>
+      </match>
+    </matches>
+  </exercise>
+</section>
