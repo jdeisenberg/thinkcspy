@@ -357,14 +357,13 @@ year = int(input("Enter the year: "))
             </li>
           </ol>
         </p>
-        <p>The <c>date_of_easter</c> will give the day in March when Easter occurs. If this value is greater than 31, then the day is in April, and you must subtract 7 from the <c>date_of_easter</c> variable.</p>
+        <p>The <c>date_of_easter</c> will give the day in March when Easter occurs. If this value is greater than 31, then the day is in April, and you must subtract 31 from the <c>date_of_easter</c> variable.</p>
       <p>If the year is one of four special years (1954, 1981, 2049, or 2076) then subtract 7 from the date.</p>
       <p>Your program should print an error message if the user provides a date that is out of range.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_6_13_editor">
       <input>
-
-        </input>
+      </input>
     </program>
     <solution>
       <program xml:id="answer_ex_6_13" language="python">
@@ -374,8 +373,8 @@ if year &gt;= 1900 and year &lt;= 2099:
     a = year % 19
     b = year % 4
     c = year % 7
-    d = (19*a + 24) % 30
-    e = (2*b + 4*c + 6*d + 5) % 7
+    d = (19 * a + 24) % 30
+    e = (2 * b + 4 * c + 6 * d + 5) % 7
     dateofeaster = 22 + d + e
 
     if year == 1954 or year == 2981 or year == 2049 or year == 2076:
