@@ -1,154 +1,75 @@
 <?xml version="1.0"?>
 <section xml:id="selection_chained-conditionals">
   <title>Chained conditionals</title>
-  <p>Python provides an alternative way to write nested selection such as the one shown in the previous section.
-            This is sometimes referred to as a <term>chained
-                conditional</term>.</p>
-  <program language="python">
-    <input>
-if x &lt; y:
-    print("x is less than y")
-elif x &gt; y:
-    print("x is greater than y")
-else:
-    print("x and y must be equal")
-</input>
-  </program>
-  <p>The flow of control can be drawn in a different orientation but the resulting pattern is identical to the one shown above.</p>
-  <image source="Selection/Figures/flowchart_chained_conditional.png" width="50%"/>
-  <p><c>elif</c> is an abbreviation of <c>else if</c>. Again, exactly one branch will be
-            executed. There is no limit of the number of <c>elif</c> statements but only a
-            single (and optional) final <c>else</c> statement is allowed and it must be the last
-            branch in the statement.</p>
-  <p>Each condition is checked in order. If the first is false, the next is checked,
-            and so on. If one of them is true, the corresponding branch executes, and the
-            statement ends. Even if more than one condition is true, only the first true
-            branch executes.</p>
-  <p>Here is the same program using <c>elif</c>.</p>
-  <program xml:id="sel4" interactive="activecode" language="python">
-    <input>
-x = 10
-y = 10
-
-if x &lt; y:
-    print("x is less than y")
-elif x &gt; y:
-    print("x is greater than y")
-else:
-    print("x and y must be equal")
-        </input>
-  </program>
-  <note>
-    <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_06_02" interactive="activecode" language="python">
-      <input>
-
-
-        </input>
-    </program>
-  </note>
-  <p>
-    <term>Check your understanding</term>
+    <idx>Chained Conditional</idx>
+    <idx><h>Keyword</h><h>Elif</h></idx>
+    <idx><h>Elif</h><h>Keyword</h></idx>
+  <p>Sometimes there are more than two possibilities and we need more than
+    two branches. For example, when we compare two numbers <c>x</c> and <c>y</c>, we have three possibilities:
+    <ul>
+      <li><c>x</c> is less than <c>y</c></li>
+      <li><c>x</c> is greater than <c>y</c></li>
+      <li><c>x</c> equals <c>y</c></li>
+    </ul>
   </p>
-  <exercise label="test_question6_7_1">
+      
+  <p>One way to express a computation like that is a  <term>chained conditional</term>:</p>
+  <program xml:id="cndtnl_elif" interactive="codelens" language="python">
+    <input>
+x = 12
+y = 12.0
+if x &lt; y:
+    print('x is less than y')
+elif x &gt; y:
+    print('x is greater than y')
+else:
+    print('x and y are equal')
+print('All done.')
+    </input>
+  </program>
+  <p><c>elif</c> is an abbreviation of <q>else if.</q> Again, exactly one
+    branch will be executed. The flowchart for this program is shown in <xref ref="fig_chained_elif"/>.</p>
+  <figure xml:id="fig_chained_elif" align="">
+    <title>Flowchart of <c>if</c>-<c>elif</c> Chain</title>
+    <caption>Flowchart of <c>if</c>-<c>elif</c> Chain</caption>
+    <image source="Selection/Figures/elif" width="50%" alt="If-ElseIf Logic"/>
+  </figure>
+  
+  <p>Notice that we didn<rsq/>t have to test <c>x == y</c>; if <c>x</c> isn<rsq/>t greater than <c>y</c>, and it isn<rsq/>t less than <c>y</c>, then they <em>must</em> be equal. A simple <c>else</c> takes care of that case.</p>
+  
+  <p>There is no limit on the number of <c>elif</c> statements in a chain. If
+            there is an <c>else</c> clause, it has to be at the end, but there
+            doesn<rsq/>t have to be one. Try running the following program to see what it does.</p>
+  <program xml:id="elif_example" interactive="activecode" language="python">
+    <input>
+choice = 'b'
+if choice == 'a':
+    print('You chose A')
+elif choice == 'b':
+    print('You chose B')
+elif choice == 'c':
+    print('You chose C')
+else:
+    print('You chose some other letter.')
+    </input>
+  </program>
+  
+  <p>Each condition is checked in order. If the first is False, the next is
+            checked, and so on. If one of them is True, the corresponding branch
+            executes, and the statement ends. Even if more than one condition is
+            True, only the first true branch executes.</p>
+          <p>If none of the conditions is True and you have an <c>else</c> clause at the end, its body will execute.</p>
+  
+    <p>Now make these changes to the preceding program:
+    <ul>
+      <li>Change the first line to <c>choice = 'x'</c>. What do you think the output will be? Run the program and find out if you were right.</li>
+      <li>Comment out the last two lines by putting a <c>#</c> at the beginning of each line. Now what do you think the output will be? Run the program again. Spoiler alert: Because there is now no <c>else</c>, the program will not print anything.</li>
+    </ul>
+  </p>
+
+  <exercise label="cndtnl-chain-mc-elif">
     <statement>
-      <p>Which of I, II, and III below gives the same result as the following nested if?</p>
-      <program language="python">
-        <input>
-# nested if-else statement
-x = -10
-if x &lt; 0:
-    print("The negative number ",  x, " is not valid here.")
-else:
-    if x &gt; 0:
-        print(x, " is a positive number")
-    else:
-        print(x, " is 0")
-</input>
-      </program>
-      <program language="python">
-        <input>
-I.
-
-if x &lt; 0:
-    print("The negative number ",  x, " is not valid here.")
-else x &gt; 0:
-    print(x, " is a positive number")
-else:
-    print(x, " is 0")
-</input>
-      </program>
-      <program language="python">
-        <input>
-II.
-
-if x &lt; 0:
-    print("The negative number ",  x, " is not valid here.")
-elif x &gt; 0:
-    print(x, " is a positive number")
-else:
-    print(x, " is 0")
-</input>
-      </program>
-      <program language="python">
-        <input>
-III.
-
-if x &lt; 0:
-    print("The negative number ",  x, " is not valid here.")
-if x &gt; 0:
-    print(x, " is a positive number")
-else:
-    print(x, " is 0")
-</input>
-      </program>
-    </statement>
-    <choices>
-      <choice>
-        <statement>
-          <p>I only</p>
-        </statement>
-        <feedback>
-                    You can not use a Boolean expression after an else.
-                </feedback>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>II only</p>
-        </statement>
-        <feedback>
-                    Yes, II will give the same result.
-                </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>III only</p>
-        </statement>
-        <feedback>
-                    No, III will not give the same result.  The first if statement will be true, but the second will be false, so the else part will execute.
-                </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>II and III</p>
-        </statement>
-        <feedback>
-                    No, Although II is correct III will not give the same result.  Try it.
-                </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>I, II, and III</p>
-        </statement>
-        <feedback>
-                    No, in I you can not have a Boolean expression after an else.
-                </feedback>
-      </choice>
-    </choices>
-  </exercise>
-  <exercise label="test_question6_7_2">
-    <statement>
-      <p>What will the following code print if x = 3, y = 5, and z = 2?</p>
+      <p>What will the following code print when <c>x = 3</c>, <c>y = 5</c>, and <c>z = 2></c>?</p>
       <program language="python">
         <input>
 if x &lt; y and x &lt; z:
@@ -166,25 +87,188 @@ else:
           <p>a</p>
         </statement>
         <feedback>
-                    While the value in x is less than the value in y (3 is less than 5) it is not less than the value in z (3 is not less than 2).
-                </feedback>
+          <p>While the value in <c>x</c> is less than the value in <c>y</c> (3 is less than 5) it is not less than the value in <c>z</c> (3 is not less than 2).</p>
+        </feedback>
       </choice>
       <choice>
         <statement>
           <p>b</p>
         </statement>
         <feedback>
-                    The value in y is not less than the value in x (5 is not less than 3).
-                </feedback>
+          <p>The value in <c>y</c> is not less than the value in <c>x</c> (5 is not less than 3).</p>
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>c</p>
         </statement>
         <feedback>
-                    Since the first two Boolean expressions are false the else will be executed.
-                </feedback>
+          <p>Since the first two Boolean expressions are <c>False</c>, the <c>else</c> will be executed.</p>
+        </feedback>
       </choice>
     </choices>
   </exercise>
+  <exercise label="cndtnl-chain-mc-grades">
+    <statement>
+      <p>When <c>score = 93</c>, what will print when the following code executes?</p>
+      <pre>if score &gt;= 90:
+    grade = "A"
+elif score &gt;= 80:
+    grade = "B"
+elif score &gt;= 70:
+    grade = "C"
+elif score &gt;= 60:
+    grade = "D"
+else:
+    grade = "E"
+print(grade)</pre>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p>A</p>
+        </statement>
+        <feedback>
+          <p>Because the first statement is satisfied, it does not continue to the following <c>elif</c> or <c>else</c> statements.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>B</p>
+        </statement>
+        <feedback>
+          <p>Try again. This code skips the <c>elif</c>/<c>else</c> statements once an <c>if</c>/<c>elif</c> statement has been satisfied.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>C</p>
+        </statement>
+        <feedback>
+          <p>Try again. This code skips the <c>elif</c>/<c>else</c> statements once an <c>if</c>/<c>elif</c> statement has been satisfied.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>D</p>
+        </statement>
+        <feedback>
+          <p>Try again. This code skips the <c>elif</c>/<c>else</c> statements once an <c>if</c>/<c>elif</c> statement has been satisfied.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>E</p>
+        </statement>
+        <feedback>
+          <p>This will only be true when score does not satisfy the other <c>if</c>/<c>elif</c> statements (so it will only execute when <c>score &lt; 60</c>).</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  
+  <p>Note: an <c>if</c>-<c>elif</c> chain is not the same as a series of separate <c>if</c> statements! To bring this home, look at the next two programs and their flowcharts. First, the <c>if</c>-<c>elif</c> chain:</p>
+  
+      <program language="python" xml:id="prog_example_elif">
+      <input>percent = 80
+if percent >= 75:
+    print("great")
+elif percent >= 50:
+    print("good")
+elif percent &lt; 50:
+    print("fair")
+        </input>
+      </program>
+    
+    <figure xml:id="fig_example_elif" align="">
+    <title>Use of <c>if</c>-<c>elif</c> Chain</title>
+    <caption>Use of <c>if</c>-<c>elif</c> Chain</caption>
+    <image source="Selection/Figures/flowchart_if_else" width="50%" alt="If-ElseIf Logic"/>
+  </figure> 
+  
+  <p>Now, a similar program using separate <c>if</c> statements:</p>
+  <program language="python" xml:id="prog_example_separate_if">
+      <input>percent = 80
+if percent >= 75:
+    print("great")
+if percent >= 50:
+    print("good")
+if percent &lt; 50:
+    print("fair")
+        </input>
+      </program>
+      
+       <figure xml:id="fig_example_separate_if" align="">
+    <title>Example of separate <c>if</c> Statements</title>
+    <caption>Example of separate <c>if</c> Statements</caption>
+    <image source="Selection/Figures/flowchart_separate_if" width="50%" alt="Separate if Logic"/>
+  </figure> 
+  
+  <p>Copy and paste both programs into this ActiveCode area and see how they work.</p>
+  <program interactive="activecode" language="python">
+    <input>
+# paste code here..
+</input>
+  </program>
+  
+<exercise label="cndtnl-chain-mc-ifGrades">
+    <statement>
+      <p>Q-5: If score = 93, what will print when the following code executes?</p>
+      <pre>if score &gt;= 90:
+    grade = "A"
+if score &gt;= 80:
+    grade = "B"
+if score &gt;= 70:
+    grade = "C"
+if score &gt;= 60:
+    grade = "D"
+if score &lt; 60:
+    grade = "E"
+print(grade)</pre>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>A</p>
+        </statement>
+        <feedback>
+          <p>Notice that each of the first four statements start with an <c>if</c>.  What is the value of <c>grade</c> when it is printed?</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>B</p>
+        </statement>
+        <feedback>
+          <p>Each of the first four <c>if</c> statements will execute.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>C</p>
+        </statement>
+        <feedback>
+          <p>Copy this code to an activecode window and run it.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>D</p>
+        </statement>
+        <feedback>
+          <p>Each of the first four if statements will be executed. So <c>grade</c> will be set to A, then B then C and finally D.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>E</p>
+        </statement>
+        <feedback>
+          <p>This will only be true when <c>score</c> is less than 60.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+
 </section>
+

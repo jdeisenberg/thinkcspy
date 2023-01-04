@@ -7,8 +7,9 @@
     <xi:include href="./LogicalOperators.ptx"/>
     <xi:include href="./LogicalOperatorsAdvanced.ptx"/>
     <xi:include href="./PrecedenceOfOperators.ptx"/>
-    <xi:include href="./NestedConditionals.ptx"/>
     <xi:include href="./ChainedConditionals.ptx"/>
+    <xi:include href="./NestedConditionals.ptx"/>
+    <xi:include href="./ShortCircuit.ptx"/>
     <!--<xi:include href="./BooleanFunctions.ptx"/>-->
     <xi:include href="./Glossary.ptx"/>
     <xi:include href="./Exercises.ptx"/>
