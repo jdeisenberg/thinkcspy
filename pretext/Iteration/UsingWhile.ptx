@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section xml:id="iteration_validating-input">
+  <title>Using <c>while</c></title>
+
+    <p>
+        Our first use of <c>while</c> in <xref ref="iteration_the-while-statement"/> was used to count from one to six. In addition to doing counting with <c>while</c>, we normally use a <c>while</c> loop when we don<rsq/>t know in advance how many times a loop will execute. The last program on that page didn<rsq/>t do any counting; it continued until the loop condition came back <c>False</c>. That program was a good example of an example, but not a particularly useful program.
+    </p>
+    
+    <p>
+        One useful and common situation is when we want to <term>validate</term> input: we want to keep asking users for input as long as they don<rsq/>t give us what we want. This sort of loop is called an <term>indefinite loop</term> because we don<rsq/>t know in advance how many iterations we will need. The user might give us good input right away, or they may give us bad input twice, three times, or even fifty times. Here<rsq/>s a program that calculates a person<rsq/>s approximate age in days. We want to make sure that the user doesn<rsq/>t give us a negative number or zero for their age:
+    </p>
+
+    <program xml:id="age_validate" interactive="activecode" language="python">
+    <input>
+years = 0
+while (years &lt;= 0):
+    years = int(input("Enter your age in years: "))
+    if (years &lt;= 0):
+        print("Please enter a number greater than zero.")
+
+days = years * 365
+print("That is about", days, "days old.")
+    </input>
+</program>
+
+    <p>
+        Here is another example of an indefinite loop: when you are at the grocery store, the clerks keep adding the prices for your items until they see the little plastic bar that means <q>that is my last item</q>. The clerks don<rsq/>t know in advance how many items you have; you could have one item, five items, or fifty items.
+    </p> 
+
+    <p>
+        In the following exercise, write a program that keeps adding up prices until the user is finished, and then gives the number of items and the total price. We can<rsq/>t put a little plastic bar in our program, so we need some way to tell the program <q>that is my last item</q>. We will use a price of -1 to indicate that we are finished entering numbers. This is called our <term>sentinel value</term>. The value we choose is arbitrary, but it should be something that distinguishes it from an ordinary value.
+    </p>
+    
+    
+<exercise xml:id="sentinel_value_program">
+    <statement>
+            <p>Here<rsq/>s the plan:</p>
+    <p>
+  <ul>
+    <li><p>Set total to zero.</p></li>
+    <li><p>Set number_of_items to zero.</p></li>
+    <li><p>Set price to zero.</p></li>
+    
+    <li><p>As long as the <c>price</c> is not -1:</p>
+      <ul>
+        <li><p>Input <c>price</c> and convert to <c>float</c>.</p></li>
+        <li><p>If the <c>price</c> is not -1:</p>
+          <ul>
+            <li><p>Add one to <c>number_of_items</c></p></li>
+            <li><p>Add <c>price</c> to <c>total</c>.</p></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><p>Print <c>number_of_items</c> and <c>total</c>, properly labeled.</p></li>
+  </ul>
+</p>
+        <p>Provide the Python code to implement the plan.</p>
+    </statement>
+    <program interactive="activecode" language="python"><input>
+</input></program>
+<solution>
+    <program language="python"><input>
+total = 0.0
+number_of_items = 0
+price = 0
+
+while price != -1:
+    price = float(input("Enter price, or -1 when finished: "))
+    if price != -1:
+        number_of_items = number_of_items + 1
+        total = total + price
+
+print("Number of items:", number_of_items)
+print("Total cost: $", total)
+</input></program>
+</solution>
+</exercise>
+    </section>
+

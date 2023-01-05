@@ -16,7 +16,6 @@
         <xi:include href="./GeneralIntro/toctree.ptx"/>
         <xi:include href="./SimplePythonData/toctree.ptx"/>
         <xi:include href="./Debugging/toctree.ptx"/>
-        <!--<xi:include href="./PythonTurtle/toctree.ptx"/>-->
         <xi:include href="./Conditionals/toctree.ptx"/>
         <xi:include href="./Iteration/toctree.ptx"/>
         <!--<xi:include href="./PythonModules/toctree.ptx"/>-->

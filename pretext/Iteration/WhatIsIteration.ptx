@@ -1,152 +1,72 @@
 <?xml version="1.0"?>
 <section xml:id="iteration_what-is-iteration">
-        <title>What is Iteration?</title>
+    <title>What is Iteration?</title>
+    <idx>Iteration</idx>
         
-        
-<p>Way back in <xref ref="general-intro_more-about-programs"/> we talked about the basic component of most programs:</p>
-<p>
-    <ul>
-        <li>input</li>
-        <li>output</li>
-        <li>math and logic</li>
-        <li>conditional execution</li>
-        <li>repetition</li>
-    </ul>
-</p>
+    <p>
+        Way back in <xref ref="general-intro_more-about-programs"/> we talked about the basic components of most programs:
+    </p>
+    <p>
+        <ul>
+            <li>input</li>
+            <li>output</li>
+            <li>math and logic</li>
+            <li>conditional execution</li>
+            <li>repetition</li>
+        </ul>
+    </p>
 
-<p>You have seen and written programs using all these components except for <em>repetition</em>. Now it<rsq/>s time to investigate that.</p>
+    <p>
+        You have seen and written programs using all these components except for <em>repetition</em>. Now it<rsq/>s time to learn about that.
+    </p>
 
-<p>
-Here<rsq/>s a program that prints the squares and cubes of the numbers 1 through 5.
-</p>
+    <p>
+        Here<rsq/>s a program that prints the squares and cubes of the numbers 1 through 5.
+    </p>
+
+<program interactive="activecode" language="python">
+    <input>
+print(1, 1 * 1, 1 * 1 * 1)
+print(2, 2 * 2, 2 * 2 * 2)
+print(3, 3 * 3, 3 * 3 * 3)
+print(4, 4 * 4, 4 * 4 * 4)
+print(5, 5 * 5, 5 * 5 * 5)
+print("--------")
+    </input>
+</program>
+
+    <p>
+        That <em>looks</em> like repetition, but it<rsq/>s really mostly retyping. Let<rsq/>s rewrite the code to use a variable. That way we can use copy and paste to do our repetition:
+    </p>
 
 <program interactive="activecode" language="python">
     <input>
 n = 1
+
 print(n, n * n, n * n * n)
 n = n + 1 # increment
+
 print(n, n * n, n * n * n)
 n = n + 1
+
 print(n, n * n, n * n * n)
 n = n + 1
+
 print(n, n * n, n * n * n)
 n = n + 1
+
 print(n, n * n, n * n * n)
 print("--------")
     </input>
 </program>
 
-<p>
-    As you see, there is a <em>lot</em> of repetition in this program. Can you imagine what the program would look like if we wanted the table for the numbers 1 through 25? There must be a better way. Repeating identical or similar tasks without making errors is something that computers do well and people do poorly. Because iteration is so common, Python provides several language features to make it easier.</p>
-<p>One form of iteration in Python is the <c>while</c> statement. Here is a program using a <c>while</c> statement that produces the same output:</p>
+    <p>
+        As you see, there is a <em>lot</em> of repetition in this program. Can you imagine what the program would look like if we wanted the table for the numbers 1 through 25? And what if we wanted to ask the user how many entries they wanted in the table? There would be no way to write that program with copy and paste, because we wouldn<rsq/>t know how many times to copy and paste until the user told us! There must be a better way.
+    </p>
 
-<exercise>
-    <program xml:id="codelens511" interactive="codelens" language="python">
-    <input>
-n = 1
-while n &lt;= 5:
-    print(n, n * n, n * n * n)
-    n = n + 1
-print("--------")
-    </input>
-</program>
-        <p>You can almost read the <c>while</c> statement as if it were
-            English. It means, <q>While <c>n</c> is less than or equal to five, display the
-                value of <c>n</c> , <c>n</c> squared, and <c>n</c> cubed; then increase the value of <c>n</c> by 1. When you get
-            to 6 (which is not &lt;= 5), exit the <c>while</c> statement and display the line of dashes.</q></p>
+    <p>
+        We call the process of repeating some section of code <term>iteration</term>, and it is something that computers do well. Because iteration is so common, Python provides several language features to make it easier. Let<rsq/>s investigate some of these features.
+    </p>
 
-    </exercise>
-        <p>More formally, here is the flow of execution for a <c>while</c>
-            statement:</p>
-        <p><ol marker="1">
-            <li>
-                <p>Evaluate the condition, yielding <c>True</c> or
-                    <c>False</c>.</p>
-            </li>
-            <li>
-                <p>If the condition is false, exit the <c>while</c> statement and
-                    continue execution at the next statement.</p>
-            </li>
-            <li>
-                <p>If the condition is true, execute the body and then go back to
-                    step 1.</p>
-            </li>
-        </ol></p>
-        <p>This type of flow is called a <em>loop</em> because the third
-            step loops back around to the top. We call each time we execute the body
-            of the loop an <em>iteration</em>. For the above loop, we would
-            say, <q>It had five iterations</q>, which means that the body of the loop was
-            executed five times.</p>
-
-        <p><xref ref="fig_while_loop"/> shows a flowchart for a generic <c>while</c> loop.</p>
-          <figure xml:id="fig_while_loop" align="">
-            <title>Flowchart of <c>while</c> Loop</title>
-            <caption>Flowchart of <c>while</c> Loop</caption>
-            <image source="Iteration/Figures/flowchart_while" width="80%" alt="loop showing condition, body, and arrows for true/false branches"/>
-            </figure>
-    
-        <exercise label="itWhile_fill1">
-            <statement>
-    <p>Q-3: We call each time we execute the body of the loop an ________. <var/>  </p></statement><setup><var><condition string="[Ii]teration"><feedback><p>Each time we execute the body of a loop, we are completing an iteration.</p></feedback></condition><condition string=".*"><feedback><p>Incorrect! Read the text above this to find the answer. Try again!</p></feedback></condition></var></setup></exercise>        <p>The body of the loop should change the value of one or more variables so
-            that eventually the condition becomes false and the loop terminates. We
-            call the variable that changes each time the loop executes and controls
-            when the loop finishes the <em>iteration variable</em>. If there
-            is no iteration variable, the loop will repeat forever, resulting in an
-            <em>infinite loop</em>.</p>
-
-    <exercise label="itWhile_MC_xy2">
-        <statement>
-
-        <p>Q-4: Consider the code block below. What are the values of x and y when this while loop finishes executing?</p>
-        <program language="python"><input>
-x = 2
-y = 5
-
-while (y &gt; 2 and x &lt; y):
-    x = x + 1
-    y = y - 1
-</input></program>
-
-        </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>x = 2; y = 5</p>
-                </statement>
-                <feedback>
-                    <p>Incorrect! These were the values of x and y at first, but they changed by the time the loop finished executing. Try again.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>x = 5; y = 2</p>
-                </statement>
-                <feedback>
-                    <p>Incorrect! The while loop will finish executing before x and y reach these values. Try again.</p>
-                </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>x = 4; y = 3</p>
-                </statement>
-                <feedback>
-                    <p>Correct! The loop will terminate at x = 4 and y = 3 because at this point, x is not less than y.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>x = 4; y = 2</p>
-                </statement>
-                <feedback>
-                    <p>Incorrect! The way the loop modifies x and y, it is impossible for y to be 2 while x is 4. Try again.</p>
-                </feedback>
-            </choice>
-</choices>
-
-    </exercise>
-    </section>
+</section>
 

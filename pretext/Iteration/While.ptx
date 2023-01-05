@@ -1,92 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section xml:id="iteration_the-while-statement">
-        <title>The <c>while</c> statement</title>
+    <title>The <c>while</c> statement</title>
         
-        
-<idx><h>While</h><h>Statement</h></idx>
-<idx><h>Statement</h><h>While</h></idx>
-<idx><h>While</h><h>Loop</h></idx>
-<idx><h>Loop</h><h>While</h></idx>
-<idx>Iteration</idx>
-<idx>Flow of Execution</idx>
-<idx>Condition</idx>
-<idx>Loop</idx>
-<idx>Body</idx>
-        <p>Computers are often used to automate repetitive tasks. Repeating
-            identical or similar tasks without making errors is something that
-            computers do well and people do poorly. Because iteration is so common,
-            Python provides several language features to make it easier.</p>
-        <p>One form of iteration in Python is the <c>while</c> statement.
-            Here is a simple program that counts down from five and then says
-            <q>Blastoff!</q>.</p>
-<!--
-<program xml:id="codelens511" interactive="codelens" language="python">
+    <idx><h>While</h><h>Statement</h></idx>
+    <idx><h>Statement</h><h>While</h></idx>
+    <idx><h>While</h><h>Loop</h></idx>
+    <idx><h>Loop</h><h>While</h></idx>
+    <idx>Flow of Execution</idx>
+    <idx>Condition</idx>
+    <idx>Loop</idx>
+    <idx>Body</idx>
+    <p>
+        One form of iteration in Python is the <c>while</c> statement. Here is the program for our table of squares and cubes using a <c>while</c> statement that produces the same output. Step through this program with codelens so you can see the repetition in action. 
+    </p>
+<exercise>
+    <program xml:id="codelens511" interactive="codelens" language="python">
     <input>
-n = 5
-while n &gt; 0:
-    print(n)
-    n = n - 1
-print('Blastoff!')
+n = 1
+while n &lt;= 5:
+    print(n, n * n, n * n * n)
+    n = n + 1
+print("--------")
     </input>
 </program>
-        <p>You can almost read the <c>while</c> statement as if it were
-            English. It means, <q>While <c>n</c> is greater than 0, display the
-            value of <c>n</c> and then reduce the value of <c>n</c> by 1. When you get
-            to 0, exit the <c>while</c> statement and display the word <c>Blastoff!</c></q></p>
-
-    <exercise label="itWhile_MC_blastoff">
-        <statement>
-
-        <p>Q-2: Consider the code block below. What happens when you run this program?</p>
-        <program language="python"><input>
-n = 5
-while n &gt; 0:
-    print(n)
-    n = n + 1
-print('Blastoff!')
-</input></program>
-
-        </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>The program has five iterations but does not print anything.</p>
-                </statement>
-                <feedback>
-                    <p>Incorrect! The program both prints things and has more than five iterations. Try again.</p>
-                </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>The loop will repeat forever and results in an infinite loop.</p>
-                </statement>
-                <feedback>
-                    <p>Correct! Because the loop is incrementing, rather than decrementing, n will always be greater than 0 and the loop will never end.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>The program compiles and prints "1 2 3 4 5 Blastoff!" where each space is a new line.</p>
-                </statement>
-                <feedback>
-                    <p>Incorrect! The program will compile, but will not start with 1 and won't ever reach "Blastoff!". Try again.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>The program compiles and prints "5 4 3 2 1 Blastoff!" where each space is a new line.</p>
-                </statement>
-                <feedback>
-                    <p>Incorrect! The program will compile, but it won't ever reach "Blastoff!". Try again.</p>
-                </feedback>
-            </choice>
-</choices>
-
     </exercise>
+
+    <p>
+        You can almost read the <c>while</c> statement as if it were English. It means, <q>While <c>n</c> is less than or equal to five, display the value of <c>n</c> , <c>n</c> squared, and <c>n</c> cubed; then increase the value of <c>n</c> by 1. When you get to 6 (which is not &lt;= 5), exit the <c>while</c> statement and display the line of dashes.</q></p>
+
         <p>More formally, here is the flow of execution for a <c>while</c>
             statement:</p>
         <p><ol marker="1">
@@ -103,25 +44,53 @@ print('Blastoff!')
                     step 1.</p>
             </li>
         </ol></p>
-        <p>This type of flow is called a <em>loop</em> because the third
+        
+        <p>This type of flow is called a <term>loop</term> because the third
             step loops back around to the top. We call each time we execute the body
-            of the loop an <em>iteration</em>. For the above loop, we would
+            of the loop an <term>iteration</term>. For the above loop, we would
             say, <q>It had five iterations</q>, which means that the body of the loop was
             executed five times.</p>
 
+        <p><xref ref="fig_while_loop"/> shows a flowchart for a generic <c>while</c> loop.</p>
+          <figure xml:id="fig_while_loop" align="">
+            <title>Flowchart of <c>while</c> Loop</title>
+            <caption>Flowchart of <c>while</c> Loop</caption>
+            <image source="Iteration/Figures/flowchart_while" width="80%" alt="loop showing condition, body, and arrows for true/false branches"/>
+            </figure>
+    
         <exercise label="itWhile_fill1">
             <statement>
-    <p>Q-3: We call each time we execute the body of the loop an ________. <var/>  </p></statement><setup><var><condition string="[Ii]teration"><feedback><p>Each time we execute the body of a loop, we are completing an iteration.</p></feedback></condition><condition string=".*"><feedback><p>Incorrect! Read the text above this to find the answer. Try again!</p></feedback></condition></var></setup></exercise>        <p>The body of the loop should change the value of one or more variables so
-            that eventually the condition becomes false and the loop terminates. We
-            call the variable that changes each time the loop executes and controls
-            when the loop finishes the <em>iteration variable</em>. If there
-            is no iteration variable, the loop will repeat forever, resulting in an
-            <em>infinite loop</em>.</p>
+                <p>We call each time we execute the body of the loop an ________. <var/>  </p>
+            </statement>
+            <setup>
+                <var>
+                    <condition string="[Ii]teration">
+                    <feedback>
+                        <p>Each time we execute the body of a loop, we are completing an iteration.</p>
+                    </feedback>
+                    </condition>
+                    
+                    <condition string=".*">
+                        <feedback>
+                            <p>Incorrect! Read the text above this to find the answer. Try again!</p>
+                        </feedback>
+                    </condition>
+                </var>
+            </setup>
+        </exercise>
+        
+        <p>
+            <idx>iteration variable</idx>
+            <idx><h>variable</h><h>iteration</h></idx>
+            <idx>infinite loop</idx>
+            <idx><h>loop</h><h>infinite</h></idx>
+            The body of the loop should change the value of one or more variables so that eventually the condition becomes False and the loop terminates. The <term>iteration variable</term> is our name for the variable that changes each time the loop executes and controls when the loop finishes. If there is no iteration variable<mdash/>if no variables change in the loop body<mdash/>the loop will repeat forever, resulting in an <term>infinite loop</term>.
+        </p>
 
     <exercise label="itWhile_MC_xy2">
         <statement>
 
-        <p>Q-4: Consider the code block below. What are the values of x and y when this while loop finishes executing?</p>
+        <p>Consider the code block below. What are the values of <c>x</c> and <c>y</c> when this <c>while</c> loop finishes executing?</p>
         <program language="python"><input>
 x = 2
 y = 5
@@ -136,42 +105,55 @@ while (y &gt; 2 and x &lt; y):
 
             <choice>
                 <statement>
-                    <p>x = 2; y = 5</p>
+                    <p><c>x</c> is 2; <c>y</c> is 5</p>
                 </statement>
                 <feedback>
-                    <p>Incorrect! These were the values of x and y at first, but they changed by the time the loop finished executing. Try again.</p>
+                    <p>Incorrect! These were the values of <c>x</c> and <c>y</c> at first, but they changed by the time the loop finished executing. Try again.</p>
                 </feedback>
             </choice>
 
             <choice>
                 <statement>
-                    <p>x = 5; y = 2</p>
+                    <p><c>x</c> is 5; <c>y</c> is 2</p>
                 </statement>
                 <feedback>
-                    <p>Incorrect! The while loop will finish executing before x and y reach these values. Try again.</p>
+                    <p>Incorrect! The <c>while</c> loop will finish executing before <c>x</c> and <c>y</c> reach these values. Try again.</p>
                 </feedback>
             </choice>
 
             <choice correct="yes">
                 <statement>
-                    <p>x = 4; y = 3</p>
+                    <p><c>x</c> is 4; <c>y</c> is 3</p>
                 </statement>
                 <feedback>
-                    <p>Correct! The loop will terminate at x = 4 and y = 3 because at this point, x is not less than y.</p>
+                    <p>Correct! The loop will terminate when <c>x</c> equals 4 and <c>y</c> equals 3 because at that point, <c>x</c> is not less than <c>y</c>.</p>
                 </feedback>
             </choice>
 
             <choice>
                 <statement>
-                    <p>x = 4; y = 2</p>
+                    <p><c>x</c> is 4; <c>y</c> is 2</p>
                 </statement>
                 <feedback>
-                    <p>Incorrect! The way the loop modifies x and y, it is impossible for y to be 2 while x is 4. Try again.</p>
+                    <p>Incorrect! The way the loop modifies <c>x</c> and <c>y</c>, it is impossible for <c>y</c> to be 2 when <c>x</c> is 4. Try again.</p>
                 </feedback>
             </choice>
 </choices>
 
     </exercise>
-    -->
+    
+    <p>If you had difficulty with the preceding question, here<rsq/>s the program as activecode. We have added a <c>print</c> statement so you can see the values of <c>x</c> and <c>y</c> at each iteration. You might also want to use codelens to see the values of <c>x</c> and <c>y</c> step by step.</p>
+    
+    <program interactive="activecode" language="python">
+<input>
+x = 2
+y = 5
+
+while (y &gt; 2 and x &lt; y):
+    x = x + 1
+    y = y - 1
+    print("x is", x, "and y is", y)
+</input>
+</program>
     </section>
 
