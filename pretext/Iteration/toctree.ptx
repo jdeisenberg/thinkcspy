@@ -5,7 +5,7 @@
         <!--<xi:include href="./Updating.ptx" />-->
         <xi:include href="./While.ptx" />
         <xi:include href="./UsingWhile.ptx" />
-        <xi:include href="./InfiniteLoops.ptx" />
+        <xi:include href="./LoopDetails.ptx" />
         <!--<xi:include href="./continue.ptx" />-->
         <xi:include href="./DefiniteFor.ptx" />
         <xi:include href="./Loops.ptx" />

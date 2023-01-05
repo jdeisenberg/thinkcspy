@@ -1,0 +1,204 @@
+<?xml version="1.0"?>
+<section xml:id="iterations_loop-details">
+  <title><q>Do Nothing</q> and Infinite Loops</title>
+<idx>Infinite Loop</idx>
+<idx><h>Loop</h><h>Infinite</h></idx>
+<idx><h>Infinite</h><h>Loop</h></idx>
+<idx><h>Break</h><h>Statement</h></idx>
+<idx><h>Statement</h><h>Break</h></idx>
+
+  <introduction>
+    <p>
+      This page is going into a bit of detail about <c>while</c> loops. We<rsq/> cover:
+    </p>
+    <p>
+      <ul>
+        <li><p><c>while</c> loops that do nothing</p></li>
+        <li><p>Infinite loops<mdash/>something you should avoid</p></li>
+        <li><p>The <c>break</c> statement and infinite loops</p></li>
+      </ul>
+    </p>
+  </introduction>
+  
+  <subsection xml:id="iterations_do-nothing-loops">
+    <title><c>while</c> Loops That Do Nothing</title>
+    <p>
+      Take another look at the flowchart for a <c>while</c> loop:
+    </p>
+    <figure xml:id="fig_while_loop_redux" align="">
+      <title>Flowchart of <c>while</c> Loop</title>
+      <caption>Flowchart of <c>while</c> Loop</caption>
+      <image source="Iteration/Figures/flowchart_while" width="80%" alt="loop showing condition, body, and arrows for true/false branches"/>
+    </figure>
+    
+    <p>
+      If the condition is <c>False</c> when you enter the loop, the loop body will never be executed at all. The loop will <q>do nothing</q>. Here<rsq/>s another way of doing the <q>loop until you get good input</q>:
+    </p>
+    <program interactive="activecode" language="python">
+      <input>
+years = int(input("Enter your age in years: "))
+while years &lt;= 0:
+    years = int(input("Please enter an age greater than zero: "))
+
+days = years * 365
+print("That is about", days, "days.")
+</input>
+</program>
+
+<p>
+  Let<rsq/>s say you enter a number like 45. The condition <c>years &lt;= 0</c> evaluates to <c>False</c>, and the body of the loop is never executed.
+</p>
+<note>
+  <p>
+    The disadvantage of this sort of loop is the duplication of the <c>input</c> calls. One advantage of this loop is that the prompt for an error can be different than the initial prompt.
+  </p>
+</note>
+
+<p>You should be aware that <c>while</c> loops have the ability to <q>do nothing</q>, and sometimes do it quite gracefully, making your code more elegant.</p>
+    
+  </subsection>
+  
+  <subsection xml:id="iterations_infinite-loops">
+    <title>Infinite Loops</title>
+        <p>
+          An endless source of amusement for programmers is the observation that the directions on shampoo, <q>Lather, rinse, repeat,</q> are an infinite loop
+            because there is no <em>iteration variable</em> telling you how  many times to execute the loop.
+        </p>
+        <p>
+          In some loops, like the table of squares and cubes from <xref ref="iteration_the-while-statement"/>, we can prove that the loop terminates because we know that the value of <c>n</c> is finite, and we can see that the value of <c>n</c> gets larger each time through the loop, so eventually it will reach 6.
+          </p>
+          
+          <p>Other times, a loop is infinite because the value of a variable in the condition never changes, or the loop condition is always <c>True</c>.</p>
+          
+          <p>Here is a loop that was supposed to print the numbers 1 to 10, but which will never end because the code is accidentally subtracting one instead of adding one.<fn>To any experts reading this: Yeah, I know about integer overflow, but cut me a break here.</fn></p>
+  <program xml:id="codelens531" interactive="codelens" language="python">
+    <input>
+n = 1
+while n &lt;= 10:
+    print(n)
+    n = n - 1
+print('Done!')
+    </input>
+  </program>
+  
+  <p>
+    As you can see above, the Code Lens gives you a warning because it runs for over 1000 steps.
+    If you make the mistake of running this code in Thonny (see <xref ref="general-intro_thonny_ide"/>), you can stop a runaway Python program by clicking the stop sign icon. If you are using some other development environment, make sure you find out its way of stopping a program.
+  </p>
+</subsection>
+
+<subsection xml:id="iteration_break-statement">
+  <title>The <c>break</c> Statement</title>
+  
+  <p>Ordinarily, we exit a <c>while</c> loop when the condition becomes <c>False</c>. However, Python provides another way to exit from a loop. If Python encounters a <c>break</c> statement, it will immediately exit the loop.</p>
+  
+  <p>
+      Here<rsq/>s an example. Suppose you want to take input from the user until they type <c>done</c>. You could write:
+  </p>
+  
+  <program language="python">
+    <input>
+while True:
+    line = input('Word: ')
+    if line == 'done':
+        break
+    print(line)
+print ('Done!')
+</input>
+  </program>
+  
+  <p>
+    The loop condition is <c>True</c>, which can never be false. Ordinarily, the loop body would run forever. But when the <c>if</c> condition is <c>True</c> (when <c>line == 'done'</c>), the <c>break</c> will take us out of the loop.
+  </p>
+  
+  
+  <exercise label="itInfinite_fill1">
+    <statement>
+      <p>At what word will the <c>while</c> loop shown above terminate? <var/>  </p>
+    </statement>
+    <setup>
+      <var>
+        <condition string="done">
+          <feedback>
+            <p>The while loop will end when the user types <q>done</q></p>
+          </feedback>
+        </condition>
+        <condition string="Done">
+          <feedback>
+            <p>Incorrect! The conditions of the while loop are case specific. Try again.</p>
+          </feedback>
+        </condition>
+        <condition string=".*">
+          <feedback>
+            <p>Incorrect! Look closely at the code above. Try again.</p>
+          </feedback>
+        </condition>
+      </var>
+    </setup>
+  </exercise>
+  
+  <p>
+    At each iteration, the loop body prompts the user with <c>Word:</c>. If the user types <c>done</c>, the <c>break</c> statement exits the loop. Otherwise, the program echoes whatever the user types and goes back to the top of the loop. Here's a sample run:
+  </p>
+  <pre>Word: hello there
+hello there
+Word: finished
+finished
+Word: done
+Done!</pre>
+
+
+  <p>
+    This way of writing <c>while</c> loops is common because you can check the condition anywhere in the loop (not just at the top) and you can express the stop condition affirmatively (<q>stop when this happens</q>) rather than negatively (<q>keep going until that happens.</q>).
+  </p>
+  
+  <warning>
+    <title>Beware of <c>break</c></title>
+    <p>
+      Although the <c>while True</c>/<c>break</c> combination is in common use, many programmers consider it to be bad style. Using this sort of code requires programmers to read the entire loop body to find the exit condition rather than looking at the head of the loop.
+    </p>
+    <p>
+      This problem becomes worse if the loop body has several <c>break</c> statements, each giving a new place to leave the loop and another thing for the programmer to keep track of.
+    </p>
+    <p>
+      Use <c>while True</c>/<c>break</c> only if there is absolutely no other way to achieve the effect you want. 
+    </p>
+    <p><em>Never use</em> <c>while True</c>/<c>break</c> <em>as a substitute for carefully thinking through the condition for exiting a</em> <c>while</c> <em>loop!</em>
+      </p>
+      <p>
+        You will find that you can often use compound conditions (<c>and</c> and <c>or</c>) to avoid the need for <c>break</c>.
+      </p>
+  </warning>
+
+  <exercise label="itInfinite_PP_1to5" numbered="yes" adaptive="yes" indentation="hide" language="python">
+    <statement>
+      <p>Construct a block of code that prints the numbers 1 through 5. Make sure you
+            use correct indentation! Also, there will be three code blocks that aren't used
+            in the final solution.</p>
+    </statement>
+    <blocks>
+      <block order="7">
+        <cline>n = 0</cline>
+      </block>
+      <block order="3">
+        <cline>while (n &lt; 5):</cline>
+      </block>
+      <block order="6" correct="no">
+        <cline>while (n &lt; 5) </cline>
+      </block>
+      <block order="5" correct="no">
+        <cline>while (n &lt;= 5): </cline>
+      </block>
+      <block order="4" correct="no">
+        <cline>while (n &gt; 5): </cline>
+      </block>
+      <block order="1">
+        <cline>    print(n + 1)</cline>
+      </block>
+      <block order="2">
+        <cline>    n = n + 1</cline>
+      </block>
+    </blocks>
+  </exercise>
+</subsection>
+</section>
