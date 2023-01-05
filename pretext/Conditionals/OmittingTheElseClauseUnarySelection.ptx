@@ -4,7 +4,7 @@
   <video xml:id="unaryselection" youtube="Fd4a8ktQURc" width="auto"/>
   <sidebar>
     <title>Flowchart of an <term>if</term> with no <term>else</term></title>
-    <image source="Selection/Figures/flowchart_if_only.png" width="50%"/>
+    <image source="Conditionals/Figures/flowchart_if_only.png" width="50%"/>
   </sidebar>
   <p>Another form of the <c>if</c> statement is one in which the <c>else</c> clause is omitted entirely.
             This creates what is sometimes called <term>unary selection</term>.

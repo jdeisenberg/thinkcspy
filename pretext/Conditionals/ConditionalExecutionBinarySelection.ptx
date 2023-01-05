@@ -30,7 +30,7 @@ else:
             indented under the <c>else</c> clause get executed.</p>
   <sidebar>
     <title>Flowchart of a <term>if</term> statement with an <term>else</term></title>
-    <image source="Selection/Figures/flowchart_if_else.png" width="50%"/>
+    <image source="Conditionals/Figures/flowchart_if_else.png" width="50%"/>
   </sidebar>
   <p>The <c>if</c> statement consists of a header line and a body. The header
             line begins with the keyword <c>if</c> followed by a <em>boolean expression</em> and ends with

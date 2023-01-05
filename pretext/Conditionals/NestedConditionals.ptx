@@ -25,7 +25,7 @@ print('All done.')
             statement, which has two branches of its own. Those two branches are
             both simple statements, although they could have been conditional
             statements as well.</p>
-  <image source="Selection/Figures/nested.svg" width="50%" alt="Nested If Statements"/>
+  <image source="Conditionals/Figures/nested.svg" width="50%" alt="Nested If Statements"/>
 
   <exercise label="cndtnl-nest-mc-error">
     <statement>

@@ -32,7 +32,7 @@ print('All done.')
   <figure xml:id="fig_chained_elif" align="">
     <title>Flowchart of <c>if</c>-<c>elif</c> Chain</title>
     <caption>Flowchart of <c>if</c>-<c>elif</c> Chain</caption>
-    <image source="Selection/Figures/elif" width="50%" alt="If-ElseIf Logic"/>
+    <image source="Conditionals/Figures/elif" width="50%" alt="If-ElseIf Logic"/>
   </figure>
   
   <p>Notice that we didn<rsq/>t have to test <c>x == y</c>; if <c>x</c> isn<rsq/>t greater than <c>y</c>, and it isn<rsq/>t less than <c>y</c>, then they <em>must</em> be equal. A simple <c>else</c> takes care of that case.</p>
@@ -183,7 +183,7 @@ elif percent &lt; 50:
     <figure xml:id="fig_example_elif" align="">
     <title>Use of <c>if</c>-<c>elif</c> Chain</title>
     <caption>Use of <c>if</c>-<c>elif</c> Chain</caption>
-    <image source="Selection/Figures/flowchart_if_else" width="50%" alt="If-ElseIf Logic"/>
+    <image source="Conditionals/Figures/flowchart_if_else" width="50%" alt="If-ElseIf Logic"/>
   </figure> 
   
   <p>Now, a similar program using separate <c>if</c> statements:</p>
@@ -201,7 +201,7 @@ if percent &lt; 50:
        <figure xml:id="fig_example_separate_if" align="">
     <title>Example of separate <c>if</c> Statements</title>
     <caption>Example of separate <c>if</c> Statements</caption>
-    <image source="Selection/Figures/flowchart_separate_if" width="50%" alt="Separate if Logic"/>
+    <image source="Conditionals/Figures/flowchart_separate_if" width="50%" alt="Separate if Logic"/>
   </figure> 
   
   <p>Copy and paste both programs into this ActiveCode area and see how they work.</p>

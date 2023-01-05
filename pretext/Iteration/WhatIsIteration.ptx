@@ -1,90 +1,59 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<section xml:id="iteration_the-while-statement">
-        <title>The <c>while</c> statement</title>
+<?xml version="1.0"?>
+<section xml:id="iteration_what-is-iteration">
+        <title>What is Iteration?</title>
         
         
-<idx><h>While</h><h>Statement</h></idx>
-<idx><h>Statement</h><h>While</h></idx>
-<idx><h>While</h><h>Loop</h></idx>
-<idx><h>Loop</h><h>While</h></idx>
-<idx>Iteration</idx>
-<idx>Flow of Execution</idx>
-<idx>Condition</idx>
-<idx>Loop</idx>
-<idx>Body</idx>
-        <p>Computers are often used to automate repetitive tasks. Repeating
-            identical or similar tasks without making errors is something that
-            computers do well and people do poorly. Because iteration is so common,
-            Python provides several language features to make it easier.</p>
-        <p>One form of iteration in Python is the <c>while</c> statement.
-            Here is a simple program that counts down from five and then says
-            <q>Blastoff!</q>.</p>
-<!--
-<program xml:id="codelens511" interactive="codelens" language="python">
+<p>Way back in <xref ref="general-intro_more-about-programs"/> we talked about the basic component of most programs:</p>
+<p>
+    <ul>
+        <li>input</li>
+        <li>output</li>
+        <li>math and logic</li>
+        <li>conditional execution</li>
+        <li>repetition</li>
+    </ul>
+</p>
+
+<p>You have seen and written programs using all these components except for <em>repetition</em>. Now it<rsq/>s time to investigate that.</p>
+
+<p>
+Here<rsq/>s a program that prints the squares and cubes of the numbers 1 through 5.
+</p>
+
+<program interactive="activecode" language="python">
     <input>
-n = 5
-while n &gt; 0:
-    print(n)
-    n = n - 1
-print('Blastoff!')
+n = 1
+print(n, n * n, n * n * n)
+n = n + 1 # increment
+print(n, n * n, n * n * n)
+n = n + 1
+print(n, n * n, n * n * n)
+n = n + 1
+print(n, n * n, n * n * n)
+n = n + 1
+print(n, n * n, n * n * n)
+print("--------")
+    </input>
+</program>
+
+<p>
+    As you see, there is a <em>lot</em> of repetition in this program. Can you imagine what the program would look like if we wanted the table for the numbers 1 through 25? There must be a better way. Repeating identical or similar tasks without making errors is something that computers do well and people do poorly. Because iteration is so common, Python provides several language features to make it easier.</p>
+<p>One form of iteration in Python is the <c>while</c> statement. Here is a program using a <c>while</c> statement that produces the same output:</p>
+
+<exercise>
+    <program xml:id="codelens511" interactive="codelens" language="python">
+    <input>
+n = 1
+while n &lt;= 5:
+    print(n, n * n, n * n * n)
+    n = n + 1
+print("--------")
     </input>
 </program>
         <p>You can almost read the <c>while</c> statement as if it were
-            English. It means, <q>While <c>n</c> is greater than 0, display the
-            value of <c>n</c> and then reduce the value of <c>n</c> by 1. When you get
-            to 0, exit the <c>while</c> statement and display the word <c>Blastoff!</c></q></p>
-
-    <exercise label="itWhile_MC_blastoff">
-        <statement>
-
-        <p>Q-2: Consider the code block below. What happens when you run this program?</p>
-        <program language="python"><input>
-n = 5
-while n &gt; 0:
-    print(n)
-    n = n + 1
-print('Blastoff!')
-</input></program>
-
-        </statement>
-<choices>
-
-            <choice>
-                <statement>
-                    <p>The program has five iterations but does not print anything.</p>
-                </statement>
-                <feedback>
-                    <p>Incorrect! The program both prints things and has more than five iterations. Try again.</p>
-                </feedback>
-            </choice>
-
-            <choice correct="yes">
-                <statement>
-                    <p>The loop will repeat forever and results in an infinite loop.</p>
-                </statement>
-                <feedback>
-                    <p>Correct! Because the loop is incrementing, rather than decrementing, n will always be greater than 0 and the loop will never end.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>The program compiles and prints "1 2 3 4 5 Blastoff!" where each space is a new line.</p>
-                </statement>
-                <feedback>
-                    <p>Incorrect! The program will compile, but will not start with 1 and won't ever reach "Blastoff!". Try again.</p>
-                </feedback>
-            </choice>
-
-            <choice>
-                <statement>
-                    <p>The program compiles and prints "5 4 3 2 1 Blastoff!" where each space is a new line.</p>
-                </statement>
-                <feedback>
-                    <p>Incorrect! The program will compile, but it won't ever reach "Blastoff!". Try again.</p>
-                </feedback>
-            </choice>
-</choices>
+            English. It means, <q>While <c>n</c> is less than or equal to five, display the
+                value of <c>n</c> , <c>n</c> squared, and <c>n</c> cubed; then increase the value of <c>n</c> by 1. When you get
+            to 6 (which is not &lt;= 5), exit the <c>while</c> statement and display the line of dashes.</q></p>
 
     </exercise>
         <p>More formally, here is the flow of execution for a <c>while</c>
@@ -109,6 +78,13 @@ print('Blastoff!')
             say, <q>It had five iterations</q>, which means that the body of the loop was
             executed five times.</p>
 
+        <p><xref ref="fig_while_loop"/> shows a flowchart for a generic <c>while</c> loop.</p>
+          <figure xml:id="fig_while_loop" align="">
+            <title>Flowchart of <c>while</c> Loop</title>
+            <caption>Flowchart of <c>while</c> Loop</caption>
+            <image source="Iteration/Figures/flowchart_while" width="80%" alt="loop showing condition, body, and arrows for true/false branches"/>
+            </figure>
+    
         <exercise label="itWhile_fill1">
             <statement>
     <p>Q-3: We call each time we execute the body of the loop an ________. <var/>  </p></statement><setup><var><condition string="[Ii]teration"><feedback><p>Each time we execute the body of a loop, we are completing an iteration.</p></feedback></condition><condition string=".*"><feedback><p>Incorrect! Read the text above this to find the answer. Try again!</p></feedback></condition></var></setup></exercise>        <p>The body of the loop should change the value of one or more variables so
@@ -172,6 +148,5 @@ while (y &gt; 2 and x &lt; y):
 </choices>
 
     </exercise>
-    -->
     </section>
 
