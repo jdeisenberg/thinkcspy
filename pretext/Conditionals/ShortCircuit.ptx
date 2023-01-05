@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="conditional_short-circuit-evaluation-of-logical-expressions">
+<section xml:id="conditionals_short-circuit-evaluation">
   <title><q>Short-circuit</q> Evaluation of Logical Expressions</title>
       <idx>Short Circuit</idx>
     <idx>Guardian Pattern</idx>

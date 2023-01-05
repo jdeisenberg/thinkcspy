@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="selection_chained-conditionals">
+<section xml:id="conditionals_chained-conditionals">
   <title>Chained conditionals</title>
     <idx>Chained Conditional</idx>
     <idx><h>Keyword</h><h>Elif</h></idx>

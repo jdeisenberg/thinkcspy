@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="selection_omitting-the-else-clause-unary-selection">
+<section xml:id="conditionals_omitting-the-else-clause-unary-selection">
   <title>Omitting the <title_reference>else</title_reference> Clause: Unary Selection</title>
   <video xml:id="unaryselection" youtube="Fd4a8ktQURc" width="auto"/>
   <sidebar>
@@ -21,7 +21,7 @@ print("This is always printed")
   <p>What would be printed if the value of <c>x</c> is negative?  Try it.</p>
   
   <note>
-    <p>This form of <c>if</c> statement is much less common than the <c>if</c>-<c>else</c> statement you learned about in <xref ref="selection_conditional-execution-binary-selection"/>.</p>
+    <p>This form of <c>if</c> statement is much less common than the <c>if</c>-<c>else</c> statement you learned about in <xref ref="conditionals_conditional-execution-binary-selection"/>.</p>
   </note>
   <p>
     <term>Check your understanding</term>

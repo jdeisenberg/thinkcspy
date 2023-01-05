@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<section xml:id="selection_mixed-up-code-questions">
+<section xml:id="conditionals_mixed-up-code-questions">
   <title>Mixed-up Code Questions</title>
 
-  <exercise label="selection-mixed-three" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cndtnl-mixed-three" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>Create code that sets the variable <c>result</c> equal to <q>x is less than 3</q> when <c>x</c> is less than 3. Otherwise, set it to <q>All done</q>.</p>
     </statement>
@@ -25,7 +25,7 @@
     </blocks>
   </exercise>
 
-  <exercise label="selection-mixed-hi" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cndtnl-mixed-hi" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>Create code that initializes <c>x</c> to 2 and then sets the variable <c>message</c> to <q>Hello</q> if <c>x</c> is less than <c>2</c>, <q>Hey</q> if <c>x</c> is greater than <c>2</c>, and <q>Hi</q> if <c>x</c> is <c>2</c>.</p>
     </statement>
@@ -69,7 +69,7 @@
     </blocks>
   </exercise>
 
-  <exercise label="selection-mixed-price_v2" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cndtnl-mixed-price_v2" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>Create code that sets <c>price</c> to 1.5 if <c>weight</c> is less than 2, otherwise set <c>price</c> to 1.3. Then, set <c>total</c> to the <c>weight</c> times <c>price</c>. For example, if <c>weight</c> is 0.5 then <c>price</c> should be set to 1.5 and <c>total</c> will be 0.75.</p>
     </statement>
@@ -95,7 +95,7 @@
     </blocks>
   </exercise>
 
-  <exercise label="selection-mixed-ten" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cndtnl-mixed-ten" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>Create code that sets the variable <c>number</c> to <c>x is a number from 1 to 10</c> if the value of x is 1-10, <c>x is a number less than 1</c> if the value of x is zero or below, and <c>x is a number greater than 10</c> if the value of x is more than 10.</p>
     </statement>
@@ -134,7 +134,7 @@
     </blocks>
   </exercise>
 
-  <exercise label="selection-mixed-twelve" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cndtnl-mixed-twelve" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>Create code that sets the variable <c>rate</c> to the cost of a 14 mile cab ride. If the distance traveled is less than or equal to 12 miles, then <c>rate</c> cost is $2.00 a mile, and if the distance traveled is more than 12 miles then <c>rate</c> cost is $1.50 a mile. Assign the final cost to the variable <c>total</c>.</p>
     </statement>
@@ -178,7 +178,7 @@
     </blocks>
   </exercise>
 
-  <exercise label="selection-mixed-even" numbered="yes" adaptive="yes" indentation="hide" language="python">
+  <exercise label="cndtnl-mixed-even" numbered="yes" adaptive="yes" indentation="hide" language="python">
     <statement>
       <p>Create code that should set the variable <c>result</c> to determine whether a number is odd or even.</p>
     </statement>
@@ -215,71 +215,71 @@
   <!--
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=selection-mixed-three_sq data-questionlist='selection-mixed-three, selection-mixed-three_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: selection-mixed-three, selection-mixed-three_write&lt;/p&gt;
+&lt;div data-component="selectquestion" id=cndtnl-mixed-three_sq data-questionlist='cndtnl-mixed-three, cndtnl-mixed-three_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cndtnl-mixed-three, cndtnl-mixed-three_write&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=selection-mixed-hi_sq data-questionlist='selection-mixed-hi, selection-mixed-hi_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: selection-mixed-hi, selection-mixed-hi_write&lt;/p&gt;
+&lt;div data-component="selectquestion" id=cndtnl-mixed-hi_sq data-questionlist='cndtnl-mixed-hi, cndtnl-mixed-hi_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cndtnl-mixed-hi, cndtnl-mixed-hi_write&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=selection-mixed-price_v2_sq data-questionlist='selection-mixed-price_v2, selection-mixed-price_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: selection-mixed-price_v2, selection-mixed-price_write&lt;/p&gt;
+&lt;div data-component="selectquestion" id=cndtnl-mixed-price_v2_sq data-questionlist='cndtnl-mixed-price_v2, cndtnl-mixed-price_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cndtnl-mixed-price_v2, cndtnl-mixed-price_write&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=selection-mixed-ten_sq data-questionlist='selection-mixed-ten, selection-mixed-ten_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: selection-mixed-ten, selection-mixed-ten_write&lt;/p&gt;
+&lt;div data-component="selectquestion" id=cndtnl-mixed-ten_sq data-questionlist='cndtnl-mixed-ten, cndtnl-mixed-ten_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cndtnl-mixed-ten, cndtnl-mixed-ten_write&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=selection-mixed-twelve_sq data-questionlist='selection-mixed-twelve, selection-mixed-twelve_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: selection-mixed-twelve, selection-mixed-twelve_write&lt;/p&gt;
+&lt;div data-component="selectquestion" id=cndtnl-mixed-twelve_sq data-questionlist='cndtnl-mixed-twelve, cndtnl-mixed-twelve_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cndtnl-mixed-twelve, cndtnl-mixed-twelve_write&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=selection-mixed-nested_sq data-questionlist='selection-mixed-nested, selection-mixed-twelve_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: selection-mixed-nested, selection-mixed-twelve_write&lt;/p&gt;
+&lt;div data-component="selectquestion" id=cndtnl-mixed-nested_sq data-questionlist='cndtnl-mixed-nested, cndtnl-mixed-twelve_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cndtnl-mixed-nested, cndtnl-mixed-twelve_write&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=selection-mixed-logical_sq data-questionlist='selection-mixed-logical, selection-mixed-logical_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: selection-mixed-logical, selection-mixed-logical_write&lt;/p&gt;
+&lt;div data-component="selectquestion" id=cndtnl-mixed-logical_sq data-questionlist='cndtnl-mixed-logical, cndtnl-mixed-logical_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cndtnl-mixed-logical, cndtnl-mixed-logical_write&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=selection-mixed-grade_sq data-questionlist='selection-mixed-grade, selection-mixed-grade_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: selection-mixed-grade, selection-mixed-grade_write&lt;/p&gt;
+&lt;div data-component="selectquestion" id=cndtnl-mixed-grade_sq data-questionlist='cndtnl-mixed-grade, cndtnl-mixed-grade_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cndtnl-mixed-grade, cndtnl-mixed-grade_write&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=selection-mixed-even_sq data-questionlist='selection-mixed-even, selection-mixed-even_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: selection-mixed-even, selection-mixed-even_write&lt;/p&gt;
+&lt;div data-component="selectquestion" id=cndtnl-mixed-even_sq data-questionlist='cndtnl-mixed-even, cndtnl-mixed-even_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cndtnl-mixed-even, cndtnl-mixed-even_write&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>
   <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=selection-mixed-goodJob_sq data-questionlist='selection-mixed-goodJob, selection-mixed-goodJob_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: selection-mixed-goodJob, selection-mixed-goodJob_write&lt;/p&gt;
+&lt;div data-component="selectquestion" id=cndtnl-mixed-goodJob_sq data-questionlist='cndtnl-mixed-goodJob, cndtnl-mixed-goodJob_write'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
+    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: cndtnl-mixed-goodJob, cndtnl-mixed-goodJob_write&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 </raw>

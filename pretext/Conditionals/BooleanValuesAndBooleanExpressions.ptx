@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
-<section xml:id="selection_boolean-values-and-boolean-expressions">
-  <title>Boolean Values and Boolean Expressions</title>
+<section xml:id="conditionals_boolean-values-and-boolean-expressions">
+  <title>Making Decisions</title>
   <!--<video xml:id="booleanexpressions" youtube="LD-F4RODy-I" width="auto"/>-->
   <introduction>
-      <title>Making Decisions</title>
+      <title>Boolean Values and Boolean Expressions</title>
       <p>Up to this point, our programs do the same sequence of statements every time we run them. The user input may be different, but the program does the same steps. Sometimes, though, we need to make decisions:</p>
       <p>
         <ul>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="selection_logical-operators-advanced">
+<section xml:id="conditionals_logical-operators-advanced">
   <title>Logical operators<mdash/>Advanced Topics</title>
   <introduction>
   <p>This section goes in depth about how logical operators work. If you read this and find it confusing, feel free to skip this page and move on to the next section. After you have worked with logical operators for a while, you might want to return to this section to get <q>the rest of the story.</q></p>
@@ -200,7 +200,7 @@
   </exercise>
 
   
-  <subsection xml:id="selection_logical-opposites">
+  <subsection xml:id="conditionals_logical-opposites">
     <title>Logical Opposites</title>
     <p>Each of the six relational operators has a logical opposite: for example, suppose we can get a driving licence when our age is greater or equal to 17, we can <em>not</em> get the driving licence when we are less than 17.</p>
     <table>
@@ -283,7 +283,7 @@ if age &lt; 17:
 </input>
     </program>
 </subsection>
-<subsection xml:id="selection_de-morgan-laws">
+<subsection xml:id="conditionals_de-morgan-laws">
     <title>The deMorgan Laws</title>
     <p>Two powerful simplification laws (called de Morgan<rsq/>s laws) that are often helpful when dealing with complicated Boolean expressions are:</p>
     <program language="python">

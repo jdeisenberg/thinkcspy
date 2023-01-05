@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<section xml:id="selection_conditional-execution-binary-selection">
+<section xml:id="conditionals_conditional-execution-binary-selection">
   <title>Conditional Execution: Binary Selection</title>
   <video xml:id="HriDtn-0Dcw" youtube="HriDtn-0Dcw" width="auto"/>
   <p>Now that we know how to express <q>true or false</q> questions in Python, it<rsq/>s time to put them to use. In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. <term>Selection statements</term>, sometimes also referred to as <term>conditional statements</term>, give us this ability. The simplest form of selection is the <term>if statement</term>. This is sometimes referred to as <term>binary selection</term> since there are two possible paths of execution.</p>

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<exercises xml:id="selection_exercises">
+<exercises xml:id="conditionals_exercises">
   <title>Exercises</title>
   <exercise label="ex_6_1">
     <statement>
@@ -173,7 +173,7 @@ print(x)</pre>
 
   <exercise label="ex_6_2">
     <statement>
-      <p>Give the <term>logical opposites</term> of these conditions.  You are not allowed to use the <c>not</c> operator. (This exercise requires the material from <xref ref="selection_de-morgan-laws"/>)</p>
+      <p>Give the <term>logical opposites</term> of these conditions.  You are not allowed to use the <c>not</c> operator. (This exercise requires the material from <xref ref="conditionals_de-morgan-laws"/>)</p>
       <p>
         <ol marker="1">
           <li>

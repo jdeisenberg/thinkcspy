@@ -3,6 +3,7 @@
     <title>General Introduction</title>
     <xi:include href="./intro-TheWayoftheProgram.ptx"/>
     <xi:include href="./Algorithms.ptx"/>
+    <xi:include href="./ComputerHardware.ptx"/>
     <xi:include href="./ThePythonProgrammingLanguage.ptx"/>
     <xi:include href="./SpecialWaystoExecutePythoninthisBook.ptx"/>
     <xi:include href="./ThonnyIde.ptx"/>
