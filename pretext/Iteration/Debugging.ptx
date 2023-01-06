@@ -21,7 +21,7 @@
             you have to search. After six steps (which is much less than 100), you
             would be down to one or two lines of code, at least in theory.</p>
   <p>In practice it is not always clear what the <q>middle of the program</q> is
-            and not always possible to check it. It doesn't make sense to count
+    and not always possible to check it. It doesn<rsq/>t make sense to count
             lines and find the exact midpoint. Instead, think about places in the
             program where there might be errors and places where it is easy to put a
             check. Then choose a spot where you think the chances are about the same
@@ -41,7 +41,7 @@
       </choice>
       <choice correct="yes">
         <statement>
-          <p>breaking the problem in half and doing "mid-point checks"</p>
+          <p>breaking the problem in half and doing <q>mid-point checks</q></p>
         </statement>
         <feedback>
           <p>Correct! Debugging by bisection means to split the program in half (or bisections) and debug those separately.</p>
@@ -57,6 +57,7 @@
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="itDebug_fill1">
     <statement>
       <p>Q-2: When debugging, if the mid-point check is incorrect, the problem must be in the _______ half of the program. <var/>  </p>
@@ -70,7 +71,7 @@
         </condition>
         <condition string=".*">
           <feedback>
-            <p>Incorrect! Hint: the problem won't be in the second half. Try again.</p>
+            <p>Incorrect! Hint: the problem won<rsq/>t be in the second half. Try again.</p>
           </feedback>
         </condition>
       </var>

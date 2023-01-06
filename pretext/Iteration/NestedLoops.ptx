@@ -1,13 +1,9 @@
 <?xml version="1.0"?>
-<section xml:id="iterations_loop-details">
-  <title><q>Do Nothing</q> and Infinite Loops</title>
-<idx>Infinite Loop</idx>
-<idx><h>Loop</h><h>Infinite</h></idx>
-<idx><h>Infinite</h><h>Loop</h></idx>
-<idx><h>Break</h><h>Statement</h></idx>
-<idx><h>Statement</h><h>Break</h></idx>
+<section xml:id="iterations_nested-loops">
+  <title>Nested Loops (Advanced Topic)</title>
+<idx>Nested Loop</idx>
+<idx><h>Loop</h><h>Nested</h></idx>
 
-  <introduction>
     <p>
       This page is going into a bit of detail about <c>while</c> loops. We<rsq/> cover:
     </p>

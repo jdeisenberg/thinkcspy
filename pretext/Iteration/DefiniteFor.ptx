@@ -7,14 +7,23 @@
 <idx><h>Loop</h><h>For</h></idx>
 <idx><h>Variable</h><h>Iteration</h></idx>
 <idx><h>Iteration</h><h>Variable</h></idx>
-  <p>Sometimes we want to loop through a <em>set</em> of things, such
-            as a list of words, the lines in a file, or a list of numbers. When we
-            have a list of things to loop through, we can construct a <em>definite</em>
-            loop using a <c>for</c> statement. We call the <c>while</c>
-            statement an <em>indefinite</em> loop because it simply loops until some
-            condition becomes <c>False</c>, whereas the <c>for</c> loop
-            is looping through a known set of items so it runs through as many
-            iterations as there are items in the set.</p>
+  <p>
+    The <c>while</c> loop is ideal for those situations when we don<rsq/>t know exactly how many iterations will be needed. There are, however, many instances when we know exactly how many times we need to go through a loop:
+  </p>
+
+  <p>
+    <ul>
+      <li>A loop to calculate the average daily temperature for a week will need exactly 7 iterations.</li>
+      <li>A loop to calculate quarterly sales totals will need exactly 4 iterations.</li>
+      <li>Processing a list of the population of states in the United States will need exactly 50 iterations.</li>
+      <li>Printing a list of the names of the months (Gregorian calendar) will need exactly 12 iterations.</li>
+    </ul>
+  </p>
+  
+  <p>
+    In instances like these, when we want to loop through a <em>set</em> of things and we know how many entries there are in the set, we can construct a <em>definite</em> loop using a <c>for</c> statement. The <c>for</c> loop is a <term>definite loop</term> because it runs through as many iterations as there are items in the set.
+  </p>
+  
   <exercise label="itFor_MC_while">
     <statement>
       <p>Q-1: The while loop is an <q>indefinite</q> loop because&#x2026;</p>
@@ -54,6 +63,7 @@
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="itFor_MC_for">
     <statement>
       <p>Q-2: The for loop is not an <q>indefinite</q> loop because&#x2026;</p>
@@ -64,78 +74,65 @@
           <p>it loops through a known set of items so it runs through as many iterations as there are items in the set.</p>
         </statement>
         <feedback>
-          <p>Correct! A for loop only runs through a distinct set of items.</p>
+          <p>Correct! A <c>for</c> loop only runs through a distinct set of items.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>it loops until some condition becomes True.</p>
+          <p>it loops until some condition becomes <c>True</c>.</p>
         </statement>
         <feedback>
-          <p>Incorrect! A for loop does not check any condition to decide whether it should continue to iterate. Try again.</p>
+          <p>Incorrect! A <c>for</c> loop does not check any condition to decide whether it should continue to iterate. Try again.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>it loops until some condition becomes False.</p>
+          <p>it loops until some condition becomes <c>False</c>.</p>
         </statement>
         <feedback>
-          <p>Incorrect! This is the condition for a while loop to stop. Try again.</p>
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>it loops until it reaches a "break" statement.</p>
-        </statement>
-        <feedback>
-          <p>Incorrect! A for loop can stop at a break statement, but so can any other loop. Try again.</p>
+          <p>Incorrect! This is the condition for a <c>while</c> loop to stop. Try again.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
-  <p>The syntax of a <c>for</c> loop is similar to the
-            <c>while</c> loop in that there is a <c>for</c> statement
-            and a loop body:</p>
+  
+  <p>
+    The syntax of a <c>for</c> loop is similar to the <c>while</c> loop in that there is a <c>for</c> statement and a loop body:
+  </p>
   <program xml:id="itr-section5_1" interactive="activecode" language="python">
     <input>
-friends = ['Joseph', 'Glenn', 'Sally']
+friends = ['Joseph', 'Vinh', 'Shashi']
 for friend in friends:
-    print('Happy New Year:', friend)
+    print('Greetings,', friend)
 print('Done!')
         </input>
   </program>
-  <p>In Python terms, the variable <c>friends</c> is a list (We will examine lists
-            in more detail in a later chapter) of
-            three strings. The <c>for</c> loop goes through the list and
-            executes the body once for each of the three strings in the list
-            resulting in this output:</p>
+  <p>
+    In Python terms, the variable <c>friends</c> is a <term>list</term> of three strings. (We will examine lists in more detail in <xref ref="chapter_lists"/>) The <c>for</c> loop goes through the list and executes the body once for each of the three strings in the list, resulting in this output:</p>
   <program language="python">
     <input>
-Happy New Year: Joseph
-Happy New Year: Glenn
-Happy New Year: Sally
+Greetings, Joseph
+Greetings, Vinh
+Greetings, Shashi
 Done!
 </input>
   </program>
-  <p>Translating this <c>for</c> loop to English is not as direct as
-            the <c>while</c>, but if you think of friends as a <em>set</em>, it goes
-            like this: <q>Run the statements in the body of the for loop once
-            for each friend <em>in</em> the set named friends.</q></p>
-  <p>Looking at the <c>for</c> loop, <em>for</em> and
-            <em>in</em> are reserved Python keywords, and
-            <c>friend</c> and <c>friends</c> are variables.</p>
+  <p>
+    Translating this <c>for</c> loop to English is not as direct as the <c>while</c>, but if you think of friends as a <em>set</em>, it goes like this: <q>Run the statements in the body of the <c>for</c> loop once for each <c>friend</c> <em>in</em> the set named <c>friends</c>.</q>
+  </p>
+  
+  <p>Here is the <c>for</c> loop all by itself:</p>
   <program language="python">
     <input>
 for friend in friends:
-    print('Happy New Year:', friend)
+    print('Greetings,', friend)
 </input>
   </program>
-  <p>In particular, <c>friend</c> is the <em>iteration
-                variable</em> for the for loop. The variable <c>friend</c>
-            changes for each iteration of the loop and controls when the
-            <c>for</c> loop completes. The <em>iteration variable</em>
-            steps successively through the three strings stored in the
-            <c>friends</c> variable.</p>
+  
+  <p>
+    In this <c>for</c> loop, <em>for</em> and <em>in</em> are reserved Python keywords. <c>friend</c> is the iteration variable for the loop. The variable <c>friend</c> changes for each iteration of the loop. The iteration variable steps successively through the three strings stored in the <c>friends</c> variable. The <c>for</c> loop ends when the iteration variable has stepped through all the entries in the list.
+  </p>
+
   <exercise label="itFor_PP_friends" numbered="yes" adaptive="yes" indentation="show" language="python">
     <statement>
       <p>Construct a block of code that prints <q>Hello, Prisha</q>, <q>Hello, Kahlil</q>, <q>Hello, Nirav</q>,
