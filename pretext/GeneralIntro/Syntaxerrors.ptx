@@ -1,20 +1,17 @@
 <?xml version="1.0"?>
 <section xml:id="general-intro_syntax-errors">
   <title>Syntax errors</title>
-  <p>Python can only execute a program if the program is syntactically correct;
-            otherwise, the process fails and returns an error message.  <term>Syntax</term> refers
-            to the structure of a program and the rules about that structure. For example,
-            in English, a sentence must begin with a capital letter and end with a period.
-            this sentence contains a <term>syntax error</term>. So does this one</p>
-  <p>For most readers, a few syntax errors are not a significant problem, which is
-            why we can read the poetry of e. e. cummings without problems.
-            Python is not so forgiving. If there is a single syntax error anywhere in your
-            program, Python will display an error message and quit.  You will not be able
-            to complete the execution of your program. During the first few weeks of your programming career, you
-            will probably spend a lot of time tracking down syntax errors. However, as you gain
-            experience, you will make fewer errors and you will also be able to find your errors faster.</p>
+  <p><term>Syntax</term> refers to the structure of a program and the rules about that structure. For example, in English, a sentence must begin with a capital letter and end with a period. this sentence contains a <term>syntax error</term>. So does this one</p>
   <p>
-    <term>Check your understanding</term>
+    For most readers, a few syntax errors are not a significant problem, which is
+            why we can read the poetry of e. e. cummings without problems.
+            Python is not so forgiving.
+  </p>
+  <p>
+    Python can only execute a program if the program has correct syntax; otherwise, the process fails and returns an error message.  If there is a single syntax error anywhere in your program, Python will display an error message and quit.  You will not be able run your program. During the first few weeks of your programming career, you will probably spend a lot of time tracking down syntax errors. However, as you gain experience, you will make fewer errors and you will also be able to find your errors faster.
+  </p>
+  <p>
+   Check your understanding.
   </p>
   <exercise label="question1_6_1">
     <statement>
@@ -47,6 +44,7 @@
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="question1_6_2">
     <statement>
       <p>Who or what typically finds syntax errors?</p>
@@ -73,7 +71,7 @@
           <p>The computer.</p>
         </statement>
         <feedback>
-                    Well, sort of.  But it is a special thing in the computer that does it.  The stand alone computer without this additional piece can not do it.
+                    Well, sort of. But it is a special thing in the computer that does it. The stand alone computer without this additional piece can not do it.
                 </feedback>
       </choice>
       <choice>
@@ -81,7 +79,7 @@
           <p>The teacher / instructor.</p>
         </statement>
         <feedback>
-                    Your teacher and instructor may be able to find most of your syntax errors, but only because they have experience looking at code and possibly writing code.  With experience syntax errors are easier to find.  But we also have an automated way of finding these types of errors.
+                    Your teacher and instructor may be able to find most of your syntax errors, but only because they have experience looking at code and possibly writing code.  With experience, syntax errors are easier to find.  But we also have an automated way of finding these types of errors.
                 </feedback>
       </choice>
     </choices>
