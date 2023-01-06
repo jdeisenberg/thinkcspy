@@ -4,66 +4,63 @@
   <warning>
     <p>Be careful not to create infinite loops, as they will cause the page to freeze.</p>
   </warning>
+  <p>
+    In these exercises, you will be asked to create a variable using the <c>+</c> as the <em>concatenation operator</em> to join strings together.
+    As a refresher, if both the operands of <c>+</c> are strings, there<rsq/>s no problem: <c>"door" + "bell"</c> gives the string <c>"doorbell"</c>.
+  </p>
+  <p>
+    If one of the operands is a number, though, you must use the <c>str</c> function to convert it to a string.  Let<rsq/>s say you have a variable named <c>count</c> that has the value 3, and you want to add the string <c>" pages"</c> to the end of it. You can <em>not</em>  do this:
+  </p>
+  <program language="python">
+    <input>
+count = 3
+result_string = count + " pages"
+</input></program>
+
+<p>Instead, you must convert the number to a string:</p>
+<program language="python">
+  <input>
+count = 3
+result_string = str(count) + " pages"
+</input></program>
+
   <exercise>
     <statement>
-      <p>Fix the 5 errors in the code below to return a countdown of the numbers from 10 to 0, including 0.</p>
+      <p>Fix the errors in the code below so that <c>answer</c> contains a countdown of the numbers from 10 to 0, including 0.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="itr-ex-countdownq_editor">
       <input>
-def countdown():
-    counter = 10
-    answer = ""
-    while Counter &gt; 0:
-        answer = answer + str(counter) + " "
-        counter = counter + 1
-    Return answer
-countDown()
-
+counter = 10
+answer = ""
+while Counter &gt; 0:
+    answer = answer + str(counter) + " "
+    counter = counter + 1
 ====
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
-        output = countdown()
-        self.assertEqual(output,"10 9 8 7 6 5 4 3 2 1 0 ")
+        self.assertEqual(answer, "10 9 8 7 6 5 4 3 2 1 0 ")
 myTests().main()
         </input>
     </program>
     <solution>
-
-
-    
-                Fix the 5 errors in the code below to return a countdown of the numbers from 10 to 0, including 0.
-
-    
     <program xml:id="itr-ex-countdowna_editor" language="python"><input>
-def countdown():
-    counter = 10
-    answer = ""
+counter = 10
+answer = ""
 
-    # Keep running loop until counter equals 0 (use &lt;=)
-    # Use correct variable name (counter is lowercase)
-    while counter &gt;= 0:
-        answer = answer + str(counter) + " "
+# Keep running loop until counter equals 0 (use &gt;=)
+# Use correct variable name (counter is lowercase)
+while counter &gt;= 0:
+    answer = answer + str(counter) + " "
 
-        # Decrement to lower the counter
-        counter = counter - 1
+    # Decrement to lower the counter
+    counter = counter - 1
 
-    # Keyword return is lowercase
-    return answer
-
-# Call correct function name (countdown)
-countdown()
-
-====
-from unittest.gui import TestCaseGui
-class myTests(TestCaseGui):
-    def testOne(self):
-        output = countdown()
-        self.assertEqual(output,"10 9 8 7 6 5 4 3 2 1 0 ")
-myTests().main()
+print(answer)
         </input></program>
             </solution>
   </exercise>
+  
   <exercise label="itr-ex-100Loopq">
     <statement>
       <p>The following code will loop way too many times. Change one line to
@@ -78,9 +75,10 @@ while x &lt; 100:
         </input>
     </program>
   </exercise>
+  
   <exercise>
     <statement>
-      <p>Make 5 changes to the code below to correctly print a count up from -10 to 0, including 0.</p>
+      <p>Make changes to the code below to correctly print a count up from -10 to 0, including 0.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="itr-ex-countq_editor">
       <input>
@@ -100,12 +98,6 @@ myTests().main()
         </input>
     </program>
     <solution>
-
-
-    
-                Make 5 changes to the code below to correctly print a count up from -10 to 0, including 0.
-
-    
     <program xml:id="itr-ex-counta_editor" language="python"><input>
 output = ""
 # Start x at -11 so it stays under 0
@@ -122,16 +114,10 @@ while x &lt; 0:
 
 # Close print parentheses
 print(output)
-
-====
-from unittest.gui import TestCaseGui
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(output,"-10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 ")
-myTests().main()
         </input></program>
             </solution>
   </exercise>
+  
   <exercise label="itr-ex-allValuesq">
     <statement>
       <p>Finish lines 1 and 5 so that the following code correctly prints every integer from -5 to -1, including -1.</p>
@@ -154,6 +140,7 @@ myTests().main()
         </input>
     </program>
   </exercise>
+  
   <exercise>
     <statement>
       <p>Complete the code on lines 4 and 6 so that it prints the number 6.</p>
@@ -176,12 +163,6 @@ myTests().main()
         </input>
     </program>
     <solution>
-
-
-    
-                Complete the code on lines 4 and 6 so that it prints the number 6.
-
-    
     <program xml:id="itr-ex-sixa_editor" language="python"><input>
 x = 3
 i = 0
@@ -191,24 +172,11 @@ while i &lt; 3:
     i = i + 1
 # Print the x variable
 print(x)
-
-====
-from unittest.gui import TestCaseGui
-class myTests(TestCaseGui):
-    def testOne(self):
-        self.assertEqual(x,6)
-myTests().main()
         </input></program>
 
             </solution>
   </exercise>
-  <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=iterations_writecode6 data-questionlist='itr-ex-root_ac, itr-ex-root_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: itr-ex-root_ac, itr-ex-root_pp&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
+  
   <exercise>
     <statement>
       <p>This function currently takes a start and stop argument and uses a for loop to find the sum of all the numbers between them (inclusive).
@@ -271,6 +239,8 @@ myTests().main()
         </input></program>
             </solution>
   </exercise>
+  
+  <!--
   <exercise label="int-ex-timesq">
     <statement>
       <p>The program below is supposed to print the times tables from 1 to 3, but
@@ -284,6 +254,9 @@ for x in range(1, 3):
         </input>
     </program>
   </exercise>
+  -->
+  
+  <!--
   <exercise>
     <statement>
       <p>The following code prints the times tables for 1 to 3 using two for loops.
@@ -316,11 +289,5 @@ for x in range(1, 4):
       </program>
     </solution>
   </exercise>
-  <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=iterations_writecode10 data-questionlist='int-ex-while_ac, int-ex-while_pp'         data-toggleoptions="toggle, lock" data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: int-ex-while_ac, int-ex-while_pp&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
+  -->
 </section>

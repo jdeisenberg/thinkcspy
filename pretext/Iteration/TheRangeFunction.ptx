@@ -47,7 +47,7 @@ for n in range(end_number):
     The <url href="http://docs.python.org/py3k/library/functions.html?highlight=range#range" visual="http://docs.python.org/py3k/library/functions.html?highlight=range#range">range</url> function is actually a very powerful function when it comes to creating sequences of integers.  It can take one, two, or three arguments.  We have seen the simplest case of one argument such as <c>range(4)</c> which creates <c>[0, 1, 2, 3]</c>. But what if we really want to have the sequence <c>[1, 2, 3, 4]</c>? We can do this by using a two argument version of <c>range</c> where the first argument is the starting point and the second argument is the ending point.  The evaluation of <c>range(1,&#160;5)</c> produces the desired sequence <c>[1, 2, 3, 4]</c>.
   </p>
   <p>
-    The two-argument version of <c>range(<em>start</em>, <em>stop</em>)</c> gives you the sequence starting with the start value up to <em>but not including</em> the stop value. That<rsq/>s why we have to put in 5 for our stop value to get the sequence <c>[1, 2,3, 4]</c>.
+    The two-argument version of <c>range(start, stop)</c> gives you the sequence starting with the start value up to <em>but not including</em> the stop value. That<rsq/>s why we have to put in 5 for our stop value to get the sequence <c>[1, 2,3, 4]</c>.
   </p>
   <!--
     <p>The range function is <em>lazy</em>:  It produces the next element only when needed.
@@ -84,7 +84,7 @@ print(list(range(1, 5)))
   
   <p>Finally, suppose we want to have a sequence of even numbers. How would we do that?  We add another argument, a <em>step</em>, that tells range what to count by.  For even numbers we want to start at 0 and count by 2<rsq/>s.  So, if we wanted the first ten even numbers we would use <c>range(0, 19, 2)</c>.</p>
   
-  <p>The most general form of the range is <c>range(<em>start</em>, <em>stop</em>, <em>step</em>)</c>.  This will produce a sequence starting at the start value, adding the step to get the next number in the sequence, up to <em>but not including</em> the stop value. You can also create a sequence of numbers that starts big and gets smaller by using a negative value for the step parameter.</p>
+  <p>The most general form of the range is <c>range(start, stop, step)</c>.  This will produce a sequence starting at the start value, adding the step to get the next number in the sequence, up to <em>but not including</em> the stop value. You can also create a sequence of numbers that starts big and gets smaller by using a negative value for the step parameter.</p>
   <program xml:id="ch03_6" interactive="activecode" language="python">
     <input>
 print(list(range(0, 19, 2)))

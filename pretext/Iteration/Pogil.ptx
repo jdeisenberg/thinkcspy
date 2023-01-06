@@ -2,7 +2,7 @@
 <section xml:id="iterations_group-work-loops-for-range-while">
   <title>Group Work - Loops (For, Range, While)</title>
   <introduction>
-  <p>It is best to use a POGIL approach with the following. In POGIL students work
+  <p>It is best to use a POGIL (Process Oriented Guided Inquiry Learning) approach with the following. In POGIL, students work
             in groups on activities and each member has an assigned role.  For more information see <url href="https://cspogil.org/Home" visual="https://cspogil.org/Home">https://cspogil.org/Home</url>.</p>
   <note>
     <p>If you work in a group, have only one member of the group fill in the answers on this page.  You will be able to share your answers with the group at the bottom of the page.</p>
@@ -14,7 +14,7 @@
     <term>Content Learning Objectives</term>
   </p>
   <p>
-    <em>After completing this activity, students should be able to:</em>
+    <em>After completing this activity, you should be able to:</em>
   </p>
   <p>
     <ul>
@@ -33,7 +33,7 @@
     <term>Process Skill Goals:</term>
   </p>
   <p>
-    <em>During the activity, students should make progress toward:</em>
+    <em>During the activity, you should make progress toward:</em>
   </p>
   <p>
     <ul>
@@ -59,6 +59,7 @@ print("goodbye")
         </input>
       </program>
     </exercise>
+    
     <exercise label="loops_MC_pogil_indented">
       <statement>
         <p>Q-2: How many times does the indented line of code execute under the <c>for</c> loop?</p>
@@ -69,7 +70,7 @@ print("goodbye")
             <p>0</p>
           </statement>
           <feedback>
-            <p>Incorrect! Remember, the body of a "for" loop executes as many times as there are items in a sequence. Try again.</p>
+            <p>Incorrect! Remember, the body of a <c>for</c> loop executes as many times as there are items in a sequence. Try again.</p>
           </feedback>
         </choice>
         <choice>
@@ -77,7 +78,7 @@ print("goodbye")
             <p>1</p>
           </statement>
           <feedback>
-            <p>Incorrect! Remember, the body of a "for" loop executes as many times as there are items in a sequence. Try again.</p>
+            <p>Incorrect! Remember, the body of a <c>for</c> loop executes as many times as there are items in a sequence. Try again.</p>
           </feedback>
         </choice>
         <choice>
@@ -85,7 +86,7 @@ print("goodbye")
             <p>2</p>
           </statement>
           <feedback>
-            <p>Incorrect! Remember, the body of a "for" loop executes as many times as there are items in a sequence. Try again.</p>
+            <p>Incorrect! Remember, the body of a <c>for</c> loop executes as many times as there are items in a sequence. Try again.</p>
           </feedback>
         </choice>
         <choice correct="yes">
@@ -93,7 +94,7 @@ print("goodbye")
             <p>3</p>
           </statement>
           <feedback>
-            <p>Correct! There are three items in the sequence [2, 7, 1], so the body of the "for" loop executes 3 times.</p>
+            <p>Correct! There are three items in the sequence [2, 7, 1], so the body of the <c>for</c> loop executes 3 times.</p>
           </feedback>
         </choice>
         <choice>
@@ -101,7 +102,7 @@ print("goodbye")
             <p>4</p>
           </statement>
           <feedback>
-            <p>Incorrect! The question is asking only about the indented line of code under the "for" loop, so Line 4 does not count. Try again.</p>
+            <p>Incorrect! The question is asking only about the indented line of code under the <c>for</c> loop, so line 4 does not count. Try again.</p>
           </feedback>
         </choice>
       </choices>
@@ -116,7 +117,7 @@ print("goodbye")
             <p>0</p>
           </statement>
           <feedback>
-            <p>Incorrect! After the "for" loop terminates (finishes executing), the program continues to execute the non-indented lines of code beneath it. Try again.</p>
+            <p>Incorrect! After the <c>for</c> loop terminates (finishes executing), the program continues to execute the non-indented lines of code beneath it. Try again.</p>
           </feedback>
         </choice>
         <choice correct="yes">
@@ -124,7 +125,7 @@ print("goodbye")
             <p>1</p>
           </statement>
           <feedback>
-            <p>Correct! The not indented line of code executes only once, as it is not part of the "for" loop and therefore does not execute multiple times.</p>
+            <p>Correct! The non-indented line of code executes only once, as it is not part of the <c>for</c> loop and therefore does not execute multiple times.</p>
           </feedback>
         </choice>
         <choice>
@@ -132,7 +133,7 @@ print("goodbye")
             <p>2</p>
           </statement>
           <feedback>
-            <p>Incorrect! The absence of an indent in Line 4 means that it is not part of the "for" loop. Try again.</p>
+            <p>Incorrect! The absence of an indent in Line 4 means that it is not part of the <c>for</c> loop. Try again.</p>
           </feedback>
         </choice>
         <choice>
@@ -140,7 +141,7 @@ print("goodbye")
             <p>3</p>
           </statement>
           <feedback>
-            <p>Incorrect! The absence of an indent in Line 4 means that it is not part of the "for" loop. Try again.</p>
+            <p>Incorrect! The absence of an indent in Line 4 means that it is not part of the <c>for</c> loop. Try again.</p>
           </feedback>
         </choice>
         <choice>
@@ -148,14 +149,14 @@ print("goodbye")
             <p>4</p>
           </statement>
           <feedback>
-            <p>Incorrect! The absence of an indent in Line 4 means that it is not part of the "for" loop. Try again.</p>
+            <p>Incorrect! The absence of an indent in Line 4 means that it is not part of the <c>for</c> loop. Try again.</p>
           </feedback>
         </choice>
       </choices>
     </exercise>
     <exercise label="loops_dnd_pogil_xvalue">
       <statement>
-        <p>Match each execution of Line 3 to the value "x" has after Line 3 is executed.</p>
+        <p>Match each execution of Line 3 to the value <c>x</c> has after Line 3 is executed.</p>
       </statement>
       <feedback>
         <p>Keep trying!</p>
@@ -163,21 +164,22 @@ print("goodbye")
       <matches>
         <match order="1">
           <premise>1st time</premise>
-          <response>x = 2</response>
+          <response>x is 2</response>
         </match>
         <match order="2">
           <premise>2nd time</premise>
-          <response>x = 7</response>
+          <response>x is 7</response>
         </match>
         <match order="3">
           <premise>3rd time</premise>
-          <response>x = 1</response>
+          <response>x is 1</response>
         </match>
       </matches>
     </exercise>
+    
     <exercise label="loops_dnd_pogil_modifiedlist">
       <statement>
-        <p>Imagine that the list [2, 7, 1] from the code above was modified to one of the lists below. Match each new list to the amount of times it would make the "for" loop execute.</p>
+        <p>Imagine that the list [2, 7, 1] from the code above was modified to one of the lists below. Match each new list to the amount of times it would make the <c>for</c> loop execute.</p>
       </statement>
       <feedback>
         <p>Keep trying!</p>
@@ -201,11 +203,14 @@ print("goodbye")
         </match>
       </matches>
     </exercise>
-    <p>In general, the length of the list determines the number of times that the loop repeats.
-                The value of the variable <c>x</c> is selected from the list. Each time the loop runs, the
-                next value from the list is assigned to <c>x</c>.</p>
-    <p>Before your <c>for</c> statement, you can assign your list to a variable and your program
-                will run the same way:</p>
+    
+    <p>
+      In general, the length of the list determines the number of times that the loop repeats. The value of the variable <c>x</c> is selected from the list. Each time the loop runs, the next value from the list is assigned to <c>x</c>.
+    </p>
+    <p>
+      Before your <c>for</c> statement, you can assign your list to a variable and your program will run the same way:
+    </p>
+    
     <exercise label="loops_ac_pogil_assigninglist">
       <statement>
         <p>Run this code to see what it prints.</p>
@@ -220,6 +225,7 @@ print("goodbye")
         </input>
       </program>
     </exercise>
+    <!--
     <p>In addition, <c>for</c> loops can be used with strings:</p>
     <exercise label="loops_ac_pogil_string">
       <statement>
@@ -236,10 +242,11 @@ for c in "Hi!":
                 The length of the string determines how many times the body of the loop will run.</p>
     <p><c>for</c> loops can also handle many other data types, like tuples and dictionaries.
                 Experiment on your own to see this in action!</p>
+    -->
   </subsection>
   <subsection xml:id="iterations_the-range-function">
     <title>The range Function</title>
-    <p>The Python <c>range</c> function will generate a list of numbers. The <c>range</c> function
+    <p>The Python <c>range</c> function will generate a sequence of numbers. The <c>range</c> function
                 can take up to three numbers as arguments.</p>
     <exercise label="loops_ac_pogil_output_range">
       <statement>
@@ -261,25 +268,28 @@ for i in range(5): #this line prints nothing
         </input>
       </program>
     </exercise>
-    <p>The first line of output describes the range as a function, whereas the second line
-                shows the actual range of values as a list by using the <c>list</c> function.</p>
-    <p>If the argument of the <c>range</c> function specifies a single number, like <c>range(x)</c>,
-                the first number listed will be 0, the last number listed will be x - 1, and there
-                will be x numbers in the list.</p>
+    
+    <p>
+      The first line of output describes the range as a function, whereas the second line shows the actual range of values as a list by using the <c>list</c> function.
+    </p>
+    <p>
+      If the argument of the <c>range</c> function specifies a single number, like <c>range(x)</c>, the first number listed will be 0, the last number listed will be <c>x - 1</c>, and there will be <c>x</c> numbers in the list.
+    </p>
+    
     <exercise label="loops_fitb_pogil_oneparamrange">
       <statement>
         <p>Q-9: Use the <c>range</c> function with one parameter to generate the sequence 0, 1, 2, 3. <var/>  </p>
       </statement>
       <setup>
         <var>
-          <condition string="range\(4\)">
+          <condition string="range\s*\(\s*4\s*\)">
             <feedback>
               <p>Correct! With one parameter, the sequence will start at 0 and end at one less than the specified value.</p>
             </feedback>
           </condition>
-          <condition string="range\(3\)">
+          <condition string="range\s*\(\s*3\s*\)">
             <feedback>
-              <p>Incorrect! The last number of the sequence is equal to the specified value - 1. Try again.</p>
+              <p>Incorrect! The last number of the sequence is equal to the specified value minus 1. Try again.</p>
             </feedback>
           </condition>
           <condition string=".*">
@@ -317,20 +327,19 @@ for i in range(5): #this line prints nothing
         </var>
       </setup>
     </exercise>
-    <p>If the argument of the <c>range</c> function specifies three numbers, like <c>range(x, y, z)</c>,
-                the first number listed will still be x, just like the two parameter version. The third
-                argument represents how much to increment the number by each time. To calculate how many
-                numbers will be in the list, take the result of (y - x) / z and round it up to the nearest
-                whole number.</p>
+    
+    <p>
+      If the argument of the <c>range</c> function specifies three numbers, like <c>range(x, y, z)</c>, the first number listed will still be <c>x</c>, just like the two parameter version. The third argument represents how much to increment the number by each time. The sequence will generate numbers up to, but not including, <c>y</c>. To calculate how many numbers will be in the list, take the result of <c>(y - x) / z</c> and round it up to the nearest whole number.
+    </p>
     <exercise label="loops_fitb_pogil_threeparamrange">
       <statement>
         <p>Q-11: Use the <c>range</c> function with three parameters to generate the sequence 1, 3, 5, 7. <var/>  </p>
       </statement>
       <setup>
         <var>
-          <condition string="range\(1,\s+8,\s+2\)|range\(1,\s+9,\s+2\)|range\(1,8,2\)|range\(1,9,2\)">
+          <condition string="range\(1,\s*8,\s*2\)|range\(1,\s*9,\s*2\)">
             <feedback>
-              <p>Correct! With three parameters, the sequence will start at 1 and increment by 2 until it lists 7.</p>
+              <p>Correct! With three parameters, the sequence will start at 1 and increment by 2 until it reaches 7.</p>
             </feedback>
           </condition>
           <condition string=".*">
@@ -341,14 +350,15 @@ for i in range(5): #this line prints nothing
         </var>
       </setup>
     </exercise>
+    
     <exercise label="loops_MC_pogil_whichtype1">
       <statement>
-        <p>Q-12: If you wanted to execute a loop 100 times, which type of <c>for</c> statement should you use?</p>
+        <p>Q-12: If you wanted to execute a loop 100 times, which type of <c>for</c> statement is the most appropriate to use?</p>
       </statement>
       <choices>
         <choice correct="yes">
           <statement>
-            <p>for i in range(x)</p>
+            <p><c>for i in range(x)</c></p>
           </statement>
           <feedback>
             <p>Correct! This is the simplest way to write it and makes your code easiest to read.</p>
@@ -356,7 +366,7 @@ for i in range(5): #this line prints nothing
         </choice>
         <choice>
           <statement>
-            <p>for i in range(x, y)</p>
+            <p><c>for i in range(x, y)</c></p>
           </statement>
           <feedback>
             <p>Incorrect! Although this could work, it can be done more simply. Try again.</p>
@@ -364,7 +374,7 @@ for i in range(5): #this line prints nothing
         </choice>
         <choice>
           <statement>
-            <p>for i in range(x, y, z)</p>
+            <p><c>for i in range(x, y, z)</c></p>
           </statement>
           <feedback>
             <p>Incorrect! Although this could work, it can be done more simply. Try again.</p>
@@ -372,46 +382,47 @@ for i in range(5): #this line prints nothing
         </choice>
         <choice>
           <statement>
-            <p>for i in list</p>
+            <p><c>for i in list</c></p>
           </statement>
           <feedback>
-            <p>Incorrect! You don't have a preexisting list, so you should use the range function to generate one for you. Try again.</p>
+            <p>Incorrect! You don<rsq/>t have a preexisting list, so you should use the range function to generate one for you. Try again.</p>
           </feedback>
         </choice>
       </choices>
     </exercise>
+    
     <exercise label="loops_MC_pogil_whichtype2">
       <statement>
-        <p>Q-13: If you wanted to use each item of an existing list inside the loop, which type of <c>for</c> statement should you use?</p>
+        <p>Q-13: If you wanted to use each item of an existing list named <c>numbers</c> inside the loop, which type of <c>for</c> statement should you use?</p>
       </statement>
       <choices>
         <choice>
           <statement>
-            <p>for i in range(x)</p>
+            <p><c>for i in range(x)</c></p>
           </statement>
           <feedback>
-            <p>Incorrect! The list exists already, so there is no need to generate one using the range function. Try again.</p>
+            <p>Incorrect! The list exists already, so there is no need to generate one using the <c>range</c> function. Try again.</p>
           </feedback>
         </choice>
         <choice>
           <statement>
-            <p>for i in range(x, y)</p>
+            <p><c>for i in range(x, y)</c></p>
           </statement>
           <feedback>
-            <p>Incorrect! The list exists already, so there is no need to generate one using the range function. Try again.</p>
+            <p>Incorrect! The list exists already, so there is no need to generate one using the <c>range</c> function. Try again.</p>
           </feedback>
         </choice>
         <choice>
           <statement>
-            <p>for i in range(x, y, z)</p>
+            <p><c>for i in range(x, y, z)</c></p>
           </statement>
           <feedback>
-            <p>Incorrect! The list exists already, so there is no need to generate one using the range function. Try again.</p>
+            <p>Incorrect! The list exists already, so there is no need to generate one using the <c>range</c> function. Try again.</p>
           </feedback>
         </choice>
         <choice correct="yes">
           <statement>
-            <p>for i in list</p>
+            <p><c>for i in numbers</c></p>
           </statement>
           <feedback>
             <p>Correct! Because your list exists already, you can use this format to iterate through each item inside it.</p>
@@ -419,6 +430,8 @@ for i in range(5): #this line prints nothing
         </choice>
       </choices>
     </exercise>
+    
+    <!--
     <p>The arguments to <c>range</c> must be integers, so <c>range</c> does not work with strings.
                 However, if you wanted to print the letters A to Z in a loop, you could do something
                 like this:</p>
@@ -433,13 +446,15 @@ for i in range(65, 91):
         </input>
       </program>
     </exercise>
+    -->
   </subsection>
+  
   <subsection xml:id="iterations_while-statements">
     <title>while Statements</title>
     <p>A more general looping structure is the <c>while</c> statement.</p>
     <exercise label="loops_ac_pogil_output_while">
       <statement>
-        <p>Run this code to observe the behavior of a basic while loop and answer the questions below.</p>
+        <p>Run this code to observe the behavior of a basic while loop and answer the questions that follow.</p>
       </statement>
       <program xml:id="loops_ac_pogil_output_while_editor" interactive="activecode" language="python">
         <input>
@@ -451,6 +466,7 @@ print("goodbye")
         </input>
       </program>
     </exercise>
+    
     <exercise label="loops_mc_pogil_loopcondition">
       <statement>
         <p>Q-16: What must the value of the Boolean expression (after the <c>while</c>) be in order
@@ -462,7 +478,7 @@ print("goodbye")
             <p>True</p>
           </statement>
           <feedback>
-            <p>Correct! The body of the while loop will execute as long as the loop condition is True.</p>
+            <p>Correct! The body of the <c>while</c> loop will execute as long as the loop condition is True.</p>
           </feedback>
         </choice>
         <choice>
@@ -470,18 +486,28 @@ print("goodbye")
             <p>False</p>
           </statement>
           <feedback>
-            <p>Incorrect! You've got it backwards. Try again.</p>
+            <p>Incorrect! You<rsq/>ve got it backwards. Try again.</p>
           </feedback>
         </choice>
       </choices>
     </exercise>
-    <p>In the above code, the variable <c>i</c> is incremented by 1 each time the loop body
-                is executed. Because the value of <c>i</c> steadily grows, the <q>loop condition</q> (the
-                Boolean expression after the <c>while</c>) eventually becomes false when i = 3, which
-                causes the loop body to stop executing.</p>
+    
+    <p>
+      In the above code, the variable <c>i</c> is incremented by 1 each time the loop body is executed. Because the value of <c>i</c> steadily grows, the <q>loop condition</q> (the Boolean expression after the <c>while</c>) eventually becomes <c>False</c> when <c>i</c> becomes 3, which causes the loop body to stop executing.
+    </p>
+    
     <exercise label="loops_mc_pogil_swappedlines">
       <statement>
-        <p>Q-17: Imagine that lines 3 and 4 in the above code were swapped. What is the new output of the code?</p>
+        <p>Q-17: Imagine that lines 3 and 4 in the above code were swapped. What is the new output of this new code?</p>
+        <program language="python">
+        <input>
+i = 0
+while i &lt; 3:
+    i = i + 1
+    print(i)
+print("goodbye")
+        </input>
+      </program>
       </statement>
       <choices>
         <choice>
@@ -497,7 +523,7 @@ print("goodbye")
             <p>1 2 3</p>
           </statement>
           <feedback>
-            <p>Correct! "i" is incremented before it is printed, so the numbers it prints are one higher than before.</p>
+            <p>Correct! <c>i</c> is incremented before it is printed, so the numbers it prints are one higher than before.</p>
           </feedback>
         </choice>
         <choice>
@@ -505,7 +531,7 @@ print("goodbye")
             <p>0 1 2 3</p>
           </statement>
           <feedback>
-            <p>Incorrect! The loop still terminates when the end of the loop body is reached while i &lt; 3. Try again.</p>
+            <p>Incorrect! The loop still terminates when the end of the loop body is reached (when <c>i &lt; 3</c> is <c>False</c>). Try again.</p>
           </feedback>
         </choice>
         <choice>
@@ -513,7 +539,7 @@ print("goodbye")
             <p>1 2 3 4</p>
           </statement>
           <feedback>
-            <p>Incorrect! The loop still terminates when the end of the loop body is reached while i &lt; 3. Try again.</p>
+            <p>Incorrect! The loop still terminates when the end of the loop body is reached (when <c>i &lt; 3</c> is <c>False</c>). Try again.</p>
           </feedback>
         </choice>
         <choice>
@@ -526,33 +552,44 @@ print("goodbye")
         </choice>
       </choices>
     </exercise>
+    
     <exercise label="loops_mc_pogil_twice">
       <statement>
-        <p>Q-18: Which of these modifications would make the loop in the above code only run twice? There are one or more answers.</p>
+        <p>Q-18: Which of these modifications would make the loop in the original code only run twice? There are one or more answers.</p>
+        <p>Here is the original code again:</p>
+        <program language="python">
+        <input>
+i = 0
+while i &lt; 3:
+    print(i)
+    i = i + 1
+print("goodbye")
+        </input>
+      </program>
       </statement>
       <choices>
         <choice correct="yes">
           <statement>
-            <p>Change line 1 to "i = 1"</p>
+            <p>Change line 1 to <c>i = 1</c></p>
           </statement>
           <feedback>
-            <p>Correct! This would print "1 2".</p>
+            <p>Correct! This would print <c>1 2</c>.</p>
           </feedback>
         </choice>
         <choice correct="yes">
           <statement>
-            <p>Change the loop condition to "i &lt; 2"</p>
+            <p>Change the loop condition to <c>i &lt; 2</c></p>
           </statement>
           <feedback>
-            <p>Correct! This would print "0 1".</p>
+            <p>Correct! This would print <c>0 1</c>.</p>
           </feedback>
         </choice>
         <choice correct="yes">
           <statement>
-            <p>Change line 4 to "i = i + 2"</p>
+            <p>Change line 4 to <c>i = i + 2</c></p>
           </statement>
           <feedback>
-            <p>Correct! This would print "0 2".</p>
+            <p>Correct! This would print <c>0 2</c>.</p>
           </feedback>
         </choice>
         <choice>
@@ -560,15 +597,15 @@ print("goodbye")
             <p>Swap lines 1 and 2</p>
           </statement>
           <feedback>
-            <p>Incorrect! This would cause a NameError because "i" wouldn't be defined when the program tries to run the "while" line for the first time. Try again.</p>
+            <p>Incorrect! This would cause a <c>NameError</c> because <c>i</c> wouldn<rsq/>t be defined when the program tries to run the <c>while</c> line for the first time. Try again.</p>
           </feedback>
         </choice>
       </choices>
     </exercise>
-    <p>A <c>while</c> loop has three parts that control the number of times it executes.
-                The first part initializes the variable or condition, the second part tests
-                whether the end has been reached, and the third part updates the variable or
-                condition.</p>
+    
+    <p>
+      A <c>while</c> loop has three parts that control the number of times it executes. The first part initializes the variable or condition, the second part tests whether the end has been reached, and the third part updates the variable or condition.
+    </p>
     <exercise label="loops_mc_pogil_noincrement">
       <statement>
         <p>Q-19: If you deleted line 4 of the code above, what would print?</p>
@@ -579,7 +616,7 @@ print("goodbye")
             <p>0 1 2</p>
           </statement>
           <feedback>
-            <p>Incorrect! "i" does not increase anywhere in the code. Try again.</p>
+            <p>Incorrect! <c>i</c> does not increase anywhere in the code. Try again.</p>
           </feedback>
         </choice>
         <choice>
@@ -587,7 +624,7 @@ print("goodbye")
             <p>1 2 3</p>
           </statement>
           <feedback>
-            <p>Incorrect! "i" begins at 0, not 1. Try again.</p>
+            <p>Incorrect! <c>i</c> begins at 0, not 1. Try again.</p>
           </feedback>
         </choice>
         <choice correct="yes">
@@ -595,7 +632,7 @@ print("goodbye")
             <p>0 would print infinitely</p>
           </statement>
           <feedback>
-            <p>Correct! Because the value of "i" never changes, the program will never leave the while loop.</p>
+            <p>Correct! Because the value of <c>i</c> never changes, the program will never leave the <c>while</c> loop.</p>
           </feedback>
         </choice>
         <choice>
@@ -608,8 +645,8 @@ print("goodbye")
         </choice>
       </choices>
     </exercise>
-    <p>When writing a <c>while</c> loop, it's helpful to answer a few
-                questions before you start:</p>
+    
+    <p>When writing a <c>while</c> loop, it<rsq/>s helpful to answer a few questions before you start:</p>
     <p>
       <em>What needs to be initialized before the loop?</em>
     </p>
@@ -619,40 +656,44 @@ print("goodbye")
     <p>
       <em>What will change so that the loop eventually ends?</em>
     </p>
-    <p>For example, consider the code below. The <c>add(n)</c> function
-                prompts the user for <c>n</c> numbers and returns the sum of these
-                values. For example, when <c>add(5)</c> is called, the user is
-                asked to input five numbers. If the user inputs 3, 1, 5, 2, and
-                4, the function would return the value 15.</p>
+    <p>For example, consider the code below. The code prompts the user for <c>n</c> numbers and returns the sum of these values. For example, when <c>n  = 5</c>, the user is asked to input five numbers. If the user inputs 30, 10, 50, 20, and 40, the function would return the value 150.</p>
     <exercise label="loops_ac_pogil_output_addn">
       <statement>
         <p>Observe the behavior of this code to see how it answers the the three bullet points above.</p>
       </statement>
       <program xml:id="loops_ac_pogil_output_addn_editor" interactive="activecode" language="python">
         <input>
-def add(n):
-    i = 0
-    total = 0
-    while i &lt; n:
-        total = total + int(input('Enter a value:'))
-        i = i + 1
-    print(total)
+n = 5
+i = 0
+total = 0
+while i &lt; n:
+    number = int(input('Enter a number:'))
+    total = total + number
+    i = i + 1
+print("The total of your numbers is", total)
 
 add(5)
         </input>
       </program>
     </exercise>
-    <p>Before the loop begins, the <c>i</c> variable, which counts how many
-                times the loop runs, must be initialized. However, the <c>total</c>
-                variable must also be initialized outside of the <c>while</c> loop,
-                or else it would reset to 0 each time the loop ran.</p>
-    <p>The loop repeats <c>n</c> times, so the Boolean expression that must
-                be true for the loop to continue is <c>i &lt; n</c>.</p>
-    <p>Finally, for the loop to eventually end, <c>i</c> must be incremented,
-                so we include the statement <c>i = i + 1</c>.</p>
-    <p>Making sure you answer these questions helps you write better
-                (and less buggy) <c>while</c> loops.</p>
-    <p>If you worked in a group, you can copy the answers from this page to the other group members.  Select the group members below and click the button to share the answers.</p>
+    <p>
+      Before the loop begins, the <c>i</c> variable, which counts how many times the loop runs, must be initialized. However, the <c>total</c> variable must also be initialized outside of the <c>while</c> loop, or else it would reset to 0 each time the loop ran.
+    </p>
+    
+    <p>
+      The loop repeats <c>n</c> times, so the Boolean expression that must be true for the loop to continue is <c>i &lt; n</c>.
+    </p>
+    
+    <p>
+      Finally, for the loop to eventually end, <c>i</c> must be incremented, so we include the statement <c>i = i + 1</c>.
+    </p>
+    
+    <p>
+      Making sure you answer these questions helps you write better (and less buggy) <c>while</c> loops.
+    </p>
+    
+    <!--<p>
+      If you worked in a group, you can copy the answers from this page to the other group members.  Select the group members below and click the button to share the answers.</p>
     <raw format="html" xml:space="preserve">
 &lt;div class="runestone sqcontainer %(optclass)s"&gt;
     &lt;div data-component="groupsub" id=loops-for-range-while_groupsub data-size_limit=3&gt;
@@ -667,6 +708,6 @@ add(5)
         group submitter.&lt;/p&gt;
     &lt;/div&gt;
 &lt;/div&gt;
-</raw>
+    </raw>-->
   </subsection>
 </section>
