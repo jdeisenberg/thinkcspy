@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<section xml:id="software-dev_developing-large-projects">
+  <title>Developing Large Projects</title>
+
+  <p>When you are developing a large project, there are more steps in the SDLC.</p>
+  
+  <figure xml:id="software-dev-fig_large-project-steps">
+        <title>SDLC for Large Projects</title>
+        <caption>SDLC for Large Projects</caption>
+        <image source="SoftwareDevelopment/Figures/full_process" width="35%" alt="Flowchart of steps described in text"/>
+    </figure>
+
+  <dl>
+    <li>
+      <title>Requirements Analysis</title>
+      <p>Users and designers work together on this step to spell out in detail what the software should do.</p>
+    </li>
+    <li>
+      <title>Design</title>
+      <p>Developers determine what functions, variables, and modules the project needs, and how they are all connected.</p>
+    </li>
+    <li>
+      <title>Development</title>
+      <p>Programmers write the program according to the design specifications.</p>
+    </li>
+    <li>
+      <title>Testing</title>
+      <p>This step usually happens concurrently with development. Large companies often have <term>Quality Assurance</term> (<init>QA</init>) teams that are independent of the developers to do the testing. They will also have people who fit the profile of the product<rsq/>s customers test the product for usability and accessibility. This does not have to be an expensive process; <url href="https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/">this interesting article</url> makes a case for needing only five people to do usability testing<mdash/>if you test often as you develop the product.</p>
+    </li>
+    <li>
+      <title>Deployment</title>
+      <p>Once you are satisfied that testing has shown your project is solid, it<rsq/>s time to put the project out into the world. Given user experience, you may have to return to the development/testing subcycle, or even farther back to the design stage to handle users<rsq/> needs as the product gets more and more customers. You might even have to go back to the first step if people tell you that they need things you had not anticipated when you started the project.</p>
+    </li>
+    <li>
+      <title>Maintenance</title>
+      <p>Bugs will inevitably occur in all software. Fixing them is important to keep customers happy. Also, changes to the underlying operating system may require you to change your code and re-test and re-deploy.</p>
+    </li>
+  </dl>
+  
+  
+  <exercise label="software_dev_order">
+    <statement><p>Put the Software Development Cycle steps into the correct order.</p></statement>
+    
+    <blocks language="natural">
+      <block order="5">
+        <p>Requirements Analysis</p>
+      </block>
+      <block order="1">
+        <p>Design</p>
+      </block>
+      <block order="4">
+        <p>Development</p>
+      </block>
+      <block order="6">
+        <p>Testing</p>
+      </block>
+      <block order="3">
+        <p>Deployment</p>
+      </block>
+      <block order="2">
+        <p>Maintenance</p>
+      </block>
+    </blocks>
+  </exercise>
+  
+  
+</section>

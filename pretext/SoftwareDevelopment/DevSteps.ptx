@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<section xml:id="software-dev_developing-small-projects">
+  <title>Developing Small Projects</title>
+
+  <p>Up to this point, you have been developing software using the following steps, as shown in :</p>
+  
+      <figure xml:id="software-dev-fig_small-project-steps">
+        <title>Development Process for Small Projects</title>
+        <caption>Development Process for Small Projects</caption>
+        <image source="SoftwareDevelopment/Figures/simple_process" width="35%" alt="Flowchart of steps described in text"/>
+    </figure>
+
+  <dl>
+    <li>
+      <title>Design</title>
+      <p>The assignment tells you what the program is supposed to do.</p>
+    </li>
+    <li>
+      <title>Development</title>
+      <p>You write the program according to the assignment<rsq/>s specifications.</p>
+    </li>
+    <li>
+      <title>Testing</title>
+      <p>You make sure that the program does what it is supposed to do. If it does not, you will need to go back to the Development stage and modify your program. This step usually happens concurrently with development.</p>
+    </li>
+    <li>
+      <title>Finish</title>
+      <p>You turn in the assignment and get a good grade :)</p>
+    </li>
+  </dl>
+  
+  <p>This is a simplified version of the process used to develop large projects: the <term>Software Development Life Cycle</term> (<init>SDLC</init>).</p>
+  
+</section>

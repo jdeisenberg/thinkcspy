@@ -18,10 +18,10 @@
         <xi:include href="./Debugging/toctree.ptx"/>
         <xi:include href="./Conditionals/toctree.ptx"/>
         <xi:include href="./Iteration/toctree.ptx"/>
-        <!--<xi:include href="./PythonModules/toctree.ptx"/>-->
         <xi:include href="./Functions/toctree.ptx"/>
         <!--<xi:include href="./MoreAboutIteration/toctree.ptx"/>-->
         <xi:include href="./Strings/toctree.ptx"/>
+        <xi:include href="./SoftwareDevelopment/toctree.ptx"/>
         <xi:include href="./Lists/toctree.ptx"/>
         <xi:include href="./Files/toctree.ptx"/>
         <xi:include href="./Dictionaries/toctree.ptx"/>
