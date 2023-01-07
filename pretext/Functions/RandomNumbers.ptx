@@ -79,12 +79,12 @@ print(random.choice(candidates))
 print(random.choice(candidates))
         </input>
   </program>
-  <note xml:id="random_distributions">
+  <!--<note xml:id="random_distributions">
     <title>For Those of You Who Are Seriously into Statistics...</title>
   <p>The <c>random</c> module also provides functions to generate
             random values from continuous distributions including Gaussian,
             exponential, gamma, and a few more. These are advanced functions, and we won<rsq/>t be using them in this course.</p>
-        </note>
+  </note>-->
           
   <exercise label="functRandom_fill1">
     <statement>

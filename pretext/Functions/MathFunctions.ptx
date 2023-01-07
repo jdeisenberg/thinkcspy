@@ -106,7 +106,7 @@ print(result)
   
   <p>You can check the previous result by
             comparing it to the square root of two divided by two:</p>
-  <program xml:id="functMath_sqrt" interactive="activecode" language="python">
+  <program xml:id="functMath_sqrt2" interactive="activecode" language="python">
     <input>
 import math
 

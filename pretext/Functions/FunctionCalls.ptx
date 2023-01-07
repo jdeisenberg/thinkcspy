@@ -70,5 +70,5 @@ print("Your number is", number)
     </setup>
   </exercise>
   
-  <p>Later on in this chapter, you will learn how to write your own functions<mdash/>and why you should learn it. For now, let<rsq/>s look at some more built-in Python functions.</p>
+  <p>Later on in this chapter, you will learn how to write your own functions<mdash/>and why it<rsq/>s a good thing to learn. For now, let<rsq/>s look at some more built-in Python functions.</p>
 </section>
