@@ -5,81 +5,72 @@
     <idx><h>Built-in</h><h>Function</h></idx>
     <idx><h>Function</h><h>Built-in</h></idx>
 
-  <p>Python provides a number of important built-in functions that we can use
-            without needing to provide the function definition. The creators of
-            Python wrote a set of functions to solve common problems and included
-            them in Python for us to use.</p>
+  <p>
+    As we mentioned previously, the creators of wrote a set of functions to solve common problems and included them in Python for us to use. Here are more of them.
+  </p>
   <p>The <c>max</c> and <c>min</c> functions give us the largest
-            and smallest values in a list, respectively:</p>
+            and smallest values of their arguments, respectively:</p>
   <program xml:id="functBuiltin_MaxMin" interactive="activecode" language="python">
     <input>
-maximum = max(1, 0, -2, 4, 3)
-print(maximum)
-minimum = min(1, 0, -2, 4, 3)
-print(minimum)
+largest = max(1, 0, -2, 4, 3)
+print(largest)
+smallest = min(1, 0, -2, 4, 3)
+print(smallest)
         </input>
   </program>
-  <p>The <c>max</c> function gives us the value 4 because it is the largest value
-            in the list. The <c>min</c> function, inversely, give us the value -2 because
-            it is the smallest value in the list.</p>
-  <exercise label="functBuiltin_MC_min">
-    <statement>
-      <p>Q-2: What will be printed as the output of this code?</p>
-      <program language="python">
-        <input>
-maximum = max(5, 'fish', True)
-print(maximum)
-</input>
-      </program>
-    </statement>
-    <choices>
-      <choice>
-        <statement>
-          <p>5</p>
-        </statement>
-        <feedback>
-          <p>Incorrect! You cannot use the max function to compare different data types. Try again.</p>
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>fish</p>
-        </statement>
-        <feedback>
-          <p>Incorrect! You cannot use the max function to compare different data types. Try again.</p>
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>True</p>
-        </statement>
-        <feedback>
-          <p>Incorrect! You cannot use the max function to compare different data types. Try again.</p>
-        </feedback>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>There is an error</p>
-        </statement>
-        <feedback>
-          <p>Correct! This code causes a TypeError because the max function cannot be used to compare different data types.</p>
-        </feedback>
-      </choice>
-    </choices>
-  </exercise>
-  <p>Another very common built-in function is the <c>len</c> function,
-            which tells us how many items are in its argument. If the argument to
-            <c>len</c> is a string, it returns the number of characters in the string.</p>
+  
+  <p>
+    The <c>max</c> function gives us the value 4 because it is the largest value among its arguments. The <c>min</c> function, inversely, give us the value -2 because it is the smallest value of its arguments.
+  </p>
+          
+  <p>
+    You can put as many arguments as you want in the parentheses when you call <c>max</c> or <c>min</c>. All the arguments must be <q>compatible</q> data types. You can have integers and floating point numbers in the arguments, but you can<rsq/>t integers and booleans, for example.
+  </p>
+  
+  <p>See if you can predict what will happen when you run this program.</p>
+  <program interactive="activecode" language="python"><input>
+minimum1 = min(4, 2.7, 9.6, 12) # all numeric
+print(minimum1)
+
+maximum2 = max('dog', 'elk', 'ant', 'bee') # all strings
+print(maximum2)
+
+minimum3 = max(3.5, 'blah', False) # different data types
+print(minimum3)
+</input></program>
+ 
+ <p>
+   If you need to find the absolute value of a number, you can use the built-in <c>abs</c> function. The <c>abs</c> function takes exactly one argument, and it must be numeric.
+ </p>
+
+ <program xml:id="functBuiltin_abs" interactive="activecode" language="python">
+   <input>
+abs_val1 = abs(-3.5)
+print(abs_val1)
+
+abs_val2 = abs(1789)
+print(abs_val2)
+
+abs_val3 = abs('blah') # error!
+print(abs_val3)
+</input></program>
+
+  <p>
+    Another very useful built-in function is the <c>len</c> function, which tells us how many items are in its argument. If the argument to <c>len</c>is a list, it returns the number of items in the list. If the argument to <c>len</c> is a string, it returns the number of characters in the string.
+  </p>
   <program xml:id="functBuiltin_len" interactive="activecode" language="python">
     <input>
-length_x = len('Hello world')
-print(length_x)
-        </input>
+list_length = len([10, 66, 47, 11, 505, 217])
+print(list_length)
+
+str_length = len('Python is good.')
+print(str_length)
+</input>
   </program>
-  <p>These functions can operate on any set of values, as we will see in
-            later chapters.</p>
-  <p>You should treat the names of built-in functions as reserved words
-            (i.e., avoid using <q>max</q> as a variable name).</p>
+  <!--<p>These functions can operate on any set of values, as we will see in
+  later chapters.</p>-->
+  <p>You should treat the names of built-in functions as reserved words (i.e., avoid using <c>max</c> as a variable name).</p>
+  <!--
   <program xml:id="functBuiltin_codelens_line2" interactive="codelens" language="python">
     <input>
 city_name = "Detroit"
@@ -90,9 +81,11 @@ else:
   print("Short city name")
     </input>
   </program>
+  -->
+  
   <exercise label="functBuiltin_MC_len">
     <statement>
-      <p>Q-5: Consider the code block below. What prints?</p>
+      <p>Q-5: Consider the following code block. What prints?</p>
       <program language="python">
         <input>
 sentence_a = "Hello, world!"
@@ -136,6 +129,7 @@ print(length_sentence_a)
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="functBuiltin_MC_name">
     <statement>
       <p>Q-6: Which of the following would work as a variable name?</p>
@@ -146,7 +140,7 @@ print(length_sentence_a)
           <p>max</p>
         </statement>
         <feedback>
-          <p>Incorrect! This is a reserved keyword because it is a built-in function in Python. Try again.</p>
+          <p>Incorrect! This is not a good choice for a variable name because it is the name of a built-in function in Python. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -154,7 +148,7 @@ print(length_sentence_a)
           <p>min</p>
         </statement>
         <feedback>
-          <p>Incorrect! This is a reserved keyword because it is a built-in function in Python. Try again.</p>
+          <p>Incorrect! This is not a good choice for a variable name because it is the name of a built-in function in Python. Try again.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -162,7 +156,7 @@ print(length_sentence_a)
           <p>built_in</p>
         </statement>
         <feedback>
-          <p>Correct! built_in is a valid variable name because it is not a built-in Python function.</p>
+          <p>Correct! <c>built_in</c> is a valid variable name because it is not the name of a built-in Python function.</p>
         </feedback>
       </choice>
       <choice>
@@ -170,7 +164,7 @@ print(length_sentence_a)
           <p>len</p>
         </statement>
         <feedback>
-          <p>Incorrect! This is a reserved keyword because it is a built-in function in Python. Try again.</p>
+          <p>Incorrect! This is not a good choice for a variable name because it is the name of a built-in function in Python. Try again.</p>
         </feedback>
       </choice>
     </choices>

@@ -17,7 +17,7 @@
     <idx><h>Function</h><h>Object</h></idx>
     <idx><h>Object</h><h>Function</h></idx>
   <p>So far, we have only been using the functions that come with Python, but
-            it is also possible to add new functions. A <em>function definition</em> specifies
+            it is also possible to add new functions. A <term>function definition</term> specifies
             the name of a new function and the sequence of statements that execute when
             the function is called. Once we define a function, we can reuse the function
             over and over throughout our program.</p>

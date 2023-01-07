@@ -16,72 +16,109 @@
 <idx><h>Function</h><h>Sine</h></idx>
 <idx><h>Sqrt</h><h>Function</h></idx>
 <idx><h>Function</h><h>Sqrt</h></idx>
-  <p>Python has a <c>math</c> module that provides most of the familiar
-            mathematical functions. Before we can use the module, we have to import
-            it:</p>
-  <program language="python">
-    <input>
-&gt;&gt;&gt; import math
-</input>
-  </program>
-  <p>This statement creates a <em>module object</em> named math. If
-            you print the module object, you get some information about it:</p>
+<introduction>
+<p>
+  Python has many built-in functions for common operations, but Python cannot anticipate everything that people might want to do and build it in. Instead, Python uses <term>modules</term> to extend its capabilities. You can think of a module as a small library of functions that serve some purpose.
+</p>
+<p>One important module is the <c>math</c> module. It is a library providing many familiar mathematical functions such as square root. Because modules are not built-in, you have to <term>import</term> a module before you can use it.  The following statement creates a <em>module objecct</em> named <c>math</c>:</p>
+
+<pre>import math</pre>
+
+<!--
+<p>creates a <em>module object</em> named math. If you print the module object, you get some information about it:</p>
   <program xml:id="functMath_module" interactive="activecode" language="python">
     <input>
 import math
 print(math)
         </input>
   </program>
-  <p>The module object contains the functions and variables defined in the
-            module. To access one of the functions, you have to specify the name of
-            the module and the name of the function, separated by a dot (also known
-            as a period). This format is called <em>dot notation</em>.</p>
-  <program xml:id="functMath_logSin" interactive="activecode" language="python">
+-->
+  <p>
+    The module object contains the functions and variables defined in the module. To access one of the functions, you have to specify the name of the module and the name of the function, separated by a dot (also known as a period). This format is called <term>dot notation</term>.
+  </p>
+  
+  <p>
+    Probably the most-used function from the <c>math</c> module is <c>sqrt</c>, which stands for <q>square root</q>.
+  </p>
+  
+  <program xml:id="functMath_sqrt" interactive="activecode" language="python">
     <input>
 import math
 
+x = 2.0
+root = math.sqrt(x)
+print("Square root of", x, "is", root)
+</input>
+</program>
+
+<p>
+  Here is a program that uses the <c>math</c> module<rsq/>s <c>log10</c> function (logarithm base 10) to calculate the signal-to-noise ratio in decibels. This is a useful calculation for audio engineers; the bigger this number is, the less unwanted noise you have in your audio.
+</p>
+
+  <program xml:id="functMath_log" interactive="activecode" language="python">
+    <input>
+# Calculate signal-to-noise ratio in decibels
+import math
+
 signal_power = 10
-noise_power = 10
+noise_power = 2
 ratio = signal_power / noise_power
 decibels = 10 * math.log10(ratio)
-print(decibels)
+print(decibels, "dB")
+</input>
+</program>
+</introduction>
 
-radians = 0.7
-height = math.sin(radians)
-print(height)
-        </input>
-  </program>
-  <p>The first example computes the logarithm base 10 of the signal-to-noise
-            ratio. The math module also provides a function called <c>log</c>
-            that computes logarithms base e.</p>
-  <p>The second example finds the sine of <c>radians</c>. The name of
-            the variable is a hint that <c>sin</c> and the other trigonometric
-            functions (<c>cos</c>, <c>tan</c>, etc.) take arguments in
-            radians. To convert from degrees to radians, divide by 360 and multiply
-            by 2pi:</p>
+<subsection xml:id="functions_trig-functions">
+  <title>Trigonometric Functions</title>
+  
+  <p>
+    The <c>math</c> module also provides functions to calculate the <em>trigonometric functions</em> such as sine, cosine, and tangent. If you have never studied these functions in your math classes, feel free to skip this section. If these functions come up in an assignment, ask your instructor for resources to learn about them.
+  </p>
+  
+  <p>
+    If you<rsq/>re still here, then you need to know something <em>very</em> important about how the trigonometry functions work in the <c>math</c> module. You may know that the sine of 45&#xb0; is one-half the square root of 2, which is about 0.707. If you try doing the following in Python, you are in for a surprise:
+  </p>
+  
+  <program xml:id="functMath_sin1" interactive="activecode" language="python"><input>
+import math
+
+degrees = 45.0
+result = math.sin(degrees)
+print("Result is", result)
+</input></program>
+
+<p>The Python trigonometric functions do not want their arguments in degrees<mdash/>they want their arguments in <em>radians</em>, where π radians equals 180&#xb0; To convert from degrees to radians, divide by 180 and multiply by pi. Luckily, the <c>math</c> module also provides you with a variable named <c>pi</c>, which is an approximation to pi to about 15 digits.  This program works a lot better:</p>
   <program xml:id="functMath_sinPi" interactive="activecode" language="python">
     <input>
 import math
 
 degrees = 45
-radians = degrees / 360.0 * 2 * math.pi
+radians = degrees / 180.0 * math.pi
 result = math.sin(radians)
 print(result)
         </input>
   </program>
-  <p>The expression <c>math.pi</c> gets the variable <c>pi</c>
-            from the math module. The value of this variable is an approximation of
-            pi, accurate to about 15 digits.</p>
-  <p>If you know your trigonometry, you can check the previous result by
+
+    <p>
+    By the way: you can also use the <c>math.radians</c> function to convert degrees to radians; then you don<rsq/>t have to remember the conversion formula.
+  </p>
+  
+  <p>You can check the previous result by
             comparing it to the square root of two divided by two:</p>
   <program xml:id="functMath_sqrt" interactive="activecode" language="python">
     <input>
 import math
 
 result = math.sqrt(2) / 2.0
-print(result)
+print("Result is", result)
         </input>
   </program>
+  
+
+</subsection>
+<subsection xml:id="functMath_exercises">
+  <title>Exercises</title>
   <exercise label="functMath_MC_statement">
     <statement>
       <p>Q-5: Which statement allows you to use the math module in Python?</p>
@@ -89,31 +126,31 @@ print(result)
     <choices>
       <choice correct="yes">
         <statement>
-          <p>import math</p>
+          <p><c>import math</c></p>
         </statement>
         <feedback>
-          <p>Correct! import math allows you to use the math module by creating the "math" module object.</p>
+          <p>Correct! <c>import math</c> allows you to use the math module by creating the "math" module object.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>include math</p>
+          <p><c>include math</c></p>
         </statement>
         <feedback>
-          <p>Incorrect! include works similarly to import, but it's not what we're using. Try again.</p>
+          <p>Incorrect! Some languages have an <c>include</c> statement that works similarly to <c>import</c>, but it<rsq/>s not what we<rsq/>re using. Try again.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>add math</p>
+          <p><c>add math</c></p>
         </statement>
         <feedback>
-          <p>Incorrect! add will not import the math module. Try again.</p>
+          <p>Incorrect! There is no <c>add</c> statement in Python; that will not import the math module. Try again.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>None. You can always use the math module.</p>
+          <p>None. You can always use the <c>math</c> module.</p>
         </statement>
         <feedback>
           <p>Incorrect! Something needs to be done to allow the math module to be used. Try again.</p>
@@ -121,6 +158,7 @@ print(result)
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="functMath_MC_access">
     <statement>
       <p>Q-6: To access a function in a module, we must use&#x2026;</p>
@@ -128,10 +166,10 @@ print(result)
     <choices>
       <choice>
         <statement>
-          <p>log</p>
+          <p><c>log</c></p>
         </statement>
         <feedback>
-          <p>Incorrect! log is a function within the math module. Try again.</p>
+          <p>Incorrect! <c>log</c> is a function within the <c>math</c> module. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -160,9 +198,10 @@ print(result)
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="functMath_fill1">
     <statement>
-      <p>Q-7: When we use the <q>import math</q> statement, a __________ called math is created. <var/>  </p>
+      <p>Q-7: When we use the <c>import math</c> statement, a __________ called <c>math</c> is created. <var/>  </p>
     </statement>
     <setup>
       <var>
@@ -179,6 +218,8 @@ print(result)
       </var>
     </setup>
   </exercise>
+  
+  <!--
   <program xml:id="functMath_codelens1" interactive="codelens" language="python">
     <input>
 import math
@@ -187,4 +228,6 @@ result = math.sqrt(4) / num
 print(result)
     </input>
   </program>
+  -->
+</subsection>
 </section>

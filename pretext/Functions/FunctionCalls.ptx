@@ -7,42 +7,49 @@
 <idx>Argument</idx>
 <idx>Return Value</idx>
   <p>
-    In the context of programming, a <term>function</term> is a named sequence of statements that performs a computation, gets input, or produces output. When you define a function, you specify the name and the sequence of statements. Later, you can <q>call</q> the function by name. 
+    In the context of programming, a <term>function</term> is a named sequence of statements that performs a computation, gets input, or produces output. We have been using functions all along in this course. We do a <term>function call</term> by giving the name of the function and, in parentheses, any extra information the function needs to do its work.
   </p>
   
-  <p>We have been doing function calls all along in this course. Python provides a number of important built-in functions that we can use
-            without needing to provide the function definition. The creators of
-            Python wrote a set of functions to solve common problems and included
-            them in Python for us to use.</p>
+  <p>Take a look at this short program:</p>
   <program xml:id="functCall_type" interactive="activecode" language="python">
     <input>
-result = type(32)
-print(result)
+num_str = input("Enter a number: ")
+number = float(num_str)
+print("Your number is", number)
+
         </input>
   </program>
-  <p>The name of the function is <c>type</c>. The expression in
-            parentheses is called the <em>argument</em> of the function. The
-            argument is a value or variable that we are passing into the function as
-            input to the function. The result, for the <c>type</c> function,
-            is the type of the argument.</p>
-  <p>It is common to say that a function <q>takes</q> an argument and <q>returns</q> a
-            result. The result is called the <em>return value</em>.</p>
+  <p>There are three function calls in this program:
+    <ul>
+      <li><p>The first one is to a function named <c>input</c>. The expression in the parentheses is called the <term>argument</term> of the function. The argument is a value or variable that we are passing into the function for its use. (<c>input</c> uses the argument to display the prompt for the user.) The result, for the <c>input</c> function, is whatever string the user typed in at the keyboard.</p></li>
+      <li><p>The next call is to a function named <c>float</c>, which takes a string or integer as its argument and gives back a number with decimal places as its result.</p></li>
+      <li><p>The last call is to a function named <c>print</c>. The <c>print</c> function takes zero or more items as its argument(s). Unlike the other two functions, which give back a useful result that we can assign to a variable, the <c>print</c> function displays its arguments on the screen and returns the special value <c>None</c>.</p></li>
+    </ul>
+  </p>
+  <p>
+    It is common to say that a function <em>takes</em> an argument and <em>returns</em> a result. The result is called the <term>return value</term>.
+    </p>
+    <p>
+      All of the functions are functions you have used so far are <term>built-in functions</term>. The creators of Python wrote these functions to solve common<mdash/>and important<mdash/>problems and included them in Python for us to use without needing to provide the function definition ourselves.</p>
+  
   <exercise label="functCall_click_name">
     <statement>
       <p>Click on the name of the function.</p>
     </statement>
     <areas>
-      <cline><area correct="yes">addTwo</area>(<area correct="no">23</area>)</cline>
+      <cline><area correct="yes">print</area>(<area correct="no">23</area>)</cline>
     </areas>
   </exercise>
+  
   <exercise label="functCall_click_arg">
     <statement>
       <p>Click on the argument of the function.</p>
     </statement>
     <areas>
-      <cline><area correct="no">addTwo</area>(<area correct="yes">23</area>)</cline>
+      <cline><area correct="no">print</area>(<area correct="yes">23</area>)</cline>
     </areas>
   </exercise>
+  
   <exercise label="functCall_fill1">
     <statement>
       <p>Q-4: A _________ is a named sequence of statements that performs a computation. <var/>  </p>
@@ -56,10 +63,12 @@ print(result)
         </condition>
         <condition string=".*">
           <feedback>
-            <p>Incorrect! <c>type</c> is an example of one of these. Try again.</p>
+            <p>Incorrect! <c>float</c> is an example of one of these. Try again.</p>
           </feedback>
         </condition>
       </var>
     </setup>
   </exercise>
+  
+  <p>Later on in this chapter, you will learn how to write your own functions<mdash/>and why you should learn it. For now, let<rsq/>s look at some more built-in Python functions.</p>
 </section>

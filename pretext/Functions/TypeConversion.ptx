@@ -18,6 +18,7 @@ print(int('32'))
 print(int('Hello'))
         </input>
   </program>
+  
   <exercise label="functType_MC_error">
     <statement>
       <p>Q-2: Why would we get an error in the following code block?</p>
@@ -31,18 +32,18 @@ print(int('Hello'))
     <choices>
       <choice>
         <statement>
-          <p>When converting a string to an int, we must remove the quotation marks.</p>
+          <p>When converting a string to an integer, we must remove the quotation marks.</p>
         </statement>
         <feedback>
-          <p>Incorrect! This would only work if Hello was a variable name with a value of the correct type. For example, Hello = '32'. Try again.</p>
+          <p>Incorrect! This would only work if <c>Hello</c> was a variable name with a value of the correct type. For example, <c>Hello = '32'</c>. Try again.</p>
         </feedback>
       </choice>
       <choice correct="yes">
         <statement>
-          <p>The int function is expecting a value that can be converted to an integer.</p>
+          <p>The <c>int</c> function is expecting a value that can be converted to an integer.</p>
         </statement>
         <feedback>
-          <p>Correct! The int function expects a value that can be converted and strings cannot be converted to integers.</p>
+          <p>Correct! The <c>int</c> function expects a value that can be converted, and strings cannot be converted to integers.</p>
         </feedback>
       </choice>
       <choice>
@@ -50,27 +51,30 @@ print(int('Hello'))
           <p>We cannot print and call a function in the same line.</p>
         </statement>
         <feedback>
-          <p>Incorrect! This is actually possible &#x2014; it worked with the first line. Try again.</p>
+          <p>Incorrect! This is actually possible<mdash/>it worked with the first line. Try again.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
-  <p><c>int</c> can convert floating-point values to integers, but it
-            doesn't round them &#x2014; it chops off the fraction part (this is called <q>truncating</q>):</p>
+  
+  <p>
+    <c>int</c> can convert floating-point values to integers, but it doesn<rsq/>t round them. Instead, it chops off the fraction part (this is called <term>truncating</term>):
+  </p>
   <program xml:id="functType_noFloat" interactive="activecode" language="python">
     <input>
 print(int(3.99999))
 print(int(-2.3))
         </input>
   </program>
-  <p><c>float</c> converts integers and strings to floating-point
-            numbers:</p>
+  
+  <p><c>float</c> converts integers and strings to floating-point numbers:</p>
   <program xml:id="functType_float" interactive="activecode" language="python">
     <input>
 print(float(32))
 print(float('3.14159'))
         </input>
   </program>
+  
   <p>Finally, <c>str</c> converts its argument to a string:</p>
   <program xml:id="functType_str" interactive="activecode" language="python">
     <input>
@@ -78,6 +82,7 @@ print(str(32))
 print(str(3.14159))
         </input>
   </program>
+  
   <exercise label="functType_fill1">
     <statement>
       <p>Q-6: The _______ function takes any value and converts it to a floating-point number. <var/>  </p>
@@ -97,6 +102,7 @@ print(str(3.14159))
       </var>
     </setup>
   </exercise>
+  
   <exercise label="functType_MC_int">
     <statement>
       <p>Q-7: Consider the code below. What prints?</p>
@@ -112,7 +118,7 @@ print(int(23.865))
           <p>23</p>
         </statement>
         <feedback>
-          <p>Correct! The int function will truncate the float when it converts it to an integer.</p>
+          <p>Correct! The <c>int</c> function will truncate the decimal places when it converts the value to an integer.</p>
         </feedback>
       </choice>
       <choice>
@@ -120,7 +126,7 @@ print(int(23.865))
           <p>24</p>
         </statement>
         <feedback>
-          <p>Incorrect! The int function doesn't round up. Try again.</p>
+          <p>Incorrect! The <c>int</c> function doesn<rsq/>t round up. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -128,7 +134,7 @@ print(int(23.865))
           <p>2</p>
         </statement>
         <feedback>
-          <p>Incorrect! The int function doesn't only convert the first digit. Try again.</p>
+          <p>Incorrect! The <c>int</c> function doesn<rsq/>t only convert the first digit. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -136,11 +142,12 @@ print(int(23.865))
           <p>23.8</p>
         </statement>
         <feedback>
-          <p>Incorrect! The int function doesn't keep any of the decimal places. Try again.</p>
+          <p>Incorrect! The <c>int</c> function doesn<rsq/>t keep any of the decimal places. Try again.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
+
   <exercise label="functType_MC_float">
     <statement>
       <p>Q-8: Consider the code below. What prints?</p>
@@ -156,7 +163,7 @@ print(float(23))
           <p>24.0</p>
         </statement>
         <feedback>
-          <p>Incorrect! The float function will be the same value as the integer. Try again.</p>
+          <p>Incorrect! The <c>float</c> function will be the same value as the integer. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -164,7 +171,7 @@ print(float(23))
           <p>2.3</p>
         </statement>
         <feedback>
-          <p>Incorrect! The float function will not split a multi-digit integer. Try again.</p>
+          <p>Incorrect! The <c>float</c> function will not split a multi-digit integer. Try again.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -172,7 +179,7 @@ print(float(23))
           <p>23.0</p>
         </statement>
         <feedback>
-          <p>The float function will add ".0" to the end of an integer, turning it into a floating point number.</p>
+          <p>The <c>float</c> function will add ".0" to the end of an integer, turning it into a floating point number.</p>
         </feedback>
       </choice>
       <choice>
