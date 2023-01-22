@@ -21,13 +21,13 @@
     </target>
     <target name="latex">
       <format>latex</format>
-      <source>source/main.ptx</source>
+      <source>pretext/cs20-thinkcspy.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/latex</output-dir>
     </target>
     <target name="pdf" pdf-method="pdflatex">
       <format>pdf</format>
-      <source>source/main.ptx</source>
+      <source>pretext/cs20-thinkcspy.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/pdf</output-dir>
     </target>
