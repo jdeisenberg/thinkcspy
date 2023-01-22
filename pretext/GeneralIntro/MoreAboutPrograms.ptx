@@ -19,7 +19,7 @@
     </li>
     <li>
       <title>math and logic</title>
-      <p>Perform basic mathematical operations like addition and multiplication
+      <p>Perform basic mathematical operations like addition and multiplication,
                         and logical operations like <c>and</c>, <c>or</c>, and <c>not</c>.</p>
     </li>
     <li>
@@ -32,7 +32,7 @@
       <p>Perform some action repeatedly, usually with some variation.</p>
     </li>
   </dl>
-  <p>Believe it or not, that<rsq/>s pretty much all there is to it. Every program yous<rsq/>ve
+  <p>Believe it or not, that<rsq/>s pretty much all there is to it. Every program you<rsq/>ve
             ever used, no matter how complicated, is made up of instructions that look more
             or less like these. Thus, we can describe programming as the process of
             breaking a large, complex task into smaller and smaller subtasks until the
@@ -69,7 +69,7 @@
           <p>a computation, even a symbolic computation.</p>
         </statement>
         <feedback>
-                    A program can perform a computation, but by itself it is not one.
+                    A program can perform a computation, but by itself a computation is not a program.
                 </feedback>
       </choice>
       <choice>
