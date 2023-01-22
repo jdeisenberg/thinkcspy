@@ -25,8 +25,11 @@ print("Hello", your_name)
   
   <program xml:id="input_start" interactive="activecode" language="python">
     <input>
+# Convert seconds to hours (as a whole number)
+
 total_seconds = input("Please enter the number of seconds you wish to convert")
 hours = total_seconds // 3600
+print("That is", hours, "hours.")
 </input>
 </program>
 

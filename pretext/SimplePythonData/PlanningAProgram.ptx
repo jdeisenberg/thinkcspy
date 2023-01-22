@@ -4,7 +4,7 @@
   <p>If you were going to build a cabinet, you wouldn<rsq/>t buy some pieces of wood and nails and start hammering them together. You<rsq/>d start by planning: What are the cabinet<rsq/>s dimensions? How many shelves should it have?  How far from the top and bottom should the hinges for the cabinet doors go? Only after you made those decisions would you start building the cabinet.</p>
   <p>In the same way, when you are writing a program to solve a problem, you don<rsq/>t want to sit down at the keyboard and start hammering away at it. Instead, you want to have a step-by-step plan for solvng the problem first; <em>then</em> you can start to program.</p>
   
-  <p>Here<rsq/>s the problem we want to solve: Back in <xref ref="simple-python-data_order-of-operations"/> we found out how many hours are in 645 minutes by evaluating <c>645&#160;//&#160;60</c>. We will write a similar, but slightly more complicated program: find out how many hours, minutes, and seconds are in 7684 seconds.</p>
+  <p>Here<rsq/>s the problem we want to solve: Back in <xref ref="simple-python-data_order-of-operations"/> we found out how many hours are in 645 minutes by evaluating <c>645&#160;//&#160;60</c>. We will write a similar, but slightly more complicated program: find out how many hours, minutes, and seconds are in 7468 seconds.</p>
   <p>A good way to start a plan for this is to figure out how we would solve this problem by hand, without a computer. There are 3600 seconds in an hour, so if we took 7684 and divided it by 3600, the quotient would tell us how many hours there were, and the remainder would be the remaining seconds.</p>
   <p>That takes care of the hours. Now we need to take the remaining seconds and split it into minutes and seconds. If we divide by 60, the quotient gives us the minutes, and the remainder gives the <q>final</q> number of seconds.</p>
   
@@ -14,7 +14,7 @@
     </statement>
     <blocks>
       <block order="6">
-        <p>Set <em>total_seconds</em> to 7684.</p>
+        <p>Set <em>total_seconds</em> to 7468.</p>
       </block>
       <block order="2">
         <p>Set <em>hours</em> to the quotient of <em>total_seconds</em> divided by 3600.</p>
@@ -46,7 +46,7 @@
   
   <program xml:id="ch02_19_codelens" interactive="codelens" language="python">
     <input>
-          total_seconds = 7684
+          total_seconds = 7468
           hours = total_seconds // 3600
           seconds_remaining = total_seconds % 3600
           minutes =  seconds_remaining // 60
