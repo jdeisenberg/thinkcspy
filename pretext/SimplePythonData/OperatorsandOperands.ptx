@@ -54,8 +54,8 @@ minutes = 645
 hours = minutes // 60
 print(hours)
 
-print(6//4)
-print(-6//4)
+print(6 // 4)
+print(-6 // 4)
     </input>
   </program>
   <p>Pay particular attention to the first two examples above.  Notice that the result of floating point division
@@ -77,12 +77,17 @@ print(remainder)
     </input>
   </program>
   <p>In the above example, 7 divided by 3 is 2 when we use integer division and there is a remainder of 1 when we use the modulus operator.</p>
-  <p>The modulus operator turns out to be surprisingly useful. For example, you can check whether one number is divisible by another&#x2014;if <c>x&#160;%&#160;y</c> is zero, then
-    <c>x</c> is divisible by <c>y</c>.
-            Also, you can extract the right-most digit or digits from a number.  For
-            example, <c>x&#160;%&#160;10</c> yields the right-most digit of <c>x</c> (in base 10).
-            Similarly <c>x&#160;%&#160;100</c> yields the last two digits.</p>
+  <p>The modulus operator turns out to be surprisingly useful. For example, you can check whether one number is divisible by another&#x2014;if <c>x&#160;%&#160;y</c> is zero, then <c>x</c> is divisible by <c>y</c>.  Also, you can extract the right-most digit or digits from a number.  For example, <c>x&#160;%&#160;10</c> yields the right-most digit of <c>x</c>.  Similarly, <c>x&#160;%&#160;100</c> yields the last two digits.</p>
 
+  <convention>
+    <title>Spaces and Expressions</title>
+    <p>For readability, you should <em>always</em> put a space on both sides of operators. This gives your code some <q>breathing room</q>.</p>
+    <program language="python"><input>
+result=(a*b)/(c+d)  # difficult to read
+result = (a * b) / (c + d) # more readable
+</input></program>
+  </convention>
+  
   <p>
     <term>Check your understanding</term>
   </p>

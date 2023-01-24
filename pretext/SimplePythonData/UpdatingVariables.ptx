@@ -11,7 +11,7 @@ x = x + 1
   </program>
   <p>In algebra, this is an impossible statement; a variable can<rsq/>t be equal to itself plus one.</p>
   <p>In Python, however, <c>=</c> is the <em>assignment operator</em>. <c>x&#160;=&#160;x&#160;+&#160;1</c> means: get the current value of <c>x</c>, add one, and then update <c>x</c> with the new value.  The new value of <c>x</c> becomes the old value of <c>x</c> plus 1.</p>
-  <p>Remember that executing assignment is a two-step process.  First, Python <em>always</em> evaluates the expression on the right side of the <c>=</c>. Second, the variable name on the left-hand side will be assigned the resulting object. The fact that <c>x</c> appears on both sides does not matter.  The semantics of the assignment statement makes sure that there is no confusion as to the result.  The visualizer makes this very clear.</p>
+  <p>Remember that executing an assignment statement is a two-step process.  First, Python <em>always</em> evaluates the expression on the right side of the <c>=</c>. Second, the variable name on the left-hand side will be assigned the resulting object. The fact that <c>x</c> appears on both sides does not matter.  The semantics of the assignment statement makes sure that there is no confusion as to the result.  The visualizer makes this very clear.</p>
   <exercise runestone="se_updatevar1"/>
   <program xml:id="ch07_update1" interactive="activecode" language="python">
     <input>
@@ -23,6 +23,8 @@ print(x)
   </program>
   <p>If you try to update a variable that doesn't exist, you get an error because Python evaluates the expression on the right side of the assignment operator before it assigns the resulting value to the variable on the left. Before you can update a variable, you have to <term>initialize</term> it, usually with a simple assignment.  In the above example, <c>x</c> was initialized to 6.</p>
   <p>Updating a variable by adding 1 is called an <term>increment</term>; subtracting 1 is called a <term>decrement</term>.  Sometimes programmers also talk about <term>bumping</term> a variable, which means the same as incrementing it by 1.</p>
+  
+  <!--
   <note>
     <title>Advanced Topics</title>
     <p>
@@ -43,6 +45,8 @@ print(x)
       </ul>
     </p>
   </note>
+  -->
+  
   <p>
     <term>Check your understanding</term>
   </p>

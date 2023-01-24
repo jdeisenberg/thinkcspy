@@ -44,5 +44,5 @@ print(y)
 </input>
   </program>
   <p>Note that when we enter the assignment statement, <c>y = 10.66</c>, only the prompt is returned.  There is no value.  This is due to the fact that statements, such as the assignment statement, do not return a value.  They are simply executed.</p>
-  <p>Even though the assignment doesn<rsq/>t return a value, that doesn<rsq/>t mean that it does nothing. The assignment statement creates a reference from a variable, <c>y</c>, to a value, <c>10.66</c>.  When we execute the print function working on <c>y</c>, we see the value that y is referring to.  In fact, evaluating <c>y</c> by itself results in the same response.</p>
+  <p>Even though the assignment doesn<rsq/>t return a value, that doesn<rsq/>t mean that it does nothing. The assignment statement creates a reference from a variable, <c>y</c>, to a value, <c>10.66</c>.  When we execute the print function working on <c>y</c>, we see the value that <c>y</c> is referring to.  In fact, evaluating <c>y</c> by itself results in the same response.</p>
 </section>

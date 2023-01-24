@@ -19,7 +19,7 @@ print(price)
   <p>Here is what <term>reassignment</term> looks like in a reference diagram:</p>
   <image source="SimplePythonData/Figures/reassign1a.png" width="50%" alt="reassignment"/>
   
-  <p>It is important to note that in mathematics, a statement of equality is always true.  If <c>a is equal to b</c> now, then <c>a will always equal to b</c>. In Python, an assignment statement can make two variables refer to the same object and therefore have the same value. They appear to be equal. However, because of the possibility of reassignment, they don<rsq/>t have to stay that way:</p>
+  <p><!--It is important to note that in mathematics, a statement of equality is always true.  If <c>a is equal to b</c> now, then <c>a will always equal to b</c>. -->In Python, an assignment statement can make two variables refer to the same object and therefore have the same value. They appear to be equal. However, because of the possibility of reassignment, they don<rsq/>t have to stay that way:</p>
   
   <program xml:id="ch07_reassign2" interactive="activecode" language="python">
     <input>
@@ -35,20 +35,21 @@ print(a, b)
         </introduction>
         
     <subsection xml:id="simple-python-data_developing-your-mental-model-of-how-python-evaluates">
-    <title>Developing your mental model of How Python Evaluates</title>
-    <p>Its important to start to develop a good mental model of the steps Python takes when evaluating an assignment statement.  In an assignment statement Python first evaluates the code on the right hand side of the assignment operator.  It then gives a name to whatever that is.  The (very short) visualization below shows what is happening.</p>
+    <title>Developing your Mental Model of How Python Evaluates</title>
+    <p>It<rsq/>s important to start to develop a good mental model of the steps Python takes when evaluating an assignment statement.  In an assignment statement Python first evaluates the code on the right hand side of the assignment operator.  It then gives a name to whatever that is. The (very short) visualization below shows what is happening.</p>
+    
     <exercise runestone="se_reassign"/>
     <p>In the first statement <title_reference>a = 5</title_reference> the literal number 5 evaluates to 5, and is given the name <title_reference>a</title_reference>.  In the second statement, the variable <title_reference>a</title_reference> evaluates to 5 and so 5 now ends up with a second name <title_reference>b</title_reference>.
     </p>
     <note>
-      <p>In some programming languages, a different symbol is used for assignment, such as <c>&lt;-</c> or <c>:=</c>.  The intent is that this will help to avoid confusion.  Python chose to use the tokens <c>=</c> for assignment, and <c>==</c> for testing to see if two values are equal.  This is a popular choice also found in languages like C, C++, Java, and C#.</p>
+      <p>In some programming languages, a different symbol is used for assignment, such as <c>&lt;-</c> or <c>:=</c>.  The intent is that this will help to avoid confusion. Python chose to use the token <c>=</c> for assignment.  This is a popular choice also found in languages like C, C++, Java, and C#.</p>
     </note>
     <p>
       <term>Check your understanding</term>
     </p>
     <exercise label="test_question2_9_1">
       <statement>
-        <p>After the following statements, what are the values of x and y?</p>
+        <p>After the following statements, what are the values of <c>x</c> and <c>y</c>?</p>
         <program language="python">
           <input>
 x = 15

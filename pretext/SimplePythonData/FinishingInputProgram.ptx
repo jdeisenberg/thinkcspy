@@ -24,4 +24,29 @@
     </input>
   </program>
   
+  <solution>
+<program language="python"><input>
+# Use the input function to read number of seconds into str_total_seconds
+# Use the int function to convert str_total_seconds to total_seconds
+str_total_seconds = input("Enter number of seconds: ")
+total_seconds = int(str_total_seconds)
+
+# Calculate hours as the quotient of dividing total_seconds and 3600
+hours = total_seconds // 3600
+
+# Calculate seconds_remaining as the remainder of dividing total_seconds and 3600.
+seconds_remaining = total_seconds % 3600
+
+# Calculate minutes as the quotient of dividing seconds_remaining by 60.
+minutes = seconds_remaining // 60
+
+# Calculate seconds_finally_remaining as the remainder of dividing
+# seconds_remaining by 60.
+seconds_finally_remaining = seconds_remaining % 60
+
+# Print hours, minutes, and seconds_finally_remaining,
+# properly labeled.
+print(hours, "hours", minutes, "minutes and", seconds_finally_remaining, "seconds.")
+</input></program>
+</solution>
 </section>

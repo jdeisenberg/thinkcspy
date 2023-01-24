@@ -5,7 +5,7 @@
     the human readers of the program<mdash/>they help the programmer document, or
             remember, what the variable is used for.</p>
             
-    <p>For example, a variable named <c>age</c> gives you a good idea of what the variable<rsq/>s purpose is. A name like <c>a</c>, on the other hand isn<rsq/>t very meaningful. Does it mean age, average, account, or what?</p>
+    <p>For example, a variable named <c>age</c> gives you a good idea of what the variable<rsq/>s purpose is. A name like <c>a</c>, on the other hand, isn<rsq/>t very meaningful. Does it mean age, average, account, or what?</p>
     
     <p>When you are writing programs in this course, you should choose meaningful names for your variables. (But don<rsq/>t go overboard: <c>age_in_years_as_of_last_birthday</c> is, well, a bit too much.)</p>
     
