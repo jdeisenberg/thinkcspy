@@ -2,10 +2,10 @@
 <section xml:id="general-intro_comments">
   <title>Comments</title>
   <p>As programs get bigger and more complicated, they get more difficult to read.
-            Formal languages are dense, and it is often difficult to look at a piece of
+            Programming languages are dense, and it is often difficult to look at a piece of
             code and figure out what it is doing, or why.
             For this reason, it is a good idea to add notes to your programs to explain in
-            natural language what the program is doing.  These notes are called comments.</p>
+            English (or some other human language) what the program is doing.  These notes are called comments.</p>
   <p>A <term>comment</term> in a computer program is text that is intended only for the human
     reader<mdash/>it is completely ignored by the interpreter.
     In Python, the <c>#</c> token starts a comment.  The rest of the line is ignored.
@@ -24,7 +24,7 @@ print("Hello, World!")     # Isn't this easy!
   <p>Notice that when you run this program, it still only prints the phrase <c>Hello, World!</c>  None of the comments appear.
     You<rsq/>ll also notice that we<rsq/>ve left a blank line in the program.  Blank lines
             are also ignored by the interpreter, but comments and blank lines can make your
-            programs much easier for humans to parse.  Use them liberally!</p>
+            programs much easier for humans to read.  Use them liberally!</p>
   <p>
     <term>Check your understanding</term>
   </p>

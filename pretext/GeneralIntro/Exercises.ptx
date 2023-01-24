@@ -9,7 +9,7 @@
         <ul>
             <li>Your name.</li>
             <li>Your favorite color.</li>
-            <li>Your favorite word, in double quotes.</li>
+            <li>Your favorite word, in double quotes. (See the Hint below the activecode area.)</li>
             <li>Your favorite poem, at least three lines long (If your favorite poem is longer than ten lines, give only the first three to ten lines.)</li>
             <li>The author of the poem. The name should be indented four spaces and preceded by a hyphen and a space. If you don't know who wrote the poem, use <q>Anonymous</q> as the author.</li>
         </ul>
