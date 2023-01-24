@@ -110,8 +110,11 @@ print(result)
     <input>
 import math
 
-result = math.sqrt(2) / 2.0
-print("Result is", result)
+sin_result = math.sin(math.radians(45))
+print("sin result is ", sin_result)
+
+sqrt_result = math.sqrt(2) / 2.0
+print("square root is", sqrt_result)
         </input>
   </program>
   
