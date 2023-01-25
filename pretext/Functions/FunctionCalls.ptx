@@ -10,7 +10,7 @@
     In the context of programming, a <term>function</term> is a named sequence of statements that performs a computation, gets input, or produces output. We have been using functions all along in this course. We do a <term>function call</term> by giving the name of the function and, in parentheses, any extra information the function needs to do its work.
   </p>
   
-  <p>Take a look at this short program:</p>
+  <p>In fact, we have been making function calls in almost all the programs we<rsq/>ve written so far! Take a look at this short program:</p>
   <program xml:id="functCall_type" interactive="activecode" language="python">
     <input>
 num_str = input("Enter a number: ")
@@ -23,9 +23,9 @@ print("Your number is", number)
     <ul>
       <li><p>The first one is to a function named <c>input</c>. The expression in the parentheses is called the <term>argument</term> of the function. The argument is a value or variable that we are passing into the function for it to use. The <c>input</c> function uses the argument to display the prompt for the user. The result, for the <c>input</c> function, is whatever string the user typed in at the keyboard.</p></li>
       
-      <li><p>The next call is to a function named <c>float</c>, which takes a string or integer as its argument and gives back a number with decimal places as its result. We will talk about it more in <xref ref="functions_type-conversion-functions"/>.</p></li>
+      <li><p>The next call is to a function named <c>float</c>, which takes a string or integer as its argument and gives back a number with decimal places as its result. We will talk about it more in <xref ref="functions_type-conversion-functions"/>. Its argument is the <c>num_str</c> variable.</p></li>
       
-      <li><p>The last call is to a function named <c>print</c>. The <c>print</c> function takes zero or more items as its argument(s). Unlike the other two functions, which give back a useful result that we can assign to a variable, the <c>print</c> function displays its arguments on the screen and returns the special value <c>None</c>.</p></li>
+      <li><p>The last call is to a function named <c>print</c>. The <c>print</c> function takes zero or more items as its argument(s). Unlike the other two functions, which give back a result that we can assign to a variable, the <c>print</c> function displays its arguments on the screen and returns the special value <c>None</c>.</p></li>
     </ul>
   </p>
   
@@ -74,5 +74,5 @@ print("Your number is", number)
     </setup>
   </exercise>
   
-  <p>Later on in this chapter, you will learn how to write your own functions<mdash/>and why it<rsq/>s a good thing to learn. For now, let<rsq/>s look at some more built-in Python functions.</p>
+  <p>Later on in this chapter, you will learn how to write your own functions<mdash/>and why it<rsq/>s a good thing to learn. First, though, let<rsq/>s look at some more built-in Python functions.</p>
 </section>

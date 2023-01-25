@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<section xml:id="functions_repetitive-code">
+  <title>Repetitive Code</title>
+
+  <p>
+    Here is a program that helps users do comparison shopping. It asks them to enter the price per unit and quantity of two different purchases. It calculates the total cost for each purchase and prints them out so that the user can see which one is the better deal.
+  </p>
+  <p>
+    The store gives a discount based on the quantity purchased: if you buy 20 or more of an item, you get 10% discount. If you buy 10<ndash/>19 of an item, you get a 7% discount, and you get no discount for purchasing a quantity less than 10.
+  </p>
+
+  <program language="python" interactive="activecode"><input>
+price1 = float(input("Enter price for first item: "))
+qty1 = int(input("Enter quantity to purchase: "))
+
+price2 = float(input("Enter price for second item: "))
+qty2 = int(input("Enter quantity to purchase: "))
+
+subtotal1 = price1 * qty1
+if qty1 >= 20:
+    total1 = 0.90 * subtotal1  # 10% discount
+elif qty1 >= 10:
+    total1 = 0.93 * subtotal1 # 7% discount
+else:
+    total1 = subtotal1
+    
+subtotal2 = price2 * qty2
+if qty2 >= 20:
+    total2 = 0.90 * subtotal2
+elif qty2 >= 10:
+    total2 = 0.93 * subtotal2
+else:
+    total2 = subtotal2
+    
+print("Total for first item is $", total1)
+print("Total for second item is $", total2)
+</input></program>
+
+<p>
+  First, I have to emphasize: there<rsq/>s nothing wrong with this program. It works exactly as advertised. It just has a lot of duplicated code.
+  What if we decided to change the 7% discount to a 5% discount? We<rsq/>d have to make sure we changed the discount on both lines 11 and 19. And imagine what the code would look like if we had three purchases, or if there were four different levels of discount based on quantity. The code would rapidly become unmanageable.
+</p>
+
+<p>
+  On the next page, we<rsq/>ll use a function to eliminate some of that duplicated code.
+</p>
+
+
+</section>

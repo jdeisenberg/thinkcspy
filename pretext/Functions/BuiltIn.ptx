@@ -6,7 +6,7 @@
     <idx><h>Function</h><h>Built-in</h></idx>
 
   <p>
-    As we mentioned previously, the creators of wrote a set of functions to solve common problems and included them in Python for us to use. Here are more of them.
+    As we mentioned previously, the creators of Python wrote a large number of functions to solve common problems and included them in Python for us to use. Here are more of them.
   </p>
   <p>The <c>max</c> and <c>min</c> functions give us the largest
             and smallest values of their arguments, respectively:</p>
@@ -20,11 +20,11 @@ print(smallest)
   </program>
   
   <p>
-    The <c>max</c> function gives us the value 4 because it is the largest value among its arguments. The <c>min</c> function, inversely, give us the value -2 because it is the smallest value of its arguments.
+    The <c>max</c> function gives us the value 4 because it is the largest value among its arguments. The <c>min</c> function, conversely, give us the value -2 because it is the smallest value of its arguments.
   </p>
           
   <p>
-    You can put as many arguments as you want in the parentheses when you call <c>max</c> or <c>min</c>. All the arguments must be <q>compatible</q> data types. You can have integers and floating point numbers in the arguments, but you can<rsq/>t integers and booleans, for example.
+    You can put as many arguments as you want in the parentheses when you call <c>max</c> or <c>min</c>. All the arguments must be <q>compatible</q> data types. You can have integers and floating point numbers in the arguments, but you can<rsq/>t mix integers and booleans, for example.
   </p>
   
   <p>See if you can predict what will happen when you run this program.</p>
@@ -70,34 +70,23 @@ print(str_length)
   <!--<p>These functions can operate on any set of values, as we will see in
   later chapters.</p>-->
   <p>You should treat the names of built-in functions as reserved words (i.e., avoid using <c>max</c> as a variable name).</p>
-  <!--
-  <program xml:id="functBuiltin_codelens_line2" interactive="codelens" language="python">
-    <input>
-city_name = "Detroit"
-num = 10
-if len(city_name) &gt; num:
-  print("Long city name")
-else:
-  print("Short city name")
-    </input>
-  </program>
-  -->
+
   
   <exercise label="functBuiltin_MC_len">
     <statement>
       <p>Q-5: Consider the following code block. What prints?</p>
       <program language="python">
         <input>
-sentence_a = "Hello, world!"
-length_sentence_a = len(sentence_a)
-print(length_sentence_a)
+sentence = "Hello, Python!"
+length_sentence = len(sentence)
+print(length_sentence)
 </input>
       </program>
     </statement>
     <choices>
       <choice>
         <statement>
-          <p>10</p>
+          <p>11</p>
         </statement>
         <feedback>
           <p>Incorrect! Spaces and punctuation characters count in the length. Try again.</p>
@@ -105,7 +94,7 @@ print(length_sentence_a)
       </choice>
       <choice>
         <statement>
-          <p>11</p>
+          <p>12</p>
         </statement>
         <feedback>
           <p>Incorrect! Punctuation characters count in the length. Try again.</p>
@@ -113,7 +102,7 @@ print(length_sentence_a)
       </choice>
       <choice>
         <statement>
-          <p>12</p>
+          <p>13</p>
         </statement>
         <feedback>
           <p>Incorrect! Spaces count in the length. Try again.</p>
@@ -121,10 +110,10 @@ print(length_sentence_a)
       </choice>
       <choice correct="yes">
         <statement>
-          <p>13</p>
+          <p>14</p>
         </statement>
         <feedback>
-          <p>Correct! 13 is the length of all characters in the string, including spaces and punctuation.</p>
+          <p>Correct! 14 is the length of all characters in the string, including spaces and punctuation.</p>
         </feedback>
       </choice>
     </choices>

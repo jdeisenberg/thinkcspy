@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<section xml:id="functions_eliminating-repetition">
+  <title>Eliminating Repetitive Code</title>
+
+  <p>
+   The key to eliminating the duplicate code is to take the calculation of the total price and make it a function with two parameters: the unit price and the quantity purchased. This function will return the total price. We can then call this function twice: once with the information for the first purchase, and again with the information for the second purchase.
+  </p>
+ 
+
+  <program xml:id="function_pricing" language="python" interactive="activecode"><input>
+def calculate_total(price, quantity):
+    subtotal = price * quantity
+    if quantity >= 20:
+        total = 0.90 * subtotal
+    elif quantity >= 10:
+        total = 0.95 * subtotal
+    else:
+        total = subtotal # no discount
+    
+    return total
+
+price1 = float(input("Enter price for first item: "))
+qty1 = int(input("Enter quantity to purchase: "))
+
+price2 = float(input("Enter price for second item: "))
+qty2 = int(input("Enter quantity to purchase: "))
+
+total1 = calculate_total(price1, qty1)
+total2 = calculate_total(price2, qty2)
+    
+print("Total for first item is $", total1)
+print("Total for second item is $", total2)
+</input></program>
+
+<p>Here are some important things to note:</p>
+
+<p>
+<ul>
+  <li>
+    <p>
+      The names of the parameters (<c>price</c> and <c>quantity</c>) do not have to be the same as the names of the arguments.
+    </p>
+  </li>
+  <li>
+    <p>
+      Arguments are copied into the parameters in the order they appear. In the call <c>calculate_total(price1, qty1)</c>, the value of argument <c>price1</c> is copied into parameter <c>price</c>, and the value of argument <c>qty1</c> is copied into paramter <c>quantity</c>.
+    </p>
+  </li>
+  <li>
+    <p>
+      The function definition (starting in line 1) must appear before the function is called (in lines 18 and 19). We<rsq/>ll examine this in a bit more detail on the next page.
+    </p>
+  </li>
+</ul>
+</p>
+
+</section>

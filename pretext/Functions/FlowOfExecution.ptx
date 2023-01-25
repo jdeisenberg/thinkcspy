@@ -5,8 +5,8 @@
 <idx>Definition</idx>
   <p>In order to ensure that a function is defined before its first use, you
             have to know the order in which statements are executed, which is called
-            the <em>flow of execution</em>.</p>
-  <p>Execution always begins at the first statement of the program.
+            the <term>flow of execution</term>.</p>
+          <p>Execution <em>always</em> begins at the first statement of the program.
             Statements are executed one at a time, in order from top to bottom.</p>
   <exercise label="functFlow_Fill1">
     <statement>
@@ -21,19 +21,53 @@
         </condition>
         <condition string=".*">
           <feedback>
-            <p>Incorrect! Hint: it's the name of this section. Try again.</p>
+            <p>Sorry, that<rsq/>s not it. Hint: it<rsq/>s the name of this section. Try again.</p>
           </feedback>
         </condition>
       </var>
     </setup>
   </exercise>
-  <p>Function <em>definitions</em> do not alter the flow of execution of the
-            program, but remember that statements inside the function are not
-            executed until the function is called.</p>
-  <p>A function call is like a detour in the flow of execution. Instead of
-            going to the next statement, the flow jumps to the body of the function,
-            executes all the statements there, and then comes back to pick up where
-            it left off.</p>
+  
+  <p>Function <em>definitions</em> do not alter the flow of execution of the program. The <c>def</c> creates a function object, but the statements inside the function are not executed until the function is called.</p>
+  
+  <p>A function call is like a detour in the flow of execution. Instead of going to the next statement, the flow jumps to the body of the function, executes all the statements there, and then comes back to pick up where it left off.</p>
+  
+  <p>At this point, it is <em>ultra-important</em> for you to use codelens to go through the price comparison program. You will be able to see:</p>
+  
+  <p>
+    <ul>
+      <li><p>The statements in the body of the <c>calculate_total</c> function do not get executed until the function is called.</p></li>
+      <li><p>The <q>detour</q> when the function is called.</p></li>
+      <li><p>How the values of arguments are copied into the parameters.</p></li>
+    </ul>
+  </p>
+  
+      <program xml:id="functFlow_pricing" interactive="codelens" language="python">
+        <input>
+def calculate_total(price, quantity):
+    subtotal = price * quantity
+    if quantity >= 20:
+        total = 0.90 * subtotal
+    elif quantity >= 10:
+        total = 0.95 * subtotal
+    else:
+        total = subtotal # no discount
+    
+    return total
+
+price1 = float(input("Enter price for first item: "))
+qty1 = int(input("Enter quantity to purchase: "))
+
+price2 = float(input("Enter price for second item: "))
+qty2 = int(input("Enter quantity to purchase: "))
+
+total1 = calculate_total(price1, qty1)
+total2 = calculate_total(price2, qty2)
+    
+print("Total for first item is $", total1)
+print("Total for second item is $", total2)
+</input></program>
+
   <p>That sounds simple enough, until you remember that one function can call
             another. While in the middle of one function, the program might have to
             execute the statements in another function. But while executing that new
@@ -59,7 +93,7 @@ firstPrint()
             time a function completes, the program picks up where it left off in the
             function that called it. When it gets to the end of the program, it
             terminates.</p>
-  <p>So what's the moral of the story? When you read a program, you don't
+  <p>So what<rsq/>s the moral of the story? When you read a program, you don<rsq/>t
             always want to read strictly from top to bottom. Sometimes, it makes more sense if
             you follow the flow of execution and read functions as they are called.</p>
   <exercise label="functFlow_MC_begin">
@@ -100,7 +134,7 @@ firstPrint()
     <choices>
       <choice>
         <statement>
-          <p>...don't always want to read from top to bottom</p>
+          <p>...don<rsq/>t always want to read from top to bottom</p>
         </statement>
         <feedback>
           <p>Incorrect! This is important, but so is B. Try again.</p>

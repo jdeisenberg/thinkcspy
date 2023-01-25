@@ -88,7 +88,7 @@ result = math.sin(degrees)
 print("Result is", result)
 </input></program>
 
-<p>The Python trigonometric functions do not want their arguments in degrees<mdash/>they want their arguments in <em>radians</em>, where π radians equals 180&#xb0; To convert from degrees to radians, divide by 180 and multiply by pi. Luckily, the <c>math</c> module also provides you with a variable named <c>pi</c>, which is an approximation to pi to about 15 digits.  This program works a lot better:</p>
+<p>The Python trigonometric functions do not want their arguments in degrees<mdash/>they want their arguments in <em>radians</em>, where π (pi) radians equals 180&#xb0; To convert from degrees to radians, divide by 180 and multiply by π. Luckily, the <c>math</c> module also provides you with a variable named <c>pi</c>, which is an approximation to π to about 15 digits.  This program works a lot better:</p>
   <program xml:id="functMath_sinPi" interactive="activecode" language="python">
     <input>
 import math
@@ -104,8 +104,8 @@ print(result)
     By the way: you can also use the <c>math.radians</c> function to convert degrees to radians; then you don<rsq/>t have to remember the conversion formula.
   </p>
   
-  <p>You can check the previous result by
-            comparing it to the square root of two divided by two:</p>
+  <p>You can check the previous result by comparing it to the square root of two divided by two. The results are close enough for anything you<rsq/>ll need to do in most beginning programming courses.</p>
+  
   <program xml:id="functMath_sqrt2" interactive="activecode" language="python">
     <input>
 import math

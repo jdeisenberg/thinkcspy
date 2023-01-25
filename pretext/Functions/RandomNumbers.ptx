@@ -74,7 +74,7 @@ print(random.randint(5, 10))
     <input>
 import random
 
-candidates = [1, 2, 3, 4, 5]
+candidates = [11, 22, 33, 44, 55]
 print(random.choice(candidates))
 print(random.choice(candidates))
         </input>
