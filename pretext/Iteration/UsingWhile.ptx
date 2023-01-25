@@ -7,7 +7,7 @@
     </p>
     
     <p>
-        One useful and common situation is when we want to <term>validate</term> input: we want to keep asking users for input as long as they don<rsq/>t give us what we want. This sort of loop is called an <term>indefinite loop</term> because we don<rsq/>t know in advance how many iterations we will need. The user might give us good input right away, or they may give us bad input twice, three times, or even fifty times. Here<rsq/>s a program that calculates a person<rsq/>s approximate age in days. We want to make sure that the user doesn<rsq/>t give us a negative number or zero for their age:
+      One useful and common situation is when we want to <term>validate</term> input: we want to keep asking users for input as long as they <em>don<rsq/>t</em> give us what we want. This sort of loop is called an <term>indefinite loop</term> because we don<rsq/>t know in advance how many iterations we will need. The user might give us good input right away, or they may give us bad input twice, three times, or even fifty times. Here<rsq/>s a program that calculates a person<rsq/>s approximate age in days. We want to make sure that the user doesn<rsq/>t give us a negative number or zero for their age:
     </p>
 
     <program xml:id="age_validate" interactive="activecode" language="python">
@@ -23,6 +23,16 @@ print("That is about", days, "days old.")
     </input>
 </program>
 
+<note>
+  <p>We<rsq/>ve done something new in line three. Instead of writing two lines of code:</p>
+  <program language="python">
+    <input>
+    years_str = input("Enter your age in years: ")
+    years = int(years_str)
+</input></program>
+<p>we combine them into one statement by <em>nesting</em> the function calls.</p>
+</note>
+
     <p>
         Here is another example of an indefinite loop: when you are at the grocery store, the clerks keep adding the prices for your items until they see the little plastic bar that means <q>that is my last item</q>. The clerks don<rsq/>t know in advance how many items you have; you could have one item, five items, or fifty items.
     </p> 
@@ -37,9 +47,9 @@ print("That is about", days, "days old.")
             <p>Here<rsq/>s the plan:</p>
     <p>
   <ul>
-    <li><p>Set total to zero.</p></li>
-    <li><p>Set number_of_items to zero.</p></li>
-    <li><p>Set price to zero.</p></li>
+    <li><p>Set <c>total</c> to zero.</p></li>
+    <li><p>Set <c>number_of_items</c> to zero.</p></li>
+    <li><p>Set <c>price</c> to zero.</p></li>
     
     <li><p>As long as the <c>price</c> is not -1:</p>
       <ul>

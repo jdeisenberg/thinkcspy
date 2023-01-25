@@ -103,7 +103,7 @@ while True:
     if line == 'done':
         break
     print(line)
-print ('Done!')
+print ('Goodbye!')
 </input>
   </program>
   
@@ -145,7 +145,7 @@ hello there
 Word: finished
 finished
 Word: done
-Done!</pre>
+Goodbye!</pre>
 
 
   <p>
