@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="ch-lists">
     <title>Lists</title>
+    <p>Watch this space.</p>
+    <!--
     <xi:include href="./intro-Lists.ptx"/>
     <xi:include href="./ListValues.ptx"/>
     <xi:include href="./ListLength.ptx"/>
@@ -32,4 +34,5 @@
     <xi:include href="./TuplesasReturnValues.ptx"/>
     <xi:include href="./Glossary.ptx"/>
     <xi:include href="./Exercises.ptx"/>
+    -->
 </chapter>

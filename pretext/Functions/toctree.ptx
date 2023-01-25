@@ -11,7 +11,6 @@
     <xi:include href='./RepetitiveCode.ptx'/>
     <xi:include href='./EliminatingRepetition.ptx'/>
     <xi:include href='./FlowOfExecution.ptx' />
-    <xi:include href='./DefinitionsAndUses.ptx' />
     <xi:include href='./ParametersAndArgs.ptx' />
     <xi:include href='./FruitfulVoid.ptx' />
     <xi:include href='./Debugging.ptx' />
