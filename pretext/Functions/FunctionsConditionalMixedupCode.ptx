@@ -104,7 +104,7 @@ For example, ``even_or_odd(-65)</c> should return <c>"This is odd."</c>. Note: F
       </block>
     </blocks>
   </exercise>
-
+  <!--
   <exercise label="funct_conditional_mixedupcode_3" numbered="yes" adaptive="yes" indentation="show" language="python">
     <statement>
       <p>Create a function called <c>which_quadrant</c> that takes in parameters <c>x</c> and <c>y</c> and returns its corresponding quadrants in increasing order
@@ -173,7 +173,8 @@ For example, ``even_or_odd(-65)</c> should return <c>"This is odd."</c>. Note: F
       </block>
     </blocks>
   </exercise>
-
+  -->
+  <!--
   <exercise label="funct_conditional_mixedupcode_4" numbered="yes" adaptive="yes" indentation="show" language="python">
     <statement>
       <p>Create a function called <c>axis_or_origin</c> that takes in parameters <c>x</c> and <c>y</c>. If both coordinates aren't 0,
@@ -228,7 +229,7 @@ For example, ``even_or_odd(-65)</c> should return <c>"This is odd."</c>. Note: F
       </block>
     </blocks>
   </exercise>
-
+  -->
   <exercise label="funct_conditional_mixedupcode_5" numbered="yes" adaptive="yes" indentation="show" language="python">
     <statement>
       <p>Create a function called <c>num_to_day</c> that takes in a parameter <c>num</c>. If <c>num</c> is between 1-5 inclusive,
@@ -316,41 +317,4 @@ For example, ``even_or_odd(-65)</c> should return <c>"This is odd."</c>. Note: F
     </blocks>
   </exercise>
 
-  <!--
-  <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=funct_conditional_mixedupcode_1_sq data-questionlist='funct_conditional_mixedupcode_1, funct_conditional_mixedupcode_1_ac'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: funct_conditional_mixedupcode_1, funct_conditional_mixedupcode_1_ac&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-  <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=funct_conditional_mixedupcode_2_sq data-questionlist='funct_conditional_mixedupcode_2, funct_conditional_mixedupcode_2_ac'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: funct_conditional_mixedupcode_2, funct_conditional_mixedupcode_2_ac&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-  <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=funct_conditional_mixedupcode_3_sq data-questionlist='funct_conditional_mixedupcode_3, funct_conditional_mixedupcode_3_ac'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: funct_conditional_mixedupcode_3, funct_conditional_mixedupcode_3_ac&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-  <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=funct_conditional_mixedupcode_4_sq data-questionlist='funct_conditional_mixedupcode_4, funct_conditional_mixedupcode_4_ac'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: funct_conditional_mixedupcode_4, funct_conditional_mixedupcode_4_ac&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-  <raw format="html" xml:space="preserve">
-&lt;div class="runestone sqcontainer %(optclass)s"&gt;
-&lt;div data-component="selectquestion" id=funct_conditional_mixedupcode_5_sq data-questionlist='funct_conditional_mixedupcode_5, funct_conditional_mixedupcode_5_ac'         data-toggleoptions="toggle, " data-togglelabels="togglelabels:" data-limit-basecourse=true&gt;
-    &lt;p&gt;Loading a dynamic question ...&lt;br/&gt;Selecting from: funct_conditional_mixedupcode_5, funct_conditional_mixedupcode_5_ac&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-</raw>
-  -->
 </section>

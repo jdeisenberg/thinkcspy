@@ -33,3 +33,20 @@
             and we will present it to you as a function named <c>min</c>, which takes a
             list of values as its argument and returns the list's smallest value.</p>
 </section>
+<!--
+def calculate_total(price, qty):
+    """Calculate total for an order given price and quantity.
+    For orders of 20 or more items, 10% discount
+    For orders from 10-19 items, 5% discount
+    For orders for fewer than 10 items, no discount
+     """
+    subtotal = price * qty
+    if qty >= 20:
+        total = 0.90 * subtotal
+    elif qty >= 10:
+        total = 0.95 * subtotal
+    else:
+        total = subtotal # no discount
+    
+    return total
+-->
