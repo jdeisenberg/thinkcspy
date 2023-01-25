@@ -20,12 +20,12 @@
         <xi:include href="./Iteration/toctree.ptx"/>
         <xi:include href="./Functions/toctree.ptx"/>
         <!--<xi:include href="./MoreAboutIteration/toctree.ptx"/>-->
-        <xi:include href="./Strings/toctree.ptx"/>
+        <!--<xi:include href="./Strings/toctree.ptx"/>
         <xi:include href="./SoftwareDevelopment/toctree.ptx"/>
         <xi:include href="./Lists/toctree.ptx"/>
         <xi:include href="./Files/toctree.ptx"/>
         <xi:include href="./Dictionaries/toctree.ptx"/>
-        <xi:include href="./Exceptions/toctree.ptx"/>
+        <xi:include href="./Exceptions/toctree.ptx"/>-->
         <!--<xi:include href="./ClassesBasics/toctree.ptx"/>-->
         <!--<xi:include href="./ClassesDiggingDeeper/toctree.ptx"/>-->
         <!--<xi:include href="./Inheritance/toctree.ptx"/>-->
