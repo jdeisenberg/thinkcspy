@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="ch-loops-iterations">
-        <title>Loops and Iterations</title>
-        <xi:include href="./WhatIsIteration.ptx"/>
-        <!--<xi:include href="./Updating.ptx" />-->
-        <xi:include href="./While.ptx" />
-        <xi:include href="./UsingWhile.ptx" />
-        <xi:include href="./LoopDetails.ptx" />
-        <!--<xi:include href="./continue.ptx" />-->
-        <xi:include href="./DefiniteFor.ptx" />
-        <xi:include href="./Loops.ptx" />
-        <xi:include href="./TheRangeFunction.ptx"/>
-        <xi:include href="./Debugging.ptx" />
-        <xi:include href="./Glossary.ptx" />
-        <xi:include href="./Exercises.ptx" />
-        <!--<xi:include href="./MixedupCode.ptx" />-->
-        <xi:include href="./WriteCode.ptx" />
-        <xi:include href="./Pogil.ptx" />
-    </chapter>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="ch-iteration">
+    <title>Loops and Iterations</title>
+    <xi:include href="./WhatIsIteration.ptx"/>
+    <!--<xi:include href="./Updating.ptx" />-->
+    <xi:include href="./While.ptx" />
+    <xi:include href="./UsingWhile.ptx" />
+    <xi:include href="./LoopDetails.ptx" />
+    <!--<xi:include href="./continue.ptx" />-->
+    <xi:include href="./DefiniteFor.ptx" />
+    <xi:include href="./Loops.ptx" />
+    <xi:include href="./TheRangeFunction.ptx"/>
+    <xi:include href="./Debugging.ptx" />
+    <xi:include href="./Glossary.ptx" />
+    <xi:include href="./Exercises.ptx" />
+    <!--<xi:include href="./MixedupCode.ptx" />-->
+    <xi:include href="./WriteCode.ptx" />
+    <xi:include href="./Pogil.ptx" />
+</chapter>

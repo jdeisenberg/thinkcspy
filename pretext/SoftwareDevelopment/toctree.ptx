@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-    <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="ch-software-development">
-        <title>Interlude: The Software Development Life Cycle</title>
-        <xi:include href='./DevSteps.ptx' />
-        <xi:include href='./FullProduct.ptx'/>
-    </chapter>
+<chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="ch-software-development">
+    <title>Interlude: The Software Development Life Cycle</title>
+    <xi:include href='./DevSteps.ptx' />
+    <xi:include href='./FullProduct.ptx'/>
+</chapter>
