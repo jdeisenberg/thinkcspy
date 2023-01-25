@@ -4,7 +4,7 @@
   <introduction>
   <p>This section goes in depth about how logical operators work. If you read this and find it confusing, feel free to skip this page and move on to the next section. After you have worked with logical operators for a while, you might want to return to this section to get <q>the rest of the story.</q></p>
   
-<p>When trying to show how logical operators work, computer scientists and mathematicians alike will use
+<p>When trying to show how logical operators work, computer scientists and mathematicians will use
             <term>truth tables</term>. A truth table is a small table that lists all possible inputs on its left columns and
             then will display the output of its particular logical operator in the right column. Take the logical
             operator <c>and</c>, for example:</p>

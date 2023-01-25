@@ -315,7 +315,7 @@ c = float(input("Enter longest side c: "))
   
   <exercise label="ex_6_12">
     <statement>
-      <p>How do we determine if a yar is a leap year? We use these three criteria:</p>
+      <p>How do we determine if a year is a leap year? We use these three criteria:</p>
       <p>The year is evenly divisible by 4;</p>
       <p>If the year can be evenly divided by 100, it is NOT a leap year, unless;</p>
       <p>The year is also evenly divisible by 400. Then it is a leap year.</p>
@@ -375,15 +375,15 @@ if year &gt;= 1900 and year &lt;= 2099:
     c = year % 7
     d = (19 * a + 24) % 30
     e = (2 * b + 4 * c + 6 * d + 5) % 7
-    dateofeaster = 22 + d + e
+    date_of_easter = 22 + d + e
 
     if year == 1954 or year == 2981 or year == 2049 or year == 2076:
-        dateofeaster = dateofeaster - 7
+        date_of_easter = date_of_easter - 7
 
-    if dateofeaster &gt; 31:
-        print("April", dateofeaster - 31)
+    if date_of_easter &gt; 31:
+        print("April", date_of_easter - 31)
     else:
-        print("March", dateofeaster)
+        print("March", date_of_easter)
 else:
     print("ERROR...year out of range")
         </input>

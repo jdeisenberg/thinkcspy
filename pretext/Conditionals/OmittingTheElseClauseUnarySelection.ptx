@@ -118,7 +118,7 @@ else:
     </choices>
   </exercise>
   
-  <p>If you are not comfortable with the unary <c>if</c> and are of the opinion that every <c>if</c> should <em>always</em> have an <c>else</c>, Python has you covered. The Python language inludes a special statement called <c>pass</c>, which means <q>do nothing</q>.</p>
+  <p>If you are not comfortable with the unary <c>if</c> and are of the opinion that every <c>if</c> should <em>always</em> have an <c>else</c>, Python has you covered with a special statement called <c>pass</c>, which means <q>do nothing</q>.</p>
   
   <p>Here is a program with a unary selection:</p>
   

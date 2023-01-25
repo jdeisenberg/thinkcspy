@@ -183,7 +183,7 @@ elif percent &lt; 50:
     <figure xml:id="fig_example_elif" align="">
     <title>Use of <c>if</c>-<c>elif</c> Chain</title>
     <caption>Use of <c>if</c>-<c>elif</c> Chain</caption>
-    <image source="Conditionals/Figures/flowchart_if_else" width="50%" alt="If-ElseIf Logic"/>
+    <image source="Conditionals/Figures/flowchart_if_else_chain" width="50%" alt="If-ElseIf Logic"/>
   </figure> 
   
   <p>Now, a similar program using separate <c>if</c> statements:</p>

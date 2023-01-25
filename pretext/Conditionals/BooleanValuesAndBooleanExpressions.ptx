@@ -8,49 +8,59 @@
       <p>
         <ul>
           <li>Is the number the user entered for the number of seconds greater than zero?</li>
-          <li>Is the amount we want to withdraw from a bank account greater than the account balance?</li>
+          <li>Is the amount we want to withdraw from a bank account less than or equal to the account balance?</li>
           <li>Did the total of two dice come out to seven?</li>
         </ul>
       </p>
-      <p>All of these are <q>yes or no</q> questions, and we may want to take different actions depending on the answer to the question. For example, if the answer to the second question is <q>yes</q>, we want to tell the customer they can<rsq/>t take out that much money; if the answer is <q>no</q>, we go ahead and let them have their money.</p>
+      <p>All of these are <q>yes or no</q> questions, and we may want to take different actions depending on the answer to the question. For example, if the answer to the second question is <q>yes</q>, we let the customer have their money; if the answer is <q>no</q>, we tell the customer they can<rsq/>t take out that much money.</p>
       
       <p>In this chapter, we'll show you how to ask these kinds of questions in Python in order to control what your programs do.</p>
     </introduction>
-    <p>We ask a yes/no question in Python by writing a <term>boolean expression</term> (named after George Boole, a 19th century mathematician). A boolean expression asks a question whose answer is either true (yes) or false (no).</p>
-    <p>The following example uses the operator <c>==</c>, asks the question <q>do my operands have the same value?</q> and produces <c>True</c> if they are
-            equal and <c>False</c> otherwise:</p>
+    
+    <p>We ask a yes/no question in Python by writing a <term>boolean expression</term> (named after George Boole, a 19th century mathematician). A boolean expression asks a question whose answer is either True (yes) or False (no).</p>
+    
+    <p>The following example uses the operator <c>&lt;</c> to ask the question <q>is the operand on the left less than the operand on the right?</q> and produces a <c>True</c> or <c>False</c> result:</p>
   <program xml:id="cond_boolean_equal" interactive="activecode" language="python">
     <input>
-print(5 == 5)  # is 5 equal to 5? True or False?
-print(5 == 6)  # is 5 equal to 6? True or False?
+print(3 &lt; 5)  # is 3 less than 5? True or False?
+print(6 &lt; 5)  # is 6 less than 5? True or False?
         </input>
   </program>
-  <p><c>True</c> and <c>False</c> are the only two <term>boolean values</term> that belong to the class <c>bool</c>. Capitalization is important, since Python is case sensitive. <c>True</c> and <c>False</c> are not strings:</p>
+  <p><c>True</c> and <c>False</c> are the only two <term>boolean values</term> that belong to the class <c>bool</c>. Capitalization is important, since Python is case sensitive. <c>True</c> and <c>False</c> are not strings, as we can see if we print out their data types:</p>
   <program xml:id="cond_boolean_types" interactive="activecode" language="python">
     <input>
 print(type(True))
 print(type(False))
         </input>
   </program>
-  <p>The <c>==</c> operator is one of the <em>comparison
-                operators</em>; others are:</p>
+  <p>The <c>&lt;</c> operator is one of the <em>comparison
+                operators</em>. Here is a table of comparison operators:</p>
   <program language="python">
     <input>
-x != y               # x is not equal to y
-x &gt; y                # x is greater than y
-x &lt; y                # x is less than y
-x &gt;= y               # x is greater than or equal to y
-x &lt;= y               # x is less than or equal to y
-
+x &lt; y        # x is less than y
+x &lt;= y       # x is less than or equal to y
+x &gt; y        # x is greater than y
+x &gt;= y       # x is greater than or equal to y
+x == y       # x is equal to y
+x != y       # x is not equal to y
 </input>
   </program>
-  <p>Although these operations are probably familiar to you, the Python
-            symbols are different from the mathematical symbols for the same
-            operations. A common error is to use a single equal sign
-            (<c>=</c>) instead of a double equal sign (<c>==</c>).
-            Remember that <c>=</c> is the assignment operator and
-            <c>==</c> is a comparison operator. There is no such thing as
-            <c>=&lt;</c> or <c>=&gt;</c>.</p>
+  <p>Although these operations are probably familiar to you, the Python symbols are different from the mathematical symbols for the same operations.</p>
+          
+  <p>Pay special attention to the <c>==</c> operator. This operator, like all the comparison operators, gives the answer to a question: <q>Does the operand on the left have the same value as the operator on the right?</q></p>
+    
+  <p>A common error is to use a single equal sign
+    (<c>=</c>) instead of a double equal sign (<c>==</c>).
+    Remember that <c>=</c> is the assignment operator and
+    <c>==</c> is a comparison operator.</p>
+  
+  <p>
+    <ul>
+      <li><p>The assignment operator <c>=</c> performs an action.  <c>age = 25</c> assigns the value 25 to the variable <c>age</c>.</p></li>
+      <li><p>The comparison operator <c>==</c> answers a question.  <c>age == 25</c> answers the question: <q>True or False<mdash/>is the value of <c>age</c> equal to 25?</q></p></li>
+    </ul>
+  </p>
+    
 
   <!--With reassignment it is especially important to distinguish between an-->
   <!--assignment statement and a boolean expression that tests for equality.-->
@@ -58,7 +68,8 @@ x &lt;= y               # x is less than or equal to y
   <!--it is tempting to interpret a statement like-->
   <!--``a = b`` as a boolean test.  Unlike mathematics, it is not!  Remember that the Python token-->
   <!--for the equality operator is ``==``.-->
-          <p>Here<rsq/>s another difference between <c>==</c> and <c>=</c>: an equality test is symmetric, but assignment is not. For example, the result of <c>a == 7</c> is always the same as the result of <c>7 == a</c>. But in Python, the statement <c>a = 7</c> is legal and <c>7 = a</c> is not. (Can you explain why?)</p>
+          <p>Here<rsq/>s another difference between <c>==</c> and <c>=</c>: an equality test is symmetric, but assignment is not. For example, the result of <c>a == 7</c> is always the s
+            ame as the result of <c>7 == a</c>. But in Python, the statement <c>a = 7</c> is legal and <c>7 = a</c> is not. (Can you explain why?)</p>
   <p>
     <term>Check your understanding</term>
   </p>
@@ -93,7 +104,7 @@ x &lt;= y               # x is less than or equal to y
       </choice>
       <choice correct="yes">
         <statement>
-          <p>3 + 4 == 7</p>
+          <p><c>3 + 4 == 7</c></p>
         </statement>
         <feedback>
                     3 + 4 evaluates to 7.  7 == 7 then evaluates to True, which is a Boolean value.
@@ -112,7 +123,7 @@ x &lt;= y               # x is less than or equal to y
   
     <exercise label="cndtnl-bool-mc-true">
     <statement>
-      <p>Q-5: What operator makes <c>783 ___ 206</c> true? Select all that apply.</p>
+      <p>Q-5: Which operator makes <c>783 ___ 206</c> true? Select all that apply.</p>
     </statement>
     <choices>
       <choice correct="yes">
@@ -125,7 +136,7 @@ x &lt;= y               # x is less than or equal to y
       </choice>
       <choice>
         <statement>
-          <p>&lt;=</p>
+          <p><c>&lt;=</c></p>
         </statement>
         <feedback>
           <p>Try again. <c>783 &lt;= 206</c> is <c>False</c>.</p>
