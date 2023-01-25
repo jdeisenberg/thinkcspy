@@ -38,7 +38,7 @@ print("That is about", days, "days old.")
     </p> 
 
     <p>
-        In the following exercise, write a program that keeps adding up prices until the user is finished, and then gives the number of items and the total price. We can<rsq/>t put a little plastic bar in our program, so we need some way to tell the program <q>that is my last item</q>. We will use a price of -1 to indicate that we are finished entering numbers. This is called our <term>sentinel value</term>. The value we choose is arbitrary, but it should be something that distinguishes it from an ordinary value.
+        In the following exercise, write a program that keeps adding up prices until the user is finished, and then gives the number of items, the total price, and the average price. We can<rsq/>t put a little plastic bar in our program, so we need some way to tell the program <q>that is my last item</q>. We will use a price of 0 to indicate that we are finished entering numbers. This is called our <term>sentinel value</term>. The value we choose is arbitrary, but it should be something that distinguishes it from an ordinary value.
     </p>
     
     
@@ -49,12 +49,12 @@ print("That is about", days, "days old.")
   <ul>
     <li><p>Set <c>total</c> to zero.</p></li>
     <li><p>Set <c>number_of_items</c> to zero.</p></li>
-    <li><p>Set <c>price</c> to zero.</p></li>
+    <li><p>Set <c>price</c> to <c>None</c> to indicate that it has never been used yet.</p></li>
     
-    <li><p>As long as the <c>price</c> is not -1:</p>
+    <li><p>As long as the <c>price</c> is not 0:</p>
       <ul>
         <li><p>Input <c>price</c> and convert to <c>float</c>.</p></li>
-        <li><p>If the <c>price</c> is not -1:</p>
+        <li><p>If the <c>price</c> is not 0:</p>
           <ul>
             <li><p>Add one to <c>number_of_items</c></p></li>
             <li><p>Add <c>price</c> to <c>total</c>.</p></li>
@@ -62,7 +62,8 @@ print("That is about", days, "days old.")
         </li>
       </ul>
     </li>
-    <li><p>Print <c>number_of_items</c> and <c>total</c>, properly labeled.</p></li>
+    <li><p>Calculate the <c>average_price</c> as <c>total</c> divided by <c>number_of_items</c></p></li>
+    <li><p>Print <c>number_of_items</c>, <c>total</c>, and <c>average_price</c>, properly labeled.</p></li>
   </ul>
 </p>
         <p>Provide the Python code to implement the plan.</p>
@@ -73,18 +74,36 @@ print("That is about", days, "days old.")
     <program language="python"><input>
 total = 0.0
 number_of_items = 0
-price = 0
+price = None
 
-while price != -1:
-    price = float(input("Enter price, or -1 when finished: "))
-    if price != -1:
+while price != 0:
+    price = float(input("Enter price, or 0 when finished: "))
+    if price != 0:
         number_of_items = number_of_items + 1
         total = total + price
 
+average_price = total / number_of_items
 print("Number of items:", number_of_items)
 print("Total cost: $", total)
+print("Average price: $", average_price)
 </input></program>
 </solution>
 </exercise>
+
+    <p>There are still a few problems with this program.</p>
+    <p>
+      <ul>
+        <li>
+          <p>If you enter a negative number, it will be added to the total and count. Modify the code so that negative numbers give an error message instead (but don<rsq/>t end the loop) Hint: <c>elif</c> is your friend.</p>
+        </li>
+        <li>
+          <p>If you enter zero the first time you are asked for a price, the loop will end, and the program will try to divide by zero. Use an <c>if</c>/<c>else</c> statement outside the loop to avoid the division by zero and tell the user that you can't compute an average without data.</p>
+        </li>
+        <li>
+          <p>This program doesn<rsq/>t display the amounts to two decimal places. We will see a solution to this problem in &lt;reference to be determined&gt;.</p>
+        </li>
+      </ul>
+    </p>
+
     </section>
 
