@@ -171,6 +171,102 @@ print(x)</pre>
     </choices>
   </exercise>
 
+    <exercise label="conditionals_mcqs_q1">
+    <statement>
+      <p>Q-1: Which of following uses the correct syntax for the header of a Python <c>if</c> statement?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p><c>if (x = y):</c></p>
+        </statement>
+        <feedback>
+          <p>Try again! An <c>if</c> statement shouldn<rsq/>t contain an assignment operator.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p><c>if (x == y):</c></p>
+        </statement>
+        <feedback>
+          <p>Correct! The parentheses are not necessary, but they don<rsq/>t hurt either.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p><c>if !(x is not y):</c></p>
+        </statement>
+        <feedback>
+          <p>Try again! The not operator (!) can't be used in python.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p><c>if x = y:</c></p>
+        </statement>
+        <feedback>
+          <p>Try again! An <c>if</c> statement shouldn<rsq/>t contain an assignment operator.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p><c>if x == y:</c></p>
+        </statement>
+        <feedback>
+          <p>Correct!</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  
+    <exercise label="functions_conditionals_mcqs_q2">
+    <statement>
+      <p>Q-2: Which of the following tests if <c>5 exponentiated to the 4th power</c> is greater than <c>y</c> and less than or equal to <c>z</c>?</p>
+    </statement>
+    <choices>
+      <choice correct="yes">
+        <statement>
+          <p><c>z &gt;= 5**4 &gt; y</c></p>
+        </statement>
+        <feedback>
+          <p>Correct! Note that this form of compound condition is allowed in Python. Many other languages will <em>not</em> allow this!</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p><c>5**4 &gt; y and (5**4 &lt; z or 5**4 == z)</c></p>
+        </statement>
+        <feedback>
+          <p>Correct! Note that the <c>and</c> operator comes before the <c>or</c> operator in operator precedence.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p><c>5**4 &gt; y and &lt;= z</c></p>
+        </statement>
+        <feedback>
+          <p>Try again! Nothing is being compared to z.</p>
+        </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p><c>5**4 &gt; y and 5**4 &lt; z or 5**4 == z</c></p>
+        </statement>
+        <feedback>
+          <p>Try again! The <c>and</c> operator comes before the <c>or</c> operator in operator precedence.</p>
+        </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p><c>5**4 &gt; y and z &gt;= 5**4</c></p>
+        </statement>
+        <feedback>
+          <p>Correct! Note that <c>z &gt;= 5**4</c> is the same as <c>5**4 &lt;= z</c>.</p>
+        </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  
   <exercise label="ex_6_2">
     <statement>
       <p>Give the <term>logical opposites</term> of these conditions.  You are not allowed to use the <c>not</c> operator. (This exercise requires the material from <xref ref="conditionals_de-morgan-laws"/>)</p>
