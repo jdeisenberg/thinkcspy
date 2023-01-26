@@ -220,14 +220,21 @@ print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
   </exercise>
   <exercise label="ex_2_7">
     <statement>
-      <p>The formula for computing the final amount if one is earning
-                        compound interest is given on Wikipedia as</p>
+      <p>The formula for computing the final amount if one is earning compound interest is given on Wikipedia as:</p>
+      <me>A = {P \left (1 + {r \over n} \right )^{nt}}</me>
+      <p>where:</p>
+      <p>
+        <ul>
+          <li><p><em>P</em> is the principal amount (initial investment)</p></li>
+          <li><p><em>r</em> is the annual nominal interest rate (as a decimal)</p></li>
+          <li><p><em>n</em> is the number of times the interest is compounded per year</p></li>
+          <li><p><em>t</em> is the number of years</p></li>
+        </ul>
+      </p>
+      <!--
       <image source="SimplePythonData/Figures/compoundInterest.png" width="50%" alt="formula for compound interest"/>
-      <p>Write a Python program that assigns the principal amount of 10000 to
-                        variable <title_reference>P</title_reference>, assign to <title_reference>n</title_reference> the value 12, and assign to <title_reference>r</title_reference> the interest
-                        rate of 8% (0.08).  Then have the program prompt the user for the number of years,
-                        <title_reference>t</title_reference>, that the money will be compounded for.  Calculate and print the final
-                        amount after <title_reference>t</title_reference> years.</p>
+      -->
+      <p>Write a Python program that assigns the principal amount of 10000 to variable <c>P</c>, assign to <c>n</c> the value 12, and assign to <c>r</c> the interest rate of 8% (0.08).  Then have the program prompt the user for the number of years, <c>t</c>, that the money will be compounded for.  Calculate and print the final amount after <c>t</c> years.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_2_7_editor">
       <input>
