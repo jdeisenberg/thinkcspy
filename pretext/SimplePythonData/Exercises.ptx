@@ -305,7 +305,7 @@ print("The area of the rectangle is", area)
   
   <exercise label="ex_2_11">
     <statement>
-      <p>Write a program that will ask the user for a temperature in degrees Celsius and convert it to degrees Fahrenheit. The conversion formula is <m>{9 \over 5} \times C + 32</m>, where C represents the temperature in degrees Celsius.</p>
+      <p>Write a program that will ask the user for a temperature in degrees Celsius and convert it to degrees Fahrenheit. The conversion formula is <m>C \times {9 \over 5} + 32</m>, where C represents the temperature in degrees Celsius.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_2_11_editor">
       <input>
@@ -329,7 +329,7 @@ print(deg_c, " degrees Celsius is", deg_f, " degrees Farenheit.")
   </exercise>
   <exercise label="ex_2_12">
     <statement>
-      <p>Write a program that will convert degrees fahrenheit to degrees celsius.</p>
+      <p>Write a program that will ask the user for a temperature in degrees Fahrenheit and convert it to degrees Celsius. The conversion formula is <m>(F - 32) \times {5 \over 9}</m>, where F represents the temperature in degrees Fahrenheit.</p>
     </statement>
     <program xml:id="ex_2_12_editor" interactive="activecode" language="python">
       <input>
