@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="ch-files">
     <title>Files</title>
+    <p>Watch this space.</p>
+    <!--
     <xi:include href="./intro-WorkingwithDataFiles.ptx"/>
     <xi:include href="./FindingaFileonyourDisk.ptx"/>
     <xi:include href="./ReadingaFile.ptx"/>
@@ -11,4 +13,5 @@
     <xi:include href="./FetchingSomethingFromTheWeb.ptx"/>
     <xi:include href="./Glossary.ptx"/>
     <xi:include href="./Exercises.ptx"/>
+    -->
 </chapter>

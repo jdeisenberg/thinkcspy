@@ -175,9 +175,10 @@ print(timeofday)
         </input>
     </program>
   </exercise>
+  <!--
   <exercise label="ex_2_5">
     <statement>
-      <p>Take the sentence: <em>All work and no play makes Jack a dull boy.</em>
+      <p>Take the sentence: <em>Python is a great language.</em>
                         Store each word in a separate variable, then print out the sentence on
                         one line using <c>print</c>.</p>
     </statement>
@@ -189,27 +190,23 @@ print(timeofday)
     <solution>
       <program xml:id="spd_q5_answer" language="python">
         <input>
-## question 5 solution ##
+## separate words solution ##
 
-word1 = "All"
-word2 = "work"
-word3 = "and"
-word4 = "no"
-word5 = "play"
-word6 = "makes"
-word7 = "Jack"
-word8 = "a"
-word9 = "dull"
-word10 = "boy."
+word1 = "Python"
+word2 = "is"
+word3 = "a"
+word4 = "great"
+word5 = "language."
 
-print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
+print(word1, word2, word3, word4, word5)
         </input>
       </program>
     </solution>
   </exercise>
+  -->
   <exercise label="ex_2_6">
     <statement>
-      <p>Add parenthesis to the expression <c>6 * 1 - 2</c> to change its value
+      <p>Add parentheses to the expression <c>6 * 1 - 2</c> to change its value
                 from 4 to -6.</p>
     </statement>
     <program xml:id="ex_2_6_editor" interactive="activecode" language="python">
@@ -223,11 +220,7 @@ print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
       <p>The formula for computing the final amount if one is earning
                         compound interest is given on Wikipedia as</p>
       <image source="SimplePythonData/Figures/compoundInterest.png" width="50%" alt="formula for compound interest"/>
-      <p>Write a Python program that assigns the principal amount of 10000 to
-                        variable <title_reference>P</title_reference>, assign to <title_reference>n</title_reference> the value 12, and assign to <title_reference>r</title_reference> the interest
-                        rate of 8% (0.08).  Then have the program prompt the user for the number of years,
-                        <title_reference>t</title_reference>, that the money will be compounded for.  Calculate and print the final
-                        amount after <title_reference>t</title_reference> years.</p>
+      <p>Write a Python program that assigns the principal amount of 10000 to variable <c>P</c>, assign to <c>n</c> the value 12, and assign to <c>r</c> the interest rate of 8% (0.08).  Then have the program prompt the user for the number of years, <c>t</c>, that the money will be compounded for.  Calculate and print the final amount after <c>t</c> years.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_2_7_editor">
       <input>
@@ -237,7 +230,7 @@ print(word1, word2, word3, word4, word5, word6, word7, word8, word9, word10)
     <solution>
       <program xml:id="spd_q7_answer" language="python">
         <input>
-## question 7 solution ##
+## compound interest solution ##
 
 P = 10000
 n = 12
@@ -276,7 +269,7 @@ print ("The final amount after", t, "years is", final)
     <solution>
       <program xml:id="spd_q9_answer" language="python">
         <input>
-## question 9 solution
+## rectangle area solution
 
 width = int(input("Width? "))
 height = int(input("Height? "))
@@ -290,8 +283,7 @@ print("The area of the rectangle is", area)
   </exercise>
   <exercise label="ex_2_10">
     <statement>
-      <p>Write a program that will compute MPG for a car.  Prompt the user to enter the number of miles driven and the number of
-                gallons used.  Print a nice message with the answer.</p>
+      <p>Write a program that will compute MPG (miles per gallon) for a car.  Prompt the user to enter the number of miles driven and the number of gallons used.  Print a nice message with the answer.</p>
     </statement>
     <program xml:id="ex_2_10_editor" interactive="activecode" language="python">
       <input>
@@ -299,9 +291,10 @@ print("The area of the rectangle is", area)
         </input>
     </program>
   </exercise>
+  
   <exercise label="ex_2_11">
     <statement>
-      <p>Write a program that will convert degrees celsius to degrees fahrenheit.</p>
+      <p>Write a program that will ask the user for a temperature in degrees Celsius and convert it to degrees Fahrenheit. The conversion formula is <m>{9 \over 5} \times C + 32</m>, where C represents the temperature in degrees Celsius.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_2_11_editor">
       <input>
@@ -311,7 +304,7 @@ print("The area of the rectangle is", area)
     <solution>
       <program xml:id="spd_q11_answer" language="python">
         <input>
-## question 11 solution ##
+## Temperature conversion solution ##
 
 deg_c = int(input("What is the temperature in Celsius? "))
 

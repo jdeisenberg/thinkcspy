@@ -11,7 +11,7 @@
     <xi:include href='./RepetitiveCode.ptx'/>
     <xi:include href='./EliminatingRepetition.ptx'/>
     <xi:include href='./FlowOfExecution.ptx' />
-    <xi:include href='./ParametersAndArgs.ptx' />
+    <!--<xi:include href='./ParametersAndArgs.ptx' />-->
     <xi:include href='./FruitfulVoid.ptx' />
     <xi:include href='./Debugging.ptx' />
     <xi:include href='./Glossary.ptx' />
@@ -19,6 +19,7 @@
     <xi:include href='./MixedupCode.ptx' />
     <xi:include href='./WriteCode.ptx' />
     <xi:include href='./FuncGroup.ptx' />
+    <!--
     <xi:include href='./FunctionsExercises.ptx' />
     <xi:include href='./FunctionsMixedupCode.ptx' />
     <xi:include href='./FunctionsWriteCode.ptx' />
@@ -30,4 +31,5 @@
     <xi:include href='./FunctionsLoopsExercises.ptx' />
     <xi:include href='./FunctionsLoopsMixedupCode.ptx' />
     <xi:include href='./FunctionsLoopsWriteCode.ptx' />
+    -->
 </chapter>

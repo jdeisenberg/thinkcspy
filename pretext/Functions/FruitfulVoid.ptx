@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <section xml:id="functions_fruitful-functions-and-void-functions">
-  <title>Fruitful functions and void functions</title>
+  <title>Value-Returning Functions and Void Functions</title>
 <idx>Script Mode</idx>
 <idx>Interactive Mode</idx>
 <idx><h>Function</h><h>Fruitful</h></idx>
@@ -9,14 +9,84 @@
 <idx><h>Void</h><h>Function</h></idx>
 <idx><h>Special Value</h><h>None</h></idx>
 <idx><h>None</h><h>Special Value</h></idx>
-  <p>Some of the functions we are using, such as the math functions, yield
-            results; for lack of a better name, I call them <em>fruitful
-                functions</em>. Other functions, like <c>print_twice</c>, perform an
-            action but don't return a value. They are called <em>void
-                functions</em>.</p>
+
+<p>
+  Take a look at the following program:
+</p>
+
+<program language="python"><input>
+import math
+
+value_str = input("Enter a value:")
+value = float(value_str)
+twice_root = 2 * math.sqrt(value)
+print("The result is", twice_root)
+</input></program>
+
+<p>
+  Lines 3 through 5 all have a function call, and the call returns some value that gets assigned to a variable. We call functions that return a value <term>value-returning functions</term> or <term>fruitful functions</term>. These functions are usually used on the right hand side of an assignment statement or are used in some expression.
+</p>
+
+<p>
+  Most of the functions you write will be value-returning functions: they will have a <c>return</c> statement that returns a value to the caller. 
+</p>
+
+<p>
+  The last line in the program uses the <c>print</c> function. Unlike the other functions, it doesn<rsq/>t return a value that we can use in further calculations. These are called <term>void functions</term>.
+</p>
+
+
+  <p>You can also write your own void functions. They will <em>not</em> have a <c>return</c> statement in them. Consider this program, which uses a function named <c>debug</c> to avoid having to duplicate <c>print</c> statements:
+</p>
+
+<program language="python" interactive="activecode" xml:id="fcn_debug">
+  <input>
+def debug(var_name, value):
+    print("The value of", var_name, "is", value)
+    
+x = 37
+debug("x before", x)
+x = x ** 2 + 2 * x + 1
+debug("x after", x)
+
+y = x ** (1 / 3)
+print("Final result is", y)    
+  </input>
+</program>
+
+<p>
+  Again, we know that <c>debug</c> is a void function because it does not have a <c>return</c> statement.
+  The <c>debug</c> function may seem to be somewhat unnecessary, but now we can use one of the advantages of functions as described in <xref ref="functions_why-functions"/>: <em>...[I]f you make a change, you only have to make it in one place.</em>
+</p>
+
+<p>
+  If we were using individual <c>print</c> statements for our debugging, we would have to comment them out one by one throughout the whole program when we were ready to ship the program to our customers.  Instead, we can replace the <c>print</c> in the <c>debug</c> function with <c>pass</c>, and the debugging output will no longer show up when we run our program:
+</p>
+
+<program language="python" interactive="activecode" xml:id="fcn_debug_pass">
+  <input>
+def debug(var_name, value):
+    # print("The value of", var_name, "is", value)
+    pass
+    
+x = 37
+debug("x before", x)
+x = x ** 2 + 2 * x + 1
+debug("x after", x)
+
+y = x ** (1 / 3)
+print("Final result is", y)    
+  </input>
+</program>
+
+<p>
+  If we modify the program and need to debug again, we can un-comment the <c>print</c> statement and get back all of our debugging output with very little effort.
+</p>
+
+
   <exercise label="functFruit_MC_fruitful">
     <statement>
-      <p>Q-1: <q>Fruitful functions</q> are functions that must&#x2026;</p>
+      <p><q>Value-returning functions</q> are functions that must&#x2026;</p>
     </statement>
     <choices>
       <choice correct="yes">
@@ -24,7 +94,7 @@
           <p>return a value</p>
         </statement>
         <feedback>
-          <p>Correct! Fruitful functions yield results in the form of a return value.</p>
+          <p>Correct! Value-returning functions yield results in the form of a return value.</p>
         </feedback>
       </choice>
       <choice>
@@ -32,7 +102,7 @@
           <p>not return a value</p>
         </statement>
         <feedback>
-          <p>Incorrect! Fruitful functions do return a value. Try again.</p>
+          <p>Incorrect! Value-returning functions do return a value. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -40,7 +110,7 @@
           <p>print something</p>
         </statement>
         <feedback>
-          <p>Incorrect! Fruitful functions may print something, but they also must do something else. Try again.</p>
+          <p>Incorrect! Value-returning functions may print something, but they also must do something else. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -48,14 +118,15 @@
           <p>display something on the screen</p>
         </statement>
         <feedback>
-          <p>Incorrect! Fruitful functions may display something on the screen, but they must also do something else. Try again.</p>
+          <p>Incorrect! Value-returning functions may display something on the screen, but they must also do something else. Try again.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="functFruit_MC_void">
     <statement>
-      <p>Q-2: <q>Void functions</q> are functions that&#x2026;</p>
+      <p><q>Void functions</q> are functions that&#x2026;</p>
     </statement>
     <choices>
       <choice>
@@ -63,7 +134,7 @@
           <p>return a value</p>
         </statement>
         <feedback>
-          <p>Incorrect! Void functions don't return a value. Try again.</p>
+          <p>Incorrect! Void functions don<rsq/>t return a value. Try again.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -71,7 +142,7 @@
           <p>do not return a value</p>
         </statement>
         <feedback>
-          <p>Correct! Void functions don't return a value.</p>
+          <p>Correct! Void functions don<rsq/>t return a value.</p>
         </feedback>
       </choice>
       <choice>
@@ -79,7 +150,7 @@
           <p>return a variable</p>
         </statement>
         <feedback>
-          <p>Incorrect! Void functions don't return a variable -- a variable is a kind of value. Try again.</p>
+          <p>Incorrect! Void functions don<rsq/>t return a variable<mdash/>a variable is a kind of value. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -92,75 +163,26 @@
       </choice>
     </choices>
   </exercise>
-  <p>When you call a fruitful function, you almost always want to do
-            something with the result; for example, you might assign it to a
-            variable or use it as part of an expression:</p>
+  
+  
+  <p><em>IMPORTANT:</em> If you call a value-returning function and do not store the result of the function in a variable, the return value vanishes into the mist!</p>
   <program language="python">
     <input>
-x = math.cos(radians)
-golden = (math.sqrt(5) + 1) / 2
+def average(a, b):
+    return (a + b) / 2
+    
+average(3.7, 8.9)
 </input>
   </program>
-  <p>When you call a function in interactive mode, Python displays the
-            result:</p>
-  <program language="python">
+  <p>This script computes the average of 3.7 and 8.9, but since it doesn<rsq/>t store the result in a variable or display the result, it is not very useful.</p>
+  
+  <p>You might be wondering what would happen if you assigned the result of a void function to a variable. If you do (as in line 2 of the following program), you get a special value called <c>None</c>.</p>
+  <program language="python" interactive="activecode">
     <input>
-&gt;&gt;&gt; math.sqrt(5)
-2.23606797749979
+x = 2.5
+result = print("x squared is", x * x)
+print(result)
 </input>
   </program>
-  <p>But in a script, if you call a fruitful function and do not store the
-            result of the function in a variable, the return value vanishes into the
-            mist!</p>
-  <program language="python">
-    <input>
-math.sqrt(5)
-</input>
-  </program>
-  <p>This script computes the square root of 5, but since it doesn't store
-            the result in a variable or display the result, it is not very useful.</p>
-  <p>Void functions might display something on the screen or have some other
-            effect, but they don't have a return value. If you try to assign the
-            result to a variable, you get a special value called <c>None</c>.</p>
-  <program language="python">
-    <input>
-&gt;&gt;&gt; result = print_twice('Bing')
-Bing
-Bing
-&gt;&gt;&gt; print(result)
-None
-</input>
-  </program>
-  <p>The value <c>None</c> is not the same as the string <q>None</q>. It
-            is a special value that has its own type:</p>
-  <program language="python">
-    <input>
-&gt;&gt;&gt; print(type(None))
-&lt;class 'NoneType'&gt;
-</input>
-  </program>
-  <p>To return a result from a function, we use the <c>return</c>
-            statement in our function. For example, we could make a very simple
-            function called <c>addtwo</c> that adds two numbers together and
-            returns a result.</p>
-  <program xml:id="functFruit_codelens" interactive="codelens" language="python">
-    <input>
-def addtwo(a, b):
-    added = a + b
-    return added
 
-a = 3
-b = 5
-x = addtwo(a, b)
-print(x)
-    </input>
-  </program>
-  <p>When this script executes, the <c>print</c> statement will print
-            out <q>8</q> because the <c>addtwo</c> function was called with 3 and 5
-            as arguments. Within the function, the parameters <c>a</c> and
-            <c>b</c> were 3 and 5 respectively. The function computed the sum
-            of the two numbers and placed it in the local function variable named
-            <c>added</c>. Then it used the <c>return</c> statement to
-            send the computed value back to the calling code as the function result,
-            which was then assigned to the variable <c>x</c> and printed out.</p>
 </section>

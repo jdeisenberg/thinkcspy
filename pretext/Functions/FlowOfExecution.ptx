@@ -32,7 +32,7 @@
   
   <p>A function call is like a detour in the flow of execution. Instead of going to the next statement, the flow jumps to the body of the function, executes all the statements there, and then comes back to pick up where it left off.</p>
   
-  <p>At this point, it is <em>ultra-important</em> for you to use codelens to go through the price comparison program. You will be able to see:</p>
+  <p>At this point, it is <em>very</em> important for you to use codelens to go through the price comparison program. (We are setting the price and quantity variables so you don<rsq/>t need to input them.) You will be able to see:</p>
   
   <p>
     <ul>
@@ -55,11 +55,11 @@ def calculate_total(price, quantity):
     
     return total
 
-price1 = float(input("Enter price for first item: "))
-qty1 = int(input("Enter quantity to purchase: "))
+price1 = 3.50
+qty1 = 14
 
-price2 = float(input("Enter price for second item: "))
-qty2 = int(input("Enter quantity to purchase: "))
+price2 = 3.75
+qty2 = 21
 
 total1 = calculate_total(price1, qty1)
 total2 = calculate_total(price2, qty2)
@@ -68,34 +68,27 @@ print("Total for first item is $", total1)
 print("Total for second item is $", total2)
 </input></program>
 
-  <p>That sounds simple enough, until you remember that one function can call
-            another. While in the middle of one function, the program might have to
-            execute the statements in another function. But while executing that new
-            function, the program might have to execute yet another function!</p>
-  <p>Observe below, where one function calls another function, which calls another.</p>
-  <program xml:id="functFlow_codelens" interactive="codelens" language="python">
+<p>That sounds simple enough, until you remember that one function can call another. While in the middle of one function, the program might have to execute the statements in another function. But while executing that new function, the program might have to execute yet another function!</p> <p>Observe below, where one function calls another function. Here, we will use our <c>average</c> function to help calculate the area of a trapezoid, given the dimensions of the top, bottom, and height. (This is a good example of an example<mdash/>most professional programmers wouldn<rsq/>t use a separate function for the average of the top and bottom.)</p>
+
+  <program xml:id="functFlow_trapezoid" interactive="codelens" language="python">
     <input>
-def firstPrint():
-    print("First")
-    secondPrint()
+def average(a, b):
+    return (a + b) / 2
 
-def secondPrint():
-    print("Second")
-    thirdPrint()
+def area_trapezoid(top, bottom, height):
+    base_average = average(top, bottom)
+    area = height * base_average
+    return area
 
-def thirdPrint():
-    print("Third")
-
-firstPrint()
+answer = area_trapezoid(3, 4.7, 5)
+print(answer)
     </input>
   </program>
-  <p>Fortunately, Python is good at keeping track of where it is, so each
-            time a function completes, the program picks up where it left off in the
-            function that called it. When it gets to the end of the program, it
-            terminates.</p>
-  <p>So what<rsq/>s the moral of the story? When you read a program, you don<rsq/>t
-            always want to read strictly from top to bottom. Sometimes, it makes more sense if
-            you follow the flow of execution and read functions as they are called.</p>
+  
+  <p>Fortunately, Python is good at keeping track of where it is, so each time a function completes, the program picks up where it left off in the function that called it. When it gets to the end of the program, the program is finished.</p>
+  
+  <p>So what<rsq/>s the moral of the story? When you read a program, you don<rsq/>t always want to read strictly from top to bottom. Sometimes, it makes more sense if you follow the flow of execution and read functions as they are called.</p>
+  
   <exercise label="functFlow_MC_begin">
     <statement>
       <p>Q-3: Where does the execution of a program always begin?</p>
