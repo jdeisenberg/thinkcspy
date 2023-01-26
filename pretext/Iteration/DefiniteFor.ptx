@@ -108,7 +108,7 @@ print('Done!')
         </input>
   </program>
   <p>
-    In Python terms, the variable <c>friends</c> is a <term>list</term> of three strings. (We will examine lists in more detail in <xref ref="chapter_lists"/>) The <c>for</c> loop goes through the list and executes the body once for each of the three strings in the list, resulting in this output:</p>
+    In Python terms, the variable <c>friends</c> is a <term>list</term> of three strings. (We will examine lists in more detail in <xref ref="ch-lists"/>.) The <c>for</c> loop goes through the list and executes the body once for each of the three strings in the list, resulting in this output:</p>
   <program language="python">
     <input>
 Greetings, Joseph
