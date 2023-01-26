@@ -251,18 +251,16 @@ main()
       </feedback>
       <areas>
         <cline># function definition</cline>
-        <cline><area correct="yes">def print_message()</area></cline>
-        <cline><area correct="no">print("Welcome to Python.")</area></cline>
-        <cline><area correct="no">print("Learn the power of functions!")</area></cline>
+        <cline><area correct="yes">def print_message():</area></cline>
+        <cline>    <area correct="no">print("Welcome to Python.")</area></cline>
+        <cline>    <area correct="no">print("Learn the power of functions!")</area></cline>
         <cline/>
         <cline># function definition</cline>
-        <cline><area correct="yes">def main()</area></cline>
-        <cline><area correct="no">print("Hello Programmer!")</area></cline>
+        <cline><area correct="yes">def main():</area></cline>
+        <cline>    <area correct="no">print("Hello Programmer!")</area></cline>
         <cline/>
-        <cline>    # function call</cline>
+        <cline># function calls</cline>
         <cline><area correct="no">print_message()</area></cline>
-        <cline/>
-        <cline># function call</cline>
         <cline><area correct="no">main()</area></cline>
       </areas>
     </exercise>
@@ -271,41 +269,24 @@ main()
         <p>Click on all of the function names in the code below.</p>
       </statement>
       <feedback>
-        <p>The name of the function is after the def keyword and before the ().</p>
+        <p>The name of the function is after the <c>def</c> keyword and before the ().</p>
       </feedback>
       <areas>
         <cline># function definition</cline>
-        <cline>
-          <area correct="no">def </area>
-          <area correct="yes">print_message</area>
-          <area correct="no">()</area>
-        </cline>
-        <cline>
-          <area correct="no">print("Welcome to Python.")</area>
-        </cline>
-        <cline>
-          <area correct="no">print("Learn the power of functions!")</area>
-        </cline>
-        <cline/>
+        <cline><area correct="no">def</area> <area correct="yes">print_message</area><area correct="no">():</area></cline>
+        <cline>    <area correct="no">print("Welcome to Python.")</area></cline>
+        <cline>    <area correct="no">print("Learn the power of functions!")</area></cline>
+        <cline></cline>
         <cline># function definition</cline>
-        <cline>
-          <area correct="no">def </area>
-          <area correct="yes">main</area>
-          <area correct="no">()</area>
-        </cline>
-        <cline>
-          <area correct="no">print("Hello Programmer!")</area>
-        </cline>
-        <cline/>
-        <cline>    # function call</cline>
+        <cline><area correct="no">def </area> <area correct="yes">main</area><area correct="no">():</area></cline>
+        <cline>    <area correct="no">print("Hello Programmer!")</area></cline>
+        <cline></cline>
+        <cline># function calls</cline>
         <cline><area correct="no">print_message()</area>:</cline>
-        <cline/>
-        <cline># function call</cline>
-        <cline>
-          <area correct="no">main()</area>
-        </cline>
+        <cline><area correct="no">main()</area></cline>
       </areas>
     </exercise>
+    
     <exercise label="function_def_dnd_v3">
       <statement>
         <p>Drag each term to its definition</p>
@@ -332,7 +313,7 @@ main()
         </match>
         <match order="5">
           <premise>function name</premise>
-          <response>Follows the def keyword and is before the list of arguments in ().</response>
+          <response>Follows the <c>def</c> keyword and is before the list of parameters in ().</response>
         </match>
       </matches>
     </exercise>
@@ -381,6 +362,7 @@ def main():
       </program>
     </exercise>
   </subsection>
+  
   <subsection xml:id="functions_function-order">
     <title>Function Order</title>
     <exercise label="func_sa_call_before_define">

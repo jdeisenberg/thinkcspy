@@ -13,7 +13,7 @@ def calculate_total(price, quantity):
     if quantity >= 20:
         total = 0.90 * subtotal
     elif quantity >= 10:
-        total = 0.95 * subtotal
+        total = 0.93 * subtotal
     else:
         total = subtotal # no discount
     

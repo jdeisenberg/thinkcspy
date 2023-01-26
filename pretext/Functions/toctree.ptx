@@ -13,6 +13,7 @@
     <xi:include href='./FlowOfExecution.ptx' />
     <!--<xi:include href='./ParametersAndArgs.ptx' />-->
     <xi:include href='./FruitfulVoid.ptx' />
+    <xi:include href='./Docstrings.ptx' />
     <xi:include href='./Debugging.ptx' />
     <xi:include href='./Glossary.ptx' />
     <xi:include href='./Exercises.ptx' />

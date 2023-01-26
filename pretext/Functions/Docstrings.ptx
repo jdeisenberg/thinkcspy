@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<section xml:id="functions_docstrings">
+  <title>Docstrings</title>
+  <p>
+    Back in <xref ref="functions_eliminating-repetition"/> we created a function named <c>calculate_total</c>. Here it is again:
+  </p>
+  
+  <program language="python"><input>
+def calculate_total(price, quantity):
+    subtotal = price * quantity
+    if quantity >= 20:
+        total = 0.90 * subtotal
+    elif quantity >= 10:
+        total = 0.93 * subtotal
+    else:
+        total = subtotal # no discount
+    
+    return total      
+  </input></program>
+  
+  <p>
+    It<rsq/>s probably been enough time since you read the page that you might not remember exactly what it was supposed to do. In a few weeks, you might remember even less. In order to help you (and other people reading your code) know what a function does, you add a <term>docstring</term> (short for <q>documentation string</q>) after the function header that explains the function<rsq/>s purpose.
+  </p>
+  
+  <p>
+    A docstring is always enclosed in triple quotes <c>"""</c> so that it can span multiple lines. Here is an activecode version of the program, using a docstring for the <c>calculate_total</c> function:
+  </p>
+  
+  <program language="python" interactive="activecode">
+    <input>
+def calculate_total(price, quantity):
+    """Calculate total price of a purchase.
+
+    Given a unit price and quantity, calculate and return
+    the total price of a purchase after applying a discount
+    (if any) based on the quantity.
+    """
+    subtotal = price * quantity
+    if quantity >= 20:
+        total = 0.90 * subtotal
+    elif quantity >= 10:
+        total = 0.93 * subtotal
+    else:
+        total = subtotal # no discount
+    
+    return total
+
+price1 = float(input("Enter price for first item: "))
+qty1 = int(input("Enter quantity to purchase: "))
+
+price2 = float(input("Enter price for second item: "))
+qty2 = int(input("Enter quantity to purchase: "))
+
+total1 = calculate_total(price1, qty1)
+total2 = calculate_total(price2, qty2)
+    
+print("Total for first item is $", total1)
+print("Total for second item is $", total2)
+    </input>
+  </program>
+  
+  <p>A docstring should start with a one-sentence summary of what the function does, followed by a blank line, followed by a more elaborate description. The ending triple quotes should be on a separate line.</p>
+  
+  <p>
+    There<rsq/>s another reason to put docstrings in your functions: let<rsq/>s say you have written a large number of functions to do statistical calculations, and you want to produce documentation so other people can use those functions too. There are <url href="https://wiki.python.org/moin/DocumentationTools">programs that will go through your source code</url> and use the docstrings to automatically produce the documentation. That saves you a lot of work!
+  </p>
+  
+</section>

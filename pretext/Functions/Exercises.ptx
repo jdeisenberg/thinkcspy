@@ -1,64 +1,10 @@
 <?xml version="1.0"?>
 <exercises xml:id="functions_multiple-choice-questions">
   <title>Multiple Choice Questions</title>
-  <exercise label="functEx_1_v2">
-    <statement>
-      <p>Q-1: What will be printed when the following code executes?</p>
-      <program language="python">
-        <input>
-def test(a, b = 5):
-    print(a, b)
 
-test(-3)
-</input>
-      </program>
-    </statement>
-    <choices>
-      <choice>
-        <statement>
-          <p>a, b</p>
-        </statement>
-        <feedback>
-          <p>It will print the value of a and b.</p>
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>-3, b</p>
-        </statement>
-        <feedback>
-          <p>It will print -3 and the value of b.</p>
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>a, 5</p>
-        </statement>
-        <feedback>
-          <p>It will print the value of a and 5.</p>
-        </feedback>
-      </choice>
-      <choice>
-        <statement>
-          <p>-3, 5</p>
-        </statement>
-        <feedback>
-          <p>It looks like it will print this, but it will actually print the values with a space between them.</p>
-        </feedback>
-      </choice>
-      <choice correct="yes">
-        <statement>
-          <p>-3 5</p>
-        </statement>
-        <feedback>
-          <p>It prints the values of a and b with a space between them.  The default value of b is 5.</p>
-        </feedback>
-      </choice>
-    </choices>
-  </exercise>
   <exercise label="functEx_2">
     <statement>
-      <p>Q-2: What will the following Python program print out? (Given that each word will actually print on a new line)</p>
+      <p>What will the following Python program print out? (Given that each word will actually print on a new line)</p>
       <program language="python">
         <input>
 def fred():
@@ -116,18 +62,20 @@ jane()
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="functEx_3">
     <statement>
-      <p>Q-3: What value is printed when the following code is executed?</p>
+      <p>What value is printed when the following code is executed?</p>
       <program language="python">
         <input>
-name = "Jane Doe"
-def myFunction(parameter):
-    value = "First"
-    value = parameter
-    print (value)
 
-myFunction("Second")
+def myFunction(parameter):
+    value = 27.4
+    value = parameter
+    return value
+
+price = 3.95
+print(myFunction(25.25))
 </input>
       </program>
     </statement>
@@ -137,15 +85,15 @@ myFunction("Second")
           <p>value</p>
         </statement>
         <feedback>
-          <p>Incorrect! "value" is the name of a variable. This code will print what "value" is assigned to. Try again.</p>
+          <p>Incorrect! "value" is the name of a variable. This code will print what is returned in <c>value</c>. Try again.</p>
         </feedback>
       </choice>
       <choice correct="yes">
         <statement>
-          <p>Second</p>
+          <p>25.25</p>
         </statement>
         <feedback>
-          <p>Correct! "value" is assigned to the value of parameter which is "Second", so that's what will print.</p>
+          <p>Correct! <c>value</c> is assigned to the value of <c>parameter</c>, which is 25.25, so that<rsq/>s what will get returned and printed.</p>
         </feedback>
       </choice>
       <choice>
@@ -153,30 +101,31 @@ myFunction("Second")
           <p>parameter</p>
         </statement>
         <feedback>
-          <p>Incorrect! "parameter" is equal to the function call's argument. Try again.</p>
+          <p>Incorrect! <c>parameter</c> is a variable which will be set to the function call<rsq/>s argument. Try again.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>First</p>
+          <p>27.4</p>
         </statement>
         <feedback>
-          <p>Incorrect! Although the variable value is assigned to "First" initially, it is then reassigned to be equal to the parameter. Try again.</p>
+          <p>Incorrect! Although the variable <c>value</c> is set to 27.4 initially, it is then reassigned to be equal to the <c>parameter</c>. Try again.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>Jane Doe</p>
+          <p>3.95</p>
         </statement>
         <feedback>
-          <p>Incorrect! The "name" variable is unused in the function call, so it does not affect what is printed. Try again.</p>
+          <p>Incorrect! The <c>price</c> variable is unused in the program, so it does not affect what is printed. Try again.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="functEx_4_v2">
     <statement>
-      <p>Q-4: A named sequence of statements is known as which of the following?</p>
+      <p>A named sequence of statements is known as which of the following?</p>
     </statement>
     <choices>
       <choice>
@@ -223,7 +172,7 @@ myFunction("Second")
   </exercise>
   <exercise label="functEx_5_v2">
     <statement>
-      <p>Q-5: What will the following code print?</p>
+      <p>What will the following code print?</p>
       <program language="python">
         <input>
 def pow(b, p):
@@ -278,14 +227,14 @@ print(result)
           <p>3125</p>
         </statement>
         <feedback>
-          <p>This would be ture if it was 5 raised to the 5th power (5 * 5 * 5 * 5 * 5) = 3125.</p>
+          <p>This would be true if it was 5 raised to the 5th power (5 * 5 * 5 * 5 * 5) = 3125.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
   <exercise label="functEx_6_v2">
     <statement>
-      <p>Q-6: Consider the following Python code. What does this code print?</p>
+      <p>Consider the following Python code. What does this code print?</p>
       <program language="python">
         <input>
 def rem(a, b):
@@ -301,7 +250,7 @@ print(rem(3,7))
           <p>0</p>
         </statement>
         <feedback>
-          <p>This would be true if it was rem(3,3).  The value 3 would go into 3 one time with 0 remainder.</p>
+          <p>This would be true if it was rem(3, 3).  The value 3 would go into 3 one time with 0 remainder.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -330,48 +279,50 @@ print(rem(3,7))
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="functEx_7">
     <statement>
-      <p>Q-7: Which of the following would NOT work as a variable name?</p>
+      <p>Which of the following would NOT work as a function name?</p>
     </statement>
     <choices>
       <choice>
         <statement>
-          <p>a</p>
+          <p><c>a</c></p>
         </statement>
         <feedback>
-          <p>Incorrect! a is a valid variable name. Try again.</p>
+          <p>Incorrect! <c>a</c> is a valid (but meaningless) function name. Try again.</p>
         </feedback>
       </choice>
       <choice correct="yes">
         <statement>
-          <p>len</p>
+          <p><c>return</c></p>
         </statement>
         <feedback>
-          <p>Correct! This would not work as a variable name because it is already reserved as a built-in function name.</p>
+          <p>Correct! You <em>use</em> the <c>return</c> statement in functions, but it can not be the name of a function because it is a reserved word in Python.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>length</p>
+          <p><c>length</c></p>
         </statement>
         <feedback>
-          <p>Incorrect! length would work as a variable because it is not a reserved word or a built-in function. Try again.</p>
+          <p>Incorrect! <c>length</c> would work as a function name because it is not a reserved word or a built-in function. Try again.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>x</p>
+          <p><c>x</c></p>
         </statement>
         <feedback>
-          <p>Incorrect! x is a valid variable name. Try again.</p>
+          <p>Incorrect! <c>x</c> is a valid (but meaningless) function name. Try again.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="functEx_8">
     <statement>
-      <p>Q-8: Consider the code below. What prints?</p>
+      <p>Consider the code below. What prints?</p>
       <program language="python">
         <input>
 print(int(33.7))
@@ -384,7 +335,7 @@ print(int(33.7))
           <p>34.0</p>
         </statement>
         <feedback>
-          <p>Incorrect! The int function converts a floating point number to an integer. Try again.</p>
+          <p>Incorrect! The <c>int</c> function converts a floating point number to an integer. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -392,7 +343,7 @@ print(int(33.7))
           <p>34</p>
         </statement>
         <feedback>
-          <p>Incorrect! The int function does not round up. Try again.</p>
+          <p>Incorrect! The <c>int</c> function does not round up. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -400,7 +351,7 @@ print(int(33.7))
           <p>33.70</p>
         </statement>
         <feedback>
-          <p>Incorrect! The int function converts a floating point number to an integer. Try again.</p>
+          <p>Incorrect! The <c>int</c> function converts a floating point number to an integer. Try again.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -408,17 +359,18 @@ print(int(33.7))
           <p>33</p>
         </statement>
         <feedback>
-          <p>Correct! The int function always truncates floating point numbers.</p>
+          <p>Correct! The <c>int</c> function always truncates floating point numbers.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="functEx_9">
     <statement>
-      <p>Q-9: Consider the code below. Line 1 is called&#x2026;</p>
+      <p>Consider the code below. Line 1 is called&#x2026;</p>
       <program language="python">
         <input>
-def printWeather():
+def print_weather():
     print("It is sunny!")
 </input>
       </program>
@@ -445,40 +397,42 @@ def printWeather():
           <p>the function definition</p>
         </statement>
         <feedback>
-          <p>Incorrect! Lines 1 and 2 collectively are the function definition. Try again.</p>
+          <p>Incorrect! Lines 1 and 2 together are the function definition. Try again.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>the function named</p>
+          <p>the function name</p>
         </statement>
         <feedback>
-          <p>Incorrect! The name is printWeather.</p>
+          <p>Incorrect! The name is <c>print_weather</c>.</p>
         </feedback>
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="functEx_10">
     <statement>
-      <p>Q-10: Consider the code block below. What happens when you run this program?</p>
+      <p>Consider the code block below. What happens when you run this program?</p>
       <program language="python">
         <input>
-repeat_lyrics()
+answer = repeat_calculation(3)
+print(answer)
 
-def repeat_lyrics():
-    print_lyrics()
-    print_lyrics()
+def repeat_calculation(n):
+    result = calculation(n)
+    result = result + calculation(n)
+    return result
 
-def print_lyrics():
-    print("I'm a lumberjack, and I'm okay.")
-    print('I sleep all night and I work all day.')
+def calculation(n):
+    return n * 5
 </input>
       </program>
     </statement>
     <choices>
       <choice>
         <statement>
-          <p>The lyrics print like normal.</p>
+          <p>The program prints the number 30.</p>
         </statement>
         <feedback>
           <p>Incorrect! An error occurs when you call a function before it is defined. Try again.</p>
@@ -486,23 +440,23 @@ def print_lyrics():
       </choice>
       <choice>
         <statement>
-          <p>We get a TypeError.</p>
+          <p>We get a <c>TypeError</c>.</p>
         </statement>
         <feedback>
-          <p>Incorrect! This will not cause a TypeError because there is not an issue with the variable types. Try again.</p>
+          <p>Incorrect! This will not cause a <c>TypeError</c> because there is not an issue with the variable types. Try again.</p>
         </feedback>
       </choice>
       <choice correct="yes">
         <statement>
-          <p>We get a NameError.</p>
+          <p>We get a <c>NameError</c>.</p>
         </statement>
         <feedback>
-          <p>Correct! You get a NameError when you call a function before it is defined.</p>
+          <p>Correct! You get a <c>NameError</c> when you call a function before it is defined.</p>
         </feedback>
       </choice>
       <choice>
         <statement>
-          <p>The program compiles but nothing prints.</p>
+          <p>The program compiles, but nothing prints.</p>
         </statement>
         <feedback>
           <p>Incorrect! This program will not compile. Try again.</p>
