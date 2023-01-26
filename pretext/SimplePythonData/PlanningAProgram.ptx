@@ -5,7 +5,7 @@
   <p>In the same way, when you are writing a program to solve a problem, you don<rsq/>t want to sit down at the keyboard and start hammering away at it. Instead, you want to have a step-by-step plan for solvng the problem first; <em>then</em> you can start to program.</p>
   
   <p>Here<rsq/>s the problem we want to solve: Back in <xref ref="simple-python-data_order-of-operations"/> we found out how many hours are in 645 minutes by evaluating <c>645&#160;//&#160;60</c>. We will write a similar, but slightly more complicated program: find out how many hours, minutes, and seconds are in 7468 seconds.</p>
-  <p>A good way to start a plan for this is to figure out how we would solve this problem by hand, without a computer. There are 3600 seconds in an hour, so if we took 7684 and divided it by 3600, the quotient would tell us how many hours there were, and the remainder would be the remaining seconds.</p>
+  <p>A good way to start a plan for this is to figure out how we would solve this problem by hand, without a computer. There are 3600 seconds in an hour, so if we took 7468 and divided it by 3600, the quotient would tell us how many hours there were, and the remainder would be the remaining seconds.</p>
   <p>That takes care of the hours. Now we need to take the remaining seconds and split it into minutes and seconds. If we divide by 60, the quotient gives us the minutes, and the remainder gives the <q>final</q> number of seconds.</p>
   
     <exercise xml:id="parsons_hr_min_sec_ex" label="parsons_hr_min_sec" language="natural" numbered="yes">

@@ -2,26 +2,31 @@
 <section xml:id="simple-python-data_input">
   <title>Input</title>
   <video xml:id="inputvid" youtube="2KYixkCBXSQ" width="auto"/>
-  <p>The program in the previous section works fine but is very limited in that it only works with one value for <c>total_secs</c>.  What if we wanted to rewrite the program so that it was more general.  One thing we could do is allow the user to enter any value they wish for the number of seconds.  The program could then print the proper result for that starting value.</p>
-  <p>In order to do this, we need a way to get <term>input</term> from the user.  Luckily, in Python
-            there is a built-in function to accomplish this task.  As you might expect, it is called <c>input</c>.</p>
+  <p>
+    The program in the previous section works fine but is very limited in that it only works with one value for <c>total_secs</c>.  What if we wanted to rewrite the program so that it was more general?  One thing we could do is allow the user to enter any value they wish for the number of seconds.  The program could then print the proper result for that starting value.
+  </p>
+  
+  <p>
+    In order to do this, we need a way to get <term>input</term> from the user.  Luckily, in Python there is a built-in function to accomplish this task.  As you might expect, it is called <c>input</c>.
+  </p>
+  
   <program language="python">
     <input>
 your_name = input("Please enter your name: ")
 </input>
   </program>
-  <p>The input function allows the user to provide a <term>prompt string</term>.  When the function is evaluated, the prompt isshown.
-    The user of the program can enter the name and press <kbd name="enter"/> (return or ENTER on your keyboard). When this
-            happens, the text that has been entered is returned from the <c>input</c> function,
-            and in this case assigned to the variable <c>your_name</c>.  Make sure you run this example a number
-            of times and try some different names in the input box that appears.</p>
+  
+  <p>
+    The input function allows the user to provide a <term>prompt string</term>.  When the function is evaluated, the prompt isshown. The user of the program can enter the name and press <kbd name="enter"/> (return or ENTER on your keyboard). When this happens, the text that has been entered is returned from the <c>input</c> function, and in this case assigned to the variable <c>your_name</c>.  Make sure you run this example a number of times and try some different names in the input box that appears.
+  </p>
+  
   <program xml:id="inputfun" interactive="activecode" language="python">
     <input>
 your_name = input("Please enter your name: ")
 print("Hello", your_name)
         </input>
   </program>
-  <p>It is very important to note that the <c>input</c> function returns a string value.  Even if you asked the user to enter their age, you would get back a string like <c>"17"</c> (even though the quote marks wouldn<rsq/>t show up when you printed it)f.  The problem here is that we can<rsq/>t mix strings and numbers. If we try starting our program like this and enter a number like 7468:</p>
+  <p>It is very important to note that the <c>input</c> function returns a string value.  Even if you asked the user to enter their age, you would get back a string like <c>"17"</c> (even though the quote marks wouldn<rsq/>t show up when you printed it).  The problem here is that we can<rsq/>t mix strings and numbers. If we try starting our program like this and enter a number like 7468:</p>
   
   <program xml:id="input_start" interactive="activecode" language="python">
     <input>

@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<section xml:id="simple-python-data_values-and-data-types">
+  <title>Values and Data Types</title>
+  <p>Let<rsq/>s look at a program that calculates a 22-year-old person<rsq/>s approximate age in days:</p>
+  
+  <program xml:id="prog_age_1" interactive="activecode" language="python">
+    <input>
+print("My age in days is about")
+print(22 * 365)
+</input>
+</program>
+
+  <p>Each of the things we are printing is a <term>value</term>, one of the fundamental things that a program manipulates. The values in this program are <c>"My&#160;age&#160;in&#160;days&#160;is&#160;about"</c>, <c>22</c>, and <c>365</c>. We often refer to these values as <term>objects</term> and we will use the words value and object interchangeably.</p>
+  
+  <p>These objects are classified into different <term>classes</term>, or <term>data types</term>: <c>22</c>
+            is an <em>integer</em>, and <c>"My&#160;age&#160;in&#160;days&#160;is&#160;about"</c> is a <em>string</em>, so-called because it
+            contains a string, or sequence, of letters. You (and Python) can identify strings
+            because they are enclosed in quotation marks.</p>
+  <p>If you are not sure what class a value falls into, Python has a function called
+            <term>type</term> which can tell you.</p>
+  <program xml:id="basic_types_1" interactive="activecode" language="python">
+    <input>
+print(type("My age in days is about"))
+print(type(22))
+        </input>
+  </program>
+  <p>Not surprisingly, strings belong to the class <term>str</term> and integers belong to the
+            class <term>int</term>.</p>
+  <note>
+
+  <p>In the Python shell, it is not necessary to use the <c>print</c> function to see the values shown above.  The shell evaluates the Python function and automatically prints the result.  For example, consider the shell session shown below.  When
+            we ask the shell to evaluate <c>type("Hello, World!")</c>, it responds with the appropriate answer and then goes on to
+            display the prompt for the next use.</p>
+  <pre>&gt;&gt;&gt; type("My age in days is about")
+&lt;class 'str'&gt;
+&gt;&gt;&gt; type(22)</pre>
+</note>
+  
+<p>Continuing with our discussion of data types, numbers with a decimal point belong to a class called <term>float</term>, because these numbers are represented in a format called <em>floating-point</em>. (<url href="https://www.youtube.com/watch?v=R7Qb3LoSo84">See this video</url> to find out where the term <em>floating-point</em> comes from.) At this stage, you can treat the words <em>class</em> and <em>type</em> interchangeably.  We<rsq/>ll come back to a deeper understanding of what a class is in later chapters.</p>
+  <program xml:id="ch02_2" interactive="activecode" language="python">
+    <input>
+print(type(17))
+print(type(3.2))
+        </input>
+  </program>
+  <p>What about values like <c>"17"</c> and <c>"3.2"</c>? They look like numbers, but they
+            are in quotation marks like strings.</p>
+  <program xml:id="ch02_3" interactive="activecode" language="python">
+    <input>
+print(type("17"))
+print(type("3.2"))
+        </input>
+  </program>
+  <p>They're strings!</p>
+  <p>When you type a large integer, you might be tempted to use commas between
+            groups of three digits, as in <c>42,000</c>. This is not a legal integer in
+            Python, but it does mean something else, which is legal:</p>
+  <program xml:id="ch02_8" interactive="activecode" language="python">
+    <input>
+print(42000)
+print(42,000)
+        </input>
+  </program>
+  <p>Well, that's not what we expected at all! Because of the comma, Python chose to
+            treat this as a <em>pair</em> of values.     In fact, the print function can print any number of values as long
+            as you separate them by commas.  Notice that the values are separated by spaces when they are displayed.</p>
+  <program xml:id="ch02_8a" interactive="activecode" language="python">
+    <input>
+print(42, 17, 56, 34, 11, 4.35, 32)
+print(3.4, "hello", 45)
+        </input>
+  </program>
+  <p>Remember not to put commas or spaces in your integers, no
+            matter how big they are. Also revisit what we said in the previous chapter:
+            formal languages are strict, the notation is concise, and even the smallest
+            change might mean something quite different from what you intended.</p>
+  <p>
+    <term>Check your understanding</term>
+  </p>
+  <exercise label="test_question2_1_1">
+    <statement>
+      <p>How can you determine the type of a value?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Print out the value and determine the data type based on the value printed.</p>
+        </statement>
+        <feedback>
+                    You may be able to determine the data type based on the printed value, but it may also be  deceptive, like when a string prints, there are no quotes around it.
+                </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>Use the type function.</p>
+        </statement>
+        <feedback>
+                    The type function will tell you the class the value belongs to.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Use it in a known equation and print the result.</p>
+        </statement>
+        <feedback>
+                    Only numeric values can be used in equations.
+                </feedback>
+      </choice>
+    </choices>
+  </exercise>
+  <exercise label="test_question2_1_2">
+    <statement>
+      <p>What is the data type of <c>"this is what kind of data"</c>?</p>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>Character</p>
+        </statement>
+        <feedback>
+                    It is not a single character.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Integer</p>
+        </statement>
+        <feedback>
+                    The data is not numeric.
+                </feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Float</p>
+        </statement>
+        <feedback>
+                    The value is not numeric with a decimal point.
+                </feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>String</p>
+        </statement>
+        <feedback>
+                    Yes. The double quotes tell you that this is a string.
+                </feedback>
+      </choice>
+    </choices>
+  </exercise>
+</section>
