@@ -9,8 +9,8 @@
   <p>We have previously seen that the <c>for</c> statement can iterate over the items of a sequence (a list of names in the case below).</p>
   <program xml:id="ch08_4" interactive="activecode" language="python">
     <input>
-for aname in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
-    invitation = "Hi " + aname + ".  Please come to my party on Saturday!"
+for friend in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
+    invitation = "Hi " + friend + ".  Please come to my party on Saturday!"
     print(invitation)
         </input>
   </program>
@@ -21,27 +21,28 @@ for avalue in range(10):
     print(avalue)
         </input>
   </program>
-  <p>Since a string is simply a sequence of characters, the <c>for</c> loop iterates over each character automatically.</p>
+  <p>Since a string is a sequence of characters, a <c>for</c> loop will automatically iterate over each character.</p>
   <program xml:id="ch08_6" interactive="activecode" language="python">
     <input>
-for achar in "Go Spot Go":
+for achar in "artichokes":
     print(achar)
         </input>
   </program>
-  <p>The loop variable <c>achar</c> is automatically reassigned each character in the string <q>Go Spot Go</q>.
-            We will refer to this type of sequence iteration as <term>iteration by item</term>.
-            Note that it is only possible to process the characters one at a time from left to right.</p>
   <p>
-    <term>Check your understanding</term>
+    The loop variable <c>achar</c> is automatically reassigned each character in the string <c>"artichokes"</c>. We will refer to this type of sequence iteration as <term>iteration by item</term>. Note that it is only possible to process the characters one at a time from left to right.
+  </p>
+  
+  <p>
+    <em>Check your understanding</em>
   </p>
   <exercise label="test_question8_8_1">
     <statement>
-      <p>How many times is the word HELLO printed by the following statements?</p>
+      <p>How many characters will be printed by the following statements?</p>
       <program language="python">
         <input>
 s = "python rocks"
 for ch in s:
-    print("HELLO")
+    print(ch.upper())
 </input>
       </program>
     </statement>
@@ -50,44 +51,37 @@ for ch in s:
         <statement>
           <p>10</p>
         </statement>
-        <feedback>
-                    Iteration by item will process once for each item in the sequence.
-                </feedback>
+        <feedback>Iteration by item will process once for each item in the sequence.</feedback>
       </choice>
       <choice>
         <statement>
           <p>11</p>
         </statement>
-        <feedback>
-                    The blank is part of the sequence.
-                </feedback>
+        <feedback>The blank is part of the sequence.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>12</p>
         </statement>
-        <feedback>
-                    Yes, there are 12 characters, including the blank.
-                </feedback>
+        <feedback>Yes, there are 12 characters, including the blank.</feedback>
       </choice>
       <choice>
         <statement>
-          <p>Error, the for statement needs to use the range function.</p>
+          <p>Error, the <c>for</c> statement needs to use the range function.</p>
         </statement>
-        <feedback>
-                    The for statement can iterate over a sequence item by item.
-                </feedback>
+        <feedback>The <c>for</c> statement can iterate over a sequence item by item.</feedback>
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="test_question8_8_2">
     <statement>
-      <p>How many times is the word HELLO printed by the following statements?</p>
+      <p>How many lines are printed by the following statements?</p>
       <program language="python">
         <input>
 s = "python rocks"
 for ch in s[3:8]:
-    print("HELLO")
+    print(ch)
 </input>
       </program>
     </statement>
@@ -96,33 +90,25 @@ for ch in s[3:8]:
         <statement>
           <p>4</p>
         </statement>
-        <feedback>
-                    Slice returns a sequence that can be iterated over.
-                </feedback>
+        <feedback>Blanks are characters too; <c>for</c> doesn<rsq/>t skip over them.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>5</p>
         </statement>
-        <feedback>
-                    Yes, The blank is part of the sequence returned by slice
-                </feedback>
+        <feedback>Yes, The blank is part of the sequence returned by slice</feedback>
       </choice>
       <choice>
         <statement>
           <p>6</p>
         </statement>
-        <feedback>
-                    Check the result of s[3:8].  It does not include the item at index 8.
-                </feedback>
+        <feedback>Check the result of <c>s[3:8]</c>.  It does not include the item at index 8.</feedback>
       </choice>
       <choice>
         <statement>
-          <p>Error, the for statement cannot use slice.</p>
+          <p>Error, the <c>for</c> statement cannot use slice.</p>
         </statement>
-        <feedback>
-                    Slice returns a sequence.
-                </feedback>
+        <feedback>Slice returns a sequence, and <c>for</c> can process sequences.</feedback>
       </choice>
     </choices>
   </exercise>
