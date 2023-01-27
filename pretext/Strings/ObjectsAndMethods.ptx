@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<section xml:id="strings_objects-and-methods">
+  <title>Objects and Methods</title>
+  <p>
+    Up to this point, we have been dealing mainly with primitive data types like <c>int</c>, <c>float</c>, and <c>bool</c>. Most of the operations that we do on these data types is with functions. These functions are independent of the data. When we call a function, we are <q>telling</q> to the function to do things to the data.
+  </p>
+  <p>
+    You can think of a function call like <c>abs(x)</c> as saying, <q>Hey, <c>abs</c>, here<rsq/>s a variable <c>x</c> for you. Give me back its absolute value.</q>  A call like <c>min(4.3, 2.7)</c> says <q>Hey, <c>min</c>, here are two numbers. Give me back the smaller number.</q>
+  </p>
+  
+  <p>For strings, we have the <c>len</c> function. We can think of <c>len("Python")</c> as saying, <q>Hey, <c>len</c>, here<rsq/>s a string. Tell me how many characters are in it.</q></p>
+  
+  <p>
+    When we start manipulating strings, we are going to take advantage of the fact that strings are <term>objects</term>. You can think of an object as a <q>bundle</q> that combines data values along with functions that can work with the data<fn><p>Note to experts: Yes, I know. This is a vast over-simplification. I<rsq/>m trying to motivate the discussion here, not bury people in technical details.</p></fn>. When a function is part of an object, we call it a <term>method</term>. The data item(s) in an object are called its <term>attributes</term>.
+  </p>
+  
+  <p>
+    When we call methods, we turn the dialogue inside-out. Instead of telling a function to work with some data, we tell the data to use one of its methods. If the absolute value function were a method, we would say something like <q>Hey, <c>x</c>, give me back your absolute value.</q>
+  </p>
+  
+  <p>
+    When we work with strings, we will often use this <q>inside-out</q> way of talking to Python by using <em>dot notation</em>. Let<rsq/>s say I have a string in a variable called <c>message</c>, and I want to have it all in upper case.  I write something like this: <c>message.upper()</c>, which says, <q>Hey, <c>message</c>, give me back a string with all your letters in upper case.</q>  The variable name comes first, followed by a dot, followed by the method name and parentheses. The <q>dot notation</q> is the way we connect the name of an object to the name of a method it can perform.
+  </p>
+  
+  <p>
+    Let<rsq/>s take a look at the <c>.upper()</c> method and other string methods on the next page.
+  </p>
+  
+</section>

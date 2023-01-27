@@ -1,20 +1,21 @@
 <?xml version="1.0"?>
 <section xml:id="strings_operations-on-strings">
   <title>Operations on Strings</title>
-  <p>In general, you cannot perform mathematical operations on strings, even if the
-            strings look like numbers. The following are illegal (assuming that <c>message</c>
-            has type string):</p>
+  <p>
+    In general, you cannot perform mathematical operations on strings, even if the strings look like numbers. The following are illegal (assuming that <c>word</c> has been assigned a string value, as in <c>word = "Python"</c>):
+  </p>
   <program language="python">
     <input>
-message - 1
+word - 1
 "Hello" / 123
-message * "Hello"
+word * "Hello"
 "15" + 2
 </input>
   </program>
-  <p>Interestingly, the <c>+</c> operator does work with strings, but for strings, the
-            <c>+</c> operator represents <term>concatenation</term>, not addition.  Concatenation means
-            joining the two operands by linking them end-to-end. For example:</p>
+  
+  <p>
+    Interestingly, the <c>+</c> operator <em>does</em> work if both its operands are strings. In that case the <c>+</c> operator represents <term>concatenation</term>, not addition.  Concatenation means joining the two operands by linking them end-to-end. For example:
+  </p>
   <program xml:id="ch08_add" interactive="activecode" language="python">
     <input>
 fruit = "banana"
@@ -22,32 +23,55 @@ bakedGood = " nut bread"
 print(fruit + bakedGood)
         </input>
   </program>
-  <p>The output of this program is <c>banana nut bread</c>. The space before the word
-            <c>nut</c> is part of the string and is necessary to produce the space between
-            the concatenated strings.  Take out the space and run it again.</p>
-  <p>The <c>*</c> operator also works on strings.  It performs repetition. For example,
-            <c>'Fun'*3</c> is <c>'FunFunFun'</c>. One of the operands has to be a string and the
-            other has to be an integer.</p>
+  <p>
+    The output of this program is <c>banana nut bread</c>. The space before the word <c>nut</c> is part of the string and is necessary to produce the space between the concatenated strings.  Take out the space and run it again, and you<rsq/>ll see what we mean.
+  </p>
+  <p>
+      The <c>*</c> operator also works on strings; it performs repetition. For example, <c>'Fun'* 3</c> is <c>'FunFunFun'</c>. One of the operands has to be a string and the other has to be an integer.
+  </p>
+  
   <program xml:id="ch08_mult" interactive="activecode" language="python">
     <input>
-print("Go" * 6)
+print("bell" * 6)
 
-name = "Packers"
-print(name * 3)
+word = "door"
+print(word * 3)
 
-print(name + "Go" * 3)
+print(word + "bell" * 3)
 
-print((name + "Go") * 3)
+print((word + "bell") * 3)
         </input>
   </program>
-  <p>This interpretation of <c>+</c> and <c>*</c> makes sense by analogy with
-            addition and multiplication. Just as <c>4*3</c> is equivalent to <c>4+4+4</c>, we
-            expect <c>"Go"*3</c> to be the same as <c>"Go"+"Go"+"Go"</c>, and it is.  Note also in the last
-            example that the order of operations for <c>*</c> and <c>+</c> is the same as it was for arithmetic.
-            The repetition is done before the concatenation.  If you want to cause the concatenation to be
-            done first, you will need to use parenthesis.</p>
   <p>
-    <term>Check your understanding</term>
+    This interpretation of <c>+</c> and <c>*</c> makes sense by analogy with addition and multiplication. Just as <c>4 * 3</c> is equivalent to <c>4 + 4 + 4</c>, we expect <c>"Go" * 3</c> to be the same as <c>"Go" + "Go" + "Go"</c>, and it is.  Note also in the last example that the order of operations for <c> </c> and <c>+</c> is the same as it was for arithmetic. The repetition is done before the concatenation.  If you want to cause the concatenation to be done first, you will need to use parentheses.
+  </p>
+  
+  <p>Let<rsq/>s experiment! In the following activecode area, try to find out these things:</p>
+  <p>
+  <ul>
+    <li>
+      <p>With numbers, <c>print(3 + 4)</c> is the same as <c>print(4 + 3)</c>.
+      Does it work the same way when concatenating strings? Is <c>print("good" + "bye")</c> the same as <c>print("bye" + "good")</c>?</p>
+    </li>
+    <li>
+      <p>With numbers, <c>print(3 * 4)</c> is the same as <c>print(4 * 3)</c>.
+      Does <c>print("ha" * 3)</c> do the same thing as <c>print(3 * "ha")</c>?</p>
+    </li>
+    <li>
+      <p>What happens if you mix strings and numbers with <c>+</c>, as in <c>print(7 + " days")</c>?</p>
+    </li>
+    <li>
+      <p>What happens if you try to multiply strings by strings, as in <c>print("3" * "ha")</c>?</p>
+    </li>
+    </ul>
+  </p>
+    <program xml:id="stringop_experiment" interactive="activecode" language="python">
+    <input>
+    </input>
+  </program>
+
+  <p>
+    <em>Check your understanding</em>
   </p>
   <exercise label="test_question8_1_1">
     <statement>
@@ -65,36 +89,31 @@ print(s + t)
         <statement>
           <p>python rocks</p>
         </statement>
-        <feedback>
-                    Concatenation does not automatically add a space.
-                </feedback>
+        <feedback>Concatenation does not automatically add a space.</feedback>
       </choice>
       <choice>
         <statement>
           <p>python</p>
         </statement>
         <feedback>
-                    The expression s+t is evaluated first, then the resulting string is printed.
-                </feedback>
+          The expression <c>s + t</c> is evaluated first, then the resulting string is printed.
+        </feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>pythonrocks</p>
         </statement>
-        <feedback>
-                    Yes, the two strings are glued end to end.
-                </feedback>
+        <feedback>Yes, the two strings are <q>glued</q> end to end.</feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot add two strings together.</p>
         </statement>
-        <feedback>
-                    The + operator has different meanings depending on the operands, in this case, two strings.
-                </feedback>
+        <feedback>The <c>+</c> operator has different meanings depending on the operands, in this case, two strings.</feedback>
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="test_question8_1_2">
     <statement>
       <p>What is printed by the following statements?</p>
@@ -102,7 +121,7 @@ print(s + t)
         <input>
 s = "python"
 excl = "!"
-print(s+excl*3)
+print(s + excl * 3)
 </input>
       </program>
     </statement>
@@ -111,33 +130,25 @@ print(s+excl*3)
         <statement>
           <p>python!!!</p>
         </statement>
-        <feedback>
-                    Yes, repetition has precedence over concatenation
-                </feedback>
+        <feedback>Yes, repetition has precedence over concatenation.</feedback>
       </choice>
       <choice>
         <statement>
           <p>python!python!python!</p>
         </statement>
-        <feedback>
-                    Repetition is done first.
-                </feedback>
+        <feedback>Repetition is done first.</feedback>
       </choice>
       <choice>
         <statement>
           <p>pythonpythonpython!</p>
         </statement>
-        <feedback>
-                    The repetition operator is working on the excl variable.
-                </feedback>
+        <feedback>The repetition operator is working on the <c>excl</c> variable.</feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot perform concatenation and repetition at the same time.</p>
         </statement>
-        <feedback>
-                    The + and * operator are defined for strings as well as numbers.
-                </feedback>
+        <feedback>The <c>+</c> and <c>*</c> operators are defined for strings as well as numbers.</feedback>
       </choice>
     </choices>
   </exercise>
