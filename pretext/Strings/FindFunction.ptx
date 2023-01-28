@@ -37,14 +37,51 @@ print(find("Compsci", "x"))
             looking for.  The variable <c>found</c> is a boolean variable that keeps track of whether we have found
             the character we are searching for.  It is initialized to <em>False</em>.  If we find the character, we
             reassign <c>found</c> to <em>True</em>.</p>
-  <p>The other part of the condition is the same as we used previously to traverse the characters of the
-            string.  Since we have now combined these two parts with a logical <c>and</c>, it is necessary for them
-            both to be <em>True</em> to continue iterating.  If one part fails, the condition fails and the iteration stops.</p>
-  <p>When the iteration stops, we must ask a question to find out the individual condition that caused the termination,
-            and then return the proper value.  This is a pattern for dealing with while loops with compound conditions.</p>
+  <p>
+    The other part of the condition is the same as we used previously to traverse the characters of the string.  Since we have now combined these two parts with a logical <c>and</c>, it is necessary for them both to be <em>True</em> to continue iterating.  If one part fails, the condition fails and the iteration stops.
+  </p>
+  
+  <p>
+    When the iteration stops, we must ask a question to find out the individual condition that caused the termination,
+    and then return the proper value.  This is a pattern for dealing with <c>while</c> loops with compound conditions.
+  </p>
+  
   <note>
     <p>This pattern of computation is sometimes called a eureka traversal because as
                 soon as we find what we are looking for, we can cry Eureka!  and stop looking.  The way
                 we stop looking is by setting <c>found</c> to True which causes the condition to fail.</p>
   </note>
+  
+   <exercise xml:id="string_count_challenge">
+    <statement>
+  <p>
+    For more practice with <c>while</c> and compound conditions, rewrite the <c>count</c> function from the previous page so that the second parameter can be a multi-character string. Thus, <c>count("banana", "an")</c> would return 2. A call like this: <c>count("gooogle", "oo")</c>  should return 1; the middle <q>o</q> is not counted twice. You will probably want to use slices in your solution.
+    </p>
+  </statement>
+  <program xml:id="count_multi" interactive="activecode" language="python">
+    <input>
+def count(text, a_string):
+    """Count occurrences of a_string in given text."""
+    # Your code here
+
+print(count("banana", "an")) # should be 2
+print(count("gooogle", "oo")) # should be 1
+print(count("clickickick kick", "ick")) # should be 4
+# Make sure that single characters still work
+print(count("banana", "a"))
+
+====
+
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+    def testOne(self):
+        self.assertEqual(count("banana", "an"), 2)
+        self.assertEqual(count("gooogle", "oo"), 1)
+        self.assertEqual(count("clickickick kick", "ick"), 4)
+        self.assertEqual(count("banana", "a"), 3)
+myTests().main()
+        </input>
+  </program>  
+</exercise>  
 </section>

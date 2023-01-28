@@ -8,7 +8,7 @@
     You can think of a function call like <c>abs(x)</c> as saying, <q>Hey, <c>abs</c>, here<rsq/>s a variable <c>x</c> for you. Give me back its absolute value.</q>  A call like <c>min(4.3, 2.7)</c> says <q>Hey, <c>min</c>, here are two numbers. Give me back the smaller number.</q>
   </p>
   
-  <p>For strings, we have the <c>len</c> function. We can think of <c>len("Python")</c> as saying, <q>Hey, <c>len</c>, here<rsq/>s a string. Tell me how many characters are in it.</q></p>
+  <p>For strings, we have seen the <c>len</c> function. We can think of <c>len("Python")</c> as saying, <q>Hey, <c>len</c>, here<rsq/>s a string. Tell me how many characters are in it.</q></p>
   
   <p>
     When we start manipulating strings, we are going to take advantage of the fact that strings are <term>objects</term>. You can think of an object as a <q>bundle</q> that combines data values along with functions that can work with the data<fn><p>Note to experts: Yes, I know. This is a vast over-simplification. I<rsq/>m trying to motivate the discussion here, not bury people in technical details.</p></fn>. When a function is part of an object, we call it a <term>method</term>. The data item(s) in an object are called its <term>attributes</term>.

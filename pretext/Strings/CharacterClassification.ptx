@@ -1,27 +1,81 @@
 <?xml version="1.0"?>
 <section xml:id="strings_character-classification">
-  <title>Character classification</title>
-  <p>It is often helpful to examine a character and test whether it is upper- or
-            lowercase, or whether it is a character or a digit. The <c>string</c> module
-            provides several constants that are useful for these purposes. One of these,
-            <c>string.digits</c> is equivalent to <q>0123456789</q>.  It can be used to check if a character
-            is a digit using the <c>in</c> operator.</p>
-  <p>The string <c>string.ascii_lowercase</c> contains all of the ascii letters that the system
-            considers to be lowercase. Similarly, <c>string.ascii_uppercase</c> contains all of the
-            uppercase letters. <c>string.punctuation</c> comprises all the characters considered
-            to be punctuation. Run the following:</p>
-  <blockquote>
+  <title>Character Classification</title>
+  <p>
+    It is often helpful to examine a character and test whether it is upper- or lowercase, or whether it is a character or a digit. Because we can do string comparisons, we could write a function like this:
+  </p>
+  
+  <program language="python">
+    <input>
+def is_lower_case(char):
+    if char >= 'a' and char &lt;= 'z':
+        return True
+    else:
+        return False
+      </input>
+    </program>
+    
+    <p>
+      That works great<mdash/>as long as you are only dealing with English. But what about characters like <q>ç</q>, <q>Ñ</q>, <q>Δ</q>, or even <q>年</q>? Luckily, Python provides us with several string methods that help us classify characters.
+    </p>
+    
+    <table>
+      <tabular>
+        <row header="yes">
+          <cell>Method</cell><cell>Returns <c>True</c> when <c>str</c>...</cell>
+        </row>
+        <row>
+          <cell><c>str.isalpha()</c></cell>
+          <cell>consists of all alphabetic characters</cell>
+        </row>
+        <row>
+          <cell><c>str.isdigit()</c></cell>
+          <cell>consists of all digits</cell>
+        </row>
+        <row>
+          <cell><c>str.islower()</c></cell>
+          <cell>consists of all lower case characters</cell>
+        </row>
+        <row>
+          <cell><c>str.isupper()</c></cell>
+          <cell>consists of all upper case characters</cell>
+        </row>
+        <row>
+          <cell><c>str.isspace()</c></cell>
+          <cell>consists of all whitespace</cell>
+        </row>
+      </tabular>
+    </table>
+        
+  <p>
+    For all these methods, the string must consist of one or more characters in order to return <c>True</c>; the empty string returns <c>False</c> for all of these.
+  </p>
+  
+
     <program xml:id="string_class_1" interactive="activecode" language="python">
       <input>
-import string
-print(string.ascii_lowercase)
-print(string.ascii_uppercase)
-print(string.digits)
-print(string.punctuation)
+def classify(str):
+  if str.isalpha():
+      print(f"{str} is alpha")
+  if str.isdigit():
+      print(f"{str} is digit")
+  if str.islower():
+      print(f"{str} is lower case")
+  if str.isupper():
+      print(f"{str} is upper case")
+  print() # for spacing and readability
+  
+classify("m")
+classify("M")
+classify("Δ")
+classify("年")
+classify("1234321")
+classify("Français")
         </input>
     </program>
-  </blockquote>
-  <p>For more information consult the <c>string</c> module documentaiton (see <url href="http://docs.python.org/py3k/py-modindex.html" visual="http://docs.python.org/py3k/py-modindex.html">Global Module Index</url>).</p>
+
+  <p>For more information consult the <c>string</c> documentaiton (see <url href="https://docs.python.org/3/library/stdtypes.html#string-methods" visual="https://docs.python.org/3/library/stdtypes.html#string-methods">String Methods</url>).</p>
+  
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_08_04" interactive="activecode" language="python">

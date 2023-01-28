@@ -10,9 +10,9 @@ print('ap' in 'apple')
 print('pa' in 'apple')
         </input>
   </program>
-  <p>Note that a string is a substring of itself, and the empty string is a
-            substring of any other string. (Also note that computer scientists
-            like to think about these edge cases quite carefully!)</p>
+  <p>
+    Note that a string is a substring of itself, and the empty string is a substring of any other string. (Also note that computer scientists like to think about these edge cases quite carefully!)
+  </p>
   <program xml:id="chp8_in2" interactive="activecode" language="python">
     <input>
 print('a' in 'a')

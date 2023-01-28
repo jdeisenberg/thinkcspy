@@ -1,51 +1,45 @@
 <?xml version="1.0"?>
 <exercises xml:id="strings_exercises">
   <title>Exercises</title>
-  <p>
-    <ol marker="1">
-      <li>
-        <exercise>
-          <statement/>
-          <program interactive="" language=""/>
-          <solution>
-                        
-                            
-                                &#x2018;Python'[1] = &#x2018;y'
-                            
-                            
-                                &#x2018;Strings are sequences of characters.'[5] = &#x2018;g'
-                            
-                            
-                                len(&#x2018;wonderful') = 9
-                            
-                            
-                                &#x2018;Mystery'[:4] = &#x2018;Myst'
-                            
-                            
-                                &#x2018;p' in &#x2018;Pineapple' = True
-                            
-                            
-                                &#x2018;apple' in &#x2018;Pineapple' = True
-                            
-                            
-                                &#x2018;pear' not in &#x2018;Pineapple' = True
-                            
-                            
-                                &#x2018;apple' &gt; &#x2018;pineapple' = False
-                            
-                            
-                                &#x2018;pineapple' &lt; &#x2018;Peach' = False
-                            
-                        
-                    
-                        <p><ol marker="a"><li><p>&#x2018;Python'[1] = &#x2018;y'</p></li><li><p>&#x2018;Strings are sequences of characters.'[5] = &#x2018;g'</p></li><li><p>len(&#x2018;wonderful') = 9</p></li><li><p>&#x2018;Mystery'[:4] = &#x2018;Myst'</p></li><li><p>&#x2018;p' in &#x2018;Pineapple' = True</p></li><li><p>&#x2018;apple' in &#x2018;Pineapple' = True</p></li><li><p>&#x2018;pear' not in &#x2018;Pineapple' = True</p></li><li><p>&#x2018;apple' &gt; &#x2018;pineapple' = False</p></li><li><p>&#x2018;pineapple' &lt; &#x2018;Peach' = False</p></li></ol></p>
-                    </solution>
-        </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_2">
+  
+        <exercise label="str_string_eval">
           <statement>
-            <p>In Robert McCloskey's
+            <p>What do these evaluate to?</p>
+            <p>
+              <ol marker="a">
+                <li><c>'Python'[1]</c></li>
+                <li><c>'Strings are sequences of characters.'[5]</c></li>
+                <li><c>len('wonderful')</c></li>
+                <li><c>"Mystery"[:4]</c></li>
+                <li><c>'p' in 'Pineapple'</c></li>
+                <li><c>'apple' in 'Pineapple'</c></li>
+                <li><c>'pear' not in 'Pineapple'</c></li>
+                <li><c>'apple' &gt; 'pineapple'</c></li>
+                <li><c>'pineapple' &lt; 'Peach'</c></li>
+              </ol>
+            </p>
+          </statement>
+          
+          <solution>
+            <p>
+              <ol marker="a">
+                <li><c>'Python'[1]</c> &#x2192; <c>'P'</c></li>
+                <li><c>'Strings are sequences of characters.'[5]</c> &#x2192; <c>'g'</c></li>
+                <li><c>len('wonderful')</c> &#x2192; 9</li>
+                <li><c>"Mystery"[:4]</c> &#x2192; <c>'Myst'</c></li>
+                <li><c>'p' in 'Pineapple'</c> &#x2192; <c>True</c></li>
+                <li><c>'apple' in 'Pineapple'</c> &#x2192; <c>True</c></li>
+                <li><c>'pear' not in 'Pineapple'</c> &#x2192; <c>True</c></li>
+                <li><c>'apple' &gt; 'pineapple'</c> &#x2192; <c>False</c></li>
+                <li><c>'pineapple' &lt; 'Peach'</c> &#x2192; <c>False</c></li>
+              </ol>
+            </p>
+          </solution>
+        </exercise>
+
+        <exercise label="str_modify_strings">
+          <statement>
+            <p>In Robert McCloskey<rsq/>s
                     book <em>Make Way for Ducklings</em>, the names of the ducklings are Jack, Kack, Lack,
                     Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.</p>
             <program language="python">
@@ -57,10 +51,9 @@ for p in prefixes:
     print(p + suffix)
 </input>
             </program>
-            <p>Of course, that's not quite right because Ouack and Quack are misspelled.
-                    Can you fix it?</p>
+            <p>Of course, that<rsq/>s not quite right because Ouack and Quack are misspelled. Can you fix it?</p>
           </statement>
-          <program xml:id="ex_8_2_editor" interactive="activecode" language="python">
+          <program xml:id="str_modify_strings_editor" interactive="activecode" language="python">
             <input>
 
 prefixes = "JKLMNOPQ"
@@ -96,19 +89,17 @@ myTests().main()
         </input>
           </program>
         </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_3">
+
+        
+        <exercise label="str_count_letter_e">
           <statement>
-            <p>Assign to a variable in your program a triple-quoted string that contains
-                            your favorite paragraph of text - perhaps a poem, a speech, instructions
-                            to bake a cake, some inspirational verses, etc.</p>
-            <p>Write a function that counts the number of alphabetic characters (a through z, or A through Z) in your text and then keeps track of how many are the letter &#x2018;e'.  Your function should print an analysis of the text like this:</p>
+            <p>Assign to a variable in your program a triple-quoted string that contains your favorite paragraph of text - perhaps a poem, a speech, instructions to bake a cake, some inspirational verses, etc.</p>
+            <p>Write a function that counts the number of alphabetic characters in your text and then keeps track of how many are the letter 'e'.  Your function should print an analysis of the text like this:</p>
             <pre>Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.</pre>
           </statement>
-          <program interactive="activecode" language="python" xml:id="ex_8_3_editor">
+          <program interactive="activecode" language="python" xml:id="str_count_letter_e_editor">
             <input>
-def count(p):
+def count(paragraph):
     # your code here
 
 ====
@@ -132,53 +123,51 @@ myTests().main()
           <solution>
             <program xml:id="str_q3_answer" language="python">
               <input>
-def count(p):
-    lows = "abcdefghijklmnopqrstuvwxyz"
-    ups =  "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+def count(paragraph):
+    number_of_e = 0
+    total_chars = 0
+    for a_char in paragraph:
+        if a_char.isalpha():
+            total_chars = total_chars + 1
+            if a_char == 'e':
+                number_of_e = number_of_e + 1
 
-    numberOfe = 0
-    totalChars = 0
-    for achar in p:
-        if achar in lows or achar in ups:
-            totalChars = totalChars + 1
-            if achar == 'e':
-                numberOfe = numberOfe + 1
-
-    percent_with_e = (numberOfe / totalChars) * 100
-    print("Your text contains", totalChars, "alphabetic characters of which", numberOfe, "(", percent_with_e, "%)", "are 'e'.")
+    percent_with_e = (number_of_e / total_chars)
+    print(f"Your text contains {total_chars} alphabetic characters of which {number_of_e} ({percent_with_e:.2%}) are 'e'.")
 
 
-p = '''
+
+para = '''
 "If the automobile had followed the same development cycle as the computer, a
 Rolls-Royce would today cost $100, get a million miles per gallon, and explode
 once a year, killing everyone inside."
 -Robert Cringely
 '''
 
-count(p)
+count(para)
         </input>
             </program>
           </solution>
         </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_4">
+
+        <!--
+        <exercise label="str_8_4">
           <statement>
             <p>Print out a neatly formatted multiplication table, up to 12 x 12.</p>
           </statement>
-          <program xml:id="ex_8_4_editor" interactive="activecode" language="python">
+          <program xml:id="str_8_4_editor" interactive="activecode" language="python">
             <input>
 
         </input>
           </program>
         </exercise>
-      </li>
-      <li>
-        <exercise label="ex_7_10">
+        -->
+
+        <exercise label="str_num_digits">
           <statement>
             <p>Write a function that will return the number of digits in an integer.</p>
           </statement>
-          <program interactive="activecode" language="python" xml:id="ex_7_10_editor">
+          <program interactive="activecode" language="python" xml:id="str_num_digits_editor">
             <input>
 def numDigits(n):
     # your code here
@@ -199,7 +188,7 @@ myTests().main()
         </input>
           </program>
           <solution>
-            <program xml:id="str_q5_answer" language="python">
+            <program xml:id="str_num_digits_answer" language="python">
               <input>
 def numDigits(n):
     n_str = str(n)
@@ -213,13 +202,12 @@ print(numDigits(1))
             </program>
           </solution>
         </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_5">
+
+        <exercise label="str_reverse">
           <statement>
             <p>Write a function that reverses its string argument.</p>
           </statement>
-          <program xml:id="ex_8_5_editor" interactive="activecode" language="python">
+          <program xml:id="str_reverse_editor" interactive="activecode" language="python">
             <input>
 def reverse(astring):
     # your code here
@@ -242,42 +230,15 @@ myTests().main()
         </input>
           </program>
         </exercise>
-      </li>
-      <li>
-        <exercise>
-          <statement/>
-          <program interactive="" language=""/>
-          <solution>
-            <program xml:id="str_q7_answer" language="python">
-              <input>
-from test import testEqual
 
-def reverse(mystr):
-    reversed = ''
-    for char in mystr:
-        reversed = char + reversed
-    return reversed
-
-def mirror(mystr):
-    return mystr + reverse(mystr)
-
-testEqual(mirror('good'), 'gooddoog')
-testEqual(mirror('Python'), 'PythonnohtyP')
-testEqual(mirror(''), '')
-testEqual(mirror('a'), 'aa')
-        </input>
-            </program>
-          </solution>
-        </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_7">
+        <exercise label="str_remove_letter">
           <statement>
             <p>Write a function that removes all occurrences of a given letter from a string.</p>
           </statement>
-          <program xml:id="ex_8_7_editor" interactive="activecode" language="python">
+          <program xml:id="str_remove_letter_editor" interactive="activecode" language="python">
             <input>
-def remove_letter(theLetter, theString):
+def remove_letter(the_letter, the_string):
+    """Remove all occurrences of the_letter from the_string."""
     # your code here
 
 ====
@@ -293,20 +254,19 @@ class myTests(TestCaseGui):
       self.assertEqual(remove_letter("z","banana"),"banana","Tested remove_letter on inputs of 'z' and 'banana'")
 
 
-
 myTests().main()
         </input>
           </program>
         </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_8">
+
+        <exercise label="str_palindrome">
           <statement>
-            <p>Write a function that recognizes palindromes. (Hint: use your <c>reverse</c> function to make this easy!).</p>
+            <p>A palindrome is a word that is spelled the same backwards and forwards. For example, <q>racecar</q> and <q>madam</q> are palindromes. Write a function that recognizes palindromes. (Hint: use your <c>reverse</c> function to make this easy!).</p>
           </statement>
-          <program interactive="activecode" language="python" xml:id="ex_8_8_editor">
+          <program interactive="activecode" language="python" xml:id="str_palindrome_editor">
             <input>
-def is_palindrome(myStr):
+def is_palindrome(my_str):
+    """Returns True if my_str is same forward as backward."""
     # your code here
 
 ====
@@ -330,35 +290,37 @@ myTests().main()
         </input>
           </program>
           <solution>
-            <program xml:id="str_q9_answer" language="python">
+            <program xml:id="str_palindrome_answer" language="python">
               <input>
-from test import testEqual
-
-def reverse(mystr):
+def reverse(my_str):
     reversed = ''
-    for char in mystr:
+    for char in my_str:
         reversed = char + reversed
     return reversed
 
-def is_palindrome(myStr):
-    if myStr in reverse(myStr):
+def is_palindrome(my_str):
+    """Returns True if my_str is same forward as backward."""
+    if my_str == reverse(my_str):
         return True
     else:
         return False
 
-testEqual(is_palindrome('abba'), True)
-testEqual(is_palindrome('abab'), False)
-testEqual(is_palindrome('straw warts'), True)
-testEqual(is_palindrome('a'), True)
-testEqual(is_palindrome(''), True)
+print(is_palindrome('racecar')) # True
+print(is_palindrome('pacecar')) # False
+print(is_palindrome('straw warts')) # True
+print(is_palindrome('a')) # True
+print(is_palindrome('')) # True
         </input>
             </program>
           </solution>
         </exercise>
-      </li>
-      <li>
+
+        <!--
+        <exercise>
+          <statement>
         <p>Write a function that counts how many non-overlapping occurences of a substring appear in a string.</p>
-        <program xml:id="ex_8_9" interactive="activecode" language="python">
+      </statement>
+      <program xml:id="str_8_9" interactive="activecode" language="python">
           <input>
 def count(substr,theStr):
     # your code here
@@ -385,15 +347,18 @@ class myTests(TestCaseGui):
 myTests().main()
         </input>
         </program>
-      </li>
-      <li>
-        <exercise label="ex_8_10">
+
+    </exercise>
+        -->
+
+        <exercise label="str_remove_first_substr">
           <statement>
-            <p>Write a function that removes the first occurrence of a string from another string.</p>
+            <p>Write a function that removes the first occurrence of a string from another string. For example, <c>remove("on", "London")</c> would return <c>"Ldon"</c>. Hint: use slices.</p>
           </statement>
-          <program interactive="activecode" language="python" xml:id="ex_8_10_editor">
+          <program interactive="activecode" language="python" xml:id="str_remove_first_substr_editor">
             <input>
-def remove(substr,theStr):
+def remove(substr, the_str):
+    """Remove first occurrence of substr from the_str."""
     # your code here
 
 ====
@@ -415,10 +380,8 @@ myTests().main()
         </input>
           </program>
           <solution>
-            <program xml:id="str_q11_answer" language="python">
+            <program xml:id="str_remove_first_substr_answer" language="python">
               <input>
-from test import testEqual
-
 def remove(substr,theStr):
     index = theStr.find(substr)
     if index &lt; 0: # substr doesn't exist in theStr
@@ -426,23 +389,24 @@ def remove(substr,theStr):
     return_str = theStr[:index] + theStr[index+len(substr):]
     return return_str
 
-testEqual(remove('an', 'banana'), 'bana')
-testEqual(remove('cyc', 'bicycle'), 'bile')
-testEqual(remove('iss', 'Mississippi'), 'Missippi')
-testEqual(remove('egg', 'bicycle'), 'bicycle')
+# These should all print True
+print(remove('an', 'banana') == 'bana')
+print(remove('cyc', 'bicycle') == 'bile')
+print(remove('iss', 'Mississippi') == 'Missippi')
+print(remove('egg', 'bicycle') == 'bicycle')
         </input>
             </program>
           </solution>
         </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_11">
+
+        <exercise label="str_remove_all_substr">
           <statement>
-            <p>Write a function that removes all occurrences of a string from another string.</p>
+            <p>Write a function that removes all occurrences of a string from another string. For example, <c>remove_all("on", "London")</c> would return <c>"Ld"</c></p>
           </statement>
-          <program xml:id="ex_8_11_editor" interactive="activecode" language="python">
+          <program xml:id="str_remove_all_substr_editor" interactive="activecode" language="python">
             <input>
-def remove_all(substr,theStr):
+def remove_all(substr, the_str):
+    """Remove all occurrences of substr from the_str."""
     # your code here
 
 
@@ -465,327 +429,65 @@ myTests().main()
         </input>
           </program>
         </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_12">
+
+        <exercise label="str_cipher_encrypt">
           <statement>
-            <p>Here is another interesting L-System called a Hilbert curve.  Use 90 degrees:</p>
-            <pre>L
-L -&gt; +RF-LFL-FR+
-R -&gt; -LF+RFR+FL-</pre>
+            <p>Write a function that implements a substitution cipher.  In a substitution cipher one letter is substituted for another to garble the message.  For example A -&gt; Q, B -&gt; T, C -&gt; G etc. Your function should take two parameters: the message you want to encrypt, and a string that represents the mapping of the 26 letters in the alphabet. This mixed-up alphabet is called the <em>cipher</em>.  Your function should return a string that is the encrypted version of the message. If a character isn<rsq/>t in the alphabet, it should remain as is in the encrypted version.</p>
           </statement>
-          <program interactive="activecode" language="python" xml:id="ex_8_12_editor">
+          <program xml:id="str_cipher_encrypt_editor" interactive="activecode" language="python">
+            <input>
+def encrypt(message, cipher):
+    """Encrypt message using cipher alphabet."""
+    # your code here
+  
+cipher = "badcfehgjilknmporqtsvuxwzy"
+encrypted = encrypt("python strings!", cipher)
+print(encrypted) # should result in "ozsgpm tsqjmht!"
+        </input>
+          </program>
+        </exercise>
+
+        <exercise label="str_cipher_decrypt">
+          <statement>
+            <p>
+              Write a function that decrypts the message from the previous exercise.  It should also take two parameters.  The encrypted message, and the mixed up alphabet.  The function should return a string that is the same as the original unencrypted message.
+            </p>
+          </statement>
+          <program interactive="activecode" language="python" xml:id="str_cipher_decrypt_editor">
             <input>
 
         </input>
           </program>
           <solution>
-            <program xml:id="str_q13_answer" language="python">
-              <input>
-import turtle
-
-def createLSystem(numIters, axiom):
-    startString = axiom
-    endString = ""
-    for i in range(numIters):
-        endString = processString(startString)
-        startString = endString
-
-    return endString
-
-def processString(oldStr):
-    newstr = ""
-    for ch in oldStr:
-        newstr = newstr + applyRules(ch)
-
-    return newstr
-
-def applyRules(ch):
-    newstr = ""
-    if ch == 'L':
-        newstr = '+RF-LFL-FR+'   # Rule 1
-    elif ch == 'R':
-        newstr = '-LF+RFR+FL-'
-    else:
-        newstr = ch     # no rules apply so keep the character
-
-    return newstr
-
-def drawLsystem(aTurtle, instructions, angle, distance):
-    for cmd in instructions:
-        if cmd == 'F':
-            aTurtle.forward(distance)
-        elif cmd == 'B':
-            aTurtle.backward(distance)
-        elif cmd == '+':
-            aTurtle.right(angle)
-        elif cmd == '-':
-            aTurtle.left(angle)
-
-def main():
-    inst = createLSystem(4, "L")  # create the string
-    print(inst)
-    t = turtle.Turtle()           # create the turtle
-    wn = turtle.Screen()
-
-    t.up()
-    t.back(200)
-    t.down()
-    t.speed(9)
-    drawLsystem(t, inst, 90, 5)   # draw the picture
-                                  # angle 90, segment length 5
-    wn.exitonclick()
-
-main()
-        </input>
-            </program>
-          </solution>
-        </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_13">
-          <statement>
-            <p>Here is a dragon curve.  Use 90 degrees.:</p>
-            <pre>FX
-X -&gt; X+YF+
-Y -&gt; -FX-Y</pre>
-          </statement>
-          <program xml:id="ex_8_13_editor" interactive="activecode" language="python">
-            <input>
-
-        </input>
-          </program>
-        </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_14">
-          <statement>
-            <p>Here is something called an arrowhead curve.  Use 60 degrees.:</p>
-            <pre>YF
-X -&gt; YF+XF+Y
-Y -&gt; XF-YF-X</pre>
-          </statement>
-          <program interactive="activecode" language="python" xml:id="ex_8_14_editor">
-            <input>
-
-        </input>
-          </program>
-          <solution>
-            <program xml:id="str_q15_answer" language="python">
-              <input>
-import turtle
-
-def createLSystem(numIters, axiom):
-    startString = axiom
-    endString = ""
-    for i in range(numIters):
-        endString = processString(startString)
-        startString = endString
-
-    return endString
-
-def processString(oldStr):
-    newstr = ""
-    for ch in oldStr:
-        newstr = newstr + applyRules(ch)
-
-    return newstr
-
-def applyRules(ch):
-    newstr = ""
-    if ch == 'X':
-        newstr = 'YF+XF+Y'   # Rule 1
-    elif ch == 'Y':
-        newstr = 'XF-YF-X'
-    else:
-        newstr = ch     # no rules apply so keep the character
-
-    return newstr
-
-def drawLsystem(aTurtle, instructions, angle, distance):
-    for cmd in instructions:
-        if cmd == 'F':
-            aTurtle.forward(distance)
-        elif cmd == 'B':
-            aTurtle.backward(distance)
-        elif cmd == '+':
-            aTurtle.right(angle)
-        elif cmd == '-':
-            aTurtle.left(angle)
-
-def main():
-    inst = createLSystem(5, "YF")  # create the string
-    print(inst)
-    t = turtle.Turtle()            # create the turtle
-    wn = turtle.Screen()
-
-    t.speed(9)
-    drawLsystem(t, inst, 60, 5)    # draw the picture
-                                   # angle 90, segment length 5
-    wn.exitonclick()
-
-main()
-        </input>
-            </program>
-          </solution>
-        </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_15">
-          <statement>
-            <p>Try the Peano-Gosper curve.  Use 60 degrees.:</p>
-            <pre>FX
-X -&gt; X+YF++YF-FX--FXFX-YF+
-Y -&gt; -FX+YFYF++YF+FX--FX-Y</pre>
-          </statement>
-          <program xml:id="ex_8_15_editor" interactive="activecode" language="python">
-            <input>
-
-        </input>
-          </program>
-        </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_16">
-          <statement>
-            <blockquote>
-              <p>The Sierpinski Triangle.  Use 60 degrees.:</p>
-              <pre>FXF--FF--FF
-F -&gt; FF
-X -&gt; --FXF++FXF++FXF--</pre>
-            </blockquote>
-          </statement>
-          <program interactive="activecode" language="python" xml:id="ex_8_16_editor">
-            <input>
-
-        </input>
-          </program>
-          <solution>
-            <program xml:id="str_q17_answer" language="python">
-              <input>
-import turtle
-
-def createLSystem(numIters, axiom):
-    startString = axiom
-    endString = ""
-    for i in range(numIters):
-        endString = processString(startString)
-        startString = endString
-
-    return endString
-
-def processString(oldStr):
-    newstr = ""
-    for ch in oldStr:
-        newstr = newstr + applyRules(ch)
-
-    return newstr
-
-def applyRules(ch):
-    newstr = ""
-    if ch == 'F':
-        newstr = 'FF'   # Rule 1
-    elif ch == 'X':
-        newstr = '--FXF++FXF++FXF--'
-    else:
-        newstr = ch     # no rules apply so keep the character
-
-    return newstr
-
-def drawLsystem(aTurtle, instructions, angle, distance):
-    for cmd in instructions:
-        if cmd == 'F':
-            aTurtle.forward(distance)
-        elif cmd == 'B':
-            aTurtle.backward(distance)
-        elif cmd == '+':
-            aTurtle.right(angle)
-        elif cmd == '-':
-            aTurtle.left(angle)
-
-def main():
-    inst = createLSystem(5, "FXF--FF--FF")   # create the string
-    print(inst)
-    t = turtle.Turtle()           # create the turtle
-    wn = turtle.Screen()
-    t.up()
-    t.back(200)
-    t.right(90)
-    t.forward(100)
-    t.left(90)
-    t.down()
-    t.speed(9)
-
-    drawLsystem(t, inst, 60, 5)   # draw the picture
-                                  # angle 90, segment length 5
-    wn.exitonclick()
-
-main()
-        </input>
-            </program>
-          </solution>
-        </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_17">
-          <statement>
-            <p>Write a function that implements a substitution cipher.  In a substitution
-                    cipher one letter is substituted for another to garble the message.  For
-                    example A -&gt; Q, B -&gt; T, C -&gt; G etc.  your function should take two
-                    parameters, the message you want to encrypt, and a string that represents
-                    the mapping of the 26 letters in the alphabet.  Your function should
-                    return a string that is the encrypted version of the message.</p>
-          </statement>
-          <program xml:id="ex_8_17_editor" interactive="activecode" language="python">
-            <input>
-
-        </input>
-          </program>
-        </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_18">
-          <statement>
-            <p>Write a function that decrypts the message from the previous exercise.  It
-                            should also take two parameters.  The encrypted message,
-                            and the mixed up alphabet.  The function should return a string that is
-                            the same as the original unencrypted message.</p>
-          </statement>
-          <program interactive="activecode" language="python" xml:id="ex_8_18_editor">
-            <input>
-
-        </input>
-          </program>
-          <solution>
-            <program xml:id="str_q19_answer" language="python">
+            <program xml:id="str_cipher_decrypt_answer" language="python">
               <input>
 def encrypt(message, cipher):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     encrypted = ''
     for char in message:
-        if char == ' ':
-            encrypted = encrypted + ' '
-        else:
+        if char in alphabet:
             pos = alphabet.index(char)
             encrypted = encrypted + cipher[pos]
+        else:
+            encrypted = encrypted + char
     return encrypted
 
 def decrypt(encrypted, cipher):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     decrypted = ''
     for char in encrypted:
-        if char == ' ':
-            decrypted = decrypted + ' '
-        else:
+        if char in alphabet:
             pos = cipher.index(char)
             decrypted = decrypted + alphabet[pos]
+        else:
+            decrypted = decrypted + char
     return decrypted
 
 
 cipher = "badcfehgjilknmporqtsvuxwzy"
 
 encrypted = encrypt('hello world', cipher)
-print encrypted
+print(encrypted)
 
 decrypted = decrypt(encrypted, cipher)
 print(decrypted)
@@ -793,16 +495,15 @@ print(decrypted)
             </program>
           </solution>
         </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_19">
+
+        <exercise label="str_remove_dups">
           <statement>
-            <p>Write a function called  <c>remove_dups</c> that takes a string and creates a new string by only adding those characters that are not already present.  In other words,
-                    there will never be a duplicate letter added to the new string.</p>
+            <p>Write a function called <c>remove_dups</c> that takes a string and creates a new string by only adding those characters that are not already present.  In other words, there will never be a duplicate letter added to the new string.</p>
           </statement>
-          <program xml:id="ex_8_19_editor" interactive="activecode" language="python">
+          <program xml:id="str_remove_dups_editor" interactive="activecode" language="python">
             <input>
-def remove_dups(astring):
+def remove_dups(a_string):
+    """Returns unique characters in a_string."""
     # your code here
 
 
@@ -824,9 +525,9 @@ myTests().main()
         </input>
           </program>
         </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_20">
+
+        <!--
+        <exercise label="str_8_20">
           <statement>
             <p>Write a function called <c>rot13</c> that uses the Caesar cipher to encrypt a message.
                             The Caesar cipher works like a substitution cipher but each character is replaced
@@ -836,7 +537,7 @@ myTests().main()
                             and so on.  <em>Hint:</em> Whenever you talk about things wrapping around its a good idea
                             to think of modulo arithmetic.</p>
           </statement>
-          <program interactive="activecode" language="python" xml:id="ex_8_20_editor">
+          <program interactive="activecode" language="python" xml:id="str_8_20_editor">
             <input>
 def rot13(mess):
     # Your code here
@@ -870,16 +571,18 @@ print(rot13(rot13('since rot thirteen is symmetric you should see this message')
             </program>
           </solution>
         </exercise>
-      </li>
-      <li>
-        <exercise label="ex_8_22">
+        -->
+        <exercise label="str_format_money">
           <statement>
-            <p>Modify this code so it prints each subtotal, the total cost, and average price
-                    to exactly two decimal places.</p>
+            <p>Modify this code so it prints each subtotal, the total cost, and average price to exactly two decimal places. Hint: use f-strings.</p>
           </statement>
-          <program xml:id="ex_8_22_editor" interactive="activecode" language="python">
+          <program xml:id="str_format_money_editor" interactive="activecode" language="python">
             <input>
 def checkout():
+    """Print running subtotal, total, and average price of purchase.
+    Program asks for input and accumulates subtotal until user
+    enters zero for price.
+    """
     total = 0
     count = 0
     moreItems = True
@@ -900,7 +603,5 @@ checkout()
         </input>
           </program>
         </exercise>
-      </li>
-    </ol>
-  </p>
+
 </exercises>

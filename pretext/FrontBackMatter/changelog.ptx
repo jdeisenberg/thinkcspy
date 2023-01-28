@@ -3,6 +3,7 @@
     <title>Change Log</title>
     <p>
       <ul>
+        <li><p>28 Jan 2023: First pass at re-organization of chapter 7 (Strings)</p></li>
         <li><p>25 Jan 2023: Stub out chapters 7, 9-12; reorganize chapter 6</p></li>
         <li><p>24 Jan 2023: Clean up chapters 1-4</p></li>
         <li><p>07 Jan 2023: Add chapter on the Software Development Life Cycle</p></li>

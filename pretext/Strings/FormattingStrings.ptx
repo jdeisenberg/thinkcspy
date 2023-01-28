@@ -10,7 +10,7 @@
     <input>
 years = int(input("Enter your age in years:"))
 days = years * 365
-print(days, "days is about", years, " years.")  #or
+print(days, "days is about", years, " years.")  # or
 print(str(days) + " days is about " + str(years) + " years.")
 </input>
 </program>
@@ -26,7 +26,9 @@ print("Your discounted price is $" + str(total) + ".")
 </input>
 </program>
 
-<p>Python provides two ways to control output better and make the code easier to write. One of these is the <c>format</c> method, which has been available since Python version 3. The newer, even better way to format your output is through the magic of <em>f-strings</em> (short for <q>formatted literal strings</q>). These were introduced to Python at the end of 2016, and they are the topic of the rest of this page.</p>
+<p>
+  Python provides two ways to control output better and make the code easier to write. One of these is the <c>format</c> method, which has been available since Python version 3. The newer, even better way to format your output is through the magic of <em>f-strings</em> (short for <q>formatted literal strings</q>). These were introduced to Python at the end of 2016, and they are the topic of the rest of this page.
+</p>
 </introduction>
 
 <subsection>

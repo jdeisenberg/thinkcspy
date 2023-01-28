@@ -1,11 +1,12 @@
 <?xml version="1.0"?>
-<section xml:id="strings_traversal-and-the-for-loop-by-index">
+<section xml:id="strings_traversal-by-index">
   <title>Traversal and the <c>for</c> Loop: By Index</title>
   <p>
     It is also possible to use the <c>range</c> function to systematically generate the indices of the characters.  The <c>for</c> loop can then be used to iterate over these positions. These positions can be used together with the indexing operator to access the individual characters in the string.
   </p>
   
   <p>Consider the following codelens example.</p>
+  
   <program xml:id="ch08_7" interactive="codelens" language="python">
     <input>
 fruit = "apple"
@@ -38,13 +39,13 @@ for idx in range(len(fruit)):
   <program xml:id="ch08_8" interactive="codelens" language="python">
     <input>
           fruit = "apple"
-          for idx in range(len(fruit)-1, -1, -1):
+          for idx in range(len(fruit) - 1, -1, -1):
               print(fruit[idx])
     </input>
   </program>
 
   <p>
-    Trace the values of <c>idx</c> and satisfy yourself that they are correct.  In particular, note the start and end of the range. Do you understand why the start of the range is <c>len(fruit) - 1</c> and not <c>len(fruit)</c>?
+    Trace the values of <c>idx</c> and satisfy yourself that they are correct.  In particular, note the start and end of the range. Do you understand why the start of the range is <c>len(fruit) - 1</c> and not <c>len(fruit)</c>? Do you understand why the end of the range is -1 and not 0?
   </p>
   
   <p>

@@ -11,10 +11,13 @@ greeting[0] = 'J'            # ERROR!
 print(greeting)
         </input>
   </program>
-  <p>Instead of producing the output <c>Jello, world!</c>, this code produces the
-            runtime error <c>TypeError: 'str' object does not support item assignment</c>.</p>
-  <p>Strings are <term>immutable</term>, which means you cannot change an existing string. The
-            best you can do is create a new string that is a variation on the original.</p>
+  <p>
+    Instead of producing the output <c>Jello, world!</c>, this code produces the runtime error <c>TypeError: 'str' object does not support item assignment</c>.
+  </p>
+  
+  <p>
+    Strings are <term>immutable</term>, which means you cannot change an existing string. The best you can do is create a new string that is a variation on the original.
+  </p>
   <program xml:id="ch08_imm2" interactive="activecode" language="python">
     <input>
 greeting = "Hello, world!"
@@ -23,8 +26,10 @@ print(newGreeting)
 print(greeting)            # same as it was
         </input>
   </program>
-  <p>The solution here is to concatenate a new first letter onto a slice of
-            <c>greeting</c>. This operation has no effect on the original string.</p>
+  
+  <p>
+    The solution here is to concatenate a new first letter onto a slice of <c>greeting</c>. This operation has no effect on the original string.
+  </p>
   <p>
     <term>Check your understanding</term>
   </p>
@@ -33,7 +38,7 @@ print(greeting)            # same as it was
       <p>What is printed by the following statements:</p>
       <program language="python">
         <input>
-s = "Ball"
+s = "Wall"
 s[0] = "C"
 print(s)
 </input>
@@ -44,25 +49,19 @@ print(s)
         <statement>
           <p>Ball</p>
         </statement>
-        <feedback>
-                    Assignment is not allowed with strings.
-                </feedback>
+        <feedback>Assignment is not allowed with strings.</feedback>
       </choice>
       <choice>
         <statement>
           <p>Call</p>
         </statement>
-        <feedback>
-                    Assignment is not allowed with strings.
-                </feedback>
+        <feedback>Assignment is not allowed with strings.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Error</p>
         </statement>
-        <feedback>
-                    Yes, strings are immutable.
-                </feedback>
+        <feedback>Yes; strings are immutable.</feedback>
       </choice>
     </choices>
   </exercise>

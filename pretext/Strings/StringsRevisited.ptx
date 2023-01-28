@@ -2,6 +2,20 @@
 <section xml:id="strings_strings-revisited">
   <title>Strings Revisited</title>
   <p>
-    Throughout the first chapters of this book we have used strings to represent words or phrases that we wanted to print out.  Our definition was simple: a string is nothing more than some characters inside quotes.  In this chapter we explore strings in much more detail.
+    Throughout the first chapters of this book we have used strings to represent words or phrases that we wanted to print out.  Our definition was simple: a string is nothing more than some characters inside quotes.
+  </p>
+  <p>But there<rsq/>s more we can do with strings than print them; we can <em>manipulate</em> strings. For example:</p>
+  <p>
+    <ul>
+      <li><p>Change a name in the form <c>"Fulano, Juan"</c> to <c>"Juan Fulano"</c>.</p></li>
+      <li><p>Given a phone number like <c>"408-555-1212"</c>, separate out the area code, prefix, and number.</p></li>
+      <li><p>Take a Windows file name like <c>"C:\Users\Phuong\Documents\report.docx"</c> and separate out the drive letter and the file name.</p></li>
+      <li><p>Sort strings into dictionary order</p></li>
+      <li><p>Search for a word within a string (like <q>find</q> in a word processor).</p></li>
+      <li><p>Replace a word with another within a string (like <q>replace</q> in a word processor).</p></li>
+    </ul>
+  </p>
+  <p>
+    In this chapter, we<rsq/>ll investigate the methods used to do these kinds of operations.
   </p>
 </section>

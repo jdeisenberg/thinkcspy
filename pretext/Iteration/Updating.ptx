@@ -14,19 +14,25 @@
 x = x + 1
 </input>
   </program>
-  <p>This means <q>get the current value of <c>x</c>, add 1, and then
-            update <c>x</c> with the new value.</q></p>
-  <p>If you try to update a variable that doesn't exist, you get an error,
-            because Python evaluates the right side before it assigns a value to
-            <c>x</c>:</p>
+  
+  <p>
+    This means <q>get the current value of <c>x</c>, add 1, and then update <c>x</c> with the new value.</q>
+  </p>
+  
+  <p>
+    If you try to update a variable that doesn<rsq/>t exist, you get an error, because Python evaluates the right side before it assigns a value to <c>x</c>:
+  </p>
   <program xml:id="itr-section1_1" interactive="activecode" language="python">
     <input>
 x = x + 1
 print(x)
         </input>
   </program>
-  <p>Before you can update a variable, you have to
-            <em>initialize</em> it, usually with a simple assignment:</p>
+  
+  <p>
+    Before you can update a variable, you have to <em>initialize</em> it, usually with a simple assignment:
+  </p>
+  
   <program xml:id="itr-section1_2" interactive="activecode" language="python">
     <input>
 x = 0
@@ -34,8 +40,11 @@ x = x + 1
 print(x)
         </input>
   </program>
-  <p>When you update a variable by adding 1 it's called an <em>increment</em>;
-            subtracting 1 is called a <em>decrement</em>.</p>
+  
+  <p>
+    When you update a variable by adding 1 it<rsq/>s called an <em>increment</em>; subtracting 1 is called a <em>decrement</em>.
+  </p>
+  
   <exercise id="itUpdate_fill1">
     <statement>
       <p>Q-3: Before you can update a variable, you have to ________ it. <var/>  </p>
@@ -55,6 +64,7 @@ print(x)
       </var>
     </setup>
   </exercise>
+  
   <exercise label="itUpdate_fill2">
     <statement>
       <p>Q-4: When you subtract 1 from a variable, you ________ it. <var/>  </p>
@@ -74,6 +84,7 @@ print(x)
       </var>
     </setup>
   </exercise>
+  
   <exercise label="itUpdate_MC_y">
     <statement>
       <p>Q-5: Consider the code block below. What happens when you run this program?</p>
