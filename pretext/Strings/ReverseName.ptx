@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<section xml:id="strings_reverse-name">
+  <title>Reversing a Name</title>
+  <p>
+    You now know enough to implement one of the programs we mentioned in <xref ref="strings_strings-revisited"/>: Change a name in the form <c>"Fulano, Juan"</c> to <c>"Juan Fulano"</c>. We<rsq/>ll use a function to do the heavy lifting.
+  </p>
+  
+  <exercise xml:id="reverse_name_pseudocode" indentation="hide" language="python">
+    <statement>
+      <p>
+        Put the steps in the pseudo-code for the function the right order:
+      </p>
+    </statement>
+    
+    <blocks>
+      <block order="2">
+        <cline>Find position of comma in string</cline>
+      </block>
+      
+      <block order="5">
+        <cline>if position is &gt;= 0:</cline>
+      </block>
+      
+      <block order="1">
+        <cline>    take slice before the comma and put it in last_name</cline>
+        <cline>    take slice after the comma and put it in first_name</cline>
+      </block>
+      
+      <block order="7">
+        <cline>    strip leading and trailing blanks from first_name and last_name</cline>
+        <cline>    set new_name to first_name + space + last_name</cline>
+      </block>
+      
+      <block order="4">
+        <cline>else:</cline>
+      </block>
+      
+      <block order="6">
+        <cline>    set new_name to name (no comma found)</cline>
+      </block>
+      
+      <block order="3">
+        <cline>print the new_name</cline>
+      </block>
+    </blocks>
+  </exercise>
+
+  
+  <exercise xml:id="reverse_name_python">
+    <statement>
+      <p>Write the code in Python.</p>
+      <p>
+      <ul>
+        <li><p>Use the <c>find</c> method to find the index where a comma occurs in the name. If there is no comma, the <c>find</c> method returns -1.</p></li>
+        <li><p>Use slices to extract the last name (everything from the beginning up to the comma) and first name (everything after the comma). Remember that the slice goes up to, but not including, the position specified by the number to the right of the <c>:</c>.</p></li>
+        <li><p>Use the <c>strip</c> method to strip leading and trailing spaces from a string.</p></li>
+      </ul>
+      </p>
+      
+      <p>
+        Test your program with names like <em>Fulano, Juan</em>, <em>van Gogh, Vincent</em>, <em>Marie Toulemonde</em>, and <em>Prince</em>.
+      </p>
+    </statement>
+    
+    <program interactive="activecode" language="python">
+      <input>
+def reverse_name(name):
+    """Change order of last and first name.
+    Given a name in form "lastname, firstname"
+    return a string in form "firstname lastname"
+    """
+    #  your code here
+    
+    
+last_name_first = input("Enter a name in form last, first:")
+first_name_first = reverse_name(last_name_first)
+print(f"The modified name is {first_name_first}.")
+</input>
+    </program>
+  </exercise>
+  
+</section>
