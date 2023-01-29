@@ -6,7 +6,7 @@
   </p>
   
   <p>
-    The following program counts the number of times a particular letter, <c>aChar</c>, appears in a string.  It is another example of the accumulator pattern that we have seen in previous chapters.
+    The following program counts the number of times a particular letter, <c>a_char</c>, appears in a string.  It is another example of the accumulator pattern that we have seen in previous chapters.
   </p>
   
   <program xml:id="count_single" interactive="activecode" language="python">

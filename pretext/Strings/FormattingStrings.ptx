@@ -164,27 +164,27 @@ print(f'sum of {x} and {y} is {x + y}; product is {x * y}.')
         <program language="python">
           <input>
 v = 2.34567
-print(f'{v:.1f} {v:.2f} {v:.7f}')
+print(f'{v:.1f}, {v:.2f}, {v:.7f}')
 </input>
         </program>
       </statement>
       <choices>
         <choice>
           <statement>
-            <p>2.34567 2.34567 2.34567</p>
+            <p><c>2.34567, 2.34567, 2.34567</c></p>
           </statement>
           <feedback>The numbers before the <c>f</c> in the braces give the number of digits to display after the decimal point.
                 </feedback>
         </choice>
         <choice>
           <statement>
-            <p>2.3 2.34 2.34567</p>
+            <p><c>2.3, 2.34, 2.34567</c></p>
           </statement>
           <feedback>Close, but round to the number of digits and display the full number of digits specified.</feedback>
         </choice>
         <choice correct="yes">
           <statement>
-            <p>2.3 2.35 2.3456700</p>
+            <p><c>2.3, 2.35, 2.3456700</c></p>
           </statement>
           <feedback>Yes, correct number of digits with rounding!</feedback>
         </choice>

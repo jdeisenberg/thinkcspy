@@ -38,7 +38,7 @@ if each_char != 'a'  and each_char != 'e'  and each_char != 'i'  and
     </input>
   </program>
   <p>
-    Look carefully at line 6 in the above program (<c>str_without_vowels = str_without_vowels + each_char</c>).  We will do this for every character that is not a vowel.  This should look very familiar.  As we were describing earlier, it is an example of the accumulator pattern, this time using a string to <q>accumulate</q> the final result. In words, it says that the new value of <c>sWithoutVowels</c> will be the old value of <c>str_without_vowels</c> concatenated with the value of <c>each_char</c>.  We are building the result string character by character.
+    Look carefully at line 6 in the above program (<c>str_without_vowels = str_without_vowels + each_char</c>).  We will do this for every character that is not a vowel.  This should look very familiar.  As we were describing earlier, it is an example of the accumulator pattern, this time using a string to <q>accumulate</q> the final result. In words, it says that the new value of <c>str_without_vowels</c> will be the old value of <c>str_without_vowels</c> concatenated with the value of <c>each_char</c>.  We are building the result string character by character.
   </p>
   
   <p>

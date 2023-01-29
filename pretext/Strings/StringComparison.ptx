@@ -22,7 +22,7 @@ if word &lt; "banana":
 elif word &gt; "banana":
     print(f"Your word {word} comes after banana.")
 else:
-    print("Your word is {word}.")
+    print(f"Your word is {word}.")
         </input>
   </program>
   
@@ -34,6 +34,7 @@ else:
 print("apple" &lt; "banana")
 
 print("apple" == "Apple")
+
 print("apple" &lt; "Apple")
         </input>
   </program>

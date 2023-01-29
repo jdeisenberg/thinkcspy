@@ -47,7 +47,7 @@ print(s)
     <choices>
       <choice>
         <statement>
-          <p>Ball</p>
+          <p>Wall</p>
         </statement>
         <feedback>Assignment is not allowed with strings.</feedback>
       </choice>

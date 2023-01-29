@@ -4,20 +4,20 @@
   <p>Here is an implementation for a restricted <c>find</c> method, where the target is a single character.</p>
   <program xml:id="ch08_run3" interactive="activecode" language="python">
     <input>
-def find(astring, achar):
+def find(a_string, target_char):
     """
-    Find and return the index of achar in astring.
-    Return -1 if achar does not occur in astring.
+    Find and return the index of target_char in a_string.
+    Return -1 if target_char does not occur in a_string.
     """
     ix = 0
     found = False
-    while ix &lt; len(astring) and not found:
-        if astring[ix] == achar:
+    while index &lt; len(a_string) and not found:
+        if a_string[index] == target_char:
             found = True
         else:
-            ix = ix + 1
+            index = index + 1
     if found:
-        return ix
+        return index
     else:
         return -1
 
@@ -47,9 +47,9 @@ print(find("Compsci", "x"))
   </p>
   
   <note>
-    <p>This pattern of computation is sometimes called a eureka traversal because as
-                soon as we find what we are looking for, we can cry Eureka!  and stop looking.  The way
-                we stop looking is by setting <c>found</c> to True which causes the condition to fail.</p>
+    <p>
+      This pattern of computation is sometimes called a eureka traversal because as soon as we find what we are looking for, we can cry <q>Eureka!</q> and stop looking.  The way we stop looking is by setting <c>found</c> to True which causes the condition to fail.
+    </p>
   </note>
   
    <exercise xml:id="string_count_challenge">
