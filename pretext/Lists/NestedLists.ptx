@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <section xml:id="lists_nested-lists">
   <title>Nested Lists</title>
+  <!--
+   However, since lists can have items which are themselves lists, it important to note that <c>len</c> only returns the top-most list length.  In other words, sublists are considered to be a single item when counting the length of the list.
+  -->
   <p>A nested list is a list that appears as an element in another list. In this
             list, the element with index 3 is a nested list.
             If we print(<c>nested[3]</c>), we get <c>[10, 20]</c>. To extract an element from the
@@ -9,15 +12,16 @@
             left to right.</p>
   <program xml:id="chp09_nest" interactive="activecode" language="python">
     <input>
-nested = ["hello", 2.0, 5, [10, 20]]
-innerlist = nested[3]
+nested = [[505, 217], [10, 66], [47, 11, 35]]
+innerlist = nested[2]
 print(innerlist)
 item = innerlist[1]
 print(item)
 
-print(nested[3][1])
+print(nested[2][1])
         </input>
   </program>
+  
   <p xml:id="lists_index-0">
     <term>Check your understanding</term>
   </p>
@@ -69,4 +73,43 @@ else:
       </choice>
     </choices>
   </exercise>
+  
+    <exercise label="test_question9_3_3">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
+alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
+print(alist[2][0])
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>56</p>
+        </statement>
+        <feedback>Indexes start with 0, not 1.</feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>c</p>
+        </statement>
+        <feedback>Yes, the first character of the string at index 2 is c</feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>cat</p>
+        </statement>
+        <feedback>cat is the item at index 2 but then we index into it further.</feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Error, you cannot have two index values unless you are using slicing.</p>
+        </statement>
+        <feedback>Using more than one index is fine.  You read it from left to right.</feedback>
+      </choice>
+    </choices>
+  </exercise>
+
 </section>

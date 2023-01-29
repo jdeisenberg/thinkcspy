@@ -1,8 +1,42 @@
 <?xml version="1.0"?>
 <section xml:id="lists_lists">
   <title>Lists</title>
-  <p>A <term>list</term> is a sequential collection of Python data values, where each value is identified by an
-            index. The values that make up a list are called its <term>elements</term>. Lists are
-            similar to strings, which are ordered collections of characters, except that the
-            elements of a list can have any type and for any one list, the items can be of different types.</p>
-</section>
+  <p>
+    A <term>list</term> is a sequential collection of Python data values, where each value is identified by an index. The values that make up a list are called its <term>elements</term>. Lists are similar to strings, which are ordered collections of characters, except that the elements of a list can have any type and for any one list, the items can be of different types.
+    </p>
+    <p>
+      Before we examine lists in detail, let<rsq/>s take a look at what life would be like without lists. If we wanted to find the average of seven days of maximum temperaturess (in degrees Celsius), we<rsq/>d need to do something like the following:
+    </p>
+    
+    <note>
+      <title>Continuing Lines</title>
+      <p>
+        If a line of Python code is very long and you want to avoid horizontal scrolling in your editor, you can put a backslash at the end of a line wherever you would have a space, and then you can continue the code on the next line, as we will do in this program.
+      </p>
+    </note>
+    
+
+    <program language="python">
+      <input>
+temp1 = 22.5
+temp2 = 23.1
+temp3 = 24.0
+temp4 = 22.9
+temp5 = 26.1
+temp6 = 25.7
+temp7 = 27.8
+
+total = temp1 + temp2 + temp3 + temp4 + \
+        temp5 + temp6 + temp7
+
+avg = total / 7
+
+print(f"Average temperature is {avg:.1f} degrees C.")        
+      </input>
+    </program>
+    
+    <p>
+      Can you imagine what the program would look like if we had a month<rsq/>s worth of data? Things would get unmanageable very quickly. Luckily, lists help us manage problems like this.
+    </p>
+
+    </section>

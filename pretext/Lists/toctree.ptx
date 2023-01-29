@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude" xml:lang="en-US" xml:id="ch-lists">
     <title>Lists</title>
-    <p>Watch this space.</p>
+    <p>Watch this space</p>
     <!--
     <xi:include href="./intro-Lists.ptx"/>
     <xi:include href="./ListValues.ptx"/>
-    <xi:include href="./ListLength.ptx"/>
+    -->
+    <!--<xi:include href="./ListLength.ptx"/>-->
+    <!--
     <xi:include href="./AccessingElements.ptx"/>
     <xi:include href="./ListMembership.ptx"/>
     <xi:include href="./ConcatenationandRepetition.ptx"/>
@@ -17,7 +19,9 @@
     <xi:include href="./CloningLists.ptx"/>
     <xi:include href="./RepetitionandReferences.ptx"/>
     <xi:include href="./ListMethods.ptx"/>
-    <xi:include href="./TheReturnofLSystems.ptx"/>
+    -->
+    <!--<xi:include href="./TheReturnofLSystems.ptx"/>-->
+    <!--
     <xi:include href="./AppendversusConcatenate.ptx"/>
     <xi:include href="./Listsandforloops.ptx"/>
     <xi:include href="./TheAccumulatorPatternwithLists.ptx"/>

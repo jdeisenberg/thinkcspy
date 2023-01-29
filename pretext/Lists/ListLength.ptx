@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
 <section xml:id="lists_list-length">
   <title>List Length</title>
-  <p>As with strings, the function <c>len</c> returns the length of a list (the number
-            of items in the list).  However, since lists can have items which are themselves lists, it important to note
-            that <c>len</c> only returns the top-most length.  In other words, sublists are considered to be a single
-            item when counting the length of the list.</p>
+  <p>
+    As with strings, the function <c>len</c> returns the length of a list (the number of items in the list). 
+  </p>
   <program xml:id="chp09_01a" interactive="activecode" language="python">
     <input>
 alist =  ["hello", 2.0, 5, [10, 20]]
@@ -30,20 +29,18 @@ print(len(alist))
         <statement>
           <p>4</p>
         </statement>
-        <feedback>
-                    len returns the actual number of items in the list, not the maximum index value.
-                </feedback>
+        <feedback><c>len</c> returns the actual number of items in the list, not the maximum index value.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>5</p>
         </statement>
-        <feedback>
-                    Yes, there are 5 items in this list.
-                </feedback>
+        <feedback>Yes, there are 5 items in this list.</feedback>
       </choice>
     </choices>
   </exercise>
+  
+  
   <exercise label="test_question9_2_2">
     <statement>
       <p>What is printed by the following statements?</p>
@@ -59,17 +56,13 @@ print(len(alist))
         <statement>
           <p>7</p>
         </statement>
-        <feedback>
-                    Yes, there are 7 items in this list even though two of them happen to also be lists.
-                </feedback>
+        <feedback>Yes, there are 7 items in this list even though two of them happen to also be lists (and one of them is the empty list)</feedback>
       </choice>
       <choice>
         <statement>
           <p>8</p>
         </statement>
-        <feedback>
-                    len returns the number of top level items in the list.  It does not count items in sublists.
-                </feedback>
+        <feedback><c>len</c> returns the number of top level items in the list.  It does not count items in sublists.</feedback>
       </choice>
     </choices>
   </exercise>

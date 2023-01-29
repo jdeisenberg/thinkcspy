@@ -1,44 +1,52 @@
 <?xml version="1.0"?>
 <section xml:id="lists_list-values">
   <title>List Values</title>
-  <p>There are several ways to create a new list.  The simplest is to enclose the
-            elements in square brackets ( <c>[</c> and <c>]</c>).</p>
+  <p>
+    There are several ways to create a new list.  The simplest is to enclose the elements in square brackets ( <c>[</c> and <c>]</c>).
+  </p>
+  
   <program language="python">
     <input>
 [10, 20, 30, 40]
 ["spam", "bungee", "swallow"]
+[22.5, 23.1, 24.0, 22.9, 26.1, 25.7, 27.8]
 </input>
   </program>
-  <p>The first example is a list of four integers. The second is a list of three
-            strings. As we said above, the elements of a list don't have to be the same type.  The following
-            list contains a string, a float, an integer, and
-            another list.</p>
+
+  <p>
+    The first example is a list of four integers, the second is a list of three strings, and the third is our list of temperatures<mdash/>a list of floating-point numbers.
+  </p>
+    
+  <p>
+      As we said above, the elements of a list don<rsq/>t have to be the same type.  The following list contains a string, a float, an integer, and a boolean.
   <program language="python">
     <input>
-["hello", 2.0, 5, [10, 20]]
+["hello", 2.0, 5, False]
 </input>
   </program>
-  <p>A list within another list is said to be <term>nested</term> and the inner list is often called a <term>sublist</term>.
-            Finally, there is a special list that contains no elements. It is called the
-            empty list and is denoted <c>[]</c>.</p>
-  <p>As you would expect, we can also assign list values to variables and pass lists as parameters to functions.</p>
+  
+  <p>As you would expect, we can also assign list values to variables and pass lists as parameters to functions. The <c>len</c> function can take a list as its argument, and it will return the number of elements in the array.</p>
+  
   <program xml:id="chp09_01" interactive="activecode" language="python">
     <input>
 vocabulary = ["iteration", "selection", "control"]
 numbers = [17, 123]
 empty = []
-mixedlist = ["hello", 2.0, 5*2, [10, 20]]
+mixed_list = ["hello", 2.0, 5 * 2, True]
 
-print(numbers)
-print(mixedlist)
-newlist = [ numbers, vocabulary ]
-print(newlist)
+print(vocabulary, len(vocabulary))
+print(numbers, len(numbers))
+print(empty, len(empty))
+print(mixed_list, len(mixed_list))
+
         </input>
   </program>
+  
   <p xml:id="lists_accessing_elements" names="accessing-elements">
-    <term>Check your understanding</term>
+    <em>Check your understanding</em>
   </p>
-  <exercise label="test_question9_1_1">
+  
+  <exercise label="list_values_1">
     <statement>
       <p>A list can contain only integer items.</p>
     </statement>
@@ -47,18 +55,42 @@ print(newlist)
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
-                    Yes, unlike strings, lists can consist of any type of Python data.
-                </feedback>
+        <feedback>Yes, unlike strings, lists can consist of any type of Python data.</feedback>
       </choice>
       <choice>
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
-                    Lists are heterogeneous, meaning they can have different types of data.
-                </feedback>
+        <feedback>Lists are <term>heterogeneous</term>, meaning they can have different types of data.</feedback>
       </choice>
     </choices>
   </exercise>
+  
+  <exercise label="list_values_2">
+    <statement>
+      <p>What is printed by the following statements?</p>
+      <program language="python">
+        <input>
+a_list = [3, 67, "cat", 3.14, False]
+print(len(a_list))
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>4</p>
+        </statement>
+        <feedback><c>len</c> returns the actual number of items in the list, not the maximum index value.</feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>5</p>
+        </statement>
+        <feedback>Yes, there are 5 items in this list.</feedback>
+      </choice>
+    </choices>
+  </exercise>
+  
+
 </section>
