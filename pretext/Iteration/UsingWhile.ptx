@@ -100,7 +100,7 @@ print("Average price: $", average_price)
           <p>If you enter zero the first time you are asked for a price, the loop will end, and the program will try to divide by zero. Use an <c>if</c>/<c>else</c> statement outside the loop to avoid the division by zero and tell the user that you can't compute an average without data.</p>
         </li>
         <li>
-          <p>This program doesn<rsq/>t display the amounts to two decimal places. We will see a solution to this problem in &lt;reference to be determined&gt;.</p>
+          <p>This program doesn<rsq/>t display the amounts to two decimal places. We will see a solution to this problem in <xref ref="strings_formatting-strings"/>.</p>
         </li>
       </ul>
     </p>
