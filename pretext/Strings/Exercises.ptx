@@ -100,6 +100,12 @@ myTests().main()
           <program interactive="activecode" language="python" xml:id="str_count_letter_e_editor">
             <input>
 def count(paragraph):
+    """Count alpha characters in paragraph.
+    
+    This function also counts the number of times
+    the letter "e" appears in the paragraph, and
+    prints the percentage of characters that are "e".
+    """
     # your code here
 
 ====
@@ -170,6 +176,7 @@ count(para)
           <program interactive="activecode" language="python" xml:id="str_num_digits_editor">
             <input>
 def numDigits(n):
+    """Return number of digits in given integer n."""
     # your code here
 
 ====
@@ -210,6 +217,7 @@ print(numDigits(1))
           <program xml:id="str_reverse_editor" interactive="activecode" language="python">
             <input>
 def reverse(astring):
+    """Return reverse of the given string argument."""
     # your code here
 
 ====
