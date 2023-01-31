@@ -5,7 +5,7 @@
     A <term>list</term> is a sequential collection of Python data values, where each value is identified by an index. The values that make up a list are called its <term>elements</term>. Lists are similar to strings, which are ordered collections of characters, except that the elements of a list can have any type and for any one list, the items can be of different types.
     </p>
     <p>
-      Before we examine lists in detail, let<rsq/>s take a look at what life would be like without lists. If we wanted to find the average of seven days of maximum temperaturess (in degrees Celsius), we<rsq/>d need to do something like the following:
+      Before we examine lists in detail, let<rsq/>s review what we already know about lists. Take a look at what life would be like without lists. If we wanted to find the average of seven days of maximum temperaturess (in degrees Celsius), we<rsq/>d need to do something like the following:
     </p>
     
     <note>
@@ -16,7 +16,7 @@
     </note>
     
 
-    <program language="python">
+    <program language="python" xml:id="lists_individual_temperatures">
       <input>
 temp1 = 22.5
 temp2 = 23.1
@@ -39,4 +39,25 @@ print(f"Average temperature is {avg:.1f} degrees C.")
       Can you imagine what the program would look like if we had a month<rsq/>s worth of data? Things would get unmanageable very quickly. Luckily, lists help us manage problems like this.
     </p>
 
+        
+    <p>
+      As we saw in <xref ref="iteration_loop-patterns"/>, we can use a <c>for</c> loop with the accumulator pattern to add up all the items:
+    </p>
+    
+        <program language="python" interactive="activecode">
+      <input>
+total = 0.0
+for temperature in [22.5, 23.1, 24.0, 22.9, 26.1, 25.7, 27.8]:
+  total = total + temperature
+
+avg = total / 7
+
+print(f"Average temperature is {avg:.1f} degrees C.")
+</input>
+<program>
+  
+  <p>
+    Now let<rsq/>s look at lists in detail, first describing the things they have in common with strings.
+  </p>
+  
     </section>

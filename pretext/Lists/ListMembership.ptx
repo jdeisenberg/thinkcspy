@@ -1,26 +1,65 @@
 <?xml version="1.0"?>
 <section xml:id="lists_list-membership">
   <title>List Membership</title>
-  <p><c>in</c> and <c>not in</c> are boolean operators that test membership in a sequence. We
-            used them previously with strings and they also work here.</p>
+  <p>
+    <c>in</c> and <c>not in</c> are boolean operators that test membership in a sequence. We used them previously with strings and they also work here.
+  </p>
   <program xml:id="chp09_4" interactive="activecode" language="python">
     <input>
-fruit = ["apple", "orange", "banana", "cherry"]
+fruit_list = ["apple", "orange", "banana", "cherry"]
 
-print("apple" in fruit)
-print("pear" in fruit)
+print("apple" in fruit_list)
+print("pear" in fruit_list)
         </input>
   </program>
+  
   <p>
-    <term>Check your understanding</term>
+    If you want to know <em>where</em> something is in a list, you can use the <c>.index()</c> function. It will return the index where the item is in the list<mdash/>but if the item is <em>not</em> in the list, it will generate a <c>ValueError</c>.
+  </p>
+  
+  <program xml:id="list_index_program" interactive="activecode" language="python">
+    <input>
+fruit_list = ["apple", "orange", "banana", "cherry"]
+orange_index = fruit_list.index("orange")
+print(orange_index)
+
+bad_index = fruit_list.index("kiwi") # error
+</input>
+</program>
+
+<p>
+  However, we can use the <c>in</c> operator to make a function that gives us a <q>safe</q> index:
+</p>
+
+<program xml:id="list_safe_index" interactive="activecode" language="python"><input>
+def safe_index(a_list, item):
+    """Return index of item in the given list, or -1 if not in the list."""
+    if item in a_list:
+      return a_list.index(item)
+    else:
+        return -1
+      
+fruit_list = ["apple", "orange", "banana", "cherry"]
+orange_index = safe_index(fruit_list, "orange")
+print(orange_index)
+
+kiwi_index = safe_index(fruit_list,  "kiwi")
+print(kiwi_index)
+</input></program>
+
+<p>Because our <c>safe_index</c> function isn<rsq/>t built in to the <c>list</c> class, we cannot use it with dot notation.</p>
+
+
+  <p>
+    <em>Check your understanding</em>
   </p>
   <exercise label="test_question9_4_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
         <input>
-alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
-print(3.14 in alist)
+a_list = [3, 67, "cat", 910.0, 3.14, False]
+print(3.14 in a_list)
 </input>
       </program>
     </statement>
@@ -29,20 +68,18 @@ print(3.14 in alist)
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
-                    Yes, 3.14 is an item in the list alist.
-                </feedback>
+        <feedback>Yes, 3.14 is an item in the list <c>a_list</c>.</feedback>
       </choice>
       <choice>
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
-                    There are 7 items in the list, 3.14 is one of them.
-                </feedback>
+        <feedback>There are six items in the list; 3.14 is one of them.</feedback>
       </choice>
     </choices>
   </exercise>
+  
+  <!--
   <exercise label="test_question9_4_2">
     <statement>
       <p>What is printed by the following statements?</p>
@@ -72,4 +109,6 @@ print(57 in alist)
       </choice>
     </choices>
   </exercise>
+  -->
+  
 </section>

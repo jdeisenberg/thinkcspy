@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <section xml:id="lists_lists-are-mutable">
   <title>Lists are Mutable</title>
-  <p>Unlike strings, lists are <term>mutable</term>.  This means we can change an item in a list by accessing
-            it directly as part of the assignment statement. Using the indexing operator (square brackets) on the left side of an assignment, we can
-            update one of the list items.</p>
+  <p>
+    Now it<rsq/>s time to see the things that make lists different from strings. Possibly the most important difference is that, unlike strings, lists are <term>mutable</term>.  This means we can change an item in a list by accessing it directly as part of an assignment statement. By using the indexing operator (square brackets) on the left side of an assignment, we can update one of the list items.
+  </p>
+  
   <program xml:id="ch09_7" interactive="activecode" language="python">
     <input>
 fruit = ["banana", "apple", "cherry"]
@@ -14,10 +15,14 @@ fruit[-1] = "orange"
 print(fruit)
     </input>
   </program>
-  <p>An
-            assignment to an element of a list is called <term>item assignment</term>. Item
-            assignment does not work for strings.  Recall that strings are immutable.</p>
-  <p>Here is the same example in codelens so that you can step through the statements and see the changes to the list elements.</p>
+  
+  <p>
+    An assignment to an element of a list is called <term>item assignment</term>. Item assignment does not work for strings.  Recall that strings are immutable, as we saw in <xref ref="strings_strings-are-immutable"/>.
+  </p>
+  <p>
+    Here is the same example in codelens so that you can step through the statements and see the changes to the list elements. Notice that these operations do <em>not</em> create a new list.
+  </p>
+  
   <program xml:id="item_assign" interactive="codelens" language="python">
     <input>
 fruit = ["banana", "apple", "cherry"]
@@ -26,44 +31,54 @@ fruit[0] = "pear"
 fruit[-1] = "orange"
     </input>
   </program>
-  <p>By combining assignment with the slice operator we can update several elements at once.</p>
+
+  <p>
+    By combining assignment with the slice operator we can update several elements at once. In the following program, we change the second and third elements of the array with one assignment:
+  </p>
   <program xml:id="ch09_8" interactive="activecode" language="python">
     <input>
-alist = ['a', 'b', 'c', 'd', 'e', 'f']
-alist[1:3] = ['x', 'y']
-print(alist)
+a_list = ['a', 'b', 'c', 'd', 'e', 'f']
+a_list[1:3] = ['x', 'y']
+print(a_list)
     </input>
   </program>
-  <p>We can also remove elements from a list by assigning the empty list to them.</p>
+  
+  <p>
+    We can also remove elements from a list by assigning the empty list to them.
+  </p>
   <program xml:id="ch09_9" interactive="activecode" language="python">
     <input>
-alist = ['a', 'b', 'c', 'd', 'e', 'f']
-alist[1:3] = []
-print(alist)
+a_list = ['a', 'b', 'c', 'd', 'e', 'f']
+a_list[1:3] = []
+print(a_list)
     </input>
   </program>
-  <p>We can even insert elements into a list by squeezing them into an empty slice at the
-            desired location.</p>
+  
+  <p>
+    We can even insert elements into a list by squeezing them into an empty slice at the desired location.
+  </p>
+  
   <program xml:id="ch09_10" interactive="activecode" language="python">
     <input>
-alist = ['a', 'd', 'f']
-alist[1:1] = ['b', 'c']
-print(alist)
-alist[4:4] = ['e']
-print(alist)
+a_list = ['a', 'd', 'f']
+a_list[1:1] = ['b', 'c']
+print(a_list)
+a_list[4:4] = ['e']
+print(a_list)
     </input>
   </program>
+  
   <p>
-    <term>Check your understanding</term>
+    <em>Check your understanding</em>
   </p>
   <exercise label="test_question9_7_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
         <input>
-alist = [4, 2, 8, 6, 5]
-alist[2] = True
-print(alist)
+a_list = [4, 2, 8, 6, 5]
+a_list[2] = True
+print(a_list)
         </input>
       </program>
     </statement>
@@ -72,25 +87,19 @@ print(alist)
         <statement>
           <p>[4, 2, True, 8, 6, 5]</p>
         </statement>
-        <feedback>
-                    Item assignment does not insert the new item into the list.
-        </feedback>
+        <feedback>Item assignment does not insert the new item into the list.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>[4, 2, True, 6, 5]</p>
         </statement>
-        <feedback>
-                    Yes, the value True is placed in the list at index 2.  It replaces 8.
-        </feedback>
+        <feedback>Yes, the value True is placed in the list at index 2.  It replaces 8.</feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, it is illegal to assign</p>
         </statement>
-        <feedback>
-                    Item assignment is allowed with lists.  Lists are mutable.
-        </feedback>
+        <feedback>Item assignment is allowed with lists.  Lists are mutable.</feedback>
       </choice>
     </choices>
   </exercise>

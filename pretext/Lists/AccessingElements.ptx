@@ -3,8 +3,7 @@
   <title>Accessing Elements</title>
   
   <p>
-    The syntax for accessing the elements of a list is the same as the syntax for
-    accessing the characters of a string.  We use the index operator ( <c>[]</c> <mdash/> not to be confused with an empty list). The expression inside the brackets specifies the index. Remember that the indices start at 0.  Any integer expression can be used as an index, and as with strings, negative index values will locate items from the right instead of from the left.
+    The syntax for accessing the elements of a list is the same as the syntax for accessing the characters of a string.  We use the index operator ( <c>[]</c> <mdash/> not to be confused with an empty list). The expression inside the brackets specifies the index. Remember that the indices start at 0.  Any integer expression can be used as an index, and as with strings, negative index values will locate items from the right instead of from the left.
   </p>
   <program xml:id="chp09_02" interactive="activecode" language="python">
     <input>

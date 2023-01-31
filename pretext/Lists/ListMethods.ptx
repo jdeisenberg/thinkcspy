@@ -47,151 +47,74 @@ print(mylist)
   <table>
     <tabular>
       <row header="yes">
-        <cell>
-                            Method
-                        </cell>
-        <cell>
-                            Parameters
-                        </cell>
-        <cell>
-                            Result
-                        </cell>
-        <cell>
-                            Description
-                        </cell>
+        <cell>Method</cell>
+        <cell>Parameters</cell>
+        <cell>Result</cell>
+        <cell>Description</cell>
       </row>
       <row>
-        <cell>
-                            append
-                        </cell>
-        <cell>
-                            item
-                        </cell>
-        <cell>
-                            mutator
-                        </cell>
-        <cell>
-                            Adds a new item to the end of a list
-                        </cell>
+        <cell>append</cell>
+        <cell>item</cell>
+        <cell>mutator</cell>
+        <cell>Adds a new item to the end of a list</cell>
       </row>
       <row>
-        <cell>
-                            insert
-                        </cell>
-        <cell>
-                            position, item
-                        </cell>
-        <cell>
-                            mutator
-                        </cell>
-        <cell>
-                            Inserts a new item at the position given
-                        </cell>
+        <cell>insert</cell>
+        <cell>position, item</cell>
+        <cell>mutator</cell>
+        <cell>Inserts a new item at the position given</cell>
       </row>
       <row>
-        <cell>
-                            pop
-                        </cell>
-        <cell>
-                            none
-                        </cell>
-        <cell>
-                            hybrid
-                        </cell>
-        <cell>
-                            Removes and returns the last item
-                        </cell>
+        <cell>pop</cell>
+        <cell>none</cell>
+        <cell>hybrid</cell>
+        <cell>Removes and returns the last item</cell>
       </row>
       <row>
-        <cell>
-                            pop
-                        </cell>
-        <cell>
-                            position
-                        </cell>
-        <cell>
-                            hybrid
-                        </cell>
-        <cell>
-                            Removes and returns the item at position
-                        </cell>
+        <cell>pop</cell>
+        <cell>position</cell>
+        <cell>hybrid</cell>
+        <cell>Removes and returns the item at position</cell>
       </row>
       <row>
-        <cell>
-                            sort
-                        </cell>
-        <cell>
-                            none
-                        </cell>
-        <cell>
-                            mutator
-                        </cell>
-        <cell>
-                            Modifies a list to be sorted
-                        </cell>
+        <cell>sort</cell>
+        <cell>none</cell>
+        <cell>mutator</cell>
+        <cell>Modifies a list to be sorted</cell>
       </row>
       <row>
-        <cell>
-                            reverse
-                        </cell>
-        <cell>
-                            none
-                        </cell>
-        <cell>
-                            mutator
-                        </cell>
-        <cell>
-                            Modifies a list to be in reverse order
-                        </cell>
+        <cell>reverse</cell>
+        <cell>none</cell>
+        <cell>mutator</cell>
+        <cell>Modifies a list to be in reverse order</cell>
       </row>
       <row>
-        <cell>
-                            index
-                        </cell>
-        <cell>
-                            item
-                        </cell>
-        <cell>
-                            return idx
-                        </cell>
-        <cell>
-                            Returns the position of first occurrence of item
-                        </cell>
+        <cell>index</cell>
+        <cell>item</cell>
+        <cell>return idx</cell>
+        <cell>Returns the position of first occurrence of item</cell>
       </row>
       <row>
-        <cell>
-                            count
-                        </cell>
-        <cell>
-                            item
-                        </cell>
-        <cell>
-                            return ct
-                        </cell>
-        <cell>
-                            Returns the number of occurrences of item
-                        </cell>
+        <cell>count</cell>
+        <cell>item</cell>
+        <cell>return ct</cell>
+        <cell>Returns the number of occurrences of item</cell>
       </row>
       <row>
-        <cell>
-                            remove
-                        </cell>
-        <cell>
-                            item
-                        </cell>
-        <cell>
-                            mutator
-                        </cell>
-        <cell>
-                            Removes the first occurrence of item
-                        </cell>
+        <cell>remove</cell>
+        <cell>item</cell>
+        <cell>mutator</cell>
+        <cell>Removes the first occurrence of item</cell>
       </row>
     </tabular>
   </table>
-  <p>Details for these and others
-            can be found in the <url href="http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range" visual="http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range">Python Documentation</url>.</p>
-  <p>It is important to remember that methods like <c>append</c>, <c>sort</c>,
-            and <c>reverse</c> all return <c>None</c>.  This means that re-assigning <c>mylist</c> to the result of sorting <c>mylist</c> will result in losing the entire list.  Calls like these will likely never appear as part of an assignment statement (see line 8 below).</p>
+  
+  <p>
+    Details for these and others can be found in the <url href="http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range" visual="http://docs.python.org/py3k/library/stdtypes.html#sequence-types-str-bytes-bytearray-list-tuple-range">Python Documentation</url>.
+  </p>
+  <p>
+    It is important to remember that methods like <c>append</c>, <c>sort</c>, and <c>reverse</c> all return <c>None</c>.  This means that re-assigning <c>mylist</c> to the result of sorting <c>mylist</c> will result in losing the entire list.  Calls like these will likely never appear as part of an assignment statement (see line 8 below).
+  </p>
   <program xml:id="chp09_meth2" interactive="activecode" language="python">
     <input>
 mylist = []
@@ -213,10 +136,10 @@ print(mylist)
       <p>What is printed by the following statements?</p>
       <program language="python">
         <input>
-alist = [4, 2, 8, 6, 5]
-alist.append(True)
-alist.append(False)
-print(alist)
+a_list = [4, 2, 8, 6, 5]
+a_list.append(True)
+a_list.append(False)
+print(a_list)
 </input>
       </program>
     </statement>
@@ -225,25 +148,19 @@ print(alist)
         <statement>
           <p>[4, 2, 8, 6, 5, False, True]</p>
         </statement>
-        <feedback>
-                    True was added first, then False was added last.
-                </feedback>
+        <feedback>True was added first, then False was added last.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>[4, 2, 8, 6, 5, True, False]</p>
         </statement>
-        <feedback>
-                    Yes, each item is added to the end of the list.
-                </feedback>
+        <feedback>Yes, each item is added to the end of the list.</feedback>
       </choice>
       <choice>
         <statement>
           <p>[True, False, 4, 2, 8, 6, 5]</p>
         </statement>
-        <feedback>
-                    append adds at the end, not the beginning.
-                </feedback>
+        <feedback>append adds at the end, not the beginning.</feedback>
       </choice>
     </choices>
   </exercise>
@@ -252,10 +169,10 @@ print(alist)
       <p>What is printed by the following statements?</p>
       <program language="python">
         <input>
-alist = [4, 2, 8, 6, 5]
-alist.insert(2, True)
-alist.insert(0, False)
-print(alist)
+a_list = [4, 2, 8, 6, 5]
+a_list.insert(2, True)
+a_list.insert(0, False)
+print(a_list)
 </input>
       </program>
     </statement>
@@ -264,25 +181,19 @@ print(alist)
         <statement>
           <p>[False, 4, 2, True, 8, 6, 5]</p>
         </statement>
-        <feedback>
-                    Yes, first True was added at index 2, then False was added at index 0.
-                </feedback>
+        <feedback>Yes, first True was added at index 2, then False was added at index 0.</feedback>
       </choice>
       <choice>
         <statement>
           <p>[4, False, True, 2, 8, 6, 5]</p>
         </statement>
-        <feedback>
-                    insert will place items at the index position specified and move everything down to the right.
-                </feedback>
+        <feedback>insert will place items at the index position specified and move everything down to the right.</feedback>
       </choice>
       <choice>
         <statement>
           <p>[False, 2, True, 6, 5]</p>
         </statement>
-        <feedback>
-                    insert does not remove anything or replace anything.
-                </feedback>
+        <feedback>insert does not remove anything or replace anything.</feedback>
       </choice>
     </choices>
   </exercise>
@@ -291,10 +202,10 @@ print(alist)
       <p>What is printed by the following statements?</p>
       <program language="python">
         <input>
-alist = [4, 2, 8, 6, 5]
-temp = alist.pop(2)
-temp = alist.pop()
-print(alist)
+a_list = [4, 2, 8, 6, 5]
+temp = a_list.pop(2)
+temp = a_list.pop()
+print(a_list)
 </input>
       </program>
     </statement>
@@ -303,25 +214,19 @@ print(alist)
         <statement>
           <p>[4, 8, 6]</p>
         </statement>
-        <feedback>
-                    pop(2) removes the item at index 2, not the 2 itself.
-                </feedback>
+        <feedback>pop(2) removes the item at index 2, not the 2 itself.</feedback>
       </choice>
       <choice>
         <statement>
           <p>[2, 6, 5]</p>
         </statement>
-        <feedback>
-                    pop() removes the last item, not the first.
-                </feedback>
+        <feedback>pop() removes the last item, not the first.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>[4, 2, 6]</p>
         </statement>
-        <feedback>
-                    Yes, first the 8 was removed, then the last item, which was 5.
-                </feedback>
+        <feedback>Yes, first the 8 was removed, then the last item, which was 5.</feedback>
       </choice>
     </choices>
   </exercise>
@@ -330,9 +235,9 @@ print(alist)
       <p>What is printed by the following statements?</p>
       <program language="python">
         <input>
-alist = [4, 2, 8, 6, 5]
-alist = alist.pop(0)
-print(alist)
+a_list = [4, 2, 8, 6, 5]
+a_list = a_list.pop(0)
+print(a_list)
 </input>
       </program>
     </statement>
@@ -341,33 +246,25 @@ print(alist)
         <statement>
           <p>[2, 8, 6, 5]</p>
         </statement>
-        <feedback>
-                    alist is now the value that was returned from pop(0).
-                </feedback>
+        <feedback>a_list is now the value that was returned from pop(0).</feedback>
       </choice>
       <choice>
         <statement>
           <p>[4, 2, 8, 6, 5]</p>
         </statement>
-        <feedback>
-                    pop(0) changes the list by removing the first item.
-                </feedback>
+        <feedback>pop(0) changes the list by removing the first item.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>4</p>
         </statement>
-        <feedback>
-                    Yes, first the 4 was removed from the list, then returned and assigned to alist.  The list is lost.
-                </feedback>
+        <feedback>Yes, first the 4 was removed from the list, then returned and assigned to a_list.  The list is lost.</feedback>
       </choice>
       <choice>
         <statement>
           <p>None</p>
         </statement>
-        <feedback>
-                    pop(0) returns the first item in the list so alist has now been changed.
-                </feedback>
+        <feedback>pop(0) returns the first item in the list so a_list has now been changed.</feedback>
       </choice>
     </choices>
   </exercise>
