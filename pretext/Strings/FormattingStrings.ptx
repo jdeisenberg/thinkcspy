@@ -31,7 +31,7 @@ print("Your discounted price is $" + str(total) + ".")
 </p>
 </introduction>
 
-<subsection>
+<subsection xml:id="strings_f-strings">
   <title>f-strings</title>
 <p>Consider this Python program that produces the cube of an input number:</p>
 <program language="python"><input>x = float(input("Enter a number: "))
