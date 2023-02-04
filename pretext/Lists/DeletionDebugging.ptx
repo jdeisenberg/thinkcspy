@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<section xml:id="lists_deletion-debug">
+  <title>Programming Phase 2: Debugging</title>
+  <p>
+    Here<rsq/>s our non-working code again:
+  </p>
+      
+  <program xml:id="del_program_plan_redux" interactive="activecode" language="python">
+    <input>
+def remove_negative(a_list):
+    """Modify input list to remove all negative numbers."""
+    for index in range(len(a_list)):
+        if a_list[index] &lt; 0:
+            del a_list[index]
+        
+
+numbers = [10, -66, -47, 11, 505, -217]
+remove_negative(numbers)
+print(f"Final list is {numbers}")
+        </input>
+  </program>
+  
+  <p>
+    You might be tempted to start changing the code a litte bit to see if that fixes the problem.  If it doesn<rsq/>t, you<rsq/>ll change a little bit more.
+  </p>
+  
+  <p>
+    This is an approach that you would never stand for in any other part of your life. If you took your car to a mechanic and asked them to fix it, and they told you <q>OK I<rsq/>ll start replacing parts until the car starts working better,</q>, you would immediately take your business elsewhere. Yet somehow, programmers (even advanced programmers) will use this <q>try changing the code and see if that fixes it</q> approach first rather than diagnosing the problem, which is what the mechanic would do as their first step.
+  </p>
+  
+  <p>
+    One way to diagnose problems is to use <term>debug output</term>; you put <c>print</c> statements in your program to see what the values of variables are. (Or you can use codelens here in this book.)
+  </p>
+  
+  <p>
+    Put this statement on line six. The <c>p</c> in <c>print</c> should be indented to line up with the <c>i</c> in <c>if</c> (it should be inside the loop and after the <c>if</c> statement):
+  </p>
+  
+  <pre>print(f"Index is {index}: {a_list}")</pre>
+  
+  <p>
+    Run the program and take a look at the output. Does this give you an idea of what is going wrong, and how to fix it? We will analyze this on the next page.
+  </p>
+  
+</section>

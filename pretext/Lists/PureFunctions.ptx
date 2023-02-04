@@ -1,41 +1,58 @@
 <?xml version="1.0"?>
 <section xml:id="lists_pure-functions">
   <title>Pure Functions</title>
-  <p>A <term>pure function</term> does not produce side effects. It communicates with the
-            calling program only through parameters (which it does not modify) and a return
-            value. Here is the <c>doubleStuff</c> function from the previous section written as a pure function.
-            To use the pure function version of <c>double_stuff</c> to modify <c>things</c>,
-            you would assign the return value back to <c>things</c>.
+  
+  <p>The revised version of the <c>remove_negative</c> function that we developed in <xref ref="lists_deletion-redux"/> is a <term>pure function</term>. A pure function does not produce <term>side effects</term> such as printing to the screen or changing its parameters. It communicates with the calling program only through parameters (which it does not modify) and a return value.
   </p>
-  <program xml:id="ch09_mod2" interactive="activecode" language="python">
+  
+  <exercise xml:id="lists_pure_function_ex">
+    <statement>
+      <p>
+        A word is <q>vowelicious</q> if it contains four or more vowels. (If you never heard this word before, it<rsq/>s because I made it up just now for this book.) For example, <q>mountain</q> and <q>bookbinder</q> are vowelicious; <q>trailer</q> and <q>reading</q> are not.
+      </p>
+      
+      <p>Write a program that takes a list of words and creates a new list containing only the vowelicious words. Your program should have two pure functions:</p>
+      
+      <p>
+        <ul>
+          <li><p><c>count_vowels</c>, which takes a string and returns the number of vowels it contains</p></li>
+          <li><p><c>keep_vowelicious</c>, which takes a list of words and returns a new list containing only the words that have four or more vowels.</p></li>
+        </ul>
+      </p>
+    </statement>
+  <program xml:id="vowelicious_program" interactive="activecode" language="python">
     <input>
-def doubleStuff(a_list):
-    """ Return a new list in which contains doubles of the elements in a_list. """
-    new_list = []
-    for value in a_list:
-        new_elem = 2 * value
-        new_list.append(new_elem)
-    return new_list
+def count_vowels(a_string):
+    """ Return the number of vowels in the parameter string.
+    Vowels are a, e, i, o, and u (upper and lower case).
+    The letter y is not considered to be a vowel in this program.
+    """
+    # your code here...
+    
+def keep_vowelicious(a_list):
+    """Keep only words with four or more vowels.
+    Given a list of words, return a new list that contains
+    only words that have four or more vowels.
+    """
+    # your code here...
 
-things = [2, 5, 9]
-print(things)
-things = doubleStuff(things)
-print(things)
+words = ["beautiful", "locomotive", "friendly", "automation", "treadmill", "kangaroo"]
+kept_words = keep_vowelicious(words)
+print(f"The vowelicious words are {kept_words}")
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        self.assertEqual(kept_words, ['beautiful', 'locomotive', 'automation', 'kangaroo'], "kept_words should contain the specified items")
+        self.assertEqual(words, ["beautiful", "locomotive", "friendly", "automation", "treadmill", "kangaroo"], "Original word list must remain unchanged.")
+myTests().main()
     </input>
   </program>
-  <p>Once again, codelens helps us to see the actual references and objects as they are passed and returned.</p>
-  <program xml:id="ch09_mod3" interactive="codelens" language="python">
-    <input>
-def doubleStuff(a_list):
-    """ Return a new list in which contains doubles of the elements in a_list. """
-    new_list = []
-    for value in a_list:
-        new_elem = 2 * value
-        new_list.append(new_elem)
-    return new_list
+  <hint>
+  <p>The <c>keep_vowelicious</c> function should call the <c>count_vowels</c> function.</p>
+</hint>
 
-things = [2, 5, 9]
-things = doubleStuff(things)
-    </input>
-  </program>
+</exercise>
 </section>

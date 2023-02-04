@@ -1,12 +1,49 @@
 <?xml version="1.0"?>
 <section xml:id="lists_which-is-better">
   <title>Which is Better?</title>
-  <p>Anything that can be done with modifiers can also be done with pure functions.
-            In fact, some programming languages only allow pure functions. There is some
-            evidence that programs that use pure functions are faster to develop and less
-            error-prone than programs that use modifiers. Nevertheless, modifiers are
-            convenient at times, and in some cases, functional programs are less efficient.</p>
-  <p>In general, we recommend that you write pure functions whenever it is
-            reasonable to do so and resort to modifiers only if there is a compelling
-            advantage. This approach might be called a <em>functional programming style</em>.</p>
+  <p>
+    Anything that can be done with modifiers can also be done with pure functions. In fact, some programming languages only allow pure functions. There is some evidence that programs that use pure functions are faster to develop and less error-prone than programs that use modifiers.  For example, if a programmer accidentally calls the following function twice, the original array will be raised to the fourth power, not squared:
+    </p>
+    
+    <program xml:id="square_modifier" interactive="activecode" language="python">
+      <input>
+def square_list_modifier(a_list):
+    for index in range(len(a_list)):
+      a_list[index] = a_list[index] ** 2
+
+numbers = [2.5, 3.0, 1.1]
+square_list_modifier(numbers)
+square_list_modifier(numbers)  # oops
+print(numbers)
+</input>
+</program>
+
+<p>
+  On the other hand, the following pure function ensures that, no matter how many times you call the <c>square_list</c> function, your original array will never change:
+</p>
+
+    <program xml:id="square_pure" interactive="activecode" language="python">
+      <input>
+def square_list_pure(a_list):
+    result = []
+    for index in range(len(a_list)):
+      result.append(a_list[index] ** 2)
+    return result
+
+numbers = [2.5, 3.0, 1.1]
+squared_numbers = square_list_pure(numbers)
+squared_numbers = square_list_pure(numbers)  # no problem...
+print(numbers)
+print(squared_numbers)
+</input>
+</program>
+
+
+  <p>
+    Nevertheless, modifiers can be convenient at times, and in some cases, functional programs are less efficient.
+  </p>
+  
+  <p>
+    In general, we recommend that you write pure functions whenever it is reasonable to do so and resort to modifiers only if there is a compelling advantage. This approach might be called a <em>functional programming style</em>.
+  </p>
 </section>

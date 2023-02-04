@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<section xml:id="lists_scarcity_model">
+  <title>Interlude: The Scarcity Model</title>
+  <p>
+      You might be wondering why Python copies references rather than copying the contents of a list, and why most of the list methods update the original list rather than returning a new list (unlike string methods, which <em>must</em> return a new string).
+  </p>
+  <p>
+      Part of the answer comes from when Python was invented. In 1991, an average personal computer had 4 megabytes of memory and a <url href="https://en.wikipedia.org/wiki/Clock_rate">clock speed</url> of 25 MHz (25 million cycles per second). If a program had to copy a list of, say, 5000 floating point elements, that would take up a fair amount of memory and time.
+  </p>
+  <p>
+      When memory was limited and every microsecond counted, it made sense to copy lists by reference, even if programmers had to be more careful when manipulating lists. The Python language, as well as other languages invented at that time and earlier, made similar decisions; they were living with a universe of scarce system resources.
+  </p>
+  <p>
+      As of this writing (2023), an average computer has at least 4 gigabytes of memory and a clock speed of 2.1 GHz (2.1 billion cycles per second). That<rsq/>s a thousand times as much memory and more than 80 times as fast. That means we do not have to program with the scarcity model uppermost in our minds. Making a completely new copy of a list, especially if it is of modest size, is a time and memory penalty we can accept if it makes our programs less error-prone. (This does not mean we can ignore time and memory constraints entirely<mdash/>they just need not be our top priority.)
+  </p>
+  <p>
+      On the next page, we<rsq/>ll see how our programs become different when we step back from the scarcity model.
+  </p>
+</section>

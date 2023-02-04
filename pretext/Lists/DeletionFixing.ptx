@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<section xml:id="lists_deletion-fix-program">
+  <title>Programming Phase 3: Fixing</title>
+  <subsection xml:id="list_delete_describe_fix">
+    <title>The Problem</title>
+  <p>
+    Here<rsq/>s the problem: Let<rsq/>s look at the list and the index number after each iteration through the loop:
+  </p>
+  
+  <p><c>Index is 0: [10, -66, -47, 11, 505, -217]</c></p>
+  <p><c>Index is 1: [10, -47, 11, 505, -217]</c></p>
+  
+  <p>Now <c>index</c> moves up to 2, and that skips over the -47. That is definitely a problem. Let<rsq/>s continue...</p>
+  
+  <p><c>Index is 2: [10, -47, 11, 505, -217]</c></p>
+  <p><c>Index is 3: [10, -47, 11, 505, -217]</c></p>
+  <p><c>Index is 4: [10, -47, 11, 505]</c></p>
+  
+  <p>But our loop goes from 0 up to and including 5, and there is no longer an element at that index, and that is where the program crashes.</p>
+
+  <p>
+    That means we need to do two things:
+  </p>
+      
+  <p>
+    <ol>
+      <li><p>Advance the index only if we have a positive number at that position.</p></li>
+      <li><p>Check the index against the length of the modified list every time through the loop.</p></li>
+    </ol>
+  </p>
+</subsection>
+
+<subsection xml:id="list_delete_fix_revealed">
+  <title>The Fix</title>
+  <p>
+    At this point, we do not want a <c>for</c> loop, because it can<rsq/>t do either of these:
+    </p>
+    <p>
+      <ol>
+        <li><p>Modifying a <c>for</c> index inside the loop is considered bad programming technique.</p></li>
+        <li><p>The range of a <c>for</c> loop is calculated once, and once only.</p></li>
+      </ol>
+    </p>
+    
+    <p>
+      This is really a job for a <c>while</c> loop, where we <em>have</em> to control the index value, and the condition is checked every time we go through the loop. Here is the new, revised plan in pseudo-code:
+  </p>
+  
+  <program>
+    <input>
+def remove_negative(a_list):
+    set index to 0.
+    while index &lt; length of a_list:
+        if a_list[index] &lt; 0:
+            delete item at the current index
+        else:
+            move forward to next index
+          </input>
+        </program>
+      
+      <p>It<rsq/>s your turn. Implement the new plan and see if it does what we want.</p>
+      
+      <program language="python" interactive="activecode">
+        <input>
+def remove_negative(a_list):
+    """Modify input list to remove all negative numbers."""
+    # Your code here
+        
+
+numbers = [10, -66, -47, 11, 505, -217]
+remove_negative(numbers)
+print(f"Final list is {numbers}")          
+        </input>
+      </program>
+    </subsection>
+    
+    <subsection xml:id="list_delete_fix_moral">
+      <title>The Moral of the Story</title>
+      <p>
+        Sometimes your first plan simply doesn<rsq/>t work. The plans for your program are not engraved in stone; think of them as engraved in jello<fn>Jell-O<registered/> is a registered trademark of Kraft Heinz</fn>.
+      </p>
+      <p>
+        When a program doesn<rsq/>t work, don<rsq/>t go right into a <q>change code and see if that fixes it</q> loop. Instead, stop and diagnose the problem. Find out where the problem is occurring and figure out why. It<rsq/>s really hard to fix a problem if you don<rsq/>t know what it is.
+      </p>
+      <p>
+        Change the program or the plan <em>after</em> you know what the problem is. 
+      </p>
+    </subsection>
+</section>

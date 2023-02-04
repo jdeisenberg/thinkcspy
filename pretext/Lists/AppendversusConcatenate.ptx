@@ -32,7 +32,7 @@ origlist = origlist + ["cat"]
     </input>
   </program>
   <p>
-    <term>Check you understanding</term>
+    <em>Check your understanding</em>
   </p>
   <exercise label="test_question9_15_1">
     <statement>
@@ -50,17 +50,13 @@ print(alist)
         <statement>
           <p>[4, 2, 8, 6, 5, 999]</p>
         </statement>
-        <feedback>
-                    You cannot concatenate a list with an integer.
-        </feedback>
+        <feedback>You cannot concatenate a list with an integer.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Error, you cannot concatenate a list with an integer.</p>
         </statement>
-        <feedback>
-                    Yes, in order to perform concatenation you would need to write alist+[999].  You must have two lists.
-        </feedback>
+        <feedback>Yes, in order to perform concatenation you would need to write <c>alist + [999]</c>. You must have two lists.</feedback>
       </choice>
     </choices>
   </exercise>

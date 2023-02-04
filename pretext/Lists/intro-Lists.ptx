@@ -54,10 +54,6 @@ avg = total / 7
 
 print(f"Average temperature is {avg:.1f} degrees C.")
 </input>
-<program>
-  
-  <p>
-    Now let<rsq/>s look at lists in detail, first describing the things they have in common with strings.
-  </p>
-  
+</program>
+   
     </section>

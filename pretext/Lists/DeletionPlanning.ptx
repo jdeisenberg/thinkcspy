@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<section xml:id="lists_deletion-program">
+  <title>Programming Phase 1: Planning</title>
+  <p>
+    Let<rsq/>s write a function that deletes all the negative elements in a list; if you give it the list <c>[10, -66, -47, 11, 505, -217]</c> the list will be modified to <c>[10, 11, 505]</c>. This function will <em>not</em> return a new list; it will modify the list we give it <q>in place</q>.
+  </p>
+  
+  <p>
+    Here<rsq/>s the plan: use a <c>for</c> loop that counts from 0 to the list length (minus one). If the entry at a given index is negative, we delete the element using <c>del</c>.  Sounds like a plan. Let<rsq/>s see it in action:
+  </p>
+    
+  <program xml:id="del_program_plan1" interactive="activecode" language="python">
+    <input>
+def remove_negative(a_list):
+    """Modify input list to remove all negative numbers."""
+    for index in range(len(a_list)):
+        if a_list[index] &lt; 0:
+            del a_list[index]
+        
+
+numbers = [10, -66, -47, 11, 505, -217]
+remove_negative(numbers)
+print(f"Final list is {numbers}")
+        </input>
+  </program>
+  
+  <p>
+    Well. That didn<rsq/>t work. Why did we end up with <c>IndexError: list index out of range</c>? Before you try fixing the problem, please read the next pae.
+  </p>
+</section>

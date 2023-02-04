@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<section xml:id="lists_deletion-redux">
+  <title>Deleting Negative Elements: The Rewrite</title>
+  <introduction>
+  <p>
+    Back in <xref ref="list_delete_describe_fix"/>, we wrote a function that deletes all the negative elements in a list; if you give it the list <c>[10, -66, -47, 11, 505, -217]</c> the list will be modified to <c>[10, 11, 505]</c>. This function did <em>not</em> return a new list; it modified the list we give it <q>in place</q>. The function was a modifier, and it had the side effect of changing the list passed to it.
+  </p>
+  
+  <p>
+    Now, we will rewrite the function so that it returns a new list with the non-negative elements, leaving the original argument untouched. Because we aren<rsq/>t touching our original list by removing entries from it, we can go back to our original plan, slightly modified:
+  </p>
+  
+  <p>
+    <ol>
+      <li><p>Set the result list to the empty list</p></li>
+      <li><p>Use a <c>for</c> loop that counts from 0 to the list length (minus one).</p></li>
+      <li><p>If the entry at a given index is <em>not</em> negative, append that element to the result list.</p></li>
+      <li><p>When the loop is complete, return the result list.</p></li>
+    </ol>
+  </p>
+    
+  <program xml:id="del_program_return_new" interactive="activecode" language="python">
+    <input>
+def remove_negative(a_list):
+    """Given an input list, return a new list with all
+    negative numbers removed."""
+    result_list = []
+    
+    for index in range(len(a_list)):
+        if a_list[index] &gt;= 0:
+            result_list.append(a_list[index])
+            
+    return result_list
+        
+
+numbers = [10, -66, -47, 11, 505, -217]
+new_numbers = remove_negative(numbers)
+print(f"Final list is {new_numbers}")
+        </input>
+  </program>
+  
+</introduction>
+
+<subsection>
+  <title>Advanced Topic: When to Update a List</title>
+  <p>
+    Sharp-eyed readers might have seen the use of <c>append</c> in line eight and are wondering if that violates our <q>don<rsq/>t update a list in place</q> rule. Yes and no.
+  </p>
+  
+  <p>
+    While we <em>are</em> updating a list in place, it<rsq/>s not the original list that the user gave us. That list remains untouched throughout the program. Perhaps it is better to restate the rule as <q>don<rsq/>t update a list that is passed as a parameter in place; instead, return a new list to the caller</q>.
+  </p>
+  
+  <p>
+    So, for example, if you wanted a function that sorts a list without changing the parameter, you could write something like this:
+  </p>
+  
+  <program interactive="activecode" language="python" xml:id="sort_return_new">
+    <input>
+def return_sorted(a_list):
+    cloned_list = a_list[:]  # make a true copy of the original
+    cloned_list.sort() # sorts the copy in place
+    return cloned_list
+    
+numbers = [10, 66, 505, 217, 47, 11]
+sorted_numbers = return_sorted(numbers)
+print(f"numbers list is still {numbers}")
+print(f"sorted list is {sorted_numbers}")
+</input>
+</program>
+
+</subsection>
+
+</section>
