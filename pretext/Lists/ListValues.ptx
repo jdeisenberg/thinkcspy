@@ -26,7 +26,7 @@
 </input>
   </program>
   
-  <p>As you would expect, we can also assign list values to variables and pass lists as parameters to functions. The <c>len</c> function can take a list as its argument, and it will return the number of elements in the array.</p>
+  <p>As you might expect, we can also assign list values to variables and pass lists as parameters to functions. The <c>len</c> function can take a list as its argument, and it will return the number of elements in the array.</p>
   
   <program xml:id="chp09_01" interactive="activecode" language="python">
     <input>

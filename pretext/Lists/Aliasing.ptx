@@ -53,7 +53,7 @@ print(a)
 </program>
 
   <p>
-    This behavior is almost never useful; it usually causes more problems than it solves. (When you use repetition with lists, these problems become even more subtle and can sneak up on you when you least expect them.) In general, it is safer to avoid aliasing when you are working with mutable objects. (For immutable objects, there<rsq/>s no problem. That<rsq/>s why Python is free to alias strings and integers when it sees an opportunity to economize.)
+    This behavior is almost never useful; it usually causes more problems than it solves. When you use repetition with lists, these problems become even more subtle and can sneak up on you when you least expect them. In general, it is safer to avoid aliasing when you are working with mutable objects. For immutable objects, there<rsq/>s no problem. That<rsq/>s why Python is free to alias strings and integers when it sees an opportunity to economize. But remember: lists are mutable.
   </p>
   
   <p>

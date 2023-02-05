@@ -12,7 +12,7 @@
           
           b = a[:]       # make a clone using slice
           print(a == b)  # same values
-          print(a is b)  # but not the same reference
+          print(a is b)  # different references
           
           b[0] = 5
           

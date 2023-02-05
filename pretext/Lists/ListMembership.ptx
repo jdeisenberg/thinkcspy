@@ -35,7 +35,7 @@ bad_index = fruit_list.index("kiwi") # error
 def safe_index(a_list, item):
     """Return index of item in the given list, or -1 if not in the list."""
     if item in a_list:
-      return a_list.index(item)
+        return a_list.index(item)
     else:
         return -1
       

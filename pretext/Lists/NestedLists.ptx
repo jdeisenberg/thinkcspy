@@ -10,7 +10,7 @@
       <input>
 names = ["Phuong", "Federico", "Michele", "Steve"]
 id_nums = [101345, 43617, 81882, 79315]
-gpa = [3.9, 4.0, 3.85, 3.76]
+gpa = [3.9, 3.92, 3.85, 3.76]
 </input>
 </program>
       

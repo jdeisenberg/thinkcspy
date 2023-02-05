@@ -48,7 +48,7 @@ print(f"Average temperature is {avg:.1f} degrees C.")
       <input>
 total = 0.0
 for temperature in [22.5, 23.1, 24.0, 22.9, 26.1, 25.7, 27.8]:
-  total = total + temperature
+    total = total + temperature
 
 avg = total / 7
 

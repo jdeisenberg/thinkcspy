@@ -25,6 +25,6 @@ print(f"Final list is {numbers}")
   </program>
   
   <p>
-    Well. That didn<rsq/>t work. Why did we end up with <c>IndexError: list index out of range</c>? Before you try fixing the problem, please read the next pae.
+    Well. That didn<rsq/>t work. Why did we end up with <c>IndexError: list index out of range</c>? Before you try fixing the problem, please read the next page.
   </p>
 </section>
