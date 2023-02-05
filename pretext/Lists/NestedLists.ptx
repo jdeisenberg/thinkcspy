@@ -1,40 +1,107 @@
 <?xml version="1.0"?>
 <section xml:id="lists_nested-lists">
   <title>Nested Lists</title>
-  <!--
-   However, since lists can have items which are themselves lists, it important to note that <c>len</c> only returns the top-most list length.  In other words, sublists are considered to be a single item when counting the length of the list.
-  -->
-  <p>A nested list is a list that appears as an element in another list. In this
-            list, the element with index 3 is a nested list.
-            If we print(<c>nested[3]</c>), we get <c>[10, 20]</c>. To extract an element from the
-            nested list, we can proceed in two steps.  First, extract the nested list, then extract the item
-            of interest.  It is also possible to combine those steps using bracket operators that evaluate from
-            left to right.</p>
-  <program xml:id="chp09_nest" interactive="activecode" language="python">
+  <introduction>
+    <p>
+      Let<rsq/>s say we have information about some students: their name, ID number, and their GPA (grade point average). We can use separate lists for each of these:
+    </p>
+    
+    <program language="python">
+      <input>
+names = ["Phuong", "Federico", "Michele", "Steve"]
+id_nums = [101345, 43617, 81882, 79315]
+gpa = [3.9, 4.0, 3.85, 3.76]
+</input>
+</program>
+      
+    <p>
+      There<rsq/>s nothing wrong with this, but the data for each student really belongs together. It would be nice if we could put all the data into one list of four elements, where each element has the student name, ID, and GPA grouped together. It turns out that Python lets us do exactly that. We have already seen that lists can contain elements of different data types: <c>[47, "blah", 37.5, True]</c>. Lists are also data types, so we can have a list that contains another list. That lets us write our student information as:
+    </p>
+        <program language="python" interactive="activecode">
     <input>
-nested = [[505, 217], [10, 66], [47, 11, 35]]
-innerlist = nested[2]
-print(innerlist)
-item = innerlist[1]
-print(item)
+students = [["Phuong", 101345, 3.9], ["Federico", 43617, 3.92],
+            ["Michele", 81882, 3.85], ["Steve", 79315, 3.76]]
+    </input>
+  </program>
+  
+  <p>
+    In this list, the element at each index is another list. Each element is called a <term>sublist</term>. A list sequence that contains one or more sublists is called a <term>nested list</term>.
+  </p>
+  
+  <p>
+    Add the following line to the preceding program: <c>print(len(students))</c>. Before you run the program, what do you think it will print? Will it print 12 (because there are 12 data items all together) or will it print 4 (the number of entries at the <q>top level</q> of the list)?
+  </p>
+  
+  <p>
+    As you saw when you ran the program, <c>len</c> returns the length of only the top-most list. In other words, sublists are considered to be a single item when counting the length of the list.
+  </p>
 
-print(nested[2][1])
+</introduction>
+
+<subsection xml:id="access_nested_lists">
+  <title>Accessing Sublists and Sublist Elements</title>
+  
+  <p>
+    Looking at our student information, how would we access Federico<rsq/>s GPA? We know that it is in the sublist at index 1 in the nested list, and the GPA is at index 2 in that sublist. We can use assignment to temporary variables:
+  </p>
+  
+  <program xml:id="access_nest_element1" interactive="activecode" language="python">
+    <input>
+students = [["Phuong", 101345, 3.9], ["Federico", 43617, 3.92],
+            ["Michele", 81882, 3.85], ["Steve", 79315, 3.76]]
+sub_list = students[1] # sub_list is a reference to ["Federico", 43617, 3.92]
+print(sub_list)
+
+gpa = sub_list[2]  # access the last item in the sub_list
+print(gpa)
         </input>
   </program>
   
-  <p xml:id="lists_index-0">
-    <term>Check your understanding</term>
+  <p>
+    Another easier way to access the element is to use the index operator <c>[ ]</c> twice, giving the main list index first, followed by the sublist index:
   </p>
+  
+  <program xml:id="access_nest_element2" interactive="activecode" language="python">
+    <input>
+students = [["Phuong", 101345, 3.9], ["Federico", 43617, 3.92],
+            ["Michele", 81882, 3.85], ["Steve", 79315, 3.76]]
+gpa = students[1][2]
+print(gpa)  
+        </input>
+  </program>
+  
+  <p>
+    This multiple-indexing works for any depth of nesting. Here are our students again, but this time, instead of the GPA, we have another sublist that gives their test scores on the two midterms and the final exam:
+  </p>
+  
+  <program xml:id="access_nest_element3" interactive="activecode" language="python">
+    <input>
+student_tests = [["Phuong", 101345, [90, 87.5, 88.6]],
+                 ["Federico", 43617, [88.3, 89.2, 92.4]],
+                 ["Michele", 81882, [93.0, 90.2, 86.5]],
+                 ["Steve", 79315, [91.7, 89.9, 93.2]]]
+
+print(student_tests[3])  # Steve's sublist
+print(student_tests[3][2]) # Steve's scores
+print(student_tests[3][2][1]) # 89.9
+        </input>
+  </program>
+
+</subsection>
+
+<subsection xml:id="nested_list_ex">
+  <title>Check Your Understanding</title>
+  <p> In these exercises, the nested lists aren<rsq/>t particularly useful; they are designed to test how well you understand accessing a nested list. We<rsq/>ll return to more useful nested lists on the next page.</p>
   <exercise label="test_question9_21_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
         <input>
-alist = [ [4, [True, False], 6, 8], [888, 999] ]
-if alist[0][1][0]:
-   print(alist[1][0])
+a_list = [ [4, [True, False], 6, 8], [888, 999] ]
+if a_list[0][1][0]:
+   print(a_list[1][0])
 else:
-   print(alist[1][1])
+   print(a_list[1][1])
 </input>
       </program>
     </statement>
@@ -43,44 +110,36 @@ else:
         <statement>
           <p>6</p>
         </statement>
-        <feedback>
-                    6 is in the wrong list.  alist[1] refers to the second item in alist, namely [888,999].
-                </feedback>
+        <feedback>6 is in the wrong list.  <c>a_list[1]</c> refers to the second item in <c>a_list</c>, namely [888,999].</feedback>
       </choice>
       <choice>
         <statement>
           <p>8</p>
         </statement>
-        <feedback>
-                    8 is in the wrong list.  alist[1] refers to the second item in alist, namely [888,999].
-                </feedback>
+        <feedback>8 is in the wrong list.  <c>a_list[1]</c> refers to the second item in <c>a_list</c>, namely [888,999].</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>888</p>
         </statement>
-        <feedback>
-                    Yes, alist[0][1][0] is True and alist[1] is the second list, the first item is 888.
-                </feedback>
+        <feedback>Yes, <c>a_list[0][1][0]</c> is <c>True</c> and <c>a_list[1]</c> is the second list, whose first item is 888.</feedback>
       </choice>
       <choice>
         <statement>
           <p>999</p>
         </statement>
-        <feedback>
-                    alist[0][1][0] is True.  Take another look at the if statement.
-                </feedback>
+        <feedback><c>a_list[0][1][0</c> is <c>True</c>.  Take another look at the <c>if</c> statement.</feedback>
       </choice>
     </choices>
   </exercise>
   
     <exercise label="test_question9_3_3">
     <statement>
-      <p>What is printed by the following statements?</p>
+      <p>What is printed by the following statements? (Remember: you can use the index operator on strings as well as lists.)</p>
       <program language="python">
         <input>
-alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
-print(alist[2][0])
+a_list = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
+print(a_list[2][0])
 </input>
       </program>
     </statement>
@@ -101,15 +160,50 @@ print(alist[2][0])
         <statement>
           <p>cat</p>
         </statement>
-        <feedback>cat is the item at index 2 but then we index into it further.</feedback>
+        <feedback><c>"cat"</c> is the item at index 2, but then we index into it further.</feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot have two index values unless you are using slicing.</p>
         </statement>
-        <feedback>Using more than one index is fine.  You read it from left to right.</feedback>
+        <feedback>Using more than one index is fine.  You read the indexes from left to right.</feedback>
       </choice>
     </choices>
   </exercise>
+</subsection>
 
+<subsection xml:id="nested_clone">
+  <title>Cloning Nested Lists</title>
+  <p>
+    Unlike a simple list, you cannot clone a nested list with <c>[:]</c>, as you can see from the following program:
+  </p>
+  
+  <program xml:id="nested_bad_clone" interactive="activecode" language="python">
+    <input>
+my_list = [1, [2, 3], 4]
+bad_clone = my_list[:]
+bad_clone[1][0] = 99  # changes corresponding entry in my_list
+print(bad_clone)
+print(my_list)
+</input>
+  </program>
+  
+  <p>
+    The <c>[:]</c> makes a new copy of the top level list, but the sublists are still references. Instead, you must import the <c>copy</c> module and use its <c>deepcopy</c> function:
+  </p>
+
+  <program xml:id="nested_deepcopy" interactive="activecode" language="python">
+    <input>
+import copy
+
+my_list = [1, [2, 3], 4]
+good_clone = copy.deepcopy(my_list)
+good_clone[1][0] = 99  # my_list will not be changed
+
+print(good_clone)
+print(my_list)
+</input>
+  </program>
+
+</subsection>
 </section>

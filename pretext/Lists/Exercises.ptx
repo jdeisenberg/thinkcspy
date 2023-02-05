@@ -1,27 +1,15 @@
 <?xml version="1.0"?>
 <exercises xml:id="lists_exercises">
   <title>Exercises</title>
-  <exercise>
-    <statement/>
-    <program interactive="" language=""/>
-    <solution>
-                    Your diagram should show two variables referring to two different lists.  a refers to the original list with 1,2, and 3.
-                        b refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.
-                
-                    <p>Your diagram should show two variables referring to two different lists.  <c>a</c> refers to the original list with 1,2, and 3.
-                        <c>b</c> refers to a list with 5,2, and 3 since the zero-eth element was replaced with 5.</p>
-                </solution>
-  </exercise>
-  <exercise label="ex_9_2">
+
+  <exercise label="ex_append_concat">
     <statement>
-      <p>Create a list called <c>myList</c> with the following six items: 76, 92.3, <q>hello</q>, True, 4, 76.
-                        Begin with the empty list shown below, and add 6 statements to add each item, one per item. The first three statements should
-                        use the append method to append the item to the list, and the last three statements should use concatenation.</p>
+      <p>Create a list called <c>myList</c> with the following six items: 76, 92.3, <q>hello</q>, True, 4, 76. Begin with the empty list shown below, and add 6 statements to add each item, one per item. The first three statements should use the append method to append the item to the list, and the last three statements should use concatenation.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_9_2_editor">
       <input>
 
-myList = []
+my_list = []
 
 # Your code here
 
@@ -31,7 +19,7 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(myList,[76, 92.3, 'hello', True, 4, 76],"myList should contain the specified items")
+        self.assertEqual(my_list,[76, 92.3, 'hello', True, 4, 76],"my_list should contain the specified items")
         self.assertIn(".append(", self.getEditorText(), 'append method must be used')
 
 myTests().main()
@@ -40,19 +28,20 @@ myTests().main()
     <solution>
       <program xml:id="ex_9_2_answer" language="python">
         <input>
-myList = []
-myList.append(76)
-myList.append(92.3)
-myList.append("hello")
-myList = myList + [True]
-myList = myList + [4]
-myList = myList + [76]
-print(myList)
+my_list = []
+my_list.append(76)
+my_list.append(92.3)
+my_list.append("hello")
+my_list = my_list + [True]
+my_list = my_list + [4]
+my_list = my_list + [76]
+print(my_list)
         </input>
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_9_3">
+  
+  <exercise label="ex_list_methods">
     <statement>
       <p>Starting with the list of the previous exercise, write Python statements to do the following:</p>
       <p>
@@ -76,14 +65,14 @@ print(myList)
             <p>Remove the first occurrence of 76 from the list.</p>
           </li>
           <li>
-            <p>Remove True from the list using <c>pop</c> and <c>index</c>.</p>
+            <p>Remove <c>True</c> from the list using <c>pop</c> with an <c>index</c> argument.</p>
           </li>
         </ol>
       </p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_9_3_editor">
+    <program interactive="activecode" language="python" xml:id="ex_list_methods_editor">
       <input>
-myList = [76, 92.3, 'hello', True, 4, 76]
+my_list = [76, 92.3, 'hello', True, 4, 76]
 
 # Your code here
         </input>
@@ -91,28 +80,29 @@ myList = [76, 92.3, 'hello', True, 4, 76]
     <solution>
       <program xml:id="ex_9_3_answer" language="python">
         <input>
-myList = [76, 92.3, 'hello', True, 4, 76]
+my_list = [76, 92.3, 'hello', True, 4, 76]
 
-myList.append("apple")         # a
-myList.append(76)              # a
-myList.insert(3, "cat")        # b
-myList.insert(0, 99)           # c
+my_list.append("apple")         # a
+my_list.append(76)              # a
+my_list.insert(3, "cat")        # b
+my_list.insert(0, 99)           # c
 
-print(myList.index("hello"))   # d
-print(myList.count(76))        # e
-myList.remove(76)              # f
-myList.pop(myList.index(True)) # g
+print(my_list.index("hello"))   # d
+print(my_list.count(76))        # e
+my_list.remove(76)              # f
+my_list.pop(my_list.index(True)) # g
 
-print (myList)
+print (my_list)
         </input>
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_9_4">
+  
+  <exercise label="ex_average_list">
     <statement>
       <p>Write a function called <c>average</c> that takes a list of numbers as a parameter and returns the average of the numbers.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_9_4_editor">
+    <program interactive="activecode" language="python" xml:id="ex_list_avg_editor">
       <input>
 def average(numlist):
     # Complete the function definition
@@ -123,14 +113,14 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(int(average([1, 3, 5, 7])),4,"average([1, 3, 5, 7]) should be 4")
-        self.assertEqual(int(average([9, 5, 4])),6,"average([9, 5, 4]) should be 6")
+        self.assertEqual(int(average([1, 3, 5, 7])), 4, "average([1, 3, 5, 7]) should be 4")
+        self.assertEqual(int(average([9, 5, 4])), 6, "average([9, 5, 4]) should be 6")
 
 myTests().main()
         </input>
     </program>
     <solution>
-      <program xml:id="ex_9_4_solution" language="python">
+      <program xml:id="ex_list_avg_solution" language="python">
         <input>
 def average(numlist):
 
@@ -143,13 +133,14 @@ def average(numlist):
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_9_5">
+  
+  <exercise label="ex_list_max">
     <statement>
-      <p>Write a Python function named <c>max</c> that takes a parameter containing a nonempty list of integers and returns the maximum value.  (Note: there is a builtin function named <c>max</c> but pretend you cannot use it.)</p>
+      <p>Write a Python function named <c>max</c> that takes a parameter containing a nonempty list of integers and returns the maximum value.  (Note: there is a built-in function named <c>max</c>, but do not use it.)</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_9_5_editor">
+    <program interactive="activecode" language="python" xml:id="ex_list_max_editor">
       <input>
-def max(lst):
+def max(numlist):
     # Complete the function
 
 ====
@@ -158,34 +149,33 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(max([3, 31, 5, 7]),31,"max([3, 31, 5, 7]) should be 31")
-        self.assertEqual(max([3, 13, 51, 7]),51,"max([3, 13, 51, 7]) should be 51")
+        self.assertEqual(max([3, 31, 5, 7]), 31, "max([3, 31, 5, 7]) should be 31")
+        self.assertEqual(max([3, 13, 51, 7]), 51, "max([3, 13, 51, 7]) should be 51")
 
 myTests().main()
         </input>
     </program>
     <solution>
-      <program xml:id="lst_q5_answer" language="python">
+      <program xml:id="list_max_answer" language="python">
         <input>
-def max(lst):
-    max = 0
-    for e in lst:
-        if e &gt; max:
-            max = e
-    return max
+def max(number_list):
+    max_value = number_list[0]
+    for element in number_list:
+        if element &gt; max_value:
+            max_value = element
+    return max_value
         </input>
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_7_11">
+  
+  <exercise label="ex_list_sum_squares">
     <statement>
-      <p>Write a function <c>sum_of_squares(xs)</c> that computes the sum
-                of the squares of the numbers in the list <c>xs</c>.  For example,
-                <c>sum_of_squares([2, 3, 4])</c> should return 4+9+16 which is 29:</p>
+      <p>Write a function <c>sum_of_squares(num_list)</c> that computes the sum of the squares of the numbers in the list <c>num_list</c>.  For example, <c>sum_of_squares([2, 3, 4])</c> should return 4&#160;+&#160;9&#160;+&#160;16, which is 29:</p>
     </statement>
-    <program xml:id="ex_7_11_editor" interactive="activecode" language="python">
+    <program xml:id="ex_list_sum_squares_editor" interactive="activecode" language="python">
       <input>
-def sum_of_squares(xs):
+def sum_of_squares(num_list):
     # your code here
 
 ====
@@ -194,21 +184,22 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(sum_of_squares([2,3,4]),29,"Tested sum_of_squares on input [2,3,4]")
-        self.assertEqual(sum_of_squares([0,1,-1]),2,"Tested sum_of_squares on input [0,1,-1]")
-        self.assertEqual(sum_of_squares([5,12,14]),365,"Tested sum_of_squares on input [5,12,14]")
+        self.assertEqual(sum_of_squares([2, 3, 4]), 29, "Tested sum_of_squares on input [2, 3, 4]")
+        self.assertEqual(sum_of_squares([0, 1, -1]), 2, "Tested sum_of_squares on input [0, 1, -1]")
+        self.assertEqual(sum_of_squares([5, 12, 14]), 365, "Tested sum_of_squares on input [5, 12, 14]")
 
 myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ex_9_6">
+  
+  <exercise label="ex_list_count_odd">
     <statement>
       <p>Write a function to count how many odd numbers are in a list.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_9_6_editor">
+    <program interactive="activecode" language="python" xml:id="ex_list_count_odd_editor">
       <input>
-def countOdd(lst):
+def count_odd(num_list):
     # your code here
 
 ====
@@ -217,43 +208,45 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(countOdd([1,3,5,7,9]),5,"Tested countOdd on input [1,3,5,7,9]")
-        self.assertEqual(countOdd([1,2,3,4,5]),3,"Tested countOdd on input [-1,-2,-3,-4,-5]")
-        self.assertEqual(countOdd([2,4,6,8,10]),0,"Tested countOdd on input [2,4,6,8,10]")
-        self.assertEqual(countOdd([0,-1,12,-33]),2,"Tested countOdd on input [0,-1,12,-33]")
+        self.assertEqual(count_odd([1, 3, 5, 7, 9]), 5, "Tested count_odd on input [1, 3, 5, 7, 9]")
+        self.assertEqual(count_odd([1, 2, 3, 4, 5]), 3, "Tested count_odd on input [-1, -2, -3, -4, -5]")
+        self.assertEqual(count_odd([2, 4, 6, 8, 10]), 0, "Tested count_odd on input [2, 4, 6, 8, 10]")
+        self.assertEqual(count_odd([0, -1, 12, -33]), 2, "Tested count_odd on input [0, -1, 12, -33]")
 
 myTests().main()
         </input>
     </program>
     <solution>
-      <program xml:id="lst_q7_answer" language="python">
+      <program xml:id="ex_list_count_odd_answer" language="python">
         <input>
 import random
 
-def countOdd(lst):
+def count_odd(num_list):
     odd = 0
-    for e in lst:
-        if e % 2 != 0:
+    for element in num_list:
+        if element % 2 != 0:
             odd = odd + 1
     return odd
 
 # make a random list to test the function
-lst = []
-for i in range(100):
-    lst.append(random.randint(0, 1000))
+numbers = []
+for i in range(10):
+    numbers.append(random.randint(0, 1000))
 
-print(countOdd(lst))
+print(numbers) # show the random numbers
+print(count_odd(numbers))
         </input>
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_9_7">
+  
+  <exercise label="ex_list_sum_evens">
     <statement>
       <p>Sum up all the even numbers in a list.</p>
     </statement>
-    <program xml:id="ex_9_7_editor" interactive="activecode" language="python">
+    <program xml:id="ex_list_sum_evens_editor" interactive="activecode" language="python">
       <input>
-def sumEven(lst):
+def sum_even(number_list):
     # your code here
 
 ====
@@ -262,22 +255,23 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(sumEven([1,3,5,7,9]),0,"Tested sumEven on input [1,3,5,7,9]")
-        self.assertEqual(sumEven([-1,-2,-3,-4,-5]),-6,"Tested sumEven on input [-1,-2,-3,-4,-5]")
-        self.assertEqual(sumEven([2,4,6,7,9]),12,"Tested sumEven on input [2,4,6,7,9]")
-        self.assertEqual(sumEven([0,1,12,33]),12,"Tested sumEven on input [0,1,12,33]")
+        self.assertEqual(sum_even([1, 3, 5, 7, 9]), 0, "Tested sum_even on input [1, 3, 5, 7, 9]")
+        self.assertEqual(sum_even([-1, -2, -3, -4, -5]), -6, "Tested sum_even on input [-1, -2, -3, -4, -5]")
+        self.assertEqual(sum_even([2, 4, 6, 7, 9]), 12, "Tested sum_even on input [2, 4, 6, 7, 9]")
+        self.assertEqual(sum_even([0, 1, 12, 33]), 12, "Tested sum_even on input [0, 1, 12, 33]")
 
 myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ex_9_8">
+  
+  <exercise label="ex_list_product_negatives">
     <statement>
-      <p>Sum up all the negative numbers in a list.</p>
+      <p>Calculate the product of all the negative numbers in a list. For example, <c>product_negatives([-3, 2, -4, 7])</c> should be 12. If a list contains no negative numbers, return 1.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_9_8_editor">
+    <program interactive="activecode" language="python" xml:id="ex_list_product_negatives_editor">
       <input>
-def sumNegatives(lst):
+def product_negatives(number_list):
     # your code here
 
 ====
@@ -286,157 +280,136 @@ from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
-        self.assertEqual(sumNegatives([-1,-2,-3,-4,-5]),-15,"Tested sumNegatives on input [-1,-2,-3,-4,-5]")
-        self.assertEqual(sumNegatives([1,-3,5,-7,9]),-10,"Tested sumNegatives on input [1,-3,5,-7,9]")
-        self.assertEqual(sumNegatives([-2,-4,6,-7,9]),-13,"Tested sumNegatives on input [-2,-4,6,-7,9]")
-        self.assertEqual(sumNegatives([0,1,2,3,4]),0,"Tested sumNegatives on input [0,1,2,3,4]")
+        self.assertEqual(product_negatives([-1, -2, -3, -4, -5]), -120, "Tested product_negatives on input [-1, -2, -3, -4, -5]")
+        self.assertEqual(product_negatives([1, -3, 5, -7, 9]), 21, "Tested product_negatives on input [1, -3, 5, -7, 9]")
+        self.assertEqual(product_negatives([-2, -4, 6, -7, 9]), -56, "Tested product_negatives on input [-2, -4, 6, -7, 9]")
+        self.assertEqual(product_negatives([1, 2, 3, 4]), 1, "Tested product_negatives on input [1, 2, 3, 4]")
 
 myTests().main()
         </input>
     </program>
     <solution>
-      <program xml:id="lst_q9_answer" language="python">
+      <program xml:id="ex_list_product_negatives_answer" language="python">
         <input>
 import random
 
-def sumNegative(lst):
-    sum = 0
-    for e in lst:
-        if e &lt; 0:
-            sum = sum + e
-    return sum
+def product_negatives(number_list):
+    product = 1
+    for element in number_list:
+        if element &lt; 0:
+            product = product * element
+    return product
 
-lst = []
-for i in range(100):
-    lst.append(random.randrange(-1000, 1000))
+numbers = []
+for i in range(10):
+    numbers.append(random.randrange(-10, 10))
 
-print(sumNegative(lst))
+print(numbers) # show numbers
+print(product_negatives(numbers))
         </input>
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_9_9">
+  
+  <exercise label="ex_list_word_length">
     <statement>
       <p>Count how many words in a list have length 5.</p>
     </statement>
-    <program xml:id="ex_9_9_editor" interactive="activecode" language="python">
+    <program xml:id="ex_list_word_length_editor" interactive="activecode" language="python">
       <input>
-def countWords(lst):
+def count_words(word_list):
     # your code here
+    
+print(count_words(["plank", "wood", "board", "nail"]) # 2
+print(count_words(["cat", "mouse", "tapir", "puppy", "dog"]) # 3
         </input>
     </program>
   </exercise>
-  <exercise>
-    <statement/>
-    <program interactive="" language=""/>
-    <solution>
-      <program xml:id="lst_q11_answer" language="python">
-        <input>
-import random
-
-def sum(lst):
-    sum = 0
-    index = 0
-    while index &lt; len(lst) and lst[index] % 2 != 0:
-        sum = sum + lst[index]
-        index = index + 1
-    return sum
-
-lst = []
-for i in range(100):
-    lst.append(random.randint(0,1000))
-
-print(sum(lst))
-        </input>
-      </program>
-    </solution>
-  </exercise>
-  <exercise label="ex_9_11">
+  
+  <exercise label="ex_list_implement_methods">
     <statement>
-      <p>Count how many words occur in a list up to and including the first occurrence of the word <q>sam</q>.</p>
-    </statement>
-    <program xml:id="ex_9_11_editor" interactive="activecode" language="python">
-      <input>
-def count(lst):
-    # your code here
-        </input>
-    </program>
-  </exercise>
-  <exercise label="ex_9_12">
-    <statement>
-      <p>Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement a Python function that works like the following:</p>
+      <p>Although Python provides us with many list methods, it is good practice and very instructive to think about how they are implemented.  Implement Python functions that work like the following:</p>
       <p>
         <ol marker="a">
           <li>
-            <p>count</p>
+            <p><c>count</c></p>
           </li>
           <li>
-            <p>in</p>
+            <p><c>in</c> (you will have to name this function <c>is_in</c> because <c>in</c> is a reserved word)</p>
           </li>
           <li>
-            <p>reverse</p>
+            <p><c>reverse</c></p>
           </li>
           <li>
-            <p>index</p>
+            <p><c>index</c></p>
           </li>
           <li>
-            <p>insert</p>
+            <p><c>insert</c></p>
           </li>
         </ol>
       </p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_9_12_editor">
+    <program interactive="activecode" language="python" xml:id="ex_list_implement_methods_editor">
       <input>
+# Your functions go here..
 
-        </input>
+a_list = [0, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
+print(count(1, a_list))
+print(is_in(4, a_list))
+print(reverse(a_list))
+print(index(2, a_list))
+print(insert('cat', 4, a_list))
+</input>
     </program>
     <solution>
-      <program xml:id="lst_q13_answer" language="python">
+      <program xml:id="ex_list_implement_methods_answer" language="python">
         <input>
-def count(obj, lst):
+def count(obj, a_list):
     count = 0
-    for e in lst:
-        if e == obj:
+    for element in a_list:
+        if element == obj:
             count = count + 1
     return count
 
-def is_in(obj, lst):  # cannot be called in() because in is a reserved keyword
-    for e in lst:
-        if e == obj:
+def is_in(obj, a_list):  # cannot be called in() because in is a reserved keyword
+    for element in a_list:
+        if element == obj:
             return True
     return False
 
-def reverse(lst):
+def reverse(a_list):
     reversed = []
-    for i in range(len(lst)-1, -1, -1): # step through the original list backwards
-        reversed.append(lst[i])
+    for i in range(len(a_list) - 1, -1, -1): # step through the original list backwards
+        reversed.append(a_list[i])
     return reversed
 
-def index(obj, lst):
-    for i in range(len(lst)):
-        if lst[i] == obj:
+def index(obj, a_list):
+    for i in range(len(a_list)):
+        if a_list[i] == obj:
             return i
     return -1
 
-def insert(obj, index, lst):
-    newlst = []
-    for i in range(len(lst)):
+def insert(obj, index, a_list):
+    new_list = []
+    for i in range(len(a_list)):
         if i == index:
-            newlst.append(obj)
-        newlst.append(lst[i])
-    return newlst
+            new_list.append(obj)
+        new_list.append(a_list[i])
+    return new_list
 
-lst = [0, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
-print(count(1, lst))
-print(is_in(4, lst))
-print(reverse(lst))
-print(index(2, lst))
-print(insert('cat', 4, lst))
+a_list = [0, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
+print(count(1, a_list))
+print(is_in(4, a_list))
+print(reverse(a_list))
+print(index(2, a_list))
+print(insert('cat', 4, a_list))
         </input>
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_9_13">
+  
+  <!--
+  <exercise label="ex_list_replace">
     <statement>
       <p>Write a function <c>replace(s, old, new)</c> that replaces all occurences of
                 <c>old</c> with <c>new</c> in a string <c>s</c>:</p>
@@ -469,130 +442,6 @@ myTests().main()
         </input>
     </program>
   </exercise>
-  <exercise label="ex_9_14">
-    <statement>
-      <p>Here are the rules for an L-system that creates something that resembles
-                        a common garden herb.  Implement the following rules and try it.  Use an
-                        angle of 25.7 degrees.</p>
-      <pre>H
-H --&gt; HFX[+H][-H]
-X --&gt; X[-FFF][+FFF]FX</pre>
-    </statement>
-    <program interactive="activecode" language="python" xml:id="ex_9_14_editor">
-      <input>
+  -->
 
-        </input>
-    </program>
-    <solution>
-      <program xml:id="lst_q15_answer" language="python">
-        <input>
-import turtle
-
-def createLSystem(numIters, axiom):
-    startString = axiom
-    endString = ""
-    for i in range(numIters):
-        endString = processString(startString)
-        startString = endString
-
-    return endString
-
-def processString(oldStr):
-    newstr = ""
-    for ch in oldStr:
-        newstr = newstr + applyRules(ch)
-
-    return newstr
-
-def applyRules(ch):
-    newstr = ""
-    if ch == 'H':
-        newstr = 'HFX[+H][-H]'   # Rule 1
-    elif ch == 'X':
-        newstr = 'X[-FFF][+FFF]FX'
-    else:
-        newstr = ch     # no rules apply so keep the character
-
-    return newstr
-
-def drawLsystem(aTurtle, instructions, angle, distance):
-    savedInfoList = []
-    for cmd in instructions:
-        if cmd == 'F':
-            aTurtle.forward(distance)
-        elif cmd == 'B':
-            aTurtle.backward(distance)
-        elif cmd == '+':
-            aTurtle.right(angle)
-        elif cmd == '-':
-            aTurtle.left(angle)
-        elif cmd == '[':
-            savedInfoList.append([aTurtle.heading(), aTurtle.xcor(), aTurtle.ycor()])
-            #print(savedInfoList)
-        elif cmd == ']':
-            newInfo = savedInfoList.pop()
-            aTurtle.setheading(newInfo[0])
-            aTurtle.setposition(newInfo[1], newInfo[2])
-
-
-def main():
-    inst = createLSystem(4, "H")   # create the string
-    print(inst)
-    t = turtle.Turtle()            # create the turtle
-    wn = turtle.Screen()
-    t.up()
-    t.back(200)
-    t.down()
-    t.speed(9)
-    drawLsystem(t, inst, 27.5, 5)  # draw the picture
-
-    wn.exitonclick()
-
-main()
-        </input>
-      </program>
-    </solution>
-  </exercise>
-  <exercise label="ex_9_16">
-    <statement>
-      <p>Here is another L-System.  Use an Angle of 25.</p>
-      <pre>F
-F --&gt; F[-F]F[+F]F</pre>
-    </statement>
-    <program xml:id="ex_9_16_editor" interactive="activecode" language="python">
-      <input>
-
-        </input>
-    </program>
-  </exercise>
-  <exercise label="ex_9_17">
-    <statement>
-      <p>Create a list named <c>randlist</c> containing 100 random integers between 0 and 1000 (use iteration, append, and the random module).</p>
-    </statement>
-    <program interactive="activecode" language="python" xml:id="ex_9_17_editor">
-      <input>
-
-====
-from unittest.gui import TestCaseGui
-
-class myTests(TestCaseGui):
-
-    def testOne(self):
-        self.assertEqual(len(randlist),100,"randlist should contain 100 numbers")
-
-myTests().main()
-        </input>
-    </program>
-    <solution>
-      <program xml:id="ac_ex_9_17" language="python">
-        <input>
-import random
-
-randlist = []
-for i in range(100):
-    randlist.append(random.randint(0, 1000))
-        </input>
-      </program>
-    </solution>
-  </exercise>
 </exercises>

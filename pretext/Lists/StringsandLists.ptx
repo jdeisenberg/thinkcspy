@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <section xml:id="lists_strings-and-lists">
   <title>Strings and Lists</title>
-  <p>Two of the most useful methods on strings involve lists of
-            strings. The <c>split</c> method
-            breaks a string into a list of words.  By
-            default, any number of whitespace characters is considered a word boundary.</p>
+  <p>
+    Two of the most useful methods on strings involve lists of strings. The <c>split</c> method breaks a string into a list of words.  By default, any number of whitespace characters is considered a word boundary.
+  </p>
+  
   <program xml:id="ch09_split1" interactive="activecode" language="python">
     <input>
 song = "The rain in Spain..."
@@ -12,9 +12,11 @@ wds = song.split()
 print(wds)
         </input>
   </program>
-  <p>An optional argument called a <term>delimiter</term> can be used to specify which
-            characters to use as word boundaries. The following example uses the string
-            <c>ai</c> as the delimiter:</p>
+  
+  <p>
+    An optional argument called a <term>delimiter</term> can be used to specify which characters to use as word boundaries. The following example uses the string <c>ai</c> as the delimiter:
+  </p>
+  
   <program xml:id="ch09_split2" interactive="activecode" language="python">
     <input>
 song = "The rain in Spain..."
@@ -22,10 +24,11 @@ wds = song.split('ai')
 print(wds)
         </input>
   </program>
-  <p>Notice that the delimiter doesn't appear in the result.</p>
-  <p>The inverse of the <c>split</c> method is <c>join</c>.  You choose a
-            desired <term>separator</term> string, (often called the <em>glue</em>)
-            and join the list with the glue between each of the elements.</p>
+  <p>Notice that the delimiter doesn<rsq/>t appear in the result.</p>
+  
+  <p>
+    The inverse of the <c>split</c> method is <c>join</c>.  You choose a desired <term>separator</term> string, (often called the <em>glue</em>) and join the list with the glue between each of the elements.
+  </p>
   <program xml:id="ch09_join" interactive="activecode" language="python">
     <input>
 wds = ["red", "blue", "green"]
@@ -38,21 +41,25 @@ print("***".join(wds))
 print("".join(wds))
         </input>
   </program>
-  <p>The list that you glue together (<c>wds</c> in this example) is not modified.  Also,
-            you can use empty glue or multi-character strings as glue.</p>
+  
   <p>
-    <term>Check your understanding</term>
+    The list that you glue together (<c>wds</c> in this example) is not modified.  Also,
+    you can use empty glue or multi-character strings as glue.
   </p>
-  <exercise label="test_question9_22_1">
+  
+  <p>
+    <em>Check your understanding</em>
+  </p>
+  <exercise label="split_name_ex">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
         <input>
-myname = "Edgar Allan Poe"
-namelist = myname.split()
+my_name = "Edgar Allan Poe"
+name_list = my_name.split()
 init = ""
-for aname in namelist:
-    init = init + aname[0]
+for a_name in name_list:
+    init = init + a_name[0]
 print(init)
 </input>
       </program>
@@ -62,34 +69,92 @@ print(init)
         <statement>
           <p>Poe</p>
         </statement>
-        <feedback>
-                    Three characters but not the right ones.  namelist is the list of names.
-                </feedback>
+        <feedback>Three characters but not the right ones.  namelist is the list of names.</feedback>
       </choice>
       <choice>
         <statement>
           <p>EdgarAllanPoe</p>
         </statement>
-        <feedback>
-                    Too many characters in this case.  There should be a single letter from each name.
-                </feedback>
+        <feedback>Too many characters in this case.  There should be a single letter from each name.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>EAP</p>
         </statement>
-        <feedback>
-                    Yes, split creates a list of the three names.  The for loop iterates through the names and creates a string from the first characters.
-                </feedback>
+        <feedback>Yes, <c>split</c> creates a list of the three names.  The <c>for</c> loop iterates through the names and creates a string from the first characters.</feedback>
       </choice>
       <choice>
         <statement>
           <p>William Shakespeare</p>
         </statement>
-        <feedback>
-                    That does not make any sense.
-                </feedback>
+        <feedback>That does not make any sense.</feedback>
       </choice>
     </choices>
+  </exercise>
+  
+  <exercise label="split_join_date">
+    <statement>
+      <p>
+        In the United States, dates are formatted as <em>month</em>-<em>day</em>-<em>year</em>. For example, the sixth day of November in the year 2099 would be written as 11-6-2099.  In Germany, however, dates are formatted as <em>day</em>.<em>month</em>.<em>year</em>. The same day in Europe is written as 6.11.2099.
+      </p>
+      <p>
+        Complete this program, which asks the user for a date in US format and uses <c>split</c> and <c>join</c> to convert it to German format.
+      </p>
+    </statement>
+    <program interactive="activecode" language="python">
+      <input>
+def to_german(date_str):
+    """Convert date from m/d/y to d.m.y format."""
+    # your code here
+    
+us_date = input("Enter date in format mm/dd/yyy: ")
+german_date = to_german(us_date)
+print(f"The German date format is {german_date}.")        
+      </input>
+    </program>
+  </exercise>
+
+  <exercise label="split_join_date_validate">
+    <statement>
+      <p>
+      In the preceding program, you may not have done any data validation. If the user entered a bad date like <c>11-6-2023</c> (wrong delimiter), <c>55/45/0</c>, or even something like <c>ant/bee/cat</c>, the program would have dutifully returned <c>45.55.0</c> and <c>bee.ant.cat</c> for the last two. (My program crashed for <c>11-6-2023</c>.) Rewrite the program to <em>validate</em> the input. Consider a date to be valid only when:
+    </p>
+    <p>
+      <ul>
+        <li>The list resulting from split on <c>'/'</c> must have exactly three elements.</li>
+        <li>Each part of the date consists of only digits.</li>
+        <li>The year is greater than 1752.</li>
+        <li>The month is between 1 and 12.</li>
+        <li>The day is in the correct range for the month.</li>
+      </ul>
+    </p>
+    <p>
+      For the last criterion, you will need to figure out if a year is a leap year or not. You may want to look at <xref ref="conditional_ex_leapyear"/> for a reminder of how to determine that.
+    </p>
+    <p>
+      The actual reformatting of the date is a very small part of this program; most of the code goes into validation. Though this might surprise you, it is fairly typical of most programs.
+    </p>
+  </statement>
+    <program interactive="activecode" language="python">
+      <input>
+def is_valid_us_date(us_str):
+    """Check validity of given date string.
+    Return True if month, day, and year are all digits
+    and in a valid range, False otherwise.
+    """
+    # your code here
+    
+def to_german(date_str):
+    """Convert date from m/d/y to d.m.y format."""
+    # your code here
+    
+us_date = input("Enter date in format mm/dd/yyy: ")
+if is_valid_us_date(us_date):
+    german_date = to_german(us_date)
+    print(f"The German date format is {german_date}.")
+else:
+    print(f"Sorry, {us_date} is not a valid date.")
+      </input>
+    </program>
   </exercise>
 </section>

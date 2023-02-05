@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<section xml:id="lists_working-with-nested-lists">
+  <title>Working with Nested Lists</title>
+    <p>
+      This page has several programs for you to write. They all use nested lists.
+    </p>
+    <exercises>
+      <exercise xml:id="nested_triangle">
+        <statement>
+          <p>
+          The Pythagorean theorem lets us find the hypotenuse of a right triangle if we know the length of the two legs of the triangle. In this program, you will have a nested list that contains pairs of leg lengths (for example, <c>[3.0, 4.0]</c> is a sublist describing a triangle whose legs are 3.0 and 4.0 units long).
+        </p>
+        <p>
+          Your job is to take this nested list and create a new list of the corresponding hypotenuse lengths.
+        </p>
+      </statement>
+      
+      <program interactive="activecode" language="python" xml:id="nested_pythagorean">
+        <input>
+triangle_list = [[3.0, 4.0], [12.0, 5.0], [7.6, 3.2], [8.5, 10.4]]
+hypotenuse_list = []  # results go into this list
+# your code here
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):            
+        def close_enough(result_list):
+            good_list = [[3.0, 4.0], [12.0, 5.0], [7.6, 3.2], [8.5, 10.4]]
+            result = True
+            index = 0
+            if (len(good_list) != len(result_list)):
+              result = False
+            else:
+                while index &lt; len(good_list) and result:
+                    good_hyp = ((good_list[index][0] ** 2) + (good_list[index][1] ** 2)) ** 0.5
+                    if abs(result_list[index] - good_hyp) &lt; .00001:
+                        index = index + 1
+                    else:
+                        result = False
+            return result
+
+        self.assertEqual(len(hypotenuse_list), 4, "Result should have 4 entries.")
+        self.assertEqual(close_enough(hypotenuse_list), True, "Result has correct calculation.")
+
+myTests().main()        
+</input>
+      </program>
+      
+      <solution>
+        <p>
+          This solution does not use any functions
+        </p>
+        <program language="python"><input>
+triangle_list = [[3.0, 4.0], [12.0, 5.0], [7.6, 3.2], [8.5, 10.4]]
+hypotenuse_list = []
+for sublist in triangle_list:
+    hypotenuse = (sublist[0] ** 2 + sublist[1] ** 2) ** 0.5
+    hypotenuse_list.append(hypotenuse)
+print(f"Hypotenuses are {hypotenuse_list}.")
+</input></program>
+<p>
+  This solution uses a function for calculating the Pythagorean theorem.
+</p>
+<program><input>
+    def hypotenuse(first_leg, second_leg):
+    """Return length of hypotenuse given leg lengths."""
+    
+    result = (first_leg ** 2 + second_leg ** 2) ** 0.5
+    return result
+
+triangle_list = [[3.0, 4.0], [12.0, 5.0], [7.6, 3.2], [8.5, 10.4]]
+hypotenuse_list = []
+for sublist in triangle_list:
+    hypotenuse_list.append(hypotenuse(sublist[0], sublist[1]))
+print(f"Hypotenuses are {hypotenuse_list}.")
+</input></program>
+</solution>
+</exercise>
+
+<exercise xml:id="ex_nested_test_scores">
+  <statement>
+    <p>
+      Given a nested list of student names, IDs, and three test scores, write a program that prints each student<rsq/>s name, ID, and average test score.  Here is what the output might look like. The program that produced this output used <xref ref="strings_f-strings">f-strings as described in section</xref> to output the average with one digit after the decimal point. Your output doesn<rsq/>t have to match exactly, but the information conveyed must be the same. 
+    </p>
+    
+    <pre>Average Test Scores
+===================
+Phuong (#101345): 88.7
+Federico (#43617): 90.0
+Michele (#81882): 89.9
+Steve (#79315): 91.6</pre>
+  </statement>
+  <program interactive="activecode" language="python">
+    <input>
+student_tests = [["Phuong", 101345, [90, 87.5, 88.6]],
+                 ["Federico", 43617, [88.3, 89.2, 92.4]],
+                 ["Michele", 81882, [93.0, 90.2, 86.5]],
+                 ["Steve", 79315, [91.7, 89.9, 93.2]]
+
+# your code here...
+    </input>
+  </program>
+</exercise>
+
+<exercise xml:id="temperatures_to_f">
+  <statement>
+    <p>
+      In the following program, you will start with a nested list of one week<rsq/>s worth of low and high temperatures in degrees Celsius. Your program will create a new nested list that contains the low/high pairs, converted to Fahrenheit. The conversion formula for Celsius to Fahrenheit is <m>f = {9 \over 5}  c + 32</m>.
+    </p>
+  </statement>
+  <program interactive="activecode" language="python">
+    <input>
+def nested_to_fahr(celsius_list):
+    """Convert nested list of temperature ranges to Fahrenheit.
+    Given a list of low/high temperature pairs in degrees Celsius,
+    return a corresponding list of pairs in degrees Fahrenheit.
+    """
+    # your code here
+
+celsius_ranges = [[8.3, 21.1], [12.5, 23.3], [15.6, 21.0], [16.9, 28.4],
+                  [15.5, 22.0], [11.5, 21.9], [14.4, 22.8]]
+
+fahr_ranges = nested_to_fahr(celsius_ranges)
+print(fahr_ranges)
+====
+from unittest.gui import TestCaseGui
+
+class myTests(TestCaseGui):
+
+    def testOne(self):
+        def good_fahr(celsius):
+            return celsius / 5 * 9 + 32
+
+        def all_pairs(nested_list):
+            result = True
+            index = 0
+            while index &lt; len(nested_list) and result:
+                result = len(nested_list[index]) == 2
+                index += 1
+            return result
+
+        def within_delta(a, b):
+            return abs(a - b) &lt; .001
+            
+        def close_enough(nested_list):
+            result = True
+            index = 0
+            while index &lt; len(nested_list) and result:
+                pair = nested_list[index]
+                result = within_delta(pair[0], good_fahr(celsius_ranges[index][0])) and \
+                    within_delta(pair[1], good_fahr(celsius_ranges[index][1]))
+                index = index + 1
+            return result
+
+        self.assertEqual(len(fahr_ranges), 7, "Result should have 7 entries.")
+        self.assertEqual(all_pairs(fahr_ranges), True, "Sublists should have two elements.")
+        self.assertEqual(close_enough(fahr_ranges), True, "Result has correct calculation.")
+
+myTests().main()
+     </input>
+  </program>
+</exercise>
+</exercises>
+</section>
