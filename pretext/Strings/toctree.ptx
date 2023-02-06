@@ -9,7 +9,7 @@
     <xi:include href="./TheSliceOperator.ptx"/>
     <xi:include href="./ObjectsAndMethods.ptx"/>
     <xi:include href="./StringMethods.ptx"/>
-    <xi:include href="./ReverseName.ptx"/>
+    <xi:include href="./ChangeNameForm.ptx"/>
     <xi:include href="./FormattingStrings.ptx"/>
     <xi:include href="./StringComparison.ptx"/>
     <xi:include href="./StringsAreImmutable.ptx"/>
