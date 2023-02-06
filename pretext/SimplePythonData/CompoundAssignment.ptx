@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<section xml:id="simple-python-data_compound-assignment">
+  <title>Updating Variables: Compound Assignment</title>
+  <p>
+    Updating variables is a very common operation in Python programs. Consider these updates:
+  </p>
+  
+  <program language="python">
+    <input>
+x = 29
+x = x + 1   # now 30
+x = x - 5   # now 25
+x = x * 3   # now 75
+x = x / 4   # now 18.75
+print(x)
+</input>
+  </program>
+  
+  <p>
+    When the variable on the left side of the assignment operator is the same as the variable on the right side, you can use a shortcut called <term>compound assignment</term>.  Instead of saying <c>x = x + 1</c>, you can write <c>x += 1</c>. If you read <c>x = x + 1</c> as <q><em>x</em> becomes <em>x</em> + 1</q>, you can read <c>x += 1</c> as <q><em>x</em> plus-and-becomes 1.</q>
+  </p>
+  
+  <p><xref ref="table_compound_assignments"/> gives a examples of the arithmetic operators and their compound assignment shortcuts.</p>
+  
+  <table xml:id="table_compound_assignments">
+    <title>Compound Assignments</title>
+    <tabular>
+      <row header="yes">
+        <cell>Assignment</cell><cell>Compound Assignment</cell>
+      </row>
+      <row>
+        <cell><c>n = n + 3</c></cell>
+        <cell><c>n += 3</c></cell>
+      </row>
+      <row>
+        <cell><c>x = x - 4.2</c></cell>
+        <cell><c>x -= 4.2</c></cell>
+      </row>
+      <row>
+        <cell><c>y = y * 6</c></cell>
+        <cell><c>y *= 6</c></cell>
+      </row>
+      <row>
+        <cell><c>z = z / 5</c></cell>
+        <cell><c>z /= 5</c></cell>
+      </row>
+      <row>
+        <cell><c>x = x // 3</c></cell>
+        <cell><c>x //= 3</c></cell>
+      </row>
+      <row>
+        <cell><c>n = n % 7</c></cell>
+        <cell><c>n %= 7</c></cell>
+      </row>
+    </tabular>
+  </table>
+
+  <p>
+    We can, therefore, rewrite the example at the top of the page using compound assignment:
+  </p>
+  
+    <program language="python" interactive="activecode" xml:id="compound_assign_example">
+    <input>
+x = 29
+x += 1   # now 30
+x -= 5   # now 25
+x *= 3   # now 75
+x /= 4   # now 18.75
+print(x)
+</input>
+  </program>
+  <p>
+      The update expression doesn<rsq/>t have to be a simple variable: <c>x = x + (y / z)</c> can be shortened to <c>x += (y / z)</c>. However, if the variable on the left-hand side is part of a parenthesized expression on the right, such as <c>x = (x + 5) / 3</c>, you cannot shorten it with compound assignment.
+  </p>
+  
+  <exercise label="chain_compound_assign">
+    <statement>
+      <p>What is printed when the following statements execute?</p>
+      <program language="python">
+        <input>
+n = 12
+n -= 3
+n *= 8
+n //= 2
+n %= 5
+
+print(n)
+</input>
+      </program>
+    </statement>
+    <choices>
+      <choice>
+        <statement>
+          <p>12</p>
+        </statement>
+        <feedback>The value of <c>n</c> changes in the second statement.</feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>2</p>
+        </statement>
+        <feedback>Each statement changes the value of <c>n</c>, so 2 is not the final result.</feedback>
+      </choice>
+      <choice correct="yes">
+        <statement>
+          <p>1</p>
+        </statement>
+        <feedback>Yes, starting with 12, subtract 3, multiply by 8, integer divide by 2, and then take remainder after dividing by 5.</feedback>
+      </choice>
+      <choice>
+        <statement>
+          <p>Nothing.  An error occurs because <c>n</c> cannot be used that many times in compound assignment statements.</p>
+        </statement>
+        <feedback>Remember that variables in Python are different from variables in math in that they (temporarily) hold values, but can be reassigned.</feedback>
+      </choice>
+    </choices>
+  </exercise>
+  
+</section>

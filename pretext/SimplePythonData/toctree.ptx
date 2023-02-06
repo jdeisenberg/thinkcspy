@@ -16,6 +16,7 @@
     <xi:include href="./MoreAboutStrings.ptx"/>
     <xi:include href="./Reassignment.ptx"/>
     <xi:include href="./UpdatingVariables.ptx"/>
+    <xi:include href="./CompoundAssignment.ptx"/>
     <xi:include href="./Glossary.ptx"/>
     <xi:include href="./Exercises.ptx"/>
 </chapter>
