@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <section xml:id="dictionaries_aliasing-and-copying">
   <title>Aliasing and Copying</title>
-  <p>Because dictionaries are mutable, you need to be aware of aliasing (as we saw with lists).  Whenever
-            two variables refer to the same dictionary object, changes to one affect the other.
-            For example, <c>opposites</c> is a dictionary that contains pairs
-            of opposites.</p>
+  
+  <p>
+    Because dictionaries are mutable, you need to be aware of aliasing (as we saw with lists).  Whenever two variables refer to the same dictionary object, changes to one affect the other. For example, <c>opposites</c> is a dictionary that contains pairs of opposites.
+  </p>
   <program xml:id="ch12_dict11" interactive="activecode" language="python">
     <input>
 opposites = {'up': 'down', 'right': 'wrong', 'true': 'false'}
@@ -16,15 +16,22 @@ alias['right'] = 'left'
 print(opposites['right'])
         </input>
   </program>
-  <p>As you can see from the <c>is</c> operator, <c>alias</c> and <c>opposites</c> refer to the same object.</p>
-  <p>If you want to modify a dictionary and keep a copy of the original, use the dictionary
-            <c>copy</c> method.  Since <em>acopy</em> is a copy of the dictionary, changes to it will not effect the original.</p>
+  
+  <p>
+    As you can see from the <c>is</c> operator, <c>alias</c> and <c>opposites</c> refer to the same object.
+  </p>
+  
+  <p>
+    If you want to modify a dictionary and keep a copy of the original, use the dictionary
+            <c>copy</c> method.  In the following program, since <em>a_copy</em> is a copy of the dictionary, changes to it will not effect the original.
+  </p>
   <program language="python">
     <input>
-acopy = opposites.copy()
-acopy['right'] = 'left'    # does not change opposites
+a_copy = opposites.copy()
+a_copy['right'] = 'left'    # does not change opposites
 </input>
   </program>
+  
   <p>
     <term>Check your understanding</term>
   </p>
@@ -33,10 +40,10 @@ acopy['right'] = 'left'    # does not change opposites
       <p>What is printed by the following statements?</p>
       <program language="python">
         <input>
-mydict = {"cat":12, "dog":6, "elephant":23, "bear":20}
-yourdict = mydict
-yourdict["elephant"] = 999
-print(mydict["elephant"])
+my_dict = {"cat": 12, "dog": 6, "elephant": 23, "bear": 20}
+your_dict = my_dict
+your_dict["elephant"] = 999
+print(my_dict["elephant"])
 </input>
       </program>
     </statement>
@@ -45,33 +52,25 @@ print(mydict["elephant"])
         <statement>
           <p>23</p>
         </statement>
-        <feedback>
-                    mydict and yourdict are both names for the same dictionary.
-                </feedback>
+        <feedback><c>my_dict</c> and <c>your_dict</c> are both names for the same dictionary.</feedback>
       </choice>
       <choice>
         <statement>
           <p>None</p>
         </statement>
-        <feedback>
-                    The dictionary is mutable so changes can be made to the keys and values.
-                </feedback>
+        <feedback>The dictionary is mutable, so changes can be made to the keys and values.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>999</p>
         </statement>
-        <feedback>
-                    Yes, since yourdict is an alias for mydict, the value for the key elephant has been changed.
-                </feedback>
+        <feedback>Yes, since <c>your_dict</c> is an alias for <c>my_dict</c>, the value for the key "elephant" has been changed.</feedback>
       </choice>
       <choice>
         <statement>
-          <p>Error, there are two different keys named elephant.</p>
+          <p>Error, there are two different keys named "elephant".</p>
         </statement>
-        <feedback>
-                    There is only one dictionary with only one key named elephant.  The dictionary has two different names, mydict and yourdict.
-                </feedback>
+        <feedback>There is only one dictionary with only one key named "elephant".  The dictionary has two different names, <c>my_dict</c> and <c>your_dict</c>.</feedback>
       </choice>
     </choices>
   </exercise>

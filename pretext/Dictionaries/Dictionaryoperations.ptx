@@ -55,33 +55,25 @@ print(mydict["mouse"])
         <statement>
           <p>12</p>
         </statement>
-        <feedback>
-                    12 is associated with the key cat.
-        </feedback>
+        <feedback>12 is associated with the key cat.</feedback>
       </choice>
       <choice>
         <statement>
           <p>0</p>
         </statement>
-        <feedback>
-                    The key mouse will be associated with the sum of the two values.
-        </feedback>
+        <feedback>The key mouse will be associated with the sum of the two values.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>18</p>
         </statement>
-        <feedback>
-                    Yes, add the value for cat and the value for dog (12 + 6) and create a new entry for mouse.
-        </feedback>
+        <feedback>Yes, add the value for cat and the value for dog (12 + 6) and create a new entry for mouse.</feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, there is no entry with mouse as the key.</p>
         </statement>
-        <feedback>
-                    Since the new key is introduced on the left hand side of the assignment statement, a new key-value pair is added to the dictionary.
-        </feedback>
+        <feedback>Since the new key is introduced on the left hand side of the assignment statement, a new key-value pair is added to the dictionary.</feedback>
       </choice>
     </choices>
   </exercise>

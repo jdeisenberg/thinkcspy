@@ -136,92 +136,54 @@ add_fruit(new_inventory, 'strawberries', 25)
   </program>
   <exercise label="ex_11_02">
     <statement>
-      <p>Write a program called <c>alice_words.py</c> that creates a text file named
-                        <c>alice_words.txt</c> containing an alphabetical listing of all the words, and the
-                        number of times each occurs, in the text version of <title_reference>Alice's Adventures in Wonderland</title_reference>.
-                        (You can obtain a free plain text version of the book, along with many others, from
-                        <url href="http://www.gutenberg.org" visual="http://www.gutenberg.org">http://www.gutenberg.org</url>.) The first 10 lines of your output file should look
-                        something like this</p>
+      <p>
+        Write a program called <c>alice_words.py</c> that creates a text file named <c>alice_words.txt</c> containing an alphabetical listing of all the words, and the number of times each occurs, in the text version of <title_reference>Alice's Adventures in Wonderland</title_reference>. (You can obtain a free plain text version of the book, along with many others, from <url href="http://www.gutenberg.org" visual="http://www.gutenberg.org">http://www.gutenberg.org</url>.) The first 10 lines of your output file should look something like this
+      </p>
       <blockquote>
         <table>
           <tabular>
             <row header="yes">
-              <cell>
-                                            Word
-                                        </cell>
-              <cell>
-                                            Count
-                                        </cell>
+              <cell>Word</cell>
+              <cell>Count</cell>
             </row>
             <row>
-              <cell>
-                                            a
-                                        </cell>
-              <cell>
-                                            631
-                                        </cell>
+              <cell>a</cell>
+              <cell>631</cell>
             </row>
             <row>
-              <cell>
-                                            a-piece
-                                        </cell>
-              <cell>
-                                            1
-                                        </cell>
+              <cell>a-piece</cell>
+              <cell>1</cell>
             </row>
             <row>
-              <cell>
-                                            abide
-                                        </cell>
-              <cell>
-                                            1
-                                        </cell>
+              <cell>abide</cell>
+              <cell>1</cell>
             </row>
             <row>
-              <cell>
-                                            able
-                                        </cell>
-              <cell>
-                                            1
-                                        </cell>
+              <cell>able</cell>
+              <cell>1</cell>
             </row>
             <row>
-              <cell>
-                                            about
-                                        </cell>
-              <cell>
-                                            94
-                                        </cell>
+              <cell>about</cell>
+              <cell>94</cell>
             </row>
             <row>
-              <cell>
-                                            above
-                                        </cell>
-              <cell>
-                                            3
-                                        </cell>
+              <cell>above</cell>
+              <cell>3</cell>
             </row>
             <row>
-              <cell>
-                                            absence
-                                        </cell>
-              <cell>
-                                            1
-                                        </cell>
+              <cell>absence</cell>
+              <cell>1</cell>
             </row>
             <row>
-              <cell>
-                                            absurd
-                                        </cell>
-              <cell>
-                                            2
-                                        </cell>
+              <cell>absurd</cell>
+              <cell>2</cell>
             </row>
           </tabular>
         </table>
       </blockquote>
-      <p>How many times does the word, <c>alice</c>, occur in the book?  If you are writing this
-                        in the activecode window simply print out the results rather than write them to a file.</p>
+      <p>
+        How many times does the word <c>alice</c> occur in the book?  If you are writing this in the activecode window simply print out the results rather than write them to a file.
+      </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_11_02_editor">
       <input>
@@ -318,162 +280,91 @@ print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
       <table>
         <tabular>
           <row header="yes">
-            <cell>
-                                        English
-                                    </cell>
-            <cell>
-                                        Pirate
-                                    </cell>
+            <cell>English</cell>
+            <cell>Pirate</cell>
           </row>
           <row>
-            <cell>
-                                        sir
-                                    </cell>
-            <cell>
-                                        matey
-                                    </cell>
+            <cell>sir</cell>
+            <cell>matey</cell>
           </row>
           <row>
-            <cell>
-                                        hotel
-                                    </cell>
-            <cell>
-                                        fleabag inn
-                                    </cell>
+            <cell>hotel</cell>
+            <cell>fleabag inn</cell>
           </row>
           <row>
-            <cell>
-                                        student
-                                    </cell>
-            <cell>
-                                        swabbie
-                                    </cell>
+            <cell>student</cell>
+            <cell>swabbie</cell>
           </row>
           <row>
-            <cell>
-                                        boy
-                                    </cell>
-            <cell>
-                                        matey
-                                    </cell>
+            <cell>boy</cell>
+            <cell>matey</cell>
           </row>
           <row>
-            <cell>
-                                        madam
-                                    </cell>
-            <cell>
-                                        proud beauty
-                                    </cell>
+            <cell>madam</cell>
+            <cell>proud beauty</cell>
           </row>
           <row>
-            <cell>
-                                        professor
-                                    </cell>
-            <cell>
-                                        foul blaggart
-                                    </cell>
+            <cell>professor</cell>
+            <cell>foul blaggart</cell>
           </row>
           <row>
-            <cell>
-                                        restaurant
-                                    </cell>
-            <cell>
-                                        galley
-                                    </cell>
+            <cell>restaurant</cell>
+            <cell>galley</cell>
           </row>
           <row>
-            <cell>
-                                        your
-                                    </cell>
-            <cell>
-                                        yer
-                                    </cell>
+            <cell>your</cell>
+            <cell>yer</cell>
           </row>
           <row>
-            <cell>
-                                        excuse
-                                    </cell>
-            <cell>
-                                        arr
-                                    </cell>
+            <cell>excuse</cell>
+            <cell>arr</cell>
           </row>
           <row>
-            <cell>
-                                        students
-                                    </cell>
-            <cell>
-                                        swabbies
-                                    </cell>
+            <cell>students</cell>
+            <cell>swabbies</cell>
           </row>
           <row>
-            <cell>
-                                        are
-                                    </cell>
-            <cell>
-                                        be
-                                    </cell>
+            <cell>are</cell>
+            <cell>be</cell>
           </row>
           <row>
-            <cell>
-                                        lawyer
-                                    </cell>
-            <cell>
-                                        foul blaggart
-                                    </cell>
+            <cell>lawyer</cell>
+            <cell>foul blaggart</cell>
           </row>
           <row>
-            <cell>
-                                        the
-                                    </cell>
-            <cell>
-                                        th'
-                                    </cell>
+            <cell>the</cell>
+            <cell>th'</cell>
           </row>
           <row>
-            <cell>
-                                        restroom
-                                    </cell>
-            <cell>
-                                        head
-                                    </cell>
+            <cell>restroom</cell>
+            <cell>head</cell>
           </row>
           <row>
-            <cell>
-                                        my
-                                    </cell>
-            <cell>
-                                        me
-                                    </cell>
+            <cell>my</cell>
+            <cell>me</cell>
           </row>
           <row>
-            <cell>
-                                        hello
-                                    </cell>
-            <cell>
-                                        avast
-                                    </cell>
+            <cell>hello</cell>
+            <cell>avast</cell>
           </row>
           <row>
-            <cell>
-                                        is
-                                    </cell>
-            <cell>
-                                        be
-                                    </cell>
+            <cell>is</cell>
+            <cell>be</cell>
           </row>
           <row>
-            <cell>
-                                        man
-                                    </cell>
-            <cell>
-                                        matey
-                                    </cell>
+            <cell>man</cell>
+            <cell>matey</cell>
           </row>
         </tabular>
       </table>
-      <p>Write a function named <c>translator</c> that takes a parameter containing a sentence in English
-                        (no punctuation and all words in lowercase) and returns that sentence translated to Pirate.</p>
-      <p>For example, the sentence <q>hello there students</q> should be translated to <q>avast there swabbies</q>.</p>
+      
+      <p>
+        Write a function named <c>translator</c> that takes a parameter containing a sentence in English (no punctuation and all words in lowercase) and returns that sentence translated to Pirate.
+      </p>
+      
+      <p>
+        For example, the sentence <q>hello there students</q> should be translated to <q>avast there swabbies</q>.
+      </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_11_04_editor">
       <input>

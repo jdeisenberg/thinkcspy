@@ -1,40 +1,111 @@
 <?xml version="1.0"?>
 <section xml:id="dictionaries_dictionaries">
   <title>Dictionaries</title>
-  <p>All of the compound data types we have studied in detail so far &#x2014; strings,
-            lists, and tuples &#x2014; are sequential collections.  This means that the items in the collection are
-            ordered from left to right and they use integers as indices to access
-            the values they contain.</p>
   <p>
-    <term>Dictionaries</term> are a different kind of collection. They are Python's
-            built-in <term>mapping type</term>. A map is an unordered, associative collection.  The association, or mapping,
-            is from a <term>key</term>, which can be any immutable type,
-            to a <term>value</term>, which can be any Python data object.</p>
-  <p>As an example, we will create a dictionary to translate English words into
-            Spanish. For this dictionary, the keys are strings and the values will also be strings.</p>
-  <p>One way to create a dictionary is to start with the empty dictionary and add
+    All of the compound data types we have studied in detail so far<mdash/>strings and lists<!--, and tuples--><mdash/>are sequential collections.  This means that the items in the collection are ordered from left to right and they use integers as indices to access the values they contain.
+  </p>
+  <p>
+    Consider the following problem: we have a store catalog with the names and prices of items for sale:
+  </p>
+  <table>
+    <tabular>
+      <row header="yes">
+        <cell>Name</cell><cell>Price</cell>
+      </row>
+      <row>
+        <cell>Pencil</cell><cell>0.24</cell>
+      </row>
+      <row>
+        <cell>Notebook</cell><cell>3.95</cell>
+      </row>
+      <row>
+        <cell>Marker</cell><cell>0.79</cell>
+      </row>
+    </tabular>
+  </table>
+  
+  <p>
+    We could use a nested list to represent this inventory:
+  </p>
+  
+  <program lanuage="python">
+    <input>
+catalog = [["Pencil", 0.24], ["Notebook", 3.95], ["Marker", 0.79]]
+</input>
+</program>
+      
+<p>
+  Now, what happens if we get a user<rsq/>s input with an item and a new price? Here<rsq/>s the plan (remember, we make a plan before we start to write the code). We set up a <c>while</c> loop that goes through each entry in the catalog. If the first item in the sublist is the item we are looking for, we modify the second item in that sublist. If we get all the way through the catalog without finding the requested item, we can either give an error message or we can enter the data as a new entry. Here is the corresponding code:
+</p>
+
+<program language="python" interactive="activecode"><input>
+  catalog = [["Pencil", 0.24], ["Notebook", 3.95], ["Marker", 0.79]]
+print(f"Catalog is now {catalog}")
+
+item = input("Enter item name:")
+price = float(input("Enter new price: "))
+
+index = 0
+found = False
+while index &lt; len(catalog) and not found:
+    if catalog[index][0] == item:
+        catalog[index][1] = price
+        found = True
+    else:
+        index = index + 1
+
+if not found:
+    catalog.append([item, price])
+    
+print(f"Inventory updated to {inventory}")
+</input></program>
+    <p>
+      Wow. That<rsq/>s a lot of work. There must be a better way.
+    </p>
+    
+    <p>
+      Python provides that better way in the form of a <term>dictionary</term>. A dictionary is collection that implements a <term>mapping type</term>. A <term>map</term> is an unordered collection where a <term>key</term> is <term>associated</term> with a <term>value</term>. The key can be any immutable type, and the value can be any object type.
+    </p>
+    
+    <p>
+      In our catalog example, the keys are the item names and the prices are the values. <xref ref="fig_dictionary_storage"/> shows what the storage map might look like.
+    </p>
+    
+     <figure xml:id="fig_dictionary_storage" align="">
+       <title>Storage Diagram of <c>catalog</c> dictionary</title>
+    <caption>Storage Diagram of <c>catalog</c> dictionary</caption>
+    <image source="Dictionaries/Figures/dictionary_storage_diagram" width="50%" alt="cloud of keys pointing to value objects"/>
+  </figure>
+
+    
+  <p>
+    One way to create a dictionary is to start with an empty dictionary and add
     <term>key-value pairs</term>. The empty dictionary is denoted <c>{}</c>
   </p>
-  <program xml:id="chp12_dict1" interactive="codelens" language="python">
+  
+  <program xml:id="catalog_dict_program" interactive="codelens" language="python">
     <input>
-          eng2sp = {}
-          eng2sp['one'] = 'uno'
-          eng2sp['two'] = 'dos'
-          eng2sp['three'] = 'tres'
+catalog = {}
+catalog['Pencil'] = 0.24
+catalog['Notebook'] = 3.95
+catalog['Marker'] = 0.79
+
+print(catalog)
     </input>
   </program>
-  <p>The first assignment creates an empty dictionary named <c>eng2sp</c>.  The other
-            assignments add new key-value pairs to the dictionary.  The left hand side gives the dictionary and the key being associated.  The right hand side gives the value being associated with that key.
-            We can print the current
-            value of the dictionary in the usual way.
-            The key-value pairs of the dictionary are separated by commas. Each pair
-            contains a key and a value separated by a colon.</p>
-  <p>The order of the pairs may not be what you expected. Python uses complex
-            algorithms, designed for very fast access, to determine where the
-            key-value pairs are stored in a dictionary.
-            For our purposes we can think of this ordering as unpredictable.</p>
-  <p>Another way to create a dictionary is to provide a list of key-value pairs
-            using the same syntax as the previous output.</p>
+          
+  <p>
+    The first assignment creates an empty dictionary named <c>catalog</c>.  The other assignments add new key-value pairs to the dictionary.  The left hand side gives the dictionary and the key being associated.  The right hand side gives the value being associated with that key. We can print the current value of the dictionary in the usual way. The key-value pairs of the dictionary are separated by commas. Each pair contains a key and a value separated by a colon.
+  </p>
+  
+  <p>
+    The order of the pairs may not be what you expected. Python uses complex algorithms, designed for very fast access, to determine where the key-value pairs are stored in a dictionary. For our purposes we can think of this ordering as unpredictable.
+  </p>
+  
+  <p>
+    Another way to create a dictionary is to provide a list of key-value pairs using the same syntax as the previous output.
+  </p>
+  
   <program xml:id="chp12_dict2" interactive="codelens" language="python">
     <input>
           eng2sp = {'three': 'tres', 'one': 'uno', 'two': 'dos'}
@@ -42,9 +113,9 @@
     </input>
   </program>
 
-  <p>It doesn't matter what order we write the pairs. The values in a dictionary are
-            accessed with keys, not with indices, so there is no need to care about
-            ordering.</p>
+  <p>
+    It doesn<rsq/>t matter what order we write the pairs. The values in a dictionary are accessed with keys, not with indices, so there is no need to care about ordering.
+  </p>
   <p>Here is how we use a key to look up the corresponding value.</p>
   <program xml:id="chp12_dict3" interactive="codelens" language="python">
     <input>
@@ -65,9 +136,11 @@ print(value)
       </input>
     </program>
   </note>
+  
   <p>
-    <term>Check your understanding</term>
+    <em>Check your understanding</em>
   </p>
+  
   <exercise label="test_question11_1_1">
     <statement>
       <p>A dictionary is an unordered collection of key-value pairs.</p>
@@ -77,20 +150,17 @@ print(value)
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
-                    Dictionaries associate keys with values but there is no assumed order for the entries.
-        </feedback>
+        <feedback>Dictionaries associate keys with values but there is no assumed order for the entries.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
-                    Yes, dictionaries are associative collections meaning that they store key-value pairs.
-        </feedback>
+        <feedback>Yes, dictionaries are associative collections meaning that they store key-value pairs.</feedback>
       </choice>
     </choices>
   </exercise>
+  
   <exercise label="test_question11_1_2">
     <statement>
       <p>What is printed by the following statements?</p>
@@ -106,33 +176,25 @@ print(mydict["dog"])
         <statement>
           <p>12</p>
         </statement>
-        <feedback>
-                    12 is associated with the key cat.
-        </feedback>
+        <feedback>12 is associated with the key cat.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>6</p>
         </statement>
-        <feedback>
-                    Yes, 6 is associated with the key dog.
-        </feedback>
+        <feedback>Yes, 6 is associated with the key dog.</feedback>
       </choice>
       <choice>
         <statement>
           <p>23</p>
         </statement>
-        <feedback>
-                    23 is associated with the key elephant.
-        </feedback>
+        <feedback>23 is associated with the key elephant.</feedback>
       </choice>
       <choice>
         <statement>
           <p>Error, you cannot use the index operator with a dictionary.</p>
         </statement>
-        <feedback>
-                    The [ ] operator, when used with a dictionary, will look up a value based on its key.
-        </feedback>
+        <feedback>The [ ] operator, when used with a dictionary, will look up a value based on its key.</feedback>
       </choice>
     </choices>
   </exercise>
