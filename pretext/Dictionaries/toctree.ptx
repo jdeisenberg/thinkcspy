@@ -3,10 +3,10 @@
     <title>Dictionaries</title>
     
     <xi:include href="./intro-Dictionaries.ptx"/>
-    <xi:include href="./Dictionaryoperations.ptx"/>
-    <xi:include href="./Dictionarymethods.ptx"/>
-    <xi:include href="./Aliasingandcopying.ptx"/>
-    <xi:include href="./Sparsematrices.ptx"/>
+    <xi:include href="./DictionaryOperations.ptx"/>
+    <xi:include href="./DictionaryMethods.ptx"/>
+    <xi:include href="./AliasingAndCopying.ptx"/>
+    <!--<xi:include href="./Sparsematrices.ptx"/>-->
     <xi:include href="./Glossary.ptx"/>
     <xi:include href="./Exercises.ptx"/>
 

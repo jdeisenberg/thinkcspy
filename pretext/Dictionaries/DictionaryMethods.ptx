@@ -1,7 +1,8 @@
 <?xml version="1.0"?>
 <section xml:id="dictionaries_dictionary-methods">
   <title>Dictionary Methods</title>
-  <p>Dictionaries have a number of useful built-in methods.
+  <p>
+    Dictionaries have a number of useful built-in methods.
             The following table provides a summary and more details can be found in the
             <url href="http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict" visual="http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict">Python Documentation</url>.</p>
   <table>
@@ -33,7 +34,7 @@
       </row>
       <row>
         <cell>get</cell>
-        <cell>key,alt</cell>
+        <cell>key, alt</cell>
         <cell>Returns the value associated with key; alt otherwise</cell>
       </row>
     </tabular>
@@ -73,7 +74,7 @@ for key in inventory:
   </p>
   
   <p>
-    The <c>values</c> and <c>items</c> methods are similar to <c>keys</c>. They return  view objects which can be turned into lists or iterated over directly.  Note that the items are shown as tuples containing the key and the associated value.
+    The <c>values</c> and <c>items</c> methods are similar to <c>keys</c>. They return view objects which can be turned into lists or iterated over directly.  Note that the items are shown as tuples containing the key and the associated value.
   </p>
   
   <program xml:id="chp12_dict8" interactive="activecode" language="python">
@@ -110,8 +111,7 @@ else:
   </program>
   
   <p>
-    The <c>in</c> operator can be very useful, since looking up a non-existent key in a
-            dictionary causes a runtime error.
+    The <c>in</c> operator can be very useful, since looking up a non-existent key in a dictionary causes a runtime error.
   </p>
   
   <p>
@@ -181,6 +181,7 @@ print(keylist[3])
       </choice>
     </choices>
   </exercise>
+
   <exercise label="test_question11_3_2">
     <statement>
       <p>What is printed by the following statements?</p>
@@ -219,6 +220,7 @@ print(answer)
       </choice>
     </choices>
   </exercise>
+
   <exercise label="test_question11_3_3">
     <statement>
       <p>What is printed by the following statements?</p>
@@ -244,6 +246,7 @@ print("dog" in mydict)
       </choice>
     </choices>
   </exercise>
+
   
   <exercise label="test_question11_3_4">
     <statement>
@@ -270,6 +273,7 @@ print(23 in mydict)
       </choice>
     </choices>
   </exercise>
+
   
   <exercise label="test_question11_3_5">
     <statement>
@@ -312,4 +316,5 @@ print(total)
       </choice>
     </choices>
   </exercise>
+
 </section>

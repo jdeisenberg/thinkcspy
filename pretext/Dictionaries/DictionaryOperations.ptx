@@ -1,50 +1,73 @@
 <?xml version="1.0"?>
 <section xml:id="dictionaries_dictionary-operations">
   <title>Dictionary Operations</title>
-  <p>The <c>del</c> statement removes a key-value pair from a dictionary. For example,
-            the following dictionary contains the names of various fruits and the number of
-            each fruit in stock.  If someone buys all of the pears, we can remove the entry from the dictionary.</p>
-  <program xml:id="ch12_dict4" interactive="codelens" language="python">
+  <p>
+    The <c>len</c> function and <c>del</c> statement, which we saw in connection with lists, also work with dictionaires. The <c>len</c> function returns the number of key-value pairs in the dictionary. The <c>del</c> statement removes a key-value pair from a dictionary. For example, the following dictionary contains the names of various fruits and the number of each fruit in stock.  If someone buys all of the pears, we can remove the entry from the dictionary. (We have put one entry per line in the dictionary declaration so that it fits into codelens nicely.)
+  </p>
+  <program xml:id="dict_del" interactive="codelens" language="python">
     <input>
-          inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
-          
-          del inventory['pears']
+inventory = {'apples': 430,
+             'bananas': 312,
+             'oranges': 525,
+             'pears': 217}
+
+del inventory['pears']
+length = len(inventory)
     </input>
   </program>
 
-  <p>Dictionaries are also mutable.  As we've seen before with lists, this means that the dictionary can
-            be modified by referencing an association on the left hand side of the assignment statement.  In the previous
-            example, instead of deleting the entry for <c>pears</c>, we could have set the inventory to <c>0</c>.
-  </p>
-  <program xml:id="ch12_dict4a" interactive="codelens" language="python">
-    <input>
-          inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
-          
-          inventory['pears'] = 0
-    </input>
-  </program>
-  <p>Similarily,
-            a new shipment of 200 bananas arriving could be handled like this.</p>
-  <program xml:id="ch12_dict5" interactive="codelens" language="python">
-    <input>
-          inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
-          inventory['bananas'] = inventory['bananas'] + 200
-          
-          
-          numItems = len(inventory)
-    </input>
-  </program>
-  <p>Notice that there are now 512 bananas&#x2014;the dictionary has been modified.  Note also that the <c>len</c> function also works on dictionaries.  It returns the number
-            of key-value pairs:</p>
   <p>
+    Dictionaries are also mutable.  As we have seen before with lists, this means that the dictionary can be modified by referencing an association on the left hand side of the assignment statement.  In the previous example, instead of deleting the entry for <c>pears</c>, we could have set the inventory to <c>0</c>. Note that the number of key-value pairs is not changed by updating a value.
+  </p>
+  
+  <program xml:id="dict_reassign_value" interactive="codelens" language="python">
+    <input>
+inventory = {'apples': 430,
+             'bananas': 312,
+             'oranges': 525,
+             'pears': 217}
+
+inventory['pears'] = 0
+length = len(inventory)
+    </input>
+  </program>
+  
+  <p>Similarily, a new shipment of 200 bananas arriving could be handled like this.</p>
+  
+  <program xml:id="dict_update_value" interactive="activecode" language="python">
+    <input>
+inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
+inventory['bananas'] = inventory['bananas'] + 200
+
+print(inventory)
+    </input>
+  </program>
+  
+  <p>
+    After the update, there are now 512 bananas; the dictionary has been modified. We could also have written the update to the number of bananas as <c>inventory['bananas'] += 200</c>; this is one place where compound assignment (as described in <xref ref="simple-python-data_compound-assignment"/>) saves us a lot of typing!
+  </p>
+  
+  <p>
+    If we enter a key that does not yet exist, it will automatically be added to the dictionary:
+  </p>
+    
+    <program xml:id="dict_new_entry" interactive="codelens" language="python"><input>
+inventory = {'apples': 430,
+             'bananas': 312,
+             'oranges': 525,
+             'pears': 217}
+inventory['limes'] = 189
+</input></program>
+
+<p>
     <term>Check your understanding</term>
   </p>
-  <exercise label="test_question11_2_1">
+  <exercise label="dict_ops_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
         <input>
-mydict = {"cat":12, "dog":6, "elephant":23}
+mydict = {"cat": 12, "dog": 6, "elephant": 23}
 mydict["mouse"] = mydict["cat"] + mydict["dog"]
 print(mydict["mouse"])
         </input>
@@ -55,23 +78,23 @@ print(mydict["mouse"])
         <statement>
           <p>12</p>
         </statement>
-        <feedback>12 is associated with the key cat.</feedback>
+        <feedback>12 is associated with the key <c>"cat"</c>.</feedback>
       </choice>
       <choice>
         <statement>
           <p>0</p>
         </statement>
-        <feedback>The key mouse will be associated with the sum of the two values.</feedback>
+        <feedback>The key <c>"mouse"</c> will be associated with the sum of the two values.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>18</p>
         </statement>
-        <feedback>Yes, add the value for cat and the value for dog (12 + 6) and create a new entry for mouse.</feedback>
+        <feedback>Yes, add the value for <c>"cat"</c> and the value for <c>"dog"</c> (12 + 6) and create a new entry for <c>"mouse"</c>.</feedback>
       </choice>
       <choice>
         <statement>
-          <p>Error, there is no entry with mouse as the key.</p>
+          <p>Error, there is no entry with <c>"mouse"</c> as the key.</p>
         </statement>
         <feedback>Since the new key is introduced on the left hand side of the assignment statement, a new key-value pair is added to the dictionary.</feedback>
       </choice>
