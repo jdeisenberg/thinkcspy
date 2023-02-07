@@ -17,7 +17,9 @@
       </row>
     </tabular>
   </table>
-  <datafile label="climate_data_file" filename="ccdata.txt" source="ccdata.txt"/>
+  <datafile label="climate_data_file" filename="ccdata.txt">
+    <pre source="Files/ccdata.txt"/>
+  </datafile>
   <p>
     We will now use this file as input in a program that will do some data processing. In the program, we will <term>read</term> each line of the file and print it with some additional text. Because text files are sequences of lines of text, we can use the <em>for</em> loop to iterate through each line of the file.
   </p>
