@@ -47,7 +47,7 @@ x != y       # x is not equal to y
   </program>
   <p>Although these operations are probably familiar to you, the Python symbols are different from the mathematical symbols for the same operations.</p>
           
-  <p>Pay special attention to the <c>==</c> operator. This operator, like all the comparison operators, gives the answer to a question: <q>Does the operand on the left have the same value as the operator on the right?</q></p>
+  <p>Pay special attention to the <c>==</c> operator. This operator, like all the comparison operators, gives the answer to a question: <q>Does the operand on the left have the same value as the operand on the right?</q></p>
     
   <p>A common error is to use a single equal sign
     (<c>=</c>) instead of a double equal sign (<c>==</c>).
