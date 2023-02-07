@@ -68,8 +68,7 @@ x != y       # x is not equal to y
   <!--it is tempting to interpret a statement like-->
   <!--``a = b`` as a boolean test.  Unlike mathematics, it is not!  Remember that the Python token-->
   <!--for the equality operator is ``==``.-->
-          <p>Here<rsq/>s another difference between <c>==</c> and <c>=</c>: an equality test is symmetric, but assignment is not. For example, the result of <c>a == 7</c> is always the s
-            ame as the result of <c>7 == a</c>. But in Python, the statement <c>a = 7</c> is legal and <c>7 = a</c> is not. (Can you explain why?)</p>
+          <p>Here<rsq/>s another difference between <c>==</c> and <c>=</c>: an equality test is symmetric, but assignment is not. For example, the result of <c>a == 7</c> is always the same as the result of <c>7 == a</c>. But in Python, the statement <c>a = 7</c> is legal and <c>7 = a</c> is not. (Can you explain why?)</p>
   <p>
     <term>Check your understanding</term>
   </p>
