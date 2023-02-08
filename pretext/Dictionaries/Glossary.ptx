@@ -12,8 +12,7 @@
     </gi>
     <gi>
       <title>key-value pair</title>
-      <p>One of the pairs of items in a dictionary. Values are looked up in a
-                            dictionary by key.</p>
+      <p>One of the pairs of items in a dictionary. Values are looked up in a dictionary by key.</p>
     </gi>
     <gi>
       <title>mapping type</title>
