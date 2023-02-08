@@ -73,7 +73,7 @@ for line in student_file:
     for i in range(len(items[1:])):
         items[i + 1] = int(items[i + 1]) # convert string to integer
         
-    print(f"{items[0]}: min is {min(items[1:])} max is {max(items[1:])}.")
+    print(f"{items[0]}: min {min(items[1:])}, max {max(items[1:])}.")
 
 student_file.close()
         </input>
