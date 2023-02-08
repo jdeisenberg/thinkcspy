@@ -4,12 +4,12 @@
 
     <xi:include href="./intro-WorkingwithDataFiles.ptx"/>
     <xi:include href="./FindingaFileonyourDisk.ptx"/>
-    <xi:include href="./ReadingaFile.ptx"/>
+    <xi:include href="./OpeningFiles.ptx"/>
     <xi:include href="./IteratingOverLinesInAFile.ptx"/>
     <xi:include href="./AlternativeFileReadingMethods.ptx"/>
     <xi:include href="./WritingTextFiles.ptx"/>
     <xi:include href="./WithStatements.ptx"/>
-    <xi:include href="./FetchingSomethingFromTheWeb.ptx"/>
+    <!-- <xi:include href="./FetchingSomethingFromTheWeb.ptx"/> -->
     <xi:include href="./Glossary.ptx"/>
     <xi:include href="./Exercises.ptx"/>
 

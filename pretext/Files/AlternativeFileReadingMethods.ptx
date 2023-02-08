@@ -1,150 +1,101 @@
 <?xml version="1.0"?>
 <section xml:id="files_alternative-file-reading-methods">
   <title>Alternative File Reading Methods</title>
-  <p>Again, recall the contents of the ccdata.txt file.</p>
-  <DataFileNode line="19" runestone_options="{'subchapter': 'AlternativeFileReadingMethods', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'ccdata2.txt', 'qnumber': '', 'cols': 65, 'rows': 20, 'filecontent': '1850                  -0.37                                       2.24E-7\n1860                  -0.34                                       3.94E-7\n1870                  -0.28                                       6.6E-7\n1880                  -0.24                                       1.1\n1890                  -0.42                                       1.72\n1900                  -0.2                                        2.38\n1910                  -0.49                                       3.34\n1920                  -0.25                                       4.01\n1930                  -0.14                                       4.53\n1940                   0.01                                       5.5\n1950                  -0.17                                       6.63\n1960                  -0.05                                       10.5\n1970                  -0.03                                       16\n1980                   0.09                                       20.3\n1990                   0.3                                        22.6\n2000                   0.29                                       24.9\n2010                   0.56                                       32.7\n2019                   0.74                                       33.3\n', 'hidden': '', 'edit': 'false', 'question_label': '11.5.1'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/AlternativeFileReadingMethods.rst">
-        </DataFileNode>
-  <p>In addition to the <c>for</c> loop, Python provides three methods to read data
-            from the input file. The <c>readline</c> method reads one line from the file and
-            returns it as a string. The string returned by <c>readline</c> will contain the
-            newline character at the end. This method returns the empty string when it
-            reaches the end of the file. The <c>readlines</c> method returns the contents of
-            the entire file as a list of strings, where each item in the list represents
-            one line of the file. It is also possible to read the entire file into a
-            single string with <c>read</c>. <xref ref="files_filemethods2a"/> summarizes these methods
-            and the following session shows them in action.</p>
-  <p>Note that we need to reopen the file before each read so that we start from
-            the beginning. Each file has a marker that denotes the current read position
-            in the file. Any time one of the read methods is called the marker is moved to
-            the character immediately following the last character returned. In the case
-            of <c>readline</c> this moves the marker to the first character of the next line
-            in the file. In the case of <c>read</c> or <c>readlines</c> the marker is moved to
-            the end of the file.</p>
-  <pre>&gt;&gt;&gt; infile = open("ccdata.txt", "r")
-&gt;&gt;&gt; aline = infile.readline()
-&gt;&gt;&gt; aline
-'1850\-0.37\2.24E-7\n'
-&gt;&gt;&gt;
-&gt;&gt;&gt; infile = open("ccdata.txt", "r")
-&gt;&gt;&gt; linelist = infile.readlines()
-&gt;&gt;&gt; print(len(linelist))
-18
-&gt;&gt;&gt; print(linelist[0:4])
-['1850\-0.37\2.24E-7\n',
- '1860\-0.34\3.94E-7\n',
- '1870\-0.28\6.6E-7\n',
- '1880\-0.24\1.1\n']
-&gt;&gt;&gt;
-&gt;&gt;&gt; infile = open("ccdata.txt", "r")
-&gt;&gt;&gt; filestring = infile.read()
-&gt;&gt;&gt; print(len(filestring))
-1282
-&gt;&gt;&gt; print(filestring[:256])
-1850  -0.37  2.24E-7
-1860  -0.34  3.94E-7
-1870  -0.28  6.6E-7
-1880  -0.24
-&gt;&gt;&gt;</pre>
+  <p>Again, recall the contents of the <c>daily_weather.txt</c> file.</p>
+    
+  <datafile label="weather_file2" filename="daily_weather.txt" rows="10" cols="60">
+    <pre source="Files/daily_weather.txt"/>
+  </datafile>
+ 
+  <p>
+    In addition to the <c>for</c> loop, Python provides three methods to read data from the input file. The <c>readline</c> method reads one line from the file and returns it as a string. The string returned by <c>readline</c> will contain the newline character at the end. This method returns the empty string when it reaches the end of the file. The <c>readlines</c> method returns the contents of the entire file as a list of strings, where each item in the list represents one line of the file. It is also possible to read the entire file into a single string with <c>read</c>. <xref ref="files_filemethods2a"/> summarizes these methods and the following program shows them in action.
+  </p>
+  
+  <p>
+    Note that we need to reopen the file before each read so that we start from the beginning. Each file has a marker that denotes the current read position in the file. Any time one of the read methods is called the marker is moved to the character immediately following the last character returned. In the case of <c>readline</c> this moves the marker to the first character of the next line in the file. In the case of <c>read</c> or <c>readlines</c>, the marker is moved to the end of the file.
+  </p>
+  
+  <program language="python" interactive="activecode">
+    <input>
+in_file = open("daily_weather.txt", "r")
+one_line = in_file.readline() # read one line
+print(one_line)
+in_file.close()
+
+in_file = open("daily_weather.txt", "r")
+line_list = in_file.readlines() # read all lines
+print(f"File contains {len(line_list)} lines")
+print("First four lines:")
+print(line_list[0:4])
+in_file.close()
+
+in_file = open("daily_weather.txt", "r")
+file_string = in_file.read()
+print(f"File has {len(file_string)} characters.")
+print("First 200 characters:")
+print(file_string[:200])
+</input>
+</program>
+
   <table xml:id="files_filemethods2a">
     <tabular>
       <row header="yes">
-        <cell>
-          <term>Method Name</term>
-        </cell>
-        <cell>
-          <term>Use</term>
-        </cell>
-        <cell>
-          <term>Explanation</term>
-        </cell>
+        <cell><term>Method Name</term></cell>
+        <cell><term>Use</term></cell>
+        <cell><term>Explanation</term></cell>
       </row>
       <row>
-        <cell>
-          <c>write</c>
-        </cell>
-        <cell>
-          <c>filevar.write(astring)</c>
-        </cell>
-        <cell>
-                            Add astring to the end of the file.
-                                filevar must refer to a file that has
-                                been  opened for writing.
-                        </cell>
+        <cell><c>write</c></cell>
+        <cell><c>file_var.write(a_string)</c></cell>
+        <cell>Add <c>a_string</c> to the end of the file. <c>file_var</c> must refer to a file that has been opened for writing.</cell>
       </row>
       <row>
-        <cell>
-          <c>read(n)</c>
-        </cell>
-        <cell>
-          <c>filevar.read()</c>
-        </cell>
-        <cell>
-                            Reads and returns a string of <c>n</c>
-                                characters, or the entire file as a
-                                single string if  n is not provided.
-                        </cell>
+        <cell><c>read(n)</c></cell>
+        <cell><c>file_var.read()</c></cell>
+        <cell>Reads the  entire file as a single string, or, if an integer <em>n</em> is provided as an argument, returns a string of <em>n</em> characters, or the entire file as a single string if <c>n</c> is not provided.</cell>
       </row>
       <row>
-        <cell>
-          <c>readline(n)</c>
-        </cell>
-        <cell>
-          <c>filevar.readline()</c>
-        </cell>
-        <cell>
-                            Returns the next line of the file with
-                                all text up to and including the
-                                newline character. If n is provided as
-                                a parameter than only n characters
-                                will be returned if the line is longer
-                                than <c>n</c>.
-                        </cell>
+        <cell><c>readline(n)</c></cell>
+        <cell><c>file_var.readline()</c></cell>
+        <cell>Returns the next line of the file with all text up to and including the newline character. If an integer <em>n</em> is provided as an argument, then only <em>n</em> characters will be returned if the line is longer than <em>n</em> characters.</cell>
       </row>
       <row>
-        <cell>
-          <c>readlines(n)</c>
-        </cell>
-        <cell>
-          <c>filevar.readlines()</c>
-        </cell>
-        <cell>
-                            Returns a list of strings, each
-                                representing a single line of the file.
-                                If n is not provided then all lines of
-                                the file are returned. If n is provided
-                                then n characters are read but n is
-                                rounded up so that an entire line is
-                                returned.
-                        </cell>
+        <cell><c>readlines(n)</c></cell>
+        <cell><c>file_var.readlines()</c></cell>
+        <cell>Returns a list of strings, each representing a single line of the file. If an argument <em>n</em> is not provided, then all lines of the file are returned. If <em>n</em> is provided, then <em>n</em> is rounded up so that an entire line is returned.</cell>
       </row>
     </tabular>
   </table>
-  <p>Now let's look at another method of reading our file using a <c>while</c> loop.  This is important because many other programming languages do not support the <c>for</c> loop style for reading files but they do support the pattern we'll show you here.</p>
+  
+  <p>
+    Now let<rsq/>s look at another method of reading our file using a <c>while</c> loop.  This is important because many other programming languages do not support the <c>for</c> loop style for reading files, but they do support the pattern shown here.
+  </p>
+  
   <program xml:id="files_while" interactive="activecode" language="python">
     <input>
-infile = open("ccdata.txt", "r")
-line = infile.readline()
-while line:
-    values = line.split()
-    print('In', values[0], 'the average temp. was', values[1], '&#xB0;C and CO2 emmisions were', values[2], 'gigatons.')
-    line = infile.readline()
+# Calculate the temperature range for each day
+in_file = open("daily_weather.txt", "r")
+line = in_file.readline()
+while line != "":
+    values = line.split(',')
+    degree_range = int(values[2]) - int(values[1])
+    print(f"Temperature range on {values[0]} is {degree_range} degrees C.")
+    line = in_file.readline()
 
-infile.close()
+in_file.close()
         </input>
   </program>
+  
   <p>There are several important things to notice in this code:</p>
-  <p>On line 2 we have the statement <c>line = infile.readline()</c>.
-            We call this initial read the <term>priming read</term>.
-            It is very important because the while condition needs to have a value for the <c>line</c> variable.</p>
-  <p>The <c>readline</c> method will return the
-            empty string if there is no more data in the file.
-            An empty string is an empty sequence of characters.
-            When Python is looking for a Boolean condition, as in <c>while line:</c>,
-            it treats an empty sequence type as <c>False</c>, and a non-empty sequence as <c>True</c>.
-            Remember that a
-            blank line in the file actually has a single character, the <c>\n</c> character (newline).
-            So, the only way that a line of data from the
-            file can be empty is if you are reading at the end of the file, and the <c>while</c> condition becomes <c>False</c>.</p>
-  <p>Finally, notice that the last line of the body of the <c>while</c> loop performs another <c>readline</c>.  This statement will reassign the variable <c>line</c> to the next line of the file.  It represents the <title_reference>change of state</title_reference> that is necessary for the iteration to
-            function correctly.  Without it, there would be an infinite loop processing the same line of data over and over.</p>
+  <p>
+    On line 2 we have the statement <c>line = in_file.readline()</c>. We call this initial read the <term>priming read</term>. It is very important because the while condition needs to have a value for the <c>line</c> variable.
+  </p>
+  
+  <p>
+    The <c>readline</c> method returns the empty string if there is no more data in the file. An empty string is an empty sequence of characters, represented as <c>""</c>. Remember that a blank line in the file actually has a single character, the <c>\n</c> character (newline). So, the only way that a line of data from the file can be empty is if you are reading at the end of the file, and the <c>while</c> condition becomes <c>False</c>.
+  </p>
+  
+  <p>
+    Finally, notice that the last line of the body of the <c>while</c> loop performs another <c>readline</c>.  This statement will reassign the variable <c>line</c> to the next line of the file.  It represents the <em>change of state</em> that is necessary for the iteration to function correctly.  Without it, there would be an infinite loop processing the same line of data over and over.
+  </p>
 </section>

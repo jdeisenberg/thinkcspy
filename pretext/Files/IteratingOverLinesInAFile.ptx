@@ -1,27 +1,13 @@
 <?xml version="1.0"?>
 <section xml:id="files_iterating-over-lines-in-a-file">
   <title>Iterating over lines in a file</title>
-  <p>Recall the contents of the ccdata.txt file.</p>
-  <table>
-    <tabular>
-      <row>
-        <cell>
-          <term>Year</term>
-        </cell>
-        <cell>
-          <term>Global Average Temp Change. (Celsius)</term>
-        </cell>
-        <cell>
-          <term>Global Emissions C02 (Giga-tons)</term>
-        </cell>
-      </row>
-    </tabular>
-  </table>
-  <datafile label="climate_data_file" filename="ccdata.txt">
-    <pre source="Files/ccdata.txt"/>
+  <p>Recall the contents of the <c>daily_temperatures.txt</c> file (date, low temperature, and high temperature in &#176; Celsius):</p>
+  
+  <datafile label="weather_file1" filename="daily_weather.txt" rows="10" cols="60">
+    <pre source="Files/daily_weather.txt"/>
   </datafile>
-  <p>
-    We will now use this file as input in a program that will do some data processing. In the program, we will <term>read</term> each line of the file and print it with some additional text. Because text files are sequences of lines of text, we can use the <em>for</em> loop to iterate through each line of the file.
+   <p>
+    We will now use this file as input in a program that will do some data processing. In the program, we will <term>read</term> each line of the file and find the month<rsq/>s minimum and maximum temperatures. Because text files are sequences of lines of text, we can use the <em>for</em> loop to iterate through each line of the file.
   </p>
   <p>
     A <term>line</term> of a file is defined to be a sequence of characters up to and including a special character called the <term>newline</term> character. If you evaluate a string that contains a newline character you will see the character represented as <c>\n</c>. If you print a string that contains a newline you will not see the <c>\n</c>, you will just see its effects. When you are typing a Python program and you press the enter or return key on your keyboard, the editor inserts a newline character into your text at that point.
@@ -34,19 +20,27 @@
     statement2
     ...</pre>
   
-  <p>To process all of our climate change data, we will use a <em>for</em> loop to iterate over the lines of the file. Using the <c>split</c> method, we can break each line into a list containing all the fields of interest about climate change. We can then take the values corresponding to year, global average temperature, and global emissions to construct a simple sentence.</p>
+  <p>To process all of our climate change data, we will use a <em>for</em> loop to iterate over the lines of the file. Using the <c>split</c> method, we can break each line into a list containing all the fields of interest about the day<rsq/>s weather. We can then take the values corresponding to the minimum and maximum temperature.</p>
   
   <program xml:id="files_for" interactive="activecode" language="python">
-    <!--<dataurl label="climate_data_file" filename="ccdata.txt" source="ccdata.txt"/>-->
     <input>
-ccfile = open("ccdata.txt", "r")
+weather_file = open("daily_temperatures.txt", "r")
+max_temp = -9999
+min_temp = 9999
 
-for aline in ccfile:
-    values = aline.split()
-    print('In', values[0], 'the average temp. change was', values[1],
-          '&#xB0;C and CO2 emissions were', values[2], 'gigatons.')
+for line in weather_file:
+    values = line.split(',')
+    day_min = int(values[1])
+    day_max = int(values[2])
+    if day_min &lt; min_temp:
+        min_temp = day_min
+    if day_max &gt; max_temp:
+        max_temp = day_max
 
-ccfile.close()
+print(f"Monthly minimum: {min_temp} degrees C.")
+print(f"Monthly maximum: {max_temp} degrees C.")
+
+weather_file.close()
         </input>
   </program>
   
@@ -57,6 +51,6 @@ ccfile.close()
   </note>
   
   <p>
-    In the climate change example it is irrelevant whether the final line has a newline character at the end or not, since it would be stripped off by the <c>split</c> method call.
+    In this example it is irrelevant whether the final line has a newline character at the end or not, since it would be stripped off by the <c>split</c> method call. Also, we can safely set the initial values of <c>min_temp</c> and <c>max_temp</c> because temperatures (at least on Earth) never reach as low as -9999 degrees or as high as 9999 degrees Celsius.
   </p>
 </section>

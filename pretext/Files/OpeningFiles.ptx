@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<section xml:id="files_reading-a-file">
+  <title>Opening a File</title>
+  <p>
+    As an example, suppose we have a text file called <c>daily_temperatures.txt</c> that contains statistics about a month<rsq/>s worth of weather data. The format of the data file is as follows: date, low temperature, and high temperature (in degrees Celsius). 
+  </p>
+  
+  <datafile label="weather_file0" filename="daily_weather.txt" rows="10" cols="60">
+    <pre source="Files/daily_weather.txt"/>
+  </datafile>
+  
+  <p>
+    Although it would be possible to consider entering this data by hand each time it is used, you can imagine that it would be time-consuming and error-prone to do this. In addition, it is likely that there could be data from other months. It is definitely advantageous to have this data in a file.
+  </p>
+  
+  <p>
+    To open this file, we call the <c>open</c> function. This function takes two parameters: the path to the file and the <term>mode</term> we want for the file<mdash/>either for reading data (with argument <c>'r'</c>) or writing data (with argument <c>'w'</c>). The <c>open</c> function returns a reference to the file object returned by <c>open</c>. When we are finished with the file, we always close it by using the <c>close</c> method. After the file is closed any further attempts to use the file reference will result in an error.
+  </p>
+  
+  <p>
+    Here is an example of opening the temperatures file for reading and then closing it right away.
+  </p>
+  
+<pre>fileref = open("daily_weather.txt", "r")
+# file processing goes here
+fileref.close()</pre>
+
+</section>
