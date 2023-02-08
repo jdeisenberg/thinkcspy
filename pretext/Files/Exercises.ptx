@@ -2,70 +2,80 @@
 <exercises xml:id="files_exercises">
   <title>Exercises</title>
   
-  <exercise label="ex_6_1_files">
+  <exercise label="ex_student_names">
     <statement>
-      <p>The following sample file called <c>studentdata.txt</c> contains one line for each student in an imaginary class.  The
-                        student's name is the first thing on each line, followed by some exam scores.
+      <p>The following sample file called <c>student_data.txt</c> contains one line for each student in an imaginary class.  The
+        student<rsq/>s name is the first thing on each line, followed by some exam scores.
                         The number of scores might be different for each student.</p>
-      <DataFileNode line="28" runestone_options="{'subchapter': 'Exercises', 'chapter': 'Files', 'basecourse': 'thinkcspy', 'optional': '', 'optclass': '', 'divid': 'studentdata.txt', 'qnumber': '', 'cols': 36, 'rows': 20, 'filecontent': 'joe 10 15 20 30 40\nbill 23 16 19 22\nsue 8 22 17 14 32 17 24 21 2 9 11 17\ngrace 12 28 21 45 26 10\njohn 14 32 25 16 89\n', 'hidden': '', 'edit': 'false', 'question_label': '11.10.3'}" source="/Users/bmiller/Runestone/books/thinkcspy/_sources/Files/Exercises.rst">
-                    </DataFileNode>
-      <p>Using the text file <c>studentdata.txt</c> write a program that prints out the names of
-                        students that have more than six quiz scores.</p>
+
+      <datafile label="student_file0" filename="student_data.txt" rows="10" cols="60">
+          <pre source="Files/student_data.txt"/>
+      </datafile>
+      
+      <p>
+        Using the text file <c>student_data.txt</c> write a program that prints out the names of students who have more than six quiz scores.
+      </p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_6_1_files_editor">
+    
+    <program interactive="activecode" language="python" xml:id="ex_student_names_editor">
       <input>
 
         </input>
     </program>
+    
     <solution>
-      <program xml:id="ch_files_q1answer" language="python">
+      <program xml:id="ex_student_names_answer" language="python">
         <input>
-f = open("studentdata.txt", "r")
+student_file = open("student_data.txt", "r")
 
-for aline in f:
-    items = aline.split()
+for line in student_file:
+    items = line.split()
     if len(items[1:]) &gt; 6:
         print(items[0])
 
-f.close()
+student_file.close()
         </input>
       </program>
     </solution>
   </exercise>
-  <exercise label="ex_10_2">
+  
+  <exercise label="ex_student_avg">
     <statement>
-      <p>Using the text file <c>studentdata.txt</c> (shown in exercise 1) write a program that calculates the average grade
-                for each student, and print out the student's name along with their average grade.</p>
+      <p>
+        Using the text file <c>student_data.txt</c> (shown in exercise 1), write a program that calculates the average grade
+        for each student, and print out the student<rsq/>s name along with their average grade.
+      </p>
     </statement>
-    <program xml:id="ex_10_2_editor" interactive="activecode" language="python">
+    <program xml:id="ex_student_avg_editor" interactive="activecode" language="python">
       <input>
 
         </input>
     </program>
   </exercise>
-  <exercise label="ex_6_3_files">
+  
+  <exercise label="ex_student_min_max">
     <statement>
-      <p>Using the text file <c>studentdata.txt</c> (shown in exercise 1) write a program that calculates the minimum and
-                        maximum score for each student.  Print out their name as well.</p>
+      <p> Using the text file <c>student_data.txt</c> (shown in exercise 1), write a program that calculates the minimum and maximum score for each student.  Print out their name as well.
+      </p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_6_3_files_editor">
+    <program interactive="activecode" language="python" xml:id="ex_student_min_max">
       <input>
 
         </input>
     </program>
     <solution>
-      <program xml:id="ch_files_q3answer" language="python">
+      <program xml:id="ex_student_min_max_answer" language="python">
         <input>
-f = open("studentdata.txt", "r")
+student_file = open("student_data.txt", "r")
 
-for aline in f:
-    items = aline.split()
+for line in student_file:
+    items = line.split()
     for i in range(len(items[1:])):
-        #converting scores from strings to integers
-        items[i+1] = int(items[i+1]
-    print(items[0], "max is", max(items[1:]), "min is", min(items[1:]))
+        items[i + 1] = int(items[i + 1]) # convert string to integer
+        
+    print(f"{items[0]}: min is {min(items[1:])} max is {max(items[1:])}.")
 
-f.close()
+student_file.close()
         </input>
       </program>
     </solution>
