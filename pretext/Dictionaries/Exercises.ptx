@@ -141,7 +141,7 @@ add_fruit(new_inventory, 'strawberries', 25)
   <exercise label="ex_11_02">
     <statement>
       <p>
-        Write a program called <c>alice_words.py</c> that creates a text file named <c>alice_words.txt</c> containing an alphabetical listing of all the words, and the number of times each occurs, in the text version of <title_reference>Alice's Adventures in Wonderland</title_reference>. (You can obtain a free plain text version of the book, along with many others, from <url href="http://www.gutenberg.org" visual="http://www.gutenberg.org">http://www.gutenberg.org</url>.) The first 10 lines of your output file should look something like this
+        Write a program called <c>alice_words.py</c> that creates a text file named <c>alice_words.txt</c> containing an alphabetical listing of all the words, and the number of times each occurs, in the text version of <title_reference>Alice's Adventures in Wonderland</title_reference>. (You can obtain a free plain text version of the book, along with many others, from <url href="http://www.gutenberg.org" visual="http://www.gutenberg.org">http://www.gutenberg.org</url>.) The first 10 lines of your output file should look something like this. (The counts may not be the same, depending on which version of the book you have downloaded.)
       </p>
       <blockquote>
         <table>
@@ -189,78 +189,48 @@ add_fruit(new_inventory, 'strawberries', 25)
         How many times does the word <c>alice</c> occur in the book?  If you are writing this in the activecode window simply print out the results rather than write them to a file.
       </p>
     </statement>
+    
     <program interactive="activecode" language="python" xml:id="ex_11_02_editor">
       <input>
 
         </input>
     </program>
     <solution>
-                    f = open('alice.txt', 'r')
-
-count = {}
-
-for line in f:
-    for word in line.split():
-
-        # remove punctuation
-        word = word.replace('_', '').replace('"', '').replace(',', '').replace('.', '')
-        word = word.replace('-', '').replace('?', '').replace('!', '').replace("'", "")
-        word = word.replace('(', '').replace(')', '').replace(':', '').replace('[', '')
-        word = word.replace(']', '').replace(';', '')
-
-        # ignore case
-        word = word.lower()
-
-        # ignore numbers
-        if word.isalpha():
-            if word in count:
-                count[word] = count[word] + 1
-            else:
-                count[word] = 1
-
-keys = count.keys()
-keys.sort()
-
-# save the word count analysis to a file
-out = open('alice_words.txt', 'w')
-
-for word in keys:
-    out.write(word + " " + str(count[word]))
-    out.write('\n')
-
-print("The word 'alice' appears " + str(count['alice']) + " times in the book.")
                 
-                    <program language="python"><input>
-f = open('alice.txt', 'r')
+    <program language="python"><input>
+book_file = open('alice.txt', 'r')
 
+# key is word, value is number of times it appears
 count = {}
 
-for line in f:
+for line in book_file:
     for word in line.split():
-
-        # remove punctuation
-        word = word.replace('_', '').replace('"', '').replace(',', '').replace('.', '')
-        word = word.replace('-', '').replace('?', '').replace('!', '').replace("'", "")
-        word = word.replace('(', '').replace(')', '').replace(':', '').replace('[', '')
-        word = word.replace(']', '').replace(';', '')
 
         # ignore case
         word = word.lower()
+        
+        # keep only alphabetic chars
+        alpha_word = ""
+        for ch in word:
+            if ch.isalpha():
+                alpha_word += ch
 
-        # ignore numbers
-        if word.isalpha():
-            if word in count:
-                count[word] = count[word] + 1
+        # use only words with content in them
+        if alpha_word != '':
+            if  alpha_word in count:
+                count[alpha_word] = count[alpha_word] + 1
             else:
-                count[word] = 1
+                count[alpha_word] = 1
 
-keys = count.keys()
-keys.sort()
+# Get the keys of the dictionary and convert to list
+key_list = list(count.keys())
+
+key_list.sort()
 
 # save the word count analysis to a file
 out = open('alice_words.txt', 'w')
 
-for word in keys:
+for word in key_list:
     out.write(word + " " + str(count[word]))
     out.write('\n')
 
