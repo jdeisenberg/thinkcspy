@@ -13,8 +13,8 @@ print(len(fruit))
   <program xml:id="chp08_len2" interactive="activecode" language="python">
     <input>
 fruit = "Banana"
-sz = len(fruit)
-last = fruit[sz]       # ERROR!
+size = len(fruit)
+last = fruit[size]       # ERROR!
 print(last)
         </input>
   </program>
@@ -27,15 +27,16 @@ print(last)
   <program xml:id="ch08_len3" interactive="activecode" language="python">
     <input>
 fruit = "Banana"
-sz = len(fruit)
-lastch = fruit[sz-1]
+size = len(fruit)
+lastch = fruit[size - 1]
 print(lastch)
         </input>
   </program>
-  <p>Alternatively in Python, we can use <term>negative indices</term>, which count backward from the
-            end of the string. The expression <c>fruit[-1]</c> yields the last letter,
-            <c>fruit[-2]</c> yields the second to last, and so on.  Try it!
-            Most other languages do <em>not</em> allow the negative indices, but they are a handy feature of Python!</p>
+  
+  <p>
+    Alternatively in Python, we can use <term>negative indices</term>, which count backward from the end of the string. The expression <c>fruit[-1]</c> yields the last letter, <c>fruit[-2]</c> yields the second to last, and so on.  Try it! Most other languages do <em>not</em> allow the negative indices, but they are a handy feature of Python!
+  </p>
+  
   <p>
     <term>Check your understanding</term>
   </p>

@@ -1,7 +1,16 @@
 <?xml version="1.0"?>
 <section xml:id="strings_the-slice-operator">
   <title>The Slice Operator</title>
-  <p>A substring of a string is called a <term>slice</term>. Selecting a slice is similar to selecting a character:</p>
+  <p>
+    One of the string manipulations we mentioned in <xref ref="strings_strings-revisited"/> was extracting a part of a string. For example, separating <c>408-555-1212</c> into area code, prefix, and number; or separating <c>New York, NY 10280</c> into city, state, and ZIP (postal) code.
+  </p>
+  <p>
+    Another name for a part of a string is a <term>substring</term>. In Python, a substring of a string is called a <term>slice</term>. Selecting a slice is similar to selecting a character.
+  </p>
+  <p>
+    The <term>slice</term> operator <c>[n:m]</c> returns the part of the string starting at character number <c>n</c> up to, <em>but not including</em>, character number <c>m</c>. This behavior may seem counter-intuitive, but if you recall the <c>range</c> function, it does not include its end point either. The following example shows slices in action:
+  </p>
+  
   <program xml:id="chp08_slice1" interactive="activecode" language="python">
     <input>
 singers = "Peter, Paul, and Mary"
@@ -10,18 +19,16 @@ print(singers[7:11])
 print(singers[17:21])
         </input>
   </program>
-  <p>
-    The <term>slice</term> operator <c>[n:m]</c> returns the part of the string starting at character number <c>n</c> up to, <em>but not including</em>, character number <c>m</c>. This behavior may seem counter-intuitive, but if you recall the <c>range</c> function, it does not include its end point either.
-  </p>
+
   <p>
     If you omit the first index (before the colon), the slice starts at the beginning of the string. If you omit the second index, the slice goes to the end of the string.
   </p>
   <p>
-    There is no Index Out Of Range exception for a slice. A slice is forgiving and shifts any offending index to something legal.
+    There is no Index Out Of Range exception for a slice. A slice is forgiving and shifts any offending index to something legal. In terms of programming style, we do not put a space on both sides of the <c>:</c> in a slice.
   </p>
   <program xml:id="chp08_slice2" interactive="activecode" language="python">
     <input>
-veggie = "artichoke"
+veggie = "soybean"
 print(veggie[:3])
 print(veggie[3:])
 print(veggie[3:-10])
@@ -108,13 +115,60 @@ print(s[7:11] * 3)
     </choices>
   </exercise>
   
-  <note>
-    <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_08_01" interactive="activecode" language="python">
+  <exercise label="separate-address">
+    <statement>
+  <p>
+    Write a program to separate a string like <c>"New York, NY 10280"</c> into city, state, and ZIP (postal) code. The program should work for any similarly formatted string, such as <c>"Ashtabula, OH 44005"</c> or <c>"Sault Ste. Marie, MI 49783"</c>. This program requires some planning. If we look at these addresses, we note these three things:
+  </p>
+  
+  <p>
+    <ul>
+      <li><p>Everything before the comma is the city name.</p></li>
+      <li><p>The comma has a space after it. The two letters after that space are the state abbreviation.</p></li>
+      <li><p>The last five characters in the string are the ZIP code.</p></li>
+    </ul>
+  </p>
+  
+  <p>
+    The key to this program, then, is to figure out where the comma is positioned in the string. We can do this by using a <c>while</c> loop to move an index forward until we find the comma. There is an easier way to do this; we will see it in <xref ref="strings_string-methods"/>, but for now, we can use a loop and the indexing operator to look at the string one character at a time.
+  </p>
+  
+  <p>
+    You might want to make a function called <c>find_comma</c> that takes a string as its parameter and returns the index where the first comma is found, or -1 if there is no comma in the string.
+  </p>
+</statement>
+    <program xml:id="string-separate-address-prog" interactive="activecode" language="python">
       <input>
 
 
         </input>
     </program>
-  </note>
+    <solution>
+      <program language="python"><input>
+def find_comma(str):
+    """Find index of first comma in str.
+    If str does not have a comma, return -1
+    """
+    index = 0
+    while index &lt; len(str) and str[index] != ',':
+        index = index + 1
+    if index &lt; len(str):
+        return index
+    else: # loop ended without finding a comma
+        return -1
+    
+address = "Sault Ste. Marie, MI 49783"
+comma_index = find_comma(address)
+
+city = address[0:comma_index]
+state = address[(comma_index + 2):(comma_index + 4)]
+zipcode = address[-5:]
+
+print(f"City: {city}")
+print(f"State: {state}")
+print(f"ZIP code: {zipcode}")
+</input></program>
+</solution>
+  </exercise>
+  
 </section>
