@@ -4,16 +4,15 @@
   <glossary sorted="False">
     <gi>
       <title>exception</title>
-      <p>An error that occurs at runtime.</p>
+      <p>A signal that a condition has occurred that can<rsq/>t be easily handled using the normal flow-of-control of a Python program; usually an error.</p>
     </gi>
     <gi>
       <title>handle an exception</title>
-      <p>To prevent an exception from terminating a program by wrapping
-                            the block of code in a <c>try</c> / <c>except</c> construct.</p>
+      <p>To prevent an exception from terminating a program by wrapping the block of code in a <c>try</c> / <c>except</c> construct.</p>
     </gi>
     <gi>
-      <title>raise</title>
-      <p>To cause an exception by using the <c>raise</c> statement.</p>
+      <title>finally</title>
+      <p>A clause that comes after exceptions. It is guaranteed to be executed whether a <c>try</c> block succeeds or not.</p>
     </gi>
   </glossary>
 </section>

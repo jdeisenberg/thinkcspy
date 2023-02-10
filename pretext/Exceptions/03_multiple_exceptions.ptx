@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<section xml:id="exceptions_multiple_exceptions">
+  <title>Multiple Exceptions</title>
+  <introduction>
+  <p>
+    What happens if your <c>try</c> clause contains code that could cause more than one potential error:
+  </p>
+  
+  <program xml:id="value_err_example" interactive="activecode" language="python">
+    <input>
+try:
+  total = float(input("Enter total dollars received"))
+  customers = int(input("Enter number of customers"))
+  average = total / customers
+  print(f"Customers spent an average of ${average:.2f}.")
+except:
+  print("Sorry, an error occurred.")
+</input>
+</program>
+
+<p>
+  The user could enter non-numeric data (a <c>ValueError</c>), or they could enter zero for the number of customers, causing a <c>ZeroDivideError</c>. If we had only the generic <c>except</c>, we could not distinguish which error occurred, and would have to give a generic error message (which is not very helpful).
+</p>
+
+<p>
+  To solve this problem, Python lets you have multiple <c>except</c> clauses following <c>try</c>, and you can tell <em>which</em> exception you want to handle:
+</p>
+
+  <program xml:id="multi_exception_example" interactive="activecode" language="python">
+    <input>
+try:
+  total = float(input("Enter total dollars received"))
+  customers = int(input("Enter number of customers"))
+  average = total / customers
+  print(f"Customers spent an average of ${average:.2f}.")
+except ValueError:
+  print("Please use numeric data")
+except ZeroDivisionError:
+  print("Number of customers must be non-zero")
+
+</input>
+</program>
+
+<p>
+  If you run the program again, entering, say <em>five</em> for the total dollars or zero for the number of customers, you will see the appropriate error message.
+</p>
+</introduction>
+<subsection xml:id="exception_find_generic">
+  <title>Advanced Topic: Unanticipated Exceptions</title>
+  <p>
+    What if you would like to catch any exception, yet still give an error message that yields a clue to the error?
+  </p>
+  
+  <p>
+    Consider this program, which is a good example of an example, but not a particularly good use of exceptions (see <xref ref="exceptions_principles-for-using-exceptions"/> to see why). It will specifically catch a <c>ValueError</c> (bad input) or <c>ZeroDivisionError</c>, and everything else will be caught by the generic <c>except</c>.
+  </p>
+  
+  <p>
+    The program will start with <c>import sys</c>, which imports functions that are useful when you need to find out information about the current Python system you are running on. It will use the <c>sys.exc_info()</c> method to return some information about the exception. It<rsq/>s not pretty, but your program won<rsq/>t crash.  Try entering 9 for the index number to get an unanticipated exception (well, one that we purposely haven<rsq/>t put into the program).
+  </p>
+  
+  <program xml:id="sys_except_info" interactive="activecode" language="python">
+    <input>
+import sys
+
+try:
+    numbers = [47, 13, 28, 0, 65]
+    index = int(input("Enter index number:"))
+    result = 1066 / numbers[index]
+    print("Result is", result)
+except ValueError:
+    print("Index number must be numeric.")
+except ZeroDivisionError:
+    print("You cannot divide by zero.")
+except:
+    print("Some unanticipated error occurred.")
+    print(sys.exc_info())
+    </input>
+  </program>
+</subsection>
+</section>
