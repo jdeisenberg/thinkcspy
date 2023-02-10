@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="files_iterating-over-lines-in-a-file">
   <title>Iterating over lines in a file</title>
-  <p>Recall the contents of the <c>daily_temperatures.txt</c> file (date, low temperature, and high temperature in &#176; Celsius):</p>
+  <p>Recall the contents of the <c>daily_weather.txt</c> file (date, low temperature, and high temperature in &#176; Celsius):</p>
   
   <datafile label="weather_file1" filename="daily_weather.txt" rows="10" cols="60">
     <pre source="Files/daily_weather.txt"/>

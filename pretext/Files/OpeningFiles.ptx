@@ -2,7 +2,7 @@
 <section xml:id="files_reading-a-file">
   <title>Opening a File</title>
   <p>
-    As an example, suppose we have a text file called <c>daily_temperatures.txt</c> that contains statistics about a month<rsq/>s worth of weather data. The format of the data file is as follows: date, low temperature, and high temperature (in degrees Celsius). 
+    As an example, suppose we have a text file called <c>daily_weather.txt</c> that contains statistics about a month<rsq/>s worth of weather data. The format of the data file is as follows: date, low temperature, and high temperature (in degrees Celsius). 
   </p>
   
   <datafile label="weather_file0" filename="daily_weather.txt" rows="10" cols="60">
