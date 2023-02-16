@@ -4,6 +4,7 @@
     <xi:include href="./ObjectOrientedProgramming.ptx"/>
     <xi:include href="./AChangeOfPerspective.ptx"/>
     <xi:include href="./ObjectsRevisited.ptx"/>
+    <xi:include href="./IntroTurtleGraphics.ptx"/>
     <xi:include href="./UserDefinedClasses.ptx"/>
     <xi:include href="./ImprovingOurConstructor.ptx"/>
     <xi:include href="./AddingOtherMethodsToOurClass.ptx"/>
