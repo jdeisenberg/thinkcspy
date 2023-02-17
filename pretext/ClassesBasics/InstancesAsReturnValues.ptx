@@ -6,7 +6,7 @@
   </p>
   
   <p>
-    Suppose you have a point object and wish to find the midpoint halfway between it and some other target point.  We would like to write a method, call it <c>halfway</c> that takes another <c>Point</c> as a parameter and returns the <c>Point</c> that is halfway between the point and the target.
+    Suppose you have a rectangle object and wish to find a rectangle large enough to enclose both it and some other rectangle.  We would like to write a method named <c>max_rect</c> that takes another <c>Rectangle</c> as a parameter and returns the <c>Rectangle</c> whose width and height are the maximum values of the two rectangles. For example, if one rectangle has width 3 and height 8, and the other has width 15 and height 4, the <c>maxRect</c> will have width 15 and height 8.
   </p>
           
 
@@ -32,27 +32,25 @@ class Rectangle:
     def __str__(self):
         return f"width={self.width}, height={self.height}"
 
-    def halfway(self, target):
-         mx = (self.x + target.x) / 2
-         my = (self.y + target.y) / 2
-         return Point(mx, my)
+    def max_rect(self, other):
+         max_width = max(self.width, other.width)
+         max_height = max(self.height, other.height)
+         return Rectangle(max_width, max_height)
 
-p = Point(3, 4)
-q = Point(5, 12)
-mid = p.halfway(q)
+r1 = Rectangle(3, 8)
+r2 = Rectangle(15, 4)
+r3 = r1.max_rect(r2)
 
-print(mid)
-print(mid.getX())
-print(mid.getY())
+print(f"Result rectangle has dimensions {r3}.")
         </input>
   </program>
   
   <p>
-    The resulting Point, <c>mid</c>, has an x value of 4 and a y value of 8.  We can also use any other methods since <c>mid</c> is a <c>Point</c> object.
+    The resulting Rectangle, <c>r3</c>, has a <c>width</c> of 15 and <c>height</c> of 8.  Because <c>r3</c> is also a <c>Rectangle</c>, we could print its diagonal by calling <c>print(r3.diagonal_length())</c>. Try putting the line into the program and see that it works.
   </p>
   
   <p>
-    In the definition of the method <c>halfway</c> see how the requirement to always use dot notation with attributes disambiguates the meaning of the attributes <c>x</c> and <c>y</c>: We can always see whether the coordinates of Point <c>self</c> or <c>target</c> are being referred to.
+    In the definition of the method <c>max_rect</c>, see how the requirement to always use dot notation with attributes disambiguates the meaning of the attributes <c>width</c> and <c>height</c>: We can always see whether the dimensions of the <c>self</c> or <c>other</c> rectangle are being referred to.
   </p>
   
   <note>

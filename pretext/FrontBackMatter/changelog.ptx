@@ -3,6 +3,7 @@
     <title>Change Log</title>
     <p>
       <ul>
+        <li><p>17 Feb 2023: Chapter 13 (Classes/Basics)</p></li>
         <li><p>10 Feb 2023: Chapter 12 (Exceptions): simplify discussion, do not discuss custom/raising exceptions</p></li>
         <li><p>08 Feb 2023: Chapters 10 (Files) and 11 (Dictionaries); additional exercises and motivation of discussion for string slices.</p></li>
         <li><p>05 Feb 2023: Chapter 9 (Lists). Eliminate discussion of tuples.</p></li>
