@@ -1,45 +1,43 @@
 <?xml version="1.0"?>
 <section xml:id="classes-basics_objects-as-arguments-and-parameters">
   <title>Objects as Arguments and Parameters</title>
-  <p>You can pass an object as an argument in the usual way.  We've already seen
-            this in some of the turtle examples where we passed the turtle to
-            some function like <c>drawRectangle</c> so that the function could
-            control and use whatever turtle instance we passed to it.</p>
-  <p>Here is a simple function called <c>distance</c> involving our new <c>Point</c> objects.  The job of this function is to figure out the
-            distance between two points.</p>
-  <program xml:id="chp13_classes6" interactive="activecode" language="python">
+  <p>
+      You can pass an object as an argument in the usual way.  We<rsq/>ve already seen this in some of the turtle examples where we passed the turtle to some function like <c>drawRectangle</c> so that the function could control and use whatever turtle instance we passed to it.</p>
+  <p>
+      Here is a simple function called <c>averageArea</c> involving our new <c>Rectangle</c> objects.  The job of this function is to figure out the
+            average area of two rectangles.
+  </p>
+  <program xml:id="classes_avg_area" interactive="activecode" language="python">
     <input>
-import math
+class Rectangle:
+    """ Rectangle class for representing and manipulating width and height. """
 
-class Point:
-    """ Point class for representing and manipulating x,y coordinates. """
-
-    def __init__(self, initX, initY):
+    def __init__(self, init_width, init_height):
         """ Create a new point at the given coordinates. """
-        self.x = initX
-        self.y = initY
+        self.width = init_width
+        self.height = init_height
+          
+    def area(self):
+        return self.width * self.height
 
-    def getX(self):
-        return self.x
+    def perimeter(self):
+        return 2 * (self.width + self.height)
 
-    def getY(self):
-        return self.y
+    def diagonal_length(self):
+        return ((self.width ** 2) + (self.height ** 2)) ** 0.5
 
-    def distanceFromOrigin(self):
-        return ((self.x ** 2) + (self.y ** 2)) ** 0.5
+def averageArea(rectangle1, rectangle2):
+    area1 = rectangle1.area()
+    area2 = rectangle2.area()
+    return (area1 + area2) / 2
 
-def distance(point1, point2):
-    xdiff = point2.getX() - point1.getX()
-    ydiff = point2.getY() - point1.getY()
-
-    dist = math.sqrt(xdiff**2 + ydiff**2)
-    return dist
-
-p = Point(4, 3)
-q = Point(0, 0)
-print(distance(p, q))
+r1 = Rectangle(4, 3)
+r2 = Rectangle(7, 9)
+print(averageArea(r1, r2))
         </input>
   </program>
-  <p><c>distance</c> takes two points and returns the distance between them.  Note that <c>distance</c> is <term>not</term> a method of the Point class.  You can see this by looking at the indentation pattern.  It is not inside the class definition.  The other way we
-            can know that <c>distance</c> is not a method of Point is that <c>self</c> is not included as a formal parameter.  In addition, we do not invoke <c>distance</c> using the dot notation.</p>
+  
+  <p>
+      <c>averageArea</c> takes two rectangles and returns their average area.  Note that <c>averageArea</c> is <term>not</term> a method of the Rectangle class.  You can see this by looking at the indentation pattern.  It is not inside the class definition.  The other way we can know that <c>averageArea</c> is not a method of Rectangle is that <c>self</c> is not included as a formal parameter.  In addition, we do not invoke <c>averageArea</c> using the dot notation.
+    </p>
 </section>

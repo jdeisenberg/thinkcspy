@@ -2,16 +2,13 @@
 <section xml:id="classes-basics_intro-turtle-graphics">
   <title>The Turtle Object</title>
   <p>
-    Let<rsq/>s try a couple of lines of Python code to create a new turtle and
-            start drawing a simple figure like a rectangle.
-            We will refer to our first turtle using the variable name <c>alex</c> (there<rsq/>s a tradition of using people<rsq/>s names for turtles, so I<rsq/>ll go with it), but remember that you can choose any name you wish as long
-            as you follow the naming rules for Python variables.
+    Let<rsq/>s try a couple of lines of Python code to create a new turtle and start drawing a simple figure like a rectangle. We will refer to our first turtle using the variable name <c>alex</c> (there<rsq/>s a tradition of using people<rsq/>s names for turtles, so I<rsq/>ll go with it), but remember that you can choose any name you wish as long as you follow the naming rules for Python variables.
   </p>
   
-  <p>The program as shown will only draw the first two sides of the rectangle.
-            After line 4 you will have a straight line going from the center of the
-            drawing canvas towards the right.  After line 6, you will have a canvas with a
-            turtle and a half drawn rectangle.  Press the run button to try it and see.</p>
+  <p>
+    The program as shown will only draw the first two sides of the rectangle. After line 4 you will have a straight line going from the center of the drawing canvas towards the right.  After line 6, you will have a canvas with a turtle and a half drawn rectangle.  Press the run button to try it and see.
+  </p>
+  
   <program xml:id="ch03_1" interactive="activecode" language="python">
     <input>
 import turtle               # allows us to use the turtles library

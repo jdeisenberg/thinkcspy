@@ -2,36 +2,34 @@
 <section xml:id="classes-basics_user-defined-classes">
   <title>User Defined Classes</title>
   <p>
-    We<rsq/>ve already seen classes like <c>str</c>,    <c>int</c>,    <c>float</c> and <c>Turtle</c>.  These were defined by Python and
-            made available for us to use.  However, in many cases when we are solving problems we need to create data objects
-            that are related to the problem we are trying to solve.  We need to create our own classes.
+    We<rsq/>ve already seen classes like <c>str</c>,    <c>int</c>,    <c>float</c> and <c>Turtle</c>.  These were defined by Python and made available for us to use.  However, in many cases when we are solving problems we need to create data objects that are related to the problem we are trying to solve.  We need to create our own classes.
   </p>
   
   <p>
-    As an example, consider the concept of a mathematical point. In two dimensions, a point is two numbers (coordinates) that are treated collectively as a single object. Points are often written in parentheses with a comma separating the coordinates. For example, <c>(0, 0)</c> represents the origin, and <c>(x, y)</c> represents the point <c>x</c> units to the right and <c>y</c> units up from the origin.  This <c>(x,y)</c> is the state of the point.
+    As an example, consider the concept of rectangle. In two dimensions, a rectangle is two numbers (width and height) that are treated collectively as a single object.
   </p>
   
-  <p>Thinking about our diagram above, we could draw a <c>point</c> object as shown here.</p>
-  <image source="ClassesBasics/Figures/objectpic2.png" width="50%" alt="A point has an x and a y"/>
-  <p>Some of the typical operations that one associates with points might be to ask
-            the point for its x coordinate, <c>getX</c>, or to ask for its y coordinate, <c>getY</c>.  You may also
-            wish to calculate the distance of a point from the origin, or the distance of a point from another point,
-            or find the midpoint between two points, or answer the question as to whether a point falls within a
-            given rectangle or circle.  We<rsq/>ll shortly see how we can organize these
-            together with the data.</p>
-  <image source="ClassesBasics/Figures/objectpic3.png" width="50%" alt="A point also has methods"/>
-  <p>Now that we understand what a <c>point</c> object might look like, we can define a new <term>class</term>.
-            We<rsq/>ll want our points to each have an <c>x</c> and a <c>y</c> attribute,
-            so our first class definition looks like this.</p>
+  <p>Thinking about our diagram above, we could draw a <c>Rectangle</c> object as shown here.</p>
+  <image source="ClassesBasics/Figures/objectpic2a.png" width="50%" alt="A rectangle has width, height, and methods"/>
+  
+  <p>
+    Some of the typical operations that one associates with rectangles might be to ask the rectangle for its <c>area</c> or its <c>perimeter</c>.  You may also wish to calculate the length of the diagonal of the rectangle, or determine the ratio of the width to height.  We<rsq/>ll shortly see how we can organize these together with the data.
+  </p>
+  <image source="ClassesBasics/Figures/objectpic3a.png" width="50%" alt="A point also has methods"/>
+  
+  <p>
+    Now that we understand what a <c>Rectangle</c> object might look like, we can define a new <term>class</term>. We<rsq/>ll want our rectangles to each have a <c>width</c> and a <c>height</c> attribute, so our first class definition looks like this.
+  </p>
+  
   <program language="python">
     <input>
-class Point:
-    """ Point class for representing and manipulating x,y coordinates. """
+class Rectangle:
+    """ Rectangle class for representing and manipulating width and height. """
 
     def __init__(self):
-        """ Create a new point at the origin """
-        self.x = 0
-        self.y = 0
+        """ Create a new 1 by 1 rectangle """
+        self.width = 1
+        self.height = 1
     </input>
   </program>
   
@@ -43,42 +41,48 @@ class Point:
     If the first line after the class header is a string, it becomes the docstring of the class, and will be recognized by various tools.  (This is also the way docstrings work in functions.)
   </p>
   
-  <p> Every class should have a method with the special name <c>__init__</c>. This <term>initializer method</term>, often referred to as the <term>constructor</term>, is automatically called whenever a new instance of <c>Point</c> is created.  It gives the programmer the opportunity to set up the attributes required within the new instance by giving them their initial state values.  The <c>self</c> parameter (you could choose any other name, but nobody ever does!) is automatically set to reference the newly-created object that needs to be initialized.
+  <p>
+    Every class should have a method with the special name <c>__init__</c>. This <term>initializer method</term>, often referred to as the <term>constructor</term>, is automatically called whenever a new instance of <c>Rectangle</c> is created.  It gives the programmer the opportunity to set up the attributes required within the new instance by giving them their initial state values.  The <c>self</c> parameter is automatically set to reference the newly-created object. You can think of <c>self</c> as meaning “the object we are currently working with” (in this case, creating). There is nothing special about the parameter name <c>self</c>, but it<rsq/>s an unwritten rule that all Python programmers use that variable name in object constructors.
   </p>
   
-  <p>So let<rsq/>s use our new Point class now.</p>
+  <note>
+    <p>Even though initializer methods create objects, they do not have a <c>return</c> statement in them.</p>
+  </note>
+  
+  <p>Let<rsq/>s use our new Rectangle class now.</p>
+  
   <program xml:id="obj_classes1" interactive="activecode" language="python">
     <input>
-class Point:
-    """ Point class for representing and manipulating x,y coordinates. """
+class Rectangle:
+    """ Rectangle class for representing and manipulating width and height. """
 
     def __init__(self):
-        """ Create a new point at the origin """
-        self.x = 0
-        self.y = 0
+        """ Create a new 1 by 1 rectangle """
+        self.width = 1
+        self.height = 1
 
-p = Point()         # Instantiate an object of type Point
-q = Point()         # and make a second point
+r1 = Rectangle()    # Instantiate an object of type Rectangle
+r2 = Rectangle()    # and make a second Rectangle
 
-print("Nothing seems to have happened with the points")
+print("Nothing seems to have happened with the rectangles")
     </input>
   </program>
   
   <p>
-    During the initialization of the objects, we created two attributes called <title_reference>x</title_reference> and <title_reference>y</title_reference> for each, and gave them both the value 0.
+    During the initialization of the objects, we created two attributes called <title_reference>width</title_reference> and <title_reference>height</title_reference> for each, and gave them both the value 1.
   </p>
   
   <note>
     <p>
-      The asignments are not to <c>x</c> and <c>y</c>, but to <c>self.x</c> and <c>self.y</c>. The attributes <c>x</c> and <c>y</c> are <em>always</em> attached to a particular instance. The instance is always explicitly referenced with dot notation.
+      The asignments are not to <c>width</c> and <c>height</c>, but to <c>self.width</c> and <c>self.height</c>. The attributes <c>width</c> and <c>height</c> are <em>always</em> attached to a particular instance. The instance is always explicitly referenced with dot notation.
     </p>
   </note>
   
   <p>
-    You will note that when you run the program, nothing happens.  It turns out that this is not quite the case.  In fact, two <c>Points</c> have been created, each having an x and y coordinate with value 0.  However, because we have not asked the point to do anything, we don<rsq/>t see any other result.
+    You will note that when you run the program, nothing happens.  It turns out that this is not quite the case.  In fact, two <c>Rectangles</c> have been created, each having a width and height with value 1.  However, because we have not asked the rectangles to do anything, we don<rsq/>t see any other result.
   </p>
   
-  <image source="ClassesBasics/Figures/objectpic4.png" width="50%" alt="Simple object has state and methods"/>
+  <image source="ClassesBasics/Figures/objectpic4a.png" width="50%" alt="Simple object has state and methods"/>
   
   <p>
     You can see this for yourself, via codelens:
@@ -86,18 +90,18 @@ print("Nothing seems to have happened with the points")
   
   <program xml:id="obj_point_class_codelens" interactive="codelens" language="python">
     <input>
-class Point:
-    """ Point class for representing and manipulating x,y coordinates. """
+class Rectangle:
+    """ Rectangle class for representing and manipulating width and height. """
 
     def __init__(self):
-        """ Create a new point at the origin """
-        self.x = 0
-        self.y = 0
+        """ Create a new 1 by 1 rectangle """
+        self.width = 1
+        self.height = 1
 
-p = Point()         # Instantiate an object of type Point
-q = Point()         # and make a second point
+r1 = Rectangle()    # Instantiate an object of type Rectangle
+r2 = Rectangle()    # and make a second Rectangle
 
-print("Nothing seems to have happened with the points")
+print("Nothing seems to have happened with the rectangles")
     </input>
   </program>
   
@@ -107,35 +111,37 @@ print("Nothing seems to have happened with the points")
               
   <program xml:id="obj_classes2" interactive="activecode" language="python">
     <input>
-class Point:
-    """ Point class for representing and manipulating x,y coordinates. """
+class Rectangle:
+    """ Rectangle class for representing and manipulating width and height. """
 
     def __init__(self):
-        """ Create a new point at the origin """
-        self.x = 0
-        self.y = 0
+        """ Create a new 1 by 1 rectangle """
+        self.width = 1
+        self.height = 1
 
-p = Point()         # Instantiate an object of type Point
-q = Point()         # and make a second point
+r1 = Rectangle()    # Instantiate an object of type Rectangle
+r2 = Rectangle()    # and make a second Rectangle
 
-print("p is", p)    # prints the object's class
-print("q is", q)
+print("Nothing seems to have happened with the rectangles")
 
-print("Are p and q the same object?", p is q)
+print("r1 is", r1)  # prints the object's class
+print("r2 is", r2)
+
+print("Are r1 and r2 the same object?", r1 is r2)
     </input>
   </program>
   
 
   <p>
-    The variables <c>p</c> and <c>q</c> are assigned references to two new <c>Point</c> objects. A function like <c>Turtle</c> or <c>Point</c> that creates a new object instance is called a <term>constructor</term>.  Every class automatically uses the name of the class as the name of the constructor function. The definition of the constructor function is done when you write the <c>__init__</c> function.
+    The variables <c>r1</c> and <c>r2</c> are assigned references to two new <c>Rectangle</c> objects. A function like <c>Turtle</c> or <c>Rectangle</c> that creates a new object instance is called a <term>constructor</term>.  Every class automatically uses the name of the class as the name of the constructor function. Using the construtor implicity calls the <c>__init__</c> method.
   </p>
   
   <p>
-    The output suggests that each one is a <c>Point object</c>. (We<rsq/>ll see how to get more informative output later in the chapter.) Look at the number following <c>at</c> in the output. The numbers show the memory address for the object reference, and <c>p</c> and <c>q</c> refer to different locations. Even though both <c>p</c> and <c>q</c> are instances of <c>Point</c>, they aren<rsq/>t the same object, and the <c>is</c> operator confirms this by returning <c>False</c>.
+    The output suggests that <c>r1</c> and <c>r2</c> are <c>Rectangle</c> objects. Look at the number following <c>at</c> in the output. The numbers show the memory address for the object reference. You can see that <c>r1</c> and <c>r2</c> refer to different locations. Even though both <c>r1</c> and <c>r2</c> are instances of <c>Rectangle</c>, they aren<rsq/>t the same object, and the <c>is</c> operator confirms this by returning <c>False</c>.
   </p>
 
   <p>
-    It may be helpful to think of a class as a factory for making objects. The class itself isn<rsq/>t an instance of a point, but it contains the machinery to make point instances.   Every time you call the constructor, you<rsq/>re asking the factory to make you a new object.  As the object comes off the production line, its initialization method is executed to get the object properly set up with its factory default settings.
+    It may be helpful to think of a class as a factory for making objects. The class itself isn<rsq/>t an instance of a rectangle, but it contains the machinery to make point instances.   Every time you call the constructor, you<rsq/>re asking the factory to make you a new object.  As the object comes off the production line, its initialization method is executed to get the object properly set up with its factory default settings.
   </p>
   
   <p>
@@ -155,7 +161,8 @@ class Car:
 
     def __init__(self):
         self.color = "Red"
-        self.size = "Big"
+        self.miles_per_gallon = 27
+
 bmw = Car()
 ford = Car()
 
@@ -183,16 +190,13 @@ print(test1, test2)
         <statement>
           <p>False True</p>
         </statement>
-        <feedback>Correct, the <c>BMW</c> object is not the <c>Ford</c> object, but they are of the same type.
-        </feedback>
+        <feedback>Correct, the <c>BMW</c> object is not the <c>Ford</c> object, but they are of the same type.</feedback>
       </choice>
       <choice>
         <statement>
           <p>False False</p>
         </statement>
-        <feedback>
-                    Look closer at types of the objects.
-        </feedback>
+        <feedback>Look closer at types of the objects.</feedback>
       </choice>
     </choices>
   </exercise>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<section xml:id="classes-basics_accessing-properties">
+  <title>Accessing Properties</title>
+  <p>
+    Our constructor so far can only create rectangles with width and height of 1.  Ideally, we would like to set the rectanglee<rsq/>s dimensions when we create the point, and we will see how to do that in <xref ref="classes-basics_improving-our-constructor"/>. But for now, let<rsq/>s see how to directly access and modify a rectangle<rsq/>s state.
+  </p>
+ 
+  <program xml:id="class-access-properties" interactive="activecode" language="python">
+    <input>
+class Rectangle:
+    """ Rectangle class for representing and manipulating width and height. """
+
+    def __init__(self):
+        """ Create a new 1 by 1 rectangle """
+        self.width = 1
+        self.height = 1
+
+r1 = Rectangle()    # Instantiate an object of type Rectangle
+
+r1.x = 7
+r1.y = 6
+print(r1.x, r1.y)
+    </input>
+  </program>
+  
+  <p>
+    To access an object<rsq/>s state variables, you write the object variable, a dot, and the attribute you wish to access. If it<rsq/>s on the left hand side of an assignment, the property gets updated. (You may wish to use codelens to see this code execute step by step and see how the object<rsq/>s attributes are modified.)
+  </p>
+  
+  <p>
+    While it is possible to access an object<rsq/>s attributes directly, it is not encouraged, and it is certainly a lot of work to go through to initialize a point to a desired coordinate. There must be a better way.
+  </p>
+</section>
