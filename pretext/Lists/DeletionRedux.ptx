@@ -48,7 +48,7 @@ print(f"Final list is {new_numbers}")
   </p>
   
   <p>
-    While we <em>are</em> updating a list in place, it<rsq/>s not the original list that the user gave us. That list remains untouched throughout the program. Perhaps it is better to restate the rule as <q>don<rsq/>t update a list that is passed as a parameter in place; instead, return a new list to the caller</q>.
+    While we <em>are</em> updating a list in place, it<rsq/>s not the original list that the user gave us. That list remains untouched throughout the program. Perhaps it is better to restate the rule as <q>when a list is passed as a parameter, don<rsq/>t update it in place; instead, return a new list to the caller</q>.
   </p>
   
   <p>

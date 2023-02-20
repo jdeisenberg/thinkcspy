@@ -6,7 +6,7 @@
   </p>
   
   <p>
-    Here<rsq/>s the plan: use a <c>for</c> loop that counts from 0 to the list length (minus one). If the entry at a given index is negative, we delete the element using <c>del</c>.  Sounds like a plan. Let<rsq/>s see it in action:
+    Here<rsq/>s the plan: use a <c>for</c> loop that counts from 0 to the list length minus one. If the entry at a given index is negative, we delete the element using <c>del</c>.  Sounds like a plan. Let<rsq/>s see it in action:
   </p>
     
   <program xml:id="del_program_plan1" interactive="activecode" language="python">

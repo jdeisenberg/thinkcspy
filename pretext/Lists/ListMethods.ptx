@@ -29,8 +29,8 @@ print(f"after sort: {my_list}")
 my_list.remove(12)            # Removes the first 12 in the list
 print(f"after remove(12), list is {my_list}")
 
-lastitem = my_list.pop()     # Removes and returns the last item of the list
-print(f"popped item is {lastitem}")
+last_item = my_list.pop()     # Removes and returns the last item of the list
+print(f"popped item is {last_item}")
 print(f"resulting list is {my_list}")
         </input>
   </program>

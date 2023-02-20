@@ -33,7 +33,7 @@
 <subsection xml:id="list_delete_fix_revealed">
   <title>The Fix</title>
   <p>
-    At this point, we do not want a <c>for</c> loop, because it can<rsq/>t do either of these:
+    At this point, we do not want a <c>for</c> loop, because it can<rsq/>t do either of the things we need to do:
     </p>
     <p>
       <ol>
@@ -43,7 +43,7 @@
     </p>
     
     <p>
-      This is really a job for a <c>while</c> loop, where we <em>have</em> to control the index value, and the condition is checked every time we go through the loop. Here is the new, revised plan in pseudo-code:
+      This is really a job for a <c>while</c> loop, where we are in control of the index value, and the condition is checked every time we go through the loop. Here is the new, revised plan in pseudo-code:
   </p>
   
   <program>

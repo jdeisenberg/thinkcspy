@@ -5,13 +5,13 @@
     Using slices to delete list elements can be awkward and therefore error-prone. Python provides an alternative that is more readable. The <c>del</c> statement removes an element or elements from a list by using its position or a slice. </p>
   <program xml:id="del_example" interactive="activecode" language="python">
     <input>
-a = ['one', 'two', 'three']
-del a[1]
-print(a)
+animals = ['fox', 'cat', 'dog']
+del animals[1]
+print(animals)
 
-alist = ['a', 'b', 'c', 'd', 'e', 'f']
-del alist[1:5]
-print(alist)
+a_list = ['a', 'b', 'c', 'd', 'e', 'f']
+del a_list[1:5]
+print(a_list)
         </input>
   </program>
   

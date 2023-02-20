@@ -3,7 +3,7 @@
   <title>Advanced Topic: List Comprehensions</title>
   <introduction>
   <p>
-    The <c>remove_negative</c> function from <xref ref="lists_deletion-redux"/> creates a new list from a sequence of values based on some selection criteria (<q>keep only if non-negative</q>).  An easy way to do this type of processing in Python is to use a <term>list comprehension</term>.  List comprehensions are concise ways to create lists.  The general syntax is:
+    The <c>remove_negative</c> function from <xref ref="lists_deletion-redux"/> creates a new list from a sequence of values based on some selection criteria (<q>keep only if non-negative</q>) using a <c>for</c> loop.  Another way to do this type of processing in Python is to use a <term>list comprehension</term>.  List comprehensions are concise ways to create lists.  The general syntax is:
   </p>
   
   <pre>[&lt;expression&gt; for &lt;item&gt; in &lt;sequence&gt; if  &lt;condition&gt;]</pre>
@@ -33,8 +33,8 @@ def remove_negative(a_list):
     """ Return a list of all non-negative items in a_list.
     Uses a list comprehension with an if clause."""
 
-    result = [number for number in a_list if number &gt;= 0]
-    return result
+    result_list = [number for number in a_list if number &gt;= 0]
+    return result_list
     
 numbers = [10, -66, -47, 11, 505, -217]
 new_numbers = remove_negative(numbers)

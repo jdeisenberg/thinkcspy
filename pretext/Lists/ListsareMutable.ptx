@@ -33,7 +33,7 @@ fruit[-1] = "orange"
   </program>
 
   <p>
-    By combining assignment with the slice operator we can update several elements at once. In the following program, we change the second and third elements of the array with one assignment:
+    By combining assignment with the slice operator, we can update several elements at once. In the following program, we change the second and third elements of the array with one assignment:
   </p>
   <program xml:id="ch09_8" interactive="activecode" language="python">
     <input>

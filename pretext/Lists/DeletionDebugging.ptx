@@ -25,7 +25,7 @@ print(f"Final list is {numbers}")
   </p>
   
   <p>
-    This is an approach that you would never stand for in any other part of your life. If you took your car to a mechanic and asked them to fix it, and they told you <q>OK I<rsq/>ll start replacing parts until the car starts working better,</q>, you would immediately take your business elsewhere. Yet somehow, programmers (even advanced programmers) will use this <q>try changing the code and see if that fixes it</q> approach first rather than diagnosing the problem, which is what the mechanic would do as their first step.
+    This is an approach that you would never stand for in any other part of your life. If you took your car to a mechanic and asked them to fix it, and they told you <q>OK. I<rsq/>ll start replacing parts until the car starts working better</q>, you would immediately take your business elsewhere. Yet somehow, programmers (even advanced programmers) will use this <q>try changing the code and see if that fixes it</q> approach first rather than diagnosing the problem, which is what the mechanic would do as their first step.
   </p>
   
   <p>

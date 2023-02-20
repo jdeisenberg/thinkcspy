@@ -20,7 +20,7 @@ print(["up", "down"] * 2)
   </p>
   
   <p>
-    One way for us to make this more clear is to run a part of this example in codelens.  As you step through the code, you will see the variables being created and the lists that they refer to.  Pay particular attention to the fact that when <c>newl_ist</c> is created by the statement <c>new_list = fruit + more_fruit</c>, it refers to a completely new list formed by making copies of the items from <c>fruit</c> and <c>more_fruit</c>.  You can see this very clearly in the codelens object diagram.  The objects are different.
+    One way for us to make this more clear is to run a part of this example in codelens.  As you step through the code, you will see the variables being created and the lists that they refer to.  Pay particular attention to the fact that when <c>new_list</c> is created by the statement <c>new_list = fruit + more_fruit</c>, it refers to a completely new list formed by making copies of the items from <c>fruit</c> and <c>more_fruit</c>.  You can see this very clearly in the codelens object diagram.  The objects are different.
   </p>
   
   <program xml:id="chp09_concatid" interactive="codelens" language="python">
