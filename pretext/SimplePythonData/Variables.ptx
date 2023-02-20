@@ -2,106 +2,146 @@
 <section xml:id="simple-python-data_variables">
   <title>Variables</title>
   <video xml:id="assignvid" youtube="1uQM-TVlaMo" width="auto"/>
-  <p>One of the most powerful features of a programming language is the ability to
-            manipulate <term>variables</term>. A variable is a name that refers to a value.</p>
   <p>
-    <term>Assignment statements</term> create new variables and also give them values to refer to.</p>
-  <program language="python">
-    <input>
-message = "What's up, Doc?"
-age = 27
-price = 11.95
-    </input>
-  </program>
-  <p>This example makes three assignments. The first assigns the string value
-    <c>"What's up, Doc?"</c> to a new variable named <c>message</c>. The second gives the
-            integer <c>27</c> to <c>age</c>, and the third assigns the floating-point number
-    <c>11.95</c> to a variable called <c>price</c>.
+    Up to this point, our programs have been manipulating numbers directly; for example, the program to determine someone's approximate age in days:
   </p>
-  <p>The <c>=</c> in each of the assignments is called the <term>assignment operator</term>.</p>
-  <p>An assignment statement links a <em>name</em>, on the left hand
-            side of the operator, with a <em>value</em>, on the right hand side.  This is why you
-            will get an error if you enter:</p>
+  
   <program language="python">
     <input>
-27 = age
+print("My age in days is about")
+print(27 * 365)
+</input>
+</program>
+
+<p>
+  One of the most powerful features of a programming language is the ability to manipulate <term>variables</term>. A variable is a name that refers to a value. Take a look at this calculation from another program:
+</p>
+
+<program language="python">
+  <input>
+print("The dew point is ")
+print(19 - (100 - 47.5) / 5)
+</input>
+</program>
+
+<p>
+  Without names attached to these values, it's probably very difficut for you to figure out what the numbers in this formula represent. If, however, we attach names to these values, the role of the numbers becomes much clearer:
+</p>
+
+<program language="python">
+  <input>
+temperature_celsius = 19
+relative_humidity = 47.5
+dew_point = temperature_celsius - (100 - relative_humidity) / 5
+print("The dew point is", dew_point)
+</input>
+</program>
+
+<p>
+  Even in the <q>age in days</q> program, adding variables makes our intent somewhat clearer:
+</p>
+
+<program language="python" interactive="activecode">
+  <input>
+years = 27
+days = years * 365
+print("My age in days is about", days, "days.")
+</input>
+</program>
+
+<p>
+  The first two lines of the preceding program are <term>assignment statements</term>. Assignment statements create new variables and also give them values to refer to.
+</p>
+
+<p>
+  Line one assigns the value 27 to a new variable named <c>years</c>. Line two assigns the value of the calculation to a new variable named <c>days</c>. From this, we see that an assignment can use previously-established variables to calculate the values for new variables.
+</p>
+
+
+  <p>The <c>=</c> in each of the assignments is called the <term>assignment operator</term>.</p>
+  <p>An assignment statement links a <em>name</em>, on the left hand side of the operator, with a <em>value</em>, on the right hand side.  This is why you will get an error if you enter:</p>
+  <program language="python">
+    <input>
+27 = years
     </input>
   </program>
   <note>
     <p>The assignment operator does <em>not</em> work the same way as the equal sign in algebra. 
-      When you see <c>age = 27</c>, read it as one of these:
+      When you see <c>years = 27</c>, read it as one of these:
     </p>
     <p>
     <ul>
-      <li><q>age is assigned 27</q></li>
-      <li><q>age gets the value 27</q></li>
-      <li><q>age becomes 27</q></li>
+      <li><q>years is assigned 27</q></li>
+      <li><q>years gets the value 27</q></li>
+      <li><q>years becomes 27</q></li>
       </ul>
     </p>
-    <p>If you really wanted to be formal, you could even say <q>age is a reference to the object 27</q> or <q>age refers to the object 27</q>. But whatever you do, <em>don't</em> say <q>age equals 27</q>.</p>
+    
+    <p>If you really wanted to be formal, you could even say <q>years is a reference to the object 27</q> or <q>years refers to the object 27</q>. But whatever you do, <em>don't</em> say <q>years equals 27</q>.</p>
   </note>
-  <p>A common way to represent variables on paper is to write the name with an arrow
-            pointing to the variable's value. This kind of figure, known as a <term>reference diagram</term>, is often called a <term>state
-                snapshot</term> because it shows what state each of the variables is in at a
-              particular instant in time.  (Think of it as the variable's state of mind).
-            This diagram shows the result of executing the assignment statements shown above.</p>
+  
+  <p>
+    You can assign string values to variables as well as numbers:
+  </p>
+    <program language="python">
+    <input>
+message = "What's up, Doc?"
+years = 27
+price = 11.95
+    </input>
+  </program>
+
+  <p>
+    A common way to represent variables on paper is to write the name with an arrow pointing to the variable's value. This kind of figure, known as a <term>reference diagram</term>, is often called a <term>state snapshot</term> because it shows what state each of the variables is in at a particular instant in time.  (Think of it as the variable's state of mind). This diagram shows the result of executing the assignment statements shown above.
+  </p>
+  
   <image source="SimplePythonData/Figures/refdiagram1a.png" width="50%" alt="Reference Diagram"/>
-  <p>If you ask Python to evaluate a variable, it will produce the value
-            that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to
-            by the variable.</p>
+  <p>
+    If you ask Python to evaluate a variable, it will produce the value that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to by the variable.
+  </p>
   <program xml:id="ch02_9" interactive="activecode" language="python">
     <input>
 message = "What's up, Doc?"
-age = 27
+years = 27
 price = 11.95
 
 print(message)
-print(age)
+print(years)
 print(price)
     </input>
   </program>
-  <p>In each case the result is the value of the variable.
-            To see this in even more detail, we can run the program using codelens.</p>
+  <p>
+    In each case the result is the value of the variable. To see this in even more detail, we can run the program using codelens.
+  </p>
   <program xml:id="ch02_9_cl" interactive="codelens" language="python">
     <input>
           message = "What's up, Doc?"
-          age = 27
+          years = 27
           price = 11.95
           
           print(message)
-          print(age)
+          print(years)
           print(price)
     </input>
   </program>
-  <p>Now, as you step through the statements, you can see
-            the variables and the values they reference as those references are
-            created.</p>
-  <!--<p>Variables also have
-            types; again, we can ask the interpreter what they are.</p>
-  <program xml:id="ch02_10" interactive="activecode" language="python">
-    <input>
-message = "What's up, Doc?"
-age = 27
-price = 11.95
-
-print(type(message))
-print(type(age))
-print(type(price))
-    </input>
-  </program>
-          <p>The type of a variable is the type of the object it currently refers to.</p>-->
-  <p>We use variables in a program to <q>remember</q> things, like the current score at
-            the football game.  But variables are <em>variable</em>. This means they can change
-            over time, just like the scoreboard at a football game.  You can assign a value
-            to a variable, and later assign a different value to the same variable.</p>
+  <p>
+    Now, as you step through the statements, you can see the variables and the values they reference as those references are created.
+  </p>
+  
+  <p>
+    We can also use variables in a program to <q>remember</q> things, like the current score at the football game.  But variables are <em>variable</em>. This means they can change over time, just like the scoreboard at a football game.  You can assign a value to a variable, and later assign a different value to the same variable.
+  </p>
+  
   <note>
-    <p>This is different from math. In math, if you give <em>x</em> the value 3, it
-                cannot change to refer to a different value halfway through your
-                calculations!</p>
+    <p>
+      This is different from math. In math, if you give <em>x</em> the value 3, it cannot change to refer to a different value halfway through your calculations!
+    </p>
   </note>
-  <p>To see this, read and then run the following program.
-    You'll notice we change the value of <c>day</c> three times, and on the third
-            assignment we even give it a value that is of a different type.</p>
+  
+  <p>
+    To see this, read and then run the following program. You'll notice we change the value of <c>day</c> three times, and on the third assignment we even give it a value that is of a different type.
+  </p>
+  
   <program xml:id="ch02_11" interactive="codelens" language="python">
     <input>
           day = "Thursday"
@@ -112,7 +152,10 @@ print(type(price))
           print(day)
     </input>
   </program>
-  <p>A great deal of programming is about having the computer remember things.  For example, we might want to keep track of the number of missed calls on your phone.  Each time another call is missed, we will arrange to update or change the variable so that it will always reflect the correct value.</p>
+  
+  <p>
+    A great deal of programming is about having the computer remember things.  For example, we might want to keep track of the number of missed calls on your phone. Each time another call is missed, we will arrange to update or change the variable so that it will always reflect the correct value.
+  </p>
   
   <exercise label="test_question2_3_2">
     <statement>

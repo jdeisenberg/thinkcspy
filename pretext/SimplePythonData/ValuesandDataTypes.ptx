@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_values-and-data-types">
   <title>Values and Data Types</title>
-  <p>Let's look at a program that calculates a 22-year-old person's approximate age in days:</p>
+  <p>Let's look at a program that calculates a 27-year-old person's approximate age in days:</p>
   
   <program xml:id="prog_age_1" interactive="activecode" language="python">
     <input>
 print("My age in days is about")
-print(22 * 365)
+print(27* 365)
 </input>
 </program>
 
-<p>Each of the things we are printing is a <term>value</term>, one of the fundamental things that a program manipulates. The values in this program are <c>"My&#160;age&#160;in&#160;days&#160;is&#160;about"</c>, <c>22</c>, and <c>365</c>. We often refer to these values as <term>objects</term> and we will use the words <em>value</em> and <em>object</em> interchangeably.</p>
+<p>Each of the things we are printing is a <term>value</term>, one of the fundamental things that a program manipulates. The values in this program are <c>"My&#160;age&#160;in&#160;days&#160;is&#160;about"</c>, <c>27</c>, and <c>365</c>. We often refer to these values as <term>objects</term> and we will use the words <em>value</em> and <em>object</em> interchangeably.</p>
   
-  <p>These objects are classified into different <term>classes</term>, or <term>data types</term>: <c>22</c>
+  <p>These objects are classified into different <term>classes</term>, or <term>data types</term>: <c>27</c>
             is an <em>integer</em>, and <c>"My&#160;age&#160;in&#160;days&#160;is&#160;about"</c> is a <em>string</em>, so-called because it
             contains a string, or sequence, of letters. You (and Python) can identify strings
             because they are enclosed in quotation marks.</p>
@@ -22,7 +22,7 @@ print(22 * 365)
   <program xml:id="basic_types_1" interactive="activecode" language="python">
     <input>
 print(type("My age in days is about"))
-print(type(22))
+print(type(27))
 print(type(10.66))
         </input>
   </program>
@@ -68,25 +68,19 @@ print(3.4, "hello", 45)
         <statement>
           <p>Print out the value and determine the data type based on the value printed.</p>
         </statement>
-        <feedback>
-                    You may be able to determine the data type based on the printed value, but it may also be deceptive. For example, when a string prints, there are no quotes around it.
-                </feedback>
+        <feedback>You may be able to determine the data type based on the printed value, but it may also be deceptive. For example, when a string prints, there are no quotes around it.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Use the <c>type</c> function.</p>
         </statement>
-        <feedback>
-          The <c>type</c> function will tell you the class the value belongs to.
-                </feedback>
+        The <c>type</c> function will tell you the class the value belongs to.
       </choice>
       <choice>
         <statement>
           <p>Use it in a known equation and print the result.</p>
         </statement>
-        <feedback>
-                    Only numeric values can be used in equations.
-                </feedback>
+        Only numeric values can be used in equations.
       </choice>
     </choices>
   </exercise>
@@ -100,33 +94,25 @@ print(3.4, "hello", 45)
         <statement>
           <p>Character</p>
         </statement>
-        <feedback>
-                    It is not a single character.
-                </feedback>
+        It is not a single character.
       </choice>
       <choice>
         <statement>
           <p>Integer</p>
         </statement>
-        <feedback>
-                    The data is not numeric.
-                </feedback>
+        The data is not numeric.
       </choice>
       <choice>
         <statement>
           <p>Float</p>
         </statement>
-        <feedback>
-                    The value is not numeric with a decimal point.
-                </feedback>
+        The value is not numeric with a decimal point.
       </choice>
       <choice correct="yes">
         <statement>
           <p>String</p>
         </statement>
-        <feedback>
-                    Yes. The double quotes tell you that this is a string.
-                </feedback>
+        Yes. The double quotes tell you that this is a string.
       </choice>
     </choices>
   </exercise>
