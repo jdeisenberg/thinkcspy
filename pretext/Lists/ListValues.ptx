@@ -18,7 +18,7 @@
   </p>
     
   <p>
-    As we said in <xref ref="lists_lists"/>, the elements of a list don<rsq/>t have to be the same type.  The following list contains a string, a float, an integer, and a boolean.
+    As we said in <xref ref="lists_lists"/>, the elements of a list don't have to be the same type.  The following list contains a string, a float, an integer, and a boolean.
     </p>
   <program language="python">
     <input>

@@ -181,7 +181,7 @@ print(x)</pre>
           <p><c>if (x = y):</c></p>
         </statement>
         <feedback>
-          <p>Try again! An <c>if</c> statement shouldn<rsq/>t contain an assignment operator.</p>
+          <p>Try again! An <c>if</c> statement shouldn't contain an assignment operator.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -189,7 +189,7 @@ print(x)</pre>
           <p><c>if (x == y):</c></p>
         </statement>
         <feedback>
-          <p>Correct! The parentheses are not necessary, but they don<rsq/>t hurt either.</p>
+          <p>Correct! The parentheses are not necessary, but they don't hurt either.</p>
         </feedback>
       </choice>
       <choice>
@@ -205,7 +205,7 @@ print(x)</pre>
           <p><c>if x = y:</c></p>
         </statement>
         <feedback>
-          <p>Try again! An <c>if</c> statement shouldn<rsq/>t contain an assignment operator.</p>
+          <p>Try again! An <c>if</c> statement shouldn't contain an assignment operator.</p>
         </feedback>
       </choice>
       <choice correct="yes">

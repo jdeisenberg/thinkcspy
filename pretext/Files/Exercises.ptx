@@ -5,7 +5,7 @@
   <exercise label="ex_student_names">
     <statement>
       <p>The following sample file called <c>student_data.txt</c> contains one line for each student in an imaginary class.  The
-        student<rsq/>s name is the first thing on each line, followed by some exam scores.
+        student's name is the first thing on each line, followed by some exam scores.
                         The number of scores might be different for each student.</p>
 
       <datafile label="student_file0" filename="student_data.txt" rows="10" cols="60">
@@ -43,7 +43,7 @@ student_file.close()
     <statement>
       <p>
         Using the text file <c>student_data.txt</c> (shown in exercise 1), write a program that calculates the average grade
-        for each student, and print out the student<rsq/>s name along with their average grade.
+        for each student, and print out the student's name along with their average grade.
       </p>
     </statement>
     <program xml:id="ex_student_avg_editor" interactive="activecode" language="python">

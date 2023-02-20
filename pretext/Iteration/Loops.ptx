@@ -270,7 +270,7 @@ print('Smallest:', smallest)
     
     <exercise label="min_count">
       <statement>
-        <p>Here is a mash-up of the counting and minimum programs. Write a program that asks the user for a number and then counts how many entries in the list <c>[10, 66, 47, 11, 5, 2, 17, 54, 40]</c> are less than the user<rsq/>s number. For example, if the user enters 29, the program would report that there are 5 numbers less than 29. Note: you will not need to use <c>None</c> in this program.</p>
+        <p>Here is a mash-up of the counting and minimum programs. Write a program that asks the user for a number and then counts how many entries in the list <c>[10, 66, 47, 11, 5, 2, 17, 54, 40]</c> are less than the user's number. For example, if the user enters 29, the program would report that there are 5 numbers less than 29. Note: you will not need to use <c>None</c> in this program.</p>
       </statement>
       <program interactive="activecode" language="python">
         <input></input>

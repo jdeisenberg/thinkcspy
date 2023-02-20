@@ -21,7 +21,7 @@
     <gi>
       <title>initializer method</title>
       <p>
-        A special method in Python (called <c>__init__</c>) that is invoked automatically to set a newly-created object<rsq/>s attributes to their initial (factory-default) state.
+        A special method in Python (called <c>__init__</c>) that is invoked automatically to set a newly-created object's attributes to their initial (factory-default) state.
       </p>
     </gi>
     <gi>

@@ -7,7 +7,7 @@
   </p>
   
   <p>
-    Now, we will rewrite the function so that it returns a new list with the non-negative elements, leaving the original argument untouched. Because we aren<rsq/>t touching our original list by removing entries from it, we can go back to our original plan, slightly modified:
+    Now, we will rewrite the function so that it returns a new list with the non-negative elements, leaving the original argument untouched. Because we aren't touching our original list by removing entries from it, we can go back to our original plan, slightly modified:
   </p>
   
   <p>
@@ -44,11 +44,11 @@ print(f"Final list is {new_numbers}")
 <subsection>
   <title>Advanced Topic: When to Update a List</title>
   <p>
-    Sharp-eyed readers might have seen the use of <c>append</c> in line eight and are wondering if that violates our <q>don<rsq/>t update a list in place</q> rule. Yes and no.
+    Sharp-eyed readers might have seen the use of <c>append</c> in line eight and are wondering if that violates our <q>don't update a list in place</q> rule. Yes and no.
   </p>
   
   <p>
-    While we <em>are</em> updating a list in place, it<rsq/>s not the original list that the user gave us. That list remains untouched throughout the program. Perhaps it is better to restate the rule as <q>when a list is passed as a parameter, don<rsq/>t update it in place; instead, return a new list to the caller</q>.
+    While we <em>are</em> updating a list in place, it's not the original list that the user gave us. That list remains untouched throughout the program. Perhaps it is better to restate the rule as <q>when a list is passed as a parameter, don't update it in place; instead, return a new list to the caller</q>.
   </p>
   
   <p>

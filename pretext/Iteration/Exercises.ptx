@@ -267,7 +267,7 @@ print("var1:", var1, "var2:" var2)</pre>
           <p>This is an infinite loop, so nothing will be printed</p>
         </statement>
         <feedback>
-          <p>Incorrect! <c>var1</c> will eventually equal 0, so this loop isn<rsq/>t infinite. Try again.</p>
+          <p>Incorrect! <c>var1</c> will eventually equal 0, so this loop isn't infinite. Try again.</p>
         </feedback>
       </choice>
     </choices>
@@ -413,7 +413,7 @@ print(answer)
   <!--
   <exercise label="e5mc10">
     <statement>
-      <p>Which of the following statements won<rsq/>t be printed when this Python code is run?</p>
+      <p>Which of the following statements won't be printed when this Python code is run?</p>
       <program language="python">
         <input>
 for letter in 'Python':

@@ -385,7 +385,7 @@ for i in range(5): #this line prints nothing
             <p><c>for i in list</c></p>
           </statement>
           <feedback>
-            <p>Incorrect! You don<rsq/>t have a preexisting list, so you should use the range function to generate one for you. Try again.</p>
+            <p>Incorrect! You don't have a preexisting list, so you should use the range function to generate one for you. Try again.</p>
           </feedback>
         </choice>
       </choices>
@@ -486,7 +486,7 @@ print("goodbye")
             <p>False</p>
           </statement>
           <feedback>
-            <p>Incorrect! You<rsq/>ve got it backwards. Try again.</p>
+            <p>Incorrect! You've got it backwards. Try again.</p>
           </feedback>
         </choice>
       </choices>
@@ -597,7 +597,7 @@ print("goodbye")
             <p>Swap lines 1 and 2</p>
           </statement>
           <feedback>
-            <p>Incorrect! This would cause a <c>NameError</c> because <c>i</c> wouldn<rsq/>t be defined when the program tries to run the <c>while</c> line for the first time. Try again.</p>
+            <p>Incorrect! This would cause a <c>NameError</c> because <c>i</c> wouldn't be defined when the program tries to run the <c>while</c> line for the first time. Try again.</p>
           </feedback>
         </choice>
       </choices>
@@ -646,7 +646,7 @@ print("goodbye")
       </choices>
     </exercise>
     
-    <p>When writing a <c>while</c> loop, it<rsq/>s helpful to answer a few questions before you start:</p>
+    <p>When writing a <c>while</c> loop, it's helpful to answer a few questions before you start:</p>
     <p>
       <ul>
         <li><em>What needs to be initialized before the loop?</em></li>

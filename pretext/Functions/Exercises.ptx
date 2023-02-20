@@ -93,7 +93,7 @@ print(myFunction(25.25))
           <p>25.25</p>
         </statement>
         <feedback>
-          <p>Correct! <c>value</c> is assigned to the value of <c>parameter</c>, which is 25.25, so that<rsq/>s what will get returned and printed.</p>
+          <p>Correct! <c>value</c> is assigned to the value of <c>parameter</c>, which is 25.25, so that's what will get returned and printed.</p>
         </feedback>
       </choice>
       <choice>
@@ -101,7 +101,7 @@ print(myFunction(25.25))
           <p>parameter</p>
         </statement>
         <feedback>
-          <p>Incorrect! <c>parameter</c> is a variable which will be set to the function call<rsq/>s argument. Try again.</p>
+          <p>Incorrect! <c>parameter</c> is a variable which will be set to the function call's argument. Try again.</p>
         </feedback>
       </choice>
       <choice>

@@ -9,7 +9,7 @@
 x = x + 1
 </input>
   </program>
-  <p>In algebra, this is an impossible statement; a variable can<rsq/>t be equal to itself plus one.</p>
+  <p>In algebra, this is an impossible statement; a variable can't be equal to itself plus one.</p>
   <p>In Python, however, <c>=</c> is the <em>assignment operator</em>. <c>x&#160;=&#160;x&#160;+&#160;1</c> means: get the current value of <c>x</c>, add one, and then update <c>x</c> with the new value.  The new value of <c>x</c> becomes the old value of <c>x</c> plus 1.</p>
   <p>Remember that executing an assignment statement is a two-step process.  First, Python <em>always</em> evaluates the expression on the right side of the <c>=</c>. Second, the variable name on the left-hand side will be assigned the resulting object. The fact that <c>x</c> appears on both sides does not matter.  The semantics of the assignment statement makes sure that there is no confusion as to the result.  The visualizer makes this very clear.</p>
   <exercise runestone="se_updatevar1"/>

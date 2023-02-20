@@ -4,7 +4,7 @@
   <glossary sorted="False">
     <gi>
       <title>exception</title>
-      <p>A signal that a condition has occurred that can<rsq/>t be easily handled using the normal flow-of-control of a Python program; usually an error.</p>
+      <p>A signal that a condition has occurred that can't be easily handled using the normal flow-of-control of a Python program; usually an error.</p>
     </gi>
     <gi>
       <title>handle an exception</title>

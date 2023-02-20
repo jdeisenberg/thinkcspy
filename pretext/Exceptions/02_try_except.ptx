@@ -22,7 +22,7 @@ except:
 <exercise label="exception_loop">
   <statement>
   <p>
-    You can now write a function called <c>get_float</c> which takes a prompt string as its parameter and returns a user<rsq/>s input. The function will continue to ask the user for input as long as the input is non-numeric.
+    You can now write a function called <c>get_float</c> which takes a prompt string as its parameter and returns a user's input. The function will continue to ask the user for input as long as the input is non-numeric.
   </p>
   <p>
     Here is what output from a sample run might look like. Your output does not have to match this exactly, but it must convey the same information.

@@ -32,7 +32,7 @@ print("The result is", twice_root)
 </p>
 
 <p>
-  The last line in the program uses the <c>print</c> function. Unlike the other functions, it doesn<rsq/>t return a value that we can use in further calculations. These are called <term>void functions</term>.
+  The last line in the program uses the <c>print</c> function. Unlike the other functions, it doesn't return a value that we can use in further calculations. These are called <term>void functions</term>.
 </p>
 
 
@@ -134,7 +134,7 @@ print("Final result is", y)
           <p>return a value</p>
         </statement>
         <feedback>
-          <p>Incorrect! Void functions don<rsq/>t return a value. Try again.</p>
+          <p>Incorrect! Void functions don't return a value. Try again.</p>
         </feedback>
       </choice>
       <choice correct="yes">
@@ -142,7 +142,7 @@ print("Final result is", y)
           <p>do not return a value</p>
         </statement>
         <feedback>
-          <p>Correct! Void functions don<rsq/>t return a value.</p>
+          <p>Correct! Void functions don't return a value.</p>
         </feedback>
       </choice>
       <choice>
@@ -150,7 +150,7 @@ print("Final result is", y)
           <p>return a variable</p>
         </statement>
         <feedback>
-          <p>Incorrect! Void functions don<rsq/>t return a variable<mdash/>a variable is a kind of value. Try again.</p>
+          <p>Incorrect! Void functions don't return a variable<mdash/>a variable is a kind of value. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -174,7 +174,7 @@ def average(a, b):
 average(3.7, 8.9)
 </input>
   </program>
-  <p>This script computes the average of 3.7 and 8.9, but since it doesn<rsq/>t store the result in a variable or display the result, it is not very useful.</p>
+  <p>This script computes the average of 3.7 and 8.9, but since it doesn't store the result in a variable or display the result, it is not very useful.</p>
   
   <p>You might be wondering what would happen if you assigned the result of a void function to a variable. If you do (as in line 2 of the following program), you get a special value called <c>None</c>.</p>
   <program language="python" interactive="activecode">

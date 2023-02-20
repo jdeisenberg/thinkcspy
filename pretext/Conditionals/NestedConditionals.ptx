@@ -88,7 +88,7 @@ if 0 &lt; x and x &lt; 10:
   
   <p>There are, however, cases where a nested <c>if</c> is very useful. This will usually happen when you have tests on two different variables (unlike the preceding example, where both conditions involve <c>x</c>).</p>
   
-  <p>Consider the following program, which figures out a ticket price for a movie according to a customer<rsq/>s age and the time at which the movie starts (using a 24-hour clock) Here are the rules:</p>
+  <p>Consider the following program, which figures out a ticket price for a movie according to a customer's age and the time at which the movie starts (using a 24-hour clock) Here are the rules:</p>
   <p>
     <ul>
       <li><p>For people less than 65 years old:

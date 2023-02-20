@@ -82,7 +82,7 @@ print(f"Hypotenuses are {hypotenuse_list}.")
 <exercise xml:id="ex_nested_test_scores">
   <statement>
     <p>
-      Given a nested list of student names, IDs, and three test scores, write a program that prints each student<rsq/>s name, ID, and average test score.  Here is what the output might look like. The program that produced this output used <xref ref="strings_f-strings">f-strings as described in section</xref> to output the average with one digit after the decimal point. Your output doesn<rsq/>t have to match exactly, but the information conveyed must be the same. 
+      Given a nested list of student names, IDs, and three test scores, write a program that prints each student's name, ID, and average test score.  Here is what the output might look like. The program that produced this output used <xref ref="strings_f-strings">f-strings as described in section</xref> to output the average with one digit after the decimal point. Your output doesn't have to match exactly, but the information conveyed must be the same. 
     </p>
     
     <pre>Average Test Scores
@@ -107,7 +107,7 @@ student_tests = [["Phuong", 101345, [90, 87.5, 88.6]],
 <exercise xml:id="temperatures_to_f">
   <statement>
     <p>
-      In the following program, you will start with a nested list of one week<rsq/>s worth of low and high temperatures in degrees Celsius. Your program will create a new nested list that contains the low/high pairs, converted to Fahrenheit. The conversion formula for Celsius to Fahrenheit is <m>f = {9 \over 5}  c + 32</m>.
+      In the following program, you will start with a nested list of one week's worth of low and high temperatures in degrees Celsius. Your program will create a new nested list that contains the low/high pairs, converted to Fahrenheit. The conversion formula for Celsius to Fahrenheit is <m>f = {9 \over 5}  c + 32</m>.
     </p>
   </statement>
   <program interactive="activecode" language="python">

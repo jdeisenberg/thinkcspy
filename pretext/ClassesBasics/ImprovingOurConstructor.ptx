@@ -2,7 +2,7 @@
 <section xml:id="classes-basics_improving-our-constructor">
   <title>Improving our Constructor</title>
   <p>
-    Our constructor so far can only create 1 by 1 rectangles.  To create a rectangle with width 7 and height 6 requires that we provide some additional capability for the user to pass information to the constructor.  Since constructors are simply specially named functions, we can use parameters (as we<rsq/>ve seen before) to provide the specific information.
+    Our constructor so far can only create 1 by 1 rectangles.  To create a rectangle with width 7 and height 6 requires that we provide some additional capability for the user to pass information to the constructor.  Since constructors are simply specially named functions, we can use parameters (as we've seen before) to provide the specific information.
   </p>
   
   <p>

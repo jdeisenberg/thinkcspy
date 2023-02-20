@@ -101,7 +101,7 @@ for ch in s[3:8]:
         <statement>
           <p>4</p>
         </statement>
-        <feedback>Blanks are characters too; <c>for</c> doesn<rsq/>t skip over them.</feedback>
+        <feedback>Blanks are characters too; <c>for</c> doesn't skip over them.</feedback>
       </choice>
       <choice correct="yes">
         <statement>

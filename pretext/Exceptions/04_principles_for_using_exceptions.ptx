@@ -7,13 +7,13 @@
     
   <topic>
     <title>Principle 1:</title>
-    <p>If a condition can be handled using the normal flow-of-control, don<rsq/>t use an exception!</p>
+    <p>If a condition can be handled using the normal flow-of-control, don't use an exception!</p>
   </topic>
   <p>Example 1:</p>
   <table>
     <tabular>
       <row>
-        <cell><em>DON<rsq/>T DO THIS</em>:</cell>
+        <cell><em>DON'T DO THIS</em>:</cell>
         <cell>When you can just as easily test for no items in the list doing this:</cell>
       </row>
       <row>
@@ -40,7 +40,7 @@ else:
   <table>
     <tabular>
       <row>
-        <cell><em>DON<rsq/>T DO THIS</em>:</cell>
+        <cell><em>DON'T DO THIS</em>:</cell>
         <cell>When you can just as easily test for a valid index doing this:</cell>
       </row>
       <row>
@@ -67,7 +67,7 @@ else:
   <table>
     <tabular>
       <row>
-        <cell><em>DON<rsq/>T DO THIS</em>:</cell>
+        <cell><em>DON'T DO THIS</em>:</cell>
         <cell>When you can just as easily test to see if the key is valid doing this:</cell>
       </row>
       <row>
@@ -98,7 +98,7 @@ else:
     </p>
   </topic>
   <p>
-    Example: Suppose you have a function that reads a file to set the state of an application when it starts up. You should catch any errors related to reading the file and set the state of the application to default values if they can<rsq/>t be set from the file.
+    Example: Suppose you have a function that reads a file to set the state of an application when it starts up. You should catch any errors related to reading the file and set the state of the application to default values if they can't be set from the file.
   </p>
   <program language="Python">
     <input>
@@ -111,7 +111,7 @@ except OSError:
   <topic>
     <title>Principle 3:</title>
     <p>
-      If you call a function that potentially raises exceptions, and you can<rsq/>t do anything meaningful about the conditions that are raised, then don<rsq/>t catch the exception message(s).
+      If you call a function that potentially raises exceptions, and you can't do anything meaningful about the conditions that are raised, then don't catch the exception message(s).
     </p>
   </topic>
 </section>

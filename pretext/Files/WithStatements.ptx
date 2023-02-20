@@ -3,7 +3,7 @@
   <title>Advanced Topic: <c>with</c> Statements</title>
   <note>
     <p>
-      This section is a bit of an advanced topic and can be easily skipped.  But <c>with</c> statements are becoming very common, and it doesn<rsq/>t hurt to know about them in case you run into one in the wild.
+      This section is a bit of an advanced topic and can be easily skipped.  But <c>with</c> statements are becoming very common, and it doesn't hurt to know about them in case you run into one in the wild.
   </p>
   </note>
   
@@ -16,7 +16,7 @@
   </p>
 
   <p>
-    Here is an concrete example of a <c>with</c> statement that helps us manage the context of opening and closing files. Here<rsq/>s our daily temperature file again:
+    Here is an concrete example of a <c>with</c> statement that helps us manage the context of opening and closing files. Here's our daily temperature file again:
   </p>
   
   <datafile label="weather_file4" filename="daily_weather.txt" rows="10" cols="60">

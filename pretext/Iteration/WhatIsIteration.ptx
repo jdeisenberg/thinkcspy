@@ -17,11 +17,11 @@
     </p>
 
     <p>
-        You have seen and written programs using all these components except for <em>repetition</em>. Now it<rsq/>s time to learn about that.
+        You have seen and written programs using all these components except for <em>repetition</em>. Now it's time to learn about that.
     </p>
 
     <p>
-        Here<rsq/>s a program that prints the squares and cubes of the numbers 1 through 5.
+        Here's a program that prints the squares and cubes of the numbers 1 through 5.
     </p>
 
 <program interactive="activecode" language="python">
@@ -36,7 +36,7 @@ print("--------")
 </program>
 
     <p>
-        That <em>looks</em> like repetition, but it<rsq/>s really mostly retyping. Let<rsq/>s rewrite the code to use a variable. That way we can use copy and paste to do our repetition:
+        That <em>looks</em> like repetition, but it's really mostly retyping. Let's rewrite the code to use a variable. That way we can use copy and paste to do our repetition:
     </p>
 
 <program interactive="activecode" language="python">
@@ -61,11 +61,11 @@ print("--------")
 </program>
 
     <p>
-        As you see, there is a <em>lot</em> of repetition in this program. Can you imagine what the program would look like if we wanted the table for the numbers 1 through 25? And what if we wanted to ask the user how many entries they wanted in the table? There would be no way to write that program with copy and paste, because we wouldn<rsq/>t know how many times to copy and paste until the user told us! There must be a better way.
+        As you see, there is a <em>lot</em> of repetition in this program. Can you imagine what the program would look like if we wanted the table for the numbers 1 through 25? And what if we wanted to ask the user how many entries they wanted in the table? There would be no way to write that program with copy and paste, because we wouldn't know how many times to copy and paste until the user told us! There must be a better way.
     </p>
 
     <p>
-        We call the process of repeating some section of code <term>iteration</term>, and it is something that computers do well. Because iteration is so common, Python provides several language features to make it easier. Let<rsq/>s investigate some of these features.
+        We call the process of repeating some section of code <term>iteration</term>, and it is something that computers do well. Because iteration is so common, Python provides several language features to make it easier. Let's investigate some of these features.
     </p>
 
 </section>

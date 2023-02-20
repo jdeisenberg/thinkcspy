@@ -38,12 +38,12 @@ price = 11.95
       <li><q>age becomes 27</q></li>
       </ul>
     </p>
-    <p>If you really wanted to be formal, you could even say <q>age is a reference to the object 27</q> or <q>age refers to the object 27</q>. But whatever you do, <em>don<rsq/>t</em> say <q>age equals 27</q>.</p>
+    <p>If you really wanted to be formal, you could even say <q>age is a reference to the object 27</q> or <q>age refers to the object 27</q>. But whatever you do, <em>don't</em> say <q>age equals 27</q>.</p>
   </note>
   <p>A common way to represent variables on paper is to write the name with an arrow
             pointing to the variable's value. This kind of figure, known as a <term>reference diagram</term>, is often called a <term>state
                 snapshot</term> because it shows what state each of the variables is in at a
-              particular instant in time.  (Think of it as the variable<rsq/>s state of mind).
+              particular instant in time.  (Think of it as the variable's state of mind).
             This diagram shows the result of executing the assignment statements shown above.</p>
   <image source="SimplePythonData/Figures/refdiagram1a.png" width="50%" alt="Reference Diagram"/>
   <p>If you ask Python to evaluate a variable, it will produce the value
@@ -100,7 +100,7 @@ print(type(price))
                 calculations!</p>
   </note>
   <p>To see this, read and then run the following program.
-    You<rsq/>ll notice we change the value of <c>day</c> three times, and on the third
+    You'll notice we change the value of <c>day</c> three times, and on the third
             assignment we even give it a value that is of a different type.</p>
   <program xml:id="ch02_11" interactive="codelens" language="python">
     <input>

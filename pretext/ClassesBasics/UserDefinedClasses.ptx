@@ -2,7 +2,7 @@
 <section xml:id="classes-basics_user-defined-classes">
   <title>User Defined Classes</title>
   <p>
-    We<rsq/>ve already seen classes like <c>str</c>,    <c>int</c>,    <c>float</c> and <c>Turtle</c>.  These were defined by Python and made available for us to use.  However, in many cases when we are solving problems we need to create data objects that are related to the problem we are trying to solve.  We need to create our own classes.
+    We've already seen classes like <c>str</c>,    <c>int</c>,    <c>float</c> and <c>Turtle</c>.  These were defined by Python and made available for us to use.  However, in many cases when we are solving problems we need to create data objects that are related to the problem we are trying to solve.  We need to create our own classes.
   </p>
   
   <p>
@@ -13,12 +13,12 @@
   <image source="ClassesBasics/Figures/objectpic2a.png" width="50%" alt="A rectangle has width, height, and methods"/>
   
   <p>
-    Some of the typical operations that one associates with rectangles might be to ask the rectangle for its <c>area</c> or its <c>perimeter</c>.  You may also wish to calculate the length of the diagonal of the rectangle, or determine the ratio of the width to height.  We<rsq/>ll shortly see how we can organize these together with the data.
+    Some of the typical operations that one associates with rectangles might be to ask the rectangle for its <c>area</c> or its <c>perimeter</c>.  You may also wish to calculate the length of the diagonal of the rectangle, or determine the ratio of the width to height.  We'll shortly see how we can organize these together with the data.
   </p>
   <image source="ClassesBasics/Figures/objectpic3a.png" width="50%" alt="A point also has methods"/>
   
   <p>
-    Now that we understand what a <c>Rectangle</c> object might look like, we can define a new <term>class</term>. We<rsq/>ll want our rectangles to each have a <c>width</c> and a <c>height</c> attribute, so our first class definition looks like this.
+    Now that we understand what a <c>Rectangle</c> object might look like, we can define a new <term>class</term>. We'll want our rectangles to each have a <c>width</c> and a <c>height</c> attribute, so our first class definition looks like this.
   </p>
   
   <program language="python">
@@ -42,14 +42,14 @@ class Rectangle:
   </p>
   
   <p>
-    Every class should have a method with the special name <c>__init__</c>. This <term>initializer method</term>, often referred to as the <term>constructor</term>, is automatically called whenever a new instance of <c>Rectangle</c> is created.  It gives the programmer the opportunity to set up the attributes required within the new instance by giving them their initial state values.  The <c>self</c> parameter is automatically set to reference the newly-created object. You can think of <c>self</c> as meaning “the object we are currently working with” (in this case, creating). There is nothing special about the parameter name <c>self</c>, but it<rsq/>s an unwritten rule that all Python programmers use that variable name in object constructors.
+    Every class should have a method with the special name <c>__init__</c>. This <term>initializer method</term>, often referred to as the <term>constructor</term>, is automatically called whenever a new instance of <c>Rectangle</c> is created.  It gives the programmer the opportunity to set up the attributes required within the new instance by giving them their initial state values.  The <c>self</c> parameter is automatically set to reference the newly-created object. You can think of <c>self</c> as meaning “the object we are currently working with” (in this case, creating). There is nothing special about the parameter name <c>self</c>, but it's an unwritten rule that all Python programmers use that variable name in object constructors.
   </p>
   
   <note>
     <p>Even though initializer methods create objects, they do not have a <c>return</c> statement in them.</p>
   </note>
   
-  <p>Let<rsq/>s use our new Rectangle class now.</p>
+  <p>Let's use our new Rectangle class now.</p>
   
   <program xml:id="obj_classes1" interactive="activecode" language="python">
     <input>
@@ -79,7 +79,7 @@ print("Nothing seems to have happened with the rectangles")
   </note>
   
   <p>
-    You will note that when you run the program, nothing happens.  It turns out that this is not quite the case.  In fact, two <c>Rectangles</c> have been created, each having a width and height with value 1.  However, because we have not asked the rectangles to do anything, we don<rsq/>t see any other result.
+    You will note that when you run the program, nothing happens.  It turns out that this is not quite the case.  In fact, two <c>Rectangles</c> have been created, each having a width and height with value 1.  However, because we have not asked the rectangles to do anything, we don't see any other result.
   </p>
   
   <image source="ClassesBasics/Figures/objectpic4a.png" width="50%" alt="Simple object has state and methods"/>
@@ -106,7 +106,7 @@ print("Nothing seems to have happened with the rectangles")
   </program>
   
   <p>
-    The following program adds a few print statements. Run it, and then we<rsq/>ll analyze the output.
+    The following program adds a few print statements. Run it, and then we'll analyze the output.
   </p>
               
   <program xml:id="obj_classes2" interactive="activecode" language="python">
@@ -137,11 +137,11 @@ print("Are r1 and r2 the same object?", r1 is r2)
   </p>
   
   <p>
-    The output suggests that <c>r1</c> and <c>r2</c> are <c>Rectangle</c> objects. Look at the number following <c>at</c> in the output. The numbers show the memory address for the object reference. You can see that <c>r1</c> and <c>r2</c> refer to different locations. Even though both <c>r1</c> and <c>r2</c> are instances of <c>Rectangle</c>, they aren<rsq/>t the same object, and the <c>is</c> operator confirms this by returning <c>False</c>.
+    The output suggests that <c>r1</c> and <c>r2</c> are <c>Rectangle</c> objects. Look at the number following <c>at</c> in the output. The numbers show the memory address for the object reference. You can see that <c>r1</c> and <c>r2</c> refer to different locations. Even though both <c>r1</c> and <c>r2</c> are instances of <c>Rectangle</c>, they aren't the same object, and the <c>is</c> operator confirms this by returning <c>False</c>.
   </p>
 
   <p>
-    It may be helpful to think of a class as a factory for making objects. The class itself isn<rsq/>t an instance of a rectangle, but it contains the machinery to make point instances.   Every time you call the constructor, you<rsq/>re asking the factory to make you a new object.  As the object comes off the production line, its initialization method is executed to get the object properly set up with its factory default settings.
+    It may be helpful to think of a class as a factory for making objects. The class itself isn't an instance of a rectangle, but it contains the machinery to make point instances.   Every time you call the constructor, you're asking the factory to make you a new object.  As the object comes off the production line, its initialization method is executed to get the object properly set up with its factory default settings.
   </p>
   
   <p>

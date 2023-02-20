@@ -52,7 +52,7 @@ print("Square root of", x, "is", root)
 </program>
 
 <p>
-  Here is a program that uses the <c>math</c> module<rsq/>s <c>log10</c> function (logarithm base 10) to calculate the signal-to-noise ratio in decibels. This is a useful calculation for audio engineers; the bigger this number is, the less unwanted noise you have in your audio.
+  Here is a program that uses the <c>math</c> module's <c>log10</c> function (logarithm base 10) to calculate the signal-to-noise ratio in decibels. This is a useful calculation for audio engineers; the bigger this number is, the less unwanted noise you have in your audio.
 </p>
 
   <program xml:id="functMath_log" interactive="activecode" language="python">
@@ -77,7 +77,7 @@ print(decibels, "dB")
   </p>
   
   <p>
-    If you<rsq/>re still here, then you need to know something <em>very</em> important about how the trigonometry functions work in the <c>math</c> module. You may know that the sine of 45&#xb0; is one-half the square root of 2, which is about 0.707. If you try doing the following in Python, you are in for a surprise:
+    If you're still here, then you need to know something <em>very</em> important about how the trigonometry functions work in the <c>math</c> module. You may know that the sine of 45&#xb0; is one-half the square root of 2, which is about 0.707. If you try doing the following in Python, you are in for a surprise:
   </p>
   
   <program xml:id="functMath_sin1" interactive="activecode" language="python"><input>
@@ -101,10 +101,10 @@ print(result)
   </program>
 
     <p>
-    By the way: you can also use the <c>math.radians</c> function to convert degrees to radians; then you don<rsq/>t have to remember the conversion formula.
+    By the way: you can also use the <c>math.radians</c> function to convert degrees to radians; then you don't have to remember the conversion formula.
   </p>
   
-  <p>You can check the previous result by comparing it to the square root of two divided by two. The results are close enough for anything you<rsq/>ll need to do in most beginning programming courses.</p>
+  <p>You can check the previous result by comparing it to the square root of two divided by two. The results are close enough for anything you'll need to do in most beginning programming courses.</p>
   
   <program xml:id="functMath_sqrt2" interactive="activecode" language="python">
     <input>
@@ -140,7 +140,7 @@ print("square root is", sqrt_result)
           <p><c>include math</c></p>
         </statement>
         <feedback>
-          <p>Incorrect! Some languages have an <c>include</c> statement that works similarly to <c>import</c>, but it<rsq/>s not what we<rsq/>re using. Try again.</p>
+          <p>Incorrect! Some languages have an <c>include</c> statement that works similarly to <c>import</c>, but it's not what we're using. Try again.</p>
         </feedback>
       </choice>
       <choice>

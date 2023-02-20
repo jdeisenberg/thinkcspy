@@ -4,7 +4,7 @@
   <p>
     Throughout the first chapters of this book we have used strings to represent words or phrases that we wanted to print out.  Our definition was simple: a string is nothing more than some characters inside quotes.
   </p>
-  <p>But there<rsq/>s more we can do with strings than print them; we can <em>manipulate</em> strings. For example:</p>
+  <p>But there's more we can do with strings than print them; we can <em>manipulate</em> strings. For example:</p>
   <p>
     <ul>
       <li><p>Change a name in the form <c>"Fulano, Juan"</c> to <c>"Juan Fulano"</c>.</p></li>
@@ -16,6 +16,6 @@
     </ul>
   </p>
   <p>
-    In this chapter, we<rsq/>ll investigate the methods used to do these kinds of operations.
+    In this chapter, we'll investigate the methods used to do these kinds of operations.
   </p>
 </section>

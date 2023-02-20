@@ -22,10 +22,10 @@ print(int("23bottles"))
         </input>
   </program>
   <p>The last case shows that a string has to be a syntactically legal number,
-    otherwise you<rsq/>ll get one of those pesky runtime errors.  Modify the example by deleting the
+    otherwise you'll get one of those pesky runtime errors.  Modify the example by deleting the
             <c>bottles</c> and rerun the program.  You should see the integer <c>23</c>.</p>
           
-          <p>Now we can ask the user for a number with <c>input</c>, take the resulting string, <em>convert it to a number</em>, and then do arithmetic with it. Here<rsq/>s the program from the last page, fixed. This time, if you enter 7468 for the number of seconds, the program won<rsq/>t crash:</p>
+          <p>Now we can ask the user for a number with <c>input</c>, take the resulting string, <em>convert it to a number</em>, and then do arithmetic with it. Here's the program from the last page, fixed. This time, if you enter 7468 for the number of seconds, the program won't crash:</p>
 
   <program xml:id="input_corrected" interactive="activecode" language="python">
     <input>
@@ -38,7 +38,7 @@ print("That is", hours, "hours.")
 </input>
 </program>
 
-<p>In line 3, we<rsq/>ve given the result of <c>input</c> the name <c>total_seconds_str</c> to remind ourselves that <c>input</c> always gives us a string, and we use the <c>int</c> function in line 4 to convert it to an integer.</p>
+<p>In line 3, we've given the result of <c>input</c> the name <c>total_seconds_str</c> to remind ourselves that <c>input</c> always gives us a string, and we use the <c>int</c> function in line 4 to convert it to an integer.</p>
   
 <p>Python has other type converter functions in addition to <c>int</c>. The <c>float</c> type converter function  can turn an integer, a float, or a syntactically legal string into a float.</p>
   <program xml:id="ch02_21" interactive="activecode" language="python">
@@ -58,7 +58,7 @@ print(type(str(123.45)))
         </input>
   </program>
   
-  <p>Let<rsq/>s check your understanding of <c>input</c> and type conversion.</p>
+  <p>Let's check your understanding of <c>input</c> and type conversion.</p>
   
     <exercise label="test_question2_7_1">
     <statement>

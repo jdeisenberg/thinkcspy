@@ -24,7 +24,7 @@ print(smallest)
   </p>
           
   <p>
-    You can put as many arguments as you want in the parentheses when you call <c>max</c> or <c>min</c>. All the arguments must be <q>compatible</q> data types. You can have integers and floating point numbers in the arguments, but you can<rsq/>t mix integers and booleans, for example.
+    You can put as many arguments as you want in the parentheses when you call <c>max</c> or <c>min</c>. All the arguments must be <q>compatible</q> data types. You can have integers and floating point numbers in the arguments, but you can't mix integers and booleans, for example.
   </p>
   
   <p>See if you can predict what will happen when you run this program.</p>

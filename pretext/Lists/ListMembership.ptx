@@ -47,7 +47,7 @@ kiwi_index = safe_index(fruit_list,  "kiwi")
 print(kiwi_index)
 </input></program>
 
-<p>Because our <c>safe_index</c> function isn<rsq/>t built in to the <c>list</c> class, we cannot use it with dot notation.</p>
+<p>Because our <c>safe_index</c> function isn't built in to the <c>list</c> class, we cannot use it with dot notation.</p>
 
 
   <p>

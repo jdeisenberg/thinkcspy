@@ -27,7 +27,7 @@
   </p>
   
   <p>
-    If a file is not in the same folder as your python program, you need to tell the computer how to reach it. A <em>relative file path</em> starts from the folder that contains your python program and follows a computer<rsq/>s file hierarchy. A file hierarchy contains folders which contains files and other sub-folders.To specify a sub-folder, you specify its name. To specify a <em>parent</em> folder you use the special <c>..</c> notation because every file and folder has one unique parent. You can use the <c>..</c> notation multiple times in a file path to move multiple levels up a file hierarchy. Here is an example file hierarchy that contains multiple folders, files, and sub-folders.
+    If a file is not in the same folder as your python program, you need to tell the computer how to reach it. A <em>relative file path</em> starts from the folder that contains your python program and follows a computer's file hierarchy. A file hierarchy contains folders which contains files and other sub-folders.To specify a sub-folder, you specify its name. To specify a <em>parent</em> folder you use the special <c>..</c> notation because every file and folder has one unique parent. You can use the <c>..</c> notation multiple times in a file path to move multiple levels up a file hierarchy. Here is an example file hierarchy that contains multiple folders, files, and sub-folders.
   </p>
   
   <image source="Files/Figures/file_hierarchy.png" width="50%"/>
@@ -62,6 +62,6 @@
   </p>
   
   <p>
-    Here<rsq/>s the important rule to remember: If your file and your Python program are in the same directory, all you need to specify is the filename like this: <c>open('myfile.txt', 'r')</c>. If your file and your Python program are in different directories, then you must refer to one or more directories, either in a <em>relative file path</em> to the file like this: <c>open('../my_data/data3.txt', 'r')</c>, or in an <em>absolute file path</em> like <c>open('/users/bmiller/my_files/all_projects/my_data/data3.txt', 'r')</c>.
+    Here's the important rule to remember: If your file and your Python program are in the same directory, all you need to specify is the filename like this: <c>open('myfile.txt', 'r')</c>. If your file and your Python program are in different directories, then you must refer to one or more directories, either in a <em>relative file path</em> to the file like this: <c>open('../my_data/data3.txt', 'r')</c>, or in an <em>absolute file path</em> like <c>open('/users/bmiller/my_files/all_projects/my_data/data3.txt', 'r')</c>.
   </p>
 </section>

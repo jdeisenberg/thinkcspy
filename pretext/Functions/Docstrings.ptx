@@ -19,7 +19,7 @@ def calculate_total(price, quantity):
   </input></program>
   
   <p>
-    It<rsq/>s probably been enough time since you read the page that you might not remember exactly what it was supposed to do. In a few weeks, you might remember even less. In order to help you (and other people reading your code) know what a function does, you add a <term>docstring</term> (short for <q>documentation string</q>) after the function header that explains the function<rsq/>s purpose.
+    It's probably been enough time since you read the page that you might not remember exactly what it was supposed to do. In a few weeks, you might remember even less. In order to help you (and other people reading your code) know what a function does, you add a <term>docstring</term> (short for <q>documentation string</q>) after the function header that explains the function's purpose.
   </p>
   
   <p>
@@ -62,7 +62,7 @@ print("Total for second item is $", total2)
   <p>A docstring should start with a one-sentence summary of what the function does, followed by a blank line, followed by a more elaborate description. The ending triple quotes should be on a separate line.</p>
   
   <p>
-    There<rsq/>s another reason to put docstrings in your functions: let<rsq/>s say you have written a large number of functions to do statistical calculations, and you want to produce documentation so other people can use those functions too. There are <url href="https://wiki.python.org/moin/DocumentationTools">programs that will go through your source code</url> and use the docstrings to automatically produce the documentation. That saves you a lot of work!
+    There's another reason to put docstrings in your functions: let's say you have written a large number of functions to do statistical calculations, and you want to produce documentation so other people can use those functions too. There are <url href="https://wiki.python.org/moin/DocumentationTools">programs that will go through your source code</url> and use the docstrings to automatically produce the documentation. That saves you a lot of work!
   </p>
   
 </section>

@@ -70,7 +70,7 @@ print(x)
 </input>
   </program>
   <p>
-      The update expression doesn<rsq/>t have to be a simple variable: <c>x = x + (y / z)</c> can be shortened to <c>x += (y / z)</c>. However, if the variable on the left-hand side is part of a parenthesized expression on the right, such as <c>x = (x + 5) / 3</c>, you cannot shorten it with compound assignment.
+      The update expression doesn't have to be a simple variable: <c>x = x + (y / z)</c> can be shortened to <c>x += (y / z)</c>. However, if the variable on the left-hand side is part of a parenthesized expression on the right, such as <c>x = (x + 5) / 3</c>, you cannot shorten it with compound assignment.
   </p>
   
   <exercise label="chain_compound_assign">

@@ -8,7 +8,7 @@
     </gi>
     <gi>
       <title>clone</title>
-      <p>To create a new object that has the same value as an existing object. Copying a reference to an object creates an alias but doesn<rsq/>t clone the object.</p>
+      <p>To create a new object that has the same value as an existing object. Copying a reference to an object creates an alias but doesn't clone the object.</p>
     </gi>
     <gi>
       <title>delimiter</title>

@@ -58,7 +58,7 @@ print(int('Hello'))
   </exercise>
   
   <p>
-    <c>int</c> can convert floating-point values to integers, but it doesn<rsq/>t round them. Instead, it chops off the fraction part (this is called <term>truncating</term>):
+    <c>int</c> can convert floating-point values to integers, but it doesn't round them. Instead, it chops off the fraction part (this is called <term>truncating</term>):
   </p>
   <program xml:id="functType_noFloat" interactive="activecode" language="python">
     <input>
@@ -126,7 +126,7 @@ print(int(23.865))
           <p>24</p>
         </statement>
         <feedback>
-          <p>Incorrect! The <c>int</c> function doesn<rsq/>t round up. Try again.</p>
+          <p>Incorrect! The <c>int</c> function doesn't round up. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -134,7 +134,7 @@ print(int(23.865))
           <p>2</p>
         </statement>
         <feedback>
-          <p>Incorrect! The <c>int</c> function doesn<rsq/>t only convert the first digit. Try again.</p>
+          <p>Incorrect! The <c>int</c> function doesn't only convert the first digit. Try again.</p>
         </feedback>
       </choice>
       <choice>
@@ -142,7 +142,7 @@ print(int(23.865))
           <p>23.8</p>
         </statement>
         <feedback>
-          <p>Incorrect! The <c>int</c> function doesn<rsq/>t keep any of the decimal places. Try again.</p>
+          <p>Incorrect! The <c>int</c> function doesn't keep any of the decimal places. Try again.</p>
         </feedback>
       </choice>
     </choices>

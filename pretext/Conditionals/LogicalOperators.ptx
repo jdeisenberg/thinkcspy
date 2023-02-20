@@ -3,9 +3,9 @@
   <title>Logical operators</title>
     <introduction>
       <title>Combining Conditions</title>
-      <p>Remember that question we had in <xref ref="conditionals_boolean-values-and-boolean-expressions"/>: <q>Is the amount we want to withdraw from a bank account less than or equal than the account balance?</q> It turns out we have to also make sure that the customer isn<rsq/>t trying to take out a negative amount.  The question we <em>really</em> need to ask is:</p>
+      <p>Remember that question we had in <xref ref="conditionals_boolean-values-and-boolean-expressions"/>: <q>Is the amount we want to withdraw from a bank account less than or equal than the account balance?</q> It turns out we have to also make sure that the customer isn't trying to take out a negative amount.  The question we <em>really</em> need to ask is:</p>
       <p><q>Is the amount we want to withdraw from a bank account greater than or equal to zero <em>and</em> is it less than or equal to the balance?</q></p>
-      <p>If both of these things are true, the customer gets their money; otherwise, can<rsq/>t let them do the transaction.</p>
+      <p>If both of these things are true, the customer gets their money; otherwise, can't let them do the transaction.</p>
       <p>Here are other questions that combine two conditions:</p>
       <p>
         <ul>

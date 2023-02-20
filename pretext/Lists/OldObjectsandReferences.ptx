@@ -62,7 +62,7 @@ b[0] = 99 # also changes list a
 </program>
 
   <p>
-    Although this behavior can be useful, it usually causes more problems than it solves. In general, it is safer to avoid aliasing when you are working with mutable objects. (For immutable objects, there<rsq/>s no problem. That<rsq/>s why Python is free to alias strings and integers when it sees an opportunity to economize.)
+    Although this behavior can be useful, it usually causes more problems than it solves. In general, it is safer to avoid aliasing when you are working with mutable objects. (For immutable objects, there's no problem. That's why Python is free to alias strings and integers when it sees an opportunity to economize.)
   </p>
   
   <p>

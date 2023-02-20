@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_values-and-data-types">
   <title>Values and Data Types</title>
-  <p>Let<rsq/>s look at a program that calculates a 22-year-old person<rsq/>s approximate age in days:</p>
+  <p>Let's look at a program that calculates a 22-year-old person's approximate age in days:</p>
   
   <program xml:id="prog_age_1" interactive="activecode" language="python">
     <input>
@@ -36,7 +36,7 @@ print(type(22))
 &gt;&gt;&gt; type(22)</pre>
 </note>
   
-<p>Continuing with our discussion of data types, numbers with a decimal point belong to a class called <term>float</term>, because these numbers are represented in a format called <em>floating-point</em>. (<url href="https://www.youtube.com/watch?v=R7Qb3LoSo84">See this video</url> to find out where the term <em>floating-point</em> comes from.) At this stage, you can treat the words <em>class</em> and <em>type</em> interchangeably.  We<rsq/>ll come back to a deeper understanding of what a class is in later chapters.</p>
+<p>Continuing with our discussion of data types, numbers with a decimal point belong to a class called <term>float</term>, because these numbers are represented in a format called <em>floating-point</em>. (<url href="https://www.youtube.com/watch?v=R7Qb3LoSo84">See this video</url> to find out where the term <em>floating-point</em> comes from.) At this stage, you can treat the words <em>class</em> and <em>type</em> interchangeably.  We'll come back to a deeper understanding of what a class is in later chapters.</p>
   <program xml:id="ch02_2" interactive="activecode" language="python">
     <input>
 print(type(17))

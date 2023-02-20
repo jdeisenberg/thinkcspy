@@ -37,12 +37,12 @@ print("Total for second item is $", total2)
 </input></program>
 
 <p>
-  First, I have to emphasize: there<rsq/>s nothing wrong with this program. It works exactly as advertised. It just has a lot of duplicated code.
-  What if we decided to change the 7% discount to a 5% discount? We<rsq/>d have to make sure we changed the discount on both lines 11 and 19. And imagine what the code would look like if we had three purchases, or if there were four different levels of discount based on quantity. The code would rapidly become unmanageable.
+  First, I have to emphasize: there's nothing wrong with this program. It works exactly as advertised. It just has a lot of duplicated code.
+  What if we decided to change the 7% discount to a 5% discount? We'd have to make sure we changed the discount on both lines 11 and 19. And imagine what the code would look like if we had three purchases, or if there were four different levels of discount based on quantity. The code would rapidly become unmanageable.
 </p>
 
 <p>
-  On the next page, we<rsq/>ll use a function to eliminate some of that duplicated code.
+  On the next page, we'll use a function to eliminate some of that duplicated code.
 </p>
 
 

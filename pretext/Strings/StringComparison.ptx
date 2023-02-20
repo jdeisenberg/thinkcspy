@@ -53,7 +53,7 @@ print("apple" &gt; "Apple")
   </program>
   
   <p>
-    One thing to note in the next to last example is the fact that the space character has an ordinal value (32).  Even though you don<rsq/>t see it, it is an actual character.  We sometimes call it a <em>whitespace</em> character.
+    One thing to note in the next to last example is the fact that the space character has an ordinal value (32).  Even though you don't see it, it is an actual character.  We sometimes call it a <em>whitespace</em> character.
   </p>
   
   <p>

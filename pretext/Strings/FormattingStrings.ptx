@@ -15,7 +15,7 @@ print(str(days) + " days is about " + str(years) + " years.")
 </input>
 </program>
 
-<p>Not only is it tedious to put in all the commas or plus signs, it doesn<rsq/>t give you very good control over the output. For example, when you do monetary calculations, the output isn<rsq/>t given with exactly two digits after the decimal point.</p>
+<p>Not only is it tedious to put in all the commas or plus signs, it doesn't give you very good control over the output. For example, when you do monetary calculations, the output isn't given with exactly two digits after the decimal point.</p>
 
 <program language="python" interactive="activecode">
   <input>
@@ -47,7 +47,7 @@ print(f"When x is {x}, x cubed is {x_cubed}.")
 
 <p>One extra advantage of f-strings is that we now have complete control over the spacing; we can put a comma immediately following the value of <c>x</c> and the period directly after <c>x_cubed</c>. While you could achieve the same effect without f-strings, it would be more difficult.</p>
 
-<p>But wait<mdash/>there<rsq/>s more! You can put Python expressions in the braces.</p>
+<p>But wait<mdash/>there's more! You can put Python expressions in the braces.</p>
 <program language="python" interactive="activecode"><input>
 years = int(input("Enter your age in years:"))
 print(f"{years} years is about {years * 365} days.")
@@ -58,7 +58,7 @@ print(f"{years} years is about {years * 365} days.")
 
 <subsection>
   <title>Controlling Decimal Digits</title>
-<p>We now have the question of how to control decimal points. Let<rsq/>s return to our discount example:</p>
+<p>We now have the question of how to control decimal points. Let's return to our discount example:</p>
 <program language="python">
 <input>
 subtotal = 34.95
@@ -69,13 +69,13 @@ print(f"Your discounted price is ${total}.")
 <p>Here's the output:</p>
 <pre>Your discounted price is $32.5035.</pre>
 
-<p>Ugly, isn<rsq/>t it? In order to control the number of digits after the decimal point, we need to add something to the braces:</p>
+<p>Ugly, isn't it? In order to control the number of digits after the decimal point, we need to add something to the braces:</p>
 <program language="python" interactive="activecode"><input>
 subtotal = 34.95
 total = 34.95 * 0.93 # 7% discount
 print(f"Your discounted price is ${total:.2f}.")
 </input></program>
-<p>Here<rsq/>s what the <c>:.2f</c> means:</p>
+<p>Here's what the <c>:.2f</c> means:</p>
 <p>
 <ul>
     <li><p>The colon <c>:</c> introduces the extra formatting information.</p></li>
@@ -84,12 +84,12 @@ print(f"Your discounted price is ${total:.2f}.")
 </ul>
 </p>
 
-<p>If you wanted four digits after the decimal point, you would use <c>:.4f</c>; if you wanted only one digit, you<rsq/>d use <c>:.1f</c>.</p>
+<p>If you wanted four digits after the decimal point, you would use <c>:.4f</c>; if you wanted only one digit, you'd use <c>:.1f</c>.</p>
 </subsection>
 
 <subsection>
   <title>Advanced Topic: Aligning Output</title>
-<p>Consider this program. When you run it, the numbers don<rsq/>t quite line up:</p>
+<p>Consider this program. When you run it, the numbers don't quite line up:</p>
 <program language="python" interactive="activecode"><input>
 first = 7.5
 second = 22.32
@@ -97,12 +97,12 @@ print(f"first number  {first:.3f}")
 print(f"second number {second:.3f}")
 </input></program>
 
-<p>You can fix that by specifying the <em>width</em> that you want the number to take up. In the preceding program, change the <c>.3f</c> to <c>8.3f</c> on lines 3 and 4. This says <q>use at least 8 spaces to display this number, with 3 digits to the right of the decimal point.</q> That means there will be four digits to the left of the decimal point, since 4 + 3 + 1 (for the decimal point) adds up to eight. When you run the program again, you<rsq/>ll see everything line up nicely.</p>
+<p>You can fix that by specifying the <em>width</em> that you want the number to take up. In the preceding program, change the <c>.3f</c> to <c>8.3f</c> on lines 3 and 4. This says <q>use at least 8 spaces to display this number, with 3 digits to the right of the decimal point.</q> That means there will be four digits to the left of the decimal point, since 4 + 3 + 1 (for the decimal point) adds up to eight. When you run the program again, you'll see everything line up nicely.</p>
 </subsection>
 
 <subsection>
 <title>Advanced Topic: Additional Formatting Codes</title>
-<p>If you need to format an integer (usually to control its alignment), you use <c>d</c> instead of <c>f</c>. Since integers don<rsq/>t have decimal digits, the format specifier doesn<rsq/>t have a <c>.</c> in it.</p>
+<p>If you need to format an integer (usually to control its alignment), you use <c>d</c> instead of <c>f</c>. Since integers don't have decimal digits, the format specifier doesn't have a <c>.</c> in it.</p>
 <p>If you want leading zeros on a number (for example, when displaying the minutes in a time), use a <c>0</c> before the width, as in the following example:</p>
 <program language="python" interactive="activecode"><input>
 hour = 5
@@ -111,7 +111,7 @@ print(f"The time is {hour}:{minute:02d}.")
 minute = 22
 print(f"The time is now {hour}:{minute:02d}.")
 </input></program>
-<p>Note that the leading zeros don<rsq/>t appear unless they are required to fill out the minimum width.</p>
+<p>Note that the leading zeros don't appear unless they are required to fill out the minimum width.</p>
 
 <p>If you have a decimal value (such as <c>0.0737</c>) that you want to display as a percentage, use the <c>%</c> specifier. Here is an example of both of these:</p>
 
@@ -148,7 +148,7 @@ print(f'sum of {x} and {y} is {x + y}; product is {x * y}.')
           <statement>
             <p>sum of {2} and {6} is {8}; product is {12}.</p>
           </statement>
-          <feedback>The braces don<rsq/>t appear in the output.</feedback>
+          <feedback>The braces don't appear in the output.</feedback>
         </choice>
         <choice correct="yes">
           <statement>

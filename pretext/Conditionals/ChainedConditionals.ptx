@@ -35,11 +35,11 @@ print('All done.')
     <image source="Conditionals/Figures/elif" width="50%" alt="If-ElseIf Logic"/>
   </figure>
   
-  <p>Notice that we didn<rsq/>t have to test <c>x == y</c>; if <c>x</c> isn<rsq/>t greater than <c>y</c>, and it isn<rsq/>t less than <c>y</c>, then they <em>must</em> be equal. A simple <c>else</c> takes care of that case.</p>
+  <p>Notice that we didn't have to test <c>x == y</c>; if <c>x</c> isn't greater than <c>y</c>, and it isn't less than <c>y</c>, then they <em>must</em> be equal. A simple <c>else</c> takes care of that case.</p>
   
   <p>There is no limit on the number of <c>elif</c> statements in a chain. If
             there is an <c>else</c> clause, it has to be at the end, but there
-            doesn<rsq/>t have to be one. Try running the following program to see what it does.</p>
+            doesn't have to be one. Try running the following program to see what it does.</p>
   <program xml:id="elif_example" interactive="activecode" language="python">
     <input>
 choice = 'b'

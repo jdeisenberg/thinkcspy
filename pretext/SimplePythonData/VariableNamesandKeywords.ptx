@@ -22,7 +22,7 @@ class = "Computer Science 101"</pre>
   <p>
     <c>76trombones</c> is illegal because it does not begin with a letter.  <c>more$</c>
             is illegal because it contains an illegal character, the dollar sign. But
-            what<rsq/>s wrong with <c>class</c>?
+            what's wrong with <c>class</c>?
   </p>
   <p>It turns out that <c>class</c> is one of the Python <term>keywords</term>. Keywords define
             the language's syntax rules and structure, and they cannot be used as variable
@@ -82,7 +82,7 @@ class = "Computer Science 101"</pre>
     </tabular>
   </table>
   <p>You might want to keep this list handy. If the interpreter complains about one
-    of your variable names and you don<rsq/>t know why, see if it is on this list.</p>
+    of your variable names and you don't know why, see if it is on this list.</p>
   <p>
     <term>Check your understanding</term>
   </p>

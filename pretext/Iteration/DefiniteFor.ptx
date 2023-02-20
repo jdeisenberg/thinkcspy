@@ -8,7 +8,7 @@
 <idx><h>Variable</h><h>Iteration</h></idx>
 <idx><h>Iteration</h><h>Variable</h></idx>
   <p>
-    The <c>while</c> loop is ideal for those situations when we don<rsq/>t know exactly how many iterations will be needed. There are, however, many instances when we know exactly how many times we need to go through a loop:
+    The <c>while</c> loop is ideal for those situations when we don't know exactly how many iterations will be needed. There are, however, many instances when we know exactly how many times we need to go through a loop:
   </p>
 
   <p>

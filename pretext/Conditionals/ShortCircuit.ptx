@@ -24,7 +24,7 @@ else:
   </p>
   
   <p>
-    Now, try running the program with zero orders totaling $500. Why did that work? Why didn<rsq/>t the program crash when it tried to divide by zero (the number of orders)?
+    Now, try running the program with zero orders totaling $500. Why did that work? Why didn't the program crash when it tried to divide by zero (the number of orders)?
   </p>
 
   <p>

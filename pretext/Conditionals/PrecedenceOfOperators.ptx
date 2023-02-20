@@ -3,13 +3,13 @@
   <title>Precedence of Operators</title>
   <p>We have now added a number of additional operators to those we learned in the previous chapters.  It is important to understand how these operators relate to the others with respect to operator precedence.  Python will always evaluate the arithmetic operators first (** is highest, then multiplication/division, then addition/subtraction).  Next come the relational operators.  Finally, the logical operators are done last.  This means that the expression <c>x * 5 &gt;= 10 and y - 6 &lt;= 20</c> will be evaluated so as to first perform the arithmetic and then check the relationships.  The <c>and</c> will be done last.  Although many programmers might place parentheses around the two relational expressions, it is not necessary.</p>
   
-  <p>That having been said, <em>when in doubt, use parentheses</em>. In fact, even when you <em>aren<rsq/>t</em> in doubt, use parentheses!!! For example, quick<mdash/>without looking at the table of priorities<mdash/>which logical operations happen in which order in this boolean expression?</p>
+  <p>That having been said, <em>when in doubt, use parentheses</em>. In fact, even when you <em>aren't</em> in doubt, use parentheses!!! For example, quick<mdash/>without looking at the table of priorities<mdash/>which logical operations happen in which order in this boolean expression?</p>
   
   <p><c>age &lt; 21 or day == 6 and hour &gt; 15 and not month &lt; 6 or month &gt; 9</c></p>
   
   <p>Without parentheses, this is totally confusing, even to people who have memorized the precedence table.</p>
   
-  <p>If you ever encounter code like the preceding monstrosity, you<rsq/>ll need the following table to help you untangle the mess. The table summarizes the precedence discussed so far from highest to lowest.
+  <p>If you ever encounter code like the preceding monstrosity, you'll need the following table to help you untangle the mess. The table summarizes the precedence discussed so far from highest to lowest.
             See <xref ref="appendices_operator-precedence-table"/> for <em>all</em> the operators introduced in this book.</p>
   <table>
     <tabular>

@@ -2,7 +2,7 @@
 <section xml:id="strings_reverse-name">
   <title>Program: Changing the Form of a Name</title>
   <p>
-    You now know enough to implement one of the programs we mentioned in <xref ref="strings_strings-revisited"/>: Change a name in the form <c>"Fulano, Juan"</c> to <c>"Juan Fulano"</c>. We<rsq/>ll use a function to do the heavy lifting.
+    You now know enough to implement one of the programs we mentioned in <xref ref="strings_strings-revisited"/>: Change a name in the form <c>"Fulano, Juan"</c> to <c>"Juan Fulano"</c>. We'll use a function to do the heavy lifting.
   </p>
   
   <exercise xml:id="reverse_name_pseudocode" indentation="hide" language="python">

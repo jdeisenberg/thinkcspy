@@ -19,7 +19,7 @@ print(2 + 3)
             only if you are <em>logged in</em>!  If you are logged in, you should see a
             green <em>Save &amp; Run</em> button.  If you are not logged in you see only <em>Run</em>.
   In the next discussion we will refer to both variants as the <em>Run</em> button.</p>-->
-  <p>If you see a green <em>Save &amp; Run</em> button, code you write and run is saved for future sessions. Otherwise, you will see only <em>Run</em>. We<rsq/>ll refer to both of these as the <em>Run</em> button.</p>
+  <p>If you see a green <em>Save &amp; Run</em> button, code you write and run is saved for future sessions. Otherwise, you will see only <em>Run</em>. We'll refer to both of these as the <em>Run</em> button.</p>
   
   <p>If we use the Python code from the previous example and make it active,
             you will see that it can be executed directly by pressing the <em>Run</em> button.
@@ -43,7 +43,7 @@ print(2 + 3)
             Alternately you can drag the box on the slider.
             Now move the slider to see a previously saved state. You can just run it
           by pressing <em>Run</em>, or edit and then save and run it as the latest version.</p> -->
-          <p>After you have run your code, you will see a slider above the <em>Run</em> button. You can drag the slider box to switch to a previously saved state; activecode remembers your program<rsq/>s history.</p>
+          <p>After you have run your code, you will see a slider above the <em>Run</em> button. You can drag the slider box to switch to a previously saved state; activecode remembers your program's history.</p>
   <p>In addition to activecode, you can also execute Python code with the assistance
             of a unique visualization tool.  This tool, known as <term>codelens</term>,
             allows you to control the step by step execution of a program.
@@ -114,7 +114,7 @@ print(2 + 3)
     <choices>
       <choice>
         <statement>
-          <p>measure the speed of a programs<rsq/>s execution.</p>
+          <p>measure the speed of a programs's execution.</p>
         </statement>
         <feedback>
                     In fact, codelens steps through each line one by one as you click, which is MUCH slower than the Python interpreter.

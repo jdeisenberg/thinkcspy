@@ -2,7 +2,7 @@
 <section xml:id="conditionals_conditional-execution-binary-selection">
   <title>Conditional Execution: Binary Selection</title>
   <video xml:id="HriDtn-0Dcw" youtube="HriDtn-0Dcw" width="auto"/>
-  <p>Now that we know how to express <q>True or False</q> questions in Python, it<rsq/>s time to put them to use. In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. <term>Selection statements</term>, also referred to as <term>conditional statements</term>, give us this ability. The simplest form of selection is the <term>if statement</term>. This is sometimes referred to as <term>binary selection</term> since there are two possible paths of execution.</p>
+  <p>Now that we know how to express <q>True or False</q> questions in Python, it's time to put them to use. In order to write useful programs, we almost always need the ability to check conditions and change the behavior of the program accordingly. <term>Selection statements</term>, also referred to as <term>conditional statements</term>, give us this ability. The simplest form of selection is the <term>if statement</term>. This is sometimes referred to as <term>binary selection</term> since there are two possible paths of execution.</p>
   <program xml:id="odd_even_prog1" interactive="activecode" language="python">
     <input>
 number_str = input("Enter a number:")

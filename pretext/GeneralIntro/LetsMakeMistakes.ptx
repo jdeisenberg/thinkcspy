@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
 <section xml:id="general-intro_lets-make-mistakes">
-  <title>Let<rsq/>s Make Mistakes!</title>
-  <p>When students get their first syntax error in Python, some of them freak out a little bit. All of a sudden there<rsq/>s some mysterious message with lots of technical terms they don<rsq/>t understand, and yes, it <em>is</em> a bit scary.</p>
-  <p>Let<rsq/>s put that experience under your control. We<rsq/>re going to ask you to purposely make mistakes so you can see what happens when Python doesn<rsq/>t like your program<rsq/>s syntax. You<rsq/>ll see the messages that common syntax errors produce. Then, when you see an error message in one of your programs, your reaction will be <q>Oh, yeah, I remember seeing that when I was playing around making mistakes</q> instead of <q>OMG!! What will I do? All is lost! *PANIC*</q>.</p>
-  <p>A few pages ago, we asked you to write a program that displays two lines of output. Here<rsq/>s the solution. (Run it to see what it does.)</p>
+  <title>Let's Make Mistakes!</title>
+  <p>When students get their first syntax error in Python, some of them freak out a little bit. All of a sudden there's some mysterious message with lots of technical terms they don't understand, and yes, it <em>is</em> a bit scary.</p>
+  <p>Let's put that experience under your control. We're going to ask you to purposely make mistakes so you can see what happens when Python doesn't like your program's syntax. You'll see the messages that common syntax errors produce. Then, when you see an error message in one of your programs, your reaction will be <q>Oh, yeah, I remember seeing that when I was playing around making mistakes</q> instead of <q>OMG!! What will I do? All is lost! *PANIC*</q>.</p>
+  <p>A few pages ago, we asked you to write a program that displays two lines of output. Here's the solution. (Run it to see what it does.)</p>
   
   <program xml:id="intro_multi_output" interactive="activecode" language="python">
 <input>print("My program works!")
 print("I wrote it in Python.")</input>
   </program>
   
-  <p>Try making the following changes to the program, one at a time, and see what the results are. Some of these changes will cause errors, and some of them won<rsq/>t. After each error, put the program back the way it was originally so you<rsq/>re starting with a working program.</p>
+  <p>Try making the following changes to the program, one at a time, and see what the results are. Some of these changes will cause errors, and some of them won't. After each error, put the program back the way it was originally so you're starting with a working program.</p>
   <p>
     <ol marker="1">
       <li>Misspell one of the occurrences of <c>print</c> as <c>primt</c>.</li>

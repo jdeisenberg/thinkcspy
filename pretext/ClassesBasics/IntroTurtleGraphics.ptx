@@ -2,7 +2,7 @@
 <section xml:id="classes-basics_intro-turtle-graphics">
   <title>The Turtle Object</title>
   <p>
-    Let<rsq/>s try a couple of lines of Python code to create a new turtle and start drawing a simple figure like a rectangle. We will refer to our first turtle using the variable name <c>alex</c> (there<rsq/>s a tradition of using people<rsq/>s names for turtles, so I<rsq/>ll go with it), but remember that you can choose any name you wish as long as you follow the naming rules for Python variables.
+    Let's try a couple of lines of Python code to create a new turtle and start drawing a simple figure like a rectangle. We will refer to our first turtle using the variable name <c>alex</c> (there's a tradition of using people's names for turtles, so I'll go with it), but remember that you can choose any name you wish as long as you follow the naming rules for Python variables.
   </p>
   
   <p>
@@ -20,7 +20,7 @@ alex.forward(75)            # complete the second side of a rectangle
             </input>
   </program>
   <p>
-    Here are a couple of things you<rsq/>ll need to understand about this program.</p>
+    Here are a couple of things you'll need to understand about this program.</p>
   <p>
     The first line tells Python to load a <term>module</term> named <c>turtle</c>.  That module brings us two new types that we can use: the <c>Turtle</c> type, and the <c>Screen</c> type.  The dot notation <c>turtle.Turtle</c> means <em><q>The <c>Turtle</c> type that is defined within the <c>turtle</c> module</q></em>.   (Remember that Python is case sensitive, so the module name, <c>turtle</c>, with a lowercase <title_reference>t</title_reference>, is different from the type <c>Turtle</c> because of the uppercase <title_reference>T</title_reference>.)
   </p>
@@ -34,7 +34,7 @@ alex.forward(75)            # complete the second side of a rectangle
   </p>
   
   <p>
-    In lines 4-6, we instruct the <term>object</term> <c>alex</c> to move and to turn. We do this by <term>invoking</term> or activating <c>alex</c><rsq/>s <term>methods</term> &#x2014; these are the instructions that all turtles know how to respond to.  Here the dot indicates that the methods invoked belong to and refer to the object <c>alex</c>. Unlike the <c>math</c> module, where angles are measured in radians, the <c>turtle</c> module measures angles in degrees.
+    In lines 4-6, we instruct the <term>object</term> <c>alex</c> to move and to turn. We do this by <term>invoking</term> or activating <c>alex</c>'s <term>methods</term> &#x2014; these are the instructions that all turtles know how to respond to.  Here the dot indicates that the methods invoked belong to and refer to the object <c>alex</c>. Unlike the <c>math</c> module, where angles are measured in radians, the <c>turtle</c> module measures angles in degrees.
   </p>
   
   <note>

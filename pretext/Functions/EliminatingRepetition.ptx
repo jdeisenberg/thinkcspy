@@ -48,7 +48,7 @@ print("Total for second item is $", total2)
   </li>
   <li>
     <p>
-      The function definition (starting in line 1) must appear before the function is called (in lines 18 and 19). We<rsq/>ll examine this in a bit more detail on the next page.
+      The function definition (starting in line 1) must appear before the function is called (in lines 18 and 19). We'll examine this in a bit more detail on the next page.
     </p>
   </li>
 </ul>

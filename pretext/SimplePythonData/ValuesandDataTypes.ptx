@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <section xml:id="simple-python-data_values-and-data-types">
   <title>Values and Data Types</title>
-  <p>Let<rsq/>s look at a program that calculates a 22-year-old person<rsq/>s approximate age in days:</p>
+  <p>Let's look at a program that calculates a 22-year-old person's approximate age in days:</p>
   
   <program xml:id="prog_age_1" interactive="activecode" language="python">
     <input>

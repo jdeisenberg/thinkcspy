@@ -4,7 +4,7 @@
   <introduction>
 
     <p>
-      On the preceding page, we added all the items in the list to the accumulator. Sometimes when we<rsq/>re accumulating, we don<rsq/>t want to add to our accumulator every time we iterate. Consider, for example, the following program which counts the number of names with more than 3 letters.
+      On the preceding page, we added all the items in the list to the accumulator. Sometimes when we're accumulating, we don't want to add to our accumulator every time we iterate. Consider, for example, the following program which counts the number of names with more than 3 letters.
     </p>
   <program xml:id="ac7_10_1" interactive="activecode" language="python">
     <input>
@@ -64,7 +64,7 @@ print(biggest_num)
         </input>
     </program>
     <p>
-      Here, we initialize <c>biggest_num</c> to the first element in our list. Why didn<rsq/>t we set it to zero? Because we cannot assume that there will never be any negative numbers in the list. By assigning <c>nums[0]</c> to <c>biggest_num</c>, we are at least guaranteed that the result of our program will be one of the items in the list.
+      Here, we initialize <c>biggest_num</c> to the first element in our list. Why didn't we set it to zero? Because we cannot assume that there will never be any negative numbers in the list. By assigning <c>nums[0]</c> to <c>biggest_num</c>, we are at least guaranteed that the result of our program will be one of the items in the list.
   </p>
     <p>
       In the <c>for</c> loop, we check to see if the current value of <c>n</c> is greater than the current value of <c>biggest_num</c>. If it is, then we want to <term>update</term> <c>biggest_num</c> so that it now is assigned the higher number. Otherwise, we do nothing and continue the <c>for</c> loop.
@@ -99,7 +99,7 @@ print("The scores are " + result)
   
     <exercise label="ac7_10_5a">
       <statement>
-        <p> Let<rsq/>s work to improve the formatting of the sentence produced by the program above. Revise the following code so that it outputs the sentence:
+        <p> Let's work to improve the formatting of the sentence produced by the program above. Revise the following code so that it outputs the sentence:
         </p>
         <pre>The scores are 85, 95, and 70.</pre>
       </statement>
@@ -261,7 +261,7 @@ myTests().main()
       </program>
     </exercise>
     
-    <p>Now that we have finished our in-depth review of the accumulator pattern, let<rsq/>s look at lists in detail, first describing the things they have in common with strings.</p>
+    <p>Now that we have finished our in-depth review of the accumulator pattern, let's look at lists in detail, first describing the things they have in common with strings.</p>
  
   </subsection>
 </section>

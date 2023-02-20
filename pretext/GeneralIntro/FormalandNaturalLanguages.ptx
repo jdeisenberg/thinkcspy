@@ -28,8 +28,8 @@
                 elements and numbers. In algebra, tokens are letters, numbers, and
                 operators.</p>
               <p><ul>
-                  <li>In English, <q>gzprm</q> is an invalid token; there<rsq/>s no such word.</li>
-                  <li>In chemistry, <m>Zz_2</m> has an invalid token; there<rsq/>s no element with the symbol Zz.</li>
+                  <li>In English, <q>gzprm</q> is an invalid token; there's no such word.</li>
+                  <li>In chemistry, <m>Zz_2</m> has an invalid token; there's no element with the symbol Zz.</li>
                   <li>In math, <c>3 + 6 $</c> has a token error; <c>$</c> is not a valid mathematical operator (as far as we know).</li>
                   </ul></p>
             </li>
@@ -39,7 +39,7 @@
                 <p><ul>
                     <li>In English, <q>A cookie want I</q> has a structure error.</li>
                     <li>In chemistry, <m>_2H_2O</m> has a structure error<mdash/>the number should follow the symbol.</li>
-                    <li>In math, <c>3 + &#x00d7; 6</c> is invalid; you can<rsq/>t put a multiplication after a plus sign.</li>
+                    <li>In math, <c>3 + &#x00d7; 6</c> is invalid; you can't put a multiplication after a plus sign.</li>
                     </ul></p>
               </li>
             </dl>
@@ -76,7 +76,7 @@
                             natural languages are full of idiom and metaphor. If someone says, <q>The
                             other shoe fell</q>, there is probably no shoe and nothing falling.</p>
       <note>
-        <p>You<rsq/>ll need to find the original joke to understand the idiomatic
+        <p>You'll need to find the original joke to understand the idiomatic
                                 meaning of the other shoe falling.  <em>Yahoo! Answers</em> thinks it
                                 knows!</p>
       </note>

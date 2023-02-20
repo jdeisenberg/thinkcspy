@@ -6,10 +6,10 @@
   </warning>
   <p>
     In these exercises, you will be asked to create a variable using the <c>+</c> as the <em>concatenation operator</em> to join strings together.
-    As a refresher, if both the operands of <c>+</c> are strings, there<rsq/>s no problem: <c>"door" + "bell"</c> gives the string <c>"doorbell"</c>.
+    As a refresher, if both the operands of <c>+</c> are strings, there's no problem: <c>"door" + "bell"</c> gives the string <c>"doorbell"</c>.
   </p>
   <p>
-    If one of the operands is a number, though, you must use the <c>str</c> function to convert it to a string.  Let<rsq/>s say you have a variable named <c>count</c> that has the value 3, and you want to add the string <c>" pages"</c> to the end of it. You can <em>not</em>  do this:
+    If one of the operands is a number, though, you must use the <c>str</c> function to convert it to a string.  Let's say you have a variable named <c>count</c> that has the value 3, and you want to add the string <c>" pages"</c> to the end of it. You can <em>not</em>  do this:
   </p>
   <program language="python">
     <input>

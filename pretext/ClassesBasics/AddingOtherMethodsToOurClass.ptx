@@ -11,7 +11,7 @@
     </p>
     
   <p>
-      Let<rsq/>s add two simple methods to allow a point to give us information about its state.  The <c>area</c> method, when invoked, will return the value of the rectangle<rsq/>s area.  The implementation of this method is straight forward since we already know how to write functions that return values.  One thing to notice is that even though the <c>area</c> method does not need any other parameter information to do its work, there is still one formal parameter, <c>self</c>.  As we stated earlier, all methods defined in a class that operate on objects of that class will have <c>self</c> as their first parameter.  Again, this serves as reference to the object itself, which in turn gives access to the state data inside the object. We will also write a similar <c>perimeter</c> method that returns the rectangle<rsq/>s perimeter.
+      Let's add two simple methods to allow a point to give us information about its state.  The <c>area</c> method, when invoked, will return the value of the rectangle's area.  The implementation of this method is straight forward since we already know how to write functions that return values.  One thing to notice is that even though the <c>area</c> method does not need any other parameter information to do its work, there is still one formal parameter, <c>self</c>.  As we stated earlier, all methods defined in a class that operate on objects of that class will have <c>self</c> as their first parameter.  Again, this serves as reference to the object itself, which in turn gives access to the state data inside the object. We will also write a similar <c>perimeter</c> method that returns the rectangle's perimeter.
   </p>
   <program xml:id="chp13_classes4" interactive="activecode" language="python">
     <input>
@@ -37,7 +37,7 @@ print(r.perimeter())
   </program>
   
   <p>
-      Let<rsq/>s add another method, <c>diagonalLength</c>, to see better how methods work.  This method will again not need any additional information to do its work, but it performs a more complex task.
+      Let's add another method, <c>diagonalLength</c>, to see better how methods work.  This method will again not need any additional information to do its work, but it performs a more complex task.
   </p>
   <program xml:id="chp13_classes5" interactive="activecode" language="python">
     <input>

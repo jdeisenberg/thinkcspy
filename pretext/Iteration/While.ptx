@@ -142,7 +142,7 @@ while (y &gt; 2 and x &lt; y):
 
     </exercise>
     
-    <p>If you had difficulty with the preceding question, here<rsq/>s the program as activecode. We have added a <c>print</c> statement so you can see the values of <c>x</c> and <c>y</c> at each iteration. You might also want to use codelens to see the values of <c>x</c> and <c>y</c> step by step.</p>
+    <p>If you had difficulty with the preceding question, here's the program as activecode. We have added a <c>print</c> statement so you can see the values of <c>x</c> and <c>y</c> at each iteration. You might also want to use codelens to see the values of <c>x</c> and <c>y</c> step by step.</p>
     
     <program interactive="activecode" language="python">
 <input>

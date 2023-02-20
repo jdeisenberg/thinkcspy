@@ -6,7 +6,7 @@
             of are C++, PHP, and Java.</p>
   <p>As you might infer from the name high-level language, there are also
             <term>low-level languages</term>, sometimes referred to as machine languages or assembly
-            languages. Low-level languages can be <q>understood</q> directly by the computer<rsq/>s <init>CPU</init> (Central Processing Unit). They aren<rsq/>t, however, suitable for learning as your first programming language.</p>
+            languages. Low-level languages can be <q>understood</q> directly by the computer's <init>CPU</init> (Central Processing Unit). They aren't, however, suitable for learning as your first programming language.</p>
   <p>Programs written in a high-level language take less time
             to write, they are shorter and easier to read, and they are more likely to be
             correct. In order for a computer to run programs written in a high-level language, a special program called a <term>compiler</term> (for some languages) or an <term>interpreter</term> (for other languages, including Python) translates the high-level language into a low-level language that the computer can execute.</p>
@@ -152,7 +152,7 @@ My first program adds two numbers, 2 and 3:
             <c>.python</c>
           </statement>
           <feedback>
-            Programmers usually don<rsq/>t like typing long words. Hint: use just the first two letters of <q>python</q>.
+            Programmers usually don't like typing long words. Hint: use just the first two letters of <q>python</q>.
           </feedback>
         </choice>
       </choices>

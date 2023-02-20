@@ -10,7 +10,7 @@
     In the context of programming, a <term>function</term> is a named sequence of statements that performs a computation, gets input, or produces output. We have been using functions all along in this course. We do a <term>function call</term> by giving the name of the function and, in parentheses, any extra information the function needs to do its work.
   </p>
   
-  <p>In fact, we have been making function calls in almost all the programs we<rsq/>ve written so far! Take a look at this short program:</p>
+  <p>In fact, we have been making function calls in almost all the programs we've written so far! Take a look at this short program:</p>
   <program xml:id="functCall_type" interactive="activecode" language="python">
     <input>
 num_str = input("Enter a number: ")
@@ -74,5 +74,5 @@ print("Your number is", number)
     </setup>
   </exercise>
   
-  <p>Later on in this chapter, you will learn how to write your own functions<mdash/>and why it<rsq/>s a good thing to learn. First, though, let<rsq/>s look at some more built-in Python functions.</p>
+  <p>Later on in this chapter, you will learn how to write your own functions<mdash/>and why it's a good thing to learn. First, though, let's look at some more built-in Python functions.</p>
 </section>

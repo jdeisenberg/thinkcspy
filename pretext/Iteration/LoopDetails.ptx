@@ -32,7 +32,7 @@
     </figure>
     
     <p>
-      If the condition is <c>False</c> when you enter the loop, the loop body will never be executed at all. The loop will <q>do nothing</q>. Here<rsq/>s another way of doing the <q>loop until you get good input</q>:
+      If the condition is <c>False</c> when you enter the loop, the loop body will never be executed at all. The loop will <q>do nothing</q>. Here's another way of doing the <q>loop until you get good input</q>:
     </p>
     <program interactive="activecode" language="python">
       <input>
@@ -46,7 +46,7 @@ print("That is about", days, "days.")
 </program>
 
 <p>
-  Let<rsq/>s say you enter a number like 45. The condition <c>years &lt;= 0</c> evaluates to <c>False</c>, and the body of the loop is never executed.
+  Let's say you enter a number like 45. The condition <c>years &lt;= 0</c> evaluates to <c>False</c>, and the body of the loop is never executed.
 </p>
 <note>
   <p>
@@ -93,7 +93,7 @@ print('Done!')
   <p>Ordinarily, we exit a <c>while</c> loop when the condition becomes <c>False</c>. However, Python provides another way to exit from a loop. If Python encounters a <c>break</c> statement, it will immediately exit the loop.</p>
   
   <p>
-      Here<rsq/>s an example. Suppose you want to take input from the user until they type <c>done</c>. You could write:
+      Here's an example. Suppose you want to take input from the user until they type <c>done</c>. You could write:
   </p>
   
   <program language="python">

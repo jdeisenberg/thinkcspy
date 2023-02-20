@@ -83,7 +83,7 @@ print(random.choice(candidates))
     <title>For Those of You Who Are Seriously into Statistics...</title>
   <p>The <c>random</c> module also provides functions to generate
             random values from continuous distributions including Gaussian,
-            exponential, gamma, and a few more. These are advanced functions, and we won<rsq/>t be using them in this course.</p>
+            exponential, gamma, and a few more. These are advanced functions, and we won't be using them in this course.</p>
   </note>-->
           
   <exercise label="functRandom_fill1">

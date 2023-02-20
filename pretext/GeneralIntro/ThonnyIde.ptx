@@ -2,11 +2,11 @@
 <section xml:id="general-intro_thonny_ide">
   <title>Writing Assignments<mdash/>The Thonny IDE</title>
   
-  <p>While activecode and codelens are great for learning the material in this book as you are reading it, you won<rsq/>t use them when you are writing an assignment. Instead, you will be using an <term>Integrated Development Environment</term> (<init>IDE</init>). There are a lot of IDEs available, but we recommend that you use <url href="https://thonny.org/">Thonny</url> because:</p>
+  <p>While activecode and codelens are great for learning the material in this book as you are reading it, you won't use them when you are writing an assignment. Instead, you will be using an <term>Integrated Development Environment</term> (<init>IDE</init>). There are a lot of IDEs available, but we recommend that you use <url href="https://thonny.org/">Thonny</url> because:</p>
   <p>
     <ul>
-    <li>Once you download and install it, you will have Python available to you right away<mdash/>you won<rsq/>t need to install Python separately.</li>
-    <li>You<rsq/>ll have a single window that has both a source code editor (the top half of the window in <xref ref="general-intro-fig_thonny"/>) and a Python shell (the bottom half of the window).</li>
+    <li>Once you download and install it, you will have Python available to you right away<mdash/>you won't need to install Python separately.</li>
+    <li>You'll have a single window that has both a source code editor (the top half of the window in <xref ref="general-intro-fig_thonny"/>) and a Python shell (the bottom half of the window).</li>
     <li>Thonny gives you the ability to go through your program one step at time, much like codelens.</li>
     </ul>
     </p>

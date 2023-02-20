@@ -35,7 +35,7 @@ catalog = [["Pencil", 0.24], ["Notebook", 3.95], ["Marker", 0.79]]
 </program>
       
 <p>
-  Now, what happens if we get a user<rsq/>s input with an item and a new price? Here<rsq/>s the plan (remember, we make a plan before we start to write the code). We set up a <c>while</c> loop that goes through each entry in the catalog. If the first item in the sublist is the item we are looking for, we modify the second item in that sublist. If we get all the way through the catalog without finding the requested item, we can either give an error message or we can enter the data as a new entry. Here is the corresponding code:
+  Now, what happens if we get a user's input with an item and a new price? Here's the plan (remember, we make a plan before we start to write the code). We set up a <c>while</c> loop that goes through each entry in the catalog. If the first item in the sublist is the item we are looking for, we modify the second item in that sublist. If we get all the way through the catalog without finding the requested item, we can either give an error message or we can enter the data as a new entry. Here is the corresponding code:
 </p>
 
 <program language="python" interactive="activecode"><input>
@@ -60,7 +60,7 @@ if not found:
 print(f"Inventory updated to {inventory}")
 </input></program>
     <p>
-      Wow. That<rsq/>s a lot of work. There must be a better way.
+      Wow. That's a lot of work. There must be a better way.
     </p>
     
     <p>
@@ -114,7 +114,7 @@ print(catalog)
   </program>
 
   <p>
-    It doesn<rsq/>t matter what order we write the pairs. The values in a dictionary are accessed with keys, not with indices, so there is no need to care about ordering.
+    It doesn't matter what order we write the pairs. The values in a dictionary are accessed with keys, not with indices, so there is no need to care about ordering.
   </p>
   
   <p>You put a key in the indexing operator <c>[ ]</c> to look up the corresponding value.</p>

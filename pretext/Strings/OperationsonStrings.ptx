@@ -24,7 +24,7 @@ print(fruit + bakedGood)
         </input>
   </program>
   <p>
-    The output of this program is <c>banana nut bread</c>. The space before the word <c>nut</c> is part of the string and is necessary to produce the space between the concatenated strings.  Take out the space and run it again, and you<rsq/>ll see what we mean.
+    The output of this program is <c>banana nut bread</c>. The space before the word <c>nut</c> is part of the string and is necessary to produce the space between the concatenated strings.  Take out the space and run it again, and you'll see what we mean.
   </p>
   <p>
       The <c>*</c> operator also works on strings; it performs repetition. For example, <c>'Fun'* 3</c> is <c>'FunFunFun'</c>. One of the operands has to be a string and the other has to be an integer.
@@ -46,7 +46,7 @@ print((word + "bell") * 3)
     This interpretation of <c>+</c> and <c>*</c> makes sense by analogy with addition and multiplication. Just as <c>4 * 3</c> is equivalent to <c>4 + 4 + 4</c>, we expect <c>"Go" * 3</c> to be the same as <c>"Go" + "Go" + "Go"</c>, and it is.  Note also in the last example that the order of operations for <c> </c> and <c>+</c> is the same as it was for arithmetic. The repetition is done before the concatenation.  If you want to cause the concatenation to be done first, you will need to use parentheses.
   </p>
   
-  <p>Let<rsq/>s experiment! In the following activecode area, try to find out these things:</p>
+  <p>Let's experiment! In the following activecode area, try to find out these things:</p>
   <p>
   <ul>
     <li>

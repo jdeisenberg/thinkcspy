@@ -24,7 +24,7 @@ wds = song.split('ai')
 print(wds)
         </input>
   </program>
-  <p>Notice that the delimiter doesn<rsq/>t appear in the result.</p>
+  <p>Notice that the delimiter doesn't appear in the result.</p>
   
   <p>
     The inverse of the <c>split</c> method is <c>join</c>.  You choose a desired <term>separator</term> string, (often called the <em>glue</em>) and join the list with the glue between each of the elements.

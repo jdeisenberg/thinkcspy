@@ -20,7 +20,7 @@ x = x + 1
   </p>
   
   <p>
-    If you try to update a variable that doesn<rsq/>t exist, you get an error, because Python evaluates the right side before it assigns a value to <c>x</c>:
+    If you try to update a variable that doesn't exist, you get an error, because Python evaluates the right side before it assigns a value to <c>x</c>:
   </p>
   <program xml:id="itr-section1_1" interactive="activecode" language="python">
     <input>
@@ -42,7 +42,7 @@ print(x)
   </program>
   
   <p>
-    When you update a variable by adding 1 it<rsq/>s called an <em>increment</em>; subtracting 1 is called a <em>decrement</em>.
+    When you update a variable by adding 1 it's called an <em>increment</em>; subtracting 1 is called a <em>decrement</em>.
   </p>
   
   <exercise id="itUpdate_fill1">

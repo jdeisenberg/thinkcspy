@@ -32,18 +32,18 @@ def average(a, b):
   <p><c>def</c> is a keyword that indicates that this is a function
             definition. The name of the function is <c>average</c>. The rules for
             function names are the same as for variable names: letters, numbers and
-            some punctuation marks are legal, but the first character can<rsq/>t be a
-            number. You can<rsq/>t use a keyword as the name of a function, and you
+            some punctuation marks are legal, but the first character can't be a
+            number. You can't use a keyword as the name of a function, and you
             should avoid having a variable and a function with the same name.</p>
           <p>In the parentheses, you specify <term>parameters</term>. Think of these as placeholders for the information that the user will provide when they call the function.  This function has two parameters, which we name <c>a</c> and <c>b</c>. </p>
 
           <note>
-            <p>You may have noticed that these names go against our <q>meaningful variable name</q> policy. That<rsq/>s because, in this case, we don<rsq/>t know what the person calling our function will be averaging. They may be two weights, two ages, two prices, two speeds, or who knows what. Because this is a generic function, we are using generic names for the parameters.</p>
+            <p>You may have noticed that these names go against our <q>meaningful variable name</q> policy. That's because, in this case, we don't know what the person calling our function will be averaging. They may be two weights, two ages, two prices, two speeds, or who knows what. Because this is a generic function, we are using generic names for the parameters.</p>
           </note>
   <p>
     The first line of the function definition is called the <term>header</term>; the rest is called the <term>body</term>. The header has to end with a colon and the body has to be indented. By convention, the indentation is always four spaces. The body can contain any number of statements.
   </p>
-          <p>The last line of the function body has the Python keyword <c>return</c>. This is followed by an expression that gives the value to be returned to the function<rsq/>s caller.
+          <p>The last line of the function body has the Python keyword <c>return</c>. This is followed by an expression that gives the value to be returned to the function's caller.
           </p>
   <exercise label="functAdd_MC_firstLine">
     <statement>
@@ -85,7 +85,7 @@ def average(a, b):
     </choices>
   </exercise>
   <p>
-    If you type a function definition in the Python shell, the interpreter prints ellipses (&#x2026;) to let you know that the definition isn<rsq/>t complete:
+    If you type a function definition in the Python shell, the interpreter prints ellipses (&#x2026;) to let you know that the definition isn't complete:
   </p>
   <program language="python">
     <input>
@@ -124,7 +124,7 @@ print("average is", avg)
       <p>
         <ol>
           <li><p>creates a function called <q>triangle_area</q>
-              that takes the base and height of a triangle as its arguments and returns the triangle<rsq/>s area</p></li>
+              that takes the base and height of a triangle as its arguments and returns the triangle's area</p></li>
           <li><p>calls that function with arguments 4.5 and 7.3</p></li>
           <li><p>prints the result of the function call</p></li>
           </ol>

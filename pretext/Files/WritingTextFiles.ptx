@@ -13,7 +13,7 @@
   </warning>
   
   <p>
-    <xref ref="files_alternative-file-reading-methods"/> shows one additional file method that we have not used thus far.  The <c>write</c> method allows us to add data to a text file.  Recall that text files contain sequences of characters.  We usually think of these character sequences as being the lines of the file where each line ends with the newline <c>\n</c> character.  Be very careful to notice that the <c>write</c> method takes one parameter, a string.  When invoked, the characters of the string will be added to the end of the file.  This means that it is the programmer<rsq/>s job to include the newline characters as part of the string if desired.
+    <xref ref="files_alternative-file-reading-methods"/> shows one additional file method that we have not used thus far.  The <c>write</c> method allows us to add data to a text file.  Recall that text files contain sequences of characters.  We usually think of these character sequences as being the lines of the file where each line ends with the newline <c>\n</c> character.  Be very careful to notice that the <c>write</c> method takes one parameter, a string.  When invoked, the characters of the string will be added to the end of the file.  This means that it is the programmer's job to include the newline characters as part of the string if desired.
     </p>
     
   <p>
@@ -28,7 +28,7 @@
     To construct the new file, we will approach the problem using a similar algorithm as before.  After opening the file, we will iterate through the lines, break each line into its parts, convert the parts that we need, and then output them to a file.
   </p>
   
-  <p>The program below solves part of the problem. We will print the output to the screen, since activecode doesn<rsq/>t play nicely with writing files.</p>
+  <p>The program below solves part of the problem. We will print the output to the screen, since activecode doesn't play nicely with writing files.</p>
   
   <program xml:id="write_file_example_1" interactive="activecode" language="python">
     <input>

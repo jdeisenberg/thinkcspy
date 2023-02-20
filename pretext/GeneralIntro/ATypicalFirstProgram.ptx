@@ -9,7 +9,7 @@
 print("Hello, World!")
 </input>
   </program>
-  <p>This is an example of using the <term>print function</term>, which doesn<rsq/>t actually
+  <p>This is an example of using the <term>print function</term>, which doesn't actually
             print anything on paper. It displays a value on the screen. In this case, the result is the phrase:</p>
   <pre>Hello, World!</pre>
   <p>Here is the example in activecode.  Give it a try!</p>
@@ -19,7 +19,7 @@ print("Hello, World!")
         </input>
   </program>
   <p>The quotation marks in the program mark the beginning and end of the value.
-            They don<rsq/>t appear in the result.</p>
+            They don't appear in the result.</p>
   <p>Some people judge the quality of a programming language by the simplicity of
             the Hello, World! program. By this standard, Python does about as well as
             possible.</p>

@@ -8,7 +8,7 @@
   <exercise xml:id="lists_pure_function_ex">
     <statement>
       <p>
-        A word is <q>vowelicious</q> if it contains four or more vowels. (If you never heard this word before, it<rsq/>s because I made it up just now for this book.) For example, <q>mountain</q> and <q>bookbinder</q> are vowelicious; <q>trailer</q> and <q>reading</q> are not.
+        A word is <q>vowelicious</q> if it contains four or more vowels. (If you never heard this word before, it's because I made it up just now for this book.) For example, <q>mountain</q> and <q>bookbinder</q> are vowelicious; <q>trailer</q> and <q>reading</q> are not.
       </p>
       
       <p>Write a program that takes a list of words and creates a new list containing only the vowelicious words. Your program should have two pure functions:</p>

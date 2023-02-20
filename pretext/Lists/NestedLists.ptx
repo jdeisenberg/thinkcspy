@@ -3,7 +3,7 @@
   <title>Nested Lists</title>
   <introduction>
     <p>
-      Let<rsq/>s say we have information about some students: their name, ID number, and their GPA (grade point average). We can use separate lists for each of these:
+      Let's say we have information about some students: their name, ID number, and their GPA (grade point average). We can use separate lists for each of these:
     </p>
     
     <program language="python">
@@ -15,7 +15,7 @@ gpa = [3.9, 3.92, 3.85, 3.76]
 </program>
       
     <p>
-      There<rsq/>s nothing wrong with this, but the data for each student really belongs together. It would be nice if we could put all the data into one list of four elements, where each element has the student name, ID, and GPA grouped together. It turns out that Python lets us do exactly that. We have already seen that lists can contain elements of different data types: <c>[47, "blah", 37.5, True]</c>. Lists are also data types, so we can have a list that contains another list. That lets us write our student information as:
+      There's nothing wrong with this, but the data for each student really belongs together. It would be nice if we could put all the data into one list of four elements, where each element has the student name, ID, and GPA grouped together. It turns out that Python lets us do exactly that. We have already seen that lists can contain elements of different data types: <c>[47, "blah", 37.5, True]</c>. Lists are also data types, so we can have a list that contains another list. That lets us write our student information as:
     </p>
         <program language="python" interactive="activecode">
     <input>
@@ -42,7 +42,7 @@ students = [["Phuong", 101345, 3.9], ["Federico", 43617, 3.92],
   <title>Accessing Sublists and Sublist Elements</title>
   
   <p>
-    Looking at our student information, how would we access Federico<rsq/>s GPA? We know that it is in the sublist at index 1 in the nested list, and the GPA is at index 2 in that sublist. We can use assignment to temporary variables:
+    Looking at our student information, how would we access Federico's GPA? We know that it is in the sublist at index 1 in the nested list, and the GPA is at index 2 in that sublist. We can use assignment to temporary variables:
   </p>
   
   <program xml:id="access_nest_element1" interactive="activecode" language="python">
@@ -91,7 +91,7 @@ print(student_tests[3][2][1]) # 89.9
 
 <subsection xml:id="nested_list_ex">
   <title>Check Your Understanding</title>
-  <p> In these exercises, the nested lists aren<rsq/>t particularly useful; they are designed to test how well you understand accessing a nested list. We<rsq/>ll return to more useful nested lists on the next page.</p>
+  <p> In these exercises, the nested lists aren't particularly useful; they are designed to test how well you understand accessing a nested list. We'll return to more useful nested lists on the next page.</p>
   <exercise label="test_question9_21_1">
     <statement>
       <p>What is printed by the following statements?</p>

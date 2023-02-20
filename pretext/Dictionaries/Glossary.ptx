@@ -16,7 +16,7 @@
     </gi>
     <gi>
       <title>mapping type</title>
-      <p>A mapping type is a data type comprised of a collection of keys and associated values. Python<rsq/>s only built-in mapping type is the dictionary.  Dictionaries implement the <url href="http://en.wikipedia.org/wiki/Associative_array" visual="http://en.wikipedia.org/wiki/Associative_array">associative array</url> abstract data type.</p>
+      <p>A mapping type is a data type comprised of a collection of keys and associated values. Python's only built-in mapping type is the dictionary.  Dictionaries implement the <url href="http://en.wikipedia.org/wiki/Associative_array" visual="http://en.wikipedia.org/wiki/Associative_array">associative array</url> abstract data type.</p>
     </gi>
   </glossary>
 </section>

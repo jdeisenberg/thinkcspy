@@ -39,7 +39,7 @@
 
         <exercise label="str_modify_strings">
           <statement>
-            <p>In Robert McCloskey<rsq/>s
+            <p>In Robert McCloskey's
                     book <em>Make Way for Ducklings</em>, the names of the ducklings are Jack, Kack, Lack,
                     Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.</p>
             <program language="python">
@@ -51,7 +51,7 @@ for p in prefixes:
     print(p + suffix)
 </input>
             </program>
-            <p>Of course, that<rsq/>s not quite right because Ouack and Quack are misspelled. Can you fix it?</p>
+            <p>Of course, that's not quite right because Ouack and Quack are misspelled. Can you fix it?</p>
           </statement>
           <program xml:id="str_modify_strings_editor" interactive="activecode" language="python">
             <input>
@@ -440,7 +440,7 @@ myTests().main()
 
         <exercise label="str_cipher_encrypt">
           <statement>
-            <p>Write a function that implements a substitution cipher.  In a substitution cipher one letter is substituted for another to garble the message.  For example A -&gt; Q, B -&gt; T, C -&gt; G etc. Your function should take two parameters: the message you want to encrypt, and a string that represents the mapping of the 26 letters in the alphabet. This mixed-up alphabet is called the <em>cipher</em>.  Your function should return a string that is the encrypted version of the message. If a character isn<rsq/>t in the alphabet, it should remain as is in the encrypted version.</p>
+            <p>Write a function that implements a substitution cipher.  In a substitution cipher one letter is substituted for another to garble the message.  For example A -&gt; Q, B -&gt; T, C -&gt; G etc. Your function should take two parameters: the message you want to encrypt, and a string that represents the mapping of the 26 letters in the alphabet. This mixed-up alphabet is called the <em>cipher</em>.  Your function should return a string that is the encrypted version of the message. If a character isn't in the alphabet, it should remain as is in the encrypted version.</p>
           </statement>
           <program xml:id="str_cipher_encrypt_editor" interactive="activecode" language="python">
             <input>

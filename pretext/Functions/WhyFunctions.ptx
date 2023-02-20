@@ -23,7 +23,7 @@
     </ul>
   </p>
   
-  <!--<p>Part of the skill of creating and using functions is to have a function properly capture an idea, so throughout the rest of the book, we will often use a function definition to explain a concept. For example, later, we will show you code that finds the smallest value in a list of values and we will present it to you as a function named <c>min</c>, which takes a list of values as its argument and returns the list<rsq/>s smallest value.</p>-->
+  <!--<p>Part of the skill of creating and using functions is to have a function properly capture an idea, so throughout the rest of the book, we will often use a function definition to explain a concept. For example, later, we will show you code that finds the smallest value in a list of values and we will present it to you as a function named <c>min</c>, which takes a list of values as its argument and returns the list's smallest value.</p>-->
   
-  <p>On the next pages, we<rsq/>ll take a closer look at the second of these reasons: to eliminate repetitive code.</p>
+  <p>On the next pages, we'll take a closer look at the second of these reasons: to eliminate repetitive code.</p>
 </section>
