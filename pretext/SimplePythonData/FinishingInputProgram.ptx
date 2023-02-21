@@ -4,7 +4,7 @@
   <p>Now that we have the final puzzle piece in place, we can write the code that lets users choose any number of seconds they like, and we will tell them how many hours, minutes, and seconds that works out to.</p>
   
   <p>Here is an activecode area with the pseudo-code in comments. Put in the Python code and test your program to see that it gives the correct results.</p>
-  
+ <exercise xml:id="ex_finish_input_program" label="ex_time_input_program"> 
   <program xml:id="finish_input_program" interactive="activecode" language="python">
     <input>
 # Use the input function to read number of seconds into str_total_seconds
@@ -49,4 +49,5 @@ seconds_finally_remaining = seconds_remaining % 60
 print(hours, "hours", minutes, "minutes and", seconds_finally_remaining, "seconds.")
 </input></program>
 </solution>
+</exercise>
 </section>

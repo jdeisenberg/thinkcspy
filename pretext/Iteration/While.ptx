@@ -13,7 +13,7 @@
     <p>
         One form of iteration in Python is the <c>while</c> statement. Here is the program for our table of squares and cubes using a <c>while</c> statement that produces the same output. Step through this program with codelens so you can see the repetition in action. 
     </p>
-<exercise>
+
     <program xml:id="codelens511" interactive="codelens" language="python">
     <input>
 n = 1
@@ -23,7 +23,6 @@ while n &lt;= 5:
 print("--------")
     </input>
 </program>
-    </exercise>
 
     <p>
         You can almost read the <c>while</c> statement as if it were English. It means, <q>While <c>n</c> is less than or equal to five, display the value of <c>n</c> , <c>n</c> squared, and <c>n</c> cubed; then increase the value of <c>n</c> by 1. When you get to 6 (which is not &lt;= 5), exit the <c>while</c> statement and display the line of dashes.</q></p>
