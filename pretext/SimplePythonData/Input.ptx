@@ -3,7 +3,7 @@
   <title>Input</title>
   <video xml:id="inputvid" youtube="2KYixkCBXSQ" width="auto"/>
   <p>
-    The program in the previous section works fine but is very limited in that it only works with one value for <c>total_secs</c>.  What if we wanted to rewrite the program so that it was more general?  One thing we could do is allow the user to enter any value they wish for the number of seconds.  The program could then print the proper result for that starting value.
+    The program in the previous section works fine, but is very limited in that it only works with one value for <c>total_secs</c>.  What if we wanted to rewrite the program so that it was more general?  One thing we could do is allow the user to enter any value they wish for the number of seconds.  The program could then print the proper result for that starting value.
   </p>
   
   <p>
@@ -17,7 +17,7 @@ your_name = input("Please enter your name: ")
   </program>
   
   <p>
-    The input function allows the user to provide a <term>prompt string</term>.  When the function is evaluated, the prompt isshown. The user of the program can enter the name and press <kbd name="enter"/> (return or ENTER on your keyboard). When this happens, the text that has been entered is returned from the <c>input</c> function, and in this case assigned to the variable <c>your_name</c>.  Make sure you run this example a number of times and try some different names in the input box that appears.
+    The input function allows the user to provide a <term>prompt string</term>.  When the function is evaluated, the prompt is shown. The user of the program can enter the name and press <kbd name="enter"/> (return or ENTER on your keyboard). When this happens, the text that has been entered is returned from the <c>input</c> function, and in this case assigned to the variable <c>your_name</c>.  Make sure you run this example a number of times and try some different names in the input box that appears.
   </p>
   
   <program xml:id="inputfun" interactive="activecode" language="python">

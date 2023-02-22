@@ -36,7 +36,7 @@ print(a, b)
         
     <subsection xml:id="simple-python-data_developing-your-mental-model-of-how-python-evaluates">
     <title>Developing your Mental Model of How Python Evaluates</title>
-    <p>It's important to start to develop a good mental model of the steps Python takes when evaluating an assignment statement.  In an assignment statement Python first evaluates the code on the right hand side of the assignment operator.  It then gives a name to whatever that is. The (very short) visualization below shows what is happening.</p>
+    <p>It's important to start to develop a good mental model of the steps Python takes when evaluating an assignment statement.  In an assignment statement, Python first evaluates the code on the right hand side of the assignment operator.  It then gives a name to whatever that is. The (very short) visualization below shows what is happening.</p>
     
     <exercise runestone="se_reassign"/>
     <p>In the first statement <title_reference>a = 5</title_reference> the literal number 5 evaluates to 5, and is given the name <title_reference>a</title_reference>.  In the second statement, the variable <title_reference>a</title_reference> evaluates to 5 and so 5 now ends up with a second name <title_reference>b</title_reference>.
@@ -44,9 +44,7 @@ print(a, b)
     <note>
       <p>In some programming languages, a different symbol is used for assignment, such as <c>&lt;-</c> or <c>:=</c>.  The intent is that this will help to avoid confusion. Python chose to use the token <c>=</c> for assignment.  This is a popular choice also found in languages like C, C++, Java, and C#.</p>
     </note>
-    <p>
-      <term>Check your understanding</term>
-    </p>
+    
     <exercise label="test_question2_9_1">
       <statement>
         <p>After the following statements, what are the values of <c>x</c> and <c>y</c>?</p>
@@ -79,9 +77,7 @@ x = 22
           <statement>
             <p><c>x</c> is 15 and <c>y</c> is 22</p>
           </statement>
-          <feedback>
-                    Look at the last assignment statement, which reassigns <c>x</c>, and not <c>y</c>.
-          </feedback>
+          <feedback>Look at the last assignment statement, which reassigns <c>x</c>, and not <c>y</c>.</feedback>
         </choice>
         <choice correct="yes">
           <statement>
