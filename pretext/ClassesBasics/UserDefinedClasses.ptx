@@ -137,7 +137,15 @@ print("Are r1 and r2 the same object?", r1 is r2)
   </p>
   
   <p>
-    The output suggests that <c>r1</c> and <c>r2</c> are <c>Rectangle</c> objects. Look at the number following <c>at</c> in the output. The numbers show the memory address for the object reference. You can see that <c>r1</c> and <c>r2</c> refer to different locations. Even though both <c>r1</c> and <c>r2</c> are instances of <c>Rectangle</c>, they aren't the same object, and the <c>is</c> operator confirms this by returning <c>False</c>.
+    The output suggests that <c>r1</c> and <c>r2</c> are <c>Rectangle</c> objects. If you run this program with a Python interpreter, the output will look like this:
+    </p>
+    
+    <pre>Nothing seems to have happened with the rectangles
+r1 is &lt;__main__.Rectangle object at 0x7f3048cd6320&gt;
+r2 is &lt;__main__.Rectangle object at 0x7f3048cd7880&gt;
+Are r1 and r2 the same object? False</pre>
+
+    <p>The number following <c>at</c> in the output shows the memory address for the object reference. You can see that <c>r1</c> and <c>r2</c> refer to different locations. Even though both <c>r1</c> and <c>r2</c> are instances of <c>Rectangle</c>, they aren't the same object, and the <c>is</c> operator confirms this by returning <c>False</c>.
   </p>
 
   <p>
