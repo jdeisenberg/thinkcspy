@@ -56,7 +56,7 @@ print(abs_val3)
 </input></program>
 
   <p>
-    Another very useful built-in function is the <c>len</c> function, which tells us how many items are in its argument. If the argument to <c>len</c>is a list, it returns the number of items in the list. If the argument to <c>len</c> is a string, it returns the number of characters in the string.
+    Another very useful built-in function is the <c>len</c> function, which tells us how many items are in its argument. If the argument to <c>len</c> is a list, it returns the number of items in the list. If the argument to <c>len</c> is a string, it returns the number of characters in the string.
   </p>
   <program xml:id="functBuiltin_len" interactive="activecode" language="python">
     <input>
