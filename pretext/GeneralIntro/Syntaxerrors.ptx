@@ -11,7 +11,7 @@
     Python can only execute a program if the program has correct syntax; otherwise, the process fails and returns an error message.  If there is a single syntax error anywhere in your program, Python will display an error message and quit.  You will not be able run your program. During the first few weeks of your programming career, you will probably spend a lot of time tracking down syntax errors. However, as you gain experience, you will make fewer errors and you will also be able to find your errors faster.
   </p>
   <p>
-   Check your understanding.
+    <em>Check your understanding.</em>
   </p>
   <exercise label="question1_6_1">
     <statement>

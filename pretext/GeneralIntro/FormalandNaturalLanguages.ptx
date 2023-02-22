@@ -56,21 +56,21 @@
             understand the general implication of this sentence.</p>
   <p>Although formal and natural languages have many features in common &#x2014; tokens,
             structure, syntax, and semantics &#x2014; there are many differences:</p>
-  <glossary sorted="False">
-    <gi>
+  <p>
+    <dl>
+    <li>
       <title>ambiguity</title>
-      <p>Natural languages are full of ambiguity, which people deal with by
-                            using contextual clues and other information. Formal languages are
-                            designed to be nearly or completely unambiguous, which means that any
-                            statement has exactly one meaning, regardless of context.</p>
-    </gi>
-    <gi>
+      <p>
+        Natural languages are full of ambiguity, which people deal with by using contextual clues and other information. Formal languages are designed to be nearly or completely unambiguous, which means that any statement has exactly one meaning, regardless of context.
+      </p>
+    </li>
+    <li>
       <title>redundancy</title>
       <p>In order to make up for ambiguity and reduce misunderstandings, natural
                             languages employ lots of redundancy. As a result, they are often
                             verbose.  Formal languages are less redundant and more concise.</p>
-    </gi>
-    <gi>
+    </li>
+    <li>
       <title>literalness</title>
       <p>Formal languages mean exactly what they say.  On the other hand,
                             natural languages are full of idiom and metaphor. If someone says, <q>The
@@ -80,41 +80,33 @@
                                 meaning of the other shoe falling.  <em>Yahoo! Answers</em> thinks it
                                 knows!</p>
       </note>
-    </gi>
-  </glossary>
-  <p>People who grow up speaking a natural language<mdash/>all of us<mdash/>often have a hard
-            time adjusting to formal languages. In some ways, the difference between formal
-            and natural language is like the difference between poetry and prose, but more
-            so:</p>
-  <glossary sorted="False">
-    <gi>
-      <title>poetry</title>
-      <p>Words are used for their sounds as well as for their meaning, and the
-                            whole poem together creates an effect or emotional response. Ambiguity
-                            is not only common but often deliberate.</p>
-    </gi>
-    <gi>
-      <title>prose</title>
-      <p>The literal meaning of words is more important, and the structure
-                            contributes more meaning. Prose is more amenable to analysis than
-                            poetry but still often ambiguous.</p>
-    </gi>
-    <gi>
-      <title>program</title>
-      <p>The meaning of a computer program is unambiguous and literal, and can
-                            be understood entirely by analysis of the tokens and structure.</p>
-    </gi>
-  </glossary>
-  <p>Here are some suggestions for reading programs (and other formal languages).
-            First, remember that formal languages are much more dense than natural
-            languages, so it takes longer to read them. Also, the structure is very
-            important, so it is usually not a good idea to read from top to bottom, left to
-            right. Instead, learn to parse the program in your head, identifying the tokens
-            and interpreting the structure.  Finally, the details matter. Little things
-            like spelling errors and bad punctuation, which you can get away with in
-            natural languages, can make a big difference in a formal language.</p>
+    </li>
+  </dl>
+</p>
   <p>
-    <term>Check your understanding</term>
+    People who grow up speaking a natural language<mdash/>all of us<mdash/>often have a hard time adjusting to formal languages. In some ways, the difference between formal and natural language is like the difference between poetry and prose, but more so:
+  </p>
+  <p><dl>
+    <li>
+      <title>poetry</title>
+      <p>Words are used for their sounds as well as for their meaning, and the whole poem together creates an effect or emotional response. Ambiguity is not only common but often deliberate.</p>
+    </li>
+    <li>
+      <title>prose</title>
+      <p>The literal meaning of words is more important, and the structure contributes more meaning. Prose is more amenable to analysis than poetry but still often ambiguous.</p>
+    </li>
+    <li>
+      <title>program</title>
+      <p>The meaning of a computer program is unambiguous and literal, and can be understood entirely by analysis of the tokens and structure.</p>
+    </li>
+    </dl></p>
+
+  <p>
+    Here are some suggestions for reading programs (and other formal languages). First, remember that formal languages are much more dense than natural languages, so it takes longer to read them. Also, the structure is very important, so it is usually not a good idea to read from top to bottom, left to right. Instead, learn to parse the program in your head, identifying the tokens and interpreting the structure.  Finally, the details matter. Little things like spelling errors and bad punctuation, which you can get away with in natural languages, can make a big difference in a formal language.
+    </p>
+    
+  <p>
+    <em>Check your understanding</em>
   </p>
   <exercise label="question1_10_1">
     <statement>
@@ -125,33 +117,25 @@
         <statement>
           <p>natural languages can be parsed while formal languages cannot.</p>
         </statement>
-        <feedback>
-                    Actually both languages can be parsed (determining the structure of the sentence), but formal languages can be parsed more easily in software.
-        </feedback>
+        <feedback>Actually both languages can be parsed (determining the structure of the sentence), but formal languages can be parsed more easily in software.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>ambiguity, redundancy, and literalness.</p>
         </statement>
-        <feedback>
-                    All of these can be present in natural languages, but cannot exist in formal languages.
-        </feedback>
+        <feedback>All of these can be present in natural languages, but cannot exist in formal languages.</feedback>
       </choice>
       <choice>
         <statement>
           <p>there are no differences between natural and formal languages.</p>
         </statement>
-        <feedback>
-                    There are several differences between the two but they are also similar.
-        </feedback>
+        <feedback>There are several differences between the two but they are also similar.</feedback>
       </choice>
       <choice>
         <statement>
           <p>tokens, structure, syntax, and semantics.</p>
         </statement>
-        <feedback>
-                    These are the similarities between the two.
-        </feedback>
+        <feedback>These are the similarities between the two.</feedback>
       </choice>
     </choices>
   </exercise>
@@ -164,17 +148,13 @@
         <statement>
           <p>True</p>
         </statement>
-        <feedback>
-                    It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.
-        </feedback>
+        <feedback>It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>False</p>
         </statement>
-        <feedback>
-                    It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.
-        </feedback>
+        <feedback>It usually takes longer to read a program because the structure is as important as the content and must be interpreted in smaller pieces for understanding.</feedback>
       </choice>
     </choices>
   </exercise>

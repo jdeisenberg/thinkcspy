@@ -63,8 +63,8 @@ print(2 + 3)
     </input>
   </program>
 
-  <p>The examples in this book use a mixture of the standard Python  interpreter, source code, activecode, and codelens.  You
-            will be able to tell which is which by looking for either the Python prompt in the case of a shell mode program, the <em>run</em> button for the activecode, or the <em>forward/backward</em> buttons for codelens.</p>
+  <p>The examples in this book use a mixture of the standard Python interpreter, source code, activecode, and codelens.  You
+            will be able to tell which is which by looking for either the Python prompt in the case of a shell mode program, the <em>run</em> button for the activecode, or the <em>Prev/Next</em> buttons for codelens.</p>
   <p>
     <term>Check your understanding</term>
   </p>
@@ -77,33 +77,25 @@ print(2 + 3)
         <statement>
           <p>save programs and reload saved programs.</p>
         </statement>
-        <feedback>
-                    You can (and should) save the contents of the activecode window.
-        </feedback>
+        <feedback>You can (and should) save the contents of the activecode window.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>type in Python source code.</p>
         </statement>
-        <feedback>
-                    You are not limited to running the examples that are already there.  Try   adding to them and creating your own.
-        </feedback>
+        <feedback>You are not limited to running the examples that are already there.  Try   adding to them and creating your own.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>execute Python code right in the text itself within the web browser.</p>
         </statement>
-        <feedback>
-                    The activecode interpreter will allow you type Python code into the textbox and then you can see it execute as the interpreter interprets and executes the source code.
-        </feedback>
+        <feedback>The activecode interpreter will allow you type Python code into the textbox and then you can see it execute as the interpreter interprets and executes the source code.</feedback>
       </choice>
       <choice>
         <statement>
           <p>receive a yes/no answer about whether your code is correct or not.</p>
         </statement>
-        <feedback>
-                    Although you can (and should) verify that your code is correct by examining its output, activecode will not directly tell you whether you have correctly implemented your program.
-        </feedback>
+        <feedback>Although you can (and should) verify that your code is correct by examining its output, activecode will not directly tell you whether you have correctly implemented your program.</feedback>
       </choice>
     </choices>
   </exercise>
@@ -116,33 +108,25 @@ print(2 + 3)
         <statement>
           <p>measure the speed of a programs's execution.</p>
         </statement>
-        <feedback>
-                    In fact, codelens steps through each line one by one as you click, which is MUCH slower than the Python interpreter.
-        </feedback>
+        <feedback>In fact, codelens steps through each line one by one as you click, which is MUCH slower than the Python interpreter.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>control the step by step execution of a program.</p>
         </statement>
-        <feedback>
-                    By using codelens, you can control the execution of a program step by step.  You can even go backwards!
-        </feedback>
+        <feedback>By using codelens, you can control the execution of a program step by step.  You can even go backwards!</feedback>
       </choice>
       <choice>
         <statement>
           <p>write and execute your own Python code.</p>
         </statement>
-        <feedback>
-                    Codelens works only for the pre-programmed examples.
-        </feedback>
+        <feedback>Codelens works only for the pre-programmed examples.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>execute the Python code that is in codelens.</p>
         </statement>
-        <feedback>
-                    By stepping forward through the Python code in codelens, you are executing the Python program.
-        </feedback>
+        <feedback>By stepping forward through the Python code in codelens, you are executing the Python program.</feedback>
       </choice>
     </choices>
   </exercise>
