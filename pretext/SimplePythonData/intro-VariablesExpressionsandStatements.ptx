@@ -2,5 +2,26 @@
 <section xml:id="simple-python-data_variables-expressions-and-statements">
   <title>Variables, Expressions and Statements</title>
   <video xml:id="typesnconvert" youtube="vNfCfowr-pQ" width="auto"/>
-  <p>There are several concepts and ideas that you need to know in order to get started learning any programming language. The goal of this chapter is to introduce you to the basic vocabulary of programming and some of the fundamental building blocks of Python.</p>
+  <p>
+    In the previous chapter, we wrote a program that puts words on the screen. This is a great starting point, but we would like to do more. For instance, we would like the computer to do calculations and manipulate data. In other words, <em>compute</em> things.
+    </p>
+    
+    <p>
+      In this chapter, you'll learn about:
+      </p>
+      
+      <p>
+        <ul>
+          <li>Values: things that the computer can manipulate, like numbers.</li>
+          <li>Data Types: how values are classified. Numbers, for example, can be classified either as integers (whole numbers) or numbers with decimal places.</li>
+          <li>Variables: names that refer to values. These make our programs more readable and versatile.</li>
+          <li>Operators: Python symbols that stand for operations like addition, subtraction, etc.</li>
+          <li>Expressions: combinations of values, variables, and operators to express some computation.</li>
+          <li>Assignment Statements: how to assign the result of an expression to a variable</li>
+          <li>Input: getting information from the user</li>
+        </ul>
+      </p>
+      
+      <p>These are some of the fundamental building blocks of Python (and almost every other programming language).</p>
+      
 </section>
