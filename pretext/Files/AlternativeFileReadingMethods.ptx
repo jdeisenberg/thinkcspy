@@ -39,30 +39,33 @@ print(file_string[:200])
 
   <table xml:id="files_filemethods2a">
     <tabular>
+      <col width="33%"/>
+      <col width="33%"/>
+      <col width="34%"/>
       <row header="yes">
         <cell><term>Method Name</term></cell>
         <cell><term>Use</term></cell>
         <cell><term>Explanation</term></cell>
       </row>
-      <row>
+      <row valign="top">
         <cell><c>write</c></cell>
         <cell><c>file_var.write(a_string)</c></cell>
-        <cell>Add <c>a_string</c> to the end of the file. <c>file_var</c> must refer to a file that has been opened for writing.</cell>
+        <cell><p>Add <c>a_string</c> to the end of the file. <c>file_var</c> must refer to a file that has been opened for writing.</p></cell>
       </row>
-      <row>
+      <row valign="top">
         <cell><c>read(n)</c></cell>
         <cell><c>file_var.read()</c></cell>
-        <cell>Reads the  entire file as a single string, or, if an integer <em>n</em> is provided as an argument, returns a string of <em>n</em> characters, or the entire file as a single string if <c>n</c> is not provided.</cell>
+        <cell><p>Reads the  entire file as a single string, or, if an integer <em>n</em> is provided as an argument, returns a string of <em>n</em> characters, or the entire file as a single string if <c>n</c> is not provided.</p></cell>
       </row>
-      <row>
+      <row valign="top">
         <cell><c>readline(n)</c></cell>
         <cell><c>file_var.readline()</c></cell>
-        <cell>Returns the next line of the file with all text up to and including the newline character. If an integer <em>n</em> is provided as an argument, then only <em>n</em> characters will be returned if the line is longer than <em>n</em> characters.</cell>
+        <cell><p>Returns the next line of the file with all text up to and including the newline character. If an integer <em>n</em> is provided as an argument, then only <em>n</em> characters will be returned if the line is longer than <em>n</em> characters.</p></cell>
       </row>
-      <row>
+      <row valign="top">
         <cell><c>readlines(n)</c></cell>
         <cell><c>file_var.readlines()</c></cell>
-        <cell>Returns a list of strings, each representing a single line of the file. If an argument <em>n</em> is not provided, then all lines of the file are returned. If <em>n</em> is provided, then <em>n</em> is rounded up so that an entire line is returned.</cell>
+        <cell><p>Returns a list of strings, each representing a single line of the file. If an argument <em>n</em> is not provided, then all lines of the file are returned. If <em>n</em> is provided, then <em>n</em> is rounded up so that an entire line is returned.</p></cell>
       </row>
     </tabular>
   </table>
