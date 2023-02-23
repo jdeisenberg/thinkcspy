@@ -8,7 +8,7 @@
       Take a look at this program that determines a rebate, based on the average amount of orders:
     </p>
     
-    <program interactive="activecode" language="python">
+    <program interactive="activecode" language="python" xml:id="cndtnlRebate">
       <input>
 n_orders = int(input("Enter number of orders: "))
 total = float(input("Enter total amount sold: "))
@@ -30,8 +30,8 @@ else:
   <p>
     The answer is that when Python processes a logical expression such as:
   </p>
-  <pre>n_orders&#160;&gt;&#160;0&#160;and&#160;total&#160;/&#160;n_orders&#160;&gt;=&#160;30.0</pre>
-  <p>Python evaluates the expression from left to right. Because of the definition of <c>and</c>, when <c>n_orders</c> is zero, the expression <c>n_orders&#160;&gt;&#160;0</c> is <c>False</c>, and so the whole expression is <c>False</c> regardless of whether <c>total&#160;/&#160;n_orders&#160;&gt;=&#160;30.0</c> evaluates to <c>True</c> or <c>False</c>.
+  <pre>n_orders &gt; 0 and total / n_orders &gt;= 30.0</pre>
+  <p>Python evaluates the expression from left to right. Because of the definition of <c>and</c>, when <c>n_orders</c> is zero, the expression <c>n_orders &gt; 0</c> is <c>False</c>. That means the whole expression is <c>False</c> regardless of whether <c>total / n_orders &gt;= 30.0</c> evaluates to <c>True</c> or <c>False</c>.
     </p>
           
   <p>
@@ -78,20 +78,20 @@ y = 0
 print(x &gt;= 2 and (x/y) &gt; 2 and y != 0)
         </input>
   </program>
-  <p>In the first logical expression, <c>x&#160;&gt;=&#160;2</c> is <c>False</c> so the evaluation stops right away. Neither <c>y&#160;!=&#160;0</c> or <c>(x&#160;/&#160;y)&#160;&gt;&#160;2</c> is evaluated.</p>
-  <p>In the second logical expression, <c>x&#160;&gt;=&#160;2</c> is <c>True</c>
-            but <c>y&#160;!=&#160;0</c> is <c>False</c>, so we never reach
-            <c>(x&#160;/&#160;y)</c>.</p>
-  <p>In the third logical expression, the <c>y&#160;!=&#160;0</c> is <em>after</em> the
-            <c>(x&#160;/&#160;y)</c> calculation ,so the expression fails with an error.</p>
-  <p>In the second expression, we say that <c>y&#160;!=&#160;0</c> acts as a
-            <em>guard</em> to insure that we only execute <c>(x&#160;/&#160;y)</c>
+  <p>In the first logical expression, <c>x &gt;= 2</c> is <c>False</c> so the evaluation stops right away. Neither <c>y != 0</c> or <c>(x / y) &gt; 2</c> is evaluated.</p>
+  <p>In the second logical expression, <c>x &gt;= 2</c> is <c>True</c>
+            but <c>y != 0</c> is <c>False</c>, so we never reach
+            <c>(x / y)</c>.</p>
+  <p>In the third logical expression, the <c>y != 0</c> is <em>after</em> the
+            <c>(x / y)</c> calculation ,so the expression fails with an error.</p>
+  <p>In the second expression, we say that <c>y != 0</c> acts as a
+            <em>guard</em> to insure that we only execute <c>(x / y)</c>
             if <c>y</c> is non-zero.</p>
           
   <exercise label="cndtnl-sc-mc-guard">
     <statement>
       <p>Q-3: Which of the following is a <em>guard</em> for the code below?</p>
-      <pre>x&#160;&gt;=&#160;2&#160;and&#160;y&#160;!=&#160;0&#160;and&#160;(x&#160;/&#160;y)&#160;&gt;&#160;2</pre>
+      <pre>x &gt;= 2 and y != 0 and (x / y) &gt; 2</pre>
     </statement>
     <choices>
       <choice>

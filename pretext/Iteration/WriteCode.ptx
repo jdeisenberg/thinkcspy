@@ -24,7 +24,7 @@ count = 3
 result_string = str(count) + " pages"
 </input></program>
 
-  <exercise>
+  <exercise label="itr-ex-countdown">
     <statement>
       <p>Fix the errors in the code below so that <c>answer</c> contains a countdown of the numbers from 10 to 0, including 0.</p>
     </statement>
@@ -61,7 +61,7 @@ print(answer)
             </solution>
   </exercise>
   
-  <exercise label="itr-ex-100Loopq">
+  <exercise label="itr-ex-100Loop">
     <statement>
       <p>The following code will loop way too many times. Change one line to
             make the loop only have five iterations.</p>
@@ -118,7 +118,7 @@ print(output)
             </solution>
   </exercise>
   
-  <exercise label="itr-ex-allValuesq">
+  <exercise label="itr-ex-allValues">
     <statement>
       <p>Finish lines 1 and 5 so that the following code correctly prints every integer from -5 to -1, including -1.</p>
     </statement>
@@ -177,10 +177,11 @@ print(x)
             </solution>
   </exercise>
   
-  <exercise>
+  <exercise label="iter-ex-inclusive">
     <statement>
-      <p>This function currently takes a start and stop argument and uses a for loop to find the sum of all the numbers between them (inclusive).
-                    Change the for loop to a while loop while still using the same parameters.</p>
+      <p>
+        This function currently takes a start and stop argument and uses a <c>for</c> loop to find the sum of all the numbers between them (inclusive). Change the <c>for</c> loop to a <c>while</c> loop while still using the same parameters.
+      </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="int-ex-inclusiveq_editor">
       <input>

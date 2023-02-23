@@ -4,10 +4,9 @@
   <introduction>
   <p>This section goes in depth about how logical operators work. If you read this and find it confusing, feel free to skip this page and move on to the next section. After you have worked with logical operators for a while, you might want to return to this section to get <q>the rest of the story.</q></p>
   
-<p>When trying to show how logical operators work, computer scientists and mathematicians will use
-            <term>truth tables</term>. A truth table is a small table that lists all possible inputs on its left columns and
-            then will display the output of its particular logical operator in the right column. Take the logical
-            operator <c>and</c>, for example:</p>
+  <p>
+    When trying to show how logical operators work, computer scientists and mathematicians will use <term>truth tables</term>. A truth table is a small table that lists all possible inputs on its left columns and then will display the output of its particular logical operator in the right column. Take the logical operator <c>and</c>, for example:
+  </p>
   <table>
     <tabular>
       <row header="yes" halign="center">
@@ -46,9 +45,9 @@
     </tabular>
   </table>
   
-  <p>The <em>T</em> in the table stands for <c>True</c> while the <em>F</em> stands for <c>False</c>. Notice that when <term>a</term> and <term>b</term>
-            are both <c>True</c>, the logcial operator <c>and</c> outputs <c>True</c>. This is exactly how
-            we normally use <q>and</q> in everyday conversation. Here are the rest of the operators:</p>
+  <p>
+    The <em>T</em> in the table stands for <c>True</c> while the <em>F</em> stands for <c>False</c>. Notice that when <term>a</term> and <term>b</term> are both <c>True</c>, the logcial operator <c>and</c> outputs <c>True</c>. This is exactly how we normally use <q>and</q> in everyday conversation. Here are the rest of the operators:
+  </p>
             
   <table>
     <tabular>
@@ -126,7 +125,7 @@
   <p>Let's check your understanding of these topics:</p>
   </introduction>
   
-  <exercise label="test_question6_2_1">
+  <exercise label="adv_logical_op_1">
     <statement>
       <p>What is a correct Python expression for checking to see if a number stored in a variable <c>x</c> is between 0 and 5?</p>
     </statement>
@@ -135,30 +134,24 @@
         <statement>
           <p><c>x &gt; 0 and &lt; 5</c></p>
         </statement>
-        <feedback>
-                    Each comparison must be between exactly two values.  In this case the right-hand expression <c>&lt; 5</c> lacks a value on its left.
-                </feedback>
+        <feedback>Each comparison must be between exactly two values.  In this case the right-hand expression <c>&lt; 5</c> lacks a value on its left.</feedback>
       </choice>
       <choice>
         <statement>
           <p><c>x &gt; 0 or x &lt; 5</c></p>
         </statement>
-        <feedback>
-                    Although this is legal Python syntax, the expression is incorrect.  It will evaluate to true for all numbers that are either greater than 0 or less than 5.  Because all numbers are either greater than 0 or less than 5, this expression will always be <c>True</c>.
-                </feedback>
+        <feedback>Although this is legal Python syntax, the expression is incorrect.  It will evaluate to true for all numbers that are either greater than 0 or less than 5.  Because all numbers are either greater than 0 or less than 5, this expression will always be <c>True</c>.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>x &gt; 0 and x &lt; 5</p>
         </statement>
-        <feedback>
-                    Yes, with an <c>and</c> keyword both expressions must be <c>True</c> so the number must be greater than 0 an less than 5 for this expression to be true. Although most other programming languages do not allow this mathematical syntax, in Python, you could also write <c>0 &lt; x &lt; 5</c>.
-                </feedback>
+        <feedback>Yes, with an <c>and</c> keyword both expressions must be <c>True</c> so the number must be greater than 0 an less than 5 for this expression to be true. Although most other programming languages do not allow this mathematical syntax, in Python, you could also write <c>0 &lt; x &lt; 5</c>.</feedback>
       </choice>
     </choices>
   </exercise>
   
-  <exercise label="test_question6_2_2">
+  <exercise label="adv_logical_op_2">
     <statement>
       <p>Say you are registering for next semester's classes. You have choice A, which is your art class, and choice B, which is your math class. You need both of them, but it's a race between time and luck.
             If you end up registering on time for choice A, but you don't get your choice B, which logical operators would be true?</p>
@@ -168,33 +161,25 @@
         <statement>
           <p>A and B</p>
         </statement>
-        <feedback>
-            Both A and B need to be True in order for this to be True.
-        </feedback>
+        <feedback>Both A and B need to be True in order for this to be True.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>A or B</p>
         </statement>
-        <feedback>
-              Either A or B need to be True in order for this to be True.
-        </feedback>
+        <feedback>Either A or B need to be True in order for this to be True.</feedback>
       </choice>
       <choice>
         <statement>
           <p>not A</p>
         </statement>
-        <feedback>
-              A needs to be False in order for this to be True.
-        </feedback>
+        <feedback>A needs to be False in order for this to be True.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>not B</p>
         </statement>
-        <feedback>
-            B needs to be False in order for this to be True.
-        </feedback>
+        <feedback>B needs to be False in order for this to be True.</feedback>
       </choice>
     </choices>
   </exercise>
@@ -202,7 +187,10 @@
   
   <subsection xml:id="conditionals_logical-opposites">
     <title>Logical Opposites</title>
-    <p>Each of the six relational operators has a logical opposite: for example, suppose we can get a driving licence when our age is greater or equal to 17, we can <em>not</em> get the driving licence when we are less than 17.</p>
+    <p>
+      Each of the six relational operators has a logical opposite: for example, suppose we can get a driving licence when our age is greater or equal to 17, we can <em>not</em> get the driving licence when we are less than 17.
+    </p>
+    
     <table>
       <tabular>
         <row header="yes">
@@ -267,15 +255,21 @@
       </tabular>
     </table>
     
-    <p>Understanding these logical opposites allows us to sometimes get rid of <c>not</c> operators. <c>not</c> operators are often quite difficult to read in computer code, and our intentions will usually be clearer if we can eliminate them.</p>
+    <p>
+      Understanding these logical opposites allows us to sometimes get rid of <c>not</c> operators. <c>not</c> operators are often quite difficult to read in computer code, and our intentions will usually be clearer if we can eliminate them.
+    </p>
+    
     <p>For example, if we wrote this Python:</p>
+    
     <program language="python">
       <input>
 if not (age &gt;= 17):
    print("Hey, you're too young to get a driving licence!")
 </input>
     </program>
+    
     <p>it would probably be clearer to use the logical opposite of the <c>&gt;=</c> operator instead:</p>
+    
     <program language="python">
       <input>
 if age &lt; 17:
@@ -283,6 +277,7 @@ if age &lt; 17:
 </input>
     </program>
 </subsection>
+
 <subsection xml:id="conditionals_de-morgan-laws">
     <title>The deMorgan Laws</title>
     <p>Two powerful simplification laws (called de Morgan's laws) that are often helpful when dealing with complicated Boolean expressions are:</p>
@@ -292,7 +287,11 @@ not (x and y)  ==  (not x) or (not y)
 not (x or y)   ==  (not x) and (not y)
 </input>
     </program>
-    <p>For example, suppose you want to update your phone; however, your phone will only update if it has at least 50% battery life and 15% of its storage available. As we look at the Python code for this, we see:</p>
+    
+    <p>
+      For example, suppose you want to update your phone; however, your phone will only update if it has at least 50% battery life and 15% of its storage available. As we look at the Python code for this, we see:
+    </p>
+    
     <program language="python">
       <input>
 if not ((phone_charge &gt;= 0.50) and (phone_storage &gt;= .15)):
@@ -302,7 +301,9 @@ else:
    print("Updating now...Several restarts may be required.")
 </input>
     </program>
+    
     <p>Applying rules of logical opposites would let us rework the condition in a (perhaps) easier to understand way like this:</p>
+    
     <program language="python">
       <input>
 if (phone_charge &lt; 0.50) or (phone_storage &lt; .15):
@@ -314,7 +315,8 @@ else:
     </program>
     
     
-    <p>We could also get rid of the <c>not</c> by swapping around the <c>then</c> and <c>else</c> parts of the conditional. So here is a third version, also equivalent:</p>
+    <p>
+      We could also get rid of the <c>not</c> by swapping around the <c>then</c> and <c>else</c> parts of the conditional. So here is a third version, also equivalent: </p>
     <program language="python">
       <input>
 if (phone_charge &gt;= 0.50) and (phone_storage &gt;= .15):
@@ -325,8 +327,12 @@ else:
 </input>
     </program>
     
-    <p>This version is probably the best of the three, because it very closely matches the initial English statement. Clarity of our code (for other humans), and making it easy to see that the code does what was expected should always be a high priority.</p>
+    <p>
+      This version is probably the best of the three, because it very closely matches the initial English statement. Clarity of our code (for other humans), and making it easy to see that the code does what was expected should always be a high priority.
+    </p>
     
-    <p>As our programming skills develop we will find we have more than one way to solve any problem. So good programs are <em>designed</em>. We make choices that favour clarity, simplicity, and elegance. The job title <em>software architect</em> says a lot about what we do<mdash/>we are <em>architects</em> who engineer our products to balance beauty, functionality, simplicity and clarity in our creations.</p>
+    <p>
+      As our programming skills develop we will find we have more than one way to solve any problem. So good programs are <em>designed</em>. We make choices that favour clarity, simplicity, and elegance. The job title <em>software architect</em> says a lot about what we do<mdash/>we are <em>architects</em> who engineer our products to balance beauty, functionality, simplicity and clarity in our creations.
+    </p>
     </subsection>
 </section>

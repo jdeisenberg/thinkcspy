@@ -153,7 +153,7 @@ print('Total: ', total)
     <p>
       However, in statistics, we often need to find the sum of the <em>squares</em> of a list of numbers. For example, the sum of squares of the numbers 3, 7, 5, and 4 is <m>3^2 + 7^2 + 5^2 + 4^2</m>, and there is no readily built-in function to handle that.</p>
     
-    <exercise label="itLoops_sumsq">
+    <exercise label="loops_sumsq">
       <statement>
         <p>Write a program that will calculate the sum of squares of the list <c>[3, 7, 5, 4]</c>. Instead of <c>total</c>, you might want to name your accumulator <c>sum_of_squares</c>.</p>
       </statement>
@@ -176,7 +176,7 @@ print("The sum of squares is", sum_of_squares)
   <subsection xml:id="iterations_maximum-and-minimum-loops">
     <title>Maximum and Minimum Loops</title>
     <p>To find the largest value in a list or sequence, we construct the following loop:</p>
-    <program xml:id="itr-section6_1" interactive="activecode" language="python">
+    <program xml:id="loop-find-max" interactive="activecode" language="python">
       <input>
 largest = None
 print('Before:', largest)
@@ -198,7 +198,7 @@ itervar is 15 largest is 74
 Largest: 74</pre>
     <p>The variable <c>largest</c> is best thought of as <q>the largest value we have seen so far.</q> Before the loop, we set <c>largest</c> to the constant <c>None</c>. <c>None</c> is a special constant value which we can store in a variable to mark the variable as <q>empty</q>.</p>
     
-    <exercise label="inLoops_MC_none_v2">
+    <exercise label="loops_none_v2">
       <statement>
         <p>Q-6: Which of the following is <em>not</em> true about <c>None</c>?</p>
       </statement>
@@ -250,7 +250,7 @@ Largest: 74</pre>
     </p>
     
     <p>To compute the smallest number, the code is very similar with one small change:</p>
-    <program xml:id="itr-section6_2" interactive="activecode" language="python">
+    <program xml:id="loop-find-min" interactive="activecode" language="python">
       <input>
 smallest = None
 print('Before:', smallest)

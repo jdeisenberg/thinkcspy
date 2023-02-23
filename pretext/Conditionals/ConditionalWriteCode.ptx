@@ -2,7 +2,7 @@
 <exercises xml:id="conditionals_write-code-questions">
   <title>Write Code Questions</title>
 
-        <exercise>
+        <exercise label="cndtnl-wc-fivea">
           <statement>
             <p>Fix the errors in the code, and change it to use only <em>one</em> <c>if</c> statement. The code should print
                             <q>The number is 5</q> when the number is 5, and should print <q>The number is NOT 5</q> when it is not.</p>
@@ -42,7 +42,7 @@ if x
           </program>
         </exercise>
 
-        <exercise>
+        <exercise label="cndtnl-wc-payq">
           <statement>
             <p>Complete the pay computation as follows: When the employee works less than or equal to 40 hours a week, pay them $10 per hour. Otherwise, pay them $10 and hour for the first 40 hours and 1.5 times the hourly rate for hours worked above 40 hours. Then set <c>grossPay</c> equal to the  amount an employee would be paid for working 45 hours.</p>
           </statement>
@@ -93,7 +93,7 @@ print(grossPay)
         </exercise>
 
         
-        <exercise>
+        <exercise label="cndtnl-wc-distanceq">
           <statement>
             <p>Write the code to calculate and print the cost of a 14 mile cab ride. If the distance traveled is less than or equal to 5 miles the cost is $2.00 a mile. If the distance is greeater than 5 but less than or equal to 12 miles, the cost is $1.50, and if the distance traveled is more than 12 miles the cost is $1.25 a mile. Assign the final cost to the variable <c>total</c>. (Your code should work for any mileage, not just for 14 miles.)</p>
           </statement>

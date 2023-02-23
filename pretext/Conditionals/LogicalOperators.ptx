@@ -3,26 +3,43 @@
   <title>Logical operators</title>
     <introduction>
       <title>Combining Conditions</title>
-      <p>Remember that question we had in <xref ref="conditionals_boolean-values-and-boolean-expressions"/>: <q>Is the amount we want to withdraw from a bank account less than or equal than the account balance?</q> It turns out we have to also make sure that the customer isn't trying to take out a negative amount.  The question we <em>really</em> need to ask is:</p>
-      <p><q>Is the amount we want to withdraw from a bank account greater than or equal to zero <em>and</em> is it less than or equal to the balance?</q></p>
-      <p>If both of these things are true, the customer gets their money; otherwise, can't let them do the transaction.</p>
+      <p>
+        Remember that question we had in <xref ref="conditionals_boolean-values-and-boolean-expressions"/>: <q>Is the amount we want to withdraw from a bank account less than or equal than the account balance?</q> It turns out we have to also make sure that the customer isn't trying to take out a negative amount.  The question we <em>really</em> need to ask is:
+      </p>
+      
+      <p>
+        <q>Is the amount we want to withdraw from a bank account greater than or equal to zero <em>and</em> is it less than or equal to the balance?</q>
+      </p>
+      
+      <p>
+        If both of these things are true, the customer gets their money; otherwise, we can't let them do the transaction.
+      </p>
+      
       <p>Here are other questions that combine two conditions:</p>
+      
       <p>
         <ul>
           <li>Is the age greater than or equal to 18 and less than 21?</li>
           <li>Did the roll of two dice add up to either 7 or 11?</li>
         </ul>
       </p>
+      
       <p>We use <term>logical operators</term> to ask these sorts of questions in Python.</p>
             
   
-  <p>Python has three logical operators: <c>and</c>, <c>or</c>, and <c>not</c>. The semantics (meaning) of these operators is similar to their meaning in English. For example, <c>x &gt; 0 and x &lt; 10</c> is True only if <c>x</c> is greater than 0 <em>and</em> at the same time, <c>x</c> is less than 10.  How would you describe this in words?  You would say that <c>x</c> is between 0 and 10, not including the endpoints.</p>
+  <p>
+    Python has three logical operators: <c>and</c>, <c>or</c>, and <c>not</c>. The semantics (meaning) of these operators is similar to their meaning in English. For example, <c>x &gt; 0 and x &lt; 10</c> is True only if <c>x</c> is greater than 0 <em>and</em> at the same time, <c>x</c> is less than 10.  How would you describe this in words?  You would say that <c>x</c> is between 0 and 10, not including the endpoints.
+  </p>
   
-  <p><c>n % 2 == 0 or n % 3 == 0</c> is True if <em>either</em> of the conditions is True, that is, if the number is divisible by 2 <em>or</em> divisible by 3.  In this case, one, or the other, or both of the parts has to be true for the result to be true.</p>
+  <p>
+    <c>n % 2 == 0 or n % 3 == 0</c> is True if <em>either</em> of the conditions is True, that is, if the number is divisible by 2 <em>or</em> divisible by 3.  In this case, one, or the other, or both of the parts has to be true for the result to be true.
+  </p>
   
-  <p>Finally, the <c>not</c> operator negates a boolean expression, so <c>not  x &gt; y</c> is true if <c>x &gt; y</c> is false, that is, if <c>x</c> is less than or equal to <c>y</c>.</p>
+  <p>
+    Finally, the <c>not</c> operator negates a boolean expression, so <c>not  x &gt; y</c> is true if <c>x &gt; y</c> is false, that is, if <c>x</c> is less than or equal to <c>y</c>.
+  </p>
   
-  <program xml:id="chp05_3" interactive="activecode" language="python">
+  <program xml:id="logical_op_example" interactive="activecode" language="python">
     <input>
 x = 5
 print(x &gt; 0 and x &lt; 10)
@@ -34,7 +51,9 @@ print(n % 2 == 0 or n % 3 == 0)
   
   <note>
     <title>WARNING!</title>
-    <p>There is a very common mistake that occurs when programmers try to write boolean expressions.  For example, what if we have a variable <c>number</c> and we want to check to see if its value is 5, 6, or 7.  In words we might say: <q>number equal to 5 or 6 or 7</q>.  However, if we translate this into Python, <c>number == 5 or 6 or 7</c>, it will not be correct.  The <c>or</c> operator must join the results of three equality checks.  The correct way to write this is <c>number == 5 or number == 6 or number == 7</c>.  This may seem like a lot of typing, but it is absolutely necessary.  You cannot take a shortcut.</p>
+    <p>
+      There is a very common mistake that occurs when programmers try to write boolean expressions.  For example, what if we have a variable <c>number</c> and we want to check to see if its value is 5, 6, or 7.  In words we might say: <q>number equal to 5 or 6 or 7</q>.  However, if we translate this into Python, <c>number == 5 or 6 or 7</c>, it will not be correct.  The <c>or</c> operator must join the results of three equality checks.  The correct way to write this is <c>number == 5 or number == 6 or number == 7</c>.  This may seem like a lot of typing, but it is absolutely necessary.  You cannot take a shortcut.
+    </p>
   </note>
 </introduction>
 

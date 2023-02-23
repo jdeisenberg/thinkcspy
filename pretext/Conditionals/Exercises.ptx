@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="conditionals_exercises">
   <title>Exercises</title>
-  <exercise label="ex_6_1">
+  <exercise label="cndtnl-eval-1">
     <statement>
       <p>What do these expressions evaluate to?</p>
       <p>
@@ -171,7 +171,7 @@ print(x)</pre>
     </choices>
   </exercise>
 
-    <exercise label="conditionals_mcqs_q1">
+    <exercise label="cndtnl-if-header">
     <statement>
       <p>Q-1: Which of following uses the correct syntax for the header of a Python <c>if</c> statement?</p>
     </statement>
@@ -219,7 +219,7 @@ print(x)</pre>
     </choices>
   </exercise>
   
-    <exercise label="functions_conditionals_mcqs_q2">
+    <exercise label="cndtnl-compound-expr">
     <statement>
       <p>Q-2: Which of the following tests if <c>5 exponentiated to the 4th power</c> is greater than <c>y</c> and less than or equal to <c>z</c>?</p>
     </statement>
@@ -267,7 +267,7 @@ print(x)</pre>
     </choices>
   </exercise>
   
-  <exercise label="ex_6_2">
+  <exercise label="cndtnl-demorgan">
     <statement>
       <p>Give the <term>logical opposites</term> of these conditions.  You are not allowed to use the <c>not</c> operator. (This exercise requires the material from <xref ref="conditionals_de-morgan-laws"/>)</p>
       <p>
@@ -312,7 +312,7 @@ print(x)</pre>
     </solution>
   </exercise>
   
-  <exercise label="ex_6_3">
+  <exercise label="cndtnl-chain">
     <statement>
       <p>Write code which, given an exam mark, sets a string to the grade for that mark according to this scheme:</p>
       <table>
@@ -343,9 +343,12 @@ print(x)</pre>
           </row>
         </tabular>
       </table>
-      <p>The square and round brackets denote closed and open intervals.
-                        A closed interval includes the number, and open interval excludes it.  So 79.99999 gets grade C , but 80 gets grade B.</p>
-      <p>Test your function by printing the grade for a number of different scores.</p>
+      <p>
+        The square bracket and parenthesis denote closed and open intervals. A closed interval includes the number, and open interval excludes it.  So 79.99999 gets grade C , but 80 gets grade B.
+      </p>
+      <p>
+        Test your function by printing the grade for a number of different scores.
+      </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_if_grades_editor">
       <input>
@@ -430,7 +433,7 @@ year = int(input("Enter the year: "))
     </program>
   </exercise>
   
-  <exercise label="ex_6_13">
+  <exercise label="cndtnl-easter">
     <statement>
       <p>Implement the calculator for the date of Easter.</p>
       <p>The following algorithm computes the date for Easter Sunday for any year between 1900 to 2099.</p>
@@ -461,12 +464,12 @@ year = int(input("Enter the year: "))
       <p>If the year is one of four special years (1954, 1981, 2049, or 2076) then subtract 7 from the date.</p>
       <p>Your program should print an error message if the user provides a date that is out of range.</p>
     </statement>
-    <program interactive="activecode" language="python" xml:id="ex_6_13_editor">
+    <program interactive="activecode" language="python" xml:id="cndtnl-easter_editor">
       <input>
       </input>
     </program>
     <solution>
-      <program xml:id="answer_ex_6_13" language="python">
+      <program xml:id="cndtnl-easter_solution" language="python">
         <input>
 year = int(input("Please enter a year"))
 if year &gt;= 1900 and year &lt;= 2099:

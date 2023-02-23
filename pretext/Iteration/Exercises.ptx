@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <exercises xml:id="iterations_multiple-choice-questions">
   <title>Multiple Choice Questions</title>
-  <exercise label="e5mc1">
+  <exercise label="loop_mc1">
     <statement>
       <p>What is the result of executing the following code?</p>
       <pre>number = 5
@@ -46,7 +46,7 @@ while number &lt;= 5:
     </choices>
   </exercise>
   
-  <exercise label="e5mc2">
+  <exercise label="loop_mc2">
     <statement>
       <p>What will the following code print?</p>
       <pre>counter = 1
@@ -92,7 +92,7 @@ print(sum)</pre>
     </choices>
   </exercise>
   
-  <exercise label="e5mc3">
+  <exercise label="loop_mc3">
     <statement>
       <p>What will be printed by the following code when it executes?</p>
       <pre>sum = 0
@@ -136,7 +136,8 @@ print(sum)</pre>
       </choice>
     </choices>
   </exercise>
-  <exercise label="e5mc4">
+  
+  <exercise label="loop_mc4">
     <statement>
       <p>What is the last thing printed when the following code is run?</p>
       <pre>number = 0
@@ -180,7 +181,7 @@ while number &lt;= 10:
     </choices>
     
   </exercise>
-  <exercise label="e5mc5">
+  <exercise label="loop_mc5">
     <statement>
       <p>What does the following code print?</p>
       <pre>output = ""
@@ -226,7 +227,7 @@ print(output)</pre>
     </choices>
   </exercise>
   
-  <exercise label="e5mc6">
+  <exercise label="loop_mc6">
     <statement>
       <p>What are the values of <c>var1</c> and <c>var2</c> that are printed when the following code executes?</p>
       <pre>output = ""
@@ -326,7 +327,7 @@ print("var1:", var1, "var2:" var2)</pre>
   </exercise>
   -->
   
-  <exercise label="e5mc8">
+  <exercise label="loop_infinite">
     <statement>
       <p>The following code contains an infinite loop.  Which is the best explanation for why the loop does not terminate?</p>
       <program language="python">
@@ -460,7 +461,7 @@ for letter in 'Python':
   </exercise>
   -->
   
-  <exercise label="e5mc12">
+  <exercise label="loop_add">
     <statement>
       <p>Which of the following will add up the numbers from 1 to 4?</p>
       <p>

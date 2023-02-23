@@ -2,15 +2,17 @@
 <section xml:id="conditionals_omitting-the-else-clause-unary-selection">
   <title>Omitting the <title_reference>else</title_reference> Clause: Unary Selection</title>
   <video xml:id="unaryselection" youtube="Fd4a8ktQURc" width="auto"/>
+  
+  <p>
+    Another form of the <c>if</c> statement is one in which the <c>else</c> clause is omitted entirely. This creates what is sometimes called <term>unary selection</term>. In this case, when the condition evaluates to <c>True</c>, the statements are executed.  Otherwise the flow of execution continues to the statement after the body of the <c>if</c>. Here is what the flowchart looks like:
+  </p>
+
   <sidebar>
     <title>Flowchart of an <term>if</term> with no <term>else</term></title>
     <image source="Conditionals/Figures/flowchart_if_only" width="50%"/>
   </sidebar>
-  <p>Another form of the <c>if</c> statement is one in which the <c>else</c> clause is omitted entirely.
-            This creates what is sometimes called <term>unary selection</term>.
-            In this case, when the condition evaluates to <c>True</c>, the statements are
-            executed.  Otherwise the flow of execution continues to the statement after the body of the <c>if</c>.</p>
-  <program xml:id="ch05_unaryselection" interactive="activecode" language="python">
+  
+  <program xml:id="conditionals_unaryselection" interactive="activecode" language="python">
     <input>
 x = 10
 if x &lt; 0:
@@ -18,15 +20,14 @@ if x &lt; 0:
 print("This is always printed")
         </input>
   </program>
+  
   <p>What would be printed if the value of <c>x</c> is negative?  Try it.</p>
   
   <note>
     <p>This form of <c>if</c> statement is much less common than the <c>if</c>-<c>else</c> statement you learned about in <xref ref="conditionals_conditional-execution-binary-selection"/>.</p>
   </note>
-  <p>
-    <term>Check your understanding</term>
-  </p>
-  <exercise label="test_question6_5_1">
+ 
+  <exercise label="unary_if_1">
     <statement>
       <p>What does the following code print?</p>
       <program language="python">
@@ -52,38 +53,30 @@ The negative number -10 is not valid here</pre>
         <statement>
           <p>Output a</p>
         </statement>
-        <feedback>
-          Because -10 is less than 0, Python will execute the body of the <c>if</c> statement here.
-                </feedback>
+        <feedback>Because -10 is less than 0, Python will execute the body of the <c>if</c> statement here.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Output b</p>
         </statement>
-        <feedback>
-                    Python executes the body of the <c>if</c> block as well as the statement that follows the <c>if</c> block.
-                </feedback>
+        <feedback>Python executes the body of the <c>if</c> block as well as the statement that follows the <c>if</c> block.</feedback>
       </choice>
       <choice>
         <statement>
           <p>Output c</p>
         </statement>
-        <feedback>
-          Python will also execute the statement that follows the <c>if</c> block because it is not enclosed in an <c>else</c> block, but rather just a normal statement.
-                </feedback>
+        <feedback>Python will also execute the statement that follows the <c>if</c> block because it is not enclosed in an <c>else</c> block, but rather just a normal statement.</feedback>
       </choice>
       <choice>
         <statement>
           <p>It will cause an error because every <c>if</c> must have an <c>else</c> clause.</p>
         </statement>
-        <feedback>
-          It is valid to have an <c>if</c> block without a corresponding <c>else</c> block (though you cannot have an <c>else</c> block without a corresponding <c>if</c> block).
-                </feedback>
+        <feedback>It is valid to have an <c>if</c> block without a corresponding <c>else</c> block (though you cannot have an <c>else</c> block without a corresponding <c>if</c> block).</feedback>
       </choice>
     </choices>
   </exercise>
   
-  <exercise label="test_question6_5_2">
+  <exercise label="unary_if_2">
     <statement>
       <p>Will the following code cause an error?</p>
       <program language="python">
@@ -103,17 +96,13 @@ else:
         <statement>
           <p>No</p>
         </statement>
-        <feedback>
-          Every <c>if</c> block must have exactly one corresponding  <c>else</c> block.  You will see how to make a chain of conditions in a later section.
-                </feedback>
+        <feedback>Every <c>if</c> block must have exactly one corresponding  <c>else</c> block. You will see how to make a chain of conditions in a later section.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>Yes</p>
         </statement>
-        <feedback>
-          This will cause an error because the second <c>else</c> block is not attached to a corresponding <c>if</c> block.
-                </feedback>
+        <feedback>This will cause an error because the second <c>else</c> block is not attached to a corresponding <c>if</c> block.</feedback>
       </choice>
     </choices>
   </exercise>

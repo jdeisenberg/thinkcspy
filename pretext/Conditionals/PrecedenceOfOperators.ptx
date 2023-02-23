@@ -1,16 +1,26 @@
 <?xml version="1.0"?>
 <section xml:id="conditionals_precedence-of-operators">
   <title>Precedence of Operators</title>
-  <p>We have now added a number of additional operators to those we learned in the previous chapters.  It is important to understand how these operators relate to the others with respect to operator precedence.  Python will always evaluate the arithmetic operators first (** is highest, then multiplication/division, then addition/subtraction).  Next come the relational operators.  Finally, the logical operators are done last.  This means that the expression <c>x * 5 &gt;= 10 and y - 6 &lt;= 20</c> will be evaluated so as to first perform the arithmetic and then check the relationships.  The <c>and</c> will be done last.  Although many programmers might place parentheses around the two relational expressions, it is not necessary.</p>
+  <p>
+    We have now added a number of additional operators to those we learned in the previous chapters.  It is important to understand how these operators relate to the others with respect to operator precedence.
+  </p>
+    
+  <p>
+    Python will always evaluate the arithmetic operators first (** is highest, then multiplication/division, then addition/subtraction).  Next come the relational operators.  Finally, the logical operators are done last.  This means that the expression <c>x * 5 &gt;= 10 and y - 6 &lt;= 20</c> will be evaluated so as to first perform the arithmetic and then check the relationships.  The <c>and</c> will be done last.  Although many programmers might place parentheses around the two relational expressions, it is not necessary.
+  </p>
   
-  <p>That having been said, <em>when in doubt, use parentheses</em>. In fact, even when you <em>aren't</em> in doubt, use parentheses!!! For example, quick<mdash/>without looking at the table of priorities<mdash/>which logical operations happen in which order in this boolean expression?</p>
+  <p>
+    That having been said, <em>when in doubt, use parentheses</em>. In fact, even when you <em>aren't</em> in doubt, use parentheses!!! For example, quick<mdash/>without looking at the table of priorities<mdash/>which logical operations happen in which order in this boolean expression?
+  </p>
   
   <p><c>age &lt; 21 or day == 6 and hour &gt; 15 and not month &lt; 6 or month &gt; 9</c></p>
   
   <p>Without parentheses, this is totally confusing, even to people who have memorized the precedence table.</p>
   
-  <p>If you ever encounter code like the preceding monstrosity, you'll need the following table to help you untangle the mess. The table summarizes the precedence discussed so far from highest to lowest.
-            See <xref ref="appendices_operator-precedence-table"/> for <em>all</em> the operators introduced in this book.</p>
+  <p>
+    If you ever encounter code like the preceding monstrosity, you'll need the following table to help you untangle the mess. The table summarizes the precedence discussed so far from highest to lowest. See <xref ref="appendices_operator-precedence-table"/> for <em>all</em> the operators introduced in this book.
+  </p>
+  
   <table>
     <tabular>
       <row header="yes">
@@ -55,6 +65,7 @@
       </row>
     </tabular>
   </table>
+  
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_06_01" interactive="activecode" language="python">
@@ -65,10 +76,8 @@
     </program>
   </note>
   
-  <p>
-    <term>Check your understanding</term>
-  </p>
-  <exercise label="test_question6_3_1">
+ 
+  <exercise label="op_precedence_1">
     <statement>
       <p>Which of the following properly expresses the precedence of operators (using parentheses) in the following expression:
         <c>5 * 3 &gt; 10 and 4 + 6 == 11</c></p>
@@ -78,36 +87,30 @@
         <statement>
           <p><c>((5 * 3) &gt; 10) and ((4 + 6) == 11)</c></p>
         </statement>
-        <feedback>
-                    Yes, * and + have higher precedence, followed by &gt; and ==, and then the keyword "and"
-                </feedback>
+        <feedback>Yes, * and + have higher precedence, followed by &gt; and ==, and then the keyword "and"</feedback>
       </choice>
       <choice>
         <statement>
           <p><c>(5 * (3 &gt; 10)) and (4 + (6 == 11))</c></p>
         </statement>
-        <feedback>
-                    Arithmetic operators (*, +) have higher precedence than comparison operators (&gt;, ==)
-                </feedback>
+        <feedback>Arithmetic operators (*, +) have higher precedence than comparison operators (&gt;, ==)</feedback>
       </choice>
       <choice>
         <statement>
           <p><c>((((5 * 3) &gt; 10) and 4) + 6) == 11</c></p>
         </statement>
-        <feedback>
-                    This grouping assumes Python simply evaluates from left to right, which is incorrect.  It follows the precedence listed in the table in this section.
-                </feedback>
+        <feedback>This grouping assumes Python simply evaluates from left to right, which is incorrect.  It follows the precedence listed in the table in this section.</feedback>
       </choice>
       <choice>
         <statement>
           <p><c>((5 * 3) &gt; (10 and (4 + 6))) == 11</c></p>
         </statement>
-        <feedback>
-          This grouping assumes that <c>and</c> has a higher precedence than <c>==</c>, which is not the case.
-                </feedback>
+        <feedback>This grouping assumes that <c>and</c> has a higher precedence than <c>==</c>, which is not the case.</feedback>
       </choice>
     </choices>
   </exercise>
-  <p>Here is an animation for the above expression:</p>
+  
+  <p>Here is an animation for the preceding expression:</p>
+  
   <exercise runestone="se_tq631"/>
 </section>

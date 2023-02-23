@@ -143,7 +143,7 @@ while (y &gt; 2 and x &lt; y):
     
     <p>If you had difficulty with the preceding question, here's the program as activecode. We have added a <c>print</c> statement so you can see the values of <c>x</c> and <c>y</c> at each iteration. You might also want to use codelens to see the values of <c>x</c> and <c>y</c> step by step.</p>
     
-    <program interactive="activecode" language="python">
+    <program interactive="activecode" language="python" xml:id="iteration-while3">
 <input>
 x = 2
 y = 5

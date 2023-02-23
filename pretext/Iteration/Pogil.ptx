@@ -2,8 +2,10 @@
 <section xml:id="iterations_group-work-loops-for-range-while">
   <title>Group Work - Loops (For, Range, While)</title>
   <introduction>
-  <p>It is best to use a POGIL (Process Oriented Guided Inquiry Learning) approach with the following. In POGIL, students work
-            in groups on activities and each member has an assigned role.  For more information see <url href="https://cspogil.org/Home" visual="https://cspogil.org/Home">https://cspogil.org/Home</url>.</p>
+  <p>
+    It is best to use a POGIL (Process Oriented Guided Inquiry Learning) approach with the following. In POGIL, students work in groups on activities and each member has an assigned role.  For more information see <url href="https://cspogil.org/Home" visual="https://cspogil.org/Home">https://cspogil.org/Home</url>.
+  </p>
+  
   <note>
     <p>If you work in a group, have only one member of the group fill in the answers on this page.  You will be able to share your answers with the group at the bottom of the page.</p>
   </note>
@@ -11,10 +13,7 @@
             kinds of loop structures: <c>for</c> loops, which iterate over the items of a
             sequence, and <c>while</c> loops, which continue to execute as long as a condition is true.</p>
   <p>
-    <term>Content Learning Objectives</term>
-  </p>
-  <p>
-    <em>After completing this activity, you should be able to:</em>
+    <em>Content Learning Objectives: <em>After completing this activity, you should be able to:</em>
   </p>
   <p>
     <ul>
@@ -270,7 +269,7 @@ for i in range(5): #this line prints nothing
     </exercise>
     
     <p>
-      The first line of output describes the range as a function, whereas the second line shows the actual range of values as a list by using the <c>list</c> function.
+      The second line of output describes the range as a function, whereas the second line shows the actual range of values as a list by using the <c>list</c> function.
     </p>
     <p>
       If the argument of the <c>range</c> function specifies a single number, like <c>range(x)</c>, the first number listed will be 0, the last number listed will be <c>x - 1</c>, and there will be <c>x</c> numbers in the list.
