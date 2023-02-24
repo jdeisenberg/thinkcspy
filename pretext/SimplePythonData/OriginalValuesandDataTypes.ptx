@@ -74,9 +74,7 @@ print(3.4, "hello", 45)
             matter how big they are. Also revisit what we said in the previous chapter:
             formal languages are strict, the notation is concise, and even the smallest
             change might mean something quite different from what you intended.</p>
-  <p>
-    <term>Check your understanding</term>
-  </p>
+  
   <exercise label="test_question2_1_1">
     <statement>
       <p>How can you determine the type of a value?</p>

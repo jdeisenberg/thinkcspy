@@ -3,9 +3,10 @@
   <title>Reassignment</title>
   <introduction>
   <video xml:id="reassignmentvid" youtube="G86akhNFHZA" width="auto"/>
-  <p>As we have mentioned previously, it is legal to make more than one assignment to the
-            same variable. A new assignment makes an existing variable refer to a new value
-            (and stop referring to the old value).</p>
+  <p>
+    As we have mentioned previously, it is legal to make more than one assignment to the same variable. A new assignment makes an existing variable refer to a new value (and stop referring to the old value).
+  </p>
+  
   <program xml:id="ch07_reassign1" interactive="activecode" language="python">
     <input>
 price = 11.95
@@ -14,7 +15,10 @@ price = 10.88
 print(price)
     </input>
   </program>
-  <p>The first time <c>price</c> is printed, its value is 11.95, and the second time, its value is 10.88.  The assignment statement changes the value (the object) that <c>price</c> refers to.</p>
+  
+  <p>
+    The first time <c>price</c> is printed, its value is 11.95, and the second time, its value is 10.88.  The assignment statement changes the value (the object) that <c>price</c> refers to.
+  </p>
   
   <p>Here is what <term>reassignment</term> looks like in a reference diagram:</p>
   <image source="SimplePythonData/Figures/reassign1a.png" width="50%" alt="reassignment"/>
@@ -30,9 +34,10 @@ a = 3    # after executing this line, a and b no longer refer to the same value
 print(a, b)
     </input>
   </program>
+  
   <p>Line 4 changes the value of <c>a</c> but does not change the value of
     <c>b</c>, so they are no longer equal. We will have much more to say about equality in a later chapter.</p>
-        </introduction>
+    </introduction>
         
     <subsection xml:id="simple-python-data_developing-your-mental-model-of-how-python-evaluates">
     <title>Developing your Mental Model of How Python Evaluates</title>

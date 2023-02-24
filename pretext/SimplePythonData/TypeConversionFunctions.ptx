@@ -5,10 +5,10 @@
   
   <p>Python provides a few functions that will allow us to convert from one data type to another.  The functions <c>int</c>, <c>float</c> and <c>str</c> will (attempt to) convert their arguments into types <c>int</c>, <c>float</c> and <c>str</c> respectively.  We call these <term>type conversion</term> functions.</p>
   
-  <p>The <c>int</c> function can take a floating point number or a string and turn it
-            into an integer. For floating point numbers, it <em>discards</em> the decimal portion of
-            the number<mdash/>a process we call <em>truncation towards zero</em> on the number line.
-            Let us see this in action:</p>
+  <p>
+    The <c>int</c> function can take a floating point number or a string and turn it into an integer. For floating point numbers, it <em>discards</em> the decimal portion of the number<mdash/>a process we call <em>truncation towards zero</em> on the number line. Let us see this in action:
+  </p>
+  
   <program xml:id="ch02_20" interactive="activecode" language="python">
     <input>
 print(3.14, int(3.14))
@@ -21,11 +21,14 @@ print(17, int(17))         # int even works on integers
 print(int("23bottles"))
         </input>
   </program>
-  <p>The last case shows that a string has to be a syntactically legal number,
-    otherwise you'll get one of those pesky runtime errors.  Modify the example by deleting the
-            <c>bottles</c> and rerun the program.  You should see the integer <c>23</c>.</p>
+  
+  <p>
+    The last case shows that a string has to be a syntactically legal number, otherwise you'll get one of those pesky runtime errors.  Modify the example by deleting the <c>bottles</c> and rerun the program.  You should see the integer <c>23</c>.
+  </p>
           
-          <p>Now we can ask the user for a number with <c>input</c>, take the resulting string, <em>convert it to a number</em>, and then do arithmetic with it. Here's the program from the last page, fixed. This time, if you enter 7468 for the number of seconds, the program won't crash:</p>
+  <p>
+    Now we can ask the user for a number with <c>input</c>, take the resulting string, <em>convert it to a number</em>, and then do arithmetic with it. Here's the program from the last page, fixed. This time, if you enter 7468 for the number of seconds, the program won't crash:
+  </p>
 
   <program xml:id="input_corrected" interactive="activecode" language="python">
     <input>
@@ -38,18 +41,25 @@ print("That is", hours, "hours.")
 </input>
 </program>
 
-<p>In line 3, we've given the result of <c>input</c> the name <c>total_seconds_str</c> to remind ourselves that <c>input</c> always gives us a string, and we use the <c>int</c> function in line 4 to convert it to an integer.</p>
+<p>
+  In line 3, we've given the result of <c>input</c> the name <c>total_seconds_str</c> to remind ourselves that <c>input</c> always gives us a string, and we use the <c>int</c> function in line 4 to convert it to an integer.
+</p>
   
-<p>Python has other type converter functions in addition to <c>int</c>. The <c>float</c> type converter function  can turn an integer, a float, or a syntactically legal string into a float.</p>
-  <program xml:id="ch02_21" interactive="activecode" language="python">
+<p>
+  Python has other type converter functions in addition to <c>int</c>. The <c>float</c> type converter function  can turn an integer, a float, or a syntactically legal string into a float.
+</p>
+
+<program xml:id="ch02_21" interactive="activecode" language="python">
     <input>
 print(float("123.45"))
 print(type(float("123.45")))
         </input>
   </program>
 
-  <p>The type converter function <c>str</c> turns its argument into a string.  Remember that when we print a string, the
-            quotes are removed.  However, if we print the type, we can see that it is definitely a <c>str</c>.</p>
+  <p>
+    The type converter function <c>str</c> turns its argument into a string.  Remember that when we print a string, the quotes are removed.  However, if we print the type, we can see that it is definitely a <c>str</c>.
+  </p>
+  
   <program xml:id="ch02_22" interactive="activecode" language="python">
     <input>
 print(str(17))
@@ -76,25 +86,19 @@ print (type(n))
         <statement>
           <p>str (string)</p>
         </statement>
-        <feedback>
-                    All input from users is read in as a string.
-                </feedback>
+        <feedback>All input from users is read in as a string.</feedback>
       </choice>
       <choice>
         <statement>
           <p>int (integer)</p>
         </statement>
-        <feedback>
-                    Even though the user typed in an integer, it does not come into the program as an integer.
-                </feedback>
+        <feedback>Even though the user typed in an integer, it does not come into the program as an integer.</feedback>
       </choice>
       <choice>
         <statement>
           <p>18</p>
         </statement>
-        <feedback>
-                    18 is the value of what the user typed, not the type of the data.
-                </feedback>
+        <feedback>18 is the value of what the user typed, not the type of the data.</feedback>
       </choice>
     </choices>
   </exercise>
@@ -143,33 +147,25 @@ print(int(53.785))
         <statement>
           <p>Nothing is printed. It generates a runtime error.</p>
         </statement>
-        <feedback>
-          The statement is valid Python code. It calls the <c>int</c> function on 53.785 and then prints the value that is returned.
-                </feedback>
+        <feedback>The statement is valid Python code. It calls the <c>int</c> function on 53.785 and then prints the value that is returned.</feedback>
       </choice>
       <choice correct="yes">
         <statement>
           <p>53</p>
         </statement>
-        <feedback>
-          The <c>int</c> function truncates all values after the decimal and prints the integer value.
-                </feedback>
+        <feedback>The <c>int</c> function truncates all values after the decimal and prints the integer value.</feedback>
       </choice>
       <choice>
         <statement>
           <p>54</p>
         </statement>
-        <feedback>
-          When converting to an integer, the <c>int</c> function does not round.
-                </feedback>
+        <feedback>When converting to an integer, the <c>int</c> function does not round.</feedback>
       </choice>
       <choice>
         <statement>
           <p>53.785</p>
         </statement>
-        <feedback>
-          The <c>int</c> function removes the fractional part of 53.785 and returns an integer, which is then printed.
-                </feedback>
+        <feedback>The <c>int</c> function removes the fractional part of 53.785 and returns an integer, which is then printed.</feedback>
       </choice>
     </choices>
   </exercise>

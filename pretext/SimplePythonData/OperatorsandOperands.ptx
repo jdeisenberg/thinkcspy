@@ -91,9 +91,7 @@ result = (a * b) / (c + d) # more readable
 </input></program>
   </convention>
   
-  <p>
-    <term>Check your understanding</term>
-  </p>
+
   <exercise label="divide_1">
     <statement>
       <p>What value is printed when the following statement executes?</p>
