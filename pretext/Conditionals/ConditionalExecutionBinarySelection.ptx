@@ -67,9 +67,6 @@ else:
     </p>
   </note>
   -->
-  <p>
-    <em>Check your understanding</em>
-  </p>
   
   <exercise label="if_else_1">
     <statement>
