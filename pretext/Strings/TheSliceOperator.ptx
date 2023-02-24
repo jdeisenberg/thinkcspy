@@ -35,7 +35,7 @@ print(singers[17:21])
 veggie = "soybean"
 print(veggie[:3])
 print(veggie[3:])
-print(veggie[3:-10])
+print(veggie[3:-10]) # returns the empty string
 print(veggie[3:99])
         </input>
   </program>
@@ -140,6 +140,7 @@ print(s[7:11] * 3)
     You might want to make a function called <c>find_comma</c> that takes a string as its parameter and returns the index where the first comma is found, or -1 if there is no comma in the string.
   </p>
 </statement>
+
     <program xml:id="string-separate-address-prog" interactive="activecode" language="python">
       <input>
 

@@ -53,7 +53,7 @@ years = int(input("Enter your age in years:"))
 print(f"{years} years is about {years * 365} days.")
 </input></program>
 
-<p>(Use this feature sparingly. Do not put long, complex expressions into an f-string. Instead, create variables to hold the values of the expression and print the variables in the f-string.)</p>
+<p>Use this feature sparingly. Do not put long, complex expressions into an f-string. Instead, create variables to hold the values of the expression and print the variables in the f-string.</p>
 </subsection>
 
 <subsection>

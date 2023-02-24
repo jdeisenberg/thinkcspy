@@ -23,8 +23,8 @@ for friend in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
   
   <program xml:id="ch08_5" interactive="activecode" language="python">
     <input>
-for avalue in range(10):
-    print(avalue)
+for value in range(10):
+    print(value)
         </input>
   </program>
   

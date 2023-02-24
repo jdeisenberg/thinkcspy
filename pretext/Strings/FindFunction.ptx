@@ -48,7 +48,7 @@ print(find("Compsci", "x"))
   
   <note>
     <p>
-      This pattern of computation is sometimes called a eureka traversal because as soon as we find what we are looking for, we can cry <q>Eureka!</q> and stop looking.  The way we stop looking is by setting <c>found</c> to True which causes the condition to fail.
+      This pattern of computation is sometimes called a eureka traversal because as soon as we find what we are looking for, we can cry <q>Eureka!</q> and stop looking.  The way we stop looking is by setting <c>found</c> to True, which causes the condition to fail.
     </p>
   </note>
   

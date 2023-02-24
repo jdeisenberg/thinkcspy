@@ -43,7 +43,7 @@ print((word + "bell") * 3)
         </input>
   </program>
   <p>
-    This interpretation of <c>+</c> and <c>*</c> makes sense by analogy with addition and multiplication. Just as <c>4 * 3</c> is equivalent to <c>4 + 4 + 4</c>, we expect <c>"Go" * 3</c> to be the same as <c>"Go" + "Go" + "Go"</c>, and it is.  Note also in the last example that the order of operations for <c> </c> and <c>+</c> is the same as it was for arithmetic. The repetition is done before the concatenation.  If you want to cause the concatenation to be done first, you will need to use parentheses.
+    This interpretation of <c>+</c> and <c>*</c> makes sense by analogy with addition and multiplication. Just as <c>4 * 3</c> is equivalent to <c>4 + 4 + 4</c>, we expect <c>"Go" * 3</c> to be the same as <c>"Go" + "Go" + "Go"</c>, and it is.  Note also in the last example that the order of operations for <c>*</c> and <c>+</c> is the same as it was for arithmetic. The repetition is done before the concatenation.  If you want to cause the concatenation to be done first, you will need to use parentheses.
   </p>
   
   <p>Let's experiment! In the following activecode area, try to find out these things:</p>

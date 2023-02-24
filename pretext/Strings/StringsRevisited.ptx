@@ -2,9 +2,13 @@
 <section xml:id="strings_strings-revisited">
   <title>Strings Revisited</title>
   <p>
-    Throughout the first chapters of this book we have used strings to represent words or phrases that we wanted to print out.  Our definition was simple: a string is nothing more than some characters inside quotes.
+    Throughout the first chapters of this book we have used strings to represent words or phrases that we wanted to print out.  Our definition was quite direct: a string is zero or more characters inside quotes.
   </p>
-  <p>But there's more we can do with strings than print them; we can <em>manipulate</em> strings. For example:</p>
+  
+  <p>
+    But there's more we can do with strings than print them; we can <em>manipulate</em> strings. For example:
+  </p>
+  
   <p>
     <ul>
       <li><p>Change a name in the form <c>"Fulano, Juan"</c> to <c>"Juan Fulano"</c>.</p></li>
@@ -15,6 +19,7 @@
       <li><p>Replace a word with another within a string (like <q>replace</q> in a word processor).</p></li>
     </ul>
   </p>
+  
   <p>
     In this chapter, we'll investigate the methods used to do these kinds of operations.
   </p>

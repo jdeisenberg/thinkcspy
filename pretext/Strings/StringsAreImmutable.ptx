@@ -22,8 +22,8 @@ print(greeting)
   <program xml:id="ch08_imm2" interactive="activecode" language="python">
     <input>
 greeting = "Hello, world!"
-newGreeting = 'J' + greeting[1:]
-print(newGreeting)
+new_greeting = 'J' + greeting[1:]
+print(new_greeting)
 print(greeting)            # same as it was
         </input>
   </program>

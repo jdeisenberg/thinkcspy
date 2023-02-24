@@ -6,20 +6,21 @@
             starting position in the search string:</p>
   <program xml:id="ch08_fun4" interactive="activecode" language="python">
     <input>
-def find2(astring, achar, start):
+def find2(a_string, target_char, start):
     """
-    Find and return the index of achar in astring.
-    Return -1 if achar does not occur in astring.
+    Return the index of target_char in a_string starting at given index.
+    
+    Return -1 if target_char does not occur in a_string.
     """
-    ix = start
+    index = start
     found = False
-    while ix &lt; len(astring) and not found:
-        if astring[ix] == achar:
+    while index &lt; len(a_string) and not found:
+        if a_string[index] == target_char:
             found = True
         else:
-            ix = ix + 1
+            index = index + 1
     if found:
-        return ix
+        return index
     else:
         return -1
 
@@ -34,66 +35,72 @@ print(find2('banana', 'a', 2))
             <term>optional parameter</term>.</p>
   <program xml:id="chp08_fun5" interactive="activecode" language="python">
     <input>
-def find3(astring, achar, start=0):
+def find3(a_string, target_char, start=0):
     """
-    Find and return the index of achar in astring.
-    Return -1 if achar does not occur in astring.
+    Find and return the index of target_char in a_string staring at given index.
+    
+    Return -1 if target_char does not occur in a_string.
     """
-    ix = start
+    index = start
     found = False
-    while ix &lt; len(astring) and not found:
-        if astring[ix] == achar:
+    while index &lt; len(a_string) and not found:
+        if a_string[index] == target_char:
             found = True
         else:
-            ix = ix + 1
+            index = index + 1
     if found:
-        return ix
+        return index
     else:
         return -1
 
 print(find3('banana', 'a', 2))
         </input>
   </program>
-  <p>The call <c>find3('banana', 'a', 2)</c> to this version of <c>find</c> behaves just
-            like <c>find2</c>, while in the call <c>find3('banana', 'a')</c>, <c>start</c> will be
-            set to the <term>default value</term> of <c>0</c>.</p>
-  <p>Adding another optional parameter to <c>find</c> makes it search from a starting
-            position, up to but not including the end position.</p>
+  
+  <p>
+      The call <c>find3('banana', 'a', 2)</c> to this version of <c>find</c> behaves just like <c>find2</c>, while in the call <c>find3('banana', 'a')</c>, <c>start</c> will be set to the <term>default value</term> of <c>0</c>.
+    </p>
+
+  <p>
+      Adding another optional parameter to <c>find</c> makes it search from a starting position, up to but not including the end position.
+    </p>
   <program xml:id="chp08_fun6" interactive="activecode" language="python">
     <input>
-def find4(astring, achar, start=0, end=None):
+def find4(a_string, target_char, start=0, end=None):
     """
-    Find and return the index of achar in astring.
-    Return -1 if achar does not occur in astring.
+    Find and return the index of target_char in a_string within given range.
+    
+    Return -1 if target_char does not occur in a_string.
     """
-    ix = start
+    index = start
     if end == None:
-        end = len(astring)
+        end = len(a_string)
 
     found = False
-    while ix &lt; end and not found:
-        if astring[ix] == achar:
+    while index &lt; end and not found:
+        if a_string[index] == target_char:
             found = True
         else:
-            ix = ix + 1
+            index = index + 1
     if found:
-        return ix
+        return index
     else:
         return -1
 
-ss = "Python strings have some interesting methods."
+message = "Python strings have some interesting methods."
 
-print(find4(ss, 's'))
-print(find4(ss, 's', 7))
-print(find4(ss, 's', 8))
-print(find4(ss, 's', 8, 13))
-print(find4(ss, '.'))
+print(find4(message, 's'))
+print(find4(message, 's', 7))
+print(find4(message, 's', 8))
+print(find4(message, 's', 8, 13))
+print(find4(message, '.'))
         </input>
   </program>
-  <p>The optional value for <c>end</c> is interesting.  We give it a default value <c>None</c> if the
-            caller does not supply any argument.  In the body of the function we test what <c>end</c> is
-            and if the caller did not supply any argument, we reassign <c>end</c> to be the length of the string.
-            If the caller has supplied an argument for <c>end</c>, however, the caller's value will be used in the loop.</p>
-  <p>The semantics of <c>start</c> and <c>end</c> in this function are precisely the same as they are in
-            the <c>range</c> function.</p>
+  <p>
+      The optional value for <c>end</c> is interesting.  We give it a default value <c>None</c> if the caller does not supply any argument.  In the body of the function we test what <c>end</c> is and if the caller did not supply any argument, we reassign <c>end</c> to be the length of the string. If the caller has supplied an argument for <c>end</c>, however, the caller's value will be used in the loop.
+    </p>
+  
+    <p>
+        The semantics of <c>start</c> and <c>end</c> in this function are precisely the same as they are in the <c>range</c> function.
+    </p>
 </section>

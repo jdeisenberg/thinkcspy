@@ -49,11 +49,11 @@ def is_lower_case(char):
     </table>
         
   <p>
-    For all these methods, the string must consist of one or more characters in order to return <c>True</c>; the empty string returns <c>False</c> for all of these.
+    For all these methods, the string must consist of one or more characters in order to return <c>True</c>; the empty string returns <c>False</c> for all of these. The following program shows how the classification works. The web version of Python that activecode uses does <em>not</em> handle non-English characters properly, so you will have to copy and paste the following code into your favorite development environment and run it from there.
   </p>
   
 
-    <program xml:id="string_class_1" interactive="activecode" language="python">
+    <program xml:id="string_class_1" language="python">
       <input>
 def classify(str):
   if str.isalpha():
