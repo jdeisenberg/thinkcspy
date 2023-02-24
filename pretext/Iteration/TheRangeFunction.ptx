@@ -113,9 +113,7 @@ for i in range(0, 20, 2):
     </input>
   </program>
   
-  <p>
-    <term>Check your understanding</term>
-  </p>
+  
   <exercise label="range_q1">
     <statement>
       <p>In the command <c>range(3, 10, 2)</c>, what does the second argument (10) specify?</p>

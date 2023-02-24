@@ -12,7 +12,10 @@ else:
         </input>
   </program>
   
-  <p>Other comparison operations are useful for putting words in <url href="http://en.wikipedia.org/wiki/Lexicographic_order" visual="http://en.wikipedia.org/wiki/Lexicographic_order">lexicographical order</url>. This is similar to the alphabetical order you would use with a dictionary, except that all the uppercase letters come before all the lowercase letters.</p>
+  <p>
+    Other comparison operations are useful for putting words in <url href="http://en.wikipedia.org/wiki/Lexicographic_order" visual="http://en.wikipedia.org/wiki/Lexicographic_order">lexicographical order</url>. This is similar to the alphabetical order you would use with a dictionary, except that all the uppercase letters come before all the lowercase letters.
+  </p>
+  
   <program xml:id="ch08_comp2" interactive="activecode" language="python">
     <input>
 word = "zebra"
@@ -26,9 +29,10 @@ else:
         </input>
   </program>
   
-  <p>It is probably clear to you that the word <em>apple</em> would be less than (come before) the word <em>banana</em>.
-            After all, <em>a</em> is before <em>b</em> in the alphabet.  But what if we consider the words <c>apple</c> and <c>Apple</c>?
-            Are they the same?</p>
+  <p>
+    It is probably clear to you that the word <em>apple</em> would be less than (come before) the word <em>banana</em>. After all, <em>a</em> is before <em>b</em> in the alphabet.  But what if we consider the words <c>apple</c> and <c>Apple</c>? Are they the same?
+  </p>
+  
   <program xml:id="chp08_ord1" interactive="activecode" language="python">
     <input>
 print("apple" &lt; "banana")
@@ -39,7 +43,10 @@ print("apple" &lt; "Apple")
         </input>
   </program>
   
-  <p>It turns out, if you recall from our discussion of variable names, that uppercase and lowercase letters are considered to be different from one another.  The way the computer knows they are different is that each character is assigned a unique integer value.  <q>A</q> is 65, <q>B</q> is 66, and <q>5</q> is 53.  The way you can find out the so-called <term>ordinal value</term> for a given character is to use a character function called <c>ord</c>.</p>
+  <p>
+    It turns out, if you recall from our discussion of variable names, that uppercase and lowercase letters are considered to be different from one another.  The way the computer knows they are different is that each character is assigned a unique integer value.  <q>A</q> is 65, <q>B</q> is 66, and <q>5</q> is 53.  The way you can find out the so-called <term>ordinal value</term> for a given character is to use a character function called <c>ord</c>.
+  </p>
+  
   <program xml:id="ch08_ord2" interactive="activecode" language="python">
     <input>
 print(ord("A"))
@@ -63,11 +70,7 @@ print("apple" &gt; "Apple")
   <p>
     Humans commonly ignore capitalization when comparing two words.  However, computers do not.  A common way to address this issue is to convert strings to a standard format, such as all lowercase, before performing the comparison.
   </p>
-  
- 
-  <p>
-    <term>Check your understanding</term>
-  </p>
+
   <exercise label="test_question8_6_1">
     <statement>
       <p>Evaluate the following comparison:</p>

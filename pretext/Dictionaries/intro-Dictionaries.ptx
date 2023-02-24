@@ -139,10 +139,6 @@ print(notebook_price)
     </program>
   </note>
   
-  <p>
-    <em>Check your understanding</em>
-  </p>
-  
   <exercise label="test_question11_1_1">
     <statement>
       <p>A dictionary is an unordered collection of key-value pairs.</p>

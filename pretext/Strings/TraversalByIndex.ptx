@@ -48,10 +48,6 @@ for idx in range(len(fruit)):
     Trace the values of <c>idx</c> and satisfy yourself that they are correct.  In particular, note the start and end of the range. Do you understand why the start of the range is <c>len(fruit) - 1</c> and not <c>len(fruit)</c>? Do you understand why the end of the range is -1 and not 0?
   </p>
   
-  <p>
-    <em>Check your understanding</em>
-  </p>
-  
   <exercise label="test_question8_9_1">
     <statement>
       <p>How many times is the letter <q>o</q> printed by the following statements?</p>

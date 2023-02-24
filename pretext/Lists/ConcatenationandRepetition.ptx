@@ -45,9 +45,7 @@ zeros = [0] * 4
     </input>
   </program>
   -->
-  <p>
-    <term>Check your understanding</term>
-  </p>
+  
   <exercise label="test_question9_5_1">
     <statement>
       <p>What is printed by the following statements?</p>

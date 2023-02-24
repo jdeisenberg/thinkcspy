@@ -46,10 +46,7 @@ print("".join(wds))
     The list that you glue together (<c>wds</c> in this example) is not modified.  Also,
     you can use empty glue or multi-character strings as glue.
   </p>
-  
-  <p>
-    <em>Check your understanding</em>
-  </p>
+
   <exercise label="split_name_ex">
     <statement>
       <p>What is printed by the following statements?</p>

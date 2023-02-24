@@ -2,9 +2,8 @@
 <section xml:id="dictionaries_dictionary-methods">
   <title>Dictionary Methods</title>
   <p>
-    Dictionaries have a number of useful built-in methods.
-            The following table provides a summary and more details can be found in the
-            <url href="http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict" visual="http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict">Python Documentation</url>.</p>
+    Dictionaries have a number of useful built-in methods. The following table provides a summary and more details can be found in the <url href="http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict" visual="http://docs.python.org/py3k/library/stdtypes.html#mapping-types-dict">Python Documentation</url>.
+  </p>
   <table>
     <tabular>
       <row header="yes">
@@ -138,10 +137,7 @@ print(inventory.get("cherries", 0))
         </input>
     </program>
   </note>
-  
-  <p>
-    <em>Check your understanding</em>
-  </p>
+
   <exercise label="test_question11_3_1">
     <statement>
       <p>What is printed by the following statements?</p>

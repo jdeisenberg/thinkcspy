@@ -46,6 +46,7 @@ print(a_list)
   <p>
     We can also remove elements from a list by assigning the empty list to them.
   </p>
+  
   <program xml:id="ch09_9" interactive="activecode" language="python">
     <input>
 a_list = ['a', 'b', 'c', 'd', 'e', 'f']
@@ -67,10 +68,7 @@ a_list[4:4] = ['e']
 print(a_list)
     </input>
   </program>
-  
-  <p>
-    <em>Check your understanding</em>
-  </p>
+
   <exercise label="test_question9_7_1">
     <statement>
       <p>What is printed by the following statements?</p>

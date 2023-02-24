@@ -8,8 +8,9 @@ fruit = "Banana"
 print(len(fruit))
         </input>
   </program>
-  <p>To get the last letter of a string, you might be tempted to try something like
-            this:</p>
+  
+  <p>To get the last letter of a string, you might be tempted to try something like this:</p>
+  
   <program xml:id="chp08_len2" interactive="activecode" language="python">
     <input>
 fruit = "Banana"
@@ -18,12 +19,11 @@ last = fruit[size]       # ERROR!
 print(last)
         </input>
   </program>
-  <p>That won't work. It causes the runtime error
-            <c>IndexError: string index out of range</c>. The reason is that there is no
-            letter at index position 6 in <c>"Banana"</c>.
-            Since we started counting at zero, the six indexes are
-            numbered 0 to 5. To get the last character, we have to subtract 1 from
-            the length.  Give it a try in the example above.</p>
+  
+  <p>
+    That won't work. It causes the runtime error <c>IndexError: string index out of range</c>. The reason is that there is no letter at index position 6 in <c>"Banana"</c>. Since we started counting at zero, the six indexes are numbered 0 to 5. To get the last character, we have to subtract 1 from the length.  Give it a try in the example above.
+  </p>
+  
   <program xml:id="ch08_len3" interactive="activecode" language="python">
     <input>
 fruit = "Banana"
@@ -36,10 +36,7 @@ print(lastch)
   <p>
     Alternatively in Python, we can use <term>negative indices</term>, which count backward from the end of the string. The expression <c>fruit[-1]</c> yields the last letter, <c>fruit[-2]</c> yields the second to last, and so on.  Try it! Most other languages do <em>not</em> allow the negative indices, but they are a handy feature of Python!
   </p>
-  
-  <p>
-    <term>Check your understanding</term>
-  </p>
+
   <exercise label="test_question8_4_1">
     <statement>
       <p>What is printed by the following statements?</p>

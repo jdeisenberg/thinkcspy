@@ -42,10 +42,7 @@ for a_char in "playground":
   <p>
     The loop variable <c>a_char</c> is automatically reassigned each character in the string <c>"playground"</c>. We will refer to this type of sequence iteration as <term>iteration by item</term>. Note that it is only possible to process the characters one at a time from left to right when using this form of traversal.
   </p>
-  
-  <p>
-    <em>Check your understanding</em>
-  </p>
+
   <exercise label="test_question8_8_1">
     <statement>
       <p>How many characters will be printed by the following statements?</p>

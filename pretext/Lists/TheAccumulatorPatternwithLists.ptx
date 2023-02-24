@@ -18,15 +18,19 @@ print(long_names)
   <p>
     Here, we <term>initialize</term> the accumulator variable to be zero on line 1.
   </p>
+  
   <p>
     We <term>iterate</term> through the sequence (line 2).
   </p>
+  
   <p>
     The <term>update</term> step happens in two parts. First, we check to see if the name is longer than 3 letters. If so, then we increment the accumulator variable <c>long_names</c> (on line 4) by adding one to it.
   </p>
+  
   <p>
     At the end, we have accumulated the total number of long names.
   </p>
+  
   <p>
     We can use conditionals to also count if particular items are in a string or list. The following code finds all occurrences of vowels in a string.
   </p>
@@ -145,10 +149,7 @@ print("The scores are " + result)
         </input></program>
                 </solution>
     </exercise>
-    
-    <p>
-      <em>Check your understanding</em>
-    </p>
+
     <exercise label="question7_10_1">
       <statement>
         <p>

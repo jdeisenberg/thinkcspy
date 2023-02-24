@@ -31,10 +31,7 @@ a_copy = opposites.copy()
 a_copy['right'] = 'left'    # does not change opposites
 </input>
   </program>
-  
-  <p>
-    <term>Check your understanding</term>
-  </p>
+
   <exercise label="test_question11_4_1">
     <statement>
       <p>What is printed by the following statements?</p>

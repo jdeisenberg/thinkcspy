@@ -16,10 +16,6 @@ print(numbers[len(numbers) - 1]) # last item
         </input>
   </program>
   
-  <p>
-    <em>Check your understanding</em>
-  </p>
-  
   <exercise label="list_access_1">
     <statement>
       <p>What is printed by the following statements?</p>

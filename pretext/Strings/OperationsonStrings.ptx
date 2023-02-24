@@ -70,9 +70,6 @@ print((word + "bell") * 3)
     </input>
   </program>
 
-  <p>
-    <em>Check your understanding</em>
-  </p>
   <exercise label="test_question8_1_1">
     <statement>
       <p>What is printed by the following statements?</p>

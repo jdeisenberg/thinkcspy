@@ -30,10 +30,7 @@ print(last_char)
   </p>
   
   <p>Note that indexing returns a <em>string</em><mdash/>Python has no special type for a single character. It is just a string of length 1.</p>
-  
-  <p>
-    <em>Check your understanding</em>
-  </p>
+
   <exercise label="test_question8_2_1">
     <statement>
       <p>What is printed by the following statements?</p>

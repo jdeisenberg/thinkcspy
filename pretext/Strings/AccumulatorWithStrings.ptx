@@ -63,9 +63,6 @@ print(removeVowels("compsci"))
     </input>
   </program>
   
-  <p>
-    <em>Check your understanding</em>
-  </p>
   <exercise label="test_question8_11_1">
     <statement>
       <p>What is printed by the following statements? Hint: Look at the concatenation <em>very</em> carefully!</p>

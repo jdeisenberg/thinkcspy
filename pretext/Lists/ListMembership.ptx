@@ -49,10 +49,6 @@ print(kiwi_index)
 
 <p>Because our <c>safe_index</c> function isn't built in to the <c>list</c> class, we cannot use it with dot notation.</p>
 
-
-  <p>
-    <em>Check your understanding</em>
-  </p>
   <exercise label="test_question9_4_1">
     <statement>
       <p>What is printed by the following statements?</p>

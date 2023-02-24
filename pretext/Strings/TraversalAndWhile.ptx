@@ -48,10 +48,7 @@ while position &lt; len(food) and food[position] != " ":
     position = position + 1
     </input>
   </program>
-  
-  <p>
-    <em>Check your understanding</em>
-  </p>
+
   <exercise label="test_question8_10_1">
     <statement>
       <p>How many times is the letter <em>o</em> printed by the following statements?</p>

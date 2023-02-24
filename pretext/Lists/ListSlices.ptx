@@ -1,8 +1,10 @@
 <?xml version="1.0"?>
 <section xml:id="lists_list-slices">
   <title>List Slices</title>
-  <p> The slice operation we saw with strings in <xref ref="strings_the-slice-operator"/> also works on lists.  Remember that the first index is the starting point for the slice and the second number is one index past the end of the slice (up to but not including that element).  Recall also that if you omit the first index (before the colon), the slice starts at the beginning of the sequence. If you omit the second index, the slice goes to the end of the sequence.
-            </p>
+  <p>
+    The slice operation we saw with strings in <xref ref="strings_the-slice-operator"/> also works on lists.  Remember that the first index is the starting point for the slice and the second number is one index past the end of the slice (up to but not including that element).  Recall also that if you omit the first index (before the colon), the slice starts at the beginning of the sequence. If you omit the second index, the slice goes to the end of the sequence.
+  </p>
+  
   <program xml:id="chp09_6" interactive="activecode" language="python">
     <input>
 a_list = ['a', 'b', 'c', 'd', 'e', 'f']
@@ -12,10 +14,7 @@ print(a_list[3:])
 print(a_list[:])
         </input>
   </program>
-  
-  <p>
-    <em>Check your understanding</em>
-  </p>
+
   <exercise label="test_question9_6_1">
     <statement>
       <p>What is printed by the following statements?</p>

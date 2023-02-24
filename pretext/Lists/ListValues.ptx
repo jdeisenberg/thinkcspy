@@ -42,10 +42,7 @@ print(mixed_list, len(mixed_list))
 
         </input>
   </program>
-  
-  <p xml:id="lists_accessing_elements" names="accessing-elements">
-    <em>Check your understanding</em>
-  </p>
+
   
   <exercise label="list_values_1">
     <statement>

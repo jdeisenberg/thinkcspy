@@ -45,10 +45,7 @@ print(f"Final list is {new_numbers}")
   <p>
     In the list comprehension on line 5, the <c>for</c> loop looks at each <c>number</c> in <c>a_list</c> and puts <c>number</c> into the <c>result</c> if <c>number &gt;= 0</c>.
   </p>
-    
-  <p>
-    <em>Check your understanding</em>
-  </p>
+
 </introduction>
   <exercises>
   <exercise label="test_question9_20_1">

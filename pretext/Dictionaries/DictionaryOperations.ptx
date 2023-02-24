@@ -59,9 +59,6 @@ inventory = {'apples': 430,
 inventory['limes'] = 189
 </input></program>
 
-<p>
-    <term>Check your understanding</term>
-  </p>
   <exercise label="dict_ops_q1">
     <statement>
       <p>What is printed by the following statements?</p>

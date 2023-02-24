@@ -11,9 +11,7 @@ print(len(alist))
 print(len(['spam!', 1, ['Brie', 'Roquefort', 'Pol le Veq'], [1, 2, 3]]))
         </input>
   </program>
-  <p>
-    <term>Check your understanding</term>
-  </p>
+  
   <exercise label="test_question9_2_1">
     <statement>
       <p>What is printed by the following statements?</p>

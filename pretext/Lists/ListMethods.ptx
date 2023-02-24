@@ -161,10 +161,7 @@ mylist = mylist.sort()   # probably an error
 print(mylist)
         </input>
   </program>
-  
-  <p>
-    <em>Check your understanding</em>
-  </p>
+
   <exercise label="test_question9_13_1">
     <statement>
       <p>What is printed by the following statements?</p>

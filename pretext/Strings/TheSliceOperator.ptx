@@ -4,9 +4,11 @@
   <p>
     One of the string manipulations we mentioned in <xref ref="strings_strings-revisited"/> was extracting a part of a string. For example, separating <c>408-555-1212</c> into area code, prefix, and number; or separating <c>New York, NY 10280</c> into city, state, and ZIP (postal) code.
   </p>
+  
   <p>
     Another name for a part of a string is a <term>substring</term>. In Python, a substring of a string is called a <term>slice</term>. Selecting a slice is similar to selecting a character.
   </p>
+  
   <p>
     The <term>slice</term> operator <c>[n:m]</c> returns the part of the string starting at character number <c>n</c> up to, <em>but not including</em>, character number <c>m</c>. This behavior may seem counter-intuitive, but if you recall the <c>range</c> function, it does not include its end point either. The following example shows slices in action:
   </p>
@@ -23,9 +25,11 @@ print(singers[17:21])
   <p>
     If you omit the first index (before the colon), the slice starts at the beginning of the string. If you omit the second index, the slice goes to the end of the string.
   </p>
+  
   <p>
     There is no Index Out Of Range exception for a slice. A slice is forgiving and shifts any offending index to something legal. In terms of programming style, we do not put a space on both sides of the <c>:</c> in a slice.
   </p>
+  
   <program xml:id="chp08_slice2" interactive="activecode" language="python">
     <input>
 veggie = "soybean"
@@ -35,10 +39,9 @@ print(veggie[3:-10])
 print(veggie[3:99])
         </input>
   </program>
+  
   <p>What do you think <c>veggie[:]</c> means? Put it into the activecode and find out!</p>
-  <p>
-    <em>Check your understanding</em>
-  </p>
+
   <exercise label="test_question8_5_1">
     <statement>
       <p>What is printed by the following statements?</p>

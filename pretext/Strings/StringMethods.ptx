@@ -1,7 +1,11 @@
 <?xml version="1.0"?>
 <section xml:id="strings_string-methods">
   <title>String Methods</title>
-  <p>Because strings are object, every string instance has its own attributes and methods.  The most important attribute of the string is the collection of characters.  There is a wide variety of methods.  Try the following program.</p>
+  
+  <p>
+    Because strings are object, every string instance has its own attributes and methods.  The most important attribute of the string is the collection of characters.  There is a wide variety of methods.  Try the following program.
+  </p>
+  
   <program xml:id="chp08_upper" interactive="activecode" language="python">
     <input>
 message = "Go, team, Go!"
@@ -17,7 +21,10 @@ print(lower_message)
     to create a new string in which all the alphabetic characters are in uppercase.  <c>lower</c> works in a similar fashion, changing all alphabetic characters in the string to lowercase.  (The original string <c>message</c> remains unchanged.  A new string is created and assigned to <c>lower_message</c>.)
   </p>
   
-  <p>In addition to <c>upper</c> and <c>lower</c>, the following table provides a summary of some other useful string methods.  There are a few activecode examples that follow so that you can try them out.</p>
+  <p>
+    In addition to <c>upper</c> and <c>lower</c>, the following table provides a summary of some other useful string methods.  There are a few activecode examples that follow so that you can try them out.
+  </p>
+  
   <table>
     <tabular>
       <row header="yes">
@@ -157,9 +164,7 @@ print("last 'b' is at index", food.rfind("b"))
 print("last 'x' is at index", food.rfind('x'))
         </input>
   </program>
-  <p>
-    <term>Check your understanding</term>
-  </p>
+
   <exercise label="test_question8_3_1">
     <statement>
       <p>What is printed by the following statements?</p>
