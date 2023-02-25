@@ -43,12 +43,12 @@
     The <c>keys</c> method returns what Python 3 calls a <term>view</term> of its underlying keys. We can iterate over the view or turn the view into a list by using the <c>list</c> conversion function.
   </p>
   
-  <program xml:id="chp12_dict6" interactive="activecode" language="python">
+  <program xml:id="dict_for_keys" interactive="activecode" language="python">
     <input>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
-for a_key in inventory.keys():  # the order in which we get the keys is not defined
-   print(f"Got key {a_key}, which maps to value {inventory[a_key]}")
+for key in inventory.keys():  # the order in which we get the keys is not defined
+   print(f"Got key {key}, which maps to value {inventory[key]}")
 
 ks = list(inventory.keys())
 print(ks)
@@ -59,12 +59,12 @@ print(ks)
     It is so common to iterate over the keys in a dictionary that you can omit the <c>keys</c> method call in the <c>for</c> loop &#x2014; iterating over a dictionary implicitly iterates over its keys.
   </p>
   
-  <program xml:id="chp12_dict7" interactive="activecode" language="python">
+  <program xml:id="dict_for_without_keys_method" interactive="activecode" language="python">
     <input>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 for key in inventory:
-   print(f"Got key {key}.")
+   print(f"Got key {key}, which maps to value {inventory[key]}")
         </input>
   </program>
   
@@ -76,7 +76,7 @@ for key in inventory:
     The <c>values</c> and <c>items</c> methods are similar to <c>keys</c>. They return view objects which can be turned into lists or iterated over directly.  Note that the items are shown as tuples containing the key and the associated value.
   </p>
   
-  <program xml:id="chp12_dict8" interactive="activecode" language="python">
+  <program xml:id="dict_values_items" interactive="activecode" language="python">
     <input>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
@@ -96,7 +96,8 @@ for key in inventory:
   </p>
   
   <p>The <c>in</c> and <c>not in</c> operators can test if a key is in the dictionary:</p>
-  <program xml:id="chp12_dict9" interactive="activecode" language="python">
+  
+  <program xml:id="dict_membership" interactive="activecode" language="python">
     <input>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 print('apples' in inventory)
@@ -117,7 +118,7 @@ else:
     The <c>get</c> method allows us to access the value associated with a key, similar to the <c>[ ]</c> operator. The important difference is that <c>get</c> will not cause a runtime error if the key is not present.  It will instead return <c>None</c>.  There exists a variation of <c>get</c> that allows a second parameter that serves as an alternative return value in the case where the key is not present.  This can be seen in the final example below.  In this case, since <q>cherries</q> is not a key, return 0 (instead of <c>None</c>).
   </p>
   
-  <program xml:id="chp12_dict10" interactive="activecode" language="python">
+  <program xml:id="dict_get" interactive="activecode" language="python">
     <input>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
@@ -130,7 +131,7 @@ print(inventory.get("cherries", 0))
   
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
-    <program xml:id="scratch_11_02" interactive="activecode" language="python">
+    <program xml:id="scratch_dict_code" interactive="activecode" language="python">
       <input>
 
 
@@ -138,7 +139,7 @@ print(inventory.get("cherries", 0))
     </program>
   </note>
 
-  <exercise label="test_question11_3_1">
+  <exercise label="dict_question_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -178,7 +179,7 @@ print(keylist[3])
     </choices>
   </exercise>
 
-  <exercise label="test_question11_3_2">
+  <exercise label="dict_question_2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -217,7 +218,7 @@ print(answer)
     </choices>
   </exercise>
 
-  <exercise label="test_question11_3_3">
+  <exercise label="dict_question_3">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -244,7 +245,7 @@ print("dog" in mydict)
   </exercise>
 
   
-  <exercise label="test_question11_3_4">
+  <exercise label="dict_question_4">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -271,7 +272,7 @@ print(23 in mydict)
   </exercise>
 
   
-  <exercise label="test_question11_3_5">
+  <exercise label="dict_question_5">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

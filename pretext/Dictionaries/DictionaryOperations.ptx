@@ -91,7 +91,7 @@ print(mydict["mouse"])
       </choice>
       <choice>
         <statement>
-          <p>Error, there is no entry with <c>"mouse"</c> as the key.</p>
+          <p>Error; there is no entry with <c>"mouse"</c> as the key.</p>
         </statement>
         <feedback>Since the new key is introduced on the left hand side of the assignment statement, a new key-value pair is added to the dictionary.</feedback>
       </choice>

@@ -5,7 +5,7 @@
   <p>
     Because dictionaries are mutable, you need to be aware of aliasing (as we saw with lists).  Whenever two variables refer to the same dictionary object, changes to one affect the other. For example, <c>opposites</c> is a dictionary that contains pairs of opposites.
   </p>
-  <program xml:id="ch12_dict11" interactive="activecode" language="python">
+  <program xml:id="dict_alias" interactive="activecode" language="python">
     <input>
 opposites = {'up': 'down', 'right': 'wrong', 'true': 'false'}
 alias = opposites
@@ -22,8 +22,7 @@ print(opposites['right'])
   </p>
   
   <p>
-    If you want to modify a dictionary and keep a copy of the original, use the dictionary
-            <c>copy</c> method.  In the following program, since <em>a_copy</em> is a copy of the dictionary, changes to it will not effect the original.
+    If you want to modify a dictionary and keep a copy of the original, use the dictionary <c>copy</c> method.  In the following program, since <em>a_copy</em> is a copy of the dictionary, changes to it will not affect the original.
   </p>
   <program language="python">
     <input>
@@ -32,7 +31,7 @@ a_copy['right'] = 'left'    # does not change opposites
 </input>
   </program>
 
-  <exercise label="test_question11_4_1">
+  <exercise label="dict_alias_question">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
