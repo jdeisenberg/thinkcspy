@@ -5,7 +5,7 @@
       This page has several programs for you to write. They all use nested lists.
     </p>
     <exercises>
-      <exercise xml:id="nested_triangle">
+      <exercise xml:id="ex_nested_triangle">
         <statement>
           <p>
           The Pythagorean theorem lets us find the hypotenuse of a right triangle if we know the length of the two legs of the triangle. In this program, you will have a nested list that contains pairs of leg lengths (for example, <c>[3.0, 4.0]</c> is a sublist describing a triangle whose legs are 3.0 and 4.0 units long).

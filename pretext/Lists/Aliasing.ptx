@@ -56,7 +56,7 @@ print(a)
     This behavior is almost never useful; it usually causes more problems than it solves. When you use repetition with lists, these problems become even more subtle and can sneak up on you when you least expect them. In general, it is safer to avoid aliasing when you are working with mutable objects. For immutable objects, there's no problem. That's why Python is free to alias strings and integers when it sees an opportunity to economize. But remember: lists are mutable.
   </p>
   
-  <exercise label="test_question9_10_1">
+  <exercise label="list_alias_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

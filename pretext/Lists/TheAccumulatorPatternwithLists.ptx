@@ -6,7 +6,7 @@
     <p>
       On the preceding page, we added all the items in the list to the accumulator. Sometimes when we're accumulating, we don't want to add to our accumulator every time we iterate. Consider, for example, the following program which counts the number of names with more than 3 letters.
     </p>
-  <program xml:id="ac7_10_1" interactive="activecode" language="python">
+  <program xml:id="accum_count" interactive="activecode" language="python">
     <input>
 long_names = 0
 for name in ["Joe", "Sally", "Amy", "Brad"]:
@@ -35,7 +35,7 @@ print(long_names)
     We can use conditionals to also count if particular items are in a string or list. The following code finds all occurrences of vowels in a string.
   </p>
   
-  <program xml:id="ac7_10_2" interactive="activecode" language="python">
+  <program xml:id="accum_vowels" interactive="activecode" language="python">
     <input>
 s = "what if we went to the zoo"
 num_vowels = 0
@@ -48,7 +48,7 @@ print(num_vowels)
   
 </introduction>
   <subsection xml:id="lists_accumulating-the-max-value">
-    <title>Accumulating the Max Value</title>
+    <title>Accumulating the Maximum Value</title>
     <p>
       We can also use the accumulation pattern with conditionals to find the maximum or minimum value. Instead of continuing to build up the accumulator value like we have when counting or finding a sum, we can reassign the accumulator variable to a different value.
   </p>
@@ -57,7 +57,7 @@ print(num_vowels)
       The following example shows how we can get the maximum value from a list of integers.
   </p>
   
-    <program xml:id="ac7_10_3" interactive="activecode" language="python">
+    <program xml:id="accum_max_value" interactive="activecode" language="python">
       <input>
 nums = [9, 3, 8, 11, 5, 29, 2]
 biggest_num = nums[0]
@@ -84,7 +84,7 @@ print(biggest_num)
       Consider the following program:
     </p>
     
-    <program xml:id="ac7_10_5" interactive="activecode" language="python">
+    <program xml:id="accum_string" interactive="activecode" language="python">
       <input>
 scores = [85, 95, 70]
 result = ''
@@ -101,13 +101,13 @@ print("The scores are " + result)
       The output of the program has some undesirable formatting problems: there is a trailing comma instead of a period, and there are no spaces between the items. The next activity lets you work to correct those problems.
   </p>
   
-    <exercise label="ac7_10_5a">
+    <exercise label="accum_better_string">
       <statement>
         <p> Let's work to improve the formatting of the sentence produced by the program above. Revise the following code so that it outputs the sentence:
         </p>
         <pre>The scores are 85, 95, and 70.</pre>
       </statement>
-      <program interactive="activecode" language="python" xml:id="ac7_10_5a_editor">
+      <program interactive="activecode" language="python" xml:id="accum_better_string_editor">
         <input>
 scores = [85, 95, 70]
 result = ''
@@ -136,7 +136,7 @@ myTests().main()
       <solution>
           This solution works by iterating over all of the scores in the list except the last, and dealing with that one separately.
 
-    <program xml:id="ac7_10_5a_solution" language="python"><input>
+    <program xml:id="accum_better_string_solution" language="python"><input>
 scores = [85, 95, 70]
 result = ''
 for score in scores[:-1]:
@@ -150,7 +150,7 @@ print("The scores are " + result)
                 </solution>
     </exercise>
 
-    <exercise label="question7_10_1">
+    <exercise label="accum_pattern_q1">
       <statement>
         <p>
           What is printed by the following statements?
@@ -194,7 +194,7 @@ print(x)
       </choices>
     </exercise>
 
-    <exercise label="question7_10_2">
+    <exercise label="accum_pattern_q2">
       <statement>
         <p>
     What is printed by the following statements?
@@ -238,11 +238,11 @@ print(min_value)
       </choices>
     </exercise>
     
-    <exercise label="ac7_10_7">
+    <exercise label="accum_verb_forms">
       <statement>
         <p><term>Challenge</term> For each word in <c>words</c>, add &#x2018;d' to the end of the word if the word ends in <q>e</q> to make it past tense. Otherwise, add &#x2018;ed' to make it past tense. Save these past tense words to a list called <c>past_tense</c>.</p>
       </statement>
-      <program xml:id="ac7_10_7_editor" interactive="activecode" language="python">
+      <program xml:id="accum_verb_forms" interactive="activecode" language="python">
         <input>
 words = ["adopt", "bake", "beam", "confide", "grill", "plant", "time", "wave", "wish"]
 

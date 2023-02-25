@@ -6,7 +6,7 @@
       Let's say we have information about some students: their name, ID number, and their GPA (grade point average). We can use separate lists for each of these:
     </p>
     
-    <program language="python">
+    <program xml:id="separate_lists" language="python">
       <input>
 names = ["Phuong", "Federico", "Michele", "Steve"]
 id_nums = [101345, 43617, 81882, 79315]
@@ -17,7 +17,7 @@ gpa = [3.9, 3.92, 3.85, 3.76]
     <p>
       There's nothing wrong with this, but the data for each student really belongs together. It would be nice if we could put all the data into one list of four elements, where each element has the student name, ID, and GPA grouped together. It turns out that Python lets us do exactly that. We have already seen that lists can contain elements of different data types: <c>[47, "blah", 37.5, True]</c>. Lists are also data types, so we can have a list that contains another list. That lets us write our student information as:
     </p>
-        <program language="python" interactive="activecode">
+        <program xml:id="nested_student_list" language="python" interactive="activecode">
     <input>
 students = [["Phuong", 101345, 3.9], ["Federico", 43617, 3.92],
             ["Michele", 81882, 3.85], ["Steve", 79315, 3.76]]
@@ -92,7 +92,7 @@ print(student_tests[3][2][1]) # 89.9
 <subsection xml:id="nested_list_ex">
   <title>Check Your Understanding</title>
   <p> In these exercises, the nested lists aren't particularly useful; they are designed to test how well you understand accessing a nested list. We'll return to more useful nested lists on the next page.</p>
-  <exercise label="test_question9_21_1">
+  <exercise label="nested_access_question1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -133,7 +133,7 @@ else:
     </choices>
   </exercise>
   
-    <exercise label="test_question9_3_3">
+    <exercise label="nested_access_question2">
     <statement>
       <p>What is printed by the following statements? (Remember: you can use the index operator on strings as well as lists.)</p>
       <program language="python">

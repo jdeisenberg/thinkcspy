@@ -4,7 +4,7 @@
   <p>
     Again, as with strings, the <c>+</c> operator concatenates lists. Similarly, the <c>*</c> operator repeats the items in a list a given number of times.
   </p>
-  <program xml:id="chp09_5" interactive="activecode" language="python">
+  <program xml:id="list_concat_repeat" interactive="activecode" language="python">
     <input>
 fruit_list = ["apple", "orange", "banana", "cherry"]
 print([1, 2] + [3, 4])
@@ -46,7 +46,7 @@ zeros = [0] * 4
   </program>
   -->
   
-  <exercise label="test_question9_5_1">
+  <exercise label="list_concat_repeat_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -86,7 +86,7 @@ print(a_list + b_list)
     </choices>
   </exercise>
   
-  <exercise label="test_question9_5_2">
+  <exercise label="list_concat_repeat_q2">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

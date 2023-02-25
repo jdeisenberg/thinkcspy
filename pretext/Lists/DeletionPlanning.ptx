@@ -2,7 +2,7 @@
 <section xml:id="lists_deletion-program">
   <title>Programming Phase 1: Planning</title>
   <p>
-    Let's write a function that deletes all the negative elements in a list; if you give it the list <c>[10, -66, -47, 11, 505, -217]</c> the list will be modified to <c>[10, 11, 505]</c>. This function will <em>not</em> return a new list; it will modify the list we give it <q>in place</q>.
+    Let's write a function that deletes all the negative elements in a list; if you give it the list <c>[10, -66, -47, 11, 505, -217]</c>, the list will be modified to <c>[10, 11, 505]</c>. This function will <em>not</em> return a new list; it will modify the list we give it <q>in place</q>.
   </p>
   
   <p>

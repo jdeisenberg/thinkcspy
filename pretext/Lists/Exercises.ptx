@@ -104,7 +104,7 @@ print (my_list)
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_list_avg_editor">
       <input>
-def average(numlist):
+def average(num_list):
     # Complete the function definition
 
 ====
@@ -122,13 +122,13 @@ myTests().main()
     <solution>
       <program xml:id="ex_list_avg_solution" language="python">
         <input>
-def average(numlist):
+def average(num_list):
 
     total = 0
-    for num in numlist:
+    for num in num_list:
         total = total + num
 
-    return total / len(numlist)
+    return total / len(num_list)
         </input>
       </program>
     </solution>
@@ -140,7 +140,7 @@ def average(numlist):
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_list_max_editor">
       <input>
-def max(numlist):
+def max(num_list):
     # Complete the function
 
 ====

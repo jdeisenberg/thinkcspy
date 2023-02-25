@@ -77,10 +77,10 @@ print(f"Final list is {numbers}")
     <subsection xml:id="list_delete_fix_moral">
       <title>The Moral of the Story</title>
       <p>
-        Sometimes your first plan simply doesn't work. The plans for your program are not engraved in stone; think of them as engraved in jello<fn>Jell-O<registered/> is a registered trademark of Kraft Heinz</fn>.
+        Sometimes your first plan simply doesn't work. The plans for your program are not engraved in stone; think of them as engraved in jello<fn>Jell-O<registered/> is a registered trademark of Kraft Heinz.</fn>.
       </p>
       <p>
-        When a program doesn't work, don't go right into a <q>change code and see if that fixes it</q> loop. Instead, stop and diagnose the problem. Find out where the problem is occurring and figure out why. It's really hard to fix a problem if you don't know what it is.
+        When a program doesn't work, don't go right into a <q>change code and see if that fixes it</q> cycle. Instead, stop and diagnose the problem. Find out where the problem is occurring and figure out why. It's really hard to fix a problem if you don't know what it is.
       </p>
       <p>
         Change the program or the plan <em>after</em> you know what the problem is. 

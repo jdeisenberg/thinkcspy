@@ -27,7 +27,7 @@ print(squared_list)
   <p>
     Here is a rewrite of <c>remove_negative</c> that filters a sequence of integers with a list comprehension.
   </p>
-  <program language="python" interactive="activecode">
+  <program xml:id="list_compr_remove_negative" language="python" interactive="activecode">
     <input>
 def remove_negative(a_list):
     """ Return a list of all non-negative items in a_list.
@@ -48,7 +48,7 @@ print(f"Final list is {new_numbers}")
 
 </introduction>
   <exercises>
-  <exercise label="test_question9_20_1">
+  <exercise label="list_compr_question">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
@@ -103,7 +103,7 @@ print(b_list)
         </ul>
       </p>
     </statement>
-  <program xml:id="vowelicious_list_comp_ex" interactive="activecode" language="python">
+  <program xml:id="vowelicious_list_compr_ex" interactive="activecode" language="python">
     <input>
 def count_vowels(a_string):
     """ Return the number of vowels in the parameter string.
@@ -132,6 +132,7 @@ print(f"The vowelicious words are {kept_words}")
     <input>
 def count_vowels(a_string):
     """ Return the number of vowels in the parameter string.
+    
     Vowels are a, e, i, o, and u (upper and lower case).
     The letter y is not considered to be a vowel in this program.
     """
@@ -143,6 +144,7 @@ def count_vowels(a_string):
     
 def keep_vowelicious(a_list):
     """Keep only words with four or more vowels.
+    
     Given a list of words, return a new list that contains
     only words that have four or more vowels.
     """

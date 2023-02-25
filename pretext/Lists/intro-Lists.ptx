@@ -8,14 +8,6 @@
       Before we examine lists in detail, let's review what we already know about lists. Take a look at what life would be like without lists. If we wanted to find the average of seven days of maximum temperaturess (in degrees Celsius), we'd need to do something like the following:
     </p>
     
-    <note>
-      <title>Continuing Lines</title>
-      <p>
-        If a line of Python code is very long and you want to avoid horizontal scrolling in your editor, you can put a backslash at the end of a line wherever you would have a space, and then you can continue the code on the next line, as we will do in this program.
-      </p>
-    </note>
-    
-
     <program language="python" xml:id="lists_individual_temperatures">
       <input>
 temp1 = 22.5
@@ -34,6 +26,13 @@ avg = total / 7
 print(f"Average temperature is {avg:.1f} degrees C.")        
       </input>
     </program>
+    
+    <note>
+      <title>Continuing Lines</title>
+      <p>
+        If a line of Python code is very long and you want to avoid horizontal scrolling in your editor, you can put a backslash at the end of a line wherever you would have a space, and then you can continue the code on the next line, as we will do in this program.
+      </p>
+    </note>
     
     <p>
       Can you imagine what the program would look like if we had a month's worth of data? Things would get unmanageable very quickly. Luckily, lists help us manage problems like this.

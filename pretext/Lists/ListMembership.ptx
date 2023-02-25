@@ -4,7 +4,7 @@
   <p>
     <c>in</c> and <c>not in</c> are boolean operators that test membership in a sequence. We used them previously with strings and they also work here.
   </p>
-  <program xml:id="chp09_4" interactive="activecode" language="python">
+  <program xml:id="list_membership_program" interactive="activecode" language="python">
     <input>
 fruit_list = ["apple", "orange", "banana", "cherry"]
 
@@ -49,7 +49,7 @@ print(kiwi_index)
 
 <p>Because our <c>safe_index</c> function isn't built in to the <c>list</c> class, we cannot use it with dot notation.</p>
 
-  <exercise label="test_question9_4_1">
+  <exercise label="list_membership_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">

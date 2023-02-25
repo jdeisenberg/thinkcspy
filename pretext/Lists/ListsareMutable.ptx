@@ -5,7 +5,7 @@
     Now it's time to see the things that make lists different from strings. Possibly the most important difference is that, unlike strings, lists are <term>mutable</term>.  This means we can change an item in a list by accessing it directly as part of an assignment statement. By using the indexing operator (square brackets) on the left side of an assignment, we can update one of the list items.
   </p>
   
-  <program xml:id="ch09_7" interactive="activecode" language="python">
+  <program xml:id="list_assign" interactive="activecode" language="python">
     <input>
 fruit = ["banana", "apple", "cherry"]
 print(fruit)
@@ -35,7 +35,7 @@ fruit[-1] = "orange"
   <p>
     By combining assignment with the slice operator, we can update several elements at once. In the following program, we change the second and third elements of the array with one assignment:
   </p>
-  <program xml:id="ch09_8" interactive="activecode" language="python">
+  <program xml:id="list_slice_assign" interactive="activecode" language="python">
     <input>
 a_list = ['a', 'b', 'c', 'd', 'e', 'f']
 a_list[1:3] = ['x', 'y']
@@ -47,7 +47,7 @@ print(a_list)
     We can also remove elements from a list by assigning the empty list to them.
   </p>
   
-  <program xml:id="ch09_9" interactive="activecode" language="python">
+  <program xml:id="list_remove_assign" interactive="activecode" language="python">
     <input>
 a_list = ['a', 'b', 'c', 'd', 'e', 'f']
 a_list[1:3] = []
@@ -59,7 +59,7 @@ print(a_list)
     We can even insert elements into a list by squeezing them into an empty slice at the desired location.
   </p>
   
-  <program xml:id="ch09_10" interactive="activecode" language="python">
+  <program xml:id="list_insert" interactive="activecode" language="python">
     <input>
 a_list = ['a', 'd', 'f']
 a_list[1:1] = ['b', 'c']
@@ -69,7 +69,7 @@ print(a_list)
     </input>
   </program>
 
-  <exercise label="test_question9_7_1">
+  <exercise label="list_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
