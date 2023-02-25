@@ -3,7 +3,7 @@
   <title>Multiple Exceptions</title>
   <introduction>
   <p>
-    What happens if your <c>try</c> clause contains code that could cause more than one potential error:
+    What happens if your <c>try</c> clause contains code that could cause more than one potential error, as in the following program?
   </p>
   
   <program xml:id="value_err_example" interactive="activecode" language="python">
@@ -55,11 +55,7 @@ except ZeroDivisionError:
     Consider this program, which is a good example of an example, but not a particularly good use of exceptions (see <xref ref="exceptions_principles-for-using-exceptions"/> to see why). It will specifically catch a <c>ValueError</c> (bad input) or <c>ZeroDivisionError</c>, and everything else will be caught by the generic <c>except</c>.
   </p>
   
-  <p>
-    The program will start with <c>import sys</c>, which imports functions that are useful when you need to find out information about the current Python system you are running on. It will use the <c>sys.exc_info()</c> method to return some information about the exception. It's not pretty, but your program won't crash.  Try entering 9 for the index number to get an unanticipated exception (well, one that we purposely haven't put into the program).
-  </p>
-  
-  <program xml:id="sys_except_info" interactive="activecode" language="python">
+  <program xml:id="sys_except_info" language="python">
     <input>
 import sys
 
@@ -77,5 +73,15 @@ except:
     print(sys.exc_info())
     </input>
   </program>
+
+  <p>
+    The program starts with <c>import sys</c>, which imports functions that are useful when you need to find out information about the current Python system you are running on. It uses the <c>sys.exc_info()</c> method to return some information about the exception. It's not pretty, but your program won't crash.  Try entering 9 for the index number to get an unanticipated exception (well, one that we purposely haven't put into the program).
+  </p>
+  
+  <note>
+    <p>You will have to copy and paste this program into your development environment, as the activecode version of Python does not handle the <c>sys.exc_info()</c> method.
+    </p>
+  </note>
+  
 </subsection>
 </section>

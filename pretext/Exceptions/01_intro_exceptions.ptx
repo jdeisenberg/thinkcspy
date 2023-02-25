@@ -2,7 +2,7 @@
 <section xml:id="exceptions_what-is-an-exception">
   <title>What is an Exception?</title>
   <p>
-    If you have been programming for any significant length of time in Python, you have almost certainly encountered errors such as <c>NameError</c> and <c>ValueError</c>. (If you haven't, then you are either an exceptionally good programmer or you are exceptionally lucky. We'll go with the <q>good programmer</q> option.)
+    If you have been programming for any significant length of time in Python, you have almost certainly encountered errors such as <c>NameError</c> and <c>ValueError</c>. (If you haven't, then you are either an incredibly good programmer or you are incredibly lucky. We'll go with the <q>good programmer</q> option.)
   </p>
   
   <p>

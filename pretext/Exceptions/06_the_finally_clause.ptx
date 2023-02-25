@@ -3,7 +3,7 @@
   <title>The <c>finally</c> clause of the <c>try</c> statement</title>
   
   <p>
-    A common programming pattern is to grab a resource of some kind &#x2014; e.g. we dial up a connection to our internet service provider, or we may open a file for writing. Then we perform some computation which may raise an exception, or may work without any problems. Whatever happens, we want to <q>clean up</q> the resources we grabbed &#x2014; e.g. disconnect our dial-up connection or close the file. The <c>finally</c> clause of the <c>try</c> statement is the way to do just this.
+    A common programming pattern is to grab a resource of some kind &#x2014; e.g. we establish a network connection to our internet service provider, or we may open a file for writing. Then we perform some computation which may raise an exception, or may work without any problems. Whatever happens, we want to <q>clean up</q> the resources we grabbed &#x2014; e.g. disconnect from the network or close the file. The <c>finally</c> clause of the <c>try</c> statement is the way to do just this.
   </p>
   
   <p>
