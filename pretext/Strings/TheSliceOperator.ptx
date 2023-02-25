@@ -133,11 +133,11 @@ print(s[7:11] * 3)
   </p>
   
   <p>
-    The key to this program, then, is to figure out where the comma is positioned in the string. We can do this by using a <c>while</c> loop to move an index forward until we find the comma. There is an easier way to do this; we will see it in <xref ref="strings_string-methods"/>, but for now, we can use a loop and the indexing operator to look at the string one character at a time.
+    If we look at everything after the city name (the comma, space, two-character state, space, and five digits), we find that adds up to ten characters. That means the first <em>length</em> - 10 characters must be the city name, where <em>length</em> is the length of the whole string.
   </p>
   
   <p>
-    You might want to make a function called <c>find_comma</c> that takes a string as its parameter and returns the index where the first comma is found, or -1 if there is no comma in the string.
+    Use these facts to figure out the slices required to separate out the city, state, and ZIP code.
   </p>
 </statement>
 
@@ -149,28 +149,20 @@ print(s[7:11] * 3)
     </program>
     <solution>
       <program language="python"><input>
-def find_comma(str):
-    """Find index of first comma in str.
-    If str does not have a comma, return -1
-    """
-    index = 0
-    while index &lt; len(str) and str[index] != ',':
-        index = index + 1
-    if index &lt; len(str):
-        return index
-    else: # loop ended without finding a comma
-        return -1
     
 address = "Sault Ste. Marie, MI 49783"
-comma_index = find_comma(address)
+city_end = len(address) - 10
 
-city = address[0:comma_index]
-state = address[(comma_index + 2):(comma_index + 4)]
+city = address[0:city_end]
+state = address[(city_end + 2):(city_end + 4)]
 zipcode = address[-5:]
 
-print(f"City: {city}")
-print(f"State: {state}")
-print(f"ZIP code: {zipcode}")
+# display vertical bars to make sure there
+# are no extra spaces.
+
+print(f"City: |{city}|")
+print(f"State: |{state}|")
+print(f"ZIP code: |{zipcode}|")
 </input></program>
 </solution>
   </exercise>

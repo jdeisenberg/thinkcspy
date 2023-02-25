@@ -35,7 +35,7 @@ while position &lt; len(fruit):
   </program>
   
   <p>
-    When you traverse a string with <c>for</c> by item (as in <xref ref="strings_traversal-by-item"/>), you have to process every character<fn>unless you use <c>break</c>, which is not encouraged</fn>. With <c>while</c>, you don't have to process the entire string, You can set a condition to exit the loop before the whole string is processed. (We did this in the city/state/postal code exercise in <xref ref="strings_the-slice-operator"/>.) Here is a program that prints every character in a string up to the first space:
+    When you traverse a string with <c>for</c> by item (as in <xref ref="strings_traversal-by-item"/>), you have to process every character<fn>unless you use <c>break</c>, which is not encouraged</fn>. With <c>while</c>, you don't have to process the entire string, You can set a condition to exit the loop before the whole string is processed. Here is a program that prints every character in a string up to the first space:
   </p>
   
   <program xml:id="while_with_exit" interactive="activecode" language="python">
