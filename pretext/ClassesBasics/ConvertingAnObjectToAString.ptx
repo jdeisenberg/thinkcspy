@@ -29,15 +29,15 @@ print(r)
         </input>
   </program>
   <p>
-      The <c>print</c> function shown above produces a string representation of the Rectangle <c>r</c>.  The default functionality provided by Python tells you that <c>r</c> is an object of type <c>Rectangle</c> along with the memory address of the object.  However, it does not tell you anything about the specific state of the point.
+      The <c>print</c> function shown above produces a string representation of the Rectangle <c>r</c>.  The default functionality provided by Python tells you that <c>r</c> is an object of type <c>Rectangle</c> (along with the memory address of the object when running the program in a real Python environment).  However, it does not tell you anything about the specific state of the point.
   </p>
   
   <p>
-      We can improve on this representation if we include a special method called <c>__str__</c>.  Notice that this method uses the same naming convention as the constructor: two underscores before and after the name.  It is common that Python uses this naming technique for special methods.
+      We can improve on this representation if we include a special method called <c>__str__</c>.  Notice that this method uses the same naming convention as the constructor: two underscores before and after the name.  Python commonly uses this double-underscore naming technique for special methods.
   </p>
   
   <p>
-      The <c>__str__</c> method is responsible for returning a string representation as defined by the class creator.  In other words, you as the programmer, get to choose what a <c>Rectangle</c> should look like when it gets printed.  In this case, we have decided that the string representation will include the values of <c>width</c> and <c>height</c> as well as some identifying text.  The <c>__str__</c> method <em>must</em> create and <em>return</em> a string.
+      The <c>__str__</c> method is responsible for returning a string representation as defined by the class creator.  In other words, you as the programmer, get to choose what a <c>Rectangle</c> should look like when it gets printed.  In this case, we have decided that the string representation will include the values of <c>width</c> and <c>height</c> as well as some identifying text.  The <c>__str__</c> method <em>must</em> <c>return</c> a string. In the following code, we return an f-string (as described in <xref ref="strings_formatting-strings"/>) for convenience.
   </p>
   
   <program xml:id="classes_str2" interactive="activecode" language="python">

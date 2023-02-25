@@ -2,11 +2,9 @@
 <section xml:id="classes-basics_objects-as-arguments-and-parameters">
   <title>Objects as Arguments and Parameters</title>
   <p>
-      You can pass an object as an argument in the usual way.  We've already seen this in some of the turtle examples where we passed the turtle to some function like <c>drawRectangle</c> so that the function could control and use whatever turtle instance we passed to it.</p>
-  <p>
-      Here is a simple function called <c>averageArea</c> involving our new <c>Rectangle</c> objects.  The job of this function is to figure out the
-            average area of two rectangles.
+      You can pass an object as an argument in the usual way. Here is a function called <c>averageArea</c> involving our new <c>Rectangle</c> objects.  The job of this function is to figure out the average area of two rectangles.
   </p>
+  
   <program xml:id="classes_avg_area" interactive="activecode" language="python">
     <input>
 class Rectangle:
@@ -38,6 +36,6 @@ print(averageArea(r1, r2))
   </program>
   
   <p>
-      <c>averageArea</c> takes two rectangles and returns their average area.  Note that <c>averageArea</c> is <term>not</term> a method of the Rectangle class.  You can see this by looking at the indentation pattern.  It is not inside the class definition.  The other way we can know that <c>averageArea</c> is not a method of Rectangle is that <c>self</c> is not included as a formal parameter.  In addition, we do not invoke <c>averageArea</c> using the dot notation.
+      <c>averageArea</c> takes two rectangles and returns their average area.  Note that <c>averageArea</c> is <term>not</term> a method of the Rectangle class.  You can see this by looking at the indentation pattern.  It is not inside the class definition.  The other way we can determine that <c>averageArea</c> is not a method of Rectangle is that <c>self</c> is not included as a formal parameter.  In addition, we do not invoke <c>averageArea</c> using the dot notation.
     </p>
 </section>

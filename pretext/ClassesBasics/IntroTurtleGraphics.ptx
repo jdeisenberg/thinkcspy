@@ -46,7 +46,7 @@ alex.forward(75)            # complete the second side of a rectangle
     The key thing to notice here is that the turtle is the focus of our attention. In our object orientation, <c>alex.forward(75)</c> is telling the turtle to move forward 75 pixels, unlike a procedural program which would say <c>forward(alex,  75)</c> where the action is the focus rather than the actor.
   </p>
 
-  <exercise label="rsid_3_1" indent="show" language="python">
+  <exercise label="capital_L" indent="show" language="python">
     <statement>
       <p>The following program uses a turtle to draw a capital L as shown in the picture to the left of this text,</p>
       <image source="PythonTurtle/Figures/TurtleL4.png" width="75%"/>
@@ -70,7 +70,7 @@ alex.forward(75)            # complete the second side of a rectangle
     </blocks>
   </exercise>
 
-  <exercise label="test_question3_1_1">
+  <exercise label="import_turtle_question">
     <statement>
       <p>Consider the following code:</p>
       <program language="python">
@@ -112,7 +112,8 @@ alex.forward(75)
       </choice>
     </choices>
   </exercise>
-  <exercise label="test_question3_1_2">
+  
+  <exercise label="turtle_object_question">
     <statement>
       <p>Why do we type <c>turtle.Turtle()</c> to get a new Turtle object?</p>
     </statement>

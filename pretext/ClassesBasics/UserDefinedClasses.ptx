@@ -2,11 +2,11 @@
 <section xml:id="classes-basics_user-defined-classes">
   <title>User Defined Classes</title>
   <p>
-    We've already seen classes like <c>str</c>,    <c>int</c>,    <c>float</c> and <c>Turtle</c>.  These were defined by Python and made available for us to use.  However, in many cases when we are solving problems we need to create data objects that are related to the problem we are trying to solve.  We need to create our own classes.
+    We've already seen classes like <c>str</c>, <c>int</c>, <c>float</c> and <c>Turtle</c>. These were defined by Python and made available for us to use.  However, in many cases when we are solving problems, we need to create data objects that are related to the problem we are trying to solve.  We need to create our own classes.
   </p>
   
   <p>
-    As an example, consider the concept of rectangle. In two dimensions, a rectangle is two numbers (width and height) that are treated collectively as a single object.
+    As an example, consider the concept of a rectangle. In two dimensions, a rectangle is two numbers (width and height) that are treated collectively as a single object.
   </p>
   
   <p>Thinking about our diagram above, we could draw a <c>Rectangle</c> object as shown here.</p>
@@ -15,6 +15,7 @@
   <p>
     Some of the typical operations that one associates with rectangles might be to ask the rectangle for its <c>area</c> or its <c>perimeter</c>.  You may also wish to calculate the length of the diagonal of the rectangle, or determine the ratio of the width to height.  We'll shortly see how we can organize these together with the data.
   </p>
+  
   <image source="ClassesBasics/Figures/objectpic3a.png" width="50%" alt="A point also has methods"/>
   
   <p>
@@ -34,11 +35,11 @@ class Rectangle:
   </program>
   
   <p>
-    Class definitions can appear anywhere in a program, but they are usually near the beginning (after the <c>import</c> statements). The syntax rules for a class definition are the same as for other compound statements. There is a header which begins with the keyword, <c>class</c>, followed by the name of the class, and ending with a colon.
+    Class definitions can appear anywhere in a program, but they are usually near the beginning (after the <c>import</c> statements). The syntax rules for a class definition are the same as for other compound statements. There is a header which begins with the keyword <c>class</c>, followed by the name of the class, and ending with a colon.
   </p>
   
   <p>
-    If the first line after the class header is a string, it becomes the docstring of the class, and will be recognized by various tools.  (This is also the way docstrings work in functions.)
+    If the first line after the class header is a string, it becomes the docstring of the class, and will be recognized by various tools.  (This is also the way docstrings work in functions, as described in <xref ref="functions_docstrings"/>.)
   </p>
   
   <p>
@@ -79,7 +80,7 @@ print("Nothing seems to have happened with the rectangles")
   </note>
   
   <p>
-    You will note that when you run the program, nothing happens.  It turns out that this is not quite the case.  In fact, two <c>Rectangles</c> have been created, each having a width and height with value 1.  However, because we have not asked the rectangles to do anything, we don't see any other result.
+    You will note that when you run the program, nothing seems to happen.  It turns out that this is not quite the case.  In fact, two <c>Rectangles</c> have been created, each having a width and height with value 1.  However, because we have not asked the rectangles to do anything, we don't see any other result.
   </p>
   
   <image source="ClassesBasics/Figures/objectpic4a.png" width="50%" alt="Simple object has state and methods"/>
@@ -149,7 +150,7 @@ Are r1 and r2 the same object? False</pre>
   </p>
 
   <p>
-    It may be helpful to think of a class as a factory for making objects. The class itself isn't an instance of a rectangle, but it contains the machinery to make point instances.   Every time you call the constructor, you're asking the factory to make you a new object.  As the object comes off the production line, its initialization method is executed to get the object properly set up with its factory default settings.
+    It may be helpful to think of a class as a factory for making objects. The class itself isn't an instance of a rectangle, but it contains the machinery to make point instances. Every time you call the constructor, you're asking the factory to make you a new object.As the object comes off the production line, its initialization method is executed to get the object properly set up with its factory default settings.
   </p>
   
   <p>
@@ -160,7 +161,7 @@ Are r1 and r2 the same object? False</pre>
     <term>Check Your Understanding</term>
   </p>
   
-  <exercise label="chp17_objects">
+  <exercise label="init_objects_question">
     <statement>
       <p>What is the the output of the following print code?</p>
       <program language="python">

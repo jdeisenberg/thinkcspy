@@ -11,7 +11,7 @@
     </p>
     
   <p>
-      Let's add two simple methods to allow a point to give us information about its state.  The <c>area</c> method, when invoked, will return the value of the rectangle's area.  The implementation of this method is straight forward since we already know how to write functions that return values.  One thing to notice is that even though the <c>area</c> method does not need any other parameter information to do its work, there is still one formal parameter, <c>self</c>.  As we stated earlier, all methods defined in a class that operate on objects of that class will have <c>self</c> as their first parameter.  Again, this serves as reference to the object itself, which in turn gives access to the state data inside the object. We will also write a similar <c>perimeter</c> method that returns the rectangle's perimeter.
+      Let's add two simple methods to allow a point to do calculations with the information about its state.  The <c>area</c> method, when invoked, will return the value of the rectangle's area.  The implementation of this method is straight forward since we already know how to write functions that return values.  One thing to notice is that even though the <c>area</c> method does not need any other parameter information to do its work, there is still one formal parameter, <c>self</c>.  As we stated earlier, all methods defined in a class that operate on objects of that class will have <c>self</c> as their first parameter.  Again, this serves as reference to the object itself, which in turn gives access to the state data inside the object. We will also write a similar <c>perimeter</c> method that returns the rectangle's perimeter.
   </p>
   <program xml:id="chp13_classes4" interactive="activecode" language="python">
     <input>
@@ -65,6 +65,6 @@ print(r.diagonal_length())
   </program>
   
   <p>
-      Notice that the caller of <c>distanceFromOrigin</c> does not explicitly supply an argument to match the <c>self</c> parameter.  This is true of all method calls. The definition will always have one additional parameter as compared to the invocation.
+      Notice that the caller of <c>diagonal_length</c> does not explicitly supply an argument to match the <c>self</c> parameter.  This is true of all method calls. The definition will always have one additional parameter as compared to the invocation. (You can think of <c>self</c> as a placeholder for the object that precedes the dot in the invocation.)
   </p>
 </section>

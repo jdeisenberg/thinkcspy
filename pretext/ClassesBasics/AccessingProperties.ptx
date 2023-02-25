@@ -2,7 +2,7 @@
 <section xml:id="classes-basics_accessing-properties">
   <title>Accessing Properties</title>
   <p>
-    Our constructor so far can only create rectangles with width and height of 1.  Ideally, we would like to set the rectanglee's dimensions when we create the point, and we will see how to do that in <xref ref="classes-basics_improving-our-constructor"/>. But for now, let's see how to directly access and modify a rectangle's state.
+    Our constructor so far can only create rectangles with width and height of 1.  Ideally, we would like to set the rectangle's dimensions when we create the point, and we will see how to do that in <xref ref="classes-basics_improving-our-constructor"/>. But for now, let's see how to directly access and modify a rectangle's state.
   </p>
  
   <program xml:id="class-access-properties" interactive="activecode" language="python">
