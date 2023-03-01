@@ -72,7 +72,7 @@ print(r)
   </p>
   
   <p>
-      Now, you ask, don't we already have an <c>str</c> type converter that can turn our object into a string?  Yes we do! And doesn't <c>print</c> automatically use this when printing things?  Yes again!
+      Now, you ask, don't we already have an <c>str</c> type converter that can turn our object into a string?  Yes, we do! And doesn't <c>print</c> automatically use this when printing things?  Yes again!
   </p>
   
   <p>

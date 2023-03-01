@@ -37,6 +37,7 @@
          <!--<xi:include href="./UnitTesting/toctree.ptx"/>-->
         <backmatter>
             <xi:include href="./Appendices/PrecedenceTable.ptx"/>
+            <!--<xi:include href="./Appendices/Solutions.ptx"/>-->
             <!-- <xi:include href="./Appendices/errorsAndDebug.ptx"/> -->
             <index>
                 <index-list/>

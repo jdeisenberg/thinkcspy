@@ -10,7 +10,7 @@
   </p>
   
   <p>
-    Here's the problem we want to solve: Back in <xref ref="simple-python-data_order-of-operations"/> we found out how many hours are in 645 minutes by evaluating <c>645&#160;//&#160;60</c>. We will write a similar, but slightly more complicated program: find out how many hours, minutes, and seconds are in 7468 seconds.
+    Here's the problem we want to solve: Back in <xref ref="simple-python-data_operators-and-operands"/> we found out how many hours are in 645 minutes by evaluating <c>645&#160;//&#160;60</c>. We will write a similar, but slightly more complicated program: find out how many hours, minutes, and seconds are in 7468 seconds.
   </p>
   
   <p>
