@@ -95,7 +95,7 @@ print(grossPay)
         
         <exercise label="cndtnl-wc-distanceq">
           <statement>
-            <p>Write the code to calculate and print the cost of a 14 mile cab ride. If the distance traveled is less than or equal to 5 miles the cost is $2.00 a mile. If the distance is greeater than 5 but less than or equal to 12 miles, the cost is $1.50, and if the distance traveled is more than 12 miles the cost is $1.25 a mile. Assign the final cost to the variable <c>total</c>. (Your code should work for any mileage, not just for 14 miles.)</p>
+            <p>Write the code to calculate and print the cost of a 14 mile cab ride. If the distance traveled is less than or equal to 5 miles the cost is $2.00 a mile. If the distance is greater than 5 but less than or equal to 12 miles, the cost is $1.50, and if the distance traveled is more than 12 miles the cost is $1.25 a mile. Assign the final cost to the variable <c>total</c>. (Your code should work for any mileage, not just for 14 miles.)</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="cndtnl-wc-distanceq_editor">
             <input>
