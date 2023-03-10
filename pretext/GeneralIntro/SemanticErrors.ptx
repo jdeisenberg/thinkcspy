@@ -5,11 +5,15 @@
   </p>
   
   <p>
+    Using English as an example, think of this statement: <q>To calculate the area of a rectangle, add its width and height.</q> The syntax (structure) is correct. You won't get a <q>run-time</q> error; nothing bad happens when you add numbers. But the instructions themselves are telling you the wrong thing<mdash/>you should multiply, not add, the width and height.
+  </p>
+  
+  <p>
     The problem is that the program you wrote is not the program you wanted to write. The meaning of the program (its semantics) is wrong.  Identifying semantic errors can be tricky because it requires you to work backward by looking at the output of the program and trying to figure out what it is doing.
   </p>
           
   <p>
-    Unlike syntax and runtime errors, Python can't help you find semantic errors because it has no way of knowing what you intended. An example of semantic errors might be adding a discount to a total instead of subtracting it.
+    Unlike syntax and runtime errors, Python can't help you find semantic errors because it has no way of knowing what you intended.
   </p>
   
   <exercise label="question1_8_1">

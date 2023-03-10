@@ -5,8 +5,10 @@
     The second type of error is a runtime error, so called because the error does not appear until you run the program. These errors are also called <term>exceptions</term> because they usually indicate that something exceptional (and bad) has happened.
   </p>
   <p>
-    Runtime errors are rare in the simple programs you will see in the first few
-            chapters, so it might be a while before you encounter one.
+    Runtime errors are rare in the simple programs you will see in the first few chapters, so it might be a while before you encounter one.
+  </p>
+  <p>
+    Using English as an example, think of this statement: <q>Put an open bottle of ink in your shirt pocket.</q> The syntax (structure) of the statement is fine, but if you follow the command, something bad willl happen to your shirt pocket.
   </p>
   <p>
     <em>Check your understanding</em>
