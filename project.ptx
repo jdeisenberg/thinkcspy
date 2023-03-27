@@ -22,13 +22,13 @@
     <target name="latex">
       <format>latex</format>
       <source>pretext/cs20-thinkcspy.ptx</source>
-      <publication>publication/publication.ptx</publication>
+      <publication>publication/publication_to_print.xml</publication>
       <output-dir>output/latex</output-dir>
     </target>
     <target name="pdf" pdf-method="pdflatex">
       <format>pdf</format>
       <source>pretext/cs20-thinkcspy.ptx</source>
-      <publication>publication/publication.ptx</publication>
+      <publication>publication/publication_to_print.xml</publication>
       <output-dir>output/pdf</output-dir>
     </target>
     <target name="subset">

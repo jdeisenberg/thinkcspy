@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<publication>
+    <common>
+    <exercise-inline statement="yes" hint="yes" answer="no" solution="no" />
+    <exercise-divisional statement="yes" hint="yes" answer="no" solution="no" />
+    <exercise-reading statement="yes" hint="yes" answer="no" solution="no" />
+    <exercise-project statement="yes" hint="yes" answer="no" solution="no" />
+    <exercise-worksheet statement="yes" hint="yes" answer="no" solution="no" />
+  </common>
+    <!-- directories are relative to the main source PreTeXt file -->
+    <source>
+        <directories external="../assets" generated="../generated-assets"/>
+    </source>
+</publication>

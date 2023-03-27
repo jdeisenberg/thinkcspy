@@ -5,7 +5,7 @@
   </p>
   
   <p>
-    Using English as an example, think of this statement: <q>To calculate the area of a rectangle, add its width and height.</q> The syntax (structure) is correct. You won't get a <q>run-time</q> error; nothing bad happens when you add numbers. But the instructions themselves are telling you the wrong thing<mdash/>you should multiply, not add, the width and height.
+    Using English as an example, think of this statement: <q>To calculate the area of a rectangle, add its width and height.</q> The syntax (structure) is correct. You won't get a <q>run-time</q> error; nothing bad happens when you add numbers. But the instructions are telling you the wrong thing<mdash/>you should multiply, not add, the width and height.
   </p>
   
   <p>
