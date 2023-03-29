@@ -13,24 +13,28 @@
       <output-dir>output/html</output-dir>
       <!--<stringparam key="debug.react.global" value="yes"/>-->
     </target>
+    
     <target name="runestone">
       <format>html</format>
       <source>pretext/cs20-thinkcspy.ptx</source>
       <publication>pretext/publication-rs-academy.xml</publication>
       <output-dir>published/httlacs</output-dir>
     </target>
+    
     <target name="latex">
       <format>latex</format>
       <source>pretext/cs20-thinkcspy.ptx</source>
       <publication>publication/publication_to_print.xml</publication>
       <output-dir>output/latex</output-dir>
     </target>
+    
     <target name="pdf" pdf-method="pdflatex">
       <format>pdf</format>
       <source>pretext/cs20-thinkcspy.ptx</source>
       <publication>publication/publication_to_print.xml</publication>
       <output-dir>output/pdf</output-dir>
     </target>
+    
     <target name="subset">
       <format>html</format>
       <source>source/main.ptx</source>
@@ -41,6 +45,15 @@
            in your subset build -->
       <xmlid-root>ch-first</xmlid-root>
     </target>
+    
+    <target name="solutions">
+      <format>latex</format>
+      <source>pretext/cs20-thinkcspy.ptx</source>
+      <publication>publication/solution_to_print.xml</publication>
+      <xsl>xsl/solution-manual.xsl</xsl>
+      <output-dir>output/solutions</output-dir>
+    </target>
+
   </targets>
   <executables>
     <latex>latex</latex>
