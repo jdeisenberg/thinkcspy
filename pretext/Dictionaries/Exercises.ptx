@@ -355,8 +355,8 @@ def translator(english):
   pirate['students'] = 'swabbies'
 
   # Complete the function
-
-====
+</input>
+<tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -366,7 +366,7 @@ class myTests(TestCaseGui):
         self.assertEqual(translator("the boy stayed in the hotel"),'the matey stayed in the fleabag inn','translator("the boy stayed in the hotel") yields "the matey stayed in the fleabag inn"')
 
 myTests().main()
-        </input>
+        </tests>
     </program>
     <solution>
       <program xml:id="ch11_q5_answer" language="python">

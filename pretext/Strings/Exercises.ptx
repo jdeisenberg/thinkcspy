@@ -63,9 +63,8 @@ for p in prefixes:
     print(p + suffix)
 
 # Fix the loop to get the correct output.
-
-====
-
+</input>
+<tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -86,7 +85,7 @@ class myTests(TestCaseGui):
         self.assertNotIn("Oack", o, "Account for the misspellings. Qack should not be in output.")
         self.assertNotIn("Qack", o, "Account for the misspellings. Qack should not be in output.")
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -107,8 +106,8 @@ def count(paragraph):
     prints the percentage of characters that are "e".
     """
     # your code here
-
-====
+  </input>
+  <tests>
 
 from unittest.gui import TestCaseGui
 
@@ -124,7 +123,7 @@ class myTests(TestCaseGui):
         self.assertEqual(count(string3), 12, "Twelve")
         self.assertNotEqual(count(string4), 3, "Has two Es")
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
             <program xml:id="str_q3_answer" language="python">
@@ -178,9 +177,8 @@ count(para)
 def numDigits(n):
     """Return number of digits in given integer n."""
     # your code here
-
-====
-
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -192,7 +190,7 @@ class myTests(TestCaseGui):
       self.assertEqual(numDigits(444),3,"Tested numDigits on input of 444")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
             <program xml:id="str_num_digits_answer" language="python">
@@ -219,8 +217,8 @@ print(numDigits(1))
 def reverse(astring):
     """Return reverse of the given string argument."""
     # your code here
-
-====
+  </input>
+  <tests>
 
 from unittest.gui import TestCaseGui
 
@@ -235,7 +233,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -248,10 +246,8 @@ myTests().main()
 def remove_letter(the_letter, the_string):
     """Remove all occurrences of the_letter from the_string."""
     # your code here
-
-====
-
-
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -263,7 +259,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -276,10 +272,8 @@ myTests().main()
 def is_palindrome(my_str):
     """Returns True if my_str is same forward as backward."""
     # your code here
-
-====
-
-
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -295,7 +289,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
             <program xml:id="str_palindrome_answer" language="python">
@@ -332,9 +326,8 @@ print(is_palindrome('')) # True
           <input>
 def count(substr,theStr):
     # your code here
-
-
-====
+        </input>
+        <tests>
 
 
 from unittest.gui import TestCaseGui
@@ -353,7 +346,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-        </input>
+        </tests>
         </program>
 
     </exercise>
@@ -368,10 +361,9 @@ myTests().main()
 def remove(substr, the_str):
     """Remove first occurrence of substr from the_str."""
     # your code here
+  </input>
 
-====
-
-
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -382,10 +374,8 @@ class myTests(TestCaseGui):
             self.assertEqual(remove("iss","Mississippi"),"Missippi","Tested remove on inputs of 'iss' and 'Mississippi'")
             self.assertEqual(remove("egg","bicycle"),"bicycle","Tested remove on inputs of 'egg' and 'bicycle'")
 
-
-
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
             <program xml:id="str_remove_first_substr_answer" language="python">
@@ -416,11 +406,8 @@ print(remove('egg', 'bicycle') == 'bicycle')
 def remove_all(substr, the_str):
     """Remove all occurrences of substr from the_str."""
     # your code here
-
-
-
-====
-
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -431,10 +418,8 @@ class myTests(TestCaseGui):
       self.assertEqual(remove_all("iss","Mississippi"),"Mippi","Tested remove_all on inputs of 'iss' and 'Mississippi'")
       self.assertEqual(remove_all("eggs","bicycle"),"bicycle","Tested remove_all on inputs of 'eggs' and 'bicycle'")
 
-
-
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -516,8 +501,8 @@ def remove_dups(a_string):
 
 
 print(remove_dups("mississippi"))   #should print misp
-
-====
+</input>
+<tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -530,7 +515,7 @@ class myTests(TestCaseGui):
       self.assertEqual(remove_dups("oo"),"o","Tested remove_dups on string 'oo'")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 

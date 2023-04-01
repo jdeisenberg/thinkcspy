@@ -9,8 +9,8 @@
           </statement>
           <program interactive="activecode" language="python" xml:id="funct_writecode1q_editor">
             <input>
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -21,7 +21,7 @@ class myTests(TestCaseGui):
         self.assertEqual(remainder(5),1,"remainder(5)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
 
@@ -53,8 +53,8 @@ def remainder(x, y = 4):
           </statement>
           <program xml:id="funct_writecode2q_editor" interactive="activecode" language="python">
             <input>
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -64,7 +64,7 @@ class myTests(TestCaseGui):
         self.assertAlmostEqual(area_of_rect(5.4,4.3),23.22,2,"area_of_rect(5.4,4.3)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -77,7 +77,8 @@ myTests().main()
           <program interactive="activecode" language="python" xml:id="funct_writecode3q_editor">
             <input>
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -86,7 +87,7 @@ class myTests(TestCaseGui):
         self.assertEqual(welcome_message('Aurora'),"Hello Aurora! We hope that you will enjoy this course. :)","welcome_message('Aurora')")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
 
@@ -112,7 +113,8 @@ def welcome_message(name):
           <program xml:id="funct_writecode4q_editor" interactive="activecode" language="python">
             <input>
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -124,7 +126,7 @@ class myTests(TestCaseGui):
         self.assertEqual(birthday(7, 5, 2004),"7/5/2004","birthday(7, 5, 2004)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -136,7 +138,8 @@ myTests().main()
           <program interactive="activecode" language="python" xml:id="funct_writecode5q_editor">
             <input>
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -149,7 +152,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
 
@@ -176,7 +179,8 @@ def address(city, state, zip):
           <program xml:id="funct_writecode6q_editor" interactive="activecode" language="python">
             <input>
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -188,7 +192,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -212,7 +216,8 @@ def subtractNumbers(x, y):
 def calculate(a, b, c):
     # your code here
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -233,7 +238,7 @@ class myTests(TestCaseGui):
         self.assertAlmostEqual(calculate(10.5, 7.3, 0.2),17.6,1,"calculate(10.5, 7.3, 0.2)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
 

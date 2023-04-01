@@ -44,7 +44,8 @@ def test_round6():
     assert round6(9.7) == 10
     assert round6(8.5) == 8
 
-=====
+  </input>
+  <tests>
 
 from unittest.gui import TestCaseGui
 
@@ -60,7 +61,7 @@ class pyTests(TestCaseGui):
                     self.assertEqual(item + " failed", item + " passed", item + " failed: " + str(e))
 
 pyTests().main()
-        </input>
+        </tests>
   </program>
   <!--test:
 
@@ -213,8 +214,8 @@ def grade(score):
         <input>
 # Write a pytest unit test function named ``test_grade``
 
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 testA = False
@@ -248,7 +249,7 @@ class myTests(TestCaseGui):
         self.assertTrue(testF and '==F' in code, "Assert tested 0..80")
 
 myTests().main()
-        </input>
+        </tests>
       </program>
       <solution>
                 

@@ -39,7 +39,8 @@ def keep_vowelicious(a_list):
 words = ["beautiful", "locomotive", "friendly", "automation", "treadmill", "kangaroo"]
 kept_words = keep_vowelicious(words)
 print(f"The vowelicious words are {kept_words}")
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -48,7 +49,7 @@ class myTests(TestCaseGui):
         self.assertEqual(kept_words, ['beautiful', 'locomotive', 'automation', 'kangaroo'], "kept_words should contain the specified items")
         self.assertEqual(words, ["beautiful", "locomotive", "friendly", "automation", "treadmill", "kangaroo"], "Original word list must remain unchanged.")
 myTests().main()
-    </input>
+    </tests>
   </program>
   <hint>
   <p>The <c>keep_vowelicious</c> function should call the <c>count_vowels</c> function.</p>

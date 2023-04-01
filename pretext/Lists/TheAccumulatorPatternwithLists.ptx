@@ -115,9 +115,8 @@ for score in scores:
    result = result + str(score) + ','
 
 print("The scores are " + result)
-
-=====
-
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -126,7 +125,7 @@ class myTests(TestCaseGui):
       self.assertEqual(self.getOutput().rstrip('\n'), 'The scores are 85, 95, and 70.', "Output should be 'The scores are 85, 95, and 70.'")
 
 myTests().main()
-        </input>
+        </tests>
       </program>
       <hint>
         <p>
@@ -246,8 +245,8 @@ print(min_value)
         <input>
 words = ["adopt", "bake", "beam", "confide", "grill", "plant", "time", "wave", "wish"]
 
-=====
-
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -258,7 +257,7 @@ class myTests(TestCaseGui):
       self.assertIn("for", self.getEditorText(), "Testing output (Don't worry about actual and expected values).")
 
 myTests().main()
-        </input>
+        </tests>
       </program>
     </exercise>
     

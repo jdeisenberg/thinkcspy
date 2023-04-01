@@ -69,9 +69,8 @@ print(count("gooogle", "oo")) # should be 1
 print(count("clickickick kick", "ick")) # should be 4
 # Make sure that single characters still work
 print(count("banana", "a"))
-
-====
-
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -81,7 +80,7 @@ class myTests(TestCaseGui):
         self.assertEqual(count("clickickick kick", "ick"), 4)
         self.assertEqual(count("banana", "a"), 3)
 myTests().main()
-        </input>
+        </tests>
   </program>  
 </exercise>  
 </section>

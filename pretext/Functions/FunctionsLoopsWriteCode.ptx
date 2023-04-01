@@ -13,9 +13,8 @@ def list_starts_with_a(lst):
     # write code here
 
 print(list_starts_with_a(["alphabet", "apple", "banana", "coding", "amazing"]))
-
-====
-from unittest.gui import TestCaseGui
+</input>
+<tests>from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
     def testOne(self):
@@ -25,7 +24,7 @@ class myTests(TestCaseGui):
         self.assertEqual(list_starts_with_a([]),[],"list_starts_with_a([])")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
 
@@ -59,8 +58,8 @@ print(list_starts_with_a(["alphabet", "apple", "banana", "coding", "amazing"]))
             <input>
 def sentence_without_vowels(string):
     # write code here
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -72,7 +71,7 @@ class myTests(TestCaseGui):
         self.assertEqual(sentence_without_vowels(' ')," ","sentence_without_vowels(' ')")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -87,8 +86,8 @@ myTests().main()
             <input>
 def draw_square(num):
     # write code here
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -98,7 +97,7 @@ class myTests(TestCaseGui):
         self.assertEqual(draw_square(1),"*","draw_square(1)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
 
@@ -135,8 +134,8 @@ print(draw_square(4))
             <input>
 def check_prime_num(num):
     # write code here
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -149,7 +148,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -162,9 +161,9 @@ myTests().main()
             <input>
 def factorial(num):
     # write code here
-
-====
-from unittest.gui import TestCaseGui
+  </input>
+  <tests>
+  from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
 
@@ -175,7 +174,7 @@ class myTests(TestCaseGui):
         self.assertEqual(factorial(12), 479001600, "factorial(12)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
 

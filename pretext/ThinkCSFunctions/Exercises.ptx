@@ -192,7 +192,9 @@ drawSpiral(guido, 89)
       <input>
 
 def sumTo(n):
-    # your code here ====
+    # your code here
+      </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -204,7 +206,7 @@ class myTests(TestCaseGui):
         self.assertAlmostEqual(sumTo(7),28.0,0,"Tested sumTo on input 7")
 
 myTests().main()
-                            </input>
+    </tests>
     </program>
     <solution>
       <program xml:id="func_q7_answer" language="python">
@@ -234,7 +236,9 @@ print("The sum from 1 to 5 is",t)
       <input>
 
 def areaOfCircle(r):
-    # your code here ====
+    # your code here
+      </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -247,7 +251,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-                    </input>
+   </tests>
     </program>
   </exercise>
   <exercise label="ex_5_9">
@@ -337,7 +341,9 @@ drawStar(stroustrup, 7)
       <input>
 
 def sumTo(n):
-    # your code here ====
+    # your code here
+      </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -348,7 +354,7 @@ class myTests(TestCaseGui):
         self.assertEqual(sumTo(7),28,"Tested sumTo on input 7")
 
 myTests().main()
-                            </input>
+    </tests>
     </program>
     <solution>
       <program xml:id="func_q13_answer" language="python">
@@ -381,7 +387,9 @@ print("The sum from 1 to 5 is",t)
       <input>
 
 def mySqrt(n):
-    # your code here ====
+    # your code here
+      </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -392,7 +400,7 @@ class myTests(TestCaseGui):
         self.assertAlmostEqual(mySqrt(100.0),10.0,4,"Tested accuracy of mySqrt on input 10.0. Try iterating more times.")
 
 myTests().main()
-                    </input>
+</tests>
     </program>
   </exercise>
   <exercise label="ex_5_15">

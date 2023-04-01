@@ -74,8 +74,8 @@ def print_triangular_numbers(n):
 
 def is_prime(n):
     # your code here
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -87,7 +87,7 @@ class myTests(TestCaseGui):
         self.assertEqual(is_prime(4813),True,"Tested on 4813, which is a prime number.")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
     <solution>
       <program xml:id="miter_q3_answer" language="python">

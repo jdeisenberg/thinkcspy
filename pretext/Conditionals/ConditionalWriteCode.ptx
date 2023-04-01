@@ -58,8 +58,8 @@ else:
     overTime =  # your code here
     grossPay =  # your code here
 print(grossPay)
-
-====
+</input>
+<tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -67,7 +67,7 @@ class myTests(TestCaseGui):
         self.assertEqual(grossPay, 475.0)
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
     
@@ -100,8 +100,8 @@ print(grossPay)
           <program interactive="activecode" language="python" xml:id="cndtnl-wc-distanceq_editor">
             <input>
 distance = 14
-
-====
+</input>
+<tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -109,7 +109,7 @@ class myTests(TestCaseGui):
         self.assertEqual(total, 17.5)
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
     <program xml:id="cndtnl-wc-distancea_editor" language="python"><input>

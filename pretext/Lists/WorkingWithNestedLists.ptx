@@ -20,7 +20,8 @@
 triangle_list = [[3.0, 4.0], [12.0, 5.0], [7.6, 3.2], [8.5, 10.4]]
 hypotenuse_list = []  # results go into this list
 # your code here
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -45,7 +46,7 @@ class myTests(TestCaseGui):
         self.assertEqual(close_enough(hypotenuse_list), True, "Result has correct calculation.")
 
 myTests().main()        
-</input>
+</tests>
       </program>
       
       <solution>
@@ -124,7 +125,8 @@ celsius_ranges = [[8.3, 21.1], [12.5, 23.3], [15.6, 21.0], [16.9, 28.4],
 
 fahr_ranges = nested_to_fahr(celsius_ranges)
 print(fahr_ranges)
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -159,7 +161,7 @@ class myTests(TestCaseGui):
         self.assertEqual(close_enough(fahr_ranges), True, "Result has correct calculation.")
 
 myTests().main()
-     </input>
+     </tests>
   </program>
 </exercise>
 </exercises>

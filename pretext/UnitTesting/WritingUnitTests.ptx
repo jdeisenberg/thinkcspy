@@ -142,9 +142,8 @@ assert sumnums(1, 1) == 1</pre>
       <program interactive="activecode" language="python" xml:id="ac_grade_unittest_editor">
         <input>
         # Write assert statements to test grade()
-
-
-        ====
+  </input>
+  <tests>
         from unittest.gui import TestCaseGui
 
         class myTests(TestCaseGui):
@@ -157,7 +156,7 @@ assert sumnums(1, 1) == 1</pre>
         self.assertFalse(illegal, "No asserts violated preconditions")
 
         myTests().main()
-        </input>
+        </tests>
       </program>
       <solution>
         The following asserts are just some of several that could have been used.

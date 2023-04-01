@@ -11,8 +11,8 @@
 def recPerimeter(length, width)
 perimeter = 2 * (length + width)
     Return recPerimeter
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -23,7 +23,7 @@ class myTests(TestCaseGui):
         self.assertEqual(recPerimeter(3.0, 2),10.0,"recPerimeter(3.0, 2)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
     <program xml:id="funct-ex-perimetera_editor" language="python"><input>
@@ -49,9 +49,8 @@ def recPerimeter(length, width):
 Def squareArea(sideLength)
     area = length * length
     return squareArea
-
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -60,7 +59,7 @@ class myTests(TestCaseGui):
         self.assertEqual(squareArea(23),529,"squareArea(23)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -76,7 +75,8 @@ def areaTriangle():
     height = 4
     return (5 * 4) / 2
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -85,16 +85,9 @@ class myTests(TestCaseGui):
         self.assertEqual(areaTriangle(5,4),10,"areaTriangle(5,4)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
-
-
-    
-                        Change the code so that areaTriangle takes parameters for the base and height of a triangle
-                            and computes its area. Then, write code to call the function and print the result. For example, areaTriangle(12,45) should return 270.
-
-    
     <program xml:id="funct_ex_trianglea_editor" language="python"><input>
 # Give function base and height arguments
 def areaTriangle(base, height):
@@ -125,7 +118,8 @@ pricePerGallon = 3.45
 total = numGallons * pricePerGallon
 print(total)
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -134,7 +128,7 @@ class myTests(TestCaseGui):
         self.assertAlmostEqual(tripCost(250, 20, 3.01),37.625,3,"tripCost(250, 20, 3.01)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -149,7 +143,8 @@ def nameAndAge(nameString, ageInt):
 
 print(nameAndAge("John", 18))
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -158,7 +153,7 @@ class myTests(TestCaseGui):
         self.assertEqual(nameAndAge("John", 18),"My name is John and I am 18 years old.","nameAndAge('John', 18)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
     <program xml:id="funct_ex_namea_editor" language="python"><input>
@@ -202,8 +197,8 @@ Score    Grade
             <input>
 def computegrade(score):
     # your code here
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -215,7 +210,7 @@ class myTests(TestCaseGui):
         self.assertEqual(compute_grade(.5),'F',"compute_grade(.5)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -228,7 +223,8 @@ myTests().main()
 def sumTo(n):
     # your code here
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -240,7 +236,7 @@ class myTests(TestCaseGui):
         self.assertAlmostEqual(sum_to(7),28.0,0,"sum_to(7)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
 
@@ -268,7 +264,8 @@ def sumTo(n):
 def circle_area(r):
     # your code here
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -280,7 +277,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
     <program xml:id="funct_ex_circlea_editor" language="python"><input>
@@ -304,7 +301,8 @@ def circle_area(r):
             <input>
 def get_avg_drop_lowest(num1, num2, num3):
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -317,7 +315,7 @@ class myTests(TestCaseGui):
         self.assertAlmostEqual(get_avg_drop_lowest(75, 83, 90), 86.5, 1, "get_avg_drop_lowest(75, 83, 90)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -330,7 +328,8 @@ myTests().main()
             <input>
 def caught_speeding(speed, is_birthday):
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -350,7 +349,7 @@ class myTests(TestCaseGui):
         self.assertEqual(caught_speeding(90, False), 2, "caught_speeding(90, False)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
     
@@ -385,7 +384,8 @@ def caught_speeding(speed, is_birthday):
             <input>
 def check_guess(guess, target):
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -401,7 +401,7 @@ class myTests(TestCaseGui):
 
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 <!--
@@ -419,7 +419,8 @@ myTests().main()
 def alarm_clock(day, vacation):
     # your code here
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -433,7 +434,7 @@ class myTests(TestCaseGui):
         self.assertEqual(alarm_clock(1, True),'10:00',"alarm_clock(1, True)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
     <program xml:id="funct_ex_alarma_editor" language="python"><input>

@@ -12,8 +12,8 @@
 my_list = []
 
 # Your code here
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -23,7 +23,7 @@ class myTests(TestCaseGui):
         self.assertIn(".append(", self.getEditorText(), 'append method must be used')
 
 myTests().main()
-        </input>
+        </tests>
     </program>
     <solution>
       <program xml:id="ex_9_2_answer" language="python">
@@ -107,7 +107,8 @@ print (my_list)
 def average(num_list):
     # Complete the function definition
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -117,7 +118,7 @@ class myTests(TestCaseGui):
         self.assertEqual(int(average([9, 5, 4])), 6, "average([9, 5, 4]) should be 6")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
     <solution>
       <program xml:id="ex_list_avg_solution" language="python">
@@ -143,7 +144,8 @@ def average(num_list):
 def max(num_list):
     # Complete the function
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -153,7 +155,7 @@ class myTests(TestCaseGui):
         self.assertEqual(max([3, 13, 51, 7]), 51, "max([3, 13, 51, 7]) should be 51")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
     <solution>
       <program xml:id="list_max_answer" language="python">
@@ -178,7 +180,8 @@ def max(number_list):
 def sum_of_squares(num_list):
     # your code here
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -189,7 +192,7 @@ class myTests(TestCaseGui):
         self.assertEqual(sum_of_squares([5, 12, 14]), 365, "Tested sum_of_squares on input [5, 12, 14]")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
   </exercise>
   
@@ -202,7 +205,8 @@ myTests().main()
 def count_odd(num_list):
     # your code here
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -214,7 +218,7 @@ class myTests(TestCaseGui):
         self.assertEqual(count_odd([0, -1, 12, -33]), 2, "Tested count_odd on input [0, -1, 12, -33]")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
     <solution>
       <program xml:id="ex_list_count_odd_answer" language="python">
@@ -249,7 +253,8 @@ print(count_odd(numbers))
 def sum_even(number_list):
     # your code here
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -261,7 +266,7 @@ class myTests(TestCaseGui):
         self.assertEqual(sum_even([0, 1, 12, 33]), 12, "Tested sum_even on input [0, 1, 12, 33]")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
   </exercise>
   
@@ -274,7 +279,8 @@ myTests().main()
 def product_negatives(number_list):
     # your code here
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -286,7 +292,7 @@ class myTests(TestCaseGui):
         self.assertEqual(product_negatives([1, 2, 3, 4]), 1, "Tested product_negatives on input [1, 2, 3, 4]")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
     <solution>
       <program xml:id="ex_list_product_negatives_answer" language="python">
@@ -428,7 +434,8 @@ test(replace(s, 'o', 'a'),
 def replace(s, old, new):
     # your code here
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -439,7 +446,7 @@ class myTests(TestCaseGui):
         self.assertEqual(replace('Deeded','e','q'),'Dqqdqd',"Tested failed on input 'Deeded','e','q'")
 
 myTests().main()
-        </input>
+        </tests>
     </program>
   </exercise>
   -->

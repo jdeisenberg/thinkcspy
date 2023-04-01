@@ -13,8 +13,8 @@
             <input>
 def cropped_photo(height, width):
     # write code here
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -25,7 +25,7 @@ class myTests(TestCaseGui):
         self.assertEqual(cropped_photo(23.2, 23.2),"Cropped Photo","cropped_photo(23.2, 23.2)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
 
@@ -60,8 +60,8 @@ def cropped_photo(height, width):
             <input>
 def bonus(years, quality):
     # write code here
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
 
@@ -77,7 +77,7 @@ class myTests(TestCaseGui):
         self.assertEqual(bonus(2, 88),"Ineligible for Bonus","bonus(2, 88)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -92,7 +92,8 @@ myTests().main()
 def move_elevator(current_floor, next_floor):
     # write code here
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -103,7 +104,7 @@ class myTests(TestCaseGui):
         self.assertEqual(move_elevator(9, 3),"Down","move_elevator(9, 3)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
 
@@ -137,8 +138,8 @@ def move_elevator(current_floor, next_floor):
             <input>
 def lunch_break(class_standing):
     # write code here
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -151,7 +152,7 @@ class myTests(TestCaseGui):
         self.assertEqual(lunch_break('Alumni'),0,"lunch_break('Alumni')")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 
@@ -166,8 +167,8 @@ myTests().main()
             <input>
 def pay_rent(units):
     # write code here
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -184,7 +185,7 @@ class myTests(TestCaseGui):
         self.assertEqual(pay_rent(1007), "$300","pay_rent(1007)")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
           <solution>
 
@@ -220,8 +221,8 @@ def pay_rent(units):
             <input>
 def play_weather(weather):
     # write code here
-
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 
 class myTests(TestCaseGui):
@@ -235,7 +236,7 @@ class myTests(TestCaseGui):
         self.assertEqual(play_weather('stormy'), "It is not safe to go outside", "play_weather('stormy')")
 
 myTests().main()
-        </input>
+        </tests>
           </program>
         </exercise>
 </section>

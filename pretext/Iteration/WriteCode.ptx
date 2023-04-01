@@ -35,13 +35,15 @@ answer = ""
 while Counter &gt; 0:
     answer = answer + str(counter) + " "
     counter = counter + 1
-====
+  </input>
+  <tests>
+
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
         self.assertEqual(answer, "10 9 8 7 6 5 4 3 2 1 0 ")
 myTests().main()
-        </input>
+        </tests>
     </program>
     <solution>
     <program xml:id="itr-ex-countdowna_editor" language="python"><input>
@@ -89,13 +91,15 @@ while x &lt; 0
 output = output + str(x) + " "
 print(output
 
-====
+  </input>
+  <tests>
+
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
         self.assertEqual(output,"-10 -9 -8 -7 -6 -5 -4 -3 -2 -1 0 ")
 myTests().main()
-        </input>
+        </tests>
     </program>
     <solution>
     <program xml:id="itr-ex-counta_editor" language="python"><input>
@@ -131,13 +135,14 @@ while x &lt; 0:
     x =
 print(output)
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
         self.assertEqual(output,"-5 -4 -3 -2 -1 ")
 myTests().main()
-        </input>
+        </tests>
     </program>
   </exercise>
   
@@ -154,13 +159,14 @@ while i &lt; 3:
     i = i + 1
 print()
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
         self.assertEqual(x,6)
 myTests().main()
-        </input>
+        </tests>
     </program>
     <solution>
     <program xml:id="itr-ex-sixa_editor" language="python"><input>
@@ -192,7 +198,8 @@ def sumFunc(start, stop):
     return sum
 print(sumFunc(1,10))
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
@@ -201,7 +208,7 @@ class myTests(TestCaseGui):
         self.assertEqual(sumFunc(-5, 0),-15,"Tested sumFunc on inputs 20 and 50")
         self.assertEqual(sumFunc(-3, 12),72,"Tested sumFunc on inputs -3 and 12")
 myTests().main()
-        </input>
+        </tests>
     </program>
     <solution>
 
@@ -228,7 +235,8 @@ def sumFunc(start, stop):
 
 print(sumFunc(1,10))
 
-====
+  </input>
+  <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
     def testOne(self):
@@ -237,7 +245,7 @@ class myTests(TestCaseGui):
         self.assertEqual(sumFunc(-5, 0),-15,"Tested sumFunc on inputs 20 and 50")
         self.assertEqual(sumFunc(-3, 12),72,"Tested sumFunc on inputs -3 and 12")
 myTests().main()
-        </input></program>
+        </tests></program>
             </solution>
   </exercise>
   
