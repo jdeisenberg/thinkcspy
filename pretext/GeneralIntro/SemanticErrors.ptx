@@ -4,12 +4,35 @@
   <p> The third type of error is the <term>semantic error</term>. If there is a semantic error in your program, it will run successfully in the sense that the computer will not generate any error messages.  However, your program will not do the right thing. It will do something else. Specifically, it will do what you told it to do.
   </p>
   
+  <p>We don't know enough Python yet to give good examples of semantic errors, so let's give examples of commands you might give someone else that have the equivalent of <q>semantic errors</q><mdash/>instructions that the person can carry out, but that don't get the task done correctly.</p>
+  
+  <p>Example 1: You give someone these instructions to find the area of a rectangle:</p>
   <p>
-    Using English as an example, think of this statement: <q>To calculate the area of a rectangle, add its width and height.</q> The syntax (structure) is correct. You won't get a <q>run-time</q> error; nothing bad happens when you add numbers. But the instructions are telling you the wrong thing<mdash/>you should multiply, not add, the width and height.
+    <ol>
+      <li>Measure the width of the rectangle and write it down.</li>
+      <li>Measure the height of the rectangle and write it down.</li>
+      <li>Add the two numbers you wrote down. That is the area.</li>
+    </ol>
+  </p>
+  <p>The instructions are grammatically correct, and the person can do all of those actions, but they won't get the right answer because you told them to add the numbers instead of multiplying them.</p>
+  
+  <p>Example 2: If you are telling someone how to make a cake, and you give them these instructions:</p>
+  <p>
+    <ol>
+      <li>Put one-half cup of butter in a bowl.</li>
+      <li>Put three cups of flour in the bowl.</li>
+      <li>Mix the contents of the bowl.</li>
+      <li>Pour the mixture into the cake pan.</li>
+      <li>Put one-fourth cup of sugar into the bowl.</li>
+      <li>Put the pan into a pre-heated oven at 350 degrees F for 25 minutes.</li>
+    </ol>
   </p>
   
+  <p>Again, the instructions are grammatically correct, and the person can do all of those actions, but they won't get a good cake because the step with the sugar is in the wrong place.</p>
+  
+  
   <p>
-    The problem is that the program you wrote is not the program you wanted to write. The meaning of the program (its semantics) is wrong.  Identifying semantic errors can be tricky because it requires you to work backward by looking at the output of the program and trying to figure out what it is doing.
+    The problem with these examples is that the <q>program</q> you wrote is not the program you wanted to write. The meaning of the program (its semantics) is wrong.  Identifying semantic errors can be tricky because it requires you to work backward by looking at the output of the program and trying to figure out what it is doing.
   </p>
           
   <p>
