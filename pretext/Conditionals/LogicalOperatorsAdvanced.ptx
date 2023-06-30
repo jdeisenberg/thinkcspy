@@ -279,8 +279,8 @@ if age &lt; 17:
 </subsection>
 
 <subsection xml:id="conditionals_de-morgan-laws">
-    <title>The deMorgan Laws</title>
-    <p>Two powerful simplification laws (called de Morgan's laws) that are often helpful when dealing with complicated Boolean expressions are:</p>
+    <title>The De Morgan Laws</title>
+    <p>Two powerful simplification laws (called De Morgan's laws) that are often helpful when dealing with complicated Boolean expressions are:</p>
     <program language="python">
       <input>
 not (x and y)  ==  (not x) or (not y)
