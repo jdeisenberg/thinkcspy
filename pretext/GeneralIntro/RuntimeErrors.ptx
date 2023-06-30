@@ -10,6 +10,40 @@
   <p>
     Using English as an example, think of this statement: <q>Put an open bottle of ink in your shirt pocket.</q> The syntax (structure) of the statement is fine, but if you follow the command, something bad will happen to your shirt pocket.
   </p>
+
+  <p>
+    Here's another example. Consider these instructions:
+    <ol marker="a">
+      <li>You have five boxes of shirts, numbered 1 to 5, next to a table.</li>
+      <li>Start with box 1.</li>
+      <li>Take out a shirt from the box and put it on the table.</li>
+      <li>Go to the next numbered box.</li>
+      <li>Repeat steps c and d.</li>
+    </ol>
+  </p>
+  <p>Again, each step is gramatically correct, but you'll have a problem if you try to carry out the instructions. Since the instructions don't tell you when to stop, after you take the shirt out of box five, there's no <q>next numbered box</q> to go to!</p>
+
+    <p>
+    Here’s another example. Consider these instructions:
+    <ol>
+      <li>Ask a friend for a number (let's call it <em>a</em>).</li>
+      <li>Ask a friend for another number (let's call it <em>b</em>).</li>
+      <li>Divide <em>a</em> by <em>b</em> and tell your friend the result.</li>
+    </ol>
+  </p>
+  <p>The syntax (grammar) of each step is fine. When you carry out the instructions, if your friend gives you zero for their second number, you won't be able to do step three, because you can't divide by zero.  The error doesn't show up until you carry out the instructions.</p>
+
+  <p>Here's the Python code for this example. Try running it and entering zero for the second number, and you'll see the error occur while you are running the program.</p>
+
+  <program xml:id="runtime_error_editor" interactive="activecode" language="python">
+      <input>
+a = int(input('Please enter a whole number:'))
+b = int(input('Please enter another whole number:'))
+print('The quotient of your numbers is', a / b)
+</input>
+</program>
+
+  <p>In all these examples, you can read and understand all the instructions; their <q>grammar</q> is fine. The run-time error happens when you try to actually <em>do</em> the instructions; that is when you are <em>running</em> the program.</p>
   <p>
     <em>Check your understanding</em>
   </p>

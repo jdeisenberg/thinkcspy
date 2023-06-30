@@ -144,7 +144,7 @@
       </choice>
       <choice correct="yes">
         <statement>
-          <p>x &gt; 0 and x &lt; 5</p>
+          <p><c>x &gt; 0 and x &lt; 5</c></p>
         </statement>
         <feedback>Yes, with an <c>and</c> keyword both expressions must be <c>True</c> so the number must be greater than 0 an less than 5 for this expression to be true. Although most other programming languages do not allow this mathematical syntax, in Python, you could also write <c>0 &lt; x &lt; 5</c>.</feedback>
       </choice>
