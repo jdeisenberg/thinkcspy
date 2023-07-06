@@ -35,8 +35,8 @@ print(minimum1)
 maximum2 = max('dog', 'elk', 'ant', 'bee') # all strings
 print(maximum2)
 
-minimum3 = max(3.5, 'blah', False) # different data types
-print(minimum3)
+maximum3 = max(3.5, 'blah', False) # different data types
+print(maximum3)
 </input></program>
  
  <p>
