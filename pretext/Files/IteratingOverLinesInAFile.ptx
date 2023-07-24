@@ -25,16 +25,16 @@
   <program xml:id="files_for" interactive="activecode" language="python">
     <input>
 weather_file = open("daily_weather.txt", "r")
-max_temp = -9999
-min_temp = 9999
+max_temp = None  # no max temp before file is open
+min_temp = None  # no min temp before file is open
 
 for line in weather_file:
     values = line.split(',')
     day_min = int(values[1])
     day_max = int(values[2])
-    if day_min &lt; min_temp:
+    if (min_temp == None) or (day_min &lt; min_temp):
         min_temp = day_min
-    if day_max &gt; max_temp:
+    if (max_temp == None) or (day_max &gt; max_temp):
         max_temp = day_max
 
 print(f"Monthly minimum: {min_temp} degrees C.")
@@ -51,6 +51,6 @@ weather_file.close()
   </note>
   
   <p>
-    In this example it is irrelevant whether the final line has a newline character at the end or not, since it would be stripped off by the <c>split</c> method call. Also, we can safely set the initial values of <c>min_temp</c> and <c>max_temp</c> because temperatures (at least on Earth) never reach as low as -9999 degrees or as high as 9999 degrees Celsius.
+    In this example it is irrelevant whether the final line has a newline character at the end or not, since it would be stripped off by the <c>split</c> method call. Also, we set <c>min_temp</c> and <c>max_temp</c> to <c>None</c> at first. When we get a new value for <c>day_min</c> from the file, line 9 says that if there is no minimum temperature yet (<c>min_temp == None</c>) or the new value is less than the current minimum (<c>day_min &lt; min_temp</c>), the new value becomes the current minimum temperature in line 10.  Lines 11 and 12 do the same logic for the maximum temperature.
   </p>
 </section>
