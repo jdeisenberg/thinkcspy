@@ -12,30 +12,30 @@
     If one of the operands is a number, though, you must use the <c>str</c> function to convert it to a string.  Let's say you have a variable named <c>count</c> that has the value 3, and you want to add the string <c>" pages"</c> to the end of it. You can <em>not</em>  do this:
   </p>
   <program language="python">
-    <input>
+    <code>
 count = 3
 result_string = count + " pages"
-</input></program>
+</code></program>
 
 <p>Instead, you must convert the number to a string:</p>
 <program language="python">
-  <input>
+  <code>
 count = 3
 result_string = str(count) + " pages"
-</input></program>
+</code></program>
 
   <exercise label="itr-ex-countdown">
     <statement>
       <p>Fix the errors in the code below so that <c>answer</c> contains a countdown of the numbers from 10 to 0, including 0.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="itr-ex-countdownq_editor">
-      <input>
+      <code>
 counter = 10
 answer = ""
 while Counter &gt; 0:
     answer = answer + str(counter) + " "
     counter = counter + 1
-  </input>
+  </code>
   <tests>
 
 from unittest.gui import TestCaseGui
@@ -46,7 +46,7 @@ myTests().main()
         </tests>
     </program>
     <solution>
-    <program xml:id="itr-ex-countdowna_editor" language="python"><input>
+    <program xml:id="itr-ex-countdowna_editor" language="python"><code>
 counter = 10
 answer = ""
 
@@ -59,7 +59,7 @@ while counter &gt;= 0:
     counter = counter - 1
 
 print(answer)
-        </input></program>
+        </code></program>
             </solution>
   </exercise>
   
@@ -69,12 +69,12 @@ print(answer)
             make the loop only have five iterations.</p>
     </statement>
     <program xml:id="itr-ex-100Loopq_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 x = 5
 while x &lt; 100:
     print(x)
     x = x + 1
-        </input>
+        </code>
     </program>
   </exercise>
   
@@ -83,7 +83,7 @@ while x &lt; 100:
       <p>Make changes to the code below to correctly print a count up from -10 to 0, including 0.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="itr-ex-countq_editor">
-      <input>
+      <code>
 output = ""
 x = -10
 while x &lt; 0
@@ -91,7 +91,7 @@ while x &lt; 0
 output = output + str(x) + " "
 print(output
 
-  </input>
+  </code>
   <tests>
 
 from unittest.gui import TestCaseGui
@@ -102,7 +102,7 @@ myTests().main()
         </tests>
     </program>
     <solution>
-    <program xml:id="itr-ex-counta_editor" language="python"><input>
+    <program xml:id="itr-ex-counta_editor" language="python"><code>
 output = ""
 # Start x at -11 so it stays under 0
 x = -11
@@ -118,7 +118,7 @@ while x &lt; 0:
 
 # Close print parentheses
 print(output)
-        </input></program>
+        </code></program>
             </solution>
   </exercise>
   
@@ -127,7 +127,7 @@ print(output)
       <p>Finish lines 1 and 5 so that the following code correctly prints every integer from -5 to -1, including -1.</p>
     </statement>
     <program xml:id="itr-ex-allValuesq_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 output =
 x = -5
 while x &lt; 0:
@@ -135,7 +135,7 @@ while x &lt; 0:
     x =
 print(output)
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -151,7 +151,7 @@ myTests().main()
       <p>Complete the code on lines 4 and 6 so that it prints the number 6.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="itr-ex-sixq_editor">
-      <input>
+      <code>
 x = 3
 i = 0
 while i &lt; 3:
@@ -159,7 +159,7 @@ while i &lt; 3:
     i = i + 1
 print()
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -169,7 +169,7 @@ myTests().main()
         </tests>
     </program>
     <solution>
-    <program xml:id="itr-ex-sixa_editor" language="python"><input>
+    <program xml:id="itr-ex-sixa_editor" language="python"><code>
 x = 3
 i = 0
 while i &lt; 3:
@@ -178,7 +178,7 @@ while i &lt; 3:
     i = i + 1
 # Print the x variable
 print(x)
-        </input></program>
+        </code></program>
 
             </solution>
   </exercise>
@@ -190,7 +190,7 @@ print(x)
       </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="int-ex-inclusiveq_editor">
-      <input>
+      <code>
 def sumFunc(start, stop):
     sum = 0
     for num in range(start, stop + 1):
@@ -198,7 +198,7 @@ def sumFunc(start, stop):
     return sum
 print(sumFunc(1,10))
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -218,7 +218,7 @@ myTests().main()
                     Change the for loop to a while loop while still using the same parameters.
 
     
-    <program xml:id="int-ex-inclusivea_editor" language="python"><input>
+    <program xml:id="int-ex-inclusivea_editor" language="python"><code>
 def sumFunc(start, stop):
     sum = 0
     # Create an iteration variable, initialized to the start argument
@@ -235,7 +235,7 @@ def sumFunc(start, stop):
 
 print(sumFunc(1,10))
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -256,11 +256,11 @@ myTests().main()
             there are 6 errors.  Fix the errors.</p>
     </statement>
     <program xml:id="int-ex-timesq_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 for x in range(1, 3):
     for y in range(1, 4)
         print(str(x) + " * " str(y) + " = " x * y)
-        </input>
+        </code>
     </program>
   </exercise>
   -->
@@ -272,16 +272,16 @@ for x in range(1, 3):
                     Rewrite the program to use a while and a for loop instead.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="int-ex-timesWhileq_editor">
-      <input>
+      <code>
 
 for x in range(1, 4):
     for y in range(1, 11):
         print(str(x) + " * " + str(y) + " = " + str(x * y))
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="int-ex-timesWhileA" language="python">
-        <input>
+        <code>
 # There are a few different ways this can be done
 # One is shown here
 
@@ -294,7 +294,7 @@ for x in range(1, 4):
         print(str(x) + " * " + str(y) + " = " + str(x * y))
         # Increment the iteration variable
         y = y + 1
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>

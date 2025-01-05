@@ -43,7 +43,7 @@
   </p>
   
       <program xml:id="functFlow_pricing" interactive="codelens" language="python">
-        <input>
+        <code>
 def calculate_total(price, quantity):
     subtotal = price * quantity
     if quantity >= 20:
@@ -66,12 +66,12 @@ total2 = calculate_total(price2, qty2)
     
 print("Total for first item is $", total1)
 print("Total for second item is $", total2)
-</input></program>
+</code></program>
 
 <p>That sounds simple enough, until you remember that one function can call another. While in the middle of one function, the program might have to execute the statements in another function. But while executing that new function, the program might have to execute yet another function!</p> <p>Observe below, where one function calls another function. Here, we will use our <c>average</c> function to help calculate the area of a trapezoid, given the dimensions of the top, bottom, and height. (This is a good example of an example<mdash/>most professional programmers wouldn't use a separate function for the average of the top and bottom.)</p>
 
   <program xml:id="functFlow_trapezoid" interactive="codelens" language="python">
-    <input>
+    <code>
 def average(a, b):
     return (a + b) / 2
 
@@ -82,7 +82,7 @@ def area_trapezoid(top, bottom, height):
 
 answer = area_trapezoid(3, 4.7, 5)
 print(answer)
-    </input>
+    </code>
   </program>
   
   <p>Fortunately, Python is good at keeping track of where it is, so each time a function completes, the program picks up where it left off in the function that called it. When it gets to the end of the program, the program is finished.</p>

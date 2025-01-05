@@ -7,7 +7,7 @@
   </p>
   
   <program xml:id="value_err_example" interactive="activecode" language="python">
-    <input>
+    <code>
 try:
   total = float(input("Enter total dollars received"))
   customers = int(input("Enter number of customers"))
@@ -15,7 +15,7 @@ try:
   print(f"Customers spent an average of ${average:.2f}.")
 except:
   print("Sorry, an error occurred.")
-</input>
+</code>
 </program>
 
 <p>
@@ -27,7 +27,7 @@ except:
 </p>
 
   <program xml:id="multi_exception_example" interactive="activecode" language="python">
-    <input>
+    <code>
 try:
   total = float(input("Enter total dollars received"))
   customers = int(input("Enter number of customers"))
@@ -38,7 +38,7 @@ except ValueError:
 except ZeroDivisionError:
   print("Number of customers must be non-zero")
 
-</input>
+</code>
 </program>
 
 <p>
@@ -56,7 +56,7 @@ except ZeroDivisionError:
   </p>
   
   <program xml:id="sys_except_info" language="python">
-    <input>
+    <code>
 import sys
 
 try:
@@ -71,7 +71,7 @@ except ZeroDivisionError:
 except:
     print("Some unanticipated error occurred.")
     print(sys.exc_info())
-    </input>
+    </code>
   </program>
 
   <p>

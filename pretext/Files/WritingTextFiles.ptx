@@ -31,7 +31,7 @@
   <p>The program below solves part of the problem. We will print the output to the screen, since activecode doesn't play nicely with writing files.</p>
   
   <program xml:id="write_file_example_1" interactive="activecode" language="python">
-    <input>
+    <code>
 in_file = open("daily_weather.txt", "r")
 for line in in_file:
     items = line.split(',')
@@ -40,7 +40,7 @@ for line in in_file:
     print(f"{items[0]} {min_temp_f} {max_temp_f}")
 
 in_file.close()
-        </input>
+        </code>
   </program>
   <p>
     When we run this program, we see the lines of output on the screen.  Once we are satisfied that it is creating the appropriate output, the next step is to add the necessary pieces to produce an output file and write the data lines to it.  To start, we need to open a new output file by adding another call to the <c>open</c> function, <c>outfile = open("daily_fahrenheit.txt",'w')</c>, using the <c>'w'</c> flag.  We can choose any file name we like.  If the file does not exist, it will be created.  However, if the file does exist, it will be reinitialized as empty and you will lose any previous contents.
@@ -55,7 +55,7 @@ in_file.close()
   </p>
   
   <program xml:id="write_file_example_2" language="python">
-    <input>
+    <code>
 in_file = open("daily_weather.txt", "r")
 out_file = open("daily_fahrenheit.txt", "w")
 
@@ -67,6 +67,6 @@ for line in in_file:
 
 in_file.close()
 out_file.close()
-        </input>
+        </code>
   </program>
 </section>

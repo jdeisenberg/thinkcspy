@@ -6,7 +6,7 @@
     <statement>
       <p>What will the following Python program print out? (Given that each word will actually print on a new line)</p>
       <program language="python">
-        <input>
+        <code>
 def fred():
     print("Zap")
 
@@ -16,7 +16,7 @@ def jane():
 jane()
 fred()
 jane()
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -67,7 +67,7 @@ jane()
     <statement>
       <p>What value is printed when the following code is executed?</p>
       <program language="python">
-        <input>
+        <code>
 
 def myFunction(parameter):
     value = 27.4
@@ -76,7 +76,7 @@ def myFunction(parameter):
 
 price = 3.95
 print(myFunction(25.25))
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -174,7 +174,7 @@ print(myFunction(25.25))
     <statement>
       <p>What will the following code print?</p>
       <program language="python">
-        <input>
+        <code>
 def pow(b, p):
     y = b ** p
     return y
@@ -186,7 +186,7 @@ def square(x):
 n = 5
 result = square(n)
 print(result)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -236,12 +236,12 @@ print(result)
     <statement>
       <p>Consider the following Python code. What does this code print?</p>
       <program language="python">
-        <input>
+        <code>
 def rem(a, b):
     return a % b
 
 print(rem(3,7))
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -324,9 +324,9 @@ print(rem(3,7))
     <statement>
       <p>Consider the code below. What prints?</p>
       <program language="python">
-        <input>
+        <code>
 print(int(33.7))
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -369,10 +369,10 @@ print(int(33.7))
     <statement>
       <p>Consider the code below. Line 1 is called&#x2026;</p>
       <program language="python">
-        <input>
+        <code>
 def print_weather():
     print("It is sunny!")
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -415,7 +415,7 @@ def print_weather():
     <statement>
       <p>Consider the code block below. What happens when you run this program?</p>
       <program language="python">
-        <input>
+        <code>
 answer = repeat_calculation(3)
 print(answer)
 
@@ -426,7 +426,7 @@ def repeat_calculation(n):
 
 def calculation(n):
     return n * 5
-</input>
+</code>
       </program>
     </statement>
     <choices>

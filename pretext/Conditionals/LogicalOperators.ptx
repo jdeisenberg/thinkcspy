@@ -40,13 +40,13 @@
   </p>
   
   <program xml:id="logical_op_example" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 5
 print(x &gt; 0 and x &lt; 10)
 
 n = 25
 print(n % 2 == 0 or n % 3 == 0)
-        </input>
+        </code>
   </program>
   
   <note>

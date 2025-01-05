@@ -29,16 +29,16 @@
   </p>
   
   <program lanuage="python">
-    <input>
+    <code>
 catalog = [["Pencil", 0.24], ["Notebook", 3.95], ["Marker", 0.79]]
-</input>
+</code>
 </program>
       
 <p>
   Now, what happens if we get a user's input with an item and a new price? Here's the plan (remember, we make a plan before we start to write the code). We set up a <c>while</c> loop that goes through each entry in the catalog. If the first item in the sublist is the item we are looking for, we modify the second item in that sublist. If we get all the way through the catalog without finding the requested item, we can either give an error message or we can enter the data as a new entry. Here is the corresponding code:
 </p>
 
-<program language="python" interactive="activecode"><input>
+<program language="python" interactive="activecode"><code>
   catalog = [["Pencil", 0.24], ["Notebook", 3.95], ["Marker", 0.79]]
 print(f"Catalog is now {catalog}")
 
@@ -58,7 +58,7 @@ if not found:
     catalog.append([item, price])
     
 print(f"Inventory updated to {inventory}")
-</input></program>
+</code></program>
     <p>
       Wow. That's a lot of work. There must be a better way.
     </p>
@@ -84,14 +84,14 @@ print(f"Inventory updated to {inventory}")
   </p>
   
   <program xml:id="catalog_dict_program" interactive="activecode" language="python">
-    <input>
+    <code>
 catalog = {}
 catalog['Pencil'] = 0.24
 catalog['Notebook'] = 3.95
 catalog['Marker'] = 0.79
 
 print(catalog)
-    </input>
+    </code>
   </program>
           
   <p>
@@ -107,10 +107,10 @@ print(catalog)
   </p>
   
   <program xml:id="chp12_dict2" interactive="activecode" language="python">
-    <input>
+    <code>
 catalog = {'Pencil': 0.24, 'Marker': 0.79, 'Notebook': 3.95}
 print(catalog)
-    </input>
+    </code>
   </program>
 
   <p>
@@ -120,12 +120,12 @@ print(catalog)
   <p>You put a key in the indexing operator <c>[ ]</c> to look up the corresponding value.</p>
   
   <program xml:id="chp12_dict3" interactive="codelens" language="python">
-    <input>
+    <code>
 catalog = {'Pencil': 0.24, 'Marker': 0.79, 'Notebook': 3.95}
 
 notebook_price = catalog['Notebook']
 print(notebook_price)
-    </input>
+    </code>
   </program>
   
   <p>The key <c>'Notebook'</c> yields the value <c>3.95</c>.</p>
@@ -133,10 +133,10 @@ print(notebook_price)
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_11_01" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-      </input>
+      </code>
     </program>
   </note>
   
@@ -164,10 +164,10 @@ print(notebook_price)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 animal_dict = {"cat": 12, "dog": 6, "elephant": 23}
 print(animal_dict["dog"])
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

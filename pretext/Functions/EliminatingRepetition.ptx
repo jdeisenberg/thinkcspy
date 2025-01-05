@@ -7,7 +7,7 @@
   </p>
  
 
-  <program xml:id="function_pricing" language="python" interactive="activecode"><input>
+  <program xml:id="function_pricing" language="python" interactive="activecode"><code>
 def calculate_total(price, quantity):
     subtotal = price * quantity
     if quantity >= 20:
@@ -30,7 +30,7 @@ total2 = calculate_total(price2, qty2)
     
 print("Total for first item is $", total1)
 print("Total for second item is $", total2)
-</input></program>
+</code></program>
 
 <p>Here are some important things to note:</p>
 

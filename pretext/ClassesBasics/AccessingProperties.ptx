@@ -6,7 +6,7 @@
   </p>
  
   <program xml:id="class-access-properties" interactive="activecode" language="python">
-    <input>
+    <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -20,7 +20,7 @@ r1 = Rectangle()    # Instantiate an object of type Rectangle
 r1.x = 7
 r1.y = 6
 print(r1.x, r1.y)
-    </input>
+    </code>
   </program>
   
   <p>

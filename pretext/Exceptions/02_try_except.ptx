@@ -10,13 +10,13 @@
   </p>
   
   <program xml:id="try_except_example" interactive="activecode" language="python">
-    <input>
+    <code>
 try:
   years = int(input("How many years old are you?"))
   print(f"That is about {years * 365} days.")
 except:
   print("Sorry, your input was not numeric.")
-</input>
+</code>
 </program>
 
 <exercise label="exception_loop">
@@ -35,7 +35,7 @@ Enter discount percent:2
 Price after discount is $5.66.</pre>
 </statement>
 <program interactive="activecode" language="python">
-  <input>
+  <code>
 def get_float(prompt):
     """Repeatedly prompt user for valid input.
     Display prompt and read input until the user
@@ -47,7 +47,7 @@ price = get_float("Enter price:")
 discount = get_float("Enter discount percent:")
 total = price * (1.0 - discount / 100.0)
 print(f"Price after discount is ${total:.2f}.")
-  </input>
+  </code>
 </program>
 </exercise>
 </section>

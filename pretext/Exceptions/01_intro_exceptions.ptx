@@ -10,10 +10,10 @@
   </p>
   
   <program xml:id="value_err_uncaught_example" interactive="activecode" language="python">
-    <input>
+    <code>
 years = int(input("How many years old are you?"))
 print(f"That is about {years * 365} days.")
-</input>
+</code>
 </program>
 
   <p>

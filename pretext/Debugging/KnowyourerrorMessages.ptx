@@ -5,7 +5,7 @@
     <title>Introduction</title>
   <p>Many problems in your program will lead to an error message.  For example, as I was writing and testing this chapter of the book, I wrote the following version of the example program in the previous section.</p>
   <program language="python">
-    <input>
+    <code>
 current_time_str = input("What is the current time (in hours 0-23)?")
 wait_time_str = input("How many hours do you want to wait")
 
@@ -14,12 +14,12 @@ wait_time_int = int(wait_time_int)
 
 final_time_int = current_time_int + wait_time_int
 print(final_time_int)
-</input>
+</code>
   </program>
   <p>Can you see what is wrong just by looking at the code?  Maybe, maybe not.  Our brain tends to see what we think is there, so sometimes it is very hard to find the problem just by looking at the code.  Especially when it is our own code and we are sure that we have done everything right!</p>
   <p>Let's try the program again, but this time in an activecode:</p>
   <program xml:id="db_ex3_5" interactive="activecode" language="python">
-    <input>
+    <code>
 current_time_str = input("What is the current time (in hours 0-23)?")
 wait_time_str = input("How many hours do you want to wait")
 
@@ -28,7 +28,7 @@ wait_time_int = int(wait_time_int)
 
 final_time_int = current_time_int + wait_time_int
 print(final_time_int)
-        </input>
+        </code>
   </program>
   <p>Aha!  Now we have an error message that might be useful.  The name error tells us that  <c>wait_time_int</c> is not defined.  It also tells us that the error is on line 5.  That's <term>really</term> useful information.  Now look at line five and you will see that <c>wait_time_int</c> is used on both the left and the right hand side of the assignment statement.</p>
   <note>
@@ -159,7 +159,7 @@ print(final_time_int)
     <exercise label="parse_error_1">
       <statement>
       <program interactive="activecode" language="python">
-      <input>
+      <code>
 current_time_str = input("What is the current time (in hours 0-23)?")
 wait_time_str = input("How many hours do you want to wait"
 
@@ -168,7 +168,7 @@ wait_time_int = int(wait_time_str)
 
 final_time_int = current_time_int + wait_time_int
 print(final_time_int)
-</input>
+</code>
 </program>
 </statement>
 <solution>
@@ -185,7 +185,7 @@ print(final_time_int)
     <exercise label="parse_error_2">
       <statement>
       <program interactive="activecode" language="python">
-        <input>
+        <code>
 current_time_str = input("What is the "current time" (in hours 0-23)?")
 wait_time_str = input("How many hours do you want to wait")
 
@@ -193,7 +193,7 @@ current_time_int = int(current_time_str)
 wait_time_int = int(wait_time_str)
 
 final_time_int = current_time_int + wait_time_int
-print(final_time_int)</input>
+print(final_time_int)</code>
 </program>
 </statement>
 <solution>
@@ -221,7 +221,7 @@ print(final_time_int)</input>
          <p>Here's an example of a type error created by a Polish learner.  See if you can find and fix the error.</p>
        
     <program xml:id="db_ex3_8" interactive="activecode" language="python">
-      <input>
+      <code>
 a = input('wpisz godzine')
 x = input('wpisz liczbe godzin')
 int(x)
@@ -231,7 +231,7 @@ s = x % 24
 print (h, s)
 a = a + s
 print ('godzina teraz', a)
-        </input>
+        </code>
     </program>
     </statement>
     <hint>
@@ -268,7 +268,7 @@ print ('godzina teraz', a)
       <statement>
         <p> See if you can get this program to run successfully:</p>
     <program xml:id="db_ex3_9" interactive="activecode" language="python">
-      <input>
+      <code>
 str_time = input("What time is it now?")
 str_wait_time = input("What is the number of nours to wait?")
 time = int(str_time)
@@ -276,7 +276,7 @@ wai_time = int(str_wait_time)
 
 time_when_alarm_go_off = time + wait_time
 print(time_when_alarm_go_off)
-        </input>
+        </code>
     </program>
   </statement>
     <hint>
@@ -304,14 +304,14 @@ print(time_when_alarm_go_off)
       <statement>
         <p>Here is another NameError for you to fix:</p>
     <program xml:id="db_ex3_10" interactive="activecode" language="python">
-      <input>
+      <code>
 start = input("What time is it now (in hours)?")
 start = imt(start)
 wait = input("How many hours do you want to wait?")
 wait = int(wait)
 end_hour = (start + wait) % 12
 print("The time is now", end_hour)
-        </input>
+        </code>
     </program>
   </statement>
     <hint>
@@ -326,13 +326,13 @@ print("The time is now", end_hour)
     <statement>
     <p>And one last bit of code to fix.</p>
     <program xml:id="db_ex3_11" interactive="activecode" language="python">
-      <input>
+      <code>
 present_time = input("Enter the present timein hours:")
 set_alarm = input("Set the hours for alarm:")
 int (present_time, set_time, alarm_time)
 alarm_time = present_time + set_alarm
 print(alarm_time)
-        </input>
+        </code>
     </program>
   </statement>
     <hint>
@@ -372,7 +372,7 @@ print(alarm_time)
     <title>ValueError</title>
     <p>A ValueError occurs when you pass a parameter to a function and that value is not compatible with the kind of data the function expects.  We can illustrate that with the following program in two different ways.</p>
     <program xml:id="db_ex3_12" interactive="activecode" language="python">
-      <input>
+      <code>
 current_time_str = input("What is the current time (in hours 0-23)?")
 current_time_int = int(current_time_str)
 
@@ -381,7 +381,7 @@ wait_time_int = int(wait_time_str)
 
 final_time_int = current_time_int + wait_time_int
 print(final_time_int)
-        </input>
+        </code>
     </program>
     <p>Run the program, but instead of typing in anything to the dialog box, just click OK.  You should see the following error message:  <c>ValueError: invalid literal for int() with base 10: '' on line: 4</c>   This error is not because you have made a mistake in your program.  Although sometimes we <em>do</em> want to check the user input to make sure it's valid, we don't have all the tools we need for that yet.The error happens because the user did not give us something we can convert to an integer; instead, we gave it an empty string.  Try running the program again.  This time, enter <q>ten</q> instead of the number 10.  You will get a similar error message.</p>
     

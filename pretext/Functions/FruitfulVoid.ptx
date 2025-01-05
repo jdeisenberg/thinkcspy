@@ -14,14 +14,14 @@
   Take a look at the following program:
 </p>
 
-<program language="python"><input>
+<program language="python"><code>
 import math
 
 value_str = input("Enter a value:")
 value = float(value_str)
 twice_root = 2 * math.sqrt(value)
 print("The result is", twice_root)
-</input></program>
+</code></program>
 
 <p>
   Lines 3 through 5 all have a function call, and the call returns some value that gets assigned to a variable. We call functions that return a value <term>value-returning functions</term> or <term>fruitful functions</term>. These functions are usually used on the right hand side of an assignment statement or are used in some expression.
@@ -40,7 +40,7 @@ print("The result is", twice_root)
 </p>
 
 <program language="python" interactive="activecode" xml:id="fcn_debug">
-  <input>
+  <code>
 def debug(var_name, value):
     print("The value of", var_name, "is", value)
     
@@ -51,7 +51,7 @@ debug("x after", x)
 
 y = x ** (1 / 3)
 print("Final result is", y)    
-  </input>
+  </code>
 </program>
 
 <p>
@@ -64,7 +64,7 @@ print("Final result is", y)
 </p>
 
 <program language="python" interactive="activecode" xml:id="fcn_debug_pass">
-  <input>
+  <code>
 def debug(var_name, value):
     # print("The value of", var_name, "is", value)
     pass
@@ -76,7 +76,7 @@ debug("x after", x)
 
 y = x ** (1 / 3)
 print("Final result is", y)    
-  </input>
+  </code>
 </program>
 
 <p>
@@ -167,22 +167,22 @@ print("Final result is", y)
   
   <p><em>IMPORTANT:</em> If you call a value-returning function and do not store the result of the function in a variable, the return value vanishes into the mist!</p>
   <program language="python">
-    <input>
+    <code>
 def average(a, b):
     return (a + b) / 2
     
 average(3.7, 8.9)
-</input>
+</code>
   </program>
   <p>This script computes the average of 3.7 and 8.9, but since it doesn't store the result in a variable or display the result, it is not very useful.</p>
   
   <p>You might be wondering what would happen if you assigned the result of a void function to a variable. If you do (as in line 2 of the following program), you get a special value called <c>None</c>.</p>
   <program language="python" interactive="activecode">
-    <input>
+    <code>
 x = 2.5
 result = print("x squared is", x * x)
 print(result)
-</input>
+</code>
   </program>
 
 </section>

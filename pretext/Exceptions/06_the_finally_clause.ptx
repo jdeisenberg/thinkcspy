@@ -19,7 +19,7 @@
   </datafile>
   
   <program xml:id="file_finally" interactive="activecode" language="python">
-    <input>
+    <code>
 try:
     my_file = open("bad_data.txt", "r")
     total = 0
@@ -34,6 +34,6 @@ try:
     print(f"Total is {total}")
 except IOError:
     print("Error: my_data.txt does not exist or cannot be opened.")
-</input>
+</code>
     </program>
 </section>

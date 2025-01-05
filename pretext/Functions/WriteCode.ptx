@@ -7,11 +7,11 @@
             <p>Fix the 4 errors so the following code runs and returns the perimeter of a rectangle. For example, <c>recPerimeter(10, 20)</c> should return <c>60</c>.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="funct-ex-perimeterq_editor">
-            <input>
+            <code>
 def recPerimeter(length, width)
 perimeter = 2 * (length + width)
     Return recPerimeter
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -26,7 +26,7 @@ myTests().main()
         </tests>
           </program>
           <solution>
-    <program xml:id="funct-ex-perimetera_editor" language="python"><input>
+    <program xml:id="funct-ex-perimetera_editor" language="python"><code>
 # Function headers end with a colon (:)
 def recPerimeter(length, width):
 
@@ -36,7 +36,7 @@ def recPerimeter(length, width):
     # Keyword return is lowercase
     # Return the variable, not the function name
     return perimeter
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
 
@@ -45,11 +45,11 @@ def recPerimeter(length, width):
             <p>Fix the 5 errors so the following code runs and returns the area of a square. For example, <c>squareArea(10)</c> should return <c>100</c>.</p>
           </statement>
           <program xml:id="funct_ex_squareq_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 Def squareArea(sideLength)
     area = length * length
     return squareArea
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -69,13 +69,13 @@ myTests().main()
                             and computes its area. Then, write code to call the function and print the result. For example, <c>areaTriangle(12, 45)</c> should return <c>270</c>.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="funct_ex_triangleq_editor">
-            <input>
+            <code>
 def areaTriangle():
     base = 5
     height = 4
     return (5 * 4) / 2
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -88,7 +88,7 @@ myTests().main()
         </tests>
           </program>
           <solution>
-    <program xml:id="funct_ex_trianglea_editor" language="python"><input>
+    <program xml:id="funct_ex_trianglea_editor" language="python"><code>
 # Give function base and height arguments
 def areaTriangle(base, height):
     # Set area variable to the formula using arguments
@@ -97,7 +97,7 @@ def areaTriangle(base, height):
     return area
 # Call the function with arguments
 print(areaTriangle(2, 6))
-        </input></program>
+        </code></program>
 
 
                     </solution>
@@ -110,7 +110,7 @@ print(areaTriangle(2, 6))
                     should return the cost of the trip. For example, <c>tripCost(100, 25, 2.24)</c> should return <c>8.96</c>.</p>
           </statement>
           <program xml:id="funct_ex_tripq_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 miles = 500
 milesPerGallon = 26
 numGallons = miles / milesPerGallon
@@ -118,7 +118,7 @@ pricePerGallon = 3.45
 total = numGallons * pricePerGallon
 print(total)
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -137,13 +137,13 @@ myTests().main()
             <p>Fix the errors on line 2 so the function <c>nameAndAge</c> returns the string <q>My name is <c>nameString</c> and I am <c>ageInt</c> years old.</q> For example, <c>nameAndAge("John", 18)</c> should return <c>"My name is John and I am 18 years old."</c></p>
           </statement>
           <program interactive="activecode" language="python" xml:id="funct_ex_nameq_editor">
-            <input>
+            <code>
 def nameAndAge(nameString, ageInt):
     return(My name is "nameString" and I am + "str(ageInt)" + years old.)
 
 print(nameAndAge("John", 18))
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -156,14 +156,14 @@ myTests().main()
         </tests>
           </program>
           <solution>
-    <program xml:id="funct_ex_namea_editor" language="python"><input>
+    <program xml:id="funct_ex_namea_editor" language="python"><code>
 def nameAndAge(nameString, ageInt):
     # Use quotes around strings, keep variables outside of quotes
     # Include spacing so variables are not connected to words
     return("My name is " + nameString + " and I am " + str(ageInt) + " years old.")
 
 print(nameAndAge("John", 18))
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
 
@@ -183,21 +183,21 @@ print(nameAndAge("John", 18))
                     </tabular>
                   </table>
             <!--<program language="python">
-              <input>
+              <code>
 Score    Grade
 &gt;= 0.9     A
 &gt;= 0.8     B
 &gt;= 0.7     C
 &gt;= 0.6     D
 &lt; 0.6      F
-</input>
+</code>
                   </program>-->
           </statement>
           <program xml:id="funct_ex_gradeq_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 def computegrade(score):
     # your code here
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -219,11 +219,11 @@ myTests().main()
             <p>Write a value-returning function <c>sum_to(n)</c> that returns the sum of all integer numbers up to and including <c>n</c>. For example, <c>sum_to(10)</c> would compute 1 + 2 + 3 + &#x2026; + 10 and return the value <c>55</c>. Use this equation to find this sum: <m>n(n+1) \over 2</m>. For example, <c>sum_to(15)</c> should return <c>120.0</c>.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="funct_ex_sumq_editor">
-            <input>
+            <code>
 def sumTo(n):
     # your code here
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -240,7 +240,7 @@ myTests().main()
           </program>
           <solution>
 
-    <program xml:id="funct_ex_suma_editor" language="python"><input>
+    <program xml:id="funct_ex_suma_editor" language="python"><code>
 def sumTo(n):
     # set result variable to given equation
     result = (n * (n + 1)) / 2
@@ -248,7 +248,7 @@ def sumTo(n):
     return result
     # alternatively, you can accomplish this on one line:
     # return (n * (n + 1)) / 2
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
 
@@ -260,11 +260,11 @@ def sumTo(n):
                             For example, <c>circle_area(31415.926535897932)</c> should return <c>3100627668.0299816</c>.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="funct_ex_circleq_editor">
-            <input>
+            <code>
 def circle_area(r):
     # your code here
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -280,7 +280,7 @@ myTests().main()
         </tests>
           </program>
           <solution>
-    <program xml:id="funct_ex_circlea_editor" language="python"><input>
+    <program xml:id="funct_ex_circlea_editor" language="python"><code>
 # Import the math module
 import math
 
@@ -289,7 +289,7 @@ def circle_area(r):
     a = r**2 * math.pi
     # Return the area
     return a
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
 
@@ -298,10 +298,10 @@ def circle_area(r):
             <p>Finish the function to return the average of three numbers, but drop the lowest value. For example, <c>get_avg_drop_lowest(100, 10, 0)</c> returns <c>55</c> and <c>get_avg_drop_lowest(4, 2, 10)</c> returns <c>7</c>. Hint: use the <c>min</c> function to find the lowest value.</p>
           </statement>
           <program xml:id="funct_avg_drop_lowest_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 def get_avg_drop_lowest(num1, num2, num3):
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -325,10 +325,10 @@ myTests().main()
             <p>You are driving a little too fast, and a police officer stops you. Write code to compute the kind of ticket you'll receive, encoded as an int value: 0 = no ticket, 1 = small ticket, and 2 = big ticket. If <c>speed</c> is 60 or less, return <c>0</c>. If <c>speed</c> is between 61 and 80 inclusive, return <c>1</c>. If <c>speed</c> is 81 or more, return <c>2</c>. If it is your birthday, your speed can be 5 higher in all cases. For example, <c>caught_speeding(60,False)</c> should return <c>0</c>.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="funct_ex_speedingq_editor">
-            <input>
+            <code>
 def caught_speeding(speed, is_birthday):
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -353,7 +353,7 @@ myTests().main()
           </program>
           <solution>
     
-    <program xml:id="funct_ex_speedinga_editor" language="python"><input>
+    <program xml:id="funct_ex_speedinga_editor" language="python"><code>
 def caught_speeding(speed, is_birthday):
     if is_birthday:
         if speed &lt;= 65:
@@ -369,7 +369,7 @@ def caught_speeding(speed, is_birthday):
             return 1
         else:
             return 2
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
         -->
@@ -381,10 +381,10 @@ def caught_speeding(speed, is_birthday):
                     <c>'too low'</c>, <c>check_guess(7, 7)</c> returns <c>'correct'</c>, and <c>check_guess(9, 7)</c> returns <c>'too high'</c>.</p>
           </statement>
           <program xml:id="funct_check_guess_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 def check_guess(guess, target):
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -415,11 +415,11 @@ myTests().main()
                             otherwise return <c>"7:00"</c>. For example, <c>alarm_clock(1, False)</c> should return <c>'7:00'</c>.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="funct_ex_alarmq_editor">
-            <input>
+            <code>
 def alarm_clock(day, vacation):
     # your code here
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -437,7 +437,7 @@ myTests().main()
         </tests>
           </program>
           <solution>
-    <program xml:id="funct_ex_alarma_editor" language="python"><input>
+    <program xml:id="funct_ex_alarma_editor" language="python"><code>
 def alarm_clock(day, vacation):
     if vacation:
         if (day == 0 or day == 6):
@@ -449,7 +449,7 @@ def alarm_clock(day, vacation):
             return '10:00'
         else:
             return '7:00'
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
         -->

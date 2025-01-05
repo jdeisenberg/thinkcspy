@@ -5,7 +5,7 @@
     Back in <xref ref="functions_eliminating-repetition"/> we created a function named <c>calculate_total</c>. Here it is again:
   </p>
   
-  <program language="python"><input>
+  <program language="python"><code>
 def calculate_total(price, quantity):
     subtotal = price * quantity
     if quantity >= 20:
@@ -16,7 +16,7 @@ def calculate_total(price, quantity):
         total = subtotal # no discount
     
     return total      
-  </input></program>
+  </code></program>
   
   <p>
     It's probably been enough time since you read the page that you might not remember exactly what it was supposed to do. In a few weeks, you might remember even less. In order to help you (and other people reading your code) know what a function does, you add a <term>docstring</term> (short for <q>documentation string</q>) after the function header that explains the function's purpose.
@@ -27,7 +27,7 @@ def calculate_total(price, quantity):
   </p>
   
   <program language="python" interactive="activecode">
-    <input>
+    <code>
 def calculate_total(price, quantity):
     """Calculate total price of a purchase.
 
@@ -56,7 +56,7 @@ total2 = calculate_total(price2, qty2)
     
 print("Total for first item is $", total1)
 print("Total for second item is $", total2)
-    </input>
+    </code>
   </program>
   
   <p>A docstring should start with a one-sentence summary of what the function does, followed by a blank line, followed by a more elaborate description. The ending triple quotes should be on a separate line.</p>

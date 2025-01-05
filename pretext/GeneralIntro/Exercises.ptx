@@ -16,9 +16,9 @@
 
         <p>Use complete sentences and blank lines for readability.  To print a blank line, use:</p>
         <program language="python">
-            <input>
+            <code>
                 print()
-            </input>
+            </code>
         </program>
         
         <p>The parentheses are required, even though there is nothing between them. If you don't believe me, leave them out and see what the output looks like!</p>
@@ -41,9 +41,9 @@ When day is done.
 
 </statement>
     <program interactive="activecode" language="python" xml:id="ch01_ex1_editor">
-      <input>
+      <code>
 
-      </input>
+      </code>
     </program>
     
     <hint>
@@ -51,9 +51,9 @@ When day is done.
         That lets you do something like this:
     </p>
     <program language="python">
-        <input>
+        <code>
             print('He said "Hello!" to me.')
-        </input>
+        </code>
     </program>
     </hint>
 </exercise>

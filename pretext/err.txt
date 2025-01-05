@@ -1,0 +1,26 @@
+PreTeXt project found in `/home/david/comsc020/cs20-thinkcspy`.
+warning: Using CLI version 1.6.1.dev20230614 but project's `requirements.txt`
+warning: is configured to use 1.6.1.dev20230614 #1.4.1.dev20230210. Consider either installing
+warning: CLI version 1.6.1.dev20230614 #1.4.1.dev20230210 or changing `requirements.txt` to match 1.6.1.dev20230614.
+No change in assets requiring generating detected.  To force regeneration of assets, use `-g` flag.
+
+Preparing to build into /home/david/comsc020/cs20-thinkcspy/output/html.
+
+Now building HTML into /home/david/comsc020/cs20-thinkcspy/output/html
+
+discovering source file's directory name: /home/david/comsc020/cs20-thinkcspy/pretext
+verifying and expanding input directory: /home/david/comsc020/cs20-thinkcspy/pretext/../generated-assets
+input directory expanded to absolute path: /home/david/comsc020/cs20-thinkcspy/generated-assets
+verifying and expanding input directory: /home/david/comsc020/cs20-thinkcspy/pretext/../assets
+input directory expanded to absolute path: /home/david/comsc020/cs20-thinkcspy/assets
+Runestone Services (via PreTeXt repository): version 6.5.0
+Runestone Services (using newer, via online CDN query): version 7.0.0dev7
+converting /home/david/comsc020/cs20-thinkcspy/pretext/cs20-thinkcspy.ptx to HTML in /tmp/tmp15u0uxxb
+XSL conversion of /home/david/comsc020/cs20-thinkcspy/pretext/cs20-thinkcspy.ptx by /home/david/.ptx/xsl/pretext-html.xsl
+comprehensive messages, warnings, and errors:
+successful application of /home/david/.ptx/xsl/pretext-html.xsl
+Removing temporary directory /tmp/tmp15u0uxxb
+
+Success! Run `pretext view web` to see the results.
+
+

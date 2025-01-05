@@ -5,7 +5,7 @@
     The <c>len</c> function and <c>del</c> statement, which we saw in connection with lists, also work with dictionaires. The <c>len</c> function returns the number of key-value pairs in the dictionary. The <c>del</c> statement removes a key-value pair from a dictionary. For example, the following dictionary contains the names of various fruits and the number of each fruit in stock.  If someone buys all of the pears, we can remove the entry from the dictionary. (We have put one entry per line in the dictionary declaration so that it fits into codelens nicely.)
   </p>
   <program xml:id="dict_del" interactive="codelens" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430,
              'bananas': 312,
              'oranges': 525,
@@ -13,7 +13,7 @@ inventory = {'apples': 430,
 
 del inventory['pears']
 length = len(inventory)
-    </input>
+    </code>
   </program>
 
   <p>
@@ -21,7 +21,7 @@ length = len(inventory)
   </p>
   
   <program xml:id="dict_reassign_value" interactive="codelens" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430,
              'bananas': 312,
              'oranges': 525,
@@ -29,18 +29,18 @@ inventory = {'apples': 430,
 
 inventory['pears'] = 0
 length = len(inventory)
-    </input>
+    </code>
   </program>
   
   <p>Similarily, a new shipment of 200 bananas arriving could be handled like this.</p>
   
   <program xml:id="dict_update_value" interactive="activecode" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 inventory['bananas'] = inventory['bananas'] + 200
 
 print(inventory)
-    </input>
+    </code>
   </program>
   
   <p>
@@ -51,23 +51,23 @@ print(inventory)
     If we enter a key that does not yet exist, it will automatically be added to the dictionary:
   </p>
     
-    <program xml:id="dict_new_entry" interactive="codelens" language="python"><input>
+    <program xml:id="dict_new_entry" interactive="codelens" language="python"><code>
 inventory = {'apples': 430,
              'bananas': 312,
              'oranges': 525,
              'pears': 217}
 inventory['limes'] = 189
-</input></program>
+</code></program>
 
   <exercise label="dict_ops_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 mydict = {"cat": 12, "dog": 6, "elephant": 23}
 mydict["mouse"] = mydict["cat"] + mydict["dog"]
 print(mydict["mouse"])
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

@@ -6,8 +6,8 @@
   <p>A few pages ago, we asked you to write a program that displays two lines of output. Here's the solution. (Run it to see what it does.)</p>
   
   <program xml:id="intro_multi_output" interactive="activecode" language="python">
-<input>print("My program works!")
-print("I wrote it in Python.")</input>
+<code>print("My program works!")
+print("I wrote it in Python.")</code>
   </program>
   
   <p>Try making the following changes to the program, one at a time, and see what the results are. Some of these changes will cause errors, and some of them won't. After each error, put the program back the way it was originally so you're starting with a working program.</p>

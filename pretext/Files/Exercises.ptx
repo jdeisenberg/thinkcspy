@@ -18,14 +18,14 @@
     </statement>
     
     <program interactive="activecode" language="python" xml:id="ex_student_names_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     
     <solution>
       <program xml:id="ex_student_names_answer" language="python">
-        <input>
+        <code>
 student_file = open("student_data.txt", "r")
 
 for line in student_file:
@@ -34,7 +34,7 @@ for line in student_file:
         print(items[0])
 
 student_file.close()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -47,9 +47,9 @@ student_file.close()
       </p>
     </statement>
     <program xml:id="ex_student_avg_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   
@@ -59,13 +59,13 @@ student_file.close()
       </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_student_min_max">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ex_student_min_max_answer" language="python">
-        <input>
+        <code>
 student_file = open("student_data.txt", "r")
 
 for line in student_file:
@@ -76,7 +76,7 @@ for line in student_file:
     print(f"{items[0]}: min {min(items[1:])}, max {max(items[1:])}.")
 
 student_file.close()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -106,9 +106,9 @@ student_file.close()
                 draw the best fit line, in a different color, through the points.</p>
     </statement>
     <program xml:id="ex_10_4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   -->
@@ -121,13 +121,13 @@ student_file.close()
       </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_10_5_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ch_files_q5answer" language="python">
-        <input>
+        <code>
 import turtle
 
 t = turtle.Turtle()
@@ -149,7 +149,7 @@ for aline in f:
 
 f.close()
 wn.exitonclick()
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>

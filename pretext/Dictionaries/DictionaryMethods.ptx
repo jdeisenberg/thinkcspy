@@ -44,7 +44,7 @@
   </p>
   
   <program xml:id="dict_for_keys" interactive="activecode" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 for key in inventory.keys():  # the order in which we get the keys is not defined
@@ -52,7 +52,7 @@ for key in inventory.keys():  # the order in which we get the keys is not define
 
 ks = list(inventory.keys())
 print(ks)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -60,12 +60,12 @@ print(ks)
   </p>
   
   <program xml:id="dict_for_without_keys_method" interactive="activecode" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 for key in inventory:
    print(f"Got key {key}, which maps to value {inventory[key]}")
-        </input>
+        </code>
   </program>
   
   <p>
@@ -77,7 +77,7 @@ for key in inventory:
   </p>
   
   <program xml:id="dict_values_items" interactive="activecode" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 print(list(inventory.values()))
@@ -88,7 +88,7 @@ for (key, value) in inventory.items():
 
 for key in inventory:
     print(f"Got {key} that maps to {inventory[key]}.")
-        </input>
+        </code>
   </program>
   
   <p>
@@ -98,7 +98,7 @@ for key in inventory:
   <p>The <c>in</c> and <c>not in</c> operators can test if a key is in the dictionary:</p>
   
   <program xml:id="dict_membership" interactive="activecode" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 print('apples' in inventory)
 print('cherries' in inventory)
@@ -107,7 +107,7 @@ if 'bananas' in inventory:
     print(inventory['bananas'])
 else:
     print("We have no bananas")
-        </input>
+        </code>
   </program>
   
   <p>
@@ -119,23 +119,23 @@ else:
   </p>
   
   <program xml:id="dict_get" interactive="activecode" language="python">
-    <input>
+    <code>
 inventory = {'apples': 430, 'bananas': 312, 'oranges': 525, 'pears': 217}
 
 print(inventory.get("apples"))
 print(inventory.get("cherries"))
 
 print(inventory.get("cherries", 0))
-        </input>
+        </code>
   </program>
   
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_dict_code" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 
@@ -143,12 +143,12 @@ print(inventory.get("cherries", 0))
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 mydict = {"cat": 12, "dog": 6, "elephant": 23, "bear": 20}
 keylist = list(mydict.keys())
 keylist.sort()
 print(keylist[3])
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -183,11 +183,11 @@ print(keylist[3])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 mydict = {"cat": 12, "dog": 6, "elephant": 23, "bear": 20}
 answer = mydict.get("cat") // mydict.get("dog")
 print(answer)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -222,10 +222,10 @@ print(answer)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 mydict = {"cat": 12, "dog": 6, "elephant": 23, "bear": 20}
 print("dog" in mydict)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -249,10 +249,10 @@ print("dog" in mydict)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 mydict = {"cat": 12, "dog": 6, "elephant": 23, "bear": 20}
 print(23 in mydict)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -276,14 +276,14 @@ print(23 in mydict)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 total = 0
 mydict = {"cat": 12, "dog": 6, "elephant": 23, "bear": 20}
 for a_key in mydict:
    if len(a_key) &gt; 3:
       total = total + mydict[a_key]
 print(total)
-</input>
+</code>
       </program>
     </statement>
     <choices>

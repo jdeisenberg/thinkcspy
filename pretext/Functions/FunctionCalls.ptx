@@ -12,12 +12,12 @@
   
   <p>In fact, we have been making function calls in almost all the programs we've written so far! Take a look at this short program:</p>
   <program xml:id="functCall_type" interactive="activecode" language="python">
-    <input>
+    <code>
 num_str = input("Enter a number: ")
 number = float(num_str)
 print("Your number is", number)
 
-        </input>
+        </code>
   </program>
   <p>There are three function calls in this program:
     <ul>

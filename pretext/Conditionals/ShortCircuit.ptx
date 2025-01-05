@@ -9,14 +9,14 @@
     </p>
     
     <program interactive="activecode" language="python" xml:id="cndtnlRebate">
-      <input>
+      <code>
 n_orders = int(input("Enter number of orders: "))
 total = float(input("Enter total amount sold: "))
 if n_orders &gt; 0 and total / n_orders &gt;= 30.0:
     print("You get a 5% rebate.")
 else:
     print("Sorry, you do not get a rebate.")
-    </input>
+    </code>
   </program>
   
   <p>
@@ -41,7 +41,7 @@ else:
   <p>
     While this may seem like a fine point, the short-circuit behavior leads to a clever technique called the <term>guardian pattern</term>. Consider the following code sequence in Python:</p>
   <program xml:id="cndtnlShortCircuit" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 6
 y = 2
 print(x &gt;= 2 and (x / y) &gt; 2)
@@ -53,7 +53,7 @@ print(x &gt;= 2 and (x / y) &gt; 2)
 x = 6
 y = 0
 print(x &gt;= 2 and (x / y) &gt; 2)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -64,7 +64,7 @@ print(x &gt;= 2 and (x / y) &gt; 2)
     We can construct the logical expression to strategically place a <em>guard</em> evaluation just before the evaluation that might cause an error as follows:
   </p>
   <program xml:id="cndtnlGuardian" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 1
 y = 0
 print(x &gt;= 2 and y != 0 and (x/y) &gt; 2)
@@ -76,7 +76,7 @@ print(x &gt;= 2 and y != 0 and (x/y) &gt; 2)
 x = 6
 y = 0
 print(x &gt;= 2 and (x/y) &gt; 2 and y != 0)
-        </input>
+        </code>
   </program>
   <p>In the first logical expression, <c>x &gt;= 2</c> is <c>False</c> so the evaluation stops right away. Neither <c>y != 0</c> or <c>(x / y) &gt; 2</c> is evaluated.</p>
   <p>In the second logical expression, <c>x &gt;= 2</c> is <c>True</c>

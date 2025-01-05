@@ -36,11 +36,11 @@
   <p>Here's the Python code for this example. Try running it and entering zero for the second number, and you'll see the error occur while you are running the program.</p>
 
   <program xml:id="runtime_error_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 a = int(input('Please enter a whole number:'))
 b = int(input('Please enter another whole number:'))
 print('The quotient of your numbers is', a / b)
-</input>
+</code>
 </program>
 
   <p>In all these examples, you can read and understand all the instructions; their <q>grammar</q> is fine. The run-time error happens when you try to actually <em>do</em> the instructions; that is when you are <em>running</em> the program.</p>

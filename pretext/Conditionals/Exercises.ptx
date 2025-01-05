@@ -30,9 +30,9 @@
       </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_6_1_editor">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <p><ol marker="1">
@@ -296,9 +296,9 @@ print(x)</pre>
       </p>
     </statement>
     <program xml:id="ex_6_2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
     <solution>
       <p>
@@ -351,16 +351,16 @@ print(x)</pre>
       </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_if_grades_editor">
-      <input>
+      <code>
 mark = float(input("Enter mark:"))
 # your code goes here
 
 print("Your grade is", grade)
-</input>
+</code>
     </program>
     <solution>
       <program xml:id="ex_if_grades_solution" language="python">
-        <input>
+        <code>
 mark = float(input("Enter mark:"))
 if mark &gt;= 90:
     grade = "A"
@@ -373,7 +373,7 @@ elif mark &gt;= 60:
 else:
     grade = "F"
 print("Your grade is", grade)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -384,10 +384,10 @@ print("Your grade is", grade)
       
       <p>Hint: floating point arithmetic is not always exactly accurate, so it is not safe to test floating point numbers for equality. If a good programmer wants to know whether <c>x</c> is equal or close enough to <c>y</c>, they would probably code it up as</p>
       <program language="python">
-        <input>
+        <code>
 if  abs(x - y) &lt; 0.001:      # if x is approximately equal to y
     ...
-</input>
+</code>
       </program>
       
       <p>Try your code with these values for <c>a</c>, <c>b</c>, and <c>c</c>:</p>
@@ -402,13 +402,13 @@ if  abs(x - y) &lt; 0.001:      # if x is approximately equal to y
       
     </statement>
     <program xml:id="ex_right_triangle_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 a = float(input("Enter side a: "))
 b = float(input("Enter side b: "))
 c = float(input("Enter longest side c: "))
 # your code here
 
-        </input>
+        </code>
     </program>
   </exercise>
   
@@ -425,11 +425,11 @@ c = float(input("Enter longest side c: "))
   </p>
     </statement>
     <program xml:id="ex_6_12_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 year = int(input("Enter the year: "))
 # your code goes here
 
-        </input>
+        </code>
     </program>
   </exercise>
   
@@ -465,12 +465,12 @@ year = int(input("Enter the year: "))
       <p>Your program should print an error message if the user provides a date that is out of range.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="cndtnl-easter_editor">
-      <input>
-      </input>
+      <code>
+      </code>
     </program>
     <solution>
       <program xml:id="cndtnl-easter_solution" language="python">
-        <input>
+        <code>
 year = int(input("Please enter a year"))
 if year &gt;= 1900 and year &lt;= 2099:
     a = year % 19
@@ -489,7 +489,7 @@ if year &gt;= 1900 and year &lt;= 2099:
         print("March", date_of_easter)
 else:
     print("ERROR...year out of range")
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>

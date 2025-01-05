@@ -9,7 +9,7 @@
     The store gives a discount based on the quantity purchased: if you buy 20 or more of an item, you get 10% discount. If you buy 10<ndash/>19 of an item, you get a 7% discount, and you get no discount for purchasing a quantity less than 10.
   </p>
 
-  <program language="python" interactive="activecode"><input>
+  <program language="python" interactive="activecode"><code>
 price1 = float(input("Enter price for first item: "))
 qty1 = int(input("Enter quantity to purchase: "))
 
@@ -34,7 +34,7 @@ else:
     
 print("Total for first item is $", total1)
 print("Total for second item is $", total2)
-</input></program>
+</code></program>
 
 <p>
   First, I have to emphasize: there's nothing wrong with this program. It works exactly as advertised. It just has a lot of duplicated code.

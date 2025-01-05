@@ -11,7 +11,7 @@
           
 
   <program xml:id="chp13_classesmid1" interactive="activecode" language="python">
-    <input>
+    <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -42,7 +42,7 @@ r2 = Rectangle(15, 4)
 r3 = r1.max_rect(r2)
 
 print(f"Result rectangle has dimensions {r3}.")
-        </input>
+        </code>
   </program>
   
   <p>
@@ -56,10 +56,10 @@ print(f"Result rectangle has dimensions {r3}.")
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_cl_01" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 </section>

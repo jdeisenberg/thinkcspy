@@ -6,10 +6,10 @@
       <p>Write a recursive function to compute the factorial of a number.</p>
     </statement>
     <program xml:id="ex_rec_1_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def computeFactorial(number):
     #your code here
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -33,10 +33,10 @@ myTests().main()
       <p>Write a recursive function to reverse a list.</p>
     </statement>
     <program xml:id="ex_rec_2_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def reverseList(lst):
     #your code here
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -81,9 +81,9 @@ myTests().main()
                 realistic looking tree.</p>
     </statement>
     <program xml:id="ex_rec_3_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_rec_4">
@@ -92,9 +92,9 @@ myTests().main()
                 approach to this uses triangles again.</p>
     </statement>
     <program xml:id="ex_rec_4_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_rec_5">
@@ -104,9 +104,9 @@ myTests().main()
                 iterative version?</p>
     </statement>
     <program xml:id="ex_rec_5_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_rec_6">
@@ -115,9 +115,9 @@ myTests().main()
                 track of the disks.</p>
     </statement>
     <program xml:id="ex_rec_6_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_rec_7">
@@ -126,9 +126,9 @@ myTests().main()
                 display a Hilbert curve.</p>
     </statement>
     <program xml:id="ex_rec_7_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_rec_8">
@@ -137,9 +137,9 @@ myTests().main()
                 display a Koch snowflake.</p>
     </statement>
     <program xml:id="ex_rec_8_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_rec_9">
@@ -150,9 +150,9 @@ myTests().main()
                 How can you get exactly two gallons of water in the 4-gallon jug?</p>
     </statement>
     <program xml:id="ex_rec_9_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_rec_10">
@@ -162,9 +162,9 @@ myTests().main()
                 left in the larger jug.</p>
     </statement>
     <program xml:id="ex_rec_10_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_rec_11">
@@ -178,9 +178,9 @@ myTests().main()
                 river.</p>
     </statement>
     <program xml:id="ex_rec_11_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_rec_12">
@@ -190,9 +190,9 @@ myTests().main()
                 have them shaped like rectangles.</p>
     </statement>
     <program xml:id="ex_rec_12_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
   <exercise label="ex_rec_13">
@@ -216,9 +216,9 @@ myTests().main()
                 print.</p>
     </statement>
     <program xml:id="ex_rec_13_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 
-        </input>
+        </code>
     </program>
   </exercise>
 </section>

@@ -8,7 +8,7 @@
   </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="classes_scale_rect_editor">
-      <input>
+      <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -38,12 +38,12 @@ print(big_r1)
 r2 = Rectangle(24, 18)
 small_r2 = r2.scale(1 / 3)
 print(small_r2)      
-</input>
+</code>
     </program>
     
     <solution>
       <program xml:id="classes_scale_rect_solution" language="python">
-    <input>
+    <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -76,7 +76,7 @@ print(big_r1)
 r2 = Rectangle(24, 18)
 small_r2 = r2.scale(1 / 3)
 print(small_r2)      
-</input>
+</code>
 </program>
     </solution>
   </exercise>
@@ -88,7 +88,7 @@ print(small_r2)
       </p>
     </statement>
     <program xml:id="classes_flip_rect_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -114,7 +114,7 @@ class Rectangle:
 r1 = Rectangle(8, 12)
 r2 = r1.flip()
 print(f"Flipped rectangle is {r2}")
-        </input>
+        </code>
     </program>
   </exercise>
   
@@ -124,7 +124,7 @@ print(f"Flipped rectangle is {r2}")
         cause the width and height to be changed by the given amounts. This method will <em>not</em> return a new <c>Rectangle</c>; it will chanage the attributes of the <c>Rectangle</c>.  For example, if a rectangle <c>r</c> has width 8 and height 7, and you call <c>r.change(2.5, -1)</c>, the rectangle will then have a width of 10.5 and a height of 6.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="classes_change_dimensions_editor">
-      <input>
+      <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -151,11 +151,11 @@ r = Rectangle(8, 7)
 r.change(2.5, -1)
 print(f"Rectangle r now has {r}.")
 
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="classes_change_dimensions_answer" language="python">
-        <input>
+        <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -185,7 +185,7 @@ r = Rectangle(8, 7)
 r.change(2.5, -1)
 print(f"Rectangle r now has {r}.")
 
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>

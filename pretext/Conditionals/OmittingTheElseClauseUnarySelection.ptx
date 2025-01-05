@@ -13,12 +13,12 @@
   </sidebar>
   
   <program xml:id="conditionals_unaryselection" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 10
 if x &lt; 0:
     print("The negative number ",  x, " is not valid here.")
 print("This is always printed")
-        </input>
+        </code>
   </program>
   
   <p>What would be printed if the value of <c>x</c> is negative?  Try it.</p>
@@ -31,12 +31,12 @@ print("This is always printed")
     <statement>
       <p>What does the following code print?</p>
       <program language="python">
-        <input>
+        <code>
 x = -10
 if x &lt; 0:
     print("The negative number ",  x, " is not valid here.")
 print("This is always printed")
-</input>
+</code>
       </program>
       <pre>a.
 This is always printed
@@ -80,7 +80,7 @@ The negative number -10 is not valid here</pre>
     <statement>
       <p>Will the following code cause an error?</p>
       <program language="python">
-        <input>
+        <code>
 x = -10
 if x &lt; 0:
     print("The negative number ",  x, " is not valid here.")
@@ -88,7 +88,7 @@ else:
     print(x, " is a positive number")
 else:
     print("This is always printed")
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -112,20 +112,20 @@ else:
   <p>Here is a program with a unary selection:</p>
   
   <program language="python" xml:id="unary_program">
-    <input>
+    <code>
 number = int(input("Enter a non-negative number: "))
 
 if number &lt; 0:
     print("Sorry, negative numbers are not allowed.")
     
 print("Your number was", number)
-</input>
+</code>
 </program>
 
 <p>And here is the same program using <c>pass</c> so that we can have an <c>else</c> clause to go with the <c>if</c>:</p>
 
   <program language="python" xml:id="binary_with_pass_program">
-    <input>
+    <code>
 number = int(input("Enter a non-negative number: "))
 
 if number &lt; 0:
@@ -134,14 +134,14 @@ else:
     pass
 
 print("Your number was", number)
-</input>
+</code>
 </program>
 
 <p>You can copy and paste these programs into this activecode area to try them out and see that they do the same thing.</p>
 
 <program interactive="activecode" language="python">
-  <input>
-  </input>
+  <code>
+  </code>
 </program>
 
   

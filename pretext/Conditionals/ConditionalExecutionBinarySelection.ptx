@@ -7,7 +7,7 @@
   </p>
   
   <program xml:id="odd_even_prog1" interactive="activecode" language="python">
-    <input>
+    <code>
 number_str = input("Enter a number:")
 number = int(number_str)
 
@@ -15,18 +15,18 @@ if number % 2 == 0:
     print(number, "is even")
 else:
     print(number, "is odd")
-        </input>
+        </code>
   </program>
   
   <p>The syntax for an <c>if</c> statement looks like this:</p>
   
   <program language="python">
-    <input>
+    <code>
 if BOOLEAN EXPRESSION:
     STATEMENTS_1        # executed if condition evaluates to True
 else:
     STATEMENTS_2        # executed if condition evaluates to False
-</input>
+</code>
   </program>
   <p>
     The boolean expression after the <c>if</c> statement is called the <term>condition</term>. If it is true, then the immediately following indented statements get executed. If not, then the statements indented under the <c>else</c> clause get executed.
@@ -104,12 +104,12 @@ else:
     <statement>
       <p>What does the following code print (choose from output a, b, c or nothing)?</p>
       <program language="python">
-        <input>
+        <code>
 if 4 + 5 == 10:
     print("Math is broken")
 else:
     print("Math is correct")
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -144,13 +144,13 @@ else:
     <statement>
       <p>What does the following code print?</p>
       <program language="python">
-        <input>
+        <code>
 if 5 % 2 == 1:
     print("odd")
 else:
     print("even")
 print("finished")
-</input>
+</code>
       </program>
       <pre>a. 
    finished

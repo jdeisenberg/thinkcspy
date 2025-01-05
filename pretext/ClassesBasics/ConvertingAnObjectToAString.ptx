@@ -6,7 +6,7 @@
   </p>
   
   <program xml:id="classes_str1" interactive="activecode" language="python">
-    <input>
+    <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -26,7 +26,7 @@ class Rectangle:
 
 r = Rectangle(7, 6)
 print(r)
-        </input>
+        </code>
   </program>
   <p>
       The <c>print</c> function shown above produces a string representation of the Rectangle <c>r</c>.  The default functionality provided by Python tells you that <c>r</c> is an object of type <c>Rectangle</c> (along with the memory address of the object when running the program in a real Python environment).  However, it does not tell you anything about the specific state of the point.
@@ -41,7 +41,7 @@ print(r)
   </p>
   
   <program xml:id="classes_str2" interactive="activecode" language="python">
-    <input>
+    <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -64,7 +64,7 @@ class Rectangle:
 
 r = Rectangle(7, 6)
 print(r)
-        </input>
+        </code>
   </program>
   
   <p>

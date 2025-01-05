@@ -262,19 +262,19 @@
     <p>For example, if we wrote this Python:</p>
     
     <program language="python">
-      <input>
+      <code>
 if not (age &gt;= 17):
    print("Hey, you're too young to get a driving licence!")
-</input>
+</code>
     </program>
     
     <p>it would probably be clearer to use the logical opposite of the <c>&gt;=</c> operator instead:</p>
     
     <program language="python">
-      <input>
+      <code>
 if age &lt; 17:
    print("Hey, you're too young to get a driving licence!")
-</input>
+</code>
     </program>
 </subsection>
 
@@ -282,10 +282,10 @@ if age &lt; 17:
     <title>The De Morgan Laws</title>
     <p>Two powerful simplification laws (called De Morgan's laws) that are often helpful when dealing with complicated Boolean expressions are:</p>
     <program language="python">
-      <input>
+      <code>
 not (x and y)  ==  (not x) or (not y)
 not (x or y)   ==  (not x) and (not y)
-</input>
+</code>
     </program>
     
     <p>
@@ -293,38 +293,38 @@ not (x or y)   ==  (not x) and (not y)
     </p>
     
     <program language="python">
-      <input>
+      <code>
 if not ((phone_charge &gt;= 0.50) and (phone_storage &gt;= .15)):
    print("You cannot restart your phone.")
    print("Battery too low or not enough free space.")
 else:
    print("Updating now...Several restarts may be required.")
-</input>
+</code>
     </program>
     
     <p>Applying rules of logical opposites would let us rework the condition in a (perhaps) easier to understand way like this:</p>
     
     <program language="python">
-      <input>
+      <code>
 if (phone_charge &lt; 0.50) or (phone_storage &lt; .15):
    print("You cannot restart your phone.")
    print("Battery too low or not enough free space.")
 else:
    print("Updating now...Several restarts may be required.")
-</input>
+</code>
     </program>
     
     
     <p>
       We could also get rid of the <c>not</c> by swapping around the <c>then</c> and <c>else</c> parts of the conditional. So here is a third version, also equivalent: </p>
     <program language="python">
-      <input>
+      <code>
 if (phone_charge &gt;= 0.50) and (phone_storage &gt;= .15):
    print("Updating now...Several restarts may be required.")
 else:
    print("You cannot restart your phone.")
    print("Battery too low or not enough free space.")
-</input>
+</code>
     </program>
     
     <p>

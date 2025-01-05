@@ -23,11 +23,11 @@
             over and over throughout our program.</p>
   <p>Here is an example of a function that takes two input numbers and gives back the average:</p>
   <program language="python">
-    <input>
+    <code>
 def average(a, b):
     result = (a + b) / 2
     return result
-</input>
+</code>
   </program>
   <p><c>def</c> is a keyword that indicates that this is a function
             definition. The name of the function is <c>average</c>. The rules for
@@ -88,12 +88,12 @@ def average(a, b):
     If you type a function definition in the Python shell, the interpreter prints ellipses (&#x2026;) to let you know that the definition isn't complete:
   </p>
   <program language="python">
-    <input>
+    <code>
 &gt;&gt;&gt; def average(a, b):
 ...     result = (a + b) / 2
 ...     return result
 ...
-</input>
+</code>
   </program>
   <p>To end the function, you have to enter an empty line. This is not necessary in a script, but it is a good idea to put an empty line after a function to increase the readability of your code.</p>
 
@@ -103,14 +103,14 @@ def average(a, b):
   </p>
   
   <program xml:id="functAdd_call" interactive="activecode" language="python">
-    <input>
+    <code>
 def average(a, b):
     result = (a + b) / 2
     return result
 
 avg = average(3.5, 8.9)
 print("average is", avg)
-        </input>
+        </code>
   </program>
   
   <p>

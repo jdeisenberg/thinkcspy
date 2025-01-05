@@ -27,10 +27,10 @@
 <!--
 <p>creates a <em>module object</em> named math. If you print the module object, you get some information about it:</p>
   <program xml:id="functMath_module" interactive="activecode" language="python">
-    <input>
+    <code>
 import math
 print(math)
-        </input>
+        </code>
   </program>
 -->
   <p>
@@ -42,13 +42,13 @@ print(math)
   </p>
   
   <program xml:id="functMath_sqrt" interactive="activecode" language="python">
-    <input>
+    <code>
 import math
 
 x = 2.0
 root = math.sqrt(x)
 print("Square root of", x, "is", root)
-</input>
+</code>
 </program>
 
 <p>
@@ -56,7 +56,7 @@ print("Square root of", x, "is", root)
 </p>
 
   <program xml:id="functMath_log" interactive="activecode" language="python">
-    <input>
+    <code>
 # Calculate signal-to-noise ratio in decibels
 import math
 
@@ -65,7 +65,7 @@ noise_power = 2
 ratio = signal_power / noise_power
 decibels = 10 * math.log10(ratio)
 print(decibels, "dB")
-</input>
+</code>
 </program>
 </introduction>
 
@@ -80,24 +80,24 @@ print(decibels, "dB")
     If you're still here, then you need to know something <em>very</em> important about how the trigonometry functions work in the <c>math</c> module. You may know that the sine of 45&#xb0; is one-half the square root of 2, which is about 0.707. If you try doing the following in Python, you are in for a surprise:
   </p>
   
-  <program xml:id="functMath_sin1" interactive="activecode" language="python"><input>
+  <program xml:id="functMath_sin1" interactive="activecode" language="python"><code>
 import math
 
 degrees = 45.0
 result = math.sin(degrees)
 print("Result is", result)
-</input></program>
+</code></program>
 
 <p>The Python trigonometric functions do not want their arguments in degrees<mdash/>they want their arguments in <em>radians</em>, where <m>\pi</m> (pi) radians equals 180&#xb0; To convert from degrees to radians, divide by 180 and multiply by <m>\pi</m>. Luckily, the <c>math</c> module also provides you with a variable named <c>pi</c>, which is an approximation to <m>\pi</m> to about 15 digits.  This program works a lot better:</p>
   <program xml:id="functMath_sinPi" interactive="activecode" language="python">
-    <input>
+    <code>
 import math
 
 degrees = 45
 radians = degrees / 180.0 * math.pi
 result = math.sin(radians)
 print(result)
-        </input>
+        </code>
   </program>
 
     <p>
@@ -107,7 +107,7 @@ print(result)
   <p>You can check the previous result by comparing it to the square root of two divided by two. The results are close enough for anything you'll need to do in most beginning programming courses.</p>
   
   <program xml:id="functMath_sqrt2" interactive="activecode" language="python">
-    <input>
+    <code>
 import math
 
 sin_result = math.sin(math.radians(45))
@@ -115,7 +115,7 @@ print("sin result is ", sin_result)
 
 sqrt_result = math.sqrt(2) / 2.0
 print("square root is", sqrt_result)
-        </input>
+        </code>
   </program>
   
 
@@ -224,12 +224,12 @@ print("square root is", sqrt_result)
   
   <!--
   <program xml:id="functMath_codelens1" interactive="codelens" language="python">
-    <input>
+    <code>
 import math
 num = 2.0
 result = math.sqrt(4) / num
 print(result)
-    </input>
+    </code>
   </program>
   -->
 </subsection>

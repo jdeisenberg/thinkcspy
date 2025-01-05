@@ -11,12 +11,12 @@
   <p>The <c>max</c> and <c>min</c> functions give us the largest
             and smallest values of their arguments, respectively:</p>
   <program xml:id="functBuiltin_MaxMin" interactive="activecode" language="python">
-    <input>
+    <code>
 largest = max(1, 0, -2, 4, 3)
 print(largest)
 smallest = min(1, 0, -2, 4, 3)
 print(smallest)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -28,7 +28,7 @@ print(smallest)
   </p>
   
   <p>See if you can predict what will happen when you run this program.</p>
-  <program interactive="activecode" language="python"><input>
+  <program interactive="activecode" language="python"><code>
 minimum1 = min(4, 2.7, 9.6, 12) # all numeric
 print(minimum1)
 
@@ -37,14 +37,14 @@ print(maximum2)
 
 maximum3 = max(3.5, 'blah', False) # different data types
 print(maximum3)
-</input></program>
+</code></program>
  
  <p>
    If you need to find the absolute value of a number, you can use the built-in <c>abs</c> function. The <c>abs</c> function takes exactly one argument, and it must be numeric.
  </p>
 
  <program xml:id="functBuiltin_abs" interactive="activecode" language="python">
-   <input>
+   <code>
 abs_val1 = abs(-3.5)
 print(abs_val1)
 
@@ -53,19 +53,19 @@ print(abs_val2)
 
 abs_val3 = abs('blah') # error!
 print(abs_val3)
-</input></program>
+</code></program>
 
   <p>
     Another very useful built-in function is the <c>len</c> function, which tells us how many items are in its argument. If the argument to <c>len</c> is a list, it returns the number of items in the list. If the argument to <c>len</c> is a string, it returns the number of characters in the string.
   </p>
   <program xml:id="functBuiltin_len" interactive="activecode" language="python">
-    <input>
+    <code>
 list_length = len([10, 66, 47, 11, 505, 217])
 print(list_length)
 
 str_length = len('Python is good.')
 print(str_length)
-</input>
+</code>
   </program>
   <!--<p>These functions can operate on any set of values, as we will see in
   later chapters.</p>-->
@@ -76,11 +76,11 @@ print(str_length)
     <statement>
       <p>Q-5: Consider the following code block. What prints?</p>
       <program language="python">
-        <input>
+        <code>
 sentence = "Hello, Python!"
 length_sentence = len(sentence)
 print(length_sentence)
-</input>
+</code>
       </program>
     </statement>
     <choices>

@@ -24,14 +24,14 @@
   </datafile> 
 
   <program xml:id="with_example" interactive="activecode" language="python">
-    <input>
+    <code>
 # Calculate the temperature range for each day
 with open("daily_weather.txt", "r") as input_file:
     for line in input_file:
         values = line.split(',')
         degree_range = int(values[2]) - int(values[1])
         print(f"Temperature range on {values[0]} is {degree_range} degrees C.")
-        </input>
+        </code>
   </program>
   
   <p>

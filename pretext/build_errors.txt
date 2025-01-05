@@ -1,0 +1,13 @@
+PTX:INFO    : parsing possible configuration files: ['/home/david/pretext/pretext/pretext.cfg', '/home/david/pretext/user/mbx.cfg', '/home/david/pretext/user/pretext.cfg']
+PTX:INFO    : using default configuration only
+PTX:INFO    : custom configuration file not used at /home/david/pretext/user/pretext.cfg
+PTX:INFO    : dictionary of executables/commands: {'latex': 'latex', 'pdflatex': 'pdflatex', 'xelatex': 'xelatex', 'pdfsvg': 'pdf2svg', 'asy': 'asy', 'sage': 'sage', 'pdfpng': 'convert', 'pdfeps': 'pdftops', 'node': 'node', 'liblouis': 'file2brl'}
+PTX:INFO    : verifying and expanding XML source file: pretext/cs20-thinkcspy.ptx
+Traceback (most recent call last):
+  File "/home/david/pretext/pretext/pretext", line 803, in <module>
+    main()
+  File "/home/david/pretext/pretext/pretext", line 534, in main
+    xml_source = verify_input_file(args.xml_file, "source")
+  File "/home/david/pretext/pretext/pretext", line 87, in verify_input_file
+    raise ValueError(msg)
+ValueError: XML source file pretext/cs20-thinkcspy.ptx does not exist

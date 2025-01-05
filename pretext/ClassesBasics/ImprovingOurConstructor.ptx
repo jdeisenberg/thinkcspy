@@ -10,7 +10,7 @@
   </p>
   
   <program xml:id="improve_constructor" interactive="codelens" language="python">
-    <input>
+    <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -20,7 +20,7 @@ class Rectangle:
         self.height = init_height
 
 r = Rectangle(7, 6)
-    </input>
+    </code>
   </program>
   
   <p>

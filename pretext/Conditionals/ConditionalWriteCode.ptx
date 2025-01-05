@@ -8,16 +8,16 @@
                             <q>The number is 5</q> when the number is 5, and should print <q>The number is NOT 5</q> when it is not.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="cndtnl-wc-fiveq_editor">
-            <input>
+            <code>
 x = 5
 if x == 5:
 print("The number is 5")
 if x != 5:
 print("The number is NOT 5")
-        </input>
+        </code>
           </program>
           <solution>
-    <program xml:id="cndtnl-wc-fivea_editor" language="python"><input>
+    <program xml:id="cndtnl-wc-fivea_editor" language="python"><code>
 # Initialize x and set condition for when x = 5
 # Use "else" to take care of condition when x is not 5.
 x = 5
@@ -25,7 +25,7 @@ if x == 5:
     print("The number is 5") # indent the body of if
 else:
     print("The number is NOT 5") # indent the body of else
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
 
@@ -35,10 +35,10 @@ else:
                     equal 3 and <q>It is three</q> is printed otherwise.</p>
           </statement>
           <program xml:id="cndtnl-wc-hiq_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 x = 4
 if x
-        </input>
+        </code>
           </program>
         </exercise>
 
@@ -47,7 +47,7 @@ if x
             <p>Complete the pay computation as follows: When the employee works less than or equal to 40 hours a week, pay them $10 per hour. Otherwise, pay them $10 and hour for the first 40 hours and 1.5 times the hourly rate for hours worked above 40 hours. Then set <c>grossPay</c> equal to the  amount an employee would be paid for working 45 hours.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="cndtnl-wc-payq_editor">
-            <input>
+            <code>
 hours = 45
 rate = 10
 overtimeRate =  # your code here
@@ -58,7 +58,7 @@ else:
     overTime =  # your code here
     grossPay =  # your code here
 print(grossPay)
-</input>
+</code>
 <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -71,7 +71,7 @@ myTests().main()
           </program>
           <solution>
     
-    <program xml:id="cndtnl-wc-paya_editor" language="python"><input>
+    <program xml:id="cndtnl-wc-paya_editor" language="python"><code>
 # Initializing variables
 hours = 45
 rate = 10
@@ -88,7 +88,7 @@ else:
     grossPay = (rate * 40) + (overTime * overtimeRate)
 # Print the final pay
 print(grossPay)
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
 
@@ -98,9 +98,9 @@ print(grossPay)
             <p>Write the code to calculate and print the cost of a 14 mile cab ride. If the distance traveled is less than or equal to 5 miles the cost is $2.00 a mile. If the distance is greater than 5 but less than or equal to 12 miles, the cost is $1.50, and if the distance traveled is more than 12 miles the cost is $1.25 a mile. Assign the final cost to the variable <c>total</c>. (Your code should work for any mileage, not just for 14 miles.)</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="cndtnl-wc-distanceq_editor">
-            <input>
+            <code>
 distance = 14
-</input>
+</code>
 <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -112,7 +112,7 @@ myTests().main()
         </tests>
           </program>
           <solution>
-    <program xml:id="cndtnl-wc-distancea_editor" language="python"><input>
+    <program xml:id="cndtnl-wc-distancea_editor" language="python"><code>
 distance = 14 # must initialize variable
 
 if distance &lt;= 5:
@@ -125,7 +125,7 @@ else:
 total = distance * rate
 
 print("Total cost of trip:", total)
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
 

@@ -23,7 +23,7 @@
   <p>To process all of our climate change data, we will use a <em>for</em> loop to iterate over the lines of the file. Using the <c>split</c> method, we can break each line into a list containing all the fields of interest about the day's weather. We can then take the values corresponding to the minimum and maximum temperature.</p>
   
   <program xml:id="files_for" interactive="activecode" language="python">
-    <input>
+    <code>
 weather_file = open("daily_weather.txt", "r")
 max_temp = None  # no max temp before file is open
 min_temp = None  # no min temp before file is open
@@ -41,7 +41,7 @@ print(f"Monthly minimum: {min_temp} degrees C.")
 print(f"Monthly maximum: {max_temp} degrees C.")
 
 weather_file.close()
-        </input>
+        </code>
   </program>
   
   <note>

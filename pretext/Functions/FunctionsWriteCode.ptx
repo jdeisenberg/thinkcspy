@@ -8,8 +8,8 @@
                             For example, <c>remainder(5)</c> should return <c>1</c>.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="funct_writecode1q_editor">
-            <input>
-  </input>
+            <code>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -32,7 +32,7 @@ myTests().main()
                             For example, remainder(5) should return 1.
 
     
-    <program xml:id="funct_writecode1a_editor" language="python"><input>
+    <program xml:id="funct_writecode1a_editor" language="python"><code>
 # Function headers end with a colon (:) and a default value for y
 def remainder(x, y = 4):
 
@@ -42,7 +42,7 @@ def remainder(x, y = 4):
 
     # Keyword return is lowercase and returns z (the remainder of x divided by y)
     return z
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
 
@@ -52,8 +52,8 @@ def remainder(x, y = 4):
                     returns the area (of the rectangle). For example, <c>area_of_rect(5,4)</c> should return <c>20</c>.</p>
           </statement>
           <program xml:id="funct_writecode2q_editor" interactive="activecode" language="python">
-            <input>
-  </input>
+            <code>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 class myTests(TestCaseGui):
@@ -75,9 +75,9 @@ myTests().main()
                             <c>welcome_message('Aurora')</c> should return <c>"Hello Aurora! We hope that you will enjoy this course. :)"</c>.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="funct_writecode3q_editor">
-            <input>
+            <code>
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -98,10 +98,10 @@ myTests().main()
                             welcome_message('Aurora') should return "Hello Aurora! We hope that you will enjoy this course. :)".
 
     
-    <program xml:id="funct_writecode3a_editor" language="python"><input>
+    <program xml:id="funct_writecode3a_editor" language="python"><code>
 def welcome_message(name):
     return "Hello " + name + "! We hope that you will enjoy this course. :)"
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
 
@@ -111,9 +111,9 @@ def welcome_message(name):
                     For example, <c>birthday(11, 17, 1990)</c> should return <c>"11/17/1990"</c> and <c>birthday(7, 5, 2004)</c> should return <c>"7/5/2004"</c>.</p>
           </statement>
           <program xml:id="funct_writecode4q_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -136,9 +136,9 @@ myTests().main()
                             After the <c>city</c> and <c>state</c> inputs, add a comma and a space. For example, <c>address('Seattle', 'WA', '98105')</c> should return <c>"Seattle, WA, 98105"</c>.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="funct_writecode5q_editor">
-            <input>
+            <code>
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -162,11 +162,11 @@ myTests().main()
                             After the city and state inputs, add a comma and a space. For example, address('Seattle', 'WA', '98105') should return "Seattle, WA, 98105".
 
     
-    <program xml:id="funct_writecode5a_editor" language="python"><input>
+    <program xml:id="funct_writecode5a_editor" language="python"><code>
 def address(city, state, zip):
     user_address = city + ", " + state + ", " + zip
     return user_address
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
 
@@ -177,9 +177,9 @@ def address(city, state, zip):
                     <c>squareArea(10)</c> would return <c>"The total area of the square with length 10 is 100."</c>.</p>
           </statement>
           <program xml:id="funct_writecode6q_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -206,7 +206,7 @@ myTests().main()
                             <c>calculate(2,3,4)</c> should return <c>1</c>.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="funct_writecode7q_editor">
-            <input>
+            <code>
 def addNumbers(x, y):
     # your code here
 
@@ -216,7 +216,7 @@ def subtractNumbers(x, y):
 def calculate(a, b, c):
     # your code here
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -252,7 +252,7 @@ myTests().main()
                             calculate(2,3,4) should return 1.
 
     
-    <program xml:id="funct_writecode7a_editor" language="python"><input>
+    <program xml:id="funct_writecode7a_editor" language="python"><code>
 def addNumbers(x, y):
 
     # Return the value of adding x and y together
@@ -270,7 +270,7 @@ def calculate(a, b, c):
     finalResult = subtractNumbers(result, c)
     # Returns the finalResult
     return finalResult
-        </input></program>
+        </code></program>
                     </solution>
         </exercise>
 </exercises>

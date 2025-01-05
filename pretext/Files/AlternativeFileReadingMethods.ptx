@@ -16,7 +16,7 @@
   </p>
   
   <program language="python" interactive="activecode">
-    <input>
+    <code>
 in_file = open("daily_weather.txt", "r")
 one_line = in_file.readline() # read one line
 print(one_line)
@@ -34,7 +34,7 @@ file_string = in_file.read()
 print(f"File has {len(file_string)} characters.")
 print("First 200 characters:")
 print(file_string[:200])
-</input>
+</code>
 </program>
 
   <table xml:id="files_filemethods2a">
@@ -75,7 +75,7 @@ print(file_string[:200])
   </p>
   
   <program xml:id="files_while" interactive="activecode" language="python">
-    <input>
+    <code>
 # Calculate the temperature range for each day
 in_file = open("daily_weather.txt", "r")
 line = in_file.readline()
@@ -86,7 +86,7 @@ while line != "":
     line = in_file.readline()
 
 in_file.close()
-        </input>
+        </code>
   </program>
   
   <p>There are several important things to notice in this code:</p>

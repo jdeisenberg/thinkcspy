@@ -15,7 +15,7 @@
       
   <p>One way to express a computation like that is a  <term>chained conditional</term>:</p>
   <program xml:id="cndtnl_elif" interactive="codelens" language="python">
-    <input>
+    <code>
 x = 12
 y = 12.0
 if x &lt; y:
@@ -25,7 +25,7 @@ elif x &gt; y:
 else:
     print('x and y are equal')
 print('All done.')
-    </input>
+    </code>
   </program>
   <p><c>elif</c> is an abbreviation of <q>else if.</q> Again, exactly one
     branch will be executed. The flowchart for this program is shown in <xref ref="fig_chained_elif"/>.</p>
@@ -41,7 +41,7 @@ print('All done.')
             there is an <c>else</c> clause, it has to be at the end, but there
             doesn't have to be one. Try running the following program to see what it does.</p>
   <program xml:id="elif_example" interactive="activecode" language="python">
-    <input>
+    <code>
 choice = 'b'
 if choice == 'a':
     print('You chose A')
@@ -51,7 +51,7 @@ elif choice == 'c':
     print('You chose C')
 else:
     print('You chose some other letter.')
-    </input>
+    </code>
   </program>
   
   <p>Each condition is checked in order. If the first is False, the next is
@@ -71,14 +71,14 @@ else:
     <statement>
       <p>What will the following code print when <c>x = 3</c>, <c>y = 5</c>, and <c>z = 2</c>?</p>
       <program language="python">
-        <input>
+        <code>
 if x &lt; y and x &lt; z:
     print("a")
 elif y &lt; x and y &lt; z:
     print("b")
 else:
     print("c")
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -170,14 +170,14 @@ print(grade)</pre>
   <p>Note: an <c>if</c>-<c>elif</c> chain is not the same as a series of separate <c>if</c> statements! To bring this home, look at the next two programs and their flowcharts. First, the <c>if</c>-<c>elif</c> chain:</p>
   
       <program language="python" xml:id="prog_example_elif">
-      <input>percent = 80
+      <code>percent = 80
 if percent >= 75:
     print("great")
 elif percent >= 50:
     print("good")
 elif percent &lt; 50:
     print("fair")
-        </input>
+        </code>
       </program>
     
     <figure xml:id="fig_example_elif" align="">
@@ -188,14 +188,14 @@ elif percent &lt; 50:
   
   <p>Now, a similar program using separate <c>if</c> statements:</p>
   <program language="python" xml:id="prog_example_separate_if">
-      <input>percent = 80
+      <code>percent = 80
 if percent >= 75:
     print("great")
 if percent >= 50:
     print("good")
 if percent &lt; 50:
     print("fair")
-        </input>
+        </code>
       </program>
       
        <figure xml:id="fig_example_separate_if" align="">
@@ -206,9 +206,9 @@ if percent &lt; 50:
   
   <p>Copy and paste both programs into this ActiveCode area and see how they work.</p>
   <program interactive="activecode" language="python">
-    <input>
+    <code>
 # paste code here..
-</input>
+</code>
   </program>
   
 <exercise label="cndtnl-chain-mc-ifGrades">

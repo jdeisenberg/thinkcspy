@@ -31,13 +31,13 @@
   </p>
   
   <program xml:id="functRandom_float" interactive="activecode" language="python">
-    <input>
+    <code>
 import random
 
 for i in range(10):
     x = random.random()
     print(x)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -60,12 +60,12 @@ for i in range(10):
     The <c>random</c> function is only one of many functions that handle random numbers. The function <c>randint</c> takes the parameters <c>low</c> and <c>high</c>, and returns an integer between <c>low</c> and <c>high</c> (including both).
   </p>
   <program xml:id="functRandom_randint" interactive="activecode" language="python">
-    <input>
+    <code>
 import random
 
 print(random.randint(5, 10))
 print(random.randint(5, 10))
-        </input>
+        </code>
   </program>
   
   <p>
@@ -73,13 +73,13 @@ print(random.randint(5, 10))
   </p>
   
   <program xml:id="functRandom_choice" interactive="activecode" language="python">
-    <input>
+    <code>
 import random
 
 candidates = [11, 22, 33, 44, 55]
 print(random.choice(candidates))
 print(random.choice(candidates))
-        </input>
+        </code>
   </program>
   <!--<note xml:id="random_distributions">
     <title>For Those of You Who Are Seriously into Statistics...</title>

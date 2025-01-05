@@ -23,7 +23,7 @@
   </p>
   
   <program language="python">
-    <input>
+    <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -31,7 +31,7 @@ class Rectangle:
         """ Create a new 1 by 1 rectangle """
         self.width = 1
         self.height = 1
-    </input>
+    </code>
   </program>
   
   <p>
@@ -53,7 +53,7 @@ class Rectangle:
   <p>Let's use our new Rectangle class now.</p>
   
   <program xml:id="obj_classes1" interactive="activecode" language="python">
-    <input>
+    <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -66,7 +66,7 @@ r1 = Rectangle()    # Instantiate an object of type Rectangle
 r2 = Rectangle()    # and make a second Rectangle
 
 print("Nothing seems to have happened with the rectangles")
-    </input>
+    </code>
   </program>
   
   <p>
@@ -90,7 +90,7 @@ print("Nothing seems to have happened with the rectangles")
   </p>
   
   <program xml:id="obj_point_class_codelens" interactive="codelens" language="python">
-    <input>
+    <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -103,7 +103,7 @@ r1 = Rectangle()    # Instantiate an object of type Rectangle
 r2 = Rectangle()    # and make a second Rectangle
 
 print("Nothing seems to have happened with the rectangles")
-    </input>
+    </code>
   </program>
   
   <p>
@@ -111,7 +111,7 @@ print("Nothing seems to have happened with the rectangles")
   </p>
               
   <program xml:id="obj_classes2" interactive="activecode" language="python">
-    <input>
+    <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -129,7 +129,7 @@ print("r1 is", r1)  # prints the object's class
 print("r2 is", r2)
 
 print("Are r1 and r2 the same object?", r1 is r2)
-    </input>
+    </code>
   </program>
   
 
@@ -165,7 +165,7 @@ Are r1 and r2 the same object? False</pre>
     <statement>
       <p>What is the the output of the following print code?</p>
       <program language="python">
-        <input>
+        <code>
 class Car:
 
     def __init__(self):
@@ -179,7 +179,7 @@ test1 = bmw is ford
 test2 = type(bmw) == type(ford)
 
 print(test1, test2)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

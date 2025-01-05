@@ -6,7 +6,7 @@
   </p>
   
   <program xml:id="classes_avg_area" interactive="activecode" language="python">
-    <input>
+    <code>
 class Rectangle:
     """ Rectangle class for representing and manipulating width and height. """
 
@@ -32,7 +32,7 @@ def averageArea(rectangle1, rectangle2):
 r1 = Rectangle(4, 3)
 r2 = Rectangle(7, 9)
 print(averageArea(r1, r2))
-        </input>
+        </code>
   </program>
   
   <p>
