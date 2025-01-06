@@ -14,12 +14,12 @@
   </p>
   
   <program xml:id="chp08_slice1" interactive="activecode" language="python">
-    <input>
+    <code>
 singers = "Peter, Paul, and Mary"
 print(singers[0:5])
 print(singers[7:11])
 print(singers[17:21])
-        </input>
+        </code>
   </program>
 
   <p>
@@ -31,13 +31,13 @@ print(singers[17:21])
   </p>
   
   <program xml:id="chp08_slice2" interactive="activecode" language="python">
-    <input>
+    <code>
 veggie = "soybean"
 print(veggie[:3])
 print(veggie[3:])
 print(veggie[3:-10]) # returns the empty string
 print(veggie[3:99])
-        </input>
+        </code>
   </program>
   
   <p>What do you think <c>veggie[:]</c> means? Put it into the activecode and find out!</p>
@@ -46,10 +46,10 @@ print(veggie[3:99])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s[3:8])
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -84,10 +84,10 @@ print(s[3:8])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s[7:11] * 3)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -142,13 +142,13 @@ print(s[7:11] * 3)
 </statement>
 
     <program xml:id="string-separate-address-prog" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
     <solution>
-      <program language="python"><input>
+      <program language="python"><code>
     
 address = "Sault Ste. Marie, MI 49783"
 city_end = len(address) - 10
@@ -163,7 +163,7 @@ zipcode = address[-5:]
 print(f"City: |{city}|")
 print(f"State: |{state}|")
 print(f"ZIP code: |{zipcode}|")
-</input></program>
+</code></program>
 </solution>
   </exercise>
   

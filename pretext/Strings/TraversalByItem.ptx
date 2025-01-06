@@ -10,11 +10,11 @@
   </p>
   
   <program xml:id="ch08_4" interactive="activecode" language="python">
-    <input>
+    <code>
 for friend in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
     invitation = "Hi " + friend + ".  Please come to my party on Saturday!"
     print(invitation)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -22,10 +22,10 @@ for friend in ["Joe", "Amy", "Brad", "Angelina", "Zuki", "Thandi", "Paris"]:
   </p>
   
   <program xml:id="ch08_5" interactive="activecode" language="python">
-    <input>
+    <code>
 for value in range(10):
     print(value)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -33,10 +33,10 @@ for value in range(10):
   </p>
   
   <program xml:id="ch08_6" interactive="activecode" language="python">
-    <input>
+    <code>
 for a_char in "playground":
     print(a_char)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -47,11 +47,11 @@ for a_char in "playground":
     <statement>
       <p>How many characters will be printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 for ch in s:
     print(ch.upper())
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -86,11 +86,11 @@ for ch in s:
     <statement>
       <p>How many lines are printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 for ch in s[3:8]:
     print(ch)
-</input>
+</code>
       </program>
     </statement>
     <choices>

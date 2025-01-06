@@ -6,7 +6,7 @@
     </p>
     
     <program xml:id="square_modifier" interactive="activecode" language="python">
-      <input>
+      <code>
 def square_list_modifier(a_list):
     for index in range(len(a_list)):
       a_list[index] = a_list[index] ** 2
@@ -15,7 +15,7 @@ numbers = [2.5, 3.0, 1.1]
 square_list_modifier(numbers)
 square_list_modifier(numbers)  # oops
 print(numbers)
-</input>
+</code>
 </program>
 
 <p>
@@ -23,7 +23,7 @@ print(numbers)
 </p>
 
     <program xml:id="square_pure" interactive="activecode" language="python">
-      <input>
+      <code>
 def square_list_pure(a_list):
     result = []
     for index in range(len(a_list)):
@@ -35,7 +35,7 @@ squared_numbers = square_list_pure(numbers)
 squared_numbers = square_list_pure(numbers)  # no problem...
 print(numbers)
 print(squared_numbers)
-</input>
+</code>
 </program>
 
 

@@ -35,14 +35,14 @@
       If the condition is <c>False</c> when you enter the loop, the loop body will never be executed at all. The loop will <q>do nothing</q>. Here's another way of doing the <q>loop until you get good input</q>:
     </p>
     <program interactive="activecode" language="python">
-      <input>
+      <code>
 years = int(input("Enter your age in years: "))
 while years &lt;= 0:
     years = int(input("Please enter an age greater than zero: "))
 
 days = years * 365
 print("That is about", days, "days.")
-</input>
+</code>
 </program>
 
 <p>
@@ -72,13 +72,13 @@ print("That is about", days, "days.")
           
           <p>Here is a loop that was supposed to print the numbers 1 to 10, but which will never end because the code is accidentally subtracting one instead of adding one.<fn>To any experts reading this: Yeah, I know about integer overflow, but cut me a break here.</fn></p>
   <program xml:id="codelens531" interactive="codelens" language="python">
-    <input>
+    <code>
 n = 1
 while n &lt;= 10:
     print(n)
     n = n - 1
 print('Done!')
-    </input>
+    </code>
   </program>
   
   <p>
@@ -97,14 +97,14 @@ print('Done!')
   </p>
   
   <program language="python">
-    <input>
+    <code>
 while True:
     line = input('Word: ')
     if line == 'done':
         break
     print(line)
 print ('Goodbye!')
-</input>
+</code>
   </program>
   
   <p>

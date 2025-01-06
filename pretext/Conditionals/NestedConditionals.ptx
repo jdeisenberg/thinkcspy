@@ -6,7 +6,7 @@
   <p>One conditional can also be nested within another. We could have written
             the three-branch example like this:</p>
   <program xml:id="cndtnlNested" interactive="codelens" language="python">
-    <input>
+    <code>
 x = 5
 y = 6
 if x == y:
@@ -17,7 +17,7 @@ else:
     else:
         print('x is greater than y')
 print('All done.')
-    </input>
+    </code>
   </program>
   
     <p>The outer conditional contains two branches. The first branch contains a

@@ -20,7 +20,7 @@
   </p>
     
   <program xml:id="del_program_return_new" interactive="activecode" language="python">
-    <input>
+    <code>
 def remove_negative(a_list):
     """Given an input list, return a new list with all
     negative numbers removed."""
@@ -36,7 +36,7 @@ def remove_negative(a_list):
 numbers = [10, -66, -47, 11, 505, -217]
 new_numbers = remove_negative(numbers)
 print(f"Final list is {new_numbers}")
-        </input>
+        </code>
   </program>
   
 </introduction>
@@ -56,7 +56,7 @@ print(f"Final list is {new_numbers}")
   </p>
   
   <program interactive="activecode" language="python" xml:id="sort_return_new">
-    <input>
+    <code>
 def return_sorted(a_list):
     cloned_list = a_list[:]  # make a true copy of the original
     cloned_list.sort() # sorts the copy in place
@@ -66,7 +66,7 @@ numbers = [10, 66, 505, 217, 47, 11]
 sorted_numbers = return_sorted(numbers)
 print(f"numbers list is still {numbers}")
 print(f"sorted list is {sorted_numbers}")
-</input>
+</code>
 </program>
 
 </subsection>

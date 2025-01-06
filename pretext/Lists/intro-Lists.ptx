@@ -9,7 +9,7 @@
     </p>
     
     <program language="python" xml:id="lists_individual_temperatures">
-      <input>
+      <code>
 temp1 = 22.5
 temp2 = 23.1
 temp3 = 24.0
@@ -24,7 +24,7 @@ total = temp1 + temp2 + temp3 + temp4 + \
 avg = total / 7
 
 print(f"Average temperature is {avg:.1f} degrees C.")        
-      </input>
+      </code>
     </program>
     
     <note>
@@ -44,7 +44,7 @@ print(f"Average temperature is {avg:.1f} degrees C.")
     </p>
     
         <program language="python" interactive="activecode">
-      <input>
+      <code>
 total = 0.0
 for temperature in [22.5, 23.1, 24.0, 22.9, 26.1, 25.7, 27.8]:
     total = total + temperature
@@ -52,7 +52,7 @@ for temperature in [22.5, 23.1, 24.0, 22.9, 26.1, 25.7, 27.8]:
 avg = total / 7
 
 print(f"Average temperature is {avg:.1f} degrees C.")
-</input>
+</code>
 </program>
    
     </section>

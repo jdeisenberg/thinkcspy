@@ -10,9 +10,9 @@
 <idx>Decrement</idx>
   <p>Commonly, assignment statements are used to update a variable, where the new value of the variable depends on the old.</p>
   <program language="python">
-    <input>
+    <code>
 x = x + 1
-</input>
+</code>
   </program>
   
   <p>
@@ -23,10 +23,10 @@ x = x + 1
     If you try to update a variable that doesn't exist, you get an error, because Python evaluates the right side before it assigns a value to <c>x</c>:
   </p>
   <program xml:id="itr-section1_1" interactive="activecode" language="python">
-    <input>
+    <code>
 x = x + 1
 print(x)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -34,11 +34,11 @@ print(x)
   </p>
   
   <program xml:id="itr-section1_2" interactive="activecode" language="python">
-    <input>
+    <code>
 x = 0
 x = x + 1
 print(x)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -89,11 +89,11 @@ print(x)
     <statement>
       <p>Q-5: Consider the code block below. What happens when you run this program?</p>
       <program language="python">
-        <input>
+        <code>
 y = 1
 x = x + 1
 print(x)
-</input>
+</code>
       </program>
     </statement>
     <choices>

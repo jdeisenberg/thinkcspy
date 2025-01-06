@@ -63,7 +63,7 @@
     </statement>
     
     <program interactive="activecode" language="python">
-      <input>
+      <code>
 def reverse_name(name):
     """Change order of last and first name.
     Given a name in form "lastname, firstname"
@@ -75,7 +75,7 @@ def reverse_name(name):
 last_name_first = input("Enter a name in form last, first:")
 first_name_first = reverse_name(last_name_first)
 print(f"The modified name is {first_name_first}.")
-</input>
+</code>
     </program>
   </exercise>
   

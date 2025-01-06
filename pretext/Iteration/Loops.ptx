@@ -40,12 +40,12 @@
     <title>Counting and summing loops</title>
     <p>For example, to count the number of items in a list, we would write the following <c>for</c> loop:</p>
     <program xml:id="codelens561" interactive="codelens" language="python">
-      <input>
+      <code>
 count = 0
 for itervar in [3, 41, 12, 9, 74, 15]:
     count = count + 1
 print('Count: ', count)
-    </input>
+    </code>
     </program>
     <p>
       We set the variable <c>count</c> to zero before the loop starts; then we write a <c>for</c> loop to run through the list of numbers. Our <em>iteration variable</em> is named <c>itervar</c>, and while we do not use <c>itervar</c> in the loop, it does control the loop and cause the loop body to be executed once for each of the values in the list.
@@ -55,12 +55,12 @@ print('Count: ', count)
       <statement>
         <p>Q-2: Which variable is the iteration variable in the following code block?</p>
         <program language="python">
-          <input>
+          <code>
 count = 0
 for item in [3, 41, 12, 9, 74, 15]:
     count = count + 1
 print('Count: ', count)
-</input>
+</code>
         </program>
       </statement>
       <choices>
@@ -109,12 +109,12 @@ print('Count: ', count)
     
     <p>Another similar loop that computes the total of a set of numbers is as follows:</p>
     <program xml:id="codelens562" interactive="codelens" language="python">
-      <input>
+      <code>
 total = 0
 for number in [3, 41, 12, 9, 74, 15]:
     total = total + number
 print('Total: ', total)
-    </input>
+    </code>
     </program>
     
     <p>
@@ -158,16 +158,16 @@ print('Total: ', total)
         <p>Write a program that will calculate the sum of squares of the list <c>[3, 7, 5, 4]</c>. Instead of <c>total</c>, you might want to name your accumulator <c>sum_of_squares</c>.</p>
       </statement>
       <program interactive="activecode" language="python">
-        <input>
-        </input>
+        <code>
+        </code>
       </program>
       <solution>
-        <program language="python"><input>
+        <program language="python"><code>
 sum_of_squares = 0
 for number in [3, 7, 5, 4]:
     sum_of_squares = sum_of_squares + number **2
 print("The sum of squares is", sum_of_squares)
-</input></program>
+</code></program>
 </solution>
 
     </exercise>
@@ -177,7 +177,7 @@ print("The sum of squares is", sum_of_squares)
     <title>Maximum and Minimum Loops</title>
     <p>To find the largest value in a list or sequence, we construct the following loop:</p>
     <program xml:id="loop-find-max" interactive="activecode" language="python">
-      <input>
+      <code>
 largest = None
 print('Before:', largest)
 for itervar in [3, 41, 12, 9, 74, 15]:
@@ -185,7 +185,7 @@ for itervar in [3, 41, 12, 9, 74, 15]:
         largest = itervar
     print('itervar is', itervar, 'largest is', largest)
 print('Largest:', largest)
-        </input>
+        </code>
     </program>
     <p>When the program executes, the output is as follows:</p>
     <pre>Before: None
@@ -251,7 +251,7 @@ Largest: 74</pre>
     
     <p>To compute the smallest number, the code is very similar with one small change:</p>
     <program xml:id="loop-find-min" interactive="activecode" language="python">
-      <input>
+      <code>
 smallest = None
 print('Before:', smallest)
 for itervar in [3, 41, 12, 9, 74, 15]:
@@ -259,7 +259,7 @@ for itervar in [3, 41, 12, 9, 74, 15]:
         smallest = itervar
     print('itervar is', itervar, 'smallest is', smallest)
 print('Smallest:', smallest)
-        </input>
+        </code>
     </program>
     <p>
       Again, <c>smallest</c> is the <q>smallest so far</q> before, during, and after the loop executes. When the loop has completed, <c>smallest</c> contains the minimum value in the list.
@@ -273,10 +273,10 @@ print('Smallest:', smallest)
         <p>Here is a mash-up of the counting and minimum programs. Write a program that asks the user for a number and then counts how many entries in the list <c>[10, 66, 47, 11, 5, 2, 17, 54, 40]</c> are less than the user's number. For example, if the user enters 29, the program would report that there are 5 numbers less than 29. Note: you will not need to use <c>None</c> in this program.</p>
       </statement>
       <program interactive="activecode" language="python">
-        <input></input>
+        <code></code>
       </program>
       <solution>
-        <program language="python"><input>
+        <program language="python"><code>
 user_number = int(input('Enter your number: '))
 n_smaller = 0
 for number in [10, 66, 47, 11, 5, 2, 17, 54, 40]:
@@ -288,7 +288,7 @@ if n_smaller == 1:
     print(n_smaller, 'item is less than', user_number)
 else:
     print(n_smaller, 'items are less than', user_number)
-    </input></program>
+    </code></program>
         
       </solution>
     </exercise>
@@ -296,7 +296,7 @@ else:
     <p>The following is a simple version of the Python built-in
                 <c>min()</c> function:</p>
     <program xml:id="itr-section6_3" interactive="activecode" language="python">
-      <input>
+      <code>
 def min(values):
     smallest = None
     for value in values:
@@ -306,7 +306,7 @@ def min(values):
 
 nums = [1,2,3,4,5]
 print(min(nums))
-        </input>
+        </code>
     </program>
     <p>In the function version of the <q>smallest</q> code, we removed all of the
                 <c>print</c> statements so as to be equivalent to the

@@ -7,12 +7,12 @@
       <p>Create a list called <c>myList</c> with the following six items: 76, 92.3, <q>hello</q>, True, 4, 76. Begin with the empty list shown below, and add 6 statements to add each item, one per item. The first three statements should use the append method to append the item to the list, and the last three statements should use concatenation.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_9_2_editor">
-      <input>
+      <code>
 
 my_list = []
 
 # Your code here
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -27,7 +27,7 @@ myTests().main()
     </program>
     <solution>
       <program xml:id="ex_9_2_answer" language="python">
-        <input>
+        <code>
 my_list = []
 my_list.append(76)
 my_list.append(92.3)
@@ -36,7 +36,7 @@ my_list = my_list + [True]
 my_list = my_list + [4]
 my_list = my_list + [76]
 print(my_list)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -71,15 +71,15 @@ print(my_list)
       </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_list_methods_editor">
-      <input>
+      <code>
 my_list = [76, 92.3, 'hello', True, 4, 76]
 
 # Your code here
-        </input>
+        </code>
     </program>
     <solution>
       <program xml:id="ex_9_3_answer" language="python">
-        <input>
+        <code>
 my_list = [76, 92.3, 'hello', True, 4, 76]
 
 my_list.append("apple")         # a
@@ -93,7 +93,7 @@ my_list.remove(76)              # f
 my_list.pop(my_list.index(True)) # g
 
 print (my_list)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -103,11 +103,11 @@ print (my_list)
       <p>Write a function called <c>average</c> that takes a list of numbers as a parameter and returns the average of the numbers.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_list_avg_editor">
-      <input>
+      <code>
 def average(num_list):
     # Complete the function definition
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -122,7 +122,7 @@ myTests().main()
     </program>
     <solution>
       <program xml:id="ex_list_avg_solution" language="python">
-        <input>
+        <code>
 def average(num_list):
 
     total = 0
@@ -130,7 +130,7 @@ def average(num_list):
         total = total + num
 
     return total / len(num_list)
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -140,11 +140,11 @@ def average(num_list):
       <p>Write a Python function named <c>max</c> that takes a parameter containing a nonempty list of integers and returns the maximum value.  (Note: there is a built-in function named <c>max</c>, but do not use it.)</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_list_max_editor">
-      <input>
+      <code>
 def max(num_list):
     # Complete the function
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -159,14 +159,14 @@ myTests().main()
     </program>
     <solution>
       <program xml:id="list_max_answer" language="python">
-        <input>
+        <code>
 def max(number_list):
     max_value = number_list[0]
     for element in number_list:
         if element &gt; max_value:
             max_value = element
     return max_value
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -176,11 +176,11 @@ def max(number_list):
       <p>Write a function <c>sum_of_squares(num_list)</c> that computes the sum of the squares of the numbers in the list <c>num_list</c>.  For example, <c>sum_of_squares([2, 3, 4])</c> should return 4&#160;+&#160;9&#160;+&#160;16, which is 29:</p>
     </statement>
     <program xml:id="ex_list_sum_squares_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def sum_of_squares(num_list):
     # your code here
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -201,11 +201,11 @@ myTests().main()
       <p>Write a function to count how many odd numbers are in a list.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_list_count_odd_editor">
-      <input>
+      <code>
 def count_odd(num_list):
     # your code here
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -222,7 +222,7 @@ myTests().main()
     </program>
     <solution>
       <program xml:id="ex_list_count_odd_answer" language="python">
-        <input>
+        <code>
 import random
 
 def count_odd(num_list):
@@ -239,7 +239,7 @@ for i in range(10):
 
 print(numbers) # show the random numbers
 print(count_odd(numbers))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -249,11 +249,11 @@ print(count_odd(numbers))
       <p>Sum up all the even numbers in a list.</p>
     </statement>
     <program xml:id="ex_list_sum_evens_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def sum_even(number_list):
     # your code here
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -275,11 +275,11 @@ myTests().main()
       <p>Calculate the product of all the negative numbers in a list. For example, <c>product_negatives([-3, 2, -4, 7])</c> should be 12. If a list contains no negative numbers, return 1.</p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_list_product_negatives_editor">
-      <input>
+      <code>
 def product_negatives(number_list):
     # your code here
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -296,7 +296,7 @@ myTests().main()
     </program>
     <solution>
       <program xml:id="ex_list_product_negatives_answer" language="python">
-        <input>
+        <code>
 import random
 
 def product_negatives(number_list):
@@ -312,7 +312,7 @@ for i in range(10):
 
 print(numbers) # show numbers
 print(product_negatives(numbers))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -322,13 +322,13 @@ print(product_negatives(numbers))
       <p>Count how many words in a list have length 5.</p>
     </statement>
     <program xml:id="ex_list_word_length_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def count_words(word_list):
     # your code here
     
 print(count_words(["plank", "wood", "board", "nail"]) # 2
 print(count_words(["cat", "mouse", "tapir", "puppy", "dog"]) # 3
-        </input>
+        </code>
     </program>
   </exercise>
   
@@ -356,7 +356,7 @@ print(count_words(["cat", "mouse", "tapir", "puppy", "dog"]) # 3
       </p>
     </statement>
     <program interactive="activecode" language="python" xml:id="ex_list_implement_methods_editor">
-      <input>
+      <code>
 # Your functions go here..
 
 a_list = [0, 1, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9]
@@ -365,11 +365,11 @@ print(is_in(4, a_list))
 print(reverse(a_list))
 print(index(2, a_list))
 print(insert('cat', 4, a_list))
-</input>
+</code>
     </program>
     <solution>
       <program xml:id="ex_list_implement_methods_answer" language="python">
-        <input>
+        <code>
 def count(obj, a_list):
     count = 0
     for element in a_list:
@@ -409,7 +409,7 @@ print(is_in(4, a_list))
 print(reverse(a_list))
 print(index(2, a_list))
 print(insert('cat', 4, a_list))
-        </input>
+        </code>
       </program>
     </solution>
   </exercise>
@@ -430,11 +430,11 @@ test(replace(s, 'o', 'a'),
       <p><em>Hint</em>: use the <c>split</c> and <c>join</c> methods.</p>
     </statement>
     <program xml:id="ex_9_13_editor" interactive="activecode" language="python">
-      <input>
+      <code>
 def replace(s, old, new):
     # your code here
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 

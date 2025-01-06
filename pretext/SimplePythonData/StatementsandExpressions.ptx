@@ -11,10 +11,10 @@
   </p>
   
   <program xml:id="ch02_13" interactive="activecode" language="python">
-    <input>
+    <code>
 print(1 + 1)
 print(len("hello"))
-        </input>
+        </code>
   </program>
   
   <p>
@@ -26,17 +26,17 @@ print(len("hello"))
   </p>
   
   <program xml:id="ch02_14" interactive="activecode" language="python">
-    <input>
+    <code>
 y = 10.66
 x = len("hello")
 print(x)
 print(y)
-        </input>
+        </code>
   </program>
   <p>If we take a look at this same example in the Python shell, we will see one of the distinct differences between statements and expressions.</p>
 
   <program language="python">
-    <input>
+    <code>
 &gt;&gt;&gt; y = 10.66
 &gt;&gt;&gt; x = len("hello")
 &gt;&gt;&gt; print(x)
@@ -46,7 +46,7 @@ print(y)
 &gt;&gt;&gt; y
 10.66
 &gt;&gt;&gt;
-</input>
+</code>
   </program>
   
   <p>

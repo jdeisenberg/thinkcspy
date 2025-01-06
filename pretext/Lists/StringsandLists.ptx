@@ -6,11 +6,11 @@
   </p>
   
   <program xml:id="split_default_whitespace" interactive="activecode" language="python">
-    <input>
+    <code>
 song = "The rain in Spain..."
 wds = song.split()
 print(wds)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -18,11 +18,11 @@ print(wds)
   </p>
   
   <program xml:id="split_delimiter" interactive="activecode" language="python">
-    <input>
+    <code>
 song = "The rain in Spain..."
 wds = song.split('ai')
 print(wds)
-        </input>
+        </code>
   </program>
   <p>Notice that the delimiter doesn't appear in the result.</p>
   
@@ -30,7 +30,7 @@ print(wds)
     The inverse of the <c>split</c> method is <c>join</c>.  You choose a desired <term>separator</term> string, (often called the <em>glue</em>) and join the list with the glue between each of the elements.
   </p>
   <program xml:id="list_join" interactive="activecode" language="python">
-    <input>
+    <code>
 wds = ["red", "blue", "green"]
 glue = ';'
 s = glue.join(wds)
@@ -39,7 +39,7 @@ print(wds)
 
 print("***".join(wds))
 print("".join(wds))
-        </input>
+        </code>
   </program>
   
   <p>
@@ -51,14 +51,14 @@ print("".join(wds))
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 my_name = "Edgar Allan Poe"
 name_list = my_name.split()
 init = ""
 for a_name in name_list:
     init = init + a_name[0]
 print(init)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -99,7 +99,7 @@ print(init)
       </p>
     </statement>
     <program interactive="activecode" language="python">
-      <input>
+      <code>
 def to_german(date_str):
     """Convert date from m/d/y to d.m.y format."""
     # your code here
@@ -107,7 +107,7 @@ def to_german(date_str):
 us_date = input("Enter date in format mm/dd/yyy: ")
 german_date = to_german(us_date)
 print(f"The German date format is {german_date}.")        
-      </input>
+      </code>
     </program>
   </exercise>
 
@@ -133,7 +133,7 @@ print(f"The German date format is {german_date}.")
     </p>
   </statement>
     <program interactive="activecode" language="python">
-      <input>
+      <code>
 def is_valid_us_date(us_str):
     """Check validity of given date string.
     Return True if month, day, and year are all digits
@@ -151,7 +151,7 @@ if is_valid_us_date(us_date):
     print(f"The German date format is {german_date}.")
 else:
     print(f"Sorry, {us_date} is not a valid date.")
-      </input>
+      </code>
     </program>
   </exercise>
 </section>

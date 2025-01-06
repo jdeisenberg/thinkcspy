@@ -50,12 +50,12 @@
         <p>Run this code to see what it prints.</p>
       </statement>
       <program xml:id="loops_ac_pogil_basicfor_editor" interactive="activecode" language="python">
-        <input>
+        <code>
 print("hello")
 for x in [2, 7, 1]:
     print("the number is", x)
 print("goodbye")
-        </input>
+        </code>
       </program>
     </exercise>
     
@@ -215,13 +215,13 @@ print("goodbye")
         <p>Run this code to see what it prints.</p>
       </statement>
       <program xml:id="loops_ac_pogil_assigninglist_editor" interactive="activecode" language="python">
-        <input>
+        <code>
 print("hello")
 numbers = [2, 7, 1]
 for x in numbers:
     print("the number is", x)
 print("goodbye")
-        </input>
+        </code>
       </program>
     </exercise>
     <!--
@@ -231,10 +231,10 @@ print("goodbye")
         <p>Run this code to see what it prints.</p>
       </statement>
       <program xml:id="loops_ac_pogil_string_editor" interactive="activecode" language="python">
-        <input>
+        <code>
 for c in "Hi!":
     print(c)
-        </input>
+        </code>
       </program>
     </exercise>
     <p>With strings, a <c>for</c> statement iterates over each character in the string.
@@ -252,7 +252,7 @@ for c in "Hi!":
         <p>Run this code to see what it prints.</p>
       </statement>
       <program xml:id="loops_ac_pogil_output_range_editor" interactive="activecode" language="python">
-        <input>
+        <code>
 print(type(range(5)))
 print(range(5))
 print(list(range(5)))
@@ -264,7 +264,7 @@ print(list(range(-3, 4)))
 print(list(range(4, 10, 2)))
 for i in range(5): #this line prints nothing
     print(i)
-        </input>
+        </code>
       </program>
     </exercise>
     
@@ -439,10 +439,10 @@ for i in range(5): #this line prints nothing
         <p>You can use the built-in function <c>chr</c> to convert integers to their corresponding Unicode characters.</p>
       </statement>
       <program xml:id="loops_ac_pogil_output_printatoz_editor" interactive="activecode" language="python">
-        <input>
+        <code>
 for i in range(65, 91):
     print(chr(i))
-        </input>
+        </code>
       </program>
     </exercise>
     -->
@@ -456,13 +456,13 @@ for i in range(65, 91):
         <p>Run this code to observe the behavior of a basic while loop and answer the questions that follow.</p>
       </statement>
       <program xml:id="loops_ac_pogil_output_while_editor" interactive="activecode" language="python">
-        <input>
+        <code>
 i = 0
 while i &lt; 3:
     print(i)
     i = i + 1
 print("goodbye")
-        </input>
+        </code>
       </program>
     </exercise>
     
@@ -499,13 +499,13 @@ print("goodbye")
       <statement>
         <p>Q-17: Imagine that lines 3 and 4 in the above code were swapped. What is the new output of this new code?</p>
         <program language="python">
-        <input>
+        <code>
 i = 0
 while i &lt; 3:
     i = i + 1
     print(i)
 print("goodbye")
-        </input>
+        </code>
       </program>
       </statement>
       <choices>
@@ -557,13 +557,13 @@ print("goodbye")
         <p>Q-18: Which of these modifications would make the loop in the original code only run twice? There are one or more answers.</p>
         <p>Here is the original code again:</p>
         <program language="python">
-        <input>
+        <code>
 i = 0
 while i &lt; 3:
     print(i)
     i = i + 1
 print("goodbye")
-        </input>
+        </code>
       </program>
       </statement>
       <choices>
@@ -659,7 +659,7 @@ print("goodbye")
         <p>Observe the behavior of this code to see how it answers the the three bullet points above.</p>
       </statement>
       <program xml:id="loops_ac_pogil_output_addn_editor" interactive="activecode" language="python">
-        <input>
+        <code>
 n = 5
 i = 0
 total = 0
@@ -670,7 +670,7 @@ while i &lt; n:
 print("The total of your numbers is", total)
 
 add(5)
-        </input>
+        </code>
       </program>
     </exercise>
     <p>

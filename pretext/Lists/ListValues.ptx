@@ -6,11 +6,11 @@
   </p>
   
   <program language="python">
-    <input>
+    <code>
 [10, 20, 30, 40]
 ["spam", "bungee", "swallow"]
 [22.5, 23.1, 24.0, 22.9, 26.1, 25.7, 27.8]
-</input>
+</code>
   </program>
 
   <p>
@@ -21,15 +21,15 @@
     As we said in <xref ref="lists_lists"/>, the elements of a list don't have to be the same type.  The following list contains a string, a float, an integer, and a boolean.
     </p>
   <program language="python">
-    <input>
+    <code>
 ["hello", 2.0, 5, False]
-</input>
+</code>
   </program>
   
   <p>As you might expect, we can also assign list values to variables and pass lists as parameters to functions. The <c>len</c> function can take a list as its argument, and it will return the number of elements in the array.</p>
   
   <program xml:id="list_values_lengths" interactive="activecode" language="python">
-    <input>
+    <code>
 vocabulary = ["iteration", "selection", "control"]
 numbers = [17, 123]
 empty = []
@@ -40,7 +40,7 @@ print(numbers, len(numbers))
 print(empty, len(empty))
 print(mixed_list, len(mixed_list))
 
-        </input>
+        </code>
   </program>
 
   
@@ -68,10 +68,10 @@ print(mixed_list, len(mixed_list))
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 a_list = [3, 67, "cat", 3.14, False]
 print(len(a_list))
-</input>
+</code>
       </program>
     </statement>
     <choices>

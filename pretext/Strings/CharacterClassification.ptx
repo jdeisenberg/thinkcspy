@@ -6,13 +6,13 @@
   </p>
   
   <program language="python">
-    <input>
+    <code>
 def is_lower_case(char):
     if char >= 'a' and char &lt;= 'z':
         return True
     else:
         return False
-      </input>
+      </code>
     </program>
     
     <p>
@@ -54,7 +54,7 @@ def is_lower_case(char):
   
 
     <program xml:id="string_class_1" language="python">
-      <input>
+      <code>
 def classify(str):
   if str.isalpha():
       print(f"{str} is alpha")
@@ -72,7 +72,7 @@ classify("Δ")
 classify("年")
 classify("1234321")
 classify("Français")
-        </input>
+        </code>
     </program>
 
   <p>For more information, consult the <c>string</c> documentation (see <url href="https://docs.python.org/3/library/stdtypes.html#string-methods" visual="https://docs.python.org/3/library/stdtypes.html#string-methods">String Methods</url>).</p>
@@ -80,10 +80,10 @@ classify("Français")
   <note>
     <p>This workspace is provided for your convenience.  You can use this activecode window to try out anything you like.</p>
     <program xml:id="scratch_08_04" interactive="activecode" language="python">
-      <input>
+      <code>
 
 
-        </input>
+        </code>
     </program>
   </note>
 </section>

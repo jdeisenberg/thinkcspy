@@ -11,9 +11,9 @@
   </p>
   
   <program language="python">
-    <input>
+    <code>
 your_name = input("Please enter your name: ")
-</input>
+</code>
   </program>
   
   <p>
@@ -21,21 +21,21 @@ your_name = input("Please enter your name: ")
   </p>
   
   <program xml:id="inputfun" interactive="activecode" language="python">
-    <input>
+    <code>
 your_name = input("Please enter your name: ")
 print("Hello", your_name)
-        </input>
+        </code>
   </program>
   <p>It is very important to note that the <c>input</c> function returns a string value.  Even if you asked the user to enter their age, you would get back a string like <c>"17"</c> (even though the quote marks wouldn't show up when you printed it).  The problem here is that we can't mix strings and numbers. If we try starting our program like this and enter a number like 7468:</p>
   
   <program xml:id="input_start" interactive="activecode" language="python">
-    <input>
+    <code>
 # Convert seconds to hours (as a whole number)
 
 total_seconds = input("Please enter the number of seconds you wish to convert")
 hours = total_seconds // 3600
 print("That is", hours, "hours.")
-</input>
+</code>
 </program>
 
 <p>Python will complain bitterly that we cannot mix strings and integers:</p>

@@ -8,12 +8,12 @@
   </p>
   
   <program xml:id="ch07_reassign1" interactive="activecode" language="python">
-    <input>
+    <code>
 price = 11.95
 print(price)
 price = 10.88
 print(price)
-    </input>
+    </code>
   </program>
   
   <p>
@@ -26,13 +26,13 @@ print(price)
   <p><!--It is important to note that in mathematics, a statement of equality is always true.  If <c>a is equal to b</c> now, then <c>a will always equal to b</c>. -->In Python, an assignment statement can make two variables refer to the same object and therefore have the same value. They appear to be equal. However, because of the possibility of reassignment, they don't have to stay that way:</p>
   
   <program xml:id="ch07_reassign2" interactive="activecode" language="python">
-    <input>
+    <code>
 a = 5
 b = a    # after executing this line, a and b refer to the same value
 print(a, b)
 a = 3    # after executing this line, a and b no longer refer to the same value
 print(a, b)
-    </input>
+    </code>
   </program>
   
   <p>Line 4 changes the value of <c>a</c> but does not change the value of
@@ -54,11 +54,11 @@ print(a, b)
       <statement>
         <p>After the following statements, what are the values of <c>x</c> and <c>y</c>?</p>
         <program language="python">
-          <input>
+          <code>
 x = 15
 y = x
 x = 22
-          </input>
+          </code>
         </program>
       </statement>
       <choices>

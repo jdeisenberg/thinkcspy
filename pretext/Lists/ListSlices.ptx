@@ -6,23 +6,23 @@
   </p>
   
   <program xml:id="list_slice" interactive="activecode" language="python">
-    <input>
+    <code>
 a_list = ['a', 'b', 'c', 'd', 'e', 'f']
 print(a_list[1:3])
 print(a_list[:4])
 print(a_list[3:])
 print(a_list[:])
-        </input>
+        </code>
   </program>
 
   <exercise label="list_slice_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [3, 67, "cat", 12.5, 3.14, False]
 print(alist[4:])
-</input>
+</code>
       </program>
     </statement>
     <choices>

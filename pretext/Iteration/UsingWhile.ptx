@@ -11,7 +11,7 @@
     </p>
 
     <program xml:id="age_validate" interactive="activecode" language="python">
-    <input>
+    <code>
 years = 0
 while (years &lt;= 0):
     years = int(input("Enter your age in years: "))
@@ -20,16 +20,16 @@ while (years &lt;= 0):
 
 days = years * 365
 print("That is about", days, "days old.")
-    </input>
+    </code>
 </program>
 
 <note>
   <p>We've done something new in line three. Instead of writing two lines of code:</p>
   <program language="python">
-    <input>
+    <code>
     years_str = input("Enter your age in years: ")
     years = int(years_str)
-</input></program>
+</code></program>
 <p>we combine them into one statement by <em>nesting</em> the function calls.</p>
 </note>
 
@@ -68,10 +68,10 @@ print("That is about", days, "days old.")
 </p>
         <p>Provide the Python code to implement the plan.</p>
     </statement>
-    <program interactive="activecode" language="python"><input>
-</input></program>
+    <program interactive="activecode" language="python"><code>
+</code></program>
 <solution>
-    <program language="python"><input>
+    <program language="python"><code>
 total = 0.0
 number_of_items = 0
 price = None
@@ -86,7 +86,7 @@ average_price = total / number_of_items
 print("Number of items:", number_of_items)
 print("Total cost: $", total)
 print("Average price: $", average_price)
-</input></program>
+</code></program>
 </solution>
 </exercise>
 

@@ -6,7 +6,7 @@
   <p>Here is an activecode area with the pseudo-code in comments. Put in the Python code and test your program to see that it gives the correct results.</p>
  <exercise xml:id="ex_finish_input_program" label="ex_time_input_program"> 
   <program xml:id="finish_input_program" interactive="activecode" language="python">
-    <input>
+    <code>
 # Use the input function to read number of seconds into str_total_seconds
 # Use the int function to convert str_total_seconds to total_seconds
 
@@ -21,11 +21,11 @@
 
 # Print hours, minutes, and seconds_finally_remaining,
 # properly labeled.
-    </input>
+    </code>
   </program>
   
   <solution>
-<program language="python"><input>
+<program language="python"><code>
 # Use the input function to read number of seconds into str_total_seconds
 # Use the int function to convert str_total_seconds to total_seconds
 str_total_seconds = input("Enter number of seconds: ")
@@ -47,7 +47,7 @@ seconds_finally_remaining = seconds_remaining % 60
 # Print hours, minutes, and seconds_finally_remaining,
 # properly labeled.
 print(hours, "hours", minutes, "minutes and", seconds_finally_remaining, "seconds.")
-</input></program>
+</code></program>
 </solution>
 </exercise>
 </section>

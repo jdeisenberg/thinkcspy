@@ -3,7 +3,7 @@
   <title>A <c>find</c> function</title>
   <p>Here is an implementation for a restricted <c>find</c> method, where the target is a single character.</p>
   <program xml:id="ch08_run3" interactive="activecode" language="python">
-    <input>
+    <code>
 def find(a_string, target_char):
     """
     Find and return the index of target_char in a_string.
@@ -25,7 +25,7 @@ print(find("Compsci", "p"))
 print(find("Compsci", "C"))
 print(find("Compsci", "i"))
 print(find("Compsci", "x"))
-        </input>
+        </code>
   </program>
   <p>In a sense, <c>find</c> is the opposite of the indexing operator. Instead of taking
             an index and extracting the corresponding character, it takes a character and
@@ -59,7 +59,7 @@ print(find("Compsci", "x"))
     </p>
   </statement>
   <program xml:id="count_multi" interactive="activecode" language="python">
-    <input>
+    <code>
 def count(text, a_string):
     """Count occurrences of a_string in given text."""
     # Your code here
@@ -69,7 +69,7 @@ print(count("gooogle", "oo")) # should be 1
 print(count("clickickick kick", "ick")) # should be 4
 # Make sure that single characters still work
 print(count("banana", "a"))
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 

@@ -3,21 +3,21 @@
   <title>Length</title>
   <p>The <c>len</c> function, when applied to a string, returns the number of characters in a string.</p>
   <program xml:id="chp08_len1" interactive="activecode" language="python">
-    <input>
+    <code>
 fruit = "Banana"
 print(len(fruit))
-        </input>
+        </code>
   </program>
   
   <p>To get the last letter of a string, you might be tempted to try something like this:</p>
   
   <program xml:id="chp08_len2" interactive="activecode" language="python">
-    <input>
+    <code>
 fruit = "Banana"
 size = len(fruit)
 last_char = fruit[size]       # ERROR!
 print(last_char)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -25,12 +25,12 @@ print(last_char)
   </p>
   
   <program xml:id="ch08_len3" interactive="activecode" language="python">
-    <input>
+    <code>
 fruit = "Banana"
 size = len(fruit)
 last_char = fruit[size - 1]
 print(last_char)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -41,10 +41,10 @@ print(last_char)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(len(s))
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -67,10 +67,10 @@ print(len(s))
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s[len(s)-5])
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -105,10 +105,10 @@ print(s[len(s)-5])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s[-3])
-</input>
+</code>
       </program>
     </statement>
     <choices>

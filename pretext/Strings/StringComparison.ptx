@@ -3,13 +3,13 @@
   <title>String Comparison</title>
   <p>The comparison operators also work on strings. To see if two strings are equal you write a boolean expression using the equality operator.</p>
   <program xml:id="ch08_comp1" interactive="activecode" language="python">
-    <input>
+    <code>
 word = "banana"
 if word == "banana":
     print("Yes, we have bananas!")
 else:
     print("Yes, we have NO bananas!")
-        </input>
+        </code>
   </program>
   
   <p>
@@ -17,7 +17,7 @@ else:
   </p>
   
   <program xml:id="ch08_comp2" interactive="activecode" language="python">
-    <input>
+    <code>
 word = "zebra"
 
 if word &lt; "banana":
@@ -26,7 +26,7 @@ elif word &gt; "banana":
     print(f"Your word {word} comes after banana.")
 else:
     print(f"Your word is {word}.")
-        </input>
+        </code>
   </program>
   
   <p>
@@ -34,13 +34,13 @@ else:
   </p>
   
   <program xml:id="chp08_ord1" interactive="activecode" language="python">
-    <input>
+    <code>
 print("apple" &lt; "banana")
 
 print("apple" == "Apple")
 
 print("apple" &lt; "Apple")
-        </input>
+        </code>
   </program>
   
   <p>
@@ -48,7 +48,7 @@ print("apple" &lt; "Apple")
   </p>
   
   <program xml:id="ch08_ord2" interactive="activecode" language="python">
-    <input>
+    <code>
 print(ord("A"))
 print(ord("B"))
 print(ord("5"))
@@ -56,7 +56,7 @@ print(ord("5"))
 print(ord("a"))
 print(ord(" ")) # space between quote marks
 print("apple" &gt; "Apple")
-        </input>
+        </code>
   </program>
   
   <p>
@@ -75,9 +75,9 @@ print("apple" &gt; "Apple")
     <statement>
       <p>Evaluate the following comparison:</p>
       <program language="python">
-        <input>
+        <code>
 "Dog" &lt; "Doghouse"
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -100,9 +100,9 @@ print("apple" &gt; "Apple")
     <statement>
       <p>Evaluate the following comparison:</p>
       <program language="python">
-        <input>
+        <code>
 "dog" &lt; "Dog"
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -131,9 +131,9 @@ print("apple" &gt; "Apple")
     <statement>
       <p>Evaluate the following comparison:</p>
       <program language="python">
-        <input>
+        <code>
 "dog" &lt; "Doghouse"
-</input>
+</code>
       </program>
     </statement>
     <choices>

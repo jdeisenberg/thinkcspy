@@ -7,14 +7,14 @@
   </p>
   
   <program xml:id="chp08_upper" interactive="activecode" language="python">
-    <input>
+    <code>
 message = "Go, team, Go!"
 print(message.upper())
 
 
 lower_message = message.lower()
 print(lower_message)
-        </input>
+        </code>
   </program>
   <p>
     In this example, <c>upper</c> is a method that can be invoked on any string object
@@ -119,7 +119,7 @@ print(lower_message)
     You should experiment with these methods so that you understand what they do.  Note once again that the methods that return strings do not change the original.  You can also consult the <url href="https://docs.python.org/3/library/stdtypes.html#string-methods" visual="https://docs.python.org/3/library/stdtypes.html#string-methods">Python documentation for strings</url>.
   </p>
   <program xml:id="ch08_methods1" interactive="activecode" language="python">
-    <input>
+    <code>
 message = "    Hello, World    "
 
 el_count = message.count("l")
@@ -135,11 +135,11 @@ print("|" + message.strip() + "|")
 
 replaced_string = message.replace("o", "OH!")
 print(replaced_string)
-        </input>
+        </code>
   </program>
   
   <program xml:id="ch08_methods2" interactive="activecode" language="python">
-    <input>
+    <code>
 food = "banana bread"
 print(food.capitalize())
 
@@ -162,17 +162,17 @@ print("last 'e' is at index", food.rfind("e"))
 print("last 'na' is at index", food.rfind("na"))
 print("last 'b' is at index", food.rfind("b"))
 print("last 'x' is at index", food.rfind('x'))
-        </input>
+        </code>
   </program>
 
   <exercise label="test_question8_3_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s.count("o") + s.count("p"))
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -200,10 +200,10 @@ print(s.count("o") + s.count("p"))
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s[1] * s.index("n"))
-</input>
+</code>
       </program>
     </statement>
     <choices>

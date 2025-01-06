@@ -3,12 +3,12 @@
   <title>Lists and <c>for</c> loops</title>
   <p>It is also possible to perform <term>list traversal</term> using iteration by item as well as iteration by index.</p>
   <program xml:id="chp09_03a" interactive="activecode" language="python">
-    <input>
+    <code>
 fruits = ["apple", "orange", "banana", "cherry"]
 
 for afruit in fruits:     # by item
     print(afruit)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -18,12 +18,12 @@ for afruit in fruits:     # by item
   <p>We can also use the indices to access the items in an iterative fashion.</p>
   
   <program xml:id="chp09_03b" interactive="activecode" language="python">
-    <input>
+    <code>
 fruits = ["apple", "orange", "banana", "cherry"]
 
 for position in range(len(fruits)):     # by index
     print(fruits[position])
-        </input>
+        </code>
   </program>
   
   <p>
@@ -32,11 +32,11 @@ for position in range(len(fruits)):     # by index
   
   <p>Any sequence expression can be used in a <c>for</c> loop.  For example, the <c>range</c> function returns a sequence of integers.</p>
   <program xml:id="chp09_for3" interactive="activecode" language="python">
-    <input>
+    <code>
 for number in range(20):
     if number % 3 == 0:
         print(number)
-        </input>
+        </code>
   </program>
   <p>This example prints all the multiples of 3 between 0 and 19.</p>
   
@@ -45,7 +45,7 @@ for number in range(20):
   </p>
   
   <program xml:id="chp09_for4" interactive="activecode" language="python">
-    <input>
+    <code>
 numbers = [1, 2, 3, 4, 5]
 print(numbers)
 
@@ -53,7 +53,7 @@ for i in range(len(numbers)):
     numbers[i] = numbers[i] ** 2
 
 print(numbers)
-        </input>
+        </code>
   </program>
   <p>
     Take a moment to think about <c>range(len(numbers))</c> until you understand how it works. We are interested here in both the <em>value</em> and its <em>index</em> within the list, so that we can assign a new value to it.
@@ -63,13 +63,13 @@ print(numbers)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [4, 2, 8, 6, 5]
 blist = [ ]
 for item in alist:
     blist.append(item+5)
 print(blist)
-</input>
+</code>
       </program>
     </statement>
     <choices>

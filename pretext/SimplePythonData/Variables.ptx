@@ -7,10 +7,10 @@
   </p>
   
   <program language="python">
-    <input>
+    <code>
 print("My age in days is about")
 print(27 * 365)
-</input>
+</code>
 </program>
 
 <p>
@@ -18,10 +18,10 @@ print(27 * 365)
 </p>
 
 <program language="python">
-  <input>
+  <code>
 print("The dew point is ")
 print(19 - (100 - 47.5) / 5)
-</input>
+</code>
 </program>
 
 <p>
@@ -29,12 +29,12 @@ print(19 - (100 - 47.5) / 5)
 </p>
 
 <program language="python">
-  <input>
+  <code>
 temperature_celsius = 19
 relative_humidity = 47.5
 dew_point = temperature_celsius - (100 - relative_humidity) / 5
 print("The dew point is", dew_point)
-</input>
+</code>
 </program>
 
 <p>
@@ -42,11 +42,11 @@ print("The dew point is", dew_point)
 </p>
 
 <program language="python" interactive="activecode">
-  <input>
+  <code>
 years = 27
 days = years * 365
 print("My age in days is about", days, "days.")
-</input>
+</code>
 </program>
 
 <p>
@@ -61,9 +61,9 @@ print("My age in days is about", days, "days.")
   <p>The <c>=</c> in each of the assignments is called the <term>assignment operator</term>.</p>
   <p>An assignment statement links a <em>name</em>, on the left hand side of the operator, with a <em>value</em>, on the right hand side.  This is why you will get an error if you enter:</p>
   <program language="python">
-    <input>
+    <code>
 27 = years
-    </input>
+    </code>
   </program>
   <note>
     <p>The assignment operator does <em>not</em> work the same way as the equal sign in algebra. 
@@ -84,11 +84,11 @@ print("My age in days is about", days, "days.")
     You can assign string values to variables as well as numbers:
   </p>
     <program language="python">
-    <input>
+    <code>
 message = "What's up, Doc?"
 years = 27
 price = 11.95
-    </input>
+    </code>
   </program>
 
   <p>
@@ -100,7 +100,7 @@ price = 11.95
     If you ask Python to evaluate a variable, it will produce the value that is currently linked to the variable.  In other words, evaluating a variable will give you the value that is referred to by the variable.
   </p>
   <program xml:id="ch02_9" interactive="activecode" language="python">
-    <input>
+    <code>
 message = "What's up, Doc?"
 years = 27
 price = 11.95
@@ -108,13 +108,13 @@ price = 11.95
 print(message)
 print(years)
 print(price)
-    </input>
+    </code>
   </program>
   <p>
     In each case the result is the value of the variable. To see this in even more detail, we can run the program using codelens.
   </p>
   <program xml:id="ch02_9_cl" interactive="codelens" language="python">
-    <input>
+    <code>
           message = "What's up, Doc?"
           years = 27
           price = 11.95
@@ -122,7 +122,7 @@ print(price)
           print(message)
           print(years)
           print(price)
-    </input>
+    </code>
   </program>
   <p>
     Now, as you step through the statements, you can see the variables and the values they reference as those references are created.
@@ -143,14 +143,14 @@ print(price)
   </p>
   
   <program xml:id="ch02_11" interactive="codelens" language="python">
-    <input>
+    <code>
           day = "Thursday"
           print(day)
           day = "Friday"
           print(day)
           day = 21
           print(day)
-    </input>
+    </code>
   </program>
   
   <p>
@@ -161,12 +161,12 @@ print(price)
     <statement>
       <p>What is printed when the following statements execute?</p>
       <program language="python">
-        <input>
+        <code>
 weight = "heavy"
 weight = 32.5
 weight = 19
 print(weight)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

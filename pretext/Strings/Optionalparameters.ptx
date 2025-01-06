@@ -5,7 +5,7 @@
             string, we can modify the <c>find</c> function, adding a third parameter for the
             starting position in the search string:</p>
   <program xml:id="ch08_fun4" interactive="activecode" language="python">
-    <input>
+    <code>
 def find2(a_string, target_char, start):
     """
     Return the index of target_char in a_string starting at given index.
@@ -25,7 +25,7 @@ def find2(a_string, target_char, start):
         return -1
 
 print(find2('banana', 'a', 2))
-        </input>
+        </code>
   </program>
   <p>The call <c>find2('banana', 'a', 2)</c> now returns <c>3</c>, the index of the first
             occurrence of &#x2018;a' in &#x2018;banana' after index 2. What does
@@ -34,7 +34,7 @@ print(find2('banana', 'a', 2))
   <p>Better still, we can combine <c>find</c> and <c>find2</c> using an
             <term>optional parameter</term>.</p>
   <program xml:id="chp08_fun5" interactive="activecode" language="python">
-    <input>
+    <code>
 def find3(a_string, target_char, start=0):
     """
     Find and return the index of target_char in a_string staring at given index.
@@ -54,7 +54,7 @@ def find3(a_string, target_char, start=0):
         return -1
 
 print(find3('banana', 'a', 2))
-        </input>
+        </code>
   </program>
   
   <p>
@@ -65,7 +65,7 @@ print(find3('banana', 'a', 2))
       Adding another optional parameter to <c>find</c> makes it search from a starting position, up to but not including the end position.
     </p>
   <program xml:id="chp08_fun6" interactive="activecode" language="python">
-    <input>
+    <code>
 def find4(a_string, target_char, start=0, end=None):
     """
     Find and return the index of target_char in a_string within given range.
@@ -94,7 +94,7 @@ print(find4(message, 's', 7))
 print(find4(message, 's', 8))
 print(find4(message, 's', 8, 13))
 print(find4(message, '.'))
-        </input>
+        </code>
   </program>
   <p>
       The optional value for <c>end</c> is interesting.  We give it a default value <c>None</c> if the caller does not supply any argument.  In the body of the function we test what <c>end</c> is and if the caller did not supply any argument, we reassign <c>end</c> to be the length of the string. If the caller has supplied an argument for <c>end</c>, however, the caller's value will be used in the loop.

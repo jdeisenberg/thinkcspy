@@ -6,11 +6,11 @@
   </p>
 
   <program xml:id="cg08_imm1" interactive="activecode" language="python">
-    <input>
+    <code>
 greeting = "Hello, world!"
 greeting[0] = 'J'            # ERROR!
 print(greeting)
-        </input>
+        </code>
   </program>
   <p>
     Instead of producing the output <c>Jello, world!</c>, this code produces the runtime error <c>TypeError: 'str' object does not support item assignment</c>.
@@ -20,12 +20,12 @@ print(greeting)
     Strings are <term>immutable</term>, which means you cannot change an existing string. The best you can do is create a new string that is a variation on the original.
   </p>
   <program xml:id="ch08_imm2" interactive="activecode" language="python">
-    <input>
+    <code>
 greeting = "Hello, world!"
 new_greeting = 'J' + greeting[1:]
 print(new_greeting)
 print(greeting)            # same as it was
-        </input>
+        </code>
   </program>
   
   <p>
@@ -36,11 +36,11 @@ print(greeting)            # same as it was
     <statement>
       <p>What is printed by the following statements:</p>
       <program language="python">
-        <input>
+        <code>
 s = "Wall"
 s[0] = "C"
 print(s)
-</input>
+</code>
       </program>
     </statement>
     <choices>

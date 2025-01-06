@@ -6,24 +6,24 @@
     The syntax for accessing the elements of a list is the same as the syntax for accessing the characters of a string.  We use the index operator ( <c>[]</c> <mdash/> not to be confused with an empty list). The expression inside the brackets specifies the index. Remember that the indices start at 0.  Any integer expression can be used as an index, and as with strings, negative index values will locate items from the right instead of from the left.
   </p>
   <program xml:id="list_access_program" interactive="activecode" language="python">
-    <input>
+    <code>
 numbers = [17, 123, 87, 34, 66, 8398, 44]
 print(numbers[2])
 # the result of a calculation can be used as an index
 print(numbers[9 - 8])
 print(numbers[-2]) # next to last item
 print(numbers[len(numbers) - 1]) # last item
-        </input>
+        </code>
   </program>
   
   <exercise label="list_access_q1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 a_list = [3, 67, "cat", "dog", 910, 3.14, False]
 print(a_list[5])
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -52,10 +52,10 @@ print(a_list[5])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 a_list = [3, 67, "cat", "dog", 910, 3.14, False]
 print(a_list[2].upper())
-</input>
+</code>
       </program>
     </statement>
     <choices>

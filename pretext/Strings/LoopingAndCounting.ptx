@@ -10,7 +10,7 @@
   </p>
   
   <program xml:id="count_single" interactive="activecode" language="python">
-    <input>
+    <code>
 def count(text, a_char):
     letter_count = 0
     for c in text:
@@ -19,7 +19,7 @@ def count(text, a_char):
     return letter_count
 
 print(count("banana", "a"))
-        </input>
+        </code>
   </program>
   
   <p>

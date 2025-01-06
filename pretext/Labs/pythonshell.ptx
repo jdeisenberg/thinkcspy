@@ -55,10 +55,10 @@
                 command line.</p>
     <p>Here is a simple example of a Python program.</p>
     <program language="python">
-      <input>
+      <code>
 print('Hello World')
 print('2 + 3 = ', 2 + 3)
-</input>
+</code>
     </program>
     <p>Let's assume that you have typed in the lines above in Notepad or TextEdit or
                 some similar editor, if you already know emacs or vi you are a awesome!  Now
@@ -66,11 +66,11 @@ print('2 + 3 = ', 2 + 3)
                 the command line of the terminal type <title_reference>python testprog1.py</title_reference> and you will see
                 the following output</p>
     <program language="python">
-      <input>
+      <code>
 bmiller@chronos&gt; python testprog1.py
 Hello World
 2 + 3 =  5
-</input>
+</code>
     </program>
     <p>Anything we do in the following chapters that appears in the editing window
                 in the web page can be done exactly the same in the terminal just like the

@@ -7,7 +7,7 @@
   <p>The easiest way to clone a list is to use the slice operator.</p>
   <p>Taking any slice of a list creates a new list. In this case the slice happens to consist of the whole list. (Remember that leaving off the number before the <c>:</c> starts at the first element, and leaving off the second number ends at the last element. When you omit both numbers, you get the entire list.)</p>
   <program xml:id="lists_clone_example" interactive="codelens" language="python">
-    <input>
+    <code>
           a = [81, 82, 83]
           
           b = a[:]       # make a clone using slice
@@ -18,7 +18,7 @@
           
           print(a)
           print(b)
-    </input>
+    </code>
   </program>
   <p>
     Now we are free to make changes to <c>b</c> without worrying about <c>a</c>.  Again, we can see in codelens that <c>a</c> and <c>b</c> are entirely different list objects.

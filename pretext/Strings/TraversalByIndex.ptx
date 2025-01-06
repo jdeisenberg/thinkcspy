@@ -8,12 +8,12 @@
   <p>Consider the following codelens example.</p>
   
   <program xml:id="ch08_7" interactive="codelens" language="python">
-    <input>
+    <code>
 fruit = "apple"
 for idx in range(5):
     currentChar = fruit[idx]
     print(currentChar)
-    </input>
+    </code>
   </program>
   
   <p>
@@ -25,11 +25,11 @@ for idx in range(5):
   </p>
   
   <program xml:id="ch08_7b" interactive="activecode" language="python">
-    <input>
+    <code>
 fruit = "apple"
 for idx in range(len(fruit)):
     print(fruit[idx])
-    </input>
+    </code>
   </program>
   
   <p>
@@ -37,11 +37,11 @@ for idx in range(len(fruit)):
   </p>
   
   <program xml:id="ch08_8" interactive="codelens" language="python">
-    <input>
+    <code>
           fruit = "apple"
           for idx in range(len(fruit) - 1, -1, -1):
               print(fruit[idx])
-    </input>
+    </code>
   </program>
 
   <p>
@@ -52,12 +52,12 @@ for idx in range(len(fruit)):
     <statement>
       <p>How many times is the letter <q>o</q> printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 for idx in range(len(s)):
     if idx % 2 == 0:
         print(s[idx])
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

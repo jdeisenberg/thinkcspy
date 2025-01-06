@@ -5,21 +5,21 @@
     As with strings, the function <c>len</c> returns the length of a list (the number of items in the list). 
   </p>
   <program xml:id="chp09_01a" interactive="activecode" language="python">
-    <input>
+    <code>
 alist =  ["hello", 2.0, 5, [10, 20]]
 print(len(alist))
 print(len(['spam!', 1, ['Brie', 'Roquefort', 'Pol le Veq'], [1, 2, 3]]))
-        </input>
+        </code>
   </program>
   
   <exercise label="test_question9_2_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [3, 67, "cat", 3.14, False]
 print(len(alist))
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -43,10 +43,10 @@ print(len(alist))
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(len(alist))
-</input>
+</code>
       </program>
     </statement>
     <choices>

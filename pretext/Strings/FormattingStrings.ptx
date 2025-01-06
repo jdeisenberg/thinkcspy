@@ -7,23 +7,23 @@
   </p>
   
   <program language="python">
-    <input>
+    <code>
 years = int(input("Enter your age in years:"))
 days = years * 365
 print(days, "days is about", years, " years.")  # or
 print(str(days) + " days is about " + str(years) + " years.")
-</input>
+</code>
 </program>
 
 <p>Not only is it tedious to put in all the commas or plus signs, it doesn't give you very good control over the output. For example, when you do monetary calculations, the output isn't given with exactly two digits after the decimal point.</p>
 
 <program language="python" interactive="activecode">
-  <input>
+  <code>
 subtotal = 34.95
 total = 34.95 * 0.93 # 7% discount
 print("Your discounted price is $", total, ".") # or
 print("Your discounted price is $" + str(total) + ".")
-</input>
+</code>
 </program>
 
 <p>
@@ -34,24 +34,24 @@ print("Your discounted price is $" + str(total) + ".")
 <subsection xml:id="strings_f-strings">
   <title>f-strings</title>
 <p>Consider this Python program that produces the cube of an input number:</p>
-<program language="python"><input>x = float(input("Enter a number: "))
+<program language="python"><code>x = float(input("Enter a number: "))
 x_cubed = x * x * x
 print("When x is", x, "x cubed is", x_cubed)
-</input></program>
+</code></program>
 
 <p>An f-string lets us put the variables <em>inside</em> the string instead of needing to put multiple items in the parentheses. In the following program, we have put the letter <c>f</c> before the opening quotes and put the variable names inside braces <c>{</c> and <c>}</c>.</p>
-<program language="python" interactive="activecode"><input>x = float(input("Enter a number: "))
+<program language="python" interactive="activecode"><code>x = float(input("Enter a number: "))
 x_cubed = x * x * x
 print(f"When x is {x}, x cubed is {x_cubed}.")
-</input></program>
+</code></program>
 
 <p>One extra advantage of f-strings is that we now have complete control over the spacing; we can put a comma immediately following the value of <c>x</c> and the period directly after <c>x_cubed</c>. While you could achieve the same effect without f-strings, it would be more difficult.</p>
 
 <p>But wait<mdash/>there's more! You can put Python expressions in the braces.</p>
-<program language="python" interactive="activecode"><input>
+<program language="python" interactive="activecode"><code>
 years = int(input("Enter your age in years:"))
 print(f"{years} years is about {years * 365} days.")
-</input></program>
+</code></program>
 
 <p>Use this feature sparingly. Do not put long, complex expressions into an f-string. Instead, create variables to hold the values of the expression and print the variables in the f-string.</p>
 </subsection>
@@ -60,21 +60,21 @@ print(f"{years} years is about {years * 365} days.")
   <title>Controlling Decimal Digits</title>
 <p>We now have the question of how to control decimal points. Let's return to our discount example:</p>
 <program language="python">
-<input>
+<code>
 subtotal = 34.95
 total = 34.95 * 0.93 # 7% discount
 print(f"Your discounted price is ${total}.")
-</input></program>
+</code></program>
 
 <p>Here's the output:</p>
 <pre>Your discounted price is $32.5035.</pre>
 
 <p>Ugly, isn't it? In order to control the number of digits after the decimal point, we need to add something to the braces:</p>
-<program language="python" interactive="activecode"><input>
+<program language="python" interactive="activecode"><code>
 subtotal = 34.95
 total = 34.95 * 0.93 # 7% discount
 print(f"Your discounted price is ${total:.2f}.")
-</input></program>
+</code></program>
 <p>Here's what the <c>:.2f</c> means:</p>
 <p>
 <ul>
@@ -90,12 +90,12 @@ print(f"Your discounted price is ${total:.2f}.")
 <subsection>
   <title>Advanced Topic: Aligning Output</title>
 <p>Consider this program. When you run it, the numbers don't quite line up:</p>
-<program language="python" interactive="activecode"><input>
+<program language="python" interactive="activecode"><code>
 first = 7.5
 second = 22.32
 print(f"first number  {first:.3f}")
 print(f"second number {second:.3f}")
-</input></program>
+</code></program>
 
 <p>You can fix that by specifying the <em>width</em> that you want the number to take up. In the preceding program, change the <c>.3f</c> to <c>8.3f</c> on lines 3 and 4. This says <q>use at least 8 spaces to display this number, with 3 digits to the right of the decimal point.</q> That means there will be four digits to the left of the decimal point, since 4 + 3 + 1 (for the decimal point) adds up to eight. When you run the program again, you'll see everything line up nicely.</p>
 </subsection>
@@ -104,21 +104,21 @@ print(f"second number {second:.3f}")
 <title>Advanced Topic: Additional Formatting Codes</title>
 <p>If you need to format an integer (usually to control its alignment), you use <c>d</c> instead of <c>f</c>. Since integers don't have decimal digits, the format specifier doesn't have a <c>.</c> in it.</p>
 <p>If you want leading zeros on a number (for example, when displaying the minutes in a time), use a <c>0</c> before the width, as in the following example:</p>
-<program language="python" interactive="activecode"><input>
+<program language="python" interactive="activecode"><code>
 hour = 5
 minute = 7
 print(f"The time is {hour}:{minute:02d}.")
 minute = 22
 print(f"The time is now {hour}:{minute:02d}.")
-</input></program>
+</code></program>
 <p>Note that the leading zeros don't appear unless they are required to fill out the minimum width.</p>
 
 <p>If you have a decimal value (such as <c>0.0737</c>) that you want to display as a percentage, use the <c>%</c> specifier. Here is an example of both of these:</p>
 
-<program language="python"><input>
+<program language="python"><code>
 discount = 0.0737
 print(f"Discount {discount:.1%}") # output: Discount 7.4%
-</input></program>
+</code></program>
 
 <p>For a complete description of all the formatting codes, <url href="https://docs.python.org/3/library/string.html#formatspec">see the Python documentation</url>.</p>
 </subsection>
@@ -130,11 +130,11 @@ print(f"Discount {discount:.1%}") # output: Discount 7.4%
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">
-          <input>
+          <code>
 x = 2
 y = 6
 print(f'sum of {x} and {y} is {x + y}; product is {x * y}.')
-</input>
+</code>
         </program>
       </statement>
       <choices>
@@ -162,10 +162,10 @@ print(f'sum of {x} and {y} is {x + y}; product is {x * y}.')
       <statement>
         <p>What is printed by the following statements?</p>
         <program language="python">
-          <input>
+          <code>
 v = 2.34567
 print(f'{v:.1f}, {v:.2f}, {v:.7f}')
-</input>
+</code>
         </program>
       </statement>
       <choices>

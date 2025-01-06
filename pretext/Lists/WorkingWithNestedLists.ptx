@@ -16,11 +16,11 @@
       </statement>
       
       <program interactive="activecode" language="python" xml:id="nested_pythagorean">
-        <input>
+        <code>
 triangle_list = [[3.0, 4.0], [12.0, 5.0], [7.6, 3.2], [8.5, 10.4]]
 hypotenuse_list = []  # results go into this list
 # your code here
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -53,18 +53,18 @@ myTests().main()
         <p>
           This solution does not use any functions
         </p>
-        <program language="python"><input>
+        <program language="python"><code>
 triangle_list = [[3.0, 4.0], [12.0, 5.0], [7.6, 3.2], [8.5, 10.4]]
 hypotenuse_list = []
 for sublist in triangle_list:
     hypotenuse = (sublist[0] ** 2 + sublist[1] ** 2) ** 0.5
     hypotenuse_list.append(hypotenuse)
 print(f"Hypotenuses are {hypotenuse_list}.")
-</input></program>
+</code></program>
 <p>
   This solution uses a function for calculating the Pythagorean theorem.
 </p>
-<program><input>
+<program><code>
     def hypotenuse(first_leg, second_leg):
     """Return length of hypotenuse given leg lengths."""
     
@@ -76,7 +76,7 @@ hypotenuse_list = []
 for sublist in triangle_list:
     hypotenuse_list.append(hypotenuse(sublist[0], sublist[1]))
 print(f"Hypotenuses are {hypotenuse_list}.")
-</input></program>
+</code></program>
 </solution>
 </exercise>
 
@@ -94,14 +94,14 @@ Michele (#81882): 89.9
 Steve (#79315): 91.6</pre>
   </statement>
   <program interactive="activecode" language="python">
-    <input>
+    <code>
 student_tests = [["Phuong", 101345, [90, 87.5, 88.6]],
                  ["Federico", 43617, [88.3, 89.2, 92.4]],
                  ["Michele", 81882, [93.0, 90.2, 86.5]],
                  ["Steve", 79315, [91.7, 89.9, 93.2]]]
 
 # your code here...
-    </input>
+    </code>
   </program>
 </exercise>
 
@@ -112,7 +112,7 @@ student_tests = [["Phuong", 101345, [90, 87.5, 88.6]],
     </p>
   </statement>
   <program interactive="activecode" language="python">
-    <input>
+    <code>
 def nested_to_fahr(celsius_list):
     """Convert nested list of temperature ranges to Fahrenheit.
     Given a list of low/high temperature pairs in degrees Celsius,
@@ -125,7 +125,7 @@ celsius_ranges = [[8.3, 21.1], [12.5, 23.3], [15.6, 21.0], [16.9, 28.4],
 
 fahr_ranges = nested_to_fahr(celsius_ranges)
 print(fahr_ranges)
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 

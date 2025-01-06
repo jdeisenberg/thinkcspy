@@ -100,22 +100,22 @@
     The syntax of a <c>for</c> loop is similar to the <c>while</c> loop in that there is a <c>for</c> statement and a loop body:
   </p>
   <program xml:id="itr-section5_1" interactive="activecode" language="python">
-    <input>
+    <code>
 friends = ['Joseph', 'Vinh', 'Shashi']
 for friend in friends:
     print('Greetings,', friend)
 print('Done!')
-        </input>
+        </code>
   </program>
   <p>
     In Python terms, the variable <c>friends</c> is a <term>list</term> of three strings. (We will examine lists in more detail in <xref ref="ch-lists"/>.) The <c>for</c> loop goes through the list and executes the body once for each of the three strings in the list, resulting in this output:</p>
   <program language="python">
-    <input>
+    <code>
 Greetings, Joseph
 Greetings, Vinh
 Greetings, Shashi
 Done!
-</input>
+</code>
   </program>
   <p>
     Translating this <c>for</c> loop to English is not as direct as the <c>while</c>, but if you think of friends as a <em>set</em>, it goes like this: <q>Run the statements in the body of the <c>for</c> loop once for each <c>friend</c> <em>in</em> the set named <c>friends</c>.</q>
@@ -123,10 +123,10 @@ Done!
   
   <p>Here is the <c>for</c> loop all by itself:</p>
   <program language="python">
-    <input>
+    <code>
 for friend in friends:
     print('Greetings,', friend)
-</input>
+</code>
   </program>
   
   <p>

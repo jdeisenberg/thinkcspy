@@ -7,13 +7,13 @@
       On the preceding page, we added all the items in the list to the accumulator. Sometimes when we're accumulating, we don't want to add to our accumulator every time we iterate. Consider, for example, the following program which counts the number of names with more than 3 letters.
     </p>
   <program xml:id="accum_count" interactive="activecode" language="python">
-    <input>
+    <code>
 long_names = 0
 for name in ["Joe", "Sally", "Amy", "Brad"]:
     if len(name) &gt; 3:
         long_names += 1
 print(long_names)
-        </input>
+        </code>
   </program>
   <p>
     Here, we <term>initialize</term> the accumulator variable to be zero on line 1.
@@ -36,14 +36,14 @@ print(long_names)
   </p>
   
   <program xml:id="accum_vowels" interactive="activecode" language="python">
-    <input>
+    <code>
 s = "what if we went to the zoo"
 num_vowels = 0
 for char in s:
     if char in 'aeiou':
         num_vowels += 1
 print(num_vowels)
-        </input>
+        </code>
   </program>
   
 </introduction>
@@ -58,14 +58,14 @@ print(num_vowels)
   </p>
   
     <program xml:id="accum_max_value" interactive="activecode" language="python">
-      <input>
+      <code>
 nums = [9, 3, 8, 11, 5, 29, 2]
 biggest_num = nums[0]
 for n in nums:
     if n &gt; biggest_num:
         biggest_num = n
 print(biggest_num)
-        </input>
+        </code>
     </program>
     <p>
       Here, we initialize <c>biggest_num</c> to the first element in our list. Why didn't we set it to zero? Because we cannot assume that there will never be any negative numbers in the list. By assigning <c>nums[0]</c> to <c>biggest_num</c>, we are at least guaranteed that the result of our program will be one of the items in the list.
@@ -85,14 +85,14 @@ print(biggest_num)
     </p>
     
     <program xml:id="accum_string" interactive="activecode" language="python">
-      <input>
+      <code>
 scores = [85, 95, 70]
 result = ''
 for score in scores:
    result = result + str(score) + ','
 
 print("The scores are " + result)
-        </input>
+        </code>
     </program>
     <p>
       Here, the accumulator variable is <c>result</c>. Each time through the loop, the program concatenates the current contents of <c>result</c> with the comma separator and a score from the list, and updates the <c>result</c> with the new value. Use CodeLens to step through this example to see it in action.
@@ -108,14 +108,14 @@ print("The scores are " + result)
         <pre>The scores are 85, 95, and 70.</pre>
       </statement>
       <program interactive="activecode" language="python" xml:id="accum_better_string_editor">
-        <input>
+        <code>
 scores = [85, 95, 70]
 result = ''
 for score in scores:
    result = result + str(score) + ','
 
 print("The scores are " + result)
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -135,7 +135,7 @@ myTests().main()
       <solution>
           This solution works by iterating over all of the scores in the list except the last, and dealing with that one separately.
 
-    <program xml:id="accum_better_string_solution" language="python"><input>
+    <program xml:id="accum_better_string_solution" language="python"><code>
 scores = [85, 95, 70]
 result = ''
 for score in scores[:-1]:
@@ -145,7 +145,7 @@ for score in scores[:-1]:
 result = result + 'and ' + str(scores[-1]) + '.'
 
 print("The scores are " + result)
-        </input></program>
+        </code></program>
                 </solution>
     </exercise>
 
@@ -155,14 +155,14 @@ print("The scores are " + result)
           What is printed by the following statements?
         </p>
         <program language="python">
-          <input>
+          <code>
 s = "We are learning!"
 x = 0
 for char in s:
     if char in 'abcde':
         x = x + 1
 print(x)
-</input>
+</code>
         </program>
       </statement>
       <choices>
@@ -199,14 +199,14 @@ print(x)
     What is printed by the following statements?
   </p>
         <program language="python">
-          <input>
+          <code>
 my_list= [5, 2, 1, 4, 9, 10]
 min_value = 0
 for item in my_list:
    if item &lt; min_value:
        min_value = item
 print(min_value)
-</input>
+</code>
         </program>
       </statement>
       <choices>
@@ -242,10 +242,10 @@ print(min_value)
         <p><term>Challenge</term> For each word in <c>words</c>, add &#x2018;d' to the end of the word if the word ends in <q>e</q> to make it past tense. Otherwise, add &#x2018;ed' to make it past tense. Save these past tense words to a list called <c>past_tense</c>.</p>
       </statement>
       <program xml:id="accum_verb_forms" interactive="activecode" language="python">
-        <input>
+        <code>
 words = ["adopt", "bake", "beam", "confide", "grill", "plant", "time", "wave", "wish"]
 
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 

@@ -11,13 +11,13 @@
   <p>where the <c>if</c> clause is optional.  For example,</p>
   
   <program xml:id="listcomp1" interactive="activecode" language="python">
-    <input>
+    <code>
 my_list = [1,2,3,4,5]
 
 squared_list = [item ** 2 for item in my_list]
 
 print(squared_list)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -28,7 +28,7 @@ print(squared_list)
     Here is a rewrite of <c>remove_negative</c> that filters a sequence of integers with a list comprehension.
   </p>
   <program xml:id="list_compr_remove_negative" language="python" interactive="activecode">
-    <input>
+    <code>
 def remove_negative(a_list):
     """ Return a list of all non-negative items in a_list.
     Uses a list comprehension with an if clause."""
@@ -39,7 +39,7 @@ def remove_negative(a_list):
 numbers = [10, -66, -47, 11, 505, -217]
 new_numbers = remove_negative(numbers)
 print(f"Final list is {new_numbers}")
-</input>
+</code>
   </program>
   
   <p>
@@ -52,11 +52,11 @@ print(f"Final list is {new_numbers}")
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 a_list = [4,2,8,6,5]
 b_list = [num * 2 for num in a_list if num % 2 == 1]
 print(b_list)
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -104,7 +104,7 @@ print(b_list)
       </p>
     </statement>
   <program xml:id="vowelicious_list_compr_ex" interactive="activecode" language="python">
-    <input>
+    <code>
 def count_vowels(a_string):
     """ Return the number of vowels in the parameter string.
     Vowels are a, e, i, o, and u (upper and lower case).
@@ -122,14 +122,14 @@ def keep_vowelicious(a_list):
 words = ["beautiful", "locomotive", "friendly", "automation", "treadmill", "kangaroo"]
 kept_words = keep_vowelicious(words)
 print(f"The vowelicious words are {kept_words}")
-    </input>
+    </code>
   </program>
     <hint>
   <p>The list comprehension in the <c>keep_vowelicious</c> function should call the <c>count_vowels</c> function.</p>
 </hint>
 <solution>
   <program language="python">
-    <input>
+    <code>
 def count_vowels(a_string):
     """ Return the number of vowels in the parameter string.
     
@@ -155,7 +155,7 @@ words = ["beautiful", "locomotive", "friendly",
          "automation", "treadmill", "kangaroo"]
 kept_words = keep_vowelicious(words)
 print(f"The vowelicious words are {kept_words}")
-</input>
+</code>
 </program>
 </solution>
 </exercise>

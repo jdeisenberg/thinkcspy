@@ -20,14 +20,14 @@ Test Case 2: 'b'      'b'
 Test Case 3: ''       ''</pre>
           </statement>
           <program interactive="activecode" language="python" xml:id="ac_ut_reverse_editor">
-            <input>
+            <code>
 def test_reverse():
     # Complete the assert statements below
 
     assert ________________
     assert ________________
     assert ________________
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -82,7 +82,7 @@ assert reverse('') == ''</pre>
             <p>Modify the function so that it can be tested with the assert statements that follow.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="ac_ut_testable_editor">
-            <input>
+            <code>
 
 def stripletters(msg):
     result = ''
@@ -95,7 +95,7 @@ def stripletters(msg):
 assert stripletters('ab12c') == '12'
 assert stripletters('12') == '12'
 
-  </input>
+  </code>
   <tests>
 
 from unittest.gui import TestCaseGui

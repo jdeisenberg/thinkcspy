@@ -5,14 +5,14 @@
     Again, as with strings, the <c>+</c> operator concatenates lists. Similarly, the <c>*</c> operator repeats the items in a list a given number of times.
   </p>
   <program xml:id="list_concat_repeat" interactive="activecode" language="python">
-    <input>
+    <code>
 fruit_list = ["apple", "orange", "banana", "cherry"]
 print([1, 2] + [3, 4])
 print(fruit_list + ["kiwi", "guava", "durian"])
 
 print([0] * 4)
 print(["up", "down"] * 2)
-    </input>
+    </code>
   </program>
   
   <p>
@@ -24,25 +24,25 @@ print(["up", "down"] * 2)
   </p>
   
   <program xml:id="chp09_concatid" interactive="codelens" language="python">
-    <input>
+    <code>
 fruit = ["apple", "orange", "banana", "cherry"]
 more_fruit = ["kiwi", "guava", "durian"]
 
 new_list = fruit + more_fruit
 
 zeros = [0] * 4
-    </input>
+    </code>
   </program>
   
   <!--
   <p>In Python, every object has a unique identification tag.  Likewise, there is a built-in function that can be called on any object to return its unique id.  The function is appropriately called <c>id</c> and takes a single parameter, the object that you are interested in knowing about.  You can see in the example below that a real id is usually a very large integer value (corresponding to an address in memory).</p>
   <program language="python">
-    <input>
+    <code>
 &gt;&gt;&gt; alist = [4, 5, 6]
 &gt;&gt;&gt; id(alist)
 4300840544
 &gt;&gt;&gt;
-    </input>
+    </code>
   </program>
   -->
   
@@ -50,11 +50,11 @@ zeros = [0] * 4
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 a_list = [1, 3, 5]
 b_list = [2, 4, 6]
 print(a_list + b_list)
-        </input>
+        </code>
       </program>
     </statement>
     
@@ -90,10 +90,10 @@ print(a_list + b_list)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 a_list = [1, 3, 5]
 print(a_list * 3)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

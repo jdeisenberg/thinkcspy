@@ -12,14 +12,14 @@
   </p>
   
   <program xml:id="chp08_index1" interactive="activecode" language="python">
-    <input>
+    <code>
 school = "Luther College"
 one_char = school[2]
 print(one_char)
 
 last_char = school[-1]
 print(last_char)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -44,10 +44,10 @@ print(last_char)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s[3])
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -82,10 +82,10 @@ print(s[3])
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 s = "python rocks"
 print(s[2] + s[-5])
-</input>
+</code>
       </program>
     </statement>
     <choices>

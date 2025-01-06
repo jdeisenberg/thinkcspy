@@ -20,7 +20,7 @@
 <p>
   Python has many built-in functions for common operations, but Python cannot anticipate everything that people might want to do and build it in. Instead, Python uses <term>modules</term> to extend its capabilities. You can think of a module as a small library of functions that serve some purpose.
 </p>
-<p>One important module is the <c>math</c> module. It is a library providing many familiar mathematical functions such as square root. Because modules are not built-in, you have to <term>import</term> a module before you can use it.  The following statement creates a <em>module objecct</em> named <c>math</c>:</p>
+<p>One important module is the <c>math</c> module. It is a library providing many familiar mathematical functions such as square root. Because modules are not built-in, you have to <term>import</term> a module before you can use it.  The following statement creates a <em>module object</em> named <c>math</c>:</p>
 
 <pre>import math</pre>
 

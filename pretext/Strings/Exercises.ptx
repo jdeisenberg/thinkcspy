@@ -43,18 +43,18 @@
                     book <em>Make Way for Ducklings</em>, the names of the ducklings are Jack, Kack, Lack,
                     Mack, Nack, Ouack, Pack, and Quack.  This loop tries to output these names in order.</p>
             <program language="python">
-              <input>
+              <code>
 prefixes = "JKLMNOPQ"
 suffix = "ack"
 
 for p in prefixes:
     print(p + suffix)
-</input>
+</code>
             </program>
             <p>Of course, that's not quite right because Ouack and Quack are misspelled. Can you fix it?</p>
           </statement>
           <program xml:id="str_modify_strings_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 
 prefixes = "JKLMNOPQ"
 suffix = "ack"
@@ -63,7 +63,7 @@ for p in prefixes:
     print(p + suffix)
 
 # Fix the loop to get the correct output.
-</input>
+</code>
 <tests>
 from unittest.gui import TestCaseGui
 
@@ -97,7 +97,7 @@ myTests().main()
             <pre>Your text contains 243 alphabetic characters, of which 109 (44.8%) are 'e'.</pre>
           </statement>
           <program interactive="activecode" language="python" xml:id="str_count_letter_e_editor">
-            <input>
+            <code>
 def count(paragraph):
     """Count alpha characters in paragraph.
     
@@ -106,7 +106,7 @@ def count(paragraph):
     prints the percentage of characters that are "e".
     """
     # your code here
-  </input>
+  </code>
   <tests>
 
 from unittest.gui import TestCaseGui
@@ -127,7 +127,7 @@ myTests().main()
           </program>
           <solution>
             <program xml:id="str_q3_answer" language="python">
-              <input>
+              <code>
 def count(paragraph):
     number_of_e = 0
     total_chars = 0
@@ -150,7 +150,7 @@ once a year, killing everyone inside."
 '''
 
 count(para)
-        </input>
+        </code>
             </program>
           </solution>
         </exercise>
@@ -161,9 +161,9 @@ count(para)
             <p>Print out a neatly formatted multiplication table, up to 12 x 12.</p>
           </statement>
           <program xml:id="str_8_4_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 
-        </input>
+        </code>
           </program>
         </exercise>
         -->
@@ -173,11 +173,11 @@ count(para)
             <p>Write a function that will return the number of digits in an integer.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="str_num_digits_editor">
-            <input>
+            <code>
 def numDigits(n):
     """Return number of digits in given integer n."""
     # your code here
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -194,7 +194,7 @@ myTests().main()
           </program>
           <solution>
             <program xml:id="str_num_digits_answer" language="python">
-              <input>
+              <code>
 def numDigits(n):
     n_str = str(n)
     return len(n_str)
@@ -203,7 +203,7 @@ def numDigits(n):
 print(numDigits(50))
 print(numDigits(20000))
 print(numDigits(1))
-        </input>
+        </code>
             </program>
           </solution>
         </exercise>
@@ -213,11 +213,11 @@ print(numDigits(1))
             <p>Write a function that reverses its string argument.</p>
           </statement>
           <program xml:id="str_reverse_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 def reverse(astring):
     """Return reverse of the given string argument."""
     # your code here
-  </input>
+  </code>
   <tests>
 
 from unittest.gui import TestCaseGui
@@ -242,11 +242,11 @@ myTests().main()
             <p>Write a function that removes all occurrences of a given letter from a string.</p>
           </statement>
           <program xml:id="str_remove_letter_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 def remove_letter(the_letter, the_string):
     """Remove all occurrences of the_letter from the_string."""
     # your code here
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -268,11 +268,11 @@ myTests().main()
             <p>A palindrome is a word that is spelled the same backwards and forwards. For example, <q>racecar</q> and <q>madam</q> are palindromes. Write a function that recognizes palindromes. (Hint: use your <c>reverse</c> function to make this easy!).</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="str_palindrome_editor">
-            <input>
+            <code>
 def is_palindrome(my_str):
     """Returns True if my_str is same forward as backward."""
     # your code here
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -293,7 +293,7 @@ myTests().main()
           </program>
           <solution>
             <program xml:id="str_palindrome_answer" language="python">
-              <input>
+              <code>
 def reverse(my_str):
     reversed = ''
     for char in my_str:
@@ -312,7 +312,7 @@ print(is_palindrome('pacecar')) # False
 print(is_palindrome('straw warts')) # True
 print(is_palindrome('a')) # True
 print(is_palindrome('')) # True
-        </input>
+        </code>
             </program>
           </solution>
         </exercise>
@@ -323,10 +323,10 @@ print(is_palindrome('')) # True
         <p>Write a function that counts how many non-overlapping occurences of a substring appear in a string.</p>
       </statement>
       <program xml:id="str_8_9" interactive="activecode" language="python">
-          <input>
+          <code>
 def count(substr,theStr):
     # your code here
-        </input>
+        </code>
         <tests>
 
 
@@ -357,11 +357,11 @@ myTests().main()
             <p>Write a function that removes the first occurrence of a string from another string. For example, <c>remove("on", "London")</c> would return <c>"Ldon"</c>. Hint: use slices.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="str_remove_first_substr_editor">
-            <input>
+            <code>
 def remove(substr, the_str):
     """Remove first occurrence of substr from the_str."""
     # your code here
-  </input>
+  </code>
 
   <tests>
 from unittest.gui import TestCaseGui
@@ -379,7 +379,7 @@ myTests().main()
           </program>
           <solution>
             <program xml:id="str_remove_first_substr_answer" language="python">
-              <input>
+              <code>
 def remove(substr,theStr):
     index = theStr.find(substr)
     if index &lt; 0: # substr doesn't exist in theStr
@@ -392,7 +392,7 @@ print(remove('an', 'banana') == 'bana')
 print(remove('cyc', 'bicycle') == 'bile')
 print(remove('iss', 'Mississippi') == 'Missippi')
 print(remove('egg', 'bicycle') == 'bicycle')
-        </input>
+        </code>
             </program>
           </solution>
         </exercise>
@@ -402,11 +402,11 @@ print(remove('egg', 'bicycle') == 'bicycle')
             <p>Write a function that removes all occurrences of a string from another string. For example, <c>remove_all("on", "London")</c> would return <c>"Ld"</c></p>
           </statement>
           <program xml:id="str_remove_all_substr_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 def remove_all(substr, the_str):
     """Remove all occurrences of substr from the_str."""
     # your code here
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 
@@ -428,7 +428,7 @@ myTests().main()
             <p>Write a function that implements a substitution cipher.  In a substitution cipher one letter is substituted for another to garble the message.  For example A -&gt; Q, B -&gt; T, C -&gt; G etc. Your function should take two parameters: the message you want to encrypt, and a string that represents the mapping of the 26 letters in the alphabet. This mixed-up alphabet is called the <em>cipher</em>.  Your function should return a string that is the encrypted version of the message. If a character isn't in the alphabet, it should remain as is in the encrypted version.</p>
           </statement>
           <program xml:id="str_cipher_encrypt_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 def encrypt(message, cipher):
     """Encrypt message using cipher alphabet."""
     # your code here
@@ -436,7 +436,7 @@ def encrypt(message, cipher):
 cipher = "badcfehgjilknmporqtsvuxwzy"
 encrypted = encrypt("python strings!", cipher)
 print(encrypted) # should result in "ozsgpm tsqjmht!"
-        </input>
+        </code>
           </program>
         </exercise>
 
@@ -447,13 +447,13 @@ print(encrypted) # should result in "ozsgpm tsqjmht!"
             </p>
           </statement>
           <program interactive="activecode" language="python" xml:id="str_cipher_decrypt_editor">
-            <input>
+            <code>
 
-        </input>
+        </code>
           </program>
           <solution>
             <program xml:id="str_cipher_decrypt_answer" language="python">
-              <input>
+              <code>
 def encrypt(message, cipher):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     encrypted = ''
@@ -484,7 +484,7 @@ print(encrypted)
 
 decrypted = decrypt(encrypted, cipher)
 print(decrypted)
-        </input>
+        </code>
             </program>
           </solution>
         </exercise>
@@ -494,14 +494,14 @@ print(decrypted)
             <p>Write a function called <c>remove_dups</c> that takes a string and creates a new string by only adding those characters that are not already present.  In other words, there will never be a duplicate letter added to the new string.</p>
           </statement>
           <program xml:id="str_remove_dups_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 def remove_dups(a_string):
     """Returns unique characters in a_string."""
     # your code here
 
 
 print(remove_dups("mississippi"))   #should print misp
-</input>
+</code>
 <tests>
 from unittest.gui import TestCaseGui
 
@@ -531,18 +531,18 @@ myTests().main()
                             to think of modulo arithmetic.</p>
           </statement>
           <program interactive="activecode" language="python" xml:id="str_8_20_editor">
-            <input>
+            <code>
 def rot13(mess):
     # Your code here
 
 print(rot13('abcde'))
 print(rot13('nopqr'))
 print(rot13(rot13('Since rot13 is symmetric you should see this message')))
-        </input>
+        </code>
           </program>
           <solution>
             <program xml:id="str_q21_answer" language="python">
-              <input>
+              <code>
 def rot13(mess):
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
     encrypted = ''
@@ -560,7 +560,7 @@ def rot13(mess):
 print(rot13('abcde'))
 print(rot13('nopqr'))
 print(rot13(rot13('since rot thirteen is symmetric you should see this message')))
-        </input>
+        </code>
             </program>
           </solution>
         </exercise>
@@ -570,7 +570,7 @@ print(rot13(rot13('since rot thirteen is symmetric you should see this message')
             <p>Modify this code so it prints each subtotal, the total cost, and average price to exactly two decimal places. Hint: use f-strings.</p>
           </statement>
           <program xml:id="str_format_money_editor" interactive="activecode" language="python">
-            <input>
+            <code>
 def checkout():
     """Print running subtotal, total, and average price of purchase.
     Program asks for input and accumulates subtotal until user
@@ -593,7 +593,7 @@ def checkout():
     print('Average price per item: $', average)
 
 checkout()
-        </input>
+        </code>
           </program>
         </exercise>
 

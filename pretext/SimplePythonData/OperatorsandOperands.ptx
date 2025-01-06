@@ -20,13 +20,13 @@ minute / 60
   </p>
   
   <program xml:id="ch02_15" interactive="activecode" language="python">
-    <input>
+    <code>
 print(2 + 3)
 print(2 - 3)
 print(2 * 3)
 print(2 ** 3)
 print(3 ** 2)
-    </input>
+    </code>
   </program>
   
   <p xml:id="simple-python-data_index-1">
@@ -34,11 +34,11 @@ print(3 ** 2)
   </p>
   
   <program xml:id="ch02_16" interactive="activecode" language="python">
-    <input>
+    <code>
 minutes = 645
 hours = minutes / 60
 print(hours)
-    </input>
+    </code>
   </program>
   
   <p xml:id="hours_and_minutes-1">
@@ -46,7 +46,7 @@ print(hours)
   </p>
   
   <program xml:id="ch02_17" interactive="activecode" language="python">
-    <input>
+    <code>
 print(7 / 4)
 print(7 // 4)
 
@@ -56,7 +56,7 @@ print(hours)
 
 print(6 // 4)
 print(-6 // 4)
-    </input>
+    </code>
   </program>
   
   <p>
@@ -68,12 +68,12 @@ print(-6 // 4)
   </p>
   
   <program xml:id="ch02_18" interactive="activecode" language="python">
-    <input>
+    <code>
 quotient = 7 // 3     # This is the integer division operator
 print(quotient)
 remainder = 7 % 3
 print(remainder)
-    </input>
+    </code>
   </program>
   
   <p>In the preceding example, 7 divided by 3 is 2 when we use integer division and there is a remainder of 1 when we use the modulus operator.</p>
@@ -85,10 +85,10 @@ print(remainder)
   <convention>
     <title>Spaces and Expressions</title>
     <p>For readability, you should <em>always</em> put a space on both sides of operators. This gives your code some <q>breathing room</q>.</p>
-    <program language="python"><input>
+    <program language="python"><code>
 result=(a*b)/(c+d)  # difficult to read
 result = (a * b) / (c + d) # more readable
-</input></program>
+</code></program>
   </convention>
   
 
@@ -96,9 +96,9 @@ result = (a * b) / (c + d) # more readable
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">
-        <input>
+        <code>
 print(18 / 4)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>
@@ -133,9 +133,9 @@ print(18 / 4)
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">
-        <input>
+        <code>
 print(18 // 4)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>
@@ -170,9 +170,9 @@ print(18 // 4)
     <statement>
       <p>What value is printed when the following statement executes?</p>
       <program language="python">
-        <input>
+        <code>
 print(18 % 4)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

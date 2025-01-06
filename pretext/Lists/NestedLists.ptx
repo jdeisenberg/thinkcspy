@@ -7,21 +7,21 @@
     </p>
     
     <program xml:id="separate_lists" language="python">
-      <input>
+      <code>
 names = ["Phuong", "Federico", "Michele", "Steve"]
 id_nums = [101345, 43617, 81882, 79315]
 gpa = [3.9, 3.92, 3.85, 3.76]
-</input>
+</code>
 </program>
       
     <p>
       There's nothing wrong with this, but the data for each student really belongs together. It would be nice if we could put all the data into one list of four elements, where each element has the student name, ID, and GPA grouped together. It turns out that Python lets us do exactly that. We have already seen that lists can contain elements of different data types: <c>[47, "blah", 37.5, True]</c>. Lists are also data types, so we can have a list that contains another list. That lets us write our student information as:
     </p>
         <program xml:id="nested_student_list" language="python" interactive="activecode">
-    <input>
+    <code>
 students = [["Phuong", 101345, 3.9], ["Federico", 43617, 3.92],
             ["Michele", 81882, 3.85], ["Steve", 79315, 3.76]]
-    </input>
+    </code>
   </program>
   
   <p>
@@ -46,7 +46,7 @@ students = [["Phuong", 101345, 3.9], ["Federico", 43617, 3.92],
   </p>
   
   <program xml:id="access_nest_element1" interactive="activecode" language="python">
-    <input>
+    <code>
 students = [["Phuong", 101345, 3.9], ["Federico", 43617, 3.92],
             ["Michele", 81882, 3.85], ["Steve", 79315, 3.76]]
 sub_list = students[1] # sub_list is a reference to ["Federico", 43617, 3.92]
@@ -54,7 +54,7 @@ print(sub_list)
 
 gpa = sub_list[2]  # access the last item in the sub_list
 print(gpa)
-        </input>
+        </code>
   </program>
   
   <p>
@@ -62,12 +62,12 @@ print(gpa)
   </p>
   
   <program xml:id="access_nest_element2" interactive="activecode" language="python">
-    <input>
+    <code>
 students = [["Phuong", 101345, 3.9], ["Federico", 43617, 3.92],
             ["Michele", 81882, 3.85], ["Steve", 79315, 3.76]]
 gpa = students[1][2]
 print(gpa)  
-        </input>
+        </code>
   </program>
   
   <p>
@@ -75,7 +75,7 @@ print(gpa)
   </p>
   
   <program xml:id="access_nest_element3" interactive="activecode" language="python">
-    <input>
+    <code>
 student_tests = [["Phuong", 101345, [90, 87.5, 88.6]],
                  ["Federico", 43617, [88.3, 89.2, 92.4]],
                  ["Michele", 81882, [93.0, 90.2, 86.5]],
@@ -84,7 +84,7 @@ student_tests = [["Phuong", 101345, [90, 87.5, 88.6]],
 print(student_tests[3])  # Steve's sublist
 print(student_tests[3][2]) # Steve's scores
 print(student_tests[3][2][1]) # 89.9
-        </input>
+        </code>
   </program>
 
 </subsection>
@@ -96,13 +96,13 @@ print(student_tests[3][2][1]) # 89.9
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 a_list = [ [4, [True, False], 6, 8], [888, 999] ]
 if a_list[0][1][0]:
    print(a_list[1][0])
 else:
    print(a_list[1][1])
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -137,10 +137,10 @@ else:
     <statement>
       <p>What is printed by the following statements? (Remember: you can use the index operator on strings as well as lists.)</p>
       <program language="python">
-        <input>
+        <code>
 a_list = [3, 67, "cat", [56, 57, "dog"], [ ], 3.14, False]
 print(a_list[2][0])
-</input>
+</code>
       </program>
     </statement>
     <choices>
@@ -179,13 +179,13 @@ print(a_list[2][0])
   </p>
   
   <program xml:id="nested_bad_clone" interactive="activecode" language="python">
-    <input>
+    <code>
 my_list = [1, [2, 3], 4]
 bad_clone = my_list[:]
 bad_clone[1][0] = 99  # changes corresponding entry in my_list
 print(bad_clone)
 print(my_list)
-</input>
+</code>
   </program>
   
   <p>
@@ -193,7 +193,7 @@ print(my_list)
   </p>
 
   <program xml:id="nested_deepcopy" interactive="activecode" language="python">
-    <input>
+    <code>
 import copy
 
 my_list = [1, [2, 3], 4]
@@ -202,7 +202,7 @@ good_clone[1][0] = 99  # my_list will not be changed
 
 print(good_clone)
 print(my_list)
-</input>
+</code>
   </program>
 
 </subsection>

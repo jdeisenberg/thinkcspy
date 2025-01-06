@@ -5,10 +5,10 @@
     We have already seen that everything in Python is a reference. When we have code like this:
   </p>
   <program language="python">
-    <input>
+    <code>
 a = "banana"
 b = a
-    </input>
+    </code>
   </program>
   <p>
     The storage diagram shows us that <c>a</c> and <c>b</c> will refer to the same area in memory: a string with the letters
@@ -26,13 +26,13 @@ b = a
   </p>
 
   <program xml:id="lists_is2" interactive="activecode" language="python">
-    <input>
+    <code>
 a = [81, 82, 83]
 b = a
 
 print(a is b)  # same reference
 print(a == b)  # same values
-    </input>
+    </code>
     
   </program>
   <p>The reference diagram for this example looks like this:</p>
@@ -43,13 +43,13 @@ print(a == b)  # same values
   </p>
   
   <program xml:id="lists_modify_alias" interactive="codelens" language="python">
-    <input>
+    <code>
 a = [81, 82, 83]
 b = a
 b[0] = 99 # also changes list a
 print(b)
 print(a)
-</input>
+</code>
 </program>
 
   <p>
@@ -60,12 +60,12 @@ print(a)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 a_list = [4, 2, 8, 6, 5]
 b_list = a_list
 b_list[3] = 4711
 print(a_list)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>
@@ -89,11 +89,11 @@ print(a_list)
       <blockquote>
         <p>Consider the following lists:</p>
         <program language="python">
-          <input>
+          <code>
 list1=[1,100,1000]
 list2=[1,100,1000]
 list3=list1
-          </input>
+          </code>
         </program>
         <p>Which statements will evaluate to <term>True</term>? (Select <term>all</term> that apply).</p>
       </blockquote>

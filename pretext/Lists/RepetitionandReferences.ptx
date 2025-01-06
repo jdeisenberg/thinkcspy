@@ -3,10 +3,10 @@
   <title>Repetition and References</title>
   <p>We have already seen the repetition operator working on strings as well as lists.  For example,</p>
   <program xml:id="repref1" interactive="activecode" language="python">
-    <input>
+    <code>
 origlist = [45, 76, 34, 55]
 print(origlist * 3)
-    </input>
+    </code>
   </program>
   
   <p>
@@ -16,14 +16,14 @@ print(origlist * 3)
   <p>Consider the following extension on the previous example.</p>
   
   <program xml:id="repref2" interactive="activecode" language="python">
-    <input>
+    <code>
 origlist = [45, 76, 34, 55]
 print(origlist * 3)
 
 newlist = [origlist] * 3
 
 print(newlist)
-    </input>
+    </code>
   </program>
   
   <p>
@@ -36,7 +36,7 @@ print(newlist)
   </p>
   
   <program xml:id="repref3" interactive="activecode" language="python">
-    <input>
+    <code>
 origlist = [45, 76, 34, 55]
 
 newlist = [origlist] * 3
@@ -46,7 +46,7 @@ print(newlist)
 origlist[1] = 99
 
 print(newlist)
-    </input>
+    </code>
   </program>
   <p>
     <c>newlist</c> shows the change in three places.  This can easily be seen by noting that in the reference diagram, there is only one <c>origlist</c>, so any changes to it appear in all three references from <c>newlist</c>.
@@ -56,7 +56,7 @@ print(newlist)
   </p>
   
   <program xml:id="reprefstep" interactive="codelens" language="python">
-    <input>
+    <code>
 origlist = [45, 76, 34, 55]
 
 newlist = [origlist] * 3
@@ -66,19 +66,19 @@ print(newlist)
 origlist[1] = 99
 
 print(newlist)
-    </input>
+    </code>
   </program>
 
   <exercise label="test_question9_12_1">
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [4, 2, 8, 6, 5]
 blist = alist * 2
 blist[3] = 999
 print(alist)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>
@@ -106,12 +106,12 @@ print(alist)
     <statement>
       <p>What is printed by the following statements?</p>
       <program language="python">
-        <input>
+        <code>
 alist = [4, 2, 8, 6, 5]
 blist = [alist] * 2
 alist[3] = 999
 print(blist)
-        </input>
+        </code>
       </program>
     </statement>
     <choices>

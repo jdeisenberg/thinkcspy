@@ -6,7 +6,7 @@
   </p>
       
   <program xml:id="del_program_plan_redux" interactive="activecode" language="python">
-    <input>
+    <code>
 def remove_negative(a_list):
     """Modify input list to remove all negative numbers."""
     for index in range(len(a_list)):
@@ -17,7 +17,7 @@ def remove_negative(a_list):
 numbers = [10, -66, -47, 11, 505, -217]
 remove_negative(numbers)
 print(f"Final list is {numbers}")
-        </input>
+        </code>
   </program>
   
   <p>

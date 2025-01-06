@@ -21,7 +21,7 @@
       </p>
     </statement>
   <program xml:id="vowelicious_program" interactive="activecode" language="python">
-    <input>
+    <code>
 def count_vowels(a_string):
     """ Return the number of vowels in the parameter string.
     Vowels are a, e, i, o, and u (upper and lower case).
@@ -39,7 +39,7 @@ def keep_vowelicious(a_list):
 words = ["beautiful", "locomotive", "friendly", "automation", "treadmill", "kangaroo"]
 kept_words = keep_vowelicious(words)
 print(f"The vowelicious words are {kept_words}")
-  </input>
+  </code>
   <tests>
 from unittest.gui import TestCaseGui
 

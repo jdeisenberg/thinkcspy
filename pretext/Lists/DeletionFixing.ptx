@@ -47,7 +47,7 @@
   </p>
   
   <program>
-    <input>
+    <code>
 def remove_negative(a_list):
     set index to 0.
     while index &lt; length of a_list:
@@ -55,13 +55,13 @@ def remove_negative(a_list):
             delete item at the current index
         else:
             move forward to next index
-          </input>
+          </code>
         </program>
       
       <p>It's your turn. Implement the new plan and see if it does what we want.</p>
       
       <program language="python" interactive="activecode">
-        <input>
+        <code>
 def remove_negative(a_list):
     """Modify input list to remove all negative numbers."""
     # Your code here
@@ -70,7 +70,7 @@ def remove_negative(a_list):
 numbers = [10, -66, -47, 11, 505, -217]
 remove_negative(numbers)
 print(f"Final list is {numbers}")          
-        </input>
+        </code>
       </program>
     </subsection>
     

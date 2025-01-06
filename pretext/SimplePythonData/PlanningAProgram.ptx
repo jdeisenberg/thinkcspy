@@ -50,21 +50,21 @@
   <p>Now that you have a plan, see if you can translate the pseudo-code into Python:</p>
   
   <program xml:id="try_hours_minutes_seconds" interactive="activecode" language="python">
-  <input>
+  <code>
   # Your code goes here.
-  </input>
+  </code>
   </program>
   
   <p>Here's the codelens for the calculations (but don't peek at it unless you are really totally stuck).</p>
   
   <program xml:id="ch02_19_codelens" interactive="codelens" language="python">
-    <input>
+    <code>
           total_seconds = 7468
           hours = total_seconds // 3600
           seconds_remaining = total_seconds % 3600
           minutes =  seconds_remaining // 60
           secs_finally_remaining = seconds_remaining  % 60
-    </input>
+    </code>
   </program>
   
 </section>
