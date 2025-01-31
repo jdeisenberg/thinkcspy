@@ -80,7 +80,7 @@ print("Nothing seems to have happened with the rectangles")
   </note>
   
   <p>
-    You will note that when you run the program, nothing seems to happen.  It turns out that this is not quite the case.  In fact, two <c>Rectangles</c> have been created, each having a width and height with value 1.  However, because we have not asked the rectangles to do anything, we don't see any other result.
+      You will note that when you run the program, nothing seems to happen.  It turns out that this is not quite the case.  In fact, two <c>Rectangles</c> have been created, each having a <c>width</c> and <c>height</c> with value 1.  However, because we have not asked the rectangles to do anything, we don't see any other result.
   </p>
   
   <image source="ClassesBasics/Figures/objectpic4a.png" width="50%" alt="Simple object has state and methods"/>

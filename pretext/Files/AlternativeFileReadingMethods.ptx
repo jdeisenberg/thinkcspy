@@ -55,7 +55,7 @@ print(file_string[:200])
       <row valign="top">
         <cell><c>read(n)</c></cell>
         <cell><c>file_var.read()</c></cell>
-        <cell><p>Reads the  entire file as a single string, or, if an integer <em>n</em> is provided as an argument, returns a string of <em>n</em> characters, or the entire file as a single string if <c>n</c> is not provided.</p></cell>
+        <cell><p>If an integer <em>n</em> is provided as an argument, returns a string of <em>n</em> characters. Reads the entire file as a single string if <em>n</em> is not provided.</p></cell>
       </row>
       <row valign="top">
         <cell><c>readline(n)</c></cell>
@@ -65,7 +65,7 @@ print(file_string[:200])
       <row valign="top">
         <cell><c>readlines(n)</c></cell>
         <cell><c>file_var.readlines()</c></cell>
-        <cell><p>Returns a list of strings, each representing a single line of the file. If an argument <em>n</em> is not provided, then all lines of the file are returned. If <em>n</em> is provided, then <em>n</em> is rounded up so that an entire line is returned.</p></cell>
+        <cell><p>Returns a list of strings, each representing a single line of the file. If an argument <em>n</em> is not provided, then all lines of the file are returned. If an argument <em>n</em> is provided, only <em>n</em> characters will be returned. <em>n</em> is rounded up so that an entire line is returned.</p></cell>
       </row>
     </tabular>
   </table>

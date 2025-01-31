@@ -13,7 +13,7 @@
     A <term>line</term> of a file is defined to be a sequence of characters up to and including a special character called the <term>newline</term> character. If you evaluate a string that contains a newline character you will see the character represented as <c>\n</c>. If you print a string that contains a newline you will not see the <c>\n</c>, you will just see its effects. When you are typing a Python program and you press the enter or return key on your keyboard, the editor inserts a newline character into your text at that point.
   </p>
   <p>
-    As the <em>for</em> loop iterates through each line of the file the loop variable will contain the current line of the file as a string of characters. The general pattern for processing each line of a text file is as follows:
+    As the <em>for</em> loop iterates through each line of the file, the loop variable will contain the current line of the file as a string of characters. The general pattern for processing each line of a text file is as follows:
   </p>
   <pre>for line in myFile:
     statement1
@@ -51,6 +51,6 @@ weather_file.close()
   </note>
   
   <p>
-    In this example it is irrelevant whether the final line has a newline character at the end or not, since it would be stripped off by the <c>split</c> method call. Also, we set <c>min_temp</c> and <c>max_temp</c> to <c>None</c> at first. When we get a new value for <c>day_min</c> from the file, line 9 says that if there is no minimum temperature yet (<c>min_temp == None</c>) or the new value is less than the current minimum (<c>day_min &lt; min_temp</c>), the new value becomes the current minimum temperature in line 10.  Lines 11 and 12 do the same logic for the maximum temperature.
+    In this example, it is irrelevant whether the final line has a newline character at the end or not, since it would be stripped off by the <c>split</c> method call. Also, we set <c>min_temp</c> and <c>max_temp</c> to <c>None</c> at first. When we get a new value for <c>day_min</c> from the file, line 9 says that if there is no minimum temperature yet (<c>min_temp == None</c>) or the new value is less than the current minimum (<c>day_min &lt; min_temp</c>), the new value becomes the current minimum temperature in line 10.  Lines 11 and 12 do the same logic for the maximum temperature.
   </p>
 </section>

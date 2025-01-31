@@ -36,7 +36,7 @@
     <gi>
       <title>relative file path</title>
       <p>The name of a file that includes a path to the file from the current
-                            working directory of a program. An <em>relative file path</em> never starts
+                            working directory of a program. A <em>relative file path</em> never starts
                             with a <c>/</c>.</p>
     </gi>
   </glossary>

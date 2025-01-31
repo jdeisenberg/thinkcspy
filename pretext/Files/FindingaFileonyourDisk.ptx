@@ -27,7 +27,7 @@
   </p>
   
   <p>
-    If a file is not in the same folder as your python program, you need to tell the computer how to reach it. A <em>relative file path</em> starts from the folder that contains your python program and follows a computer's file hierarchy. A file hierarchy contains folders which contains files and other sub-folders.To specify a sub-folder, you specify its name. To specify a <em>parent</em> folder you use the special <c>..</c> notation because every file and folder has one unique parent. You can use the <c>..</c> notation multiple times in a file path to move multiple levels up a file hierarchy. Here is an example file hierarchy that contains multiple folders, files, and sub-folders.
+    If a file is not in the same folder as your python program, you need to tell the computer how to reach it. A <em>relative file path</em> starts from the folder that contains your python program and follows a computer's file hierarchy. A file hierarchy contains folders which contains files and other sub-folders. To specify a sub-folder, you specify its name. To specify a <em>parent</em> folder you use the special <c>..</c> notation because every file and folder has one unique parent. You can use the <c>..</c> notation multiple times in a file path to move multiple levels up a file hierarchy. Here is an example file hierarchy that contains multiple folders, files, and sub-folders.
   </p>
   
   <image source="Files/Figures/file_hierarchy.png" width="50%"/>
